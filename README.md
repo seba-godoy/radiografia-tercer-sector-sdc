@@ -2,6 +2,10 @@
 
 **Prototipo público de investigación y priorización, no sitio institucional oficial.**
 
+**🌐 [Abrir el observatorio en vivo](https://radiografia-tercer-sector-sdc.vercel.app/)** · [URL técnica del proyecto conectado a GitHub](https://radiografia-tercer-sector-web.vercel.app/) · [Historial de cambios](CHANGELOG.md)
+
+La primera dirección redirige a la segunda. Las actualizaciones en la rama `main` se despliegan automáticamente en Vercel (probado con dos commits).
+
 Sitio estático con diagnóstico documental, ranking B preliminar (importancia de 31 problemas), ranking C exploratorio (oportunidades de IA) e historial verificable de versiones.
 
 ## Consulta
@@ -20,7 +24,8 @@ Algunas referencias internas de Notion/Drive que aparecían en la copia de traba
 
 ## Publicación
 - Repositorio GitHub público: visibilidad `Public`, lectura libre, escritura reservada a colaboradores.
-- Vercel: publicar la rama principal en producción con un dominio abierto, sin autenticación ni contraseña.
+- Vercel: conectado a GitHub, despliegue automático desde `main`, producción pública sin autenticación.
+- Dominio histórico: redirección 307 a la nueva web para mantener los enlaces que ya se compartieron.
 - Cada versión debe registrar su fecha, cambios verificables y vínculo al commit, sin fabricar entregables.
 
 Este proyecto se difunde como prototipo de estudio, no en representación de la fundación.
