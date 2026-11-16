@@ -62,7 +62,7 @@ def sem(doc):
 check_schema(data)
 sem(data)
 html=(ROOT/"index.html").read_text(encoding="utf-8")
-raw=re.search(r'<script\\s+type="application/json"\\s+id="data">([\\s\\S]*?)</script>',html)
+raw=re.search(r'<script\s+type="application/json"\s+id="data">([\s\S]*?)</script>',html)
 assert raw,"Falta JSON A embebido"
 A=json.loads(raw.group(1))
 B=load("analisis/SDC_M17a_Matriz_B31_2026-11-16.json")
@@ -71,7 +71,6 @@ assert (len(A["sources"]),len(A["problems"]),len(A["segments"]))==(26,31,121)
 assert len(A["cross"])==87 and len(B["rows"])==len(S["rows"])==31
 assert Counter(x["band"] for x in B["rows"])=={"Alta":11,"Media":12,"Por validar":8}
 assert all(x["scorePonderado"]=="NO CALCULABLE; no sustituir ND por 0" for x in S["rows"])
-assert sum('class="decision-opp" data-kind="ia"' in html[i:i+95] for i in [])==0  # no implicit C import
 assert html.count('class="decision-opp" data-kind="ia"')==4
 assert html.count('class="decision-opp" data-kind="noia"')==2
 P={p["id"]:p for p in A["problems"]}
