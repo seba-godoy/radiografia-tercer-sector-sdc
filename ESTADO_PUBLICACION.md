@@ -1,16 +1,14 @@
-# Estado de publicación · 15 de noviembre de 2026
+# Estado de publicación · 16 de noviembre de 2026
 
-- **Sitio público actualizado automáticamente desde GitHub:** https://radiografia-tercer-sector-web.vercel.app/
-- **Repositorio público:** https://github.com/seba-godoy/radiografia-tercer-sector-sdc
-- **Rama de publicación:** `main`
-- **Versión del observatorio:** 0.4 (preliminar)
-- **Contenido:** 26 fuentes del catálogo A, 31 problemas priorizados de forma preliminar, 4 oportunidades IA y 2 alternativas sin IA.
-- **Historial:** `CHANGELOG.md`, `versiones.json` y copias archivadas en `versiones/`.
+- **Versión en GitHub main:** v0.5 (demo ejecutiva **preliminar**, no cierre B/C).
+- **Sitio público canónico:** https://radiografia-tercer-sector-web.vercel.app/
+- **URL anterior:** https://radiografia-tercer-sector-sdc.vercel.app/ (alias redirigido).
+- **Repositorio:** https://github.com/seba-godoy/radiografia-tercer-sector-sdc
+- **Fuente editable:** `index.html`. HTML v0.4 inmutable: `versiones/v0.4/index.html`.
+- **Cobertura:** 26 fuentes del catálogo A, 31 problemas B (11 alta, 12 media, 8 por validar), 4 hipótesis IA y 2 opciones convencionales.
+- **Auditoría estática previa:** 26/26 F sin cambio de JSON, 31/31 filas B, 4+2 C, 7 señales de evidencia, pestañas sin controles estáticos huérfanos, 0 URLs privadas de Notion/Drive y 0 menciones del roadmap erróneas. **La navegación real y la salud del despliegue requieren verificación adicional**.
+- **Matriz de respaldo:** `analisis/SDC_T2_Defensa_Ranking_B_2026-11-15.md` y `analisis/SDC_T3_Convergencia_Ranking_C_2026-11-15.md` (copias públicas, previamente revisadas sin URLs privadas ni secretos).
+- **Límites:** no hay puntuaciones B/C oficiales, ni medición nacional, ni pilotos, ni ahorro/precisión/adopción medidos. La IA no aprueba rendiciones ni acelera pagos estatales.
+- **Próxima acción única después de T4:** Sprint M16, recoger observaciones de Juanra sobre prioridad B y candidatas C; requiere conversación real, no simularla. **Cierre documental global:** viernes 20/11.
 
-## Nota editorial
-El ranking B actual utiliza posiciones de gabinete, no puntuaciones definitivas. Las oportunidades C todavía son hipótesis de solución, no pilotos validados. Las versiones deben registrar cambios reales y citables, no publicaciones inventadas para aparentar progreso.
-
-## Política de cambios
-Cada ajuste en `main` produce una versión pública por integración GitHub-Vercel. Antes de publicar se revisan datos privados, fuentes, coherencia metodológica y navegación. Se debe agregar una entrada verificable en el historial cuando se modifica contenido sustantivo.
-
-Este es un prototipo de investigación y no una comunicación institucional oficial de Fundación Simón de Cirene.
+Este sitio es un prototipo de investigación y no una comunicación institucional oficial de Fundación Simón de Cirene. Antes de uso institucional permanente, revisar titularidad y plan del proyecto Vercel.

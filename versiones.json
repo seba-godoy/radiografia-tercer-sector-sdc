@@ -1,8 +1,20 @@
 [
   {
+    "version": "0.5",
+    "fecha": "2026-11-16",
+    "estado": "actual",
+    "tipo": "demo ejecutiva auditada",
+    "cambios": [
+      "Vista Certezas y límites: siete indicadores F03 con página, denominador y cautela, más contrastes F07/F08/F10/F26",
+      "Ranking B: escenarios de lectura T2; 31 posiciones, bandas 11/12/8 y ND preservados",
+      "Ranking C: comparación de 4 IA y 2 convencionales; 16 casos propuestos por candidata, sin afirmar resultados",
+      "Corrección de ruta del lunes y archivo verdadero de v0.4"
+    ]
+  },
+  {
     "version": "0.4",
     "fecha": "2026-11-15",
-    "estado": "actual",
+    "estado": "archivada",
     "tipo": "presentación y trazabilidad",
     "cambios": [
       "Pestaña Evolución con historial verificado",

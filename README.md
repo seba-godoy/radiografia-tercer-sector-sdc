@@ -14,7 +14,11 @@ Sitio estático con diagnóstico documental, ranking B preliminar (importancia d
 - `versiones.json`: manifiesto de versiones.
 - `CHANGELOG.md`: registro legible de cambios.
 
-## Estado a 15 de noviembre de 2026
+## Estado a 16 de noviembre de 2026 · v0.5 preliminar
+
+Vista «Certezas y límites» (7 señales citadas), tres escenarios B y comparación explícita de dos candidatas IA contra soluciones convencionales. Historial v0.4 preservado en `versiones/v0.4/`. Documentos de sustento: [T2, defensa Ranking B](analisis/SDC_T2_Defensa_Ranking_B_2026-11-15.md) y [T3, convergencia C](analisis/SDC_T3_Convergencia_Ranking_C_2026-11-15.md).
+
+## Estado a 15 de noviembre de 2026 (histórico)
 Las posiciones B son **editoriales y preliminares**, no el resultado de una fórmula validada. La clasificación C representa hipótesis exploratorias. Ambos rankings documentales están programados para cierre el viernes 20 de noviembre. No se han realizado pilotos en organizaciones reales.
 
 ## Fuentes y límites

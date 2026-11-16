@@ -1,5 +1,13 @@
 # Historial de cambios · Radiografía Simón de Cirene
 
+## 0.5 (2026-11-16) · Demo ejecutiva preliminar
+- Pestaña «Certezas y límites»: 7 señales F03 con base, período, PDF/página y lectura que NO está autorizada; contraste F07, F08, F10 y F26
+- Ranking B: escenarios de continuidad, proporción en N=125 y sostenibilidad del equipo; 31 filas y bandas 11 alta / 12 media / 8 por validar sin puntaje oficial
+- Ranking C: dos candidatas de evaluación documental comparadas con procesos sin IA, 16 casos propuestos por candidata (32), cero pruebas ejecutadas
+- Corregidos «HTML v0.3» y «nueve casos de prioridad alta» del plan; la v0.4 queda archivada en versiones/v0.4/
+- Matrices auditadas T2 y T3 incorporadas a analisis/ para trazabilidad
+
+
 ## Publicación e integración continua (2026-11-15)
 - Repositorio GitHub habilitado públicamente con código, historial y versiones 0.2, 0.3 y base A
 - Proyecto Vercel conectado a la rama `main`; despliegue automático probado con un segundo commit
