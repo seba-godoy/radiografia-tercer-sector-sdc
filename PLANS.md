@@ -1,16 +1,16 @@
 # Hoja de ruta de ejecución (referencia de agentes)
 
-**Versión:** gobernanza propuesta v2.0, 16-11-2026. **No confundir planes con trabajo completado.**
+**Versión:** gobernanza v2.0 y corte interno PX-0.4, 16-11-2026. **No confundir trabajo de diseño con UX validada.**
 **Fuentes de detalle:** Notion, página maestra «PROPUESTA · Radiografía DIMI como sistema de decisiones» y runbooks de cada fase por ID. Este repositorio público no contiene enlaces a páginas internas de Notion.
 
 ## Puerta vigente
-Discutir y validar **PX-0** antes de modificar la arquitectura o publicar nuevas pantallas. La próxima microtarea propuesta es PX-0.1, solo si el alcance de diseño está autorizado. M17e (dossier C previo) queda **EN PAUSA**, no se descarta. La reunión con Juanra está prevista para 17-11-2026 10:00, Chile; no atribuir acuerdos antes de recibirlos.
+**PX-0.1...PX-0.4 completadas documentalmente**: públicos, sitemap, seis wireframes y revisión heurística interna. **No hay feedback ni aprobación de Juanra, y UX real no está validada.** El usuario autorizó avanzar por cuenta propia en investigación y preparación reversible. **Siguiente microtarea propuesta: PX-1.1, solo auditoría de estructura/datos y contrato mínimo para la presentación.** No migrar fuentes ni publicar HTML por este avance. M17e (dossier C previo) sigue en pausa; la reunión prevista con Juanra para 17-11-2026 no se presupone realizada.
 
 ## Fases y microtareas
 | Fase | Dificultad | IDs | Resultado y gate |
 |---|---:|---|---|
-| PX-0 Narrativa / UX | 4/10 | PX-0.1...0.4 (4) | Audiencias, journeys P20/P48, wireframes, MVP; aprobar diseño/alcance antes de código |
-| PX-1 Ontología / datos | 8/10 | PX-1.1...1.6 (6) | Esquema claim/fuente/P/tarea/segmento/alternativa, deduplicación, migración reversible |
+| PX-0 Presentación / UX | 4/10 | PX-0.1...0.4 (4) | **Documentación cerrada**: audiencias Juanra/DIMI, journeys P20/P48, seis wireframes y corte MVP; **aprobación humana y pruebas funcionales ND** |
+| PX-1 Ontología / datos | 8/10 | PX-1.1...1.6 (6) | **PX-1.1 siguiente**: inventario y contrato mínimo sin escribir datos; normalización/migración completas futuras y sujetas al alcance |
 | PX-2 Método B | 8/10 | PX-2.1...2.6 (6) | Documentación ≠ frecuencia ≠ criticidad, rúbrica y sensibilidad; gate de aprobación de criterios |
 | PX-3 Abordabilidad | 7/10 | PX-3.1...3.5 (5) | P→tarea→controlabilidad→alternativa no IA/IA; gate de permisos y realismo |
 | PX-4 Impacto | 8/10 | PX-4.1...4.5 (5) | Baseline, TCO/ND, evaluación y oportunidad incremental; pilotos solo autorizados |
@@ -21,8 +21,13 @@ Discutir y validar **PX-0** antes de modificar la arquitectura o publicar nuevas
 
 **Total: 49 microtareas propuestas** (39 PX y 10 INT/BOT). La dificultad estima complejidad/riesgo, **no** horas de trabajo ni certeza de éxito.
 
+## Corte de alcance V1 para la presentación (propuesto, revisable)
+**Imprescindible:** capítulos 00–05, evidencia desde cada afirmación y retorno exacto, mapa sin conteos temáticos inventados, P20/P48 como casos de explicación, criticidad editorial/ND, tareas mitigables con alternativas convencionales, fichas C sin puntajes, síntesis para Juanra y revisión de privacidad/release.
+**Dejar fuera por ahora:** ranking B ponderado definitivo, gráficos de impacto×viabilidad con puntos sin datos, ahorro/costo/adopción medidos inexistentes, chatbot funcional, ingesta automática, backend externo o plataforma multiusuario. PX-6 es una ambición futura separada de la presentación.
+**M0 del diseño pendientes antes de nuevos wireframes funcionales:** no mostrar 62% de N125 como frecuencia de episodios; no equiparar banda editorial «Alta» con impacto medido; no situar candidatos en matrices sin puntuaciones verificables; explicar que P20/P48 son casos ilustrativos mientras T3 evalúa P38/P25 y P32/P41.
+
 ## Orden y paralelismo
-- PX-0 antes de PX-5. PX-1 es el contrato para PX-2/3/5/6. PX-4 requiere alternativas PX-3 y benchmark pertinente.
+- PX-0 se cerró como diseño interno, **no validación de usuario**. Ejecutar PX-1.1 de solo lectura antes de tocar HTML; no exigir PX-1 completo si basta contrato mínimo de datos verificables para la presentación. PX-2/3/4 quedan como investigación complementaria y no se presuponen completadas. No utilizar PX-5 para publicar conclusiones no aprobadas.
 - INT-1/INT-2 y BOT-1 pueden avanzar en modo documental, sin publicar ni usar datos privados, si su alcance se autoriza. No esperar una conclusión internacional exhaustiva para diseñar UX, pero no cerrar C ignorando alternativas reales.
 - PX-6 se diseña con PX-1, pero se IMPLEMENTA después de estabilizar método y permisos.
 - Trabajo del sprint documental histórico y producto PX tienen entregables diferentes. No cambiar fecha/alcance de 20-11-2026 sin decisión explícita.
