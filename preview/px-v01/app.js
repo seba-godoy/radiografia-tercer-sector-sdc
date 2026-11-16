@@ -140,6 +140,7 @@
   function showDrawer() {
     qs("#drawer-backdrop").hidden=false;qs("#evidence-drawer").hidden=false;
     document.body.classList.add("no-scroll");
+    qs(".site-shell").inert=true;
     qs("#drawer-close").focus();
   }
   function openProblem(id,fromHash=false) {
@@ -171,6 +172,7 @@
     const old=state.selected,focus=state.previousFocus;
     qs("#evidence-drawer").hidden=true;qs("#drawer-backdrop").hidden=true;
     document.body.classList.remove("no-scroll");
+    qs(".site-shell").inert=false;
     state.selected=null;
     if(old!=="method")history.replaceState(null,"",location.pathname+location.search+(state.previousHash||"#mapa"));
     if(restore) {
