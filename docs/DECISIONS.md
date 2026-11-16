@@ -7,7 +7,7 @@ Este registro contiene **solo decisiones explícitas o estados pendientes**, no 
 | 2026-11-16 | Transformar la biblioteca en recorrido de decisiones para DIMI | Propuesta en discusión | Proceso PX-0 antes de cambiar UI |
 | 2026-11-16 | Fases PX-0...PX-6 e INT/BOT | Plan documentado; ejecución no autorizada en bloque | 49 microtareas detalladas en Notion |
 | 2026-11-16 | Protocolo DIMI v2.0 para agentes | Documentado; adopción operativa por definir | AGENTS, PLANS, QA, seguridad y release |
-| 2026-11-16 | Publicación y reglas de main | **Protección técnica por confirmar** | Sin rulesets visibles, protección no legible (403) |
+| 2026-11-16 | Publicación y reglas de main | **Ruleset activo; prueba de rechazo PASS** | Ruleset #27395583, `baseline-integrity` obligatorio, sin bypass; PR #3 fallido quedó `blocked`. Se requiere confirmar CI verde antes de merge. |
 | 2026-11-16 | Rediseño / migración de datos | Pendiente | No modificar corte v0.6 por mera planificación |
 | 2026-11-16 | Ranking B ponderado, pesos, pilotos y chatbot | No aprobado | Evitar notas ficticias, beneficios inventados o piloto prematuro |
 

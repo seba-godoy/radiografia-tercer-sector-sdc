@@ -14,7 +14,7 @@ Sitio estático con diagnóstico documental, ranking B preliminar (importancia d
 
 **Estado:** el rediseño está propuesto, no aprobado ni iniciado. M17e en pausa; prioridad de conversación PX-0. El sitio continúa en v0.6 sin cambio de funcionalidades por esta gobernanza.
 
-**Control estático:** `python3 scripts/validate_baseline.py` valida la estructura del corte actual (26 fuentes, 31 problemas, 121 segmentos, 4 IA + 2 convencionales, vistas B), además de la existencia de documentos. El workflow `baseline-integrity` está preparado para pull requests y main; no sustituye pruebas reales de navegador ni auditoría metodológica. Las reglas de protección efectiva de main se deben activar con acceso administrativo válido: ver [RELEASE](docs/RELEASE.md). **Ningún texto de procedimiento equivale a branch protection configurada.**
+**Control estático:** `python3 scripts/validate_baseline.py` valida la estructura del corte actual (26 fuentes, 31 problemas, 121 segmentos, 4 IA + 2 convencionales, vistas B), además de la existencia de documentos. El workflow `baseline-integrity` está preparado para pull requests y main; no sustituye pruebas reales de navegador ni auditoría metodológica. El ruleset de `main` está **ACTIVE** (#27395583): exige PR, `baseline-integrity`, rama al día, impide force-push y borrado, sin bypass. La prueba negativa PR #3 confirmó un bloqueo real. Ver [RELEASE](docs/RELEASE.md).
 
 ## Consulta
 - `index.html`: versión pública más reciente.
