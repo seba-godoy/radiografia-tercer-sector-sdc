@@ -250,7 +250,7 @@
         "id": {
           "type": "string",
           "minLength": 1,
-          "pattern": "^S\\d{2}$"
+          "pattern": "^S\\d{2,3}$"
         },
         "title": {
           "type": "string",
@@ -453,7 +453,7 @@
         "segment_id": {
           "type": "string",
           "minLength": 1,
-          "pattern": "^S\\d{2}$"
+          "pattern": "^S\\d{2,3}$"
         },
         "source_id": {
           "type": "string",
