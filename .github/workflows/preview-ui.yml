@@ -1,0 +1,36 @@
+name: PX-V0.1 Preview Browser QA
+on:
+  pull_request:
+    paths:
+      - 'preview/px-v01/**'
+      - 'scripts/validate_preview_v01.py'
+      - 'tests/preview-v01.e2e.cjs'
+      - '.github/workflows/preview-ui.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  browser-preview:
+    name: px-v01-browser
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - name: Estructura, datos y seguridad de la vista previa
+        run: python3 scripts/validate_preview_v01.py
+      - name: Sintaxis JavaScript
+        run: node --check preview/px-v01/app.js
+      - name: Instalar Playwright Chromium (versión fijada)
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Probar en navegador Chromium real
+        run: node tests/preview-v01.e2e.cjs
+      - name: Publicar capturas y evidencia de QA
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: px-v01-browser-captures
+          path: preview/px-v01/test-results/
+          if-no-files-found: ignore
+          retention-days: 14
