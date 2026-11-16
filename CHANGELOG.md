@@ -1,5 +1,12 @@
 # Historial de cambios · Radiografía Simón de Cirene
 
+## Publicación e integración continua (2026-11-15)
+- Repositorio GitHub habilitado públicamente con código, historial y versiones 0.2, 0.3 y base A
+- Proyecto Vercel conectado a la rama `main`; despliegue automático probado con un segundo commit
+- Acceso público sin autenticación confirmado en portada y archivos históricos
+- Enlace histórico `radiografia-tercer-sector-sdc.vercel.app` redirige por 307 a la web Git conectada
+- URL principal: https://radiografia-tercer-sector-web.vercel.app/
+
 ## 0.4 (2026-11-15)
 - Pestaña Evolución con historial verificado
 - Archivos históricos consultables
