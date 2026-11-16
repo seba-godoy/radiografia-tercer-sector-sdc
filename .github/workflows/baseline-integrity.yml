@@ -19,3 +19,7 @@ jobs:
         run: python3 --version
       - name: Integridad del catálogo y artefactos de gobierno
         run: python3 scripts/validate_baseline.py
+      - name: Instalar validador de contrato (versión fijada)
+        run: python3 -m pip install --disable-pip-version-check jsonschema==4.25.1
+      - name: Validar contrato PX-1.2 y casos adversariales
+        run: python3 scripts/validate_preview_contract.py
