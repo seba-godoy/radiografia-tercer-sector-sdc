@@ -75,7 +75,7 @@ const sleep = ms => new Promise(r=>setTimeout(r,ms));
    await page.setViewportSize({width:390,height:844});
    await page.reload({waitUntil:"networkidle"});
    await page.locator(".problem-card").first().waitFor();
-   const sizes=await page.evaluate(()=>({inner:innerWidth,scroll:document.documentElement.scrollWidth}));
+   const sizes=await page.evaluate(()=>({inner:innerWidth,scroll:document.documentElement.scrollWidth,offenders:[...document.querySelectorAll("*")].filter(el=>el.getBoundingClientRect().right>innerWidth+2&&getComputedStyle(el).position!=="fixed").slice(0,7).map(el=>({tag:el.tagName,cls:el.className?.toString().slice(0,50),right:Math.round(el.getBoundingClientRect().right)}))}));
    assert.ok(sizes.scroll <= sizes.inner+1,"mobile horizontal scroll "+JSON.stringify(sizes));
    await page.screenshot({path:path.join(OUT,"mobile.png"),fullPage:true});
    await page.locator('.problem-card[data-id="P20"]').click();
