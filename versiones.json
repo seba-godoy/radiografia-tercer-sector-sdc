@@ -1,0 +1,45 @@
+[
+  {
+    "version": "0.4",
+    "fecha": "2026-11-15",
+    "estado": "actual",
+    "tipo": "presentación y trazabilidad",
+    "cambios": [
+      "Pestaña Evolución con historial verificado",
+      "Archivos históricos consultables",
+      "Hitos entregados separados de tareas futuras"
+    ]
+  },
+  {
+    "version": "0.3",
+    "fecha": "2026-11-15",
+    "estado": "archivada",
+    "tipo": "priorización preliminar",
+    "cambios": [
+      "B con 31 problemas clasificados en tres bandas",
+      "C con 4 hipótesis IA y 2 comparadores",
+      "Roadmap 16–20 noviembre"
+    ]
+  },
+  {
+    "version": "0.2",
+    "fecha": "2026-11-15",
+    "estado": "archivada",
+    "tipo": "vista ejecutiva",
+    "cambios": [
+      "Resumen ejecutivo",
+      "Agenda B de siete prioridades",
+      "Seis opciones C y ruta de trabajo inicial"
+    ]
+  },
+  {
+    "version": "base-a",
+    "fecha": "2026-11-13",
+    "estado": "archivo documental",
+    "tipo": "catálogo",
+    "cambios": [
+      "Corte de 26 fuentes, 31 problemas y 121 segmentos",
+      "Evidencia y metodología de respaldo"
+    ]
+  }
+]
