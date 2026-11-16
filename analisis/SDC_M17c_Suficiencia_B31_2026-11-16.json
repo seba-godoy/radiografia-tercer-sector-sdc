@@ -1,0 +1,1050 @@
+{
+  "id": "M17c",
+  "date": "2026-11-16",
+  "status": "matriz de suficiencia completa; puntajes B no calculables con evidencia vigente",
+  "QA": {
+    "filas": 31,
+    "band": {
+      "Alta": 11,
+      "Media": 12,
+      "Por validar": 8
+    },
+    "indicadoresF03": 15,
+    "sinIndicadorF03": 16,
+    "completosParaPuntuar": 0,
+    "episodiosND": 31,
+    "impactoCuantificable": 0,
+    "urgenciaCuantificable": 0
+  },
+  "weights": {
+    "impacto": 0.35,
+    "frecuencia": 0.25,
+    "alcance": 0.25,
+    "urgencia": 0.15
+  },
+  "rows": [
+    {
+      "id": "P02",
+      "posicionEditorial": 1,
+      "bandaEditorial": "Alta",
+      "fuente": "F03",
+      "pdf": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=21",
+      "indicador": "28% · N=125 · Término de atención permanente por no renovación (2025)",
+      "n": 125,
+      "tipoIndicador": "Organizaciones que declaran situación (subgrupo estatal, N125)",
+      "impacto": {
+        "suficiencia": "Solo mecanismo cualitativo o señal autorreportada",
+        "cuantificable": false,
+        "observaciones": "Magnitud comparable de daño, personas/horas/CLP ND"
+      },
+      "frecuencia": {
+        "suficiencia": "ND",
+        "cuantificable": false,
+        "observaciones": "Episodios por fundación/unidad tiempo no medidos"
+      },
+      "alcance": {
+        "suficiencia": "Descriptivo no probabilístico en base exacta",
+        "cuantificableParaRankingNacional": false,
+        "observaciones": "Dato contextual 28% / N=125, unidad y pregunta no universal"
+      },
+      "urgencia": {
+        "suficiencia": "ND comparable",
+        "cuantificable": false,
+        "observaciones": "No hay ventana homogénea documentada de intervención"
+      },
+      "completoComoFichaDocumental": true,
+      "scorePonderado": "NO CALCULABLE; no sustituir ND por 0",
+      "riesgoDeInterpretacion": "Comparar dentro de misma población y pregunta; no estimar severidad a partir del porcentaje"
+    },
+    {
+      "id": "P16",
+      "posicionEditorial": 2,
+      "bandaEditorial": "Alta",
+      "fuente": "F03",
+      "pdf": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=21",
+      "indicador": "57% · N=125 · Transferencias fuera de plazo (2025)",
+      "n": 125,
+      "tipoIndicador": "Organizaciones que declaran situación (subgrupo estatal, N125)",
+      "impacto": {
+        "suficiencia": "Solo mecanismo cualitativo o señal autorreportada",
+        "cuantificable": false,
+        "observaciones": "Magnitud comparable de daño, personas/horas/CLP ND"
+      },
+      "frecuencia": {
+        "suficiencia": "ND",
+        "cuantificable": false,
+        "observaciones": "Episodios por fundación/unidad tiempo no medidos"
+      },
+      "alcance": {
+        "suficiencia": "Descriptivo no probabilístico en base exacta",
+        "cuantificableParaRankingNacional": false,
+        "observaciones": "Dato contextual 57% / N=125, unidad y pregunta no universal"
+      },
+      "urgencia": {
+        "suficiencia": "ND comparable",
+        "cuantificable": false,
+        "observaciones": "No hay ventana homogénea documentada de intervención"
+      },
+      "completoComoFichaDocumental": true,
+      "scorePonderado": "NO CALCULABLE; no sustituir ND por 0",
+      "riesgoDeInterpretacion": "Comparar dentro de misma población y pregunta; no estimar severidad a partir del porcentaje"
+    },
+    {
+      "id": "P20",
+      "posicionEditorial": 3,
+      "bandaEditorial": "Alta",
+      "fuente": "F03",
+      "pdf": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=22",
+      "indicador": "62% · N=125 · Rendiciones sin respuesta en plazo contractual (2025)",
+      "n": 125,
+      "tipoIndicador": "Organizaciones que declaran situación (subgrupo estatal, N125)",
+      "impacto": {
+        "suficiencia": "Solo mecanismo cualitativo o señal autorreportada",
+        "cuantificable": false,
+        "observaciones": "Magnitud comparable de daño, personas/horas/CLP ND"
+      },
+      "frecuencia": {
+        "suficiencia": "ND",
+        "cuantificable": false,
+        "observaciones": "Episodios por fundación/unidad tiempo no medidos"
+      },
+      "alcance": {
+        "suficiencia": "Descriptivo no probabilístico en base exacta",
+        "cuantificableParaRankingNacional": false,
+        "observaciones": "Dato contextual 62% / N=125, unidad y pregunta no universal"
+      },
+      "urgencia": {
+        "suficiencia": "ND comparable",
+        "cuantificable": false,
+        "observaciones": "No hay ventana homogénea documentada de intervención"
+      },
+      "completoComoFichaDocumental": true,
+      "scorePonderado": "NO CALCULABLE; no sustituir ND por 0",
+      "riesgoDeInterpretacion": "Comparar dentro de misma población y pregunta; no estimar severidad a partir del porcentaje"
+    },
+    {
+      "id": "P13",
+      "posicionEditorial": 4,
+      "bandaEditorial": "Alta",
+      "fuente": "F03",
+      "pdf": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=32",
+      "indicador": "44% · N=255 · Financiamiento estable: primera mención (encuesta 2026)",
+      "n": 255,
+      "tipoIndicador": "Actitud o prioridad declarada, no incidencia operativa",
+      "impacto": {
+        "suficiencia": "Solo mecanismo cualitativo o señal autorreportada",
+        "cuantificable": false,
+        "observaciones": "Magnitud comparable de daño, personas/horas/CLP ND"
+      },
+      "frecuencia": {
+        "suficiencia": "ND",
+        "cuantificable": false,
+        "observaciones": "Episodios por fundación/unidad tiempo no medidos"
+      },
+      "alcance": {
+        "suficiencia": "Descriptivo no probabilístico en base exacta",
+        "cuantificableParaRankingNacional": false,
+        "observaciones": "Dato contextual 44% / N=255, unidad y pregunta no universal"
+      },
+      "urgencia": {
+        "suficiencia": "ND comparable",
+        "cuantificable": false,
+        "observaciones": "No hay ventana homogénea documentada de intervención"
+      },
+      "completoComoFichaDocumental": true,
+      "scorePonderado": "NO CALCULABLE; no sustituir ND por 0",
+      "riesgoDeInterpretacion": "No convertir preferencia en porcentaje con déficit"
+    },
+    {
+      "id": "P28",
+      "posicionEditorial": 5,
+      "bandaEditorial": "Alta",
+      "fuente": "F03",
+      "pdf": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=36",
+      "indicador": "52% · N=255 · Dos preguntas distintas con 52% cada una: estabilidad y retención (2025-2026)",
+      "n": 255,
+      "tipoIndicador": "Actitud o prioridad declarada, no incidencia operativa",
+      "impacto": {
+        "suficiencia": "Solo mecanismo cualitativo o señal autorreportada",
+        "cuantificable": false,
+        "observaciones": "Magnitud comparable de daño, personas/horas/CLP ND"
+      },
+      "frecuencia": {
+        "suficiencia": "ND",
+        "cuantificable": false,
+        "observaciones": "Episodios por fundación/unidad tiempo no medidos"
+      },
+      "alcance": {
+        "suficiencia": "Descriptivo no probabilístico en base exacta",
+        "cuantificableParaRankingNacional": false,
+        "observaciones": "Dato contextual 52% / N=255, unidad y pregunta no universal"
+      },
+      "urgencia": {
+        "suficiencia": "ND comparable",
+        "cuantificable": false,
+        "observaciones": "No hay ventana homogénea documentada de intervención"
+      },
+      "completoComoFichaDocumental": true,
+      "scorePonderado": "NO CALCULABLE; no sustituir ND por 0",
+      "riesgoDeInterpretacion": "Dos 52% de preguntas distintas, no sumables"
+    },
+    {
+      "id": "P17",
+      "posicionEditorial": 6,
+      "bandaEditorial": "Alta",
+      "fuente": "F03",
+      "pdf": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=21",
+      "indicador": "52% · N=125 · Exclusión gastos financieros; 40% en operativos es otro ítem (2025)",
+      "n": 125,
+      "tipoIndicador": "Organizaciones que declaran situación (subgrupo estatal, N125)",
+      "impacto": {
+        "suficiencia": "Solo mecanismo cualitativo o señal autorreportada",
+        "cuantificable": false,
+        "observaciones": "Magnitud comparable de daño, personas/horas/CLP ND"
+      },
+      "frecuencia": {
+        "suficiencia": "ND",
+        "cuantificable": false,
+        "observaciones": "Episodios por fundación/unidad tiempo no medidos"
+      },
+      "alcance": {
+        "suficiencia": "Descriptivo no probabilístico en base exacta",
+        "cuantificableParaRankingNacional": false,
+        "observaciones": "Dato contextual 52% / N=125, unidad y pregunta no universal"
+      },
+      "urgencia": {
+        "suficiencia": "ND comparable",
+        "cuantificable": false,
+        "observaciones": "No hay ventana homogénea documentada de intervención"
+      },
+      "completoComoFichaDocumental": true,
+      "scorePonderado": "NO CALCULABLE; no sustituir ND por 0",
+      "riesgoDeInterpretacion": "Comparar dentro de misma población y pregunta; no estimar severidad a partir del porcentaje"
+    },
+    {
+      "id": "P15",
+      "posicionEditorial": 7,
+      "bandaEditorial": "Alta",
+      "fuente": "F03",
+      "pdf": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=21",
+      "indicador": "54% · N=125 · Convocatorias habituales no realizadas (2025)",
+      "n": 125,
+      "tipoIndicador": "Organizaciones que declaran situación (subgrupo estatal, N125)",
+      "impacto": {
+        "suficiencia": "Solo mecanismo cualitativo o señal autorreportada",
+        "cuantificable": false,
+        "observaciones": "Magnitud comparable de daño, personas/horas/CLP ND"
+      },
+      "frecuencia": {
+        "suficiencia": "ND",
+        "cuantificable": false,
+        "observaciones": "Episodios por fundación/unidad tiempo no medidos"
+      },
+      "alcance": {
+        "suficiencia": "Descriptivo no probabilístico en base exacta",
+        "cuantificableParaRankingNacional": false,
+        "observaciones": "Dato contextual 54% / N=125, unidad y pregunta no universal"
+      },
+      "urgencia": {
+        "suficiencia": "ND comparable",
+        "cuantificable": false,
+        "observaciones": "No hay ventana homogénea documentada de intervención"
+      },
+      "completoComoFichaDocumental": true,
+      "scorePonderado": "NO CALCULABLE; no sustituir ND por 0",
+      "riesgoDeInterpretacion": "Comparar dentro de misma población y pregunta; no estimar severidad a partir del porcentaje"
+    },
+    {
+      "id": "P21",
+      "posicionEditorial": 8,
+      "bandaEditorial": "Alta",
+      "fuente": "F03",
+      "pdf": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=22",
+      "indicador": "43% · N=125 · Volver a rendir cuentas ya aprobadas (2025)",
+      "n": 125,
+      "tipoIndicador": "Organizaciones que declaran situación (subgrupo estatal, N125)",
+      "impacto": {
+        "suficiencia": "Solo mecanismo cualitativo o señal autorreportada",
+        "cuantificable": false,
+        "observaciones": "Magnitud comparable de daño, personas/horas/CLP ND"
+      },
+      "frecuencia": {
+        "suficiencia": "ND",
+        "cuantificable": false,
+        "observaciones": "Episodios por fundación/unidad tiempo no medidos"
+      },
+      "alcance": {
+        "suficiencia": "Descriptivo no probabilístico en base exacta",
+        "cuantificableParaRankingNacional": false,
+        "observaciones": "Dato contextual 43% / N=125, unidad y pregunta no universal"
+      },
+      "urgencia": {
+        "suficiencia": "ND comparable",
+        "cuantificable": false,
+        "observaciones": "No hay ventana homogénea documentada de intervención"
+      },
+      "completoComoFichaDocumental": true,
+      "scorePonderado": "NO CALCULABLE; no sustituir ND por 0",
+      "riesgoDeInterpretacion": "Comparar dentro de misma población y pregunta; no estimar severidad a partir del porcentaje"
+    },
+    {
+      "id": "P14",
+      "posicionEditorial": 9,
+      "bandaEditorial": "Alta",
+      "fuente": "F03",
+      "pdf": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=35",
+      "indicador": "38% · N=219 · Escenario sin nuevos aportes: 38% menos de 3 meses, 30% entre 3 y 6 meses",
+      "n": 219,
+      "tipoIndicador": "Escenario hipotético, no observación operativa",
+      "impacto": {
+        "suficiencia": "Solo mecanismo cualitativo o señal autorreportada",
+        "cuantificable": false,
+        "observaciones": "Magnitud comparable de daño, personas/horas/CLP ND"
+      },
+      "frecuencia": {
+        "suficiencia": "ND",
+        "cuantificable": false,
+        "observaciones": "Episodios por fundación/unidad tiempo no medidos"
+      },
+      "alcance": {
+        "suficiencia": "Descriptivo no probabilístico en base exacta",
+        "cuantificableParaRankingNacional": false,
+        "observaciones": "Dato contextual 38% / N=219, unidad y pregunta no universal"
+      },
+      "urgencia": {
+        "suficiencia": "ND comparable",
+        "cuantificable": false,
+        "observaciones": "No hay ventana homogénea documentada de intervención"
+      },
+      "completoComoFichaDocumental": true,
+      "scorePonderado": "NO CALCULABLE; no sustituir ND por 0",
+      "riesgoDeInterpretacion": "No convertir meses hipotéticos a liquidez real"
+    },
+    {
+      "id": "P48",
+      "posicionEditorial": 10,
+      "bandaEditorial": "Alta",
+      "fuente": "F26",
+      "pdf": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=143",
+      "indicador": "Cualitativo / N=ND",
+      "n": "ND",
+      "tipoIndicador": "Caso sector protección especializada, alcance intersectorial ND",
+      "impacto": {
+        "suficiencia": "Solo mecanismo cualitativo o señal autorreportada",
+        "cuantificable": false,
+        "observaciones": "Magnitud comparable de daño, personas/horas/CLP ND"
+      },
+      "frecuencia": {
+        "suficiencia": "ND",
+        "cuantificable": false,
+        "observaciones": "Episodios por fundación/unidad tiempo no medidos"
+      },
+      "alcance": {
+        "suficiencia": "ND comparable",
+        "cuantificableParaRankingNacional": false,
+        "observaciones": "Alcance poblacional comparable ND"
+      },
+      "urgencia": {
+        "suficiencia": "ND comparable",
+        "cuantificable": false,
+        "observaciones": "No hay ventana homogénea documentada de intervención"
+      },
+      "completoComoFichaDocumental": true,
+      "scorePonderado": "NO CALCULABLE; no sustituir ND por 0",
+      "riesgoDeInterpretacion": "Advertir Alta sectorial, no generalizar al país"
+    },
+    {
+      "id": "P50",
+      "posicionEditorial": 11,
+      "bandaEditorial": "Alta",
+      "fuente": "F26",
+      "pdf": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=139",
+      "indicador": "Cualitativo / N=ND",
+      "n": "ND",
+      "tipoIndicador": "Caso sector protección especializada, alcance intersectorial ND",
+      "impacto": {
+        "suficiencia": "Solo mecanismo cualitativo o señal autorreportada",
+        "cuantificable": false,
+        "observaciones": "Magnitud comparable de daño, personas/horas/CLP ND"
+      },
+      "frecuencia": {
+        "suficiencia": "ND",
+        "cuantificable": false,
+        "observaciones": "Episodios por fundación/unidad tiempo no medidos"
+      },
+      "alcance": {
+        "suficiencia": "ND comparable",
+        "cuantificableParaRankingNacional": false,
+        "observaciones": "Alcance poblacional comparable ND"
+      },
+      "urgencia": {
+        "suficiencia": "ND comparable",
+        "cuantificable": false,
+        "observaciones": "No hay ventana homogénea documentada de intervención"
+      },
+      "completoComoFichaDocumental": true,
+      "scorePonderado": "NO CALCULABLE; no sustituir ND por 0",
+      "riesgoDeInterpretacion": "Advertir Alta sectorial, no generalizar al país"
+    },
+    {
+      "id": "P22",
+      "posicionEditorial": 12,
+      "bandaEditorial": "Media",
+      "fuente": "F03",
+      "pdf": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=22",
+      "indicador": "40% · N=125 · Dificultad al rendir mediante SISREC (2025)",
+      "n": 125,
+      "tipoIndicador": "Organizaciones que declaran situación (subgrupo estatal, N125)",
+      "impacto": {
+        "suficiencia": "Solo mecanismo cualitativo o señal autorreportada",
+        "cuantificable": false,
+        "observaciones": "Magnitud comparable de daño, personas/horas/CLP ND"
+      },
+      "frecuencia": {
+        "suficiencia": "ND",
+        "cuantificable": false,
+        "observaciones": "Episodios por fundación/unidad tiempo no medidos"
+      },
+      "alcance": {
+        "suficiencia": "Descriptivo no probabilístico en base exacta",
+        "cuantificableParaRankingNacional": false,
+        "observaciones": "Dato contextual 40% / N=125, unidad y pregunta no universal"
+      },
+      "urgencia": {
+        "suficiencia": "ND comparable",
+        "cuantificable": false,
+        "observaciones": "No hay ventana homogénea documentada de intervención"
+      },
+      "completoComoFichaDocumental": true,
+      "scorePonderado": "NO CALCULABLE; no sustituir ND por 0",
+      "riesgoDeInterpretacion": "Comparar dentro de misma población y pregunta; no estimar severidad a partir del porcentaje"
+    },
+    {
+      "id": "P18",
+      "posicionEditorial": 13,
+      "bandaEditorial": "Media",
+      "fuente": "F03",
+      "pdf": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=21",
+      "indicador": "42% · N=125 · Dilación toma de razón impide iniciar actividades (2025)",
+      "n": 125,
+      "tipoIndicador": "Organizaciones que declaran situación (subgrupo estatal, N125)",
+      "impacto": {
+        "suficiencia": "Solo mecanismo cualitativo o señal autorreportada",
+        "cuantificable": false,
+        "observaciones": "Magnitud comparable de daño, personas/horas/CLP ND"
+      },
+      "frecuencia": {
+        "suficiencia": "ND",
+        "cuantificable": false,
+        "observaciones": "Episodios por fundación/unidad tiempo no medidos"
+      },
+      "alcance": {
+        "suficiencia": "Descriptivo no probabilístico en base exacta",
+        "cuantificableParaRankingNacional": false,
+        "observaciones": "Dato contextual 42% / N=125, unidad y pregunta no universal"
+      },
+      "urgencia": {
+        "suficiencia": "ND comparable",
+        "cuantificable": false,
+        "observaciones": "No hay ventana homogénea documentada de intervención"
+      },
+      "completoComoFichaDocumental": true,
+      "scorePonderado": "NO CALCULABLE; no sustituir ND por 0",
+      "riesgoDeInterpretacion": "Comparar dentro de misma población y pregunta; no estimar severidad a partir del porcentaje"
+    },
+    {
+      "id": "P19",
+      "posicionEditorial": 14,
+      "bandaEditorial": "Media",
+      "fuente": "F03",
+      "pdf": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=21",
+      "indicador": "26% · N=125 · Garantía mayor a 5% del contrato (2025)",
+      "n": 125,
+      "tipoIndicador": "Organizaciones que declaran situación (subgrupo estatal, N125)",
+      "impacto": {
+        "suficiencia": "Solo mecanismo cualitativo o señal autorreportada",
+        "cuantificable": false,
+        "observaciones": "Magnitud comparable de daño, personas/horas/CLP ND"
+      },
+      "frecuencia": {
+        "suficiencia": "ND",
+        "cuantificable": false,
+        "observaciones": "Episodios por fundación/unidad tiempo no medidos"
+      },
+      "alcance": {
+        "suficiencia": "Descriptivo no probabilístico en base exacta",
+        "cuantificableParaRankingNacional": false,
+        "observaciones": "Dato contextual 26% / N=125, unidad y pregunta no universal"
+      },
+      "urgencia": {
+        "suficiencia": "ND comparable",
+        "cuantificable": false,
+        "observaciones": "No hay ventana homogénea documentada de intervención"
+      },
+      "completoComoFichaDocumental": true,
+      "scorePonderado": "NO CALCULABLE; no sustituir ND por 0",
+      "riesgoDeInterpretacion": "Comparar dentro de misma población y pregunta; no estimar severidad a partir del porcentaje"
+    },
+    {
+      "id": "P23",
+      "posicionEditorial": 15,
+      "bandaEditorial": "Media",
+      "fuente": "F03",
+      "pdf": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=21",
+      "indicador": "10% · N=125 · Traspaso de intervención y datos tras no renovación (2025)",
+      "n": 125,
+      "tipoIndicador": "Organizaciones que declaran situación (subgrupo estatal, N125)",
+      "impacto": {
+        "suficiencia": "Solo mecanismo cualitativo o señal autorreportada",
+        "cuantificable": false,
+        "observaciones": "Magnitud comparable de daño, personas/horas/CLP ND"
+      },
+      "frecuencia": {
+        "suficiencia": "ND",
+        "cuantificable": false,
+        "observaciones": "Episodios por fundación/unidad tiempo no medidos"
+      },
+      "alcance": {
+        "suficiencia": "Descriptivo no probabilístico en base exacta",
+        "cuantificableParaRankingNacional": false,
+        "observaciones": "Dato contextual 10% / N=125, unidad y pregunta no universal"
+      },
+      "urgencia": {
+        "suficiencia": "ND comparable",
+        "cuantificable": false,
+        "observaciones": "No hay ventana homogénea documentada de intervención"
+      },
+      "completoComoFichaDocumental": true,
+      "scorePonderado": "NO CALCULABLE; no sustituir ND por 0",
+      "riesgoDeInterpretacion": "Comparar dentro de misma población y pregunta; no estimar severidad a partir del porcentaje"
+    },
+    {
+      "id": "P43",
+      "posicionEditorial": 16,
+      "bandaEditorial": "Media",
+      "fuente": "F09",
+      "pdf": "https://politicaspublicas.uc.cl/content/uploads/2025/10/MESA-soc_civil_DOCUMENTO-COMPLETO_PRESIDeNCIALES-UC_1imp-1.pdf#page=17",
+      "indicador": "Cualitativo / N=ND",
+      "n": "ND",
+      "tipoIndicador": "Caso, testimonio o diagnóstico cualitativo",
+      "impacto": {
+        "suficiencia": "Solo mecanismo cualitativo o señal autorreportada",
+        "cuantificable": false,
+        "observaciones": "Magnitud comparable de daño, personas/horas/CLP ND"
+      },
+      "frecuencia": {
+        "suficiencia": "ND",
+        "cuantificable": false,
+        "observaciones": "Episodios por fundación/unidad tiempo no medidos"
+      },
+      "alcance": {
+        "suficiencia": "ND comparable",
+        "cuantificableParaRankingNacional": false,
+        "observaciones": "Alcance poblacional comparable ND"
+      },
+      "urgencia": {
+        "suficiencia": "ND comparable",
+        "cuantificable": false,
+        "observaciones": "No hay ventana homogénea documentada de intervención"
+      },
+      "completoComoFichaDocumental": true,
+      "scorePonderado": "NO CALCULABLE; no sustituir ND por 0",
+      "riesgoDeInterpretacion": "Comparar dentro de misma población y pregunta; no estimar severidad a partir del porcentaje"
+    },
+    {
+      "id": "P49",
+      "posicionEditorial": 17,
+      "bandaEditorial": "Media",
+      "fuente": "F26",
+      "pdf": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=117",
+      "indicador": "Cualitativo / N=ND",
+      "n": "ND",
+      "tipoIndicador": "Caso, testimonio o diagnóstico cualitativo",
+      "impacto": {
+        "suficiencia": "Solo mecanismo cualitativo o señal autorreportada",
+        "cuantificable": false,
+        "observaciones": "Magnitud comparable de daño, personas/horas/CLP ND"
+      },
+      "frecuencia": {
+        "suficiencia": "ND",
+        "cuantificable": false,
+        "observaciones": "Episodios por fundación/unidad tiempo no medidos"
+      },
+      "alcance": {
+        "suficiencia": "ND comparable",
+        "cuantificableParaRankingNacional": false,
+        "observaciones": "Alcance poblacional comparable ND"
+      },
+      "urgencia": {
+        "suficiencia": "ND comparable",
+        "cuantificable": false,
+        "observaciones": "No hay ventana homogénea documentada de intervención"
+      },
+      "completoComoFichaDocumental": true,
+      "scorePonderado": "NO CALCULABLE; no sustituir ND por 0",
+      "riesgoDeInterpretacion": "Comparar dentro de misma población y pregunta; no estimar severidad a partir del porcentaje"
+    },
+    {
+      "id": "P51",
+      "posicionEditorial": 18,
+      "bandaEditorial": "Media",
+      "fuente": "F26",
+      "pdf": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=139",
+      "indicador": "Cualitativo / N=ND",
+      "n": "ND",
+      "tipoIndicador": "Caso, testimonio o diagnóstico cualitativo",
+      "impacto": {
+        "suficiencia": "Solo mecanismo cualitativo o señal autorreportada",
+        "cuantificable": false,
+        "observaciones": "Magnitud comparable de daño, personas/horas/CLP ND"
+      },
+      "frecuencia": {
+        "suficiencia": "ND",
+        "cuantificable": false,
+        "observaciones": "Episodios por fundación/unidad tiempo no medidos"
+      },
+      "alcance": {
+        "suficiencia": "ND comparable",
+        "cuantificableParaRankingNacional": false,
+        "observaciones": "Alcance poblacional comparable ND"
+      },
+      "urgencia": {
+        "suficiencia": "ND comparable",
+        "cuantificable": false,
+        "observaciones": "No hay ventana homogénea documentada de intervención"
+      },
+      "completoComoFichaDocumental": true,
+      "scorePonderado": "NO CALCULABLE; no sustituir ND por 0",
+      "riesgoDeInterpretacion": "Comparar dentro de misma población y pregunta; no estimar severidad a partir del porcentaje"
+    },
+    {
+      "id": "P25",
+      "posicionEditorial": 19,
+      "bandaEditorial": "Media",
+      "fuente": "F03",
+      "pdf": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=33",
+      "indicador": "57% · N=255 · Multiplicidad de normas dificulta gestión de donaciones (2026)",
+      "n": 255,
+      "tipoIndicador": "Actitud o prioridad declarada, no incidencia operativa",
+      "impacto": {
+        "suficiencia": "Solo mecanismo cualitativo o señal autorreportada",
+        "cuantificable": false,
+        "observaciones": "Magnitud comparable de daño, personas/horas/CLP ND"
+      },
+      "frecuencia": {
+        "suficiencia": "ND",
+        "cuantificable": false,
+        "observaciones": "Episodios por fundación/unidad tiempo no medidos"
+      },
+      "alcance": {
+        "suficiencia": "Descriptivo no probabilístico en base exacta",
+        "cuantificableParaRankingNacional": false,
+        "observaciones": "Dato contextual 57% / N=255, unidad y pregunta no universal"
+      },
+      "urgencia": {
+        "suficiencia": "ND comparable",
+        "cuantificable": false,
+        "observaciones": "No hay ventana homogénea documentada de intervención"
+      },
+      "completoComoFichaDocumental": true,
+      "scorePonderado": "NO CALCULABLE; no sustituir ND por 0",
+      "riesgoDeInterpretacion": "Comparar dentro de misma población y pregunta; no estimar severidad a partir del porcentaje"
+    },
+    {
+      "id": "P26",
+      "posicionEditorial": 20,
+      "bandaEditorial": "Media",
+      "fuente": "F03",
+      "pdf": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=28",
+      "indicador": "30% · N=200 · Burocracia excesiva con donantes privados receptores (2025)",
+      "n": 200,
+      "tipoIndicador": "Actitud o prioridad declarada, no incidencia operativa",
+      "impacto": {
+        "suficiencia": "Solo mecanismo cualitativo o señal autorreportada",
+        "cuantificable": false,
+        "observaciones": "Magnitud comparable de daño, personas/horas/CLP ND"
+      },
+      "frecuencia": {
+        "suficiencia": "ND",
+        "cuantificable": false,
+        "observaciones": "Episodios por fundación/unidad tiempo no medidos"
+      },
+      "alcance": {
+        "suficiencia": "Descriptivo no probabilístico en base exacta",
+        "cuantificableParaRankingNacional": false,
+        "observaciones": "Dato contextual 30% / N=200, unidad y pregunta no universal"
+      },
+      "urgencia": {
+        "suficiencia": "ND comparable",
+        "cuantificable": false,
+        "observaciones": "No hay ventana homogénea documentada de intervención"
+      },
+      "completoComoFichaDocumental": true,
+      "scorePonderado": "NO CALCULABLE; no sustituir ND por 0",
+      "riesgoDeInterpretacion": "Comparar dentro de misma población y pregunta; no estimar severidad a partir del porcentaje"
+    },
+    {
+      "id": "P54",
+      "posicionEditorial": 21,
+      "bandaEditorial": "Media",
+      "fuente": "F22",
+      "pdf": "https://uai.cdn7pm.net/documentos/filantropia-local-desafios-y-buenas-practicas-en-chile.pdf#page=47",
+      "indicador": "Cualitativo / N=ND",
+      "n": "ND",
+      "tipoIndicador": "Menciones múltiples de OSC; N personas/organizaciones del gráfico ≠ 82",
+      "impacto": {
+        "suficiencia": "Solo mecanismo cualitativo o señal autorreportada",
+        "cuantificable": false,
+        "observaciones": "Magnitud comparable de daño, personas/horas/CLP ND"
+      },
+      "frecuencia": {
+        "suficiencia": "ND",
+        "cuantificable": false,
+        "observaciones": "Episodios por fundación/unidad tiempo no medidos"
+      },
+      "alcance": {
+        "suficiencia": "ND comparable",
+        "cuantificableParaRankingNacional": false,
+        "observaciones": "Alcance poblacional comparable ND"
+      },
+      "urgencia": {
+        "suficiencia": "ND comparable",
+        "cuantificable": false,
+        "observaciones": "No hay ventana homogénea documentada de intervención"
+      },
+      "completoComoFichaDocumental": true,
+      "scorePonderado": "NO CALCULABLE; no sustituir ND por 0",
+      "riesgoDeInterpretacion": "Porcentajes sobre menciones, no fundaciones"
+    },
+    {
+      "id": "P32",
+      "posicionEditorial": 22,
+      "bandaEditorial": "Media",
+      "fuente": "F10",
+      "pdf": "https://comunidad-org.cl/wp-content/uploads/2026/06/Informe-FECU-Social-2024.pdf#page=3",
+      "indicador": "Cualitativo / N=ND",
+      "n": "ND",
+      "tipoIndicador": "Caso, testimonio o diagnóstico cualitativo",
+      "impacto": {
+        "suficiencia": "Solo mecanismo cualitativo o señal autorreportada",
+        "cuantificable": false,
+        "observaciones": "Magnitud comparable de daño, personas/horas/CLP ND"
+      },
+      "frecuencia": {
+        "suficiencia": "ND",
+        "cuantificable": false,
+        "observaciones": "Episodios por fundación/unidad tiempo no medidos"
+      },
+      "alcance": {
+        "suficiencia": "ND comparable",
+        "cuantificableParaRankingNacional": false,
+        "observaciones": "Alcance poblacional comparable ND"
+      },
+      "urgencia": {
+        "suficiencia": "ND comparable",
+        "cuantificable": false,
+        "observaciones": "No hay ventana homogénea documentada de intervención"
+      },
+      "completoComoFichaDocumental": true,
+      "scorePonderado": "NO CALCULABLE; no sustituir ND por 0",
+      "riesgoDeInterpretacion": "Comparar dentro de misma población y pregunta; no estimar severidad a partir del porcentaje"
+    },
+    {
+      "id": "P38",
+      "posicionEditorial": 23,
+      "bandaEditorial": "Media",
+      "fuente": "F07",
+      "pdf": "https://politicaspublicas.uc.cl/content/uploads/2025/11/Informe_Registro-Unico_161025-VF.pdf#page=23",
+      "indicador": "Cualitativo / N=ND",
+      "n": "ND",
+      "tipoIndicador": "Caso, testimonio o diagnóstico cualitativo",
+      "impacto": {
+        "suficiencia": "Solo mecanismo cualitativo o señal autorreportada",
+        "cuantificable": false,
+        "observaciones": "Magnitud comparable de daño, personas/horas/CLP ND"
+      },
+      "frecuencia": {
+        "suficiencia": "ND",
+        "cuantificable": false,
+        "observaciones": "Episodios por fundación/unidad tiempo no medidos"
+      },
+      "alcance": {
+        "suficiencia": "ND comparable",
+        "cuantificableParaRankingNacional": false,
+        "observaciones": "Alcance poblacional comparable ND"
+      },
+      "urgencia": {
+        "suficiencia": "ND comparable",
+        "cuantificable": false,
+        "observaciones": "No hay ventana homogénea documentada de intervención"
+      },
+      "completoComoFichaDocumental": true,
+      "scorePonderado": "NO CALCULABLE; no sustituir ND por 0",
+      "riesgoDeInterpretacion": "Comparar dentro de misma población y pregunta; no estimar severidad a partir del porcentaje"
+    },
+    {
+      "id": "P41",
+      "posicionEditorial": 24,
+      "bandaEditorial": "Por validar",
+      "fuente": "F08",
+      "pdf": "https://politicaspublicas.uc.cl/content/uploads/2025/08/Informe_Lineamienro-fortalecimineto-fiscaliza_231025.pdf#page=17",
+      "indicador": "Cualitativo / N=ND",
+      "n": "ND",
+      "tipoIndicador": "Caso, testimonio o diagnóstico cualitativo",
+      "impacto": {
+        "suficiencia": "Solo mecanismo cualitativo o señal autorreportada",
+        "cuantificable": false,
+        "observaciones": "Magnitud comparable de daño, personas/horas/CLP ND"
+      },
+      "frecuencia": {
+        "suficiencia": "ND",
+        "cuantificable": false,
+        "observaciones": "Episodios por fundación/unidad tiempo no medidos"
+      },
+      "alcance": {
+        "suficiencia": "ND comparable",
+        "cuantificableParaRankingNacional": false,
+        "observaciones": "Alcance poblacional comparable ND"
+      },
+      "urgencia": {
+        "suficiencia": "ND comparable",
+        "cuantificable": false,
+        "observaciones": "No hay ventana homogénea documentada de intervención"
+      },
+      "completoComoFichaDocumental": true,
+      "scorePonderado": "NO CALCULABLE; no sustituir ND por 0",
+      "riesgoDeInterpretacion": "Fuente de proceso 2025; vigencia 2026 ND"
+    },
+    {
+      "id": "P11",
+      "posicionEditorial": 25,
+      "bandaEditorial": "Por validar",
+      "fuente": "F09",
+      "pdf": "https://politicaspublicas.uc.cl/content/uploads/2025/10/MESA-soc_civil_DOCUMENTO-COMPLETO_PRESIDeNCIALES-UC_1imp-1.pdf#page=28",
+      "indicador": "Cualitativo / N=ND",
+      "n": "ND",
+      "tipoIndicador": "Caso, testimonio o diagnóstico cualitativo",
+      "impacto": {
+        "suficiencia": "Solo mecanismo cualitativo o señal autorreportada",
+        "cuantificable": false,
+        "observaciones": "Magnitud comparable de daño, personas/horas/CLP ND"
+      },
+      "frecuencia": {
+        "suficiencia": "ND",
+        "cuantificable": false,
+        "observaciones": "Episodios por fundación/unidad tiempo no medidos"
+      },
+      "alcance": {
+        "suficiencia": "ND comparable",
+        "cuantificableParaRankingNacional": false,
+        "observaciones": "Alcance poblacional comparable ND"
+      },
+      "urgencia": {
+        "suficiencia": "ND comparable",
+        "cuantificable": false,
+        "observaciones": "No hay ventana homogénea documentada de intervención"
+      },
+      "completoComoFichaDocumental": true,
+      "scorePonderado": "NO CALCULABLE; no sustituir ND por 0",
+      "riesgoDeInterpretacion": "Comparar dentro de misma población y pregunta; no estimar severidad a partir del porcentaje"
+    },
+    {
+      "id": "P46",
+      "posicionEditorial": 26,
+      "bandaEditorial": "Por validar",
+      "fuente": "F11",
+      "pdf": "https://fundaciontrascender.cl/estudio-revela-desafios-clave-para-la-sostenibilidad-de-las-organizaciones-sociales-en-chile/",
+      "indicador": "Cualitativo / N=ND",
+      "n": "ND",
+      "tipoIndicador": "Escala de autodiagnóstico de OSC, no tasa de eventos",
+      "impacto": {
+        "suficiencia": "Solo mecanismo cualitativo o señal autorreportada",
+        "cuantificable": false,
+        "observaciones": "Magnitud comparable de daño, personas/horas/CLP ND"
+      },
+      "frecuencia": {
+        "suficiencia": "ND",
+        "cuantificable": false,
+        "observaciones": "Episodios por fundación/unidad tiempo no medidos"
+      },
+      "alcance": {
+        "suficiencia": "ND comparable",
+        "cuantificableParaRankingNacional": false,
+        "observaciones": "Alcance poblacional comparable ND"
+      },
+      "urgencia": {
+        "suficiencia": "ND comparable",
+        "cuantificable": false,
+        "observaciones": "No hay ventana homogénea documentada de intervención"
+      },
+      "completoComoFichaDocumental": true,
+      "scorePonderado": "NO CALCULABLE; no sustituir ND por 0",
+      "riesgoDeInterpretacion": "F11/F12 misma base, no doble evidencia"
+    },
+    {
+      "id": "P52",
+      "posicionEditorial": 27,
+      "bandaEditorial": "Por validar",
+      "fuente": "F26",
+      "pdf": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=129",
+      "indicador": "Cualitativo / N=ND",
+      "n": "ND",
+      "tipoIndicador": "Caso, testimonio o diagnóstico cualitativo",
+      "impacto": {
+        "suficiencia": "Solo mecanismo cualitativo o señal autorreportada",
+        "cuantificable": false,
+        "observaciones": "Magnitud comparable de daño, personas/horas/CLP ND"
+      },
+      "frecuencia": {
+        "suficiencia": "ND",
+        "cuantificable": false,
+        "observaciones": "Episodios por fundación/unidad tiempo no medidos"
+      },
+      "alcance": {
+        "suficiencia": "ND comparable",
+        "cuantificableParaRankingNacional": false,
+        "observaciones": "Alcance poblacional comparable ND"
+      },
+      "urgencia": {
+        "suficiencia": "ND comparable",
+        "cuantificable": false,
+        "observaciones": "No hay ventana homogénea documentada de intervención"
+      },
+      "completoComoFichaDocumental": true,
+      "scorePonderado": "NO CALCULABLE; no sustituir ND por 0",
+      "riesgoDeInterpretacion": "Comparar dentro de misma población y pregunta; no estimar severidad a partir del porcentaje"
+    },
+    {
+      "id": "P53",
+      "posicionEditorial": 28,
+      "bandaEditorial": "Por validar",
+      "fuente": "F26",
+      "pdf": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=141",
+      "indicador": "Cualitativo / N=ND",
+      "n": "ND",
+      "tipoIndicador": "Caso, testimonio o diagnóstico cualitativo",
+      "impacto": {
+        "suficiencia": "Solo mecanismo cualitativo o señal autorreportada",
+        "cuantificable": false,
+        "observaciones": "Magnitud comparable de daño, personas/horas/CLP ND"
+      },
+      "frecuencia": {
+        "suficiencia": "ND",
+        "cuantificable": false,
+        "observaciones": "Episodios por fundación/unidad tiempo no medidos"
+      },
+      "alcance": {
+        "suficiencia": "ND comparable",
+        "cuantificableParaRankingNacional": false,
+        "observaciones": "Alcance poblacional comparable ND"
+      },
+      "urgencia": {
+        "suficiencia": "ND comparable",
+        "cuantificable": false,
+        "observaciones": "No hay ventana homogénea documentada de intervención"
+      },
+      "completoComoFichaDocumental": true,
+      "scorePonderado": "NO CALCULABLE; no sustituir ND por 0",
+      "riesgoDeInterpretacion": "Comparar dentro de misma población y pregunta; no estimar severidad a partir del porcentaje"
+    },
+    {
+      "id": "P40",
+      "posicionEditorial": 29,
+      "bandaEditorial": "Por validar",
+      "fuente": "F08",
+      "pdf": "https://politicaspublicas.uc.cl/content/uploads/2025/08/Informe_Lineamienro-fortalecimineto-fiscaliza_231025.pdf#page=16",
+      "indicador": "Cualitativo / N=ND",
+      "n": "ND",
+      "tipoIndicador": "Caso, testimonio o diagnóstico cualitativo",
+      "impacto": {
+        "suficiencia": "Solo mecanismo cualitativo o señal autorreportada",
+        "cuantificable": false,
+        "observaciones": "Magnitud comparable de daño, personas/horas/CLP ND"
+      },
+      "frecuencia": {
+        "suficiencia": "ND",
+        "cuantificable": false,
+        "observaciones": "Episodios por fundación/unidad tiempo no medidos"
+      },
+      "alcance": {
+        "suficiencia": "ND comparable",
+        "cuantificableParaRankingNacional": false,
+        "observaciones": "Alcance poblacional comparable ND"
+      },
+      "urgencia": {
+        "suficiencia": "ND comparable",
+        "cuantificable": false,
+        "observaciones": "No hay ventana homogénea documentada de intervención"
+      },
+      "completoComoFichaDocumental": true,
+      "scorePonderado": "NO CALCULABLE; no sustituir ND por 0",
+      "riesgoDeInterpretacion": "Fuente de proceso 2025; vigencia 2026 ND"
+    },
+    {
+      "id": "P47",
+      "posicionEditorial": 30,
+      "bandaEditorial": "Por validar",
+      "fuente": "F16",
+      "pdf": "https://ceps.unibas.ch/fileadmin/user_upload/ceps/1_Home/News_Events_Bilder_Doks/20190515_Leitfaden_Governance_Chile_Steffen.pdf#page=55",
+      "indicador": "Cualitativo / N=ND",
+      "n": "ND",
+      "tipoIndicador": "Caso, testimonio o diagnóstico cualitativo",
+      "impacto": {
+        "suficiencia": "Solo mecanismo cualitativo o señal autorreportada",
+        "cuantificable": false,
+        "observaciones": "Magnitud comparable de daño, personas/horas/CLP ND"
+      },
+      "frecuencia": {
+        "suficiencia": "ND",
+        "cuantificable": false,
+        "observaciones": "Episodios por fundación/unidad tiempo no medidos"
+      },
+      "alcance": {
+        "suficiencia": "ND comparable",
+        "cuantificableParaRankingNacional": false,
+        "observaciones": "Alcance poblacional comparable ND"
+      },
+      "urgencia": {
+        "suficiencia": "ND comparable",
+        "cuantificable": false,
+        "observaciones": "No hay ventana homogénea documentada de intervención"
+      },
+      "completoComoFichaDocumental": true,
+      "scorePonderado": "NO CALCULABLE; no sustituir ND por 0",
+      "riesgoDeInterpretacion": "Caso institucional es un ejemplo de práctica, no dolor prevalente"
+    },
+    {
+      "id": "P30",
+      "posicionEditorial": 31,
+      "bandaEditorial": "Por validar",
+      "fuente": "F09",
+      "pdf": "https://politicaspublicas.uc.cl/content/uploads/2025/10/MESA-soc_civil_DOCUMENTO-COMPLETO_PRESIDeNCIALES-UC_1imp-1.pdf#page=25",
+      "indicador": "Cualitativo / N=ND",
+      "n": "ND",
+      "tipoIndicador": "Diagnóstico y opiniones F04 distintas; sin resultado causal",
+      "impacto": {
+        "suficiencia": "Solo mecanismo cualitativo o señal autorreportada",
+        "cuantificable": false,
+        "observaciones": "Magnitud comparable de daño, personas/horas/CLP ND"
+      },
+      "frecuencia": {
+        "suficiencia": "ND",
+        "cuantificable": false,
+        "observaciones": "Episodios por fundación/unidad tiempo no medidos"
+      },
+      "alcance": {
+        "suficiencia": "ND comparable",
+        "cuantificableParaRankingNacional": false,
+        "observaciones": "Alcance poblacional comparable ND"
+      },
+      "urgencia": {
+        "suficiencia": "ND comparable",
+        "cuantificable": false,
+        "observaciones": "No hay ventana homogénea documentada de intervención"
+      },
+      "completoComoFichaDocumental": true,
+      "scorePonderado": "NO CALCULABLE; no sustituir ND por 0",
+      "riesgoDeInterpretacion": "No inferir 72% sin espacios a partir de 28% de acuerdo"
+    }
+  ]
+}
