@@ -1,6 +1,6 @@
 # Política de ramas, releases y recuperación
 
-**El repositorio es público y el branch main está conectado con Vercel; cada push puede activar despliegue automáticamente.** Al 16-11-2026 no se observaron rulesets activos y la conexión GitHub usada en la auditoría recibió HTTP 403 al leer protección de rama. Por eso una regla escrita aquí NO constituye protección técnica real.
+**El repositorio es público y el branch main está conectado con Vercel; cada push puede activar despliegue automáticamente.** El 16-11-2026 se verificó el ruleset activo #27395583 «DIMI - Protección de main», dirigido a la rama predeterminada. Exige PR, check baseline-integrity de GitHub Actions con rama al día, resolución de conversaciones y bloquea eliminación y force-push, sin bypass.
 
 ## Flujo propuesto y gate manual actual
 1. Recuperar SHA actual de main y crear rama por tarea (`governance/`, `feat/`, `fix/` o `research/`); no trabajar en main como hábito.
@@ -11,12 +11,12 @@
 6. Integrar solo si QA P0/P1 en PASS y HEAD esperado no cambió. Registrar commit exacto, changelog y `versiones.json` si cambió el HTML.
 7. Comprobar Vercel deployment READY contra commit, URL HTTP 200 y contenido/versiones históricas; dejar acta. Si falla release, volver a commit anterior (preferentemente revert PR) y confirmar estado.
 
-## Protecciones de GitHub por habilitar por propietario
-- Ruleset para main: requerir PR, resolución de conversaciones, revisiones según miembros disponibles, checks obligatorios, impedir force-push y borrado.
-- Requerir el check `baseline-integrity` solo **después** de que el workflow se haya ejecutado y su nombre esté disponible; de lo contrario puede bloquear el repo.
+## Protecciones de GitHub activadas y comprobación
+- **ACTIVO, verificado por API:** ruleset #27395583, PR obligatorio con 0 aprobaciones, resolución de conversaciones, check estricto y prohibición de force-push/borrado.
+- **ACTIVO:** `baseline-integrity` seleccionado como check obligatorio con origen GitHub Actions (integration_id 15368).
 - Activar revisión CODEOWNERS si hay capacidad real para revisar; en cuenta de una sola persona, definir una política viable que no inmovilice el proyecto.
 - Limitar permisos de acciones a contents:read; configurar secret scanning y Dependabot/code scanning según producto y plan.
-- La cuenta/integración disponible puede no permitir activar reglas en API. Un ruleset no activado se documenta como **PENDIENTE**, nunca como PASS.
+- **PRUEBA DE ENFORCEMENT (16/11):** PR #3, primer commit sin `AGENTS.md` en rama temporal, check de GitHub Actions FAIL y PR en estado `blocked` aun al marcarlo listo para revisión. Tras restauración y CI verde, comprobar integración segura; no tocar main en estado rojo.
 - Antes de cualquier release de diseño/producto, confirmar con el propietario si despliegue automático desde main cumple la política prevista.
 
 ## Rollback
