@@ -1,0 +1,761 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/seba-godoy/radiografia-tercer-sector-sdc/blob/main/schemas/px12-preview-contract.schema.json",
+  "title": "Contrato PX-1.2 · fixture de presentación DIMI v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contract_version",
+    "baseline",
+    "sources",
+    "source_versions",
+    "problems",
+    "segments",
+    "claims",
+    "evidence_links",
+    "problem_segments",
+    "tasks",
+    "alternatives",
+    "opportunities",
+    "reviews"
+  ],
+  "properties": {
+    "contract_version": {
+      "const": "0.1.0"
+    },
+    "baseline": {
+      "$ref": "#/$defs/baseline"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      },
+      "minItems": 1
+    },
+    "source_versions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/sourceVersion"
+      },
+      "minItems": 1
+    },
+    "problems": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/problem"
+      },
+      "minItems": 1
+    },
+    "segments": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/segment"
+      },
+      "minItems": 1
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/claim"
+      },
+      "minItems": 1
+    },
+    "evidence_links": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/evidenceLink"
+      },
+      "minItems": 1
+    },
+    "problem_segments": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/problemSegment"
+      },
+      "minItems": 1
+    },
+    "tasks": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/task"
+      },
+      "minItems": 1
+    },
+    "alternatives": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/alternative"
+      },
+      "minItems": 1
+    },
+    "opportunities": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/opportunity"
+      },
+      "minItems": 1
+    },
+    "reviews": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/review"
+      },
+      "minItems": 1
+    }
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "study_id",
+        "study_status",
+        "catalog_url",
+        "published_label"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^F\\d{2}$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "study_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "study_status": {
+          "enum": [
+            "catalogued",
+            "unresolved"
+          ]
+        },
+        "catalog_url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "published_label": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "sourceVersion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "source_id",
+        "version_kind",
+        "source_url",
+        "snapshot_ref",
+        "document_checksum"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^SV-"
+        },
+        "source_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^F\\d{2}$"
+        },
+        "version_kind": {
+          "const": "catalog_snapshot"
+        },
+        "source_url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "snapshot_ref": {
+          "const": "HTML-V06"
+        },
+        "document_checksum": {
+          "type": "null"
+        }
+      }
+    },
+    "problem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "origin_source_id",
+        "editorial_band",
+        "editorial_rank",
+        "weighted_score",
+        "limits"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^P\\d{2}$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "origin_source_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^F\\d{2}$"
+        },
+        "editorial_band": {
+          "enum": [
+            "Alta",
+            "Media",
+            "Por validar"
+          ]
+        },
+        "editorial_rank": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 31
+        },
+        "weighted_score": {
+          "type": "null"
+        },
+        "limits": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "segment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "axis",
+        "origin_source_id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^S\\d{2}$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "axis": {
+          "type": "string",
+          "minLength": 1
+        },
+        "origin_source_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^F\\d{2}$"
+        }
+      }
+    },
+    "statistic": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "percent",
+        "denominator",
+        "numerator",
+        "unit",
+        "question_key",
+        "can_compare_nationally"
+      ],
+      "properties": {
+        "percent": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "denominator": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "numerator": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "unit": {
+          "enum": [
+            "respondent_share",
+            "none"
+          ]
+        },
+        "question_key": {
+          "type": "string",
+          "minLength": 1
+        },
+        "can_compare_nationally": {
+          "const": false
+        }
+      }
+    },
+    "claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "source_version_id",
+        "claim_text",
+        "claim_type",
+        "statistic",
+        "population",
+        "period",
+        "locator",
+        "source_url",
+        "review_state",
+        "limitations"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^CLM-"
+        },
+        "source_version_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^SV-"
+        },
+        "claim_text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "claim_type": {
+          "enum": [
+            "self_reported_situation",
+            "attitude",
+            "other_question",
+            "qualitative_testimony"
+          ]
+        },
+        "statistic": {
+          "$ref": "#/$defs/statistic"
+        },
+        "population": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "period": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "locator": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "review_state": {
+          "const": "catalogued_not_reverified"
+        },
+        "limitations": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "evidenceLink": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "problem_id",
+        "claim_id",
+        "source_id",
+        "backing_relation",
+        "status"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^EL-"
+        },
+        "problem_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^P\\d{2}$"
+        },
+        "claim_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^CLM-"
+        },
+        "source_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^F\\d{2}$"
+        },
+        "backing_relation": {
+          "enum": [
+            0,
+            0.5,
+            1
+          ]
+        },
+        "status": {
+          "enum": [
+            "support",
+            "context"
+          ]
+        }
+      }
+    },
+    "problemSegment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "problem_id",
+        "segment_id",
+        "source_id",
+        "kind",
+        "reason",
+        "auto_rebase_claim"
+      ],
+      "properties": {
+        "problem_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^P\\d{2}$"
+        },
+        "segment_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^S\\d{2}$"
+        },
+        "source_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^F\\d{2}$"
+        },
+        "kind": {
+          "enum": [
+            "base",
+            "candidate"
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "auto_rebase_claim": {
+          "const": false
+        }
+      }
+    },
+    "task": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "problem_ids",
+        "description",
+        "status",
+        "control_scope",
+        "external_constraint",
+        "validation_required"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^TASK-"
+        },
+        "problem_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^P\\d{2}$"
+          }
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "const": "hypothesis"
+        },
+        "control_scope": {
+          "enum": [
+            "internal_mitigation",
+            "external_structural",
+            "mixed"
+          ]
+        },
+        "external_constraint": {
+          "type": "string",
+          "minLength": 1
+        },
+        "validation_required": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "alternative": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "task_ids",
+        "problem_ids",
+        "name",
+        "type",
+        "source_note",
+        "observed_advantage",
+        "validation_required"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^ALT-"
+        },
+        "task_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^TASK-"
+          }
+        },
+        "problem_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^P\\d{2}$"
+          }
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "type": {
+          "enum": [
+            "ai_hypothesis",
+            "conventional_comparator"
+          ]
+        },
+        "source_note": {
+          "const": "T3_documentary_hypothesis"
+        },
+        "observed_advantage": {
+          "type": "null"
+        },
+        "validation_required": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "opportunity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "task_id",
+        "alternative_id",
+        "comparator_id",
+        "status",
+        "measured_incremental_impact",
+        "measured_operating_cost",
+        "adoption_rate",
+        "next_test"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^OPP-"
+        },
+        "task_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^TASK-"
+        },
+        "alternative_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^ALT-"
+        },
+        "comparator_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^ALT-"
+        },
+        "status": {
+          "const": "research_candidate"
+        },
+        "measured_incremental_impact": {
+          "type": "null"
+        },
+        "measured_operating_cost": {
+          "type": "null"
+        },
+        "adoption_rate": {
+          "type": "null"
+        },
+        "next_test": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "entity_kind",
+        "entity_id",
+        "status",
+        "reviewer",
+        "reviewed_at",
+        "note"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^REV-"
+        },
+        "entity_kind": {
+          "enum": [
+            "contract",
+            "claim",
+            "task",
+            "alternative",
+            "opportunity"
+          ]
+        },
+        "entity_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "const": "pending_human"
+        },
+        "reviewer": {
+          "type": "null"
+        },
+        "reviewed_at": {
+          "type": "null"
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "baseline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "commit",
+        "html_blob_sha",
+        "sources",
+        "problems",
+        "segments",
+        "editorial_bands",
+        "catalogue_opportunities",
+        "scope"
+      ],
+      "properties": {
+        "commit": {
+          "const": "a86c3f61570fd4399b366a2b6cf520067634a777"
+        },
+        "html_blob_sha": {
+          "const": "c9e36797aedd89c625755e4c5518244519806325"
+        },
+        "sources": {
+          "const": 26
+        },
+        "problems": {
+          "const": 31
+        },
+        "segments": {
+          "const": 121
+        },
+        "editorial_bands": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "Alta",
+            "Media",
+            "Por validar"
+          ],
+          "properties": {
+            "Alta": {
+              "const": 11
+            },
+            "Media": {
+              "const": 12
+            },
+            "Por validar": {
+              "const": 8
+            }
+          }
+        },
+        "catalogue_opportunities": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "ia",
+            "conventional"
+          ],
+          "properties": {
+            "ia": {
+              "const": 4
+            },
+            "conventional": {
+              "const": 2
+            }
+          }
+        },
+        "scope": {
+          "const": "three_problem_fixture_not_complete_migration"
+        }
+      }
+    }
+  }
+}

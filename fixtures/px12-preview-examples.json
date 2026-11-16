@@ -1,0 +1,421 @@
+{
+  "contract_version": "0.1.0",
+  "baseline": {
+    "commit": "a86c3f61570fd4399b366a2b6cf520067634a777",
+    "html_blob_sha": "c9e36797aedd89c625755e4c5518244519806325",
+    "sources": 26,
+    "problems": 31,
+    "segments": 121,
+    "editorial_bands": {
+      "Alta": 11,
+      "Media": 12,
+      "Por validar": 8
+    },
+    "catalogue_opportunities": {
+      "ia": 4,
+      "conventional": 2
+    },
+    "scope": "three_problem_fixture_not_complete_migration"
+  },
+  "sources": [
+    {
+      "id": "F03",
+      "title": "Encuesta a directoras y directores ejecutivos de fundaciones y corporaciones 2026",
+      "study_id": "SEA-DIRECCIONES-2026",
+      "study_status": "catalogued",
+      "catalog_url": "https://politicaspublicas.uc.cl/publicacion/resultados-encuesta-a-directoras-y-directores-ejecutivos-de-fundaciones-y-corporaciones-2026/",
+      "published_label": "27 de octubre de 2026"
+    },
+    {
+      "id": "F26",
+      "title": "Estudio del esquema de financiamiento de Protección Especializada",
+      "study_id": "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025",
+      "study_status": "catalogued",
+      "catalog_url": "https://www.servicioproteccion.gob.cl/portal/Estudios/Publicaciones/",
+      "published_label": "Octubre de 2025 · Chile"
+    }
+  ],
+  "source_versions": [
+    {
+      "id": "SV-F03-CAT-V06",
+      "source_id": "F03",
+      "version_kind": "catalog_snapshot",
+      "source_url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf",
+      "snapshot_ref": "HTML-V06",
+      "document_checksum": null
+    },
+    {
+      "id": "SV-F26-CAT-V06",
+      "source_id": "F26",
+      "version_kind": "catalog_snapshot",
+      "source_url": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf",
+      "snapshot_ref": "HTML-V06",
+      "document_checksum": null
+    }
+  ],
+  "problems": [
+    {
+      "id": "P20",
+      "title": "Nuestras rendiciones quedan abiertas por falta de respuesta",
+      "origin_source_id": "F03",
+      "editorial_band": "Alta",
+      "editorial_rank": 3,
+      "weighted_score": null,
+      "limits": "El 62% mide falta de respuesta en plazo y el 42% mide duración superior a siete meses. Los grupos pueden superponerse. Muestra intencional de fundaciones y corporaciones; resultados publicados en conjunto."
+    },
+    {
+      "id": "P48",
+      "title": "Atendemos más casos que plazas financiadas con el mismo equipo",
+      "origin_source_id": "F26",
+      "editorial_band": "Alta",
+      "editorial_rank": 10,
+      "weighted_score": null,
+      "limits": "El estudio no permite aislar los episodios por forma jurídica ni medir su frecuencia en fundaciones."
+    },
+    {
+      "id": "P25",
+      "title": "Los requisitos dispersos nos dificultan recibir donaciones",
+      "origin_source_id": "F03",
+      "editorial_band": "Media",
+      "editorial_rank": 19,
+      "weighted_score": null,
+      "limits": "Son percepciones de las organizaciones encuestadas. Las dos preguntas usan bases distintas. Muestra intencional de fundaciones y corporaciones; resultados publicados en conjunto."
+    }
+  ],
+  "segments": [
+    {
+      "id": "S27",
+      "title": "Encuestadas con contratos o convenios estatales en 2025",
+      "axis": "Vínculo financiero en F03",
+      "origin_source_id": "F03"
+    },
+    {
+      "id": "S106",
+      "title": "Fundaciones acreditadas que ejecutan protección especializada a la niñez",
+      "axis": "Fundaciones operadoras de protección especializada · F26",
+      "origin_source_id": "F26"
+    },
+    {
+      "id": "S28",
+      "title": "Encuestadas que recibieron donaciones privadas en 2025",
+      "axis": "Vínculo financiero en F03",
+      "origin_source_id": "F03"
+    }
+  ],
+  "claims": [
+    {
+      "id": "CLM-F03-D22-RENDICION-62",
+      "source_version_id": "SV-F03-CAT-V06",
+      "claim_text": "62% declara rendiciones sin respuesta dentro del plazo contractual.",
+      "claim_type": "self_reported_situation",
+      "statistic": {
+        "percent": 62,
+        "denominator": 125,
+        "numerator": null,
+        "unit": "respondent_share",
+        "question_key": "F03-D22-RESPUESTA-PLAZO",
+        "can_compare_nationally": false
+      },
+      "population": "Encuestadas con contratos o convenios estatales en 2025; fundaciones y corporaciones",
+      "period": "2025, según pregunta",
+      "locator": "diap. 22",
+      "source_url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=22",
+      "review_state": "catalogued_not_reverified",
+      "limitations": "El 62% mide falta de respuesta en plazo y el 42% mide duración superior a siete meses. Los grupos pueden superponerse. Muestra intencional de fundaciones y corporaciones; resultados publicados en conjunto."
+    },
+    {
+      "id": "CLM-F03-D22-REVISION-42",
+      "source_version_id": "SV-F03-CAT-V06",
+      "claim_text": "42% declara períodos de revisión que superan los siete meses.",
+      "claim_type": "other_question",
+      "statistic": {
+        "percent": 42,
+        "denominator": null,
+        "numerator": null,
+        "unit": "respondent_share",
+        "question_key": "F03-D22-DURACION-MAYOR-7-MESES",
+        "can_compare_nationally": false
+      },
+      "population": "Encuestadas que respondieron pregunta sobre duración; base exacta no acreditada aquí",
+      "period": "2025, según pregunta",
+      "locator": "diap. 22, otra pregunta",
+      "source_url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=22",
+      "review_state": "catalogued_not_reverified",
+      "limitations": "No agregar al 62%: denominador e intersección exacta de ambas preguntas no comprobados en este contrato."
+    },
+    {
+      "id": "CLM-F03-D33-DONACIONES-57",
+      "source_version_id": "SV-F03-CAT-V06",
+      "claim_text": "57% de 255 está de acuerdo en que la multiplicidad de normas dificulta gestionar donaciones.",
+      "claim_type": "attitude",
+      "statistic": {
+        "percent": 57,
+        "denominator": 255,
+        "numerator": null,
+        "unit": "respondent_share",
+        "question_key": "F03-D33-ACTITUD-NORMAS",
+        "can_compare_nationally": false
+      },
+      "population": "Muestra mixta de fundaciones y corporaciones",
+      "period": "2026, según pregunta",
+      "locator": "diap. 33",
+      "source_url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=33",
+      "review_state": "catalogued_not_reverified",
+      "limitations": "Son percepciones de las organizaciones encuestadas. Las dos preguntas usan bases distintas. Muestra intencional de fundaciones y corporaciones; resultados publicados en conjunto. No equivale a cantidad de trámites."
+    },
+    {
+      "id": "CLM-F26-P143-AFT-SOBRECUPO",
+      "source_version_id": "SV-F26-CAT-V06",
+      "claim_text": "Los talleres describen proyectos AFT que cubren más casos de los convenidos sin recibir recursos adicionales para cubrir la carga.",
+      "claim_type": "qualitative_testimony",
+      "statistic": {
+        "percent": null,
+        "denominator": null,
+        "numerator": null,
+        "unit": "none",
+        "question_key": "F26-P143-AFT-SOBRECUPO",
+        "can_compare_nationally": false
+      },
+      "population": "Proyectos AFT descritos en el estudio",
+      "period": null,
+      "locator": "p. 143 §4.6.3",
+      "source_url": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=143",
+      "review_state": "catalogued_not_reverified",
+      "limitations": "El estudio no permite aislar los episodios por forma jurídica ni medir su frecuencia en fundaciones."
+    },
+    {
+      "id": "CLM-F26-P158-DOTACION",
+      "source_version_id": "SV-F26-CAT-V06",
+      "claim_text": "Los equipos reportan seguimiento adicional y desgaste. Los sobrecupos pueden ser insuficientes para justificar una contratación o llegar con recursos demasiado tarde para incorporarla.",
+      "claim_type": "qualitative_testimony",
+      "statistic": {
+        "percent": null,
+        "denominator": null,
+        "numerator": null,
+        "unit": "none",
+        "question_key": "F26-P158-DOTACION",
+        "can_compare_nationally": false
+      },
+      "population": "Equipos de protección especializada descritos en el estudio",
+      "period": null,
+      "locator": "p. 158 §4.8.2.1",
+      "source_url": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=158",
+      "review_state": "catalogued_not_reverified",
+      "limitations": "El estudio no permite aislar los episodios por forma jurídica ni medir su frecuencia en fundaciones."
+    }
+  ],
+  "evidence_links": [
+    {
+      "id": "EL-001",
+      "problem_id": "P20",
+      "claim_id": "CLM-F03-D22-RENDICION-62",
+      "source_id": "F03",
+      "backing_relation": 0.5,
+      "status": "support"
+    },
+    {
+      "id": "EL-002",
+      "problem_id": "P20",
+      "claim_id": "CLM-F03-D22-REVISION-42",
+      "source_id": "F03",
+      "backing_relation": 0.5,
+      "status": "support"
+    },
+    {
+      "id": "EL-003",
+      "problem_id": "P25",
+      "claim_id": "CLM-F03-D33-DONACIONES-57",
+      "source_id": "F03",
+      "backing_relation": 0.5,
+      "status": "support"
+    },
+    {
+      "id": "EL-004",
+      "problem_id": "P48",
+      "claim_id": "CLM-F26-P143-AFT-SOBRECUPO",
+      "source_id": "F26",
+      "backing_relation": 0.5,
+      "status": "support"
+    },
+    {
+      "id": "EL-005",
+      "problem_id": "P48",
+      "claim_id": "CLM-F26-P158-DOTACION",
+      "source_id": "F26",
+      "backing_relation": 0.5,
+      "status": "support"
+    }
+  ],
+  "problem_segments": [
+    {
+      "problem_id": "P20",
+      "segment_id": "S27",
+      "source_id": "F03",
+      "kind": "base",
+      "reason": "La encuesta mide esta dificultad en las 125 organizaciones con convenios o contratos estatales.",
+      "auto_rebase_claim": false
+    },
+    {
+      "problem_id": "P48",
+      "segment_id": "S106",
+      "source_id": "F26",
+      "kind": "candidate",
+      "reason": "Comparar plazas, casos por profesional y refuerzos en una fundación que ejecute AFT o FAE.",
+      "auto_rebase_claim": false
+    },
+    {
+      "problem_id": "P25",
+      "segment_id": "S28",
+      "source_id": "F03",
+      "kind": "base",
+      "reason": "La pregunta sobre restricciones en tipos de aportes se hizo a receptoras privadas.",
+      "auto_rebase_claim": false
+    }
+  ],
+  "tasks": [
+    {
+      "id": "TASK-P20-SEGUIMIENTO",
+      "problem_ids": [
+        "P20"
+      ],
+      "description": "Organizar respaldos, fechas y seguimiento interno de rendiciones",
+      "status": "hypothesis",
+      "control_scope": "internal_mitigation",
+      "external_constraint": "La respuesta y aprobación dependen del organismo otorgante.",
+      "validation_required": "Medir tiempo de seguimiento, errores y acceso permitido a expedientes."
+    },
+    {
+      "id": "TASK-P48-CARGA",
+      "problem_ids": [
+        "P48"
+      ],
+      "description": "Registrar y visualizar carga administrativa y plazas financiadas",
+      "status": "hypothesis",
+      "control_scope": "mixed",
+      "external_constraint": "No altera dotación, plazas financiadas ni sobrecupo estructural; datos de infancia requieren permisos.",
+      "validation_required": "Confirmar población, protocolos y datos no identificables antes de diseñar solución."
+    },
+    {
+      "id": "TASK-P25-REQUISITOS",
+      "problem_ids": [
+        "P25"
+      ],
+      "description": "Orientar búsqueda de requisitos públicos para donaciones y trámites",
+      "status": "hypothesis",
+      "control_scope": "internal_mitigation",
+      "external_constraint": "No cambia la norma ni sustituye la decisión de autoridad competente.",
+      "validation_required": "Comparar índice público y búsqueda asistida en tareas reales con precisión y revisión."
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "ALT-P20-CHECKLIST",
+      "task_ids": [
+        "TASK-P20-SEGUIMIENTO"
+      ],
+      "problem_ids": [
+        "P20"
+      ],
+      "name": "Checklist, planilla de respaldos y seguimiento SISREC",
+      "type": "conventional_comparator",
+      "source_note": "T3_documentary_hypothesis",
+      "observed_advantage": null,
+      "validation_required": "Probar trazabilidad, costo humano y acceso al convenio"
+    },
+    {
+      "id": "ALT-P20-COPILOTO-IA",
+      "task_ids": [
+        "TASK-P20-SEGUIMIENTO"
+      ],
+      "problem_ids": [
+        "P20"
+      ],
+      "name": "Copiloto de rendiciones y respaldos (hipótesis IA C)",
+      "type": "ai_hypothesis",
+      "source_note": "T3_documentary_hypothesis",
+      "observed_advantage": null,
+      "validation_required": "Demostrar ventaja sobre controles deterministas usando expedientes autorizados"
+    },
+    {
+      "id": "ALT-P25-INDICE",
+      "task_ids": [
+        "TASK-P25-REQUISITOS"
+      ],
+      "problem_ids": [
+        "P25"
+      ],
+      "name": "Índice público, buscador y listas versionadas por régimen",
+      "type": "conventional_comparator",
+      "source_note": "T3_documentary_hypothesis",
+      "observed_advantage": null,
+      "validation_required": "Medir completitud y actualización normativa"
+    },
+    {
+      "id": "ALT-P25-BUSCADOR-IA",
+      "task_ids": [
+        "TASK-P25-REQUISITOS"
+      ],
+      "problem_ids": [
+        "P25"
+      ],
+      "name": "Buscador de requisitos y antecedentes (hipótesis IA C)",
+      "type": "ai_hypothesis",
+      "source_note": "T3_documentary_hypothesis",
+      "observed_advantage": null,
+      "validation_required": "Comprobar exactitud, citas, abstención y tiempo frente al índice tradicional"
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "OPP-P20-COPILOTO",
+      "task_id": "TASK-P20-SEGUIMIENTO",
+      "alternative_id": "ALT-P20-COPILOTO-IA",
+      "comparator_id": "ALT-P20-CHECKLIST",
+      "status": "research_candidate",
+      "measured_incremental_impact": null,
+      "measured_operating_cost": null,
+      "adoption_rate": null,
+      "next_test": "Validar corpus autorizado y comparar proceso manual/automatizado en casos anonimizados."
+    },
+    {
+      "id": "OPP-P25-BUSCADOR",
+      "task_id": "TASK-P25-REQUISITOS",
+      "alternative_id": "ALT-P25-BUSCADOR-IA",
+      "comparator_id": "ALT-P25-INDICE",
+      "status": "research_candidate",
+      "measured_incremental_impact": null,
+      "measured_operating_cost": null,
+      "adoption_rate": null,
+      "next_test": "Comparar consultas reales con y sin IA; medir citas correctas, omisiones y tiempo total de revisión."
+    }
+  ],
+  "reviews": [
+    {
+      "id": "REV-CONTRACT-001",
+      "entity_kind": "contract",
+      "entity_id": "PX-1.2@0.1.0",
+      "status": "pending_human",
+      "reviewer": null,
+      "reviewed_at": null,
+      "note": "Propuesta técnica comprobada automáticamente; no validación de Juanra."
+    },
+    {
+      "id": "REV-CLAIM-001",
+      "entity_kind": "claim",
+      "entity_id": "CLM-F03-D22-RENDICION-62",
+      "status": "pending_human",
+      "reviewer": null,
+      "reviewed_at": null,
+      "note": "La cifra es del catálogo auditado, no nueva verificación del PDF en esta microtarea."
+    },
+    {
+      "id": "REV-OPP-001",
+      "entity_kind": "opportunity",
+      "entity_id": "OPP-P25-BUSCADOR",
+      "status": "pending_human",
+      "reviewer": null,
+      "reviewed_at": null,
+      "note": "No se ha demostrado ventaja incremental de IA."
+    }
+  ]
+}
