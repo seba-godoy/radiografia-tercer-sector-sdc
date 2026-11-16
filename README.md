@@ -8,6 +8,14 @@ La primera dirección redirige a la segunda. Las actualizaciones en la rama `mai
 
 Sitio estático con diagnóstico documental, ranking B preliminar (importancia de 31 problemas), ranking C exploratorio (oportunidades de IA) e historial verificable de versiones.
 
+## Gobierno de desarrollo (protocolo DIMI v2.0)
+
+**Antes de desarrollar:** leer [AGENTS.md](AGENTS.md), [GOALS.md](GOALS.md), [PLANS.md](PLANS.md), [PROMPTS.md](PROMPTS.md) y [Protocolo](docs/PROTOCOL.md). Las reglas de datos, QA, seguridad, release y relevo están en `docs/`. Existe una matriz de 49 microtareas en Notion (PX-0...PX-6, INT, BOT); para no divulgar enlaces internos este repositorio público identifica las páginas por nombre.
+
+**Estado:** el rediseño está propuesto, no aprobado ni iniciado. M17e en pausa; prioridad de conversación PX-0. El sitio continúa en v0.6 sin cambio de funcionalidades por esta gobernanza.
+
+**Control estático:** `python3 scripts/validate_baseline.py` valida la estructura del corte actual (26 fuentes, 31 problemas, 121 segmentos, 4 IA + 2 convencionales, vistas B), además de la existencia de documentos. El workflow `baseline-integrity` está preparado para pull requests y main; no sustituye pruebas reales de navegador ni auditoría metodológica. Las reglas de protección efectiva de main se deben activar con acceso administrativo válido: ver [RELEASE](docs/RELEASE.md). **Ningún texto de procedimiento equivale a branch protection configurada.**
+
 ## Consulta
 - `index.html`: versión pública más reciente.
 - `versiones/`: cortes anteriores.

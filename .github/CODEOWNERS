@@ -1,0 +1,7 @@
+# Propuesta de propiedad para revisión de cambios.
+# Esto NO obliga a aprobar PR hasta activar "Require review from Code Owners" en un ruleset.
+* @seba-godoy
+/.github/CODEOWNERS @seba-godoy
+/AGENTS.md @seba-godoy
+/PLANS.md @seba-godoy
+/docs/ @seba-godoy
