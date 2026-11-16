@@ -1,8 +1,20 @@
 [
   {
-    "version": "0.5",
+    "version": "0.6",
     "fecha": "2026-11-16",
     "estado": "actual",
+    "tipo": "vista ejecutiva de suficiencia de ranking B",
+    "cambios": [
+      "Nueva pestaña Suficiencia B con 31 filas, filtros para 15 señales F03 y 16 respaldos sectoriales",
+      "Cuatro criterios B con ND explícitos, sin sustituir ausencia de datos por cero",
+      "Tres decisiones para la reunión del 17/11, sin presumir acuerdos ni pilotos",
+      "v0.5 archivada; catálogo A, bandas B y opciones C preservadas"
+    ]
+  },
+  {
+    "version": "0.5",
+    "fecha": "2026-11-16",
+    "estado": "archivada",
     "tipo": "demo ejecutiva auditada",
     "cambios": [
       "Vista Certezas y límites: siete indicadores F03 con página, denominador y cautela, más contrastes F07/F08/F10/F26",

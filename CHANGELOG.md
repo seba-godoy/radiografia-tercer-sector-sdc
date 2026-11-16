@@ -1,5 +1,14 @@
 # Historial de cambios · Radiografía Simón de Cirene
 
+## 0.6 (2026-11-16) · Suficiencia B y preparación de reunión del 17/11
+- Pestaña «Suficiencia B»: 31 fichas con indicador contextual o evidencia cualitativa, 4 criterios, riesgos de inferencia y enlaces públicos
+- Filtros interactivos: 15 con indicador principal F03 y 16 respaldadas en otras fuentes; búsqueda entre 31 filas
+- Tres preguntas de decisión para Juanra, cuya reunión está programada para el martes 17/11 a las 10:00 (no realizada aún)
+- 0 puntuaciones B completas: no se inventan frecuencias, impacto, urgencia ni acuerdos
+- Catálogo A, las bandas B 11/12/8 y C 4 IA + 2 sin IA inalterados; v0.5 archivada en versiones/v0.5/
+- Actas y matriz de suficiencia M17a/M17b/M17c preservadas en analisis/
+
+
 ## 0.5 (2026-11-16) · Demo ejecutiva preliminar
 - Pestaña «Certezas y límites»: 7 señales F03 con base, período, PDF/página y lectura que NO está autorizada; contraste F07, F08, F10 y F26
 - Ranking B: escenarios de continuidad, proporción en N=125 y sostenibilidad del equipo; 31 filas y bandas 11 alta / 12 media / 8 por validar sin puntaje oficial
