@@ -1,0 +1,8 @@
+"topic_id","theme","problem_count","percent_of_31","problem_ids","publication_links_sum","distinct_publications_in_theme","distinct_document_roots_candidates","credited_origin_candidates","findings_count","single_publication_problems","single_publication_P_ids","source_repeat_warning","independent_studies_count","incidence"
+"T01","Captación y sostenibilidad financiera","6","19.35","P13;P14;P15;P25;P26;P54","36","19","18","18","59","1","P54","No sumar F únicas entre temas","ND","ND"
+"T02","Caja y ciclo de convenios","7","22.58","P02;P16;P17;P18;P19;P43;P49","36","14","14","14","60","0","","No sumar F únicas entre temas","ND","ND"
+"T03","Rendición y cierre financiero","5","16.13","P20;P21;P22;P50;P51","18","7","7","7","27","1","P51","No sumar F únicas entre temas","ND","ND"
+"T04","Trámites, datos y reportabilidad","4","12.9","P32;P38;P40;P41","13","12","12","12","23","2","P40;P41","No sumar F únicas entre temas","ND","ND"
+"T05","Gestión interna, talento y evaluación","3","9.68","P11;P28;P47","24","14","14","14","40","0","","No sumar F únicas entre temas","ND","ND"
+"T06","Operación y cobertura de servicios","4","12.9","P23;P48;P52;P53","4","2","2","2","7","4","P23;P48;P52;P53","No sumar F únicas entre temas","ND","ND"
+"T07","Redes, visibilidad e incidencia","2","6.45","P30;P46","16","14","13","13","29","0","","No sumar F únicas entre temas","ND","ND"
