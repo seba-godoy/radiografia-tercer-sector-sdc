@@ -1,0 +1,1809 @@
+{
+  "manifest": {
+    "id": "PX-R2.2a-taxonomia-v1.0.0",
+    "version": "1.0.0",
+    "cut": "2026-11-17",
+    "audience": "Juanra y equipo DIMI",
+    "scope": "catálogo de problemas documentados, Chile/OSC; no prevalencia nacional",
+    "decision": "temas para sección Problemas detectados",
+    "coverage_basis": "una categoría primaria por P; secundarios solo contextuales, no sumados",
+    "input_sha_lineage": "f328fe8caa943d3a3c24c13d09071c498ae74897",
+    "input_sha_attribution": "9172085003578907d2511d3c6af7c3e789ea27a3",
+    "input_paths": [
+      "analisis/px-r2-1-linaje-31p-147v-245h-v1.json",
+      "analisis/px-r1-2b-attribution-31p-147links-v1.json"
+    ],
+    "method": "codificación temática editorial de títulos y linaje; no clasificación estadística ni de misión institucional",
+    "external_framework_note": "El Mapa OSC 2023 clasifica áreas de actividad/organización; estas 7 clases describen dolores operacionales y NO reutilizan sus porcentajes o denominadores.",
+    "external_background_url": "https://politicaspublicas.uc.cl/publicacion/mapa-de-las-organizaciones-de-la-sociedad-civil-2023/",
+    "status": "propuesta editorial auditada estructuralmente; validación con Juanra pendiente",
+    "segment_specific_analysis": "PX-R2.2b pendiente; no se recalcularon cifras por fundaciones",
+    "uncertainty": "posibles solapamientos entre estudios; casos con una fuente; referencias externas ND; 245 pasajes no re-cotejados individualmente",
+    "metric_definitions": {
+      "problem_count": "cantidad de fichas P del catálogo clasificadas con un tema principal; suma 31, no organizaciones afectadas",
+      "problem_catalog_pct": "problem_count/31; solo proporción dentro de este catálogo",
+      "publication_links_sum": "suma de vínculos problema×publicación originales; 147 en total; una F puede aparecer en varias P y temas",
+      "distinct_publication_count": "número de F únicas dentro de tema; no aditivo entre temas",
+      "distinct_original_root_candidate_count": "raíces candidatas únicas del linaje editorial R2.1 dentro de tema (F11/F12 juntas); no estudios independientes",
+      "credited_origin_candidate_count": "orígenes acreditados/candidatos al nivel hallazgo, pueden incluir Focus externo por validar; no estudios independientes",
+      "finding_count": "pasajes/resúmenes F/P documentados; suma 245, no ocurrencia de incidentes",
+      "single_publication_problem_count": "problemas con una sola ficha F en el catálogo, no necesariamente baja prevalencia",
+      "secondary_topic": "marca transversal sin recuento adicional en tabla principal"
+    },
+    "anti_claims": [
+      "no ranking de gravedad",
+      "no tasa de incidencia ni frecuencia sectorial",
+      "no afirmar independencia de raíces",
+      "no sumar F únicas entre temas",
+      "no usar temas secundarios para inflar 31 problemas",
+      "no atribuir proporciones nacionales al catálogo",
+      "no extrapolar cifras fundacionales de muestras mixtas"
+    ],
+    "restrictions": "Fuentes originales y códigos P preservados; cambios futuros requieren nuevo corte, acta y QA."
+  },
+  "totals": {
+    "problems": 31,
+    "topics": 7,
+    "linkPairs": 147,
+    "findings": 245,
+    "sourceFGlobal": 26,
+    "globallyCandidateRoots": 25,
+    "singlySourcedProblems": 8,
+    "secondaryCodedProblems": 14,
+    "reusedFindingAttributions": 5,
+    "sourceAppearingMultipleTopics": 22
+  },
+  "themes": [
+    {
+      "topic_id": "T01",
+      "topic": "Captación y sostenibilidad financiera",
+      "short": "Ingresos y donaciones",
+      "description": "Conseguir y diversificar recursos no condicionados o donaciones; mantener fuentes de ingreso sostenibles en el tiempo.",
+      "include": "captación de aportantes, donaciones, fuentes recurrentes, reservas, continuidad de ingresos, desarrollo de fondos",
+      "exclude": "desembolsos de convenios estatales y administración de su ciclo (T02); rendir gastos ya ejecutados (T03)",
+      "problem_ids": [
+        "P13",
+        "P14",
+        "P15",
+        "P25",
+        "P26",
+        "P54"
+      ],
+      "problem_count": 6,
+      "problem_catalog_pct": 19.35,
+      "publication_links_sum": 36,
+      "distinct_publication_ids": [
+        "F03",
+        "F04",
+        "F06",
+        "F07",
+        "F09",
+        "F10",
+        "F11",
+        "F12",
+        "F14",
+        "F15",
+        "F16",
+        "F17",
+        "F18",
+        "F19",
+        "F20",
+        "F22",
+        "F23",
+        "F26",
+        "F28"
+      ],
+      "distinct_publication_count": 19,
+      "distinct_original_root_candidates": [
+        "ACEDO-RAMIREZ-2011",
+        "ALLISON-KAYE-PLANEACION-2005-ED2",
+        "CEFIS-SAN-CARLOS-GOBERNANZA-2019",
+        "CEFIS-UAI-FILANTROPIA-LOCAL-2022",
+        "CEFIS-UAI-FILANTROPIA-ODS-2023",
+        "COS-FECU-SOCIAL-2024",
+        "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025",
+        "FORTALECIDOS-GLOCAL-2025",
+        "FSCM-ENCUESTA-FORTALECIMIENTO-2023",
+        "IFO-2025-TRASCENDER",
+        "JOSSEY-BASS-HANDBOOK-NONPROFIT-2016",
+        "MINNESOTA-COUNCIL-NONPROFITS-PRACTICES-2014",
+        "SEA-DIRECCIONES-2025",
+        "SEA-DIRECCIONES-2026",
+        "SEA-MESA-SOCIEDAD-CIVIL-2025",
+        "SEA-REGISTROS-OSC-2025",
+        "SEA-REGULACIONES-OSC-2025",
+        "UP-CEFIS-GPR-LATAM-2019"
+      ],
+      "distinct_original_root_candidate_count": 18,
+      "credited_origin_candidates": [
+        "ACEDO-RAMIREZ-2011",
+        "ALLISON-KAYE-PLANEACION-2005-ED2",
+        "CEFIS-SAN-CARLOS-GOBERNANZA-2019",
+        "CEFIS-UAI-FILANTROPIA-LOCAL-2022",
+        "CEFIS-UAI-FILANTROPIA-ODS-2023",
+        "COS-FECU-SOCIAL-2024",
+        "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025",
+        "FORTALECIDOS-GLOCAL-2025",
+        "FSCM-ENCUESTA-FORTALECIMIENTO-2023",
+        "IFO-2025-TRASCENDER",
+        "JOSSEY-BASS-HANDBOOK-NONPROFIT-2016",
+        "MINNESOTA-COUNCIL-NONPROFITS-PRACTICES-2014",
+        "SEA-DIRECCIONES-2025",
+        "SEA-DIRECCIONES-2026",
+        "SEA-MESA-SOCIEDAD-CIVIL-2025",
+        "SEA-REGISTROS-OSC-2025",
+        "SEA-REGULACIONES-OSC-2025",
+        "UP-CEFIS-GPR-LATAM-2019"
+      ],
+      "credited_origin_candidate_count": 18,
+      "finding_count": 59,
+      "single_publication_problem_count": 1,
+      "single_publication_problem_ids": [
+        "P54"
+      ],
+      "possible_overlap_problem_ids": [
+        "P13"
+      ],
+      "explicit_secondary_attributions": 0,
+      "method_role_link_counts": {
+        "encuesta_directivos_organizaciones": 9,
+        "propuestas_participativas": 2,
+        "reportes_organizaciones_autodeclarados": 2,
+        "autodiagnostico_organizacional": 1,
+        "difusion_mismo_autodiagnostico": 1,
+        "difusion_programa_2025": 1,
+        "contexto_conceptual_extranjero": 2,
+        "guia_con_insumos_empiricos": 1,
+        "manual_metodologico": 4,
+        "guia_buenas_practicas": 3,
+        "diagnostico_cualitativo_sectorial": 2,
+        "dos_encuestas_organizacionales": 1,
+        "estudio_filantropia_local": 3,
+        "estudio_filantropia_regional": 2,
+        "contexto_legal": 1,
+        "analisis_registros_entrevistas": 1
+      },
+      "population_evidence_finding_counts": {
+        "M_MIXTA_NO_DESAGREGADA": 18,
+        "G_OSFL_GENERAL": 19,
+        "I_INFERIDA_POR_VALIDAR": 17,
+        "S_SECTORIAL_SIN_FORMA": 3,
+        "F_EXCLUSIVA_EXPLICITA": 2
+      },
+      "independent_study_count": null,
+      "incidence_rate": null,
+      "severity_score": null,
+      "note": "Cobertura del catálogo, no frecuencia de problemas ni estudios independientes."
+    },
+    {
+      "topic_id": "T02",
+      "topic": "Caja y ciclo de convenios",
+      "short": "Convenios y liquidez",
+      "description": "Administrar el ciclo desde la postulación y adjudicación hasta la instalación y continuidad del financiamiento comprometido.",
+      "include": "renovación de contratos con el Estado, transferencias demoradas, garantías, requisitos de inicio, costos excluidos, gastos previos al aporte",
+      "exclude": "revisiones y cierres de rendiciones (T03); cobertura efectiva del servicio (T06)",
+      "problem_ids": [
+        "P02",
+        "P16",
+        "P17",
+        "P18",
+        "P19",
+        "P43",
+        "P49"
+      ],
+      "problem_count": 7,
+      "problem_catalog_pct": 22.58,
+      "publication_links_sum": 36,
+      "distinct_publication_ids": [
+        "F01",
+        "F02",
+        "F03",
+        "F04",
+        "F06",
+        "F07",
+        "F09",
+        "F12",
+        "F15",
+        "F17",
+        "F18",
+        "F20",
+        "F26",
+        "F27"
+      ],
+      "distinct_publication_count": 14,
+      "distinct_original_root_candidates": [
+        "ACEDO-RAMIREZ-2011",
+        "ALLISON-KAYE-PLANEACION-2005-ED2",
+        "CGR-INFOSISREC-REGISTRO-2026",
+        "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025",
+        "IFO-2025-TRASCENDER",
+        "JOSSEY-BASS-HANDBOOK-NONPROFIT-2016",
+        "MINNESOTA-COUNCIL-NONPROFITS-PRACTICES-2014",
+        "SEA-DIRECCIONES-2025",
+        "SEA-DIRECCIONES-2026",
+        "SEA-IMPACTO-ROSTRO-HUMANO-2025",
+        "SEA-MAPA-OSC-2023-2024",
+        "SEA-MESA-SOCIEDAD-CIVIL-2025",
+        "SEA-REGISTROS-OSC-2025",
+        "SEA-REGULACIONES-OSC-2025"
+      ],
+      "distinct_original_root_candidate_count": 14,
+      "credited_origin_candidates": [
+        "ACEDO-RAMIREZ-2011",
+        "ALLISON-KAYE-PLANEACION-2005-ED2",
+        "CGR-INFOSISREC-REGISTRO-2026",
+        "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025",
+        "FOCUS-RESIDENCIAL-ND",
+        "IFO-2025-TRASCENDER",
+        "JOSSEY-BASS-HANDBOOK-NONPROFIT-2016",
+        "MINNESOTA-COUNCIL-NONPROFITS-PRACTICES-2014",
+        "SEA-DIRECCIONES-2025",
+        "SEA-DIRECCIONES-2026",
+        "SEA-IMPACTO-ROSTRO-HUMANO-2025",
+        "SEA-MAPA-OSC-2023-2024",
+        "SEA-MESA-SOCIEDAD-CIVIL-2025",
+        "SEA-REGULACIONES-OSC-2025"
+      ],
+      "credited_origin_candidate_count": 14,
+      "finding_count": 60,
+      "single_publication_problem_count": 0,
+      "single_publication_problem_ids": [],
+      "possible_overlap_problem_ids": [
+        "P02"
+      ],
+      "explicit_secondary_attributions": 2,
+      "method_role_link_counts": {
+        "registro_administrativo_compilado": 1,
+        "documental_administrativo_hibrido": 1,
+        "encuesta_directivos_organizaciones": 9,
+        "analisis_registros_entrevistas": 1,
+        "propuestas_participativas": 4,
+        "guia_buenas_practicas": 3,
+        "manual_metodologico": 5,
+        "diagnostico_cualitativo_sectorial": 6,
+        "contexto_conceptual_extranjero": 1,
+        "registro_administrativo_vivo": 3,
+        "difusion_mismo_autodiagnostico": 1,
+        "contexto_legal": 1
+      },
+      "population_evidence_finding_counts": {
+        "M_MIXTA_NO_DESAGREGADA": 14,
+        "G_OSFL_GENERAL": 12,
+        "F_EXCLUSIVA_EXPLICITA": 3,
+        "I_INFERIDA_POR_VALIDAR": 17,
+        "S_SECTORIAL_SIN_FORMA": 14
+      },
+      "independent_study_count": null,
+      "incidence_rate": null,
+      "severity_score": null,
+      "note": "Cobertura del catálogo, no frecuencia de problemas ni estudios independientes."
+    },
+    {
+      "topic_id": "T03",
+      "topic": "Rendición y cierre financiero",
+      "short": "Rendiciones y gastos",
+      "description": "Registrar, justificar, revisar, corregir y cerrar rendiciones de fondos y saldos de proyectos.",
+      "include": "SISREC, rendiciones abiertas, rechazos o retrabajo, segregación de gastos, saldos de cierre",
+      "exclude": "memorias/balances institucionales no relacionados a convenio (T04); transferencias iniciales (T02)",
+      "problem_ids": [
+        "P20",
+        "P21",
+        "P22",
+        "P50",
+        "P51"
+      ],
+      "problem_count": 5,
+      "problem_catalog_pct": 16.13,
+      "publication_links_sum": 18,
+      "distinct_publication_ids": [
+        "F03",
+        "F04",
+        "F06",
+        "F09",
+        "F15",
+        "F26",
+        "F27"
+      ],
+      "distinct_publication_count": 7,
+      "distinct_original_root_candidates": [
+        "ACEDO-RAMIREZ-2011",
+        "CGR-INFOSISREC-REGISTRO-2026",
+        "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025",
+        "SEA-DIRECCIONES-2025",
+        "SEA-DIRECCIONES-2026",
+        "SEA-MESA-SOCIEDAD-CIVIL-2025",
+        "SEA-REGULACIONES-OSC-2025"
+      ],
+      "distinct_original_root_candidate_count": 7,
+      "credited_origin_candidates": [
+        "ACEDO-RAMIREZ-2011",
+        "CGR-INFOSISREC-REGISTRO-2026",
+        "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025",
+        "SEA-DIRECCIONES-2025",
+        "SEA-DIRECCIONES-2026",
+        "SEA-MESA-SOCIEDAD-CIVIL-2025",
+        "SEA-REGULACIONES-OSC-2025"
+      ],
+      "credited_origin_candidate_count": 7,
+      "finding_count": 27,
+      "single_publication_problem_count": 1,
+      "single_publication_problem_ids": [
+        "P51"
+      ],
+      "possible_overlap_problem_ids": [],
+      "explicit_secondary_attributions": 2,
+      "method_role_link_counts": {
+        "encuesta_directivos_organizaciones": 5,
+        "contexto_legal": 2,
+        "propuestas_participativas": 3,
+        "contexto_conceptual_extranjero": 1,
+        "diagnostico_cualitativo_sectorial": 3,
+        "registro_administrativo_vivo": 4
+      },
+      "population_evidence_finding_counts": {
+        "M_MIXTA_NO_DESAGREGADA": 8,
+        "G_OSFL_GENERAL": 4,
+        "I_INFERIDA_POR_VALIDAR": 1,
+        "S_SECTORIAL_SIN_FORMA": 13,
+        "F_EXCLUSIVA_EXPLICITA": 1
+      },
+      "independent_study_count": null,
+      "incidence_rate": null,
+      "severity_score": null,
+      "note": "Cobertura del catálogo, no frecuencia de problemas ni estudios independientes."
+    },
+    {
+      "topic_id": "T04",
+      "topic": "Trámites, datos y reportabilidad",
+      "short": "Registros y memorias",
+      "description": "Mantener y remitir documentos, antecedentes, memorias, balances e información administrativa requerida.",
+      "include": "duplicación de documentación, acceso a sistemas de registro, envíos de memoria/balance",
+      "exclude": "rendición económica de proyectos o convenios (T03); medición de resultados/impacto (T05)",
+      "problem_ids": [
+        "P32",
+        "P38",
+        "P40",
+        "P41"
+      ],
+      "problem_count": 4,
+      "problem_catalog_pct": 12.9,
+      "publication_links_sum": 13,
+      "distinct_publication_ids": [
+        "F04",
+        "F07",
+        "F08",
+        "F09",
+        "F10",
+        "F16",
+        "F17",
+        "F18",
+        "F19",
+        "F20",
+        "F23",
+        "F28"
+      ],
+      "distinct_publication_count": 12,
+      "distinct_original_root_candidates": [
+        "ALLISON-KAYE-PLANEACION-2005-ED2",
+        "CEFIS-SAN-CARLOS-GOBERNANZA-2019",
+        "CEFIS-UAI-FILANTROPIA-ODS-2023",
+        "COS-FECU-SOCIAL-2024",
+        "FSCM-ENCUESTA-FORTALECIMIENTO-2023",
+        "JOSSEY-BASS-HANDBOOK-NONPROFIT-2016",
+        "MINNESOTA-COUNCIL-NONPROFITS-PRACTICES-2014",
+        "SEA-DIRECCIONES-2025",
+        "SEA-FISCALIZACION-PJ-2025",
+        "SEA-MESA-SOCIEDAD-CIVIL-2025",
+        "SEA-REGISTROS-OSC-2025",
+        "UP-CEFIS-GPR-LATAM-2019"
+      ],
+      "distinct_original_root_candidate_count": 12,
+      "credited_origin_candidates": [
+        "ALLISON-KAYE-PLANEACION-2005-ED2",
+        "CEFIS-SAN-CARLOS-GOBERNANZA-2019",
+        "CEFIS-UAI-FILANTROPIA-ODS-2023",
+        "COS-FECU-SOCIAL-2024",
+        "FSCM-ENCUESTA-FORTALECIMIENTO-2023",
+        "JOSSEY-BASS-HANDBOOK-NONPROFIT-2016",
+        "MINNESOTA-COUNCIL-NONPROFITS-PRACTICES-2014",
+        "SEA-DIRECCIONES-2025",
+        "SEA-FISCALIZACION-PJ-2025",
+        "SEA-MESA-SOCIEDAD-CIVIL-2025",
+        "SEA-REGISTROS-OSC-2025",
+        "UP-CEFIS-GPR-LATAM-2019"
+      ],
+      "credited_origin_candidate_count": 12,
+      "finding_count": 23,
+      "single_publication_problem_count": 2,
+      "single_publication_problem_ids": [
+        "P40",
+        "P41"
+      ],
+      "possible_overlap_problem_ids": [],
+      "explicit_secondary_attributions": 0,
+      "method_role_link_counts": {
+        "encuesta_directivos_organizaciones": 1,
+        "reportes_organizaciones_autodeclarados": 1,
+        "guia_con_insumos_empiricos": 1,
+        "manual_metodologico": 2,
+        "guia_buenas_practicas": 1,
+        "estudio_filantropia_regional": 2,
+        "dos_encuestas_organizacionales": 1,
+        "analisis_registros_entrevistas": 1,
+        "propuestas_participativas": 1,
+        "contexto_normativo": 2
+      },
+      "population_evidence_finding_counts": {
+        "M_MIXTA_NO_DESAGREGADA": 2,
+        "G_OSFL_GENERAL": 15,
+        "I_INFERIDA_POR_VALIDAR": 6
+      },
+      "independent_study_count": null,
+      "incidence_rate": null,
+      "severity_score": null,
+      "note": "Cobertura del catálogo, no frecuencia de problemas ni estudios independientes."
+    },
+    {
+      "topic_id": "T05",
+      "topic": "Gestión interna, talento y evaluación",
+      "short": "Gestión y capacidades",
+      "description": "Fortalecer capacidades de gestión, personas, directorio y medición de resultados de los programas.",
+      "include": "retención de especialistas, alineación del directorio, recursos para evaluar cambios",
+      "exclude": "cobertura y entrega directa de servicios (T06); exigencias de registro (T04)",
+      "problem_ids": [
+        "P11",
+        "P28",
+        "P47"
+      ],
+      "problem_count": 3,
+      "problem_catalog_pct": 9.68,
+      "publication_links_sum": 24,
+      "distinct_publication_ids": [
+        "F02",
+        "F03",
+        "F05",
+        "F09",
+        "F10",
+        "F16",
+        "F17",
+        "F18",
+        "F19",
+        "F20",
+        "F21",
+        "F23",
+        "F26",
+        "F28"
+      ],
+      "distinct_publication_count": 14,
+      "distinct_original_root_candidates": [
+        "ALLISON-KAYE-PLANEACION-2005-ED2",
+        "CEFIS-SAN-CARLOS-GOBERNANZA-2019",
+        "CEFIS-UAI-FILANTROPIA-ODS-2023",
+        "COS-FECU-SOCIAL-2024",
+        "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025",
+        "FSCM-ENCUESTA-FORTALECIMIENTO-2023",
+        "IIDH-REVISTA51-2010-ZERBINI",
+        "JOSSEY-BASS-HANDBOOK-NONPROFIT-2016",
+        "MINNESOTA-COUNCIL-NONPROFITS-PRACTICES-2014",
+        "SEA-CONFIANZA-CIUDADANA-2026",
+        "SEA-DIRECCIONES-2026",
+        "SEA-IMPACTO-ROSTRO-HUMANO-2025",
+        "SEA-MESA-SOCIEDAD-CIVIL-2025",
+        "UP-CEFIS-GPR-LATAM-2019"
+      ],
+      "distinct_original_root_candidate_count": 14,
+      "credited_origin_candidates": [
+        "ALLISON-KAYE-PLANEACION-2005-ED2",
+        "CEFIS-SAN-CARLOS-GOBERNANZA-2019",
+        "CEFIS-UAI-FILANTROPIA-ODS-2023",
+        "COS-FECU-SOCIAL-2024",
+        "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025",
+        "FSCM-ENCUESTA-FORTALECIMIENTO-2023",
+        "IIDH-REVISTA51-2010-ZERBINI",
+        "JOSSEY-BASS-HANDBOOK-NONPROFIT-2016",
+        "MINNESOTA-COUNCIL-NONPROFITS-PRACTICES-2014",
+        "SEA-CONFIANZA-CIUDADANA-2026",
+        "SEA-DIRECCIONES-2026",
+        "SEA-IMPACTO-ROSTRO-HUMANO-2025",
+        "SEA-MESA-SOCIEDAD-CIVIL-2025",
+        "UP-CEFIS-GPR-LATAM-2019"
+      ],
+      "credited_origin_candidate_count": 14,
+      "finding_count": 40,
+      "single_publication_problem_count": 0,
+      "single_publication_problem_ids": [],
+      "possible_overlap_problem_ids": [
+        "P11"
+      ],
+      "explicit_secondary_attributions": 0,
+      "method_role_link_counts": {
+        "documental_administrativo_hibrido": 1,
+        "encuesta_directivos_organizaciones": 2,
+        "percepcion_ciudadana": 1,
+        "propuestas_participativas": 2,
+        "reportes_organizaciones_autodeclarados": 1,
+        "manual_metodologico": 6,
+        "guia_buenas_practicas": 3,
+        "estudio_filantropia_regional": 3,
+        "dos_encuestas_organizacionales": 2,
+        "articulo_teorico": 1,
+        "diagnostico_cualitativo_sectorial": 1,
+        "guia_con_insumos_empiricos": 1
+      },
+      "population_evidence_finding_counts": {
+        "G_OSFL_GENERAL": 14,
+        "M_MIXTA_NO_DESAGREGADA": 5,
+        "I_INFERIDA_POR_VALIDAR": 19,
+        "S_SECTORIAL_SIN_FORMA": 2
+      },
+      "independent_study_count": null,
+      "incidence_rate": null,
+      "severity_score": null,
+      "note": "Cobertura del catálogo, no frecuencia de problemas ni estudios independientes."
+    },
+    {
+      "topic_id": "T06",
+      "topic": "Operación y cobertura de servicios",
+      "short": "Atención y territorio",
+      "description": "Mantener la prestación y la cobertura del servicio frente a capacidades, población y dispersión territorial.",
+      "include": "traspaso de atención y datos a otro operador, sobrecupos, familias de acogida, desplazamientos",
+      "exclude": "causas contractuales o financieras antes de ejecutar el servicio (T02)",
+      "problem_ids": [
+        "P23",
+        "P48",
+        "P52",
+        "P53"
+      ],
+      "problem_count": 4,
+      "problem_catalog_pct": 12.9,
+      "publication_links_sum": 4,
+      "distinct_publication_ids": [
+        "F03",
+        "F26"
+      ],
+      "distinct_publication_count": 2,
+      "distinct_original_root_candidates": [
+        "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025",
+        "SEA-DIRECCIONES-2026"
+      ],
+      "distinct_original_root_candidate_count": 2,
+      "credited_origin_candidates": [
+        "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025",
+        "SEA-DIRECCIONES-2026"
+      ],
+      "credited_origin_candidate_count": 2,
+      "finding_count": 7,
+      "single_publication_problem_count": 4,
+      "single_publication_problem_ids": [
+        "P23",
+        "P48",
+        "P52",
+        "P53"
+      ],
+      "possible_overlap_problem_ids": [],
+      "explicit_secondary_attributions": 0,
+      "method_role_link_counts": {
+        "encuesta_directivos_organizaciones": 1,
+        "diagnostico_cualitativo_sectorial": 3
+      },
+      "population_evidence_finding_counts": {
+        "M_MIXTA_NO_DESAGREGADA": 1,
+        "S_SECTORIAL_SIN_FORMA": 6
+      },
+      "independent_study_count": null,
+      "incidence_rate": null,
+      "severity_score": null,
+      "note": "Cobertura del catálogo, no frecuencia de problemas ni estudios independientes."
+    },
+    {
+      "topic_id": "T07",
+      "topic": "Redes, visibilidad e incidencia",
+      "short": "Visibilidad y políticas",
+      "description": "Participar, ser visible e interactuar con redes y espacios de incidencia relevantes para la organización.",
+      "include": "incidencia en políticas públicas, posicionamiento y acceso a oportunidades por visibilidad",
+      "exclude": "postulación a fondos o captura directa de donaciones (T01)",
+      "problem_ids": [
+        "P30",
+        "P46"
+      ],
+      "problem_count": 2,
+      "problem_catalog_pct": 6.45,
+      "publication_links_sum": 16,
+      "distinct_publication_ids": [
+        "F04",
+        "F09",
+        "F11",
+        "F12",
+        "F13",
+        "F14",
+        "F17",
+        "F18",
+        "F19",
+        "F21",
+        "F22",
+        "F23",
+        "F26",
+        "F28"
+      ],
+      "distinct_publication_count": 14,
+      "distinct_original_root_candidates": [
+        "CEFIS-UAI-FILANTROPIA-LOCAL-2022",
+        "CEFIS-UAI-FILANTROPIA-ODS-2023",
+        "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025",
+        "ENVS-2025-TRASCENDER-DATAVOZ",
+        "FORTALECIDOS-GLOCAL-2025",
+        "FSCM-ENCUESTA-FORTALECIMIENTO-2023",
+        "IFO-2025-TRASCENDER",
+        "IIDH-REVISTA51-2010-ZERBINI",
+        "JOSSEY-BASS-HANDBOOK-NONPROFIT-2016",
+        "MINNESOTA-COUNCIL-NONPROFITS-PRACTICES-2014",
+        "SEA-DIRECCIONES-2025",
+        "SEA-MESA-SOCIEDAD-CIVIL-2025",
+        "UP-CEFIS-GPR-LATAM-2019"
+      ],
+      "distinct_original_root_candidate_count": 13,
+      "credited_origin_candidates": [
+        "CEFIS-UAI-FILANTROPIA-LOCAL-2022",
+        "CEFIS-UAI-FILANTROPIA-ODS-2023",
+        "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025",
+        "ENVS-2025-TRASCENDER-DATAVOZ",
+        "FORTALECIDOS-GLOCAL-2025",
+        "FSCM-ENCUESTA-FORTALECIMIENTO-2023",
+        "IFO-2025-TRASCENDER",
+        "IIDH-REVISTA51-2010-ZERBINI",
+        "JOSSEY-BASS-HANDBOOK-NONPROFIT-2016",
+        "MINNESOTA-COUNCIL-NONPROFITS-PRACTICES-2014",
+        "SEA-DIRECCIONES-2025",
+        "SEA-MESA-SOCIEDAD-CIVIL-2025",
+        "UP-CEFIS-GPR-LATAM-2019"
+      ],
+      "credited_origin_candidate_count": 13,
+      "finding_count": 29,
+      "single_publication_problem_count": 0,
+      "single_publication_problem_ids": [],
+      "possible_overlap_problem_ids": [
+        "P46"
+      ],
+      "explicit_secondary_attributions": 1,
+      "method_role_link_counts": {
+        "encuesta_directivos_organizaciones": 1,
+        "propuestas_participativas": 1,
+        "manual_metodologico": 1,
+        "guia_buenas_practicas": 2,
+        "estudio_filantropia_regional": 3,
+        "diagnostico_cualitativo_sectorial": 1,
+        "articulo_teorico": 1,
+        "autodiagnostico_organizacional": 1,
+        "difusion_mismo_autodiagnostico": 1,
+        "percepcion_voluntariado_ciudadano": 1,
+        "difusion_programa_2025": 1,
+        "dos_encuestas_organizacionales": 1,
+        "estudio_filantropia_local": 1
+      },
+      "population_evidence_finding_counts": {
+        "M_MIXTA_NO_DESAGREGADA": 5,
+        "G_OSFL_GENERAL": 13,
+        "I_INFERIDA_POR_VALIDAR": 10,
+        "S_SECTORIAL_SIN_FORMA": 1
+      },
+      "independent_study_count": null,
+      "incidence_rate": null,
+      "severity_score": null,
+      "note": "Cobertura del catálogo, no frecuencia de problemas ni estudios independientes."
+    }
+  ],
+  "problems": [
+    {
+      "problem_id": "P02",
+      "problem_title": "Interrumpimos servicios cuando no se renueva un convenio",
+      "primary_topic_id": "T02",
+      "primary_topic": "Caja y ciclo de convenios",
+      "secondary_topic_id": "T06",
+      "secondary_reason": "El corte del convenio interrumpe el servicio, además de ser un problema contractual.",
+      "assignment_basis": "lectura_editorial_del_titulo_del_problema_y_matriz_R2.1",
+      "source_ids": [
+        "F01",
+        "F02",
+        "F03",
+        "F04",
+        "F07",
+        "F09",
+        "F18",
+        "F20",
+        "F26"
+      ],
+      "raw_publications": 9,
+      "document_roots_candidate": 9,
+      "credited_origin_candidates": 8,
+      "findings": 14,
+      "single_publication": false,
+      "independent_study_count": null,
+      "population_incidence": null,
+      "severity_rank": null,
+      "possible_overlap_pair_count": 2,
+      "secondary_attribution_count": 1,
+      "segment_cross_status": "parcial_con_cruces_no_exhaustivos",
+      "trace_links": [
+        "analisis/px-r2-1-linaje-31p-147v-245h-v1.json#P02"
+      ]
+    },
+    {
+      "problem_id": "P11",
+      "problem_title": "Nos faltan recursos para medir qué cambió con nuestros programas",
+      "primary_topic_id": "T05",
+      "primary_topic": "Gestión interna, talento y evaluación",
+      "secondary_topic_id": "T06",
+      "secondary_reason": "Medir resultados se vincula con mejorar los programas, sin medir aquí su cobertura.",
+      "assignment_basis": "lectura_editorial_del_titulo_del_problema_y_matriz_R2.1",
+      "source_ids": [
+        "F02",
+        "F03",
+        "F05",
+        "F09",
+        "F10",
+        "F17",
+        "F18",
+        "F19",
+        "F20",
+        "F28",
+        "F21",
+        "F23"
+      ],
+      "raw_publications": 12,
+      "document_roots_candidate": 12,
+      "credited_origin_candidates": 12,
+      "findings": 21,
+      "single_publication": false,
+      "independent_study_count": null,
+      "population_incidence": null,
+      "severity_rank": null,
+      "possible_overlap_pair_count": 1,
+      "secondary_attribution_count": 0,
+      "segment_cross_status": "parcial_con_cruces_no_exhaustivos",
+      "trace_links": [
+        "analisis/px-r2-1-linaje-31p-147v-245h-v1.json#P11"
+      ]
+    },
+    {
+      "problem_id": "P13",
+      "problem_title": "Nos cuesta asegurar ingresos estables para planificar",
+      "primary_topic_id": "T01",
+      "primary_topic": "Captación y sostenibilidad financiera",
+      "secondary_topic_id": null,
+      "secondary_reason": null,
+      "assignment_basis": "lectura_editorial_del_titulo_del_problema_y_matriz_R2.1",
+      "source_ids": [
+        "F03",
+        "F04",
+        "F09",
+        "F10",
+        "F11",
+        "F12",
+        "F14",
+        "F15",
+        "F16",
+        "F17",
+        "F18",
+        "F20",
+        "F26",
+        "F28",
+        "F22",
+        "F23"
+      ],
+      "raw_publications": 16,
+      "document_roots_candidate": 15,
+      "credited_origin_candidates": 15,
+      "findings": 28,
+      "single_publication": false,
+      "independent_study_count": null,
+      "population_incidence": null,
+      "severity_rank": null,
+      "possible_overlap_pair_count": 2,
+      "secondary_attribution_count": 0,
+      "segment_cross_status": "parcial_con_cruces_no_exhaustivos",
+      "trace_links": [
+        "analisis/px-r2-1-linaje-31p-147v-245h-v1.json#P13"
+      ]
+    },
+    {
+      "problem_id": "P14",
+      "problem_title": "Podríamos sostener pocos meses de operación sin aportes externos",
+      "primary_topic_id": "T01",
+      "primary_topic": "Captación y sostenibilidad financiera",
+      "secondary_topic_id": null,
+      "secondary_reason": null,
+      "assignment_basis": "lectura_editorial_del_titulo_del_problema_y_matriz_R2.1",
+      "source_ids": [
+        "F03",
+        "F06",
+        "F15",
+        "F17",
+        "F18",
+        "F20",
+        "F26"
+      ],
+      "raw_publications": 7,
+      "document_roots_candidate": 7,
+      "credited_origin_candidates": 7,
+      "findings": 11,
+      "single_publication": false,
+      "independent_study_count": null,
+      "population_incidence": null,
+      "severity_rank": null,
+      "possible_overlap_pair_count": 0,
+      "secondary_attribution_count": 0,
+      "segment_cross_status": "parcial_con_cruces_no_exhaustivos",
+      "trace_links": [
+        "analisis/px-r2-1-linaje-31p-147v-245h-v1.json#P14"
+      ]
+    },
+    {
+      "problem_id": "P15",
+      "problem_title": "Perdemos una vía habitual de financiamiento cuando desaparece una convocatoria",
+      "primary_topic_id": "T01",
+      "primary_topic": "Captación y sostenibilidad financiera",
+      "secondary_topic_id": null,
+      "secondary_reason": null,
+      "assignment_basis": "lectura_editorial_del_titulo_del_problema_y_matriz_R2.1",
+      "source_ids": [
+        "F03",
+        "F04"
+      ],
+      "raw_publications": 2,
+      "document_roots_candidate": 2,
+      "credited_origin_candidates": 2,
+      "findings": 3,
+      "single_publication": false,
+      "independent_study_count": null,
+      "population_incidence": null,
+      "severity_rank": null,
+      "possible_overlap_pair_count": 0,
+      "secondary_attribution_count": 0,
+      "segment_cross_status": "parcial_con_cruces_no_exhaustivos",
+      "trace_links": [
+        "analisis/px-r2-1-linaje-31p-147v-245h-v1.json#P15"
+      ]
+    },
+    {
+      "problem_id": "P16",
+      "problem_title": "Las transferencias comprometidas llegan tarde",
+      "primary_topic_id": "T02",
+      "primary_topic": "Caja y ciclo de convenios",
+      "secondary_topic_id": null,
+      "secondary_reason": null,
+      "assignment_basis": "lectura_editorial_del_titulo_del_problema_y_matriz_R2.1",
+      "source_ids": [
+        "F03",
+        "F04",
+        "F09",
+        "F15",
+        "F17",
+        "F18",
+        "F26",
+        "F27"
+      ],
+      "raw_publications": 8,
+      "document_roots_candidate": 8,
+      "credited_origin_candidates": 7,
+      "findings": 13,
+      "single_publication": false,
+      "independent_study_count": null,
+      "population_incidence": null,
+      "severity_rank": null,
+      "possible_overlap_pair_count": 0,
+      "secondary_attribution_count": 1,
+      "segment_cross_status": "parcial_con_cruces_no_exhaustivos",
+      "trace_links": [
+        "analisis/px-r2-1-linaje-31p-147v-245h-v1.json#P16"
+      ]
+    },
+    {
+      "problem_id": "P17",
+      "problem_title": "Tenemos que cubrir costos que el convenio no permite rendir",
+      "primary_topic_id": "T02",
+      "primary_topic": "Caja y ciclo de convenios",
+      "secondary_topic_id": "T03",
+      "secondary_reason": "Los costos no rendibles se relacionan con las reglas de comprobación de gastos.",
+      "assignment_basis": "lectura_editorial_del_titulo_del_problema_y_matriz_R2.1",
+      "source_ids": [
+        "F03",
+        "F09",
+        "F12",
+        "F17",
+        "F18",
+        "F20",
+        "F26",
+        "F27"
+      ],
+      "raw_publications": 8,
+      "document_roots_candidate": 8,
+      "credited_origin_candidates": 9,
+      "findings": 15,
+      "single_publication": false,
+      "independent_study_count": null,
+      "population_incidence": null,
+      "severity_rank": null,
+      "possible_overlap_pair_count": 0,
+      "secondary_attribution_count": 0,
+      "segment_cross_status": "parcial_con_cruces_no_exhaustivos",
+      "trace_links": [
+        "analisis/px-r2-1-linaje-31p-147v-245h-v1.json#P17"
+      ]
+    },
+    {
+      "problem_id": "P18",
+      "problem_title": "La demora en la toma de razón impide iniciar actividades",
+      "primary_topic_id": "T02",
+      "primary_topic": "Caja y ciclo de convenios",
+      "secondary_topic_id": null,
+      "secondary_reason": null,
+      "assignment_basis": "lectura_editorial_del_titulo_del_problema_y_matriz_R2.1",
+      "source_ids": [
+        "F03",
+        "F04"
+      ],
+      "raw_publications": 2,
+      "document_roots_candidate": 2,
+      "credited_origin_candidates": 2,
+      "findings": 2,
+      "single_publication": false,
+      "independent_study_count": null,
+      "population_incidence": null,
+      "severity_rank": null,
+      "possible_overlap_pair_count": 0,
+      "secondary_attribution_count": 0,
+      "segment_cross_status": "parcial_con_cruces_no_exhaustivos",
+      "trace_links": [
+        "analisis/px-r2-1-linaje-31p-147v-245h-v1.json#P18"
+      ]
+    },
+    {
+      "problem_id": "P19",
+      "problem_title": "Las garantías dificultan que organizaciones pequeñas contraten con el Estado",
+      "primary_topic_id": "T02",
+      "primary_topic": "Caja y ciclo de convenios",
+      "secondary_topic_id": "T01",
+      "secondary_reason": "Las garantías constituyen también una barrera de acceso al financiamiento público.",
+      "assignment_basis": "lectura_editorial_del_titulo_del_problema_y_matriz_R2.1",
+      "source_ids": [
+        "F03",
+        "F04",
+        "F06",
+        "F26"
+      ],
+      "raw_publications": 4,
+      "document_roots_candidate": 4,
+      "credited_origin_candidates": 4,
+      "findings": 6,
+      "single_publication": false,
+      "independent_study_count": null,
+      "population_incidence": null,
+      "severity_rank": null,
+      "possible_overlap_pair_count": 0,
+      "secondary_attribution_count": 0,
+      "segment_cross_status": "parcial_con_cruces_no_exhaustivos",
+      "trace_links": [
+        "analisis/px-r2-1-linaje-31p-147v-245h-v1.json#P19"
+      ]
+    },
+    {
+      "problem_id": "P20",
+      "problem_title": "Nuestras rendiciones quedan abiertas por falta de respuesta",
+      "primary_topic_id": "T03",
+      "primary_topic": "Rendición y cierre financiero",
+      "secondary_topic_id": null,
+      "secondary_reason": null,
+      "assignment_basis": "lectura_editorial_del_titulo_del_problema_y_matriz_R2.1",
+      "source_ids": [
+        "F03",
+        "F04",
+        "F06",
+        "F09",
+        "F15",
+        "F26",
+        "F27"
+      ],
+      "raw_publications": 7,
+      "document_roots_candidate": 7,
+      "credited_origin_candidates": 6,
+      "findings": 9,
+      "single_publication": false,
+      "independent_study_count": null,
+      "population_incidence": null,
+      "severity_rank": null,
+      "possible_overlap_pair_count": 0,
+      "secondary_attribution_count": 1,
+      "segment_cross_status": "parcial_con_cruces_no_exhaustivos",
+      "trace_links": [
+        "analisis/px-r2-1-linaje-31p-147v-245h-v1.json#P20"
+      ]
+    },
+    {
+      "problem_id": "P21",
+      "problem_title": "Nos piden rehacer rendiciones que ya habían aprobado",
+      "primary_topic_id": "T03",
+      "primary_topic": "Rendición y cierre financiero",
+      "secondary_topic_id": null,
+      "secondary_reason": null,
+      "assignment_basis": "lectura_editorial_del_titulo_del_problema_y_matriz_R2.1",
+      "source_ids": [
+        "F03",
+        "F04",
+        "F09",
+        "F27"
+      ],
+      "raw_publications": 4,
+      "document_roots_candidate": 4,
+      "credited_origin_candidates": 3,
+      "findings": 6,
+      "single_publication": false,
+      "independent_study_count": null,
+      "population_incidence": null,
+      "severity_rank": null,
+      "possible_overlap_pair_count": 0,
+      "secondary_attribution_count": 1,
+      "segment_cross_status": "parcial_con_cruces_no_exhaustivos",
+      "trace_links": [
+        "analisis/px-r2-1-linaje-31p-147v-245h-v1.json#P21"
+      ]
+    },
+    {
+      "problem_id": "P22",
+      "problem_title": "Nos cuesta rendir gastos en SISREC",
+      "primary_topic_id": "T03",
+      "primary_topic": "Rendición y cierre financiero",
+      "secondary_topic_id": null,
+      "secondary_reason": null,
+      "assignment_basis": "lectura_editorial_del_titulo_del_problema_y_matriz_R2.1",
+      "source_ids": [
+        "F03",
+        "F06",
+        "F09",
+        "F27"
+      ],
+      "raw_publications": 4,
+      "document_roots_candidate": 4,
+      "credited_origin_candidates": 4,
+      "findings": 6,
+      "single_publication": false,
+      "independent_study_count": null,
+      "population_incidence": null,
+      "severity_rank": null,
+      "possible_overlap_pair_count": 0,
+      "secondary_attribution_count": 0,
+      "segment_cross_status": "parcial_con_cruces_no_exhaustivos",
+      "trace_links": [
+        "analisis/px-r2-1-linaje-31p-147v-245h-v1.json#P22"
+      ]
+    },
+    {
+      "problem_id": "P23",
+      "problem_title": "Debemos traspasar la atención y los datos si no renuevan el convenio",
+      "primary_topic_id": "T06",
+      "primary_topic": "Operación y cobertura de servicios",
+      "secondary_topic_id": "T02",
+      "secondary_reason": "El traspaso de datos/atención ocurre al terminar o no renovarse el convenio.",
+      "assignment_basis": "lectura_editorial_del_titulo_del_problema_y_matriz_R2.1",
+      "source_ids": [
+        "F03"
+      ],
+      "raw_publications": 1,
+      "document_roots_candidate": 1,
+      "credited_origin_candidates": 1,
+      "findings": 1,
+      "single_publication": true,
+      "independent_study_count": null,
+      "population_incidence": null,
+      "severity_rank": null,
+      "possible_overlap_pair_count": 0,
+      "secondary_attribution_count": 0,
+      "segment_cross_status": "parcial_con_cruces_no_exhaustivos",
+      "trace_links": [
+        "analisis/px-r2-1-linaje-31p-147v-245h-v1.json#P23"
+      ]
+    },
+    {
+      "problem_id": "P25",
+      "problem_title": "Los requisitos dispersos nos dificultan recibir donaciones",
+      "primary_topic_id": "T01",
+      "primary_topic": "Captación y sostenibilidad financiera",
+      "secondary_topic_id": "T04",
+      "secondary_reason": "La dispersión de requisitos es también un problema de información y trámites.",
+      "assignment_basis": "lectura_editorial_del_titulo_del_problema_y_matriz_R2.1",
+      "source_ids": [
+        "F03",
+        "F04",
+        "F07",
+        "F09",
+        "F10",
+        "F22"
+      ],
+      "raw_publications": 6,
+      "document_roots_candidate": 6,
+      "credited_origin_candidates": 6,
+      "findings": 9,
+      "single_publication": false,
+      "independent_study_count": null,
+      "population_incidence": null,
+      "severity_rank": null,
+      "possible_overlap_pair_count": 0,
+      "secondary_attribution_count": 0,
+      "segment_cross_status": "parcial_con_cruces_no_exhaustivos",
+      "trace_links": [
+        "analisis/px-r2-1-linaje-31p-147v-245h-v1.json#P25"
+      ]
+    },
+    {
+      "problem_id": "P26",
+      "problem_title": "Los trámites de algunos donantes complican obtener o rendir fondos",
+      "primary_topic_id": "T01",
+      "primary_topic": "Captación y sostenibilidad financiera",
+      "secondary_topic_id": "T03",
+      "secondary_reason": "Los procesos de algunos donantes afectan tanto la obtención como la rendición.",
+      "assignment_basis": "lectura_editorial_del_titulo_del_problema_y_matriz_R2.1",
+      "source_ids": [
+        "F03",
+        "F04",
+        "F18",
+        "F19"
+      ],
+      "raw_publications": 4,
+      "document_roots_candidate": 4,
+      "credited_origin_candidates": 4,
+      "findings": 6,
+      "single_publication": false,
+      "independent_study_count": null,
+      "population_incidence": null,
+      "severity_rank": null,
+      "possible_overlap_pair_count": 0,
+      "secondary_attribution_count": 0,
+      "segment_cross_status": "parcial_con_cruces_no_exhaustivos",
+      "trace_links": [
+        "analisis/px-r2-1-linaje-31p-147v-245h-v1.json#P26"
+      ]
+    },
+    {
+      "problem_id": "P28",
+      "problem_title": "Nos cuesta mantener los contratos y retener especialistas",
+      "primary_topic_id": "T05",
+      "primary_topic": "Gestión interna, talento y evaluación",
+      "secondary_topic_id": null,
+      "secondary_reason": null,
+      "assignment_basis": "lectura_editorial_del_titulo_del_problema_y_matriz_R2.1",
+      "source_ids": [
+        "F03",
+        "F09",
+        "F17",
+        "F18",
+        "F20",
+        "F26",
+        "F28"
+      ],
+      "raw_publications": 7,
+      "document_roots_candidate": 7,
+      "credited_origin_candidates": 7,
+      "findings": 11,
+      "single_publication": false,
+      "independent_study_count": null,
+      "population_incidence": null,
+      "severity_rank": null,
+      "possible_overlap_pair_count": 0,
+      "secondary_attribution_count": 0,
+      "segment_cross_status": "parcial_con_cruces_no_exhaustivos",
+      "trace_links": [
+        "analisis/px-r2-1-linaje-31p-147v-245h-v1.json#P28"
+      ]
+    },
+    {
+      "problem_id": "P30",
+      "problem_title": "Nos cuesta aportar a políticas públicas en espacios dispersos e intermitentes",
+      "primary_topic_id": "T07",
+      "primary_topic": "Redes, visibilidad e incidencia",
+      "secondary_topic_id": null,
+      "secondary_reason": null,
+      "assignment_basis": "lectura_editorial_del_titulo_del_problema_y_matriz_R2.1",
+      "source_ids": [
+        "F04",
+        "F09",
+        "F17",
+        "F18",
+        "F19",
+        "F26",
+        "F21",
+        "F23"
+      ],
+      "raw_publications": 8,
+      "document_roots_candidate": 8,
+      "credited_origin_candidates": 8,
+      "findings": 17,
+      "single_publication": false,
+      "independent_study_count": null,
+      "population_incidence": null,
+      "severity_rank": null,
+      "possible_overlap_pair_count": 0,
+      "secondary_attribution_count": 1,
+      "segment_cross_status": "ND_sin_cruce",
+      "trace_links": [
+        "analisis/px-r2-1-linaje-31p-147v-245h-v1.json#P30"
+      ]
+    },
+    {
+      "problem_id": "P32",
+      "problem_title": "Nos falta capacidad de equipo para preparar la memoria y el balance",
+      "primary_topic_id": "T04",
+      "primary_topic": "Trámites, datos y reportabilidad",
+      "secondary_topic_id": "T05",
+      "secondary_reason": "La dificultad de elaborar memoria/balance deriva de capacidad del equipo.",
+      "assignment_basis": "lectura_editorial_del_titulo_del_problema_y_matriz_R2.1",
+      "source_ids": [
+        "F04",
+        "F10",
+        "F16",
+        "F17",
+        "F18",
+        "F19",
+        "F20",
+        "F28",
+        "F23"
+      ],
+      "raw_publications": 9,
+      "document_roots_candidate": 9,
+      "credited_origin_candidates": 9,
+      "findings": 14,
+      "single_publication": false,
+      "independent_study_count": null,
+      "population_incidence": null,
+      "severity_rank": null,
+      "possible_overlap_pair_count": 0,
+      "secondary_attribution_count": 0,
+      "segment_cross_status": "parcial_con_cruces_no_exhaustivos",
+      "trace_links": [
+        "analisis/px-r2-1-linaje-31p-147v-245h-v1.json#P32"
+      ]
+    },
+    {
+      "problem_id": "P38",
+      "problem_title": "Tenemos que volver a entregar los mismos antecedentes",
+      "primary_topic_id": "T04",
+      "primary_topic": "Trámites, datos y reportabilidad",
+      "secondary_topic_id": "T02",
+      "secondary_reason": "La duplicación de antecedentes puede afectar postulaciones y convenios.",
+      "assignment_basis": "lectura_editorial_del_titulo_del_problema_y_matriz_R2.1",
+      "source_ids": [
+        "F07",
+        "F09"
+      ],
+      "raw_publications": 2,
+      "document_roots_candidate": 2,
+      "credited_origin_candidates": 2,
+      "findings": 5,
+      "single_publication": false,
+      "independent_study_count": null,
+      "population_incidence": null,
+      "severity_rank": null,
+      "possible_overlap_pair_count": 0,
+      "secondary_attribution_count": 0,
+      "segment_cross_status": "parcial_con_cruces_no_exhaustivos",
+      "trace_links": [
+        "analisis/px-r2-1-linaje-31p-147v-245h-v1.json#P38"
+      ]
+    },
+    {
+      "problem_id": "P40",
+      "problem_title": "Nuestro acceso para enviar la memoria y el balance puede quedar bloqueado",
+      "primary_topic_id": "T04",
+      "primary_topic": "Trámites, datos y reportabilidad",
+      "secondary_topic_id": null,
+      "secondary_reason": null,
+      "assignment_basis": "lectura_editorial_del_titulo_del_problema_y_matriz_R2.1",
+      "source_ids": [
+        "F08"
+      ],
+      "raw_publications": 1,
+      "document_roots_candidate": 1,
+      "credited_origin_candidates": 1,
+      "findings": 2,
+      "single_publication": true,
+      "independent_study_count": null,
+      "population_incidence": null,
+      "severity_rank": null,
+      "possible_overlap_pair_count": 0,
+      "secondary_attribution_count": 0,
+      "segment_cross_status": "parcial_con_cruces_no_exhaustivos",
+      "trace_links": [
+        "analisis/px-r2-1-linaje-31p-147v-245h-v1.json#P40"
+      ]
+    },
+    {
+      "problem_id": "P41",
+      "problem_title": "Tenemos que completar o corregir envíos de memorias y balances",
+      "primary_topic_id": "T04",
+      "primary_topic": "Trámites, datos y reportabilidad",
+      "secondary_topic_id": null,
+      "secondary_reason": null,
+      "assignment_basis": "lectura_editorial_del_titulo_del_problema_y_matriz_R2.1",
+      "source_ids": [
+        "F08"
+      ],
+      "raw_publications": 1,
+      "document_roots_candidate": 1,
+      "credited_origin_candidates": 1,
+      "findings": 2,
+      "single_publication": true,
+      "independent_study_count": null,
+      "population_incidence": null,
+      "severity_rank": null,
+      "possible_overlap_pair_count": 0,
+      "secondary_attribution_count": 0,
+      "segment_cross_status": "parcial_con_cruces_no_exhaustivos",
+      "trace_links": [
+        "analisis/px-r2-1-linaje-31p-147v-245h-v1.json#P41"
+      ]
+    },
+    {
+      "problem_id": "P43",
+      "problem_title": "Tenemos que volver a postular mientras sostenemos un servicio",
+      "primary_topic_id": "T02",
+      "primary_topic": "Caja y ciclo de convenios",
+      "secondary_topic_id": "T06",
+      "secondary_reason": "Repostular exige tiempo de equipos que siguen prestando servicios.",
+      "assignment_basis": "lectura_editorial_del_titulo_del_problema_y_matriz_R2.1",
+      "source_ids": [
+        "F09",
+        "F20",
+        "F26"
+      ],
+      "raw_publications": 3,
+      "document_roots_candidate": 3,
+      "credited_origin_candidates": 3,
+      "findings": 6,
+      "single_publication": false,
+      "independent_study_count": null,
+      "population_incidence": null,
+      "severity_rank": null,
+      "possible_overlap_pair_count": 0,
+      "secondary_attribution_count": 0,
+      "segment_cross_status": "parcial_con_cruces_no_exhaustivos",
+      "trace_links": [
+        "analisis/px-r2-1-linaje-31p-147v-245h-v1.json#P43"
+      ]
+    },
+    {
+      "problem_id": "P46",
+      "problem_title": "Nos cuesta dar a conocer nuestro trabajo para acceder a nuevas oportunidades",
+      "primary_topic_id": "T07",
+      "primary_topic": "Redes, visibilidad e incidencia",
+      "secondary_topic_id": "T01",
+      "secondary_reason": "La visibilidad busca abrir oportunidades de captación y colaboración.",
+      "assignment_basis": "lectura_editorial_del_titulo_del_problema_y_matriz_R2.1",
+      "source_ids": [
+        "F11",
+        "F12",
+        "F13",
+        "F14",
+        "F18",
+        "F28",
+        "F22",
+        "F23"
+      ],
+      "raw_publications": 8,
+      "document_roots_candidate": 7,
+      "credited_origin_candidates": 7,
+      "findings": 12,
+      "single_publication": false,
+      "independent_study_count": null,
+      "population_incidence": null,
+      "severity_rank": null,
+      "possible_overlap_pair_count": 2,
+      "secondary_attribution_count": 0,
+      "segment_cross_status": "parcial_con_cruces_no_exhaustivos",
+      "trace_links": [
+        "analisis/px-r2-1-linaje-31p-147v-245h-v1.json#P46"
+      ]
+    },
+    {
+      "problem_id": "P47",
+      "problem_title": "Nos cuesta mantener al directorio al día sobre los planes que aprobó",
+      "primary_topic_id": "T05",
+      "primary_topic": "Gestión interna, talento y evaluación",
+      "secondary_topic_id": null,
+      "secondary_reason": null,
+      "assignment_basis": "lectura_editorial_del_titulo_del_problema_y_matriz_R2.1",
+      "source_ids": [
+        "F16",
+        "F17",
+        "F18",
+        "F20",
+        "F23"
+      ],
+      "raw_publications": 5,
+      "document_roots_candidate": 5,
+      "credited_origin_candidates": 5,
+      "findings": 8,
+      "single_publication": false,
+      "independent_study_count": null,
+      "population_incidence": null,
+      "severity_rank": null,
+      "possible_overlap_pair_count": 0,
+      "secondary_attribution_count": 0,
+      "segment_cross_status": "parcial_con_cruces_no_exhaustivos",
+      "trace_links": [
+        "analisis/px-r2-1-linaje-31p-147v-245h-v1.json#P47"
+      ]
+    },
+    {
+      "problem_id": "P48",
+      "problem_title": "Atendemos más casos que plazas financiadas con el mismo equipo",
+      "primary_topic_id": "T06",
+      "primary_topic": "Operación y cobertura de servicios",
+      "secondary_topic_id": null,
+      "secondary_reason": null,
+      "assignment_basis": "lectura_editorial_del_titulo_del_problema_y_matriz_R2.1",
+      "source_ids": [
+        "F26"
+      ],
+      "raw_publications": 1,
+      "document_roots_candidate": 1,
+      "credited_origin_candidates": 1,
+      "findings": 2,
+      "single_publication": true,
+      "independent_study_count": null,
+      "population_incidence": null,
+      "severity_rank": null,
+      "possible_overlap_pair_count": 0,
+      "secondary_attribution_count": 0,
+      "segment_cross_status": "parcial_con_cruces_no_exhaustivos",
+      "trace_links": [
+        "analisis/px-r2-1-linaje-31p-147v-245h-v1.json#P48"
+      ]
+    },
+    {
+      "problem_id": "P49",
+      "problem_title": "Tenemos que financiar la instalación antes de recibir el primer aporte",
+      "primary_topic_id": "T02",
+      "primary_topic": "Caja y ciclo de convenios",
+      "secondary_topic_id": "T01",
+      "secondary_reason": "El aporte inicial faltante impacta la disponibilidad de liquidez.",
+      "assignment_basis": "lectura_editorial_del_titulo_del_problema_y_matriz_R2.1",
+      "source_ids": [
+        "F26",
+        "F27"
+      ],
+      "raw_publications": 2,
+      "document_roots_candidate": 2,
+      "credited_origin_candidates": 2,
+      "findings": 4,
+      "single_publication": false,
+      "independent_study_count": null,
+      "population_incidence": null,
+      "severity_rank": null,
+      "possible_overlap_pair_count": 0,
+      "secondary_attribution_count": 0,
+      "segment_cross_status": "parcial_con_cruces_no_exhaustivos",
+      "trace_links": [
+        "analisis/px-r2-1-linaje-31p-147v-245h-v1.json#P49"
+      ]
+    },
+    {
+      "problem_id": "P50",
+      "problem_title": "El cierre financiero deja saldos sin resolver tras terminar un convenio",
+      "primary_topic_id": "T03",
+      "primary_topic": "Rendición y cierre financiero",
+      "secondary_topic_id": "T02",
+      "secondary_reason": "El saldo pendiente ocurre tras la terminación de un convenio.",
+      "assignment_basis": "lectura_editorial_del_titulo_del_problema_y_matriz_R2.1",
+      "source_ids": [
+        "F26",
+        "F27"
+      ],
+      "raw_publications": 2,
+      "document_roots_candidate": 2,
+      "credited_origin_candidates": 2,
+      "findings": 4,
+      "single_publication": false,
+      "independent_study_count": null,
+      "population_incidence": null,
+      "severity_rank": null,
+      "possible_overlap_pair_count": 0,
+      "secondary_attribution_count": 0,
+      "segment_cross_status": "parcial_con_cruces_no_exhaustivos",
+      "trace_links": [
+        "analisis/px-r2-1-linaje-31p-147v-245h-v1.json#P50"
+      ]
+    },
+    {
+      "problem_id": "P51",
+      "problem_title": "Nos cuesta separar gastos de varios proyectos en una misma cuenta",
+      "primary_topic_id": "T03",
+      "primary_topic": "Rendición y cierre financiero",
+      "secondary_topic_id": null,
+      "secondary_reason": null,
+      "assignment_basis": "lectura_editorial_del_titulo_del_problema_y_matriz_R2.1",
+      "source_ids": [
+        "F26"
+      ],
+      "raw_publications": 1,
+      "document_roots_candidate": 1,
+      "credited_origin_candidates": 1,
+      "findings": 2,
+      "single_publication": true,
+      "independent_study_count": null,
+      "population_incidence": null,
+      "severity_rank": null,
+      "possible_overlap_pair_count": 0,
+      "secondary_attribution_count": 0,
+      "segment_cross_status": "parcial_con_cruces_no_exhaustivos",
+      "trace_links": [
+        "analisis/px-r2-1-linaje-31p-147v-245h-v1.json#P51"
+      ]
+    },
+    {
+      "problem_id": "P52",
+      "problem_title": "Nos cuesta captar y mantener familias de acogida",
+      "primary_topic_id": "T06",
+      "primary_topic": "Operación y cobertura de servicios",
+      "secondary_topic_id": null,
+      "secondary_reason": null,
+      "assignment_basis": "lectura_editorial_del_titulo_del_problema_y_matriz_R2.1",
+      "source_ids": [
+        "F26"
+      ],
+      "raw_publications": 1,
+      "document_roots_candidate": 1,
+      "credited_origin_candidates": 1,
+      "findings": 2,
+      "single_publication": true,
+      "independent_study_count": null,
+      "population_incidence": null,
+      "severity_rank": null,
+      "possible_overlap_pair_count": 0,
+      "secondary_attribution_count": 0,
+      "segment_cross_status": "parcial_con_cruces_no_exhaustivos",
+      "trace_links": [
+        "analisis/px-r2-1-linaje-31p-147v-245h-v1.json#P52"
+      ]
+    },
+    {
+      "problem_id": "P53",
+      "problem_title": "Llegar a familias en zonas dispersas nos consume más tiempo y recursos",
+      "primary_topic_id": "T06",
+      "primary_topic": "Operación y cobertura de servicios",
+      "secondary_topic_id": null,
+      "secondary_reason": null,
+      "assignment_basis": "lectura_editorial_del_titulo_del_problema_y_matriz_R2.1",
+      "source_ids": [
+        "F26"
+      ],
+      "raw_publications": 1,
+      "document_roots_candidate": 1,
+      "credited_origin_candidates": 1,
+      "findings": 2,
+      "single_publication": true,
+      "independent_study_count": null,
+      "population_incidence": null,
+      "severity_rank": null,
+      "possible_overlap_pair_count": 0,
+      "secondary_attribution_count": 0,
+      "segment_cross_status": "parcial_con_cruces_no_exhaustivos",
+      "trace_links": [
+        "analisis/px-r2-1-linaje-31p-147v-245h-v1.json#P53"
+      ]
+    },
+    {
+      "problem_id": "P54",
+      "problem_title": "Nos falta equipo y tiempo para buscar donantes locales",
+      "primary_topic_id": "T01",
+      "primary_topic": "Captación y sostenibilidad financiera",
+      "secondary_topic_id": "T05",
+      "secondary_reason": "El tiempo y la dotación del equipo limitan la captación local.",
+      "assignment_basis": "lectura_editorial_del_titulo_del_problema_y_matriz_R2.1",
+      "source_ids": [
+        "F22"
+      ],
+      "raw_publications": 1,
+      "document_roots_candidate": 1,
+      "credited_origin_candidates": 1,
+      "findings": 2,
+      "single_publication": true,
+      "independent_study_count": null,
+      "population_incidence": null,
+      "severity_rank": null,
+      "possible_overlap_pair_count": 0,
+      "secondary_attribution_count": 0,
+      "segment_cross_status": "ND_sin_cruce",
+      "trace_links": [
+        "analisis/px-r2-1-linaje-31p-147v-245h-v1.json#P54"
+      ]
+    }
+  ],
+  "source_cross_theme_presence": [
+    {
+      "source": "F03",
+      "topics": [
+        "T01",
+        "T02",
+        "T03",
+        "T05",
+        "T06"
+      ]
+    },
+    {
+      "source": "F04",
+      "topics": [
+        "T01",
+        "T02",
+        "T03",
+        "T04",
+        "T07"
+      ]
+    },
+    {
+      "source": "F06",
+      "topics": [
+        "T01",
+        "T02",
+        "T03"
+      ]
+    },
+    {
+      "source": "F07",
+      "topics": [
+        "T01",
+        "T02",
+        "T04"
+      ]
+    },
+    {
+      "source": "F09",
+      "topics": [
+        "T01",
+        "T02",
+        "T03",
+        "T04",
+        "T05",
+        "T07"
+      ]
+    },
+    {
+      "source": "F10",
+      "topics": [
+        "T01",
+        "T04",
+        "T05"
+      ]
+    },
+    {
+      "source": "F11",
+      "topics": [
+        "T01",
+        "T07"
+      ]
+    },
+    {
+      "source": "F12",
+      "topics": [
+        "T01",
+        "T02",
+        "T07"
+      ]
+    },
+    {
+      "source": "F14",
+      "topics": [
+        "T01",
+        "T07"
+      ]
+    },
+    {
+      "source": "F15",
+      "topics": [
+        "T01",
+        "T02",
+        "T03"
+      ]
+    },
+    {
+      "source": "F16",
+      "topics": [
+        "T01",
+        "T04",
+        "T05"
+      ]
+    },
+    {
+      "source": "F17",
+      "topics": [
+        "T01",
+        "T02",
+        "T04",
+        "T05",
+        "T07"
+      ]
+    },
+    {
+      "source": "F18",
+      "topics": [
+        "T01",
+        "T02",
+        "T04",
+        "T05",
+        "T07"
+      ]
+    },
+    {
+      "source": "F19",
+      "topics": [
+        "T01",
+        "T04",
+        "T05",
+        "T07"
+      ]
+    },
+    {
+      "source": "F20",
+      "topics": [
+        "T01",
+        "T02",
+        "T04",
+        "T05"
+      ]
+    },
+    {
+      "source": "F22",
+      "topics": [
+        "T01",
+        "T07"
+      ]
+    },
+    {
+      "source": "F23",
+      "topics": [
+        "T01",
+        "T04",
+        "T05",
+        "T07"
+      ]
+    },
+    {
+      "source": "F26",
+      "topics": [
+        "T01",
+        "T02",
+        "T03",
+        "T05",
+        "T06",
+        "T07"
+      ]
+    },
+    {
+      "source": "F28",
+      "topics": [
+        "T01",
+        "T04",
+        "T05",
+        "T07"
+      ]
+    },
+    {
+      "source": "F02",
+      "topics": [
+        "T02",
+        "T05"
+      ]
+    },
+    {
+      "source": "F27",
+      "topics": [
+        "T02",
+        "T03"
+      ]
+    },
+    {
+      "source": "F21",
+      "topics": [
+        "T05",
+        "T07"
+      ]
+    }
+  ]
+}
