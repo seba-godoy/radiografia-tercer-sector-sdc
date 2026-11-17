@@ -1,0 +1,90 @@
+{
+  "version": "sdc-brand-2026-v1.0.0",
+  "source": "Copia de PPT PLANTILLA SdC 2026 (30 años)(2).pptx",
+  "extracted_at": "2026-11-17",
+  "verified_against": "ppt/slides + ppt/slideLayouts XML, muestras cromáticas y elementos gráficos de la presentación",
+  "typography": {
+    "family": "Montserrat",
+    "weights": [
+      400,
+      500,
+      600,
+      700,
+      800,
+      900
+    ],
+    "source_slides": [
+      2,
+      4,
+      8,
+      9,
+      11,
+      13
+    ],
+    "loading": "Google Fonts CSS con fallbacks; no distribuir archivos de fuente"
+  },
+  "colors": {
+    "cream": {
+      "hex": "#FFF2E1",
+      "role": "fondo general",
+      "source": "presentación y layouts 1–12"
+    },
+    "blue": {
+      "hex": "#418FDE",
+      "role": "títulos corporativos y acentos",
+      "source": "layouts y diapositiva 13"
+    },
+    "orange": {
+      "hex": "#FF9E19",
+      "role": "acento institucional y marcas",
+      "source": "layouts 1–12"
+    },
+    "peach": {
+      "hex": "#FFC266",
+      "role": "acento cálido y tarjetas",
+      "source": "layouts"
+    },
+    "gray": {
+      "hex": "#595959",
+      "role": "texto cuerpo",
+      "source": "diapositiva 10"
+    },
+    "white": {
+      "hex": "#FFFFFF",
+      "role": "espacios de contenido",
+      "source": "diapositiva 9"
+    },
+    "light_blue": {
+      "hex": "#80C8F9",
+      "role": "azul complementario aproximado del diseño gráfico",
+      "source": "diapositivas 8–9, estimación visual"
+    }
+  },
+  "accessibility_variants": {
+    "dark_blue": "#145F9F",
+    "body_ink": "#424242",
+    "note": "Los hex originales no siempre alcanzan contraste para texto pequeño; las variantes oscuras son derivaciones funcionales, no colores oficiales adicionales."
+  },
+  "logos": {
+    "mark_svg": "preview/h0/assets/sdc-symbol-2026.svg",
+    "mark_source": "símbolo naranjo/azul de la lámina 1, vectorizado a mano desde los contornos del PNG de la plantilla",
+    "wordmark": "Texto HTML Montserrat basado en el lockup de la lámina 1; reproducción web, no vector oficial completo",
+    "anniversary": "Sello tipográfico 30 AÑOS DESDE 1996 como componente HTML/CSS de la plantilla, no archivo oficial vectorial",
+    "phrase": "Sin afecto no hay efectos"
+  },
+  "ui_rules": [
+    "menos texto y jerarquía visual",
+    "espacios amplios entre bloques",
+    "pocos colores corporativos por componente",
+    "tipografía Montserrat consistente",
+    "marca del aniversario visible en encabezado",
+    "no alterar información ni atribuciones al aplicar la marca"
+  ],
+  "website_scope": "H-0 y diseño base para H-1 a H-5",
+  "updated_files": [
+    "preview/h0/index.html",
+    "preview/h0/brand-sdc.css",
+    "preview/h0/assets/sdc-symbol-2026.svg"
+  ],
+  "production_not_modified": true
+}
