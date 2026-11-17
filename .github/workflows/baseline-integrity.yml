@@ -31,3 +31,5 @@ jobs:
         run: node analisis/validate-px-r21.mjs
       - name: QA PX-R2.2a · Taxonomía de 7 temas (54 invariantes)
         run: node analisis/validate-px-r22a.mjs
+      - name: QA PX-R2.2b · Segmentos y comparabilidad (80 pruebas)
+        run: node analisis/validate-px-r22b.mjs
