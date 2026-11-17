@@ -14,5 +14,27 @@
         }
       ]
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/preview/h0/index.html"
+    },
+    {
+      "source": "/problemas",
+      "destination": "/preview/h0/index.html"
+    },
+    {
+      "source": "/criticidad",
+      "destination": "/preview/h0/index.html"
+    },
+    {
+      "source": "/abordabilidad",
+      "destination": "/preview/h0/index.html"
+    },
+    {
+      "source": "/oportunidades",
+      "destination": "/preview/h0/index.html"
+    }
   ]
 }
