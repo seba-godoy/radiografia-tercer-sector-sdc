@@ -23,3 +23,7 @@ jobs:
         run: python3 -m pip install --disable-pip-version-check jsonschema==4.25.1
       - name: Validar contrato PX-1.2 y casos adversariales
         run: python3 scripts/validate_preview_contract.py
+      - name: Node.js version
+        run: node --version
+      - name: QA PX-R1.3 (selector + 31 casos adversariales)
+        run: node analisis/validate-px-r13.mjs
