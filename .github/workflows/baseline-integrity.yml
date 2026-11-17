@@ -27,3 +27,5 @@ jobs:
         run: node --version
       - name: QA PX-R1.3 (selector + 31 casos adversariales)
         run: node analisis/validate-px-r13.mjs
+      - name: QA PX-R2.1 (35 pruebas de fuentes y linaje)
+        run: node analisis/validate-px-r21.mjs
