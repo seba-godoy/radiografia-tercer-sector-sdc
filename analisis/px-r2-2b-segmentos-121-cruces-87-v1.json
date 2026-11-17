@@ -45,7 +45,8 @@
     "method": "clasificación reglada por fuente, unidad y título + cruces conservados y anotados; validación de N/PDF individual pendiente",
     "rank_severity": null,
     "rank_business": null,
-    "population_prevalence": null
+    "population_prevalence": null,
+    "primary_validation_note": "4 indicadores F03 se contrastaron con PDF de UC (tres con captura de página y uno por texto paginado); los otros 14 conservan estado no verificado individualmente. El material no permite tasas exclusivas de fundaciones."
   },
   "summary": {
     "input_segments": 121,
@@ -85,7 +86,9 @@
     "cross_referencing_different_source": 9,
     "direct_fundaciones_incidence_rates_verified": 0,
     "indicators_curated": 18,
-    "source_variants_note": "El index.html también contiene sector.segments (209) y sector.cross (102); este corte usa EXCLUSIVAMENTE data.segments (121) y data.cross (87). IDs S pueden repetirse entre vistas con significados diferentes."
+    "source_variants_note": "El index.html también contiene sector.segments (209) y sector.cross (102); este corte usa EXCLUSIVAMENTE data.segments (121) y data.cross (87). IDs S pueden repetirse entre vistas con significados diferentes.",
+    "indicators_pdf_checked_now": 4,
+    "indicators_pdf_not_rechecked_now": 14
   },
   "segments": [
     {
@@ -10347,7 +10350,9 @@
       "editorial_landing_verified_now": true,
       "eligible_for_foundations_only_problem_rate": false,
       "cross_ref_ids": [],
-      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar."
+      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar.",
+      "source_verification_mode": "Catálogo previo y ficha editorial; PDF/ítem no cotejado en este hito",
+      "primary_pdf_page_label": null
     },
     {
       "indicator_id": "I02",
@@ -10375,7 +10380,9 @@
       "editorial_landing_verified_now": true,
       "eligible_for_foundations_only_problem_rate": false,
       "cross_ref_ids": [],
-      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar."
+      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar.",
+      "source_verification_mode": "Catálogo previo y ficha editorial; PDF/ítem no cotejado en este hito",
+      "primary_pdf_page_label": null
     },
     {
       "indicator_id": "I03",
@@ -10402,13 +10409,15 @@
         "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=110",
         "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=271"
       ],
-      "primary_pdf_page_verified_now": false,
+      "primary_pdf_page_verified_now": true,
       "editorial_landing_verified_now": true,
       "eligible_for_foundations_only_problem_rate": false,
       "cross_ref_ids": [
         "C016"
       ],
-      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar."
+      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar.",
+      "source_verification_mode": "PDF screenshot (UC, 2026-10-27)",
+      "primary_pdf_page_label": "PDF p.20, N255; y p.21, N125"
     },
     {
       "indicator_id": "I04",
@@ -10435,13 +10444,15 @@
         "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=110",
         "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=271"
       ],
-      "primary_pdf_page_verified_now": false,
+      "primary_pdf_page_verified_now": true,
       "editorial_landing_verified_now": true,
       "eligible_for_foundations_only_problem_rate": false,
       "cross_ref_ids": [
         "C031"
       ],
-      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar."
+      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar.",
+      "source_verification_mode": "PDF screenshot (UC, 2026-10-27)",
+      "primary_pdf_page_label": "PDF p.21 (N125, 28%)"
     },
     {
       "indicator_id": "I05",
@@ -10468,13 +10479,15 @@
         "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=110",
         "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=271"
       ],
-      "primary_pdf_page_verified_now": false,
+      "primary_pdf_page_verified_now": true,
       "editorial_landing_verified_now": true,
       "eligible_for_foundations_only_problem_rate": false,
       "cross_ref_ids": [
         "C016"
       ],
-      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar."
+      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar.",
+      "source_verification_mode": "PDF screenshot (UC, 2026-10-27)",
+      "primary_pdf_page_label": "PDF p.22 (N125, 62%, 42%)"
     },
     {
       "indicator_id": "I06",
@@ -10493,13 +10506,15 @@
       "source_urls": [
         "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=35"
       ],
-      "primary_pdf_page_verified_now": false,
+      "primary_pdf_page_verified_now": true,
       "editorial_landing_verified_now": true,
       "eligible_for_foundations_only_problem_rate": false,
       "cross_ref_ids": [
         "C020"
       ],
-      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar."
+      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar.",
+      "source_verification_mode": "PDF text (UC, p.35), captura gráfica no disponible",
+      "primary_pdf_page_label": "PDF p.35, N219, 38%"
     },
     {
       "indicator_id": "I07",
@@ -10525,7 +10540,9 @@
       "cross_ref_ids": [
         "C043"
       ],
-      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar."
+      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar.",
+      "source_verification_mode": "Catálogo previo y ficha editorial; PDF/ítem no cotejado en este hito",
+      "primary_pdf_page_label": null
     },
     {
       "indicator_id": "I08",
@@ -10548,7 +10565,9 @@
       "editorial_landing_verified_now": false,
       "eligible_for_foundations_only_problem_rate": false,
       "cross_ref_ids": [],
-      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar."
+      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar.",
+      "source_verification_mode": "Catálogo previo y ficha editorial; PDF/ítem no cotejado en este hito",
+      "primary_pdf_page_label": null
     },
     {
       "indicator_id": "I09",
@@ -10571,7 +10590,9 @@
       "editorial_landing_verified_now": false,
       "eligible_for_foundations_only_problem_rate": false,
       "cross_ref_ids": [],
-      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar."
+      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar.",
+      "source_verification_mode": "Catálogo previo y ficha editorial; PDF/ítem no cotejado en este hito",
+      "primary_pdf_page_label": null
     },
     {
       "indicator_id": "I10",
@@ -10598,7 +10619,9 @@
       "editorial_landing_verified_now": false,
       "eligible_for_foundations_only_problem_rate": false,
       "cross_ref_ids": [],
-      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar."
+      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar.",
+      "source_verification_mode": "Catálogo previo y ficha editorial; PDF/ítem no cotejado en este hito",
+      "primary_pdf_page_label": null
     },
     {
       "indicator_id": "I11",
@@ -10622,7 +10645,9 @@
       "editorial_landing_verified_now": false,
       "eligible_for_foundations_only_problem_rate": false,
       "cross_ref_ids": [],
-      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar."
+      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar.",
+      "source_verification_mode": "Catálogo previo y ficha editorial; PDF/ítem no cotejado en este hito",
+      "primary_pdf_page_label": null
     },
     {
       "indicator_id": "I12",
@@ -10649,7 +10674,9 @@
       "cross_ref_ids": [
         "C084"
       ],
-      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar."
+      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar.",
+      "source_verification_mode": "Catálogo previo y ficha editorial; PDF/ítem no cotejado en este hito",
+      "primary_pdf_page_label": null
     },
     {
       "indicator_id": "I13",
@@ -10672,7 +10699,9 @@
       "editorial_landing_verified_now": false,
       "eligible_for_foundations_only_problem_rate": false,
       "cross_ref_ids": [],
-      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar."
+      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar.",
+      "source_verification_mode": "Catálogo previo y ficha editorial; PDF/ítem no cotejado en este hito",
+      "primary_pdf_page_label": null
     },
     {
       "indicator_id": "I14",
@@ -10695,7 +10724,9 @@
       "editorial_landing_verified_now": false,
       "eligible_for_foundations_only_problem_rate": false,
       "cross_ref_ids": [],
-      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar."
+      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar.",
+      "source_verification_mode": "Catálogo previo y ficha editorial; PDF/ítem no cotejado en este hito",
+      "primary_pdf_page_label": null
     },
     {
       "indicator_id": "I15",
@@ -10718,7 +10749,9 @@
       "editorial_landing_verified_now": false,
       "eligible_for_foundations_only_problem_rate": false,
       "cross_ref_ids": [],
-      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar."
+      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar.",
+      "source_verification_mode": "Catálogo previo y ficha editorial; PDF/ítem no cotejado en este hito",
+      "primary_pdf_page_label": null
     },
     {
       "indicator_id": "I16",
@@ -10741,7 +10774,9 @@
       "editorial_landing_verified_now": false,
       "eligible_for_foundations_only_problem_rate": false,
       "cross_ref_ids": [],
-      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar."
+      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar.",
+      "source_verification_mode": "Catálogo previo y ficha editorial; PDF/ítem no cotejado en este hito",
+      "primary_pdf_page_label": null
     },
     {
       "indicator_id": "I17",
@@ -10770,7 +10805,9 @@
       "cross_ref_ids": [
         "C003"
       ],
-      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar."
+      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar.",
+      "source_verification_mode": "Catálogo previo y ficha editorial; PDF/ítem no cotejado en este hito",
+      "primary_pdf_page_label": null
     },
     {
       "indicator_id": "I18",
@@ -10803,7 +10840,9 @@
       "cross_ref_ids": [
         "C077"
       ],
-      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar."
+      "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar.",
+      "source_verification_mode": "Catálogo previo y ficha editorial; PDF/ítem no cotejado en este hito",
+      "primary_pdf_page_label": null
     }
   ]
 }
