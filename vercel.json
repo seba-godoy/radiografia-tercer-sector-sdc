@@ -17,10 +17,6 @@
   ],
   "rewrites": [
     {
-      "source": "/",
-      "destination": "/preview/h0/index.html"
-    },
-    {
       "source": "/problemas",
       "destination": "/preview/h0/index.html"
     },
@@ -35,6 +31,13 @@
     {
       "source": "/oportunidades",
       "destination": "/preview/h0/index.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/preview/h0/index.html",
+      "permanent": false
     }
   ]
 }
