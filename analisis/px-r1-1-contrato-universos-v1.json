@@ -1,0 +1,297 @@
+{
+  "schema_id": "SDC-PX-R1.1-UNIVERSE-CONTRACT-v1.0.0",
+  "version": "1.0.0",
+  "released": "2026-11-17",
+  "status": "documentary-design-validated-not-applied-to-31-problems",
+  "normative_sources": [
+    "https://www.bcn.cl/leychile/navegar?idNorma=1023143",
+    "https://www.bcn.cl/leychile/navegar?idNorma=1052955",
+    "https://www.bcn.cl/leychile/navegar?idNorma=1110865",
+    "https://www.chileatiende.gob.cl/fichas/11333-ley-n-20.500"
+  ],
+  "project_sources": {
+    "catalog": "preview/px-v01/catalogue.json @ feat/px-v01-executive-preview (read-only PX-V0.1/v0.6 snapshot)",
+    "survey2026": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf",
+    "protection2025": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf"
+  },
+  "universes": {
+    "tercer_sector": {
+      "type": "analytical_scope_not_legal_type",
+      "definition": "Organizaciones de la sociedad civil y otras entidades sin fines de lucro relevantes para el problema estudiado en Chile; no equivale automáticamente a toda inscripción del registro ni a un universo estadístico representativo",
+      "includes_when_evidenced": [
+        "fundacion",
+        "corporacion_asociacion",
+        "comunitaria_territorial",
+        "comunitaria_funcional",
+        "leyes_especiales_pertinentes",
+        "otras_osfl_pertinentes"
+      ],
+      "exclusions": [
+        "empresas_con_fines_de_lucro_por_solo_colaborar",
+        "agencias_publicas_por_ser_fuentes_o_contrapartes"
+      ],
+      "uncertainty": "Se informa cuando el tipo legal o la pertenencia OSC no estén acreditados"
+    },
+    "fundaciones": {
+      "type": "legal_subscope",
+      "definition": "Entidades cuya naturaleza jurídica de fundación esté acreditada por registro/estatutos o población muestral explícitamente de fundaciones; nunca inferir forma jurídica por nombre, misión, beneficiarios o programa",
+      "not_equivalent_to": [
+        "corporaciones",
+        "asociaciones",
+        "ong_sin_verificacion",
+        "colaboradores_acreditados_sin_forma_juridica",
+        "organizaciones_sociales_en_general"
+      ]
+    }
+  },
+  "legal_nature_enum": [
+    "fundacion",
+    "corporacion_asociacion",
+    "comunitaria_territorial",
+    "comunitaria_funcional",
+    "ley_especial_educacion",
+    "ley_especial_culto",
+    "ley_especial_indigena",
+    "ley_especial_otras",
+    "otras_osfl",
+    "no_acreditada"
+  ],
+  "population_evidence_class_enum": [
+    "F_EXCLUSIVA_EXPLICITA",
+    "M_MIXTA_NO_DESAGREGADA",
+    "G_OSFL_GENERAL",
+    "S_SECTORIAL_SIN_FORMA",
+    "I_INFERIDA_POR_VALIDAR",
+    "U_INSUFICIENTE",
+    "X_NO_FUNDACION_EXPLICITA"
+  ],
+  "measure_kind_enum": [
+    "situacion_autorreportada",
+    "actitud",
+    "prioridad",
+    "hipotesis",
+    "evento",
+    "entrevista_testimonio",
+    "estudio_sectorial",
+    "norma_registro",
+    "otro"
+  ],
+  "unit_of_observation_enum": [
+    "organizacion",
+    "persona_directiva",
+    "proyecto",
+    "programa",
+    "caso_atendido",
+    "encuentro",
+    "norma",
+    "no_acreditada"
+  ],
+  "legal_form_proof_enum": [
+    "certificado_registro",
+    "estatutos_o_decreto",
+    "metodologia_muestra_exclusiva",
+    "descripcion_muestra_mixta",
+    "descripcion_sin_desagregar",
+    "nombre_solo_insuficiente",
+    "desconocida"
+  ],
+  "required_record_fields": [
+    "record_id",
+    "problem_ids",
+    "source_id",
+    "source_origin_id",
+    "source_version",
+    "source_url",
+    "source_locator",
+    "study_population",
+    "respondent_unit",
+    "study_method",
+    "unit_of_observation",
+    "period",
+    "territory",
+    "legal_natures_observed",
+    "legal_form_proof",
+    "population_evidence_class",
+    "foundation_relevance",
+    "measure_kind",
+    "numerator",
+    "denominator",
+    "percent",
+    "denominator_question",
+    "stratum_conditions",
+    "foundation_disaggregation_available",
+    "basis_for_classification",
+    "limitations",
+    "review_state",
+    "reviewed_at"
+  ],
+  "foundation_relevance_enum": [
+    "fundaciones_explicitas",
+    "contexto_mixto",
+    "contexto_general",
+    "aplicabilidad_a_validar",
+    "sin_respaldo_especifico"
+  ],
+  "null_policy": "null=ND; prohibido sustituir por cero y prohibido calcular proporciones o diferencias de subpoblaciones que no fueron publicadas",
+  "inference_constraints": [
+    "El P puede tener múltiples evidencias con etiquetas distintas; nunca transferir automáticamente una etiqueta F a todas sus afirmaciones",
+    "Los porcentajes conservan siempre población, pregunta, periodo y denominador de origen",
+    "La clase F_EXCLUSIVA_EXPLICITA sin muestreo representativo no habilita afirmaciones nacionales",
+    "Un estudio sobre programas AFT/FAE/colaboradores acreditados no acredita por sí solo forma jurídica fundación",
+    "Una organización denominada Fundación X no es jurídicamente fundación sin prueba suficiente",
+    "La lista de fuentes o menciones no es conteo de organizaciones; no deduplicar F11/F12 sin verificar linaje común",
+    "La aplicabilidad conceptual a fundaciones es distinta de una medición directa en fundaciones",
+    "No eliminar P sin N, ni interpretar ausencia de cruce P×S como ausencia del fenómeno"
+  ],
+  "decision_tree": [
+    {
+      "step": 1,
+      "question": "¿Existe identificación suficiente de la población y del tipo de afirmación?",
+      "yes": "continuar",
+      "no": "U_INSUFICIENTE"
+    },
+    {
+      "step": 2,
+      "question": "¿Hay evidencia explícita de población exclusivamente fundaciones o subgrupo fundación desagregado para ESTA afirmación?",
+      "yes": "F_EXCLUSIVA_EXPLICITA (confirmar método)",
+      "no": "continuar"
+    },
+    {
+      "step": 3,
+      "question": "¿Hay muestra de fundaciones y otros tipos sin indicador separado?",
+      "yes": "M_MIXTA_NO_DESAGREGADA",
+      "no": "continuar"
+    },
+    {
+      "step": 4,
+      "question": "¿Se refiere explícitamente a OSC/OSFL en general sin detalle de forma jurídica?",
+      "yes": "G_OSFL_GENERAL",
+      "no": "continuar"
+    },
+    {
+      "step": 5,
+      "question": "¿El dato se refiere a programas especializados o colaboradores sin forma jurídica identificable?",
+      "yes": "S_SECTORIAL_SIN_FORMA",
+      "no": "continuar"
+    },
+    {
+      "step": 6,
+      "question": "¿La única atribución a fundaciones es inferencia, semejanza de actividad o nombre?",
+      "yes": "I_INFERIDA_POR_VALIDAR",
+      "no": "U_INSUFICIENTE"
+    },
+    {
+      "step": 7,
+      "question": "¿Existe evidencia exclusiva de organizaciones no fundaciones?",
+      "yes": "X_NO_FUNDACION_EXPLICITA",
+      "no": "mantener etiqueta anterior"
+    }
+  ],
+  "demonstration_fixtures": [
+    {
+      "id": "TEST-F03-MIX-N255",
+      "kind": "real",
+      "source_id": "F03",
+      "problem_ids": [
+        "P25"
+      ],
+      "source_locator": "diapositiva 33",
+      "source_url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=33",
+      "fact": "57% reporta acuerdo con dificultades por multiplicidad de normas; muestra de fundaciones y corporaciones, 255 encuestas válidas",
+      "expected_class": "M_MIXTA_NO_DESAGREGADA",
+      "expected_foundation_specific_rate": null,
+      "expected_population": "muestra intencional mixta; N=255 para la pregunta indicada",
+      "forbidden_claim": "57% de todas las fundaciones de Chile",
+      "confidence": "fuente original y ficha técnica verificadas; atribución fundacional no desagregada"
+    },
+    {
+      "id": "TEST-F03-SUBGROUP-N125",
+      "kind": "real",
+      "source_id": "F03",
+      "problem_ids": [
+        "P20"
+      ],
+      "source_locator": "diapositiva 22",
+      "source_url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=22",
+      "fact": "62% de organizaciones con contratos o convenios con el Estado en 2025 declara rendiciones sin respuesta dentro del plazo contractual",
+      "expected_class": "M_MIXTA_NO_DESAGREGADA",
+      "expected_denominator": 125,
+      "expected_foundation_specific_rate": null,
+      "expected_population": "subgrupo mixto de encuestadas con convenios/contratos estatales",
+      "forbidden_claim": "62% de las fundaciones chilenas tiene rendiciones atrasadas cada año",
+      "confidence": "cifra y población verificadas en la diapositiva 22"
+    },
+    {
+      "id": "TEST-F03-MEETING-100",
+      "kind": "real",
+      "source_id": "F03",
+      "problem_ids": [],
+      "source_locator": "diapositiva 7",
+      "source_url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=7",
+      "fact": "Encuentro de representantes de 100 fundaciones como antecedente de problemáticas (separado de la encuesta en línea)",
+      "expected_class": "F_EXCLUSIVA_EXPLICITA",
+      "expected_foundation_specific_rate": null,
+      "expected_population": "participantes del encuentro, sin encuesta representativa acreditada",
+      "forbidden_claim": "100 fundaciones encuestadas de manera representativa",
+      "confidence": "descripción documental del encuentro; no se debe fusionar con la muestra online de 255"
+    },
+    {
+      "id": "TEST-F26-AFT-QUAL",
+      "kind": "real",
+      "source_id": "F26",
+      "problem_ids": [
+        "P48"
+      ],
+      "source_locator": "página 158, sección 4.8.2.1 (página del visor PDF: 158)",
+      "source_url": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=158",
+      "fact": "Testimonios y análisis de programas de protección especializada describen sobrecupos, retrasos y desgaste de equipos",
+      "expected_class": "S_SECTORIAL_SIN_FORMA",
+      "expected_foundation_specific_rate": null,
+      "expected_population": "programas/colaboradores de protección especializada; forma jurídica no segregada",
+      "forbidden_claim": "frecuencia nacional de sobrecupos en todas las fundaciones",
+      "confidence": "texto del informe y referencias del catálogo comprobadas"
+    },
+    {
+      "id": "TEST-NAME-ONLY",
+      "kind": "synthetic_negative",
+      "source_id": null,
+      "problem_ids": [],
+      "source_locator": null,
+      "source_url": null,
+      "fact": "Nombre institucional comienza con «Fundación» pero sin estatuto, certificado ni metodología muestral",
+      "expected_class": "I_INFERIDA_POR_VALIDAR",
+      "expected_foundation_specific_rate": null,
+      "expected_population": "tipo jurídico no probado",
+      "forbidden_claim": "clasificación fundación confirmada",
+      "confidence": "caso sintético para falsar inferencia por nombre"
+    },
+    {
+      "id": "TEST-CERTIFIED-FOUNDATION",
+      "kind": "synthetic_positive",
+      "source_id": null,
+      "problem_ids": [],
+      "source_locator": "certificado registral hipotético para prueba",
+      "source_url": null,
+      "fact": "Certificado vigente acredita naturaleza jurídica Fundación para la entidad observada; no se infiere muestra estadística",
+      "expected_class": "F_EXCLUSIVA_EXPLICITA",
+      "expected_foundation_specific_rate": null,
+      "expected_population": "una entidad formalmente acreditada; no encuesta de fundaciones",
+      "forbidden_claim": "una fundación prueba porcentaje nacional",
+      "confidence": "caso sintético hipotético, no dato de proyecto"
+    },
+    {
+      "id": "TEST-CERTIFIED-CORPORATION",
+      "kind": "synthetic_negative",
+      "source_id": null,
+      "problem_ids": [],
+      "source_locator": "certificado registral hipotético para prueba",
+      "source_url": null,
+      "fact": "Certificado acredita naturaleza Corporación/Asociación, no Fundación",
+      "expected_class": "X_NO_FUNDACION_EXPLICITA",
+      "expected_foundation_specific_rate": null,
+      "expected_population": "una entidad acreditada como no fundación",
+      "forbidden_claim": "clasificación de fundación por actividad social",
+      "confidence": "caso sintético hipotético, no dato de proyecto"
+    }
+  ]
+}
