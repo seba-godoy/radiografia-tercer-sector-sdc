@@ -158,13 +158,13 @@
     state.selected="method";state.previousFocus=document.activeElement;state.previousHash=location.hash;
     qs("#drawer-problem-id").textContent="MÉTODO";
     qs("#drawer-body").innerHTML='<div class="drawer-summary">GUÍA PARA LA PRESENTACIÓN</div><h2 class="drawer-title" id="drawer-title">Cómo leer estos hallazgos</h2>'+
-      '<p id="drawer-intro" class="drawer-lead">Esta vista previa es una biblioteca guiada de evidencia para el equipo DIMI, no un ranking nacional de fundaciones.</p>'+
+      '<p id="drawer-intro" class="drawer-lead">Esta radiografía organiza evidencia para comprender problemas y comparar posibles intervenciones. No es un ranking nacional de fundaciones.</p>'+
       '<section class="drawer-section"><h3>Tres precauciones esenciales</h3><ol class="readme-list"><li><b>Documentación</b>: 26 fichas fuente y 31 problemas son registros del catálogo, no recuentos de organizaciones afectadas.</li>'+
       '<li><b>Frecuencia</b>: solo algunas preguntas presentan N y porcentaje; la mayoría de problemas no tiene una medida de episodios comparable.</li>'+
       '<li><b>Criticidad</b>: las bandas «Alta» y «Media» son editoriales. No existe un puntaje ponderado científico disponible para ordenar los problemas.</li></ol></section>'+
       '<section class="drawer-section"><h3>Recorridos de comprobación</h3><p><b>P20:</b> 62% N=125 de una pregunta específica sobre respuesta a rendiciones. No es prevalencia nacional ni la misma pregunta que el 42%.</p>'+
       '<p><b>P48:</b> evidencia sectorial cualitativa de sobrecupo y carga, sin porcentaje generalizable.</p></section>'+
-      '<section class="drawer-section"><h3>La siguiente fase</h3><p>Criticidad, abordabilidad e impacto se construirán cuando cada criterio pueda sostenerse y compararse con una alternativa convencional.</p></section>';
+      '<section class="drawer-section"><h3>Recorrido de lectura</h3><p>Después del mapa, revisa criticidad, abordabilidad, seis alternativas de intervención y conclusiones. Las propuestas de IA se comparan con opciones convencionales; todavía no hay impactos medidos.</p></section>';
     showDrawer();setAnnounce("Guía metodológica abierta.");
   }
   function closeDrawer(restore=true) {
