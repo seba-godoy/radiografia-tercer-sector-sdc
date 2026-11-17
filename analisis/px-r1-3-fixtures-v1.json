@@ -1,0 +1,163 @@
+{
+  "id": "PX-R1.3-fixtures-v1.0.0",
+  "created": "2026-11-17",
+  "source": "analisis/px-r1-2b-attribution-31p-147links-v1.json",
+  "tested_against_real_dataset": true,
+  "defaults": {
+    "scope": "tercer_sector",
+    "section": "inicio",
+    "layer": "todas",
+    "showContext": true
+  },
+  "expected_scope_counts": {
+    "total_problems": 31,
+    "sector_visible": 31,
+    "foundations_visible_context_on": 31,
+    "foundations_primary_direct": 6,
+    "foundations_shared_no_direct": 13,
+    "foundations_context_only": 12,
+    "foundations_visible_context_off": 19,
+    "findings": 245,
+    "links": 147,
+    "claims": 5
+  },
+  "cases": [
+    {
+      "id": "P20-MIXED",
+      "scope": "fundaciones",
+      "problemId": "P20",
+      "claimId": "CLM-F03-D22-RENDICION-62",
+      "expected": {
+        "percent": 62,
+        "denominator": 125,
+        "foundationRate": null,
+        "populationClass": "M_MIXTA_NO_DESAGREGADA"
+      },
+      "forbid": [
+        "62% de las fundaciones chilenas",
+        "ranking de gravedad por 62"
+      ]
+    },
+    {
+      "id": "P48-SECTORIAL",
+      "scope": "fundaciones",
+      "problemId": "P48",
+      "expected": {
+        "band": "contexto",
+        "numFindings": 2,
+        "claimN": null,
+        "claimPercent": null,
+        "sourceId": "F26"
+      },
+      "forbid": [
+        "sin problema",
+        "incidencia nacional"
+      ]
+    },
+    {
+      "id": "F03-MEETING",
+      "scope": "fundaciones",
+      "expected": {
+        "directFindings": 5,
+        "independentStudyCountFromMeeting": 1
+      },
+      "forbid": [
+        "5 estudios independientes",
+        "encuesta representativa de 100 fundaciones"
+      ]
+    },
+    {
+      "id": "F11-F12-IFO",
+      "expected": {
+        "root": "IFO-2025-TRASCENDER",
+        "dedupeRoot": true
+      },
+      "forbid": [
+        "2 investigaciones independientes"
+      ]
+    },
+    {
+      "id": "F09-REUSE-F04",
+      "expected": {
+        "reusedFindings": 4,
+        "originalSourceId": "F04"
+      },
+      "forbid": [
+        "F09 encuesta independiente"
+      ]
+    },
+    {
+      "id": "F27-LIVE",
+      "expected": {
+        "class": "S_SECTORIAL_SIN_FORMA",
+        "requiresSnapshotDate": true
+      },
+      "forbid": [
+        "certificado jurídico por nombre",
+        "atraso probado solo por fecha de giro"
+      ]
+    },
+    {
+      "id": "F28-SUPPLY",
+      "findingId": "P32__F28__01",
+      "expected": {
+        "class": "I_INFERIDA_POR_VALIDAR"
+      },
+      "forbid": [
+        "costo de oferta mide horas preparando memoria"
+      ]
+    },
+    {
+      "id": "P30-P54-ND",
+      "scope": "fundaciones",
+      "problemIds": [
+        "P30",
+        "P54"
+      ],
+      "expected": {
+        "segmentCross": "ND_sin_cruce_no_significa_ausencia",
+        "problemRetained": true
+      },
+      "forbid": [
+        "no afecta a ningún segmento"
+      ]
+    },
+    {
+      "id": "NAVIGATION",
+      "input": {
+        "scope": "fundaciones",
+        "section": "problemas",
+        "problemId": "P48",
+        "layer": "sectorial",
+        "query": "equipos",
+        "showContext": false
+      },
+      "nextSection": "criticidad",
+      "expected": {
+        "sameProblem": true,
+        "sameScope": true,
+        "contextAccessible": true
+      },
+      "forbid": [
+        "retirar caso automáticamente"
+      ]
+    },
+    {
+      "id": "NO-CENSUS",
+      "expected": {
+        "fundacionesRate": null,
+        "ranking": null
+      },
+      "forbid": [
+        "muestra mixta como tasa poblacional",
+        "ND como cero"
+      ]
+    }
+  ],
+  "warnings": [
+    "Expected counts are counts of catalogue records / evidence categories, not population prevalence or independent-study counts.",
+    "Individual review of all 245 references against original PDFs is not complete; publication of numerical claims requires targeted verification.",
+    "Sector and foundations scopes do not change raw denominators, periods or source text.",
+    "These fixtures are contract tests, not observed results from fundaciones except cited source facts."
+  ]
+}
