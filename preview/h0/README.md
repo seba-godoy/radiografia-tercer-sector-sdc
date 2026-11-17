@@ -35,7 +35,7 @@ El contrato subyacente se importa desde `/analisis/px-r1-3-selector.mjs` y la ma
 | Casos de navegador | **9 bloques PASS** | Cuatro tarjetas, selector fundaciones 6/13/12, 31 fichas, P20, P48, fuentes PDF, filtros, contexto reversible, búsqueda, estado vacío, navegación, scroll móvil y consola sin errores |
 | Capturas | **5 PNG en ZIP de artifacts del workflow** | [Artif. px-h0-browser-evidence](https://github.com/seba-godoy/radiografia-tercer-sector-sdc/actions/runs/44154829470) |
 | Vercel deployment del SHA QA | **READY** | [Inspector de Vercel](https://vercel.com/sebastian-godoy-s-projects/radiografia-tercer-sector-web/83zf22taC5FJvrNEd1CN9W3PTywm), target Preview |
-| Revisión externa de URL | **En comprobación independiente** | No declarar accesible sin verificación final o reconocer límite; un primer intento externo falló por un hostname mal escrito en su navegación, no por caída confirmada del URL correcto |
+| Revisión externa de URL | **PASS externo** | URL raíz del deployment de commit `3bcd4261e6f6bb32cad353e86f8099e8af96ba6a` redirige a `/preview/h0/index.html`; H1 y cuatro tarjetas de secciones comprobadas. |
 | Datos de producción y main | **SIN CAMBIOS POR H-0** | PR #12 aislado sobre rama de contrato; sin merge |
 
 ## 4. Riesgos, límites y decisiones
@@ -51,3 +51,7 @@ El contrato subyacente se importa desde `/analisis/px-r1-3-selector.mjs` y la ma
 **Siguiente tarea única: PX-R2.1 (4/10 inicial)**, auditoría de cobertura documental y deduplicación: distinguir raíz documental de estudio empírico independiente para 31 problemas / 147 vínculos / 245 hallazgos; documentar F11/F12, F09/F04, solapamientos administrativos F01/F02/F10 y fuentes de contexto. Entregar tabla verificable de cobertura por problema sin confundir «más documentado» con «más frecuente». Al cierre **reestimar PX-R2.2**, hoy 5/10, y solo subdividir si pasa a 6+. Después PX-R2.2 y H-1 activarán la sección 01 con análisis temático.
 
 **Dificultad de H-0:** 5/10 estimada → **5/10 al cierre**: la integración con selector validado permitió mantener alcance sin subdivisión adicional. Se conservan los hitos posteriores H-1..H-5 y PX-R7 publicación definitiva.
+
+## 6. Verificación adicional posterior al corregir enrutamiento (17/11)
+
+**PASS:** una navegación externa al deployment de commit `3bcd4261e6f6bb32cad353e86f8099e8af96ba6a` confirmó que `https://radiografia-tercer-sector-k1ct8av65-sebastian-godoy-s-projects.vercel.app/` redirige a `/preview/h0/index.html` y muestra el H1 «De los problemas a las oportunidades con IA» más los cuatro botones 01–04 correctos. La comprobación ocurrió después de reemplazar la regla `rewrites` para `/` por `redirects`, porque antes la raíz servía la portada anterior mientras que la ruta HTML directa sí funcionaba. También reejecutaron **PASS** los controles [baseline #26](https://github.com/seba-godoy/radiografia-tercer-sector-sdc/actions/runs/44156095713) y [Playwright H-0 #3](https://github.com/seba-godoy/radiografia-tercer-sector-sdc/actions/runs/44156095968). La preview pública comparte únicamente información documental de fuentes públicas; producción v0.6 intacta.
