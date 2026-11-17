@@ -20,7 +20,8 @@
     "Identificadores reconstruidos son llaves propuestas, no claves oficiales del editor ni cambios al catálogo.",
     "La clasificación por claim/página exacta corresponde a PX-R1.2b, no a esta auditoría de fuente.",
     "Los niveles de verificación se diferencian: contenido primario, ficha del editor, auditoría previa, catálogo sin revisar.",
-    "El portal InfoSISREC es vivo: fecha de consulta y corte de datos deben versionarse en cada indicador."
+    "El portal InfoSISREC es vivo: fecha de consulta y corte de datos deben versionarse en cada indicador.",
+    "F15/F20/F21 tienen identificación bibliográfica cotejada, no análisis de metodología empírica; se reservan como referencias contextuales."
   ],
   "records": [
     {
@@ -386,8 +387,8 @@
       "catalog_origin": "ACEDO-RAMIREZ-2011",
       "normalized_origin_candidate": "ACEDO-RAMIREZ-2011",
       "origin_resolution": "catalog_origin_retained",
-      "publication_evidence_url": null,
-      "verification_level": "catalog_unverified",
+      "publication_evidence_url": "https://fundaciontrascender.cl/download/fuentes-de-financiacion-de-las-organizaciones-no-lucrativas/",
+      "verification_level": "bibliographic_metadata",
       "verification_locator": "Dialnet, publicación 2011; método por cotejar",
       "source_kind": "academic_article_finance",
       "primary_population": "Entidades no lucrativas del marco español; unidad empírica específica ND",
@@ -399,7 +400,7 @@
       "nonindependent_or_overlap_refs": [],
       "independence_group": "ACEDO-RAMIREZ-2011",
       "caution": "Útil para conceptualizar alternativas financieras, no para prevalencia ni capacidad de pago en Chile.",
-      "review_state": "needs_primary_method_verification",
+      "review_state": "bibliography_verified_primary_method_pending",
       "audit_date": "2026-11-17"
     },
     {
@@ -434,8 +435,8 @@
       "catalog_origin": "JOSSEY-BASS-HANDBOOK-NONPROFIT-2016",
       "normalized_origin_candidate": "JOSSEY-BASS-HANDBOOK-NONPROFIT-2016",
       "origin_resolution": "catalog_origin_retained",
-      "publication_evidence_url": null,
-      "verification_level": "catalog_unverified",
+      "publication_evidence_url": "https://onlinelibrary.wiley.com/doi/book/10.1002/9781119176558",
+      "verification_level": "publisher_metadata",
       "verification_locator": "Wiley 4.ª edición (2016), capítulos por revisar",
       "source_kind": "reference_handbook",
       "primary_population": "Organizaciones sin fines de lucro, casos de múltiples jurisdicciones",
@@ -447,7 +448,7 @@
       "nonindependent_or_overlap_refs": [],
       "independence_group": "JOSSEY-BASS-HANDBOOK-NONPROFIT-2016",
       "caution": "Referencia de gestión; no asignar N ni diagnosticar fundaciones chilenas.",
-      "review_state": "needs_primary_method_verification",
+      "review_state": "publisher_or_primary_reconciled",
       "audit_date": "2026-11-17"
     },
     {
@@ -506,8 +507,8 @@
       "catalog_origin": "ALLISON-KAYE-PLANEACION-2005-ED2",
       "normalized_origin_candidate": "ALLISON-KAYE-PLANEACION-2005-ED2",
       "origin_resolution": "catalog_origin_retained",
-      "publication_evidence_url": "https://fundaciontrascender.cl/biblioteca/",
-      "verification_level": "catalog_unverified",
+      "publication_evidence_url": "https://library.au.int/node/251523",
+      "verification_level": "bibliographic_metadata",
       "verification_locator": "edición 2005, copia distribuida por Trascender",
       "source_kind": "practice_handbook",
       "primary_population": "Organizaciones nonprofit; ejemplos de planificación",
@@ -519,7 +520,7 @@
       "nonindependent_or_overlap_refs": [],
       "independence_group": "ALLISON-KAYE-PLANEACION-2005-ED2",
       "caution": "Guía práctica, no estudio de prevalencia ni evidencia de organizaciones chilenas.",
-      "review_state": "needs_primary_method_verification",
+      "review_state": "bibliography_verified_primary_method_pending",
       "audit_date": "2026-11-17"
     },
     {
@@ -530,8 +531,8 @@
       "catalog_origin": "IIDH-REVISTA51-2010-ZERBINI",
       "normalized_origin_candidate": "IIDH-REVISTA51-2010-ZERBINI",
       "origin_resolution": "catalog_origin_retained",
-      "publication_evidence_url": null,
-      "verification_level": "catalog_unverified",
+      "publication_evidence_url": "https://agora.edu.es/ejemplar/279422",
+      "verification_level": "bibliographic_metadata",
       "verification_locator": "Revista IIDH 51 (2010), sección por cotejar",
       "source_kind": "academic_human_rights_article",
       "primary_population": "Sociedad civil organizada en protección de DESC, enfoque teórico",
@@ -543,7 +544,7 @@
       "nonindependent_or_overlap_refs": [],
       "independence_group": "IIDH-REVISTA51-2010-ZERBINI",
       "caution": "No diagnostica cuantitativamente problemas de fundaciones chilenas.",
-      "review_state": "needs_primary_method_verification",
+      "review_state": "bibliography_verified_primary_method_pending",
       "audit_date": "2026-11-17"
     },
     {
