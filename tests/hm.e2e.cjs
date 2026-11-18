@@ -20,7 +20,7 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
   page.on("response",r=>{if((r.url().includes("methods-view.mjs")||r.url().includes("mf1-banco-26-fuentes-v1.json"))&&r.status()!==200)errors.push(r.status()+" "+r.url())});
   await page.goto(BASE,{waitUntil:"networkidle"});
   assert.equal(await page.locator(".stage-card").count(),4,"4 tarjetas originales");
-  assert.equal(await page.locator(".site-header .brand-symbol").count(),1,"Marca 2026");
+  assert.equal(await page.getByRole("img",{name:/Simón de Cirene.*30 años/}).count(),1,"Marca 2026");
   assert.equal(await page.locator("#footer-methods").count(),1);
   passed.push("portada 4 tarjetas y brand conservadas");
   await page.locator(".method-strip [data-go=metodos]").click();
