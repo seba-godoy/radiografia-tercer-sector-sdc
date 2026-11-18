@@ -31,5 +31,11 @@ jobs:
         run: node analisis/validate-px-r21.mjs
       - name: QA PX-R2.2a · Taxonomía de 7 temas (54 invariantes)
         run: node analisis/validate-px-r22a.mjs
-      - name: QA PX-R2.2b · Segmentos y comparabilidad (80 pruebas)
+      - name: QA PX-R2.2b · Segmentos y comparabilidad (82 pruebas)
         run: node analisis/validate-px-r22b.mjs
+      - name: Validar esquema JSON de MF-1 (26 fuentes)
+        run: python3 -c 'import json,jsonschema; d=json.load(open("analisis/mf1-banco-26-fuentes-v1.json")); s=json.load(open("schemas/mf1-banco.schema.json")); jsonschema.validate(d,s); print("MF-1 JSON schema PASS")'
+      - name: QA MF-1 · Fuentes, linaje y contrato H-M
+        run: |
+          node --check analisis/validate-mf1.mjs
+          node analisis/validate-mf1.mjs
