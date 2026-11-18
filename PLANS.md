@@ -1,5 +1,7 @@
 # Hoja de ruta de ejecución (referencia de agentes)
 
+> **Actualización de release 18-11-2026 (reemplaza solo la puerta operativa anterior para v0.7):** el propietario autorizó integración de PR #8–#19 como una entrega; H-0, BR-1, PX-R1/R2, H-1, MF-1 y H-M se completaron en ramas con pruebas. La primera sección «Problemas detectados» y «Métodos y fuentes» quedan publicadas v0.7 cuando el gate de CI/producción resulte PASS. 02 Criticidad, 03 Abordabilidad y 04 Oportunidades siguen pendientes. La siguiente microfase de investigación **PX-R3.1 (4/10)** separa documentación, recurrencia, prevalencia y daño/urgencia. No modificar los estudios ni asignar puntuaciones no verificadas. Las notas históricas más abajo no anulan esta decisión.
+
 **Versión:** gobernanza v2.0 y corte interno PX-0.4, 16-11-2026. **No confundir trabajo de diseño con UX validada.**
 **Fuentes de detalle:** Notion, página maestra «PROPUESTA · Radiografía DIMI como sistema de decisiones» y runbooks de cada fase por ID. Este repositorio público no contiene enlaces a páginas internas de Notion.
 
