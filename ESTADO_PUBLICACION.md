@@ -1,3 +1,20 @@
+# Estado de publicación · contrato de release v0.7, 18 de noviembre de 2026
+
+**Autorización:** el propietario solicitó integrar la cadena PR #8–#19 y desplegar antes de PX-R3.1. Este archivo describe el contrato del release; el resultado de CI, commit, deployment READY y HTTP se registran en el acta al concluir.
+
+- Dominio: https://radiografia-tercer-sector-web.vercel.app/ conectado a main.
+- `/` → `/preview/h0/index.html` mediante Vercel, cuatro tarjetas y selector global.
+- `/problemas`: H-1 con 31 problemas, siete temas, 147 relaciones, 245 hallazgos y segmentos (no prevalencia nacional).
+- `/metodos`: H-M con 26 fuentes, 25 raíces candidatas, banco, filtros y CSV, explicaciones del método.
+- `/criticidad`, `/abordabilidad`, `/oportunidades`: visibles pero pendientes de investigación; sin rankings oficiales ni soluciones probadas.
+- `/archivo`: v0.6 íntegra preservada en `versiones/v0.6/index.html` y `index.html` raíz (mismo blob SHA). Las versiones v0.2–v0.5 y base-a continúan.
+- QA: baseline, Chromium escritorio/móvil, filtros, selector, P20/P48, F03, acceso histórico y verificación SHA del deployment real.
+- Sin datos privados/credenciales en repositorio público. Revisión editorial Juanra/DIMI pendiente.
+- Rollback: revert del PR o despliegue de producción anterior, seguido de smoke del dominio y de SHA.
+- Siguiente tarea: PX-R3.1 (4/10), documentación vs episodios, prevalencia, alcance/urgencia y ND.
+
+## Historial v0.6 (16 de noviembre)
+
 # Estado de publicación · 16 de noviembre de 2026
 
 - **Última versión HTML en main:** v0.6, demo documental pre-reunión, no ranking B/C final.
