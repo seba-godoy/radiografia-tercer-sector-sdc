@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import {readFileSync} from "node:fs";
 import assert from "node:assert/strict";
+import {findingNotes,foundationQuestions,foundationFindingNotes} from "../preview/h0/problem-reading.mjs";
 const read=p=>JSON.parse(readFileSync(p,"utf8"));
 const x=read("preview/h0/h1-data.json");
 const t=read("analisis/px-r2-2a-taxonomia-31p-7temas-v1.json");
@@ -45,4 +46,12 @@ test("conteos fuente y origen del segmento",()=>assert.ok(x.segments.every(z=>z.
 test("sólo PDF y links públicos en los cruces",()=>assert.ok(x.crosses.every(z=>!z.referenceUrl||/^https?:\/\//.test(z.referenceUrl))));
 test("marca y selector se mantienen",()=>{const h=readFileSync("preview/h0/index.html","utf8");assert.ok(h.includes("brand-sdc.css")&&h.includes("scope-top")&&h.includes("h1.css"))});
 test("módulo de datos H1 cargado",()=>assert.ok(readFileSync("preview/h0/app.mjs","utf8").includes("h1-data.json")));
+test("lecturas editoriales para los 245 hallazgos y los 31 problemas",()=>{
+  assert.deepEqual(new Set(Object.keys(findingNotes)),new Set(a.findings.map(f=>f.finding_id)));
+  assert.deepEqual(new Set(Object.keys(foundationQuestions)),new Set(a.problems.map(p=>p.problem_id)));
+  assert.ok(Object.values(findingNotes).every(note=>typeof note==="string"&&note.trim().length>0));
+  assert.ok(Object.keys(foundationFindingNotes).every(id=>Object.hasOwn(findingNotes,id)));
+  assert.ok(a.findings.filter(f=>f.population_evidence_class==="F_EXCLUSIVA_EXPLICITA")
+    .every(f=>Object.hasOwn(foundationFindingNotes,f.finding_id)));
+});
 console.log("H-1 DATA PASS "+pass+" / "+pass+" invariantes");
