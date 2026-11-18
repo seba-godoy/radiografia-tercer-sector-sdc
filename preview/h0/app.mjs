@@ -1,3 +1,4 @@
+import {h1Overview,h1RowTag,h1ProblemProfile,h1TopicOf} from "/preview/h0/h1-view.mjs";
 import {
   construirVista,leerEnlace,construirEnlace,cambiarSeccion,cambiarUniverso,
   normalizarEstado,SECTIONS,SCOPE,LAYERS
@@ -22,7 +23,7 @@ directa:{label:"Evidencia directa",short:"Fundaciones explícitas",desc:"Al meno
 compartida:{label:"Evidencia compartida",short:"Muestras mixtas",desc:"Fundaciones y otras organizaciones sin resultados desagregados para fundaciones."},
 contexto:{label:"Contexto por investigar",short:"Contexto complementario",desc:"Evidencia general, sectorial o inferida, útil para explorar pero no exclusiva de fundaciones."},
 sector:{label:"Evidencia del tercer sector",short:"Catálogo documental",desc:"Datos de las poblaciones originales de los estudios."}};
-let data=null,state=null,drawerOrigin=null,loading=false;
+let data=null,state=null,drawerOrigin=null,loading=false,h1Data=null,topicFilter="todas";
 const root=document.getElementById("content"),scopeSelect=document.getElementById("scope-top");
 const esc=v=>String(v??"").replace(/[&<>"']/g,x=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[x]));
 const setBusy=v=>root.setAttribute("aria-busy",v?"true":"false");
@@ -61,16 +62,19 @@ function tools(view){
 function problemCard(p){
  const band=state.scope==="fundaciones"?p.band:"sector";
  const evidence=p.allFindingCount+" "+(p.allFindingCount===1?"hallazgo":"hallazgos");
- return '<button class="pain-row" type="button" data-problem="'+esc(p.problemId)+'" aria-label="Abrir '+esc(p.problemId)+': '+esc(p.title)+'"><span class="pain-code">'+esc(p.problemId)+'</span><span class="row-content"><h3>'+esc(p.title)+'</h3><span class="row-meta"><span class="tag '+band+'">'+esc(bandInfo[band].short)+'</span><span class="tag">'+evidence+'</span></span></span><span class="row-more" aria-hidden="true">↗</span></button>';
+ return '<button class="pain-row" type="button" data-problem="'+esc(p.problemId)+'" aria-label="Abrir '+esc(p.problemId)+': '+esc(p.title)+'"><span class="pain-code">'+esc(p.problemId)+'</span><span class="row-content"><h3>'+esc(p.title)+'</h3><span class="row-meta"><span class="tag '+band+'">'+esc(bandInfo[band].short)+'</span><span class="tag">'+evidence+'</span>'+h1RowTag(h1Data,p.problemId,esc)+'</span></span><span class="row-more" aria-hidden="true">↗</span></button>';
 }
 function problems(view){
  const notice=view.uiNotice;
- const resultCount=view.visibleCases.length;
- return primaryNav()+'<div class="interior wrap"><div class="page-top"><div><div class="stage-label">01 / Problemas detectados</div><h1>Explora los problemas documentados.</h1><p class="page-intro">Un catálogo trazable que conserva el origen de cada hallazgo. La investigación de cobertura y frecuencia comparable se incorporará después; aquí exploramos las evidencias existentes.</p></div><a href="/" data-go="inicio" class="outline-btn">← Volver a portada</a></div>'+
-  stats(view)+'<div class="callout">'+esc(notice)+'</div>'+evidenceBands(view)+tools(view)+
-  '<div class="result-meta"><span id="result-count" aria-live="polite">'+fnum(resultCount)+' de 31 problemas visibles'+(state.layer!=="todas"?' · Filtro de evidencia aplicado':'')+'</span><span>'+fnum(view.summary.hiddenByExplicitFilter)+' fuera de la lista activa (no eliminados)</span></div>'+
-  (resultCount?'<div class="pain-list">'+view.visibleCases.map(problemCard).join("")+'</div>':'<div class="empty"><h3>No hay coincidencias con estos filtros.</h3><p>Las fichas originales permanecen disponibles. Borra la búsqueda o restablece los filtros.</p><button type="button" class="small-btn" data-reset>Restablecer filtros</button></div>')+
-  '<div class="forward"><div><small>Próxima etapa</small><strong>02 · Ranking de criticidad</strong></div><a href="'+esc(linkTo("criticidad"))+'" data-go="criticidad">Continuar →</a></div></div>';
+ const visible=view.visibleCases.filter(p=>topicFilter==="todas"||h1TopicOf(h1Data,p.problemId)===topicFilter);
+ const resultCount=visible.length;
+ const byTopic=topicFilter==="todas"?"":" · Tema "+esc(topicFilter)+" aplicado";
+ return primaryNav()+'<div class="interior wrap"><div class="page-top"><div><div class="stage-label">01 / Problemas detectados · H-1</div><h1>Explora los problemas documentados.</h1><p class="page-intro">Siete temas, cobertura documental, segmentos vinculados e indicadores con alcance declarado. Identifica evidencias y vacíos antes de evaluar criticidad.</p></div><a href="/" data-go="inicio" class="outline-btn">← Volver a portada</a></div>'+
+  stats(view)+'<div class="callout">'+esc(notice)+'</div>'+evidenceBands(view)+h1Overview(h1Data,state.scope,topicFilter,esc)+
+  '<div class="h1-results-title"><h2>Explorar fichas de problemas</h2><p>Combina el tema seleccionado con los filtros de evidencia, la búsqueda y el selector de universo. Haz clic en una ficha para revisar fuentes y segmentos.</p></div>'+tools(view)+
+  '<div class="result-meta"><span id="result-count" aria-live="polite">'+fnum(resultCount)+' de 31 problemas visibles'+byTopic+(state.layer!=="todas"?' · Clase de evidencia aplicada':'')+'</span><span>Los problemas ocultos por filtros no se eliminan del catálogo</span></div>'+
+  (resultCount?'<div class="pain-list">'+visible.map(problemCard).join("")+'</div>':'<div class="empty"><h3>No hay coincidencias con estos filtros.</h3><p>Los problemas siguen en el catálogo. Restablece el tema, la búsqueda y los filtros para recuperarlos.</p><button type="button" class="small-btn" data-reset>Restablecer filtros</button></div>')+
+  '<div class="forward"><div><small>Próxima etapa analítica tras Métodos y fuentes</small><strong>02 · Ranking de criticidad</strong></div><a href="'+esc(linkTo("criticidad"))+'" data-go="criticidad">Continuar →</a></div></div>';
 }
 const pendingCopy={
  criticidad:{number:"02",title:"¿Cuáles son los problemas más críticos?",lead:"Separaremos los problemas mejor documentados de los potencialmente más graves, sin convertir cantidad de fuentes en gravedad.",points:["Criterios de impacto, urgencia y alcance","Evidencia comparable y contraevidencia","Incertidumbre y razón de cada selección"],next:"abordabilidad",nextLabel:"03 · Abordabilidad"},
@@ -98,7 +102,7 @@ function drawer(view){
   return '<article class="evidence-item"><strong>'+esc(f.source_id)+' · '+esc(classes.find(x=>x.id===({F_EXCLUSIVA_EXPLICITA:"directa",M_MIXTA_NO_DESAGREGADA:"compartida",G_OSFL_GENERAL:"general",S_SECTORIAL_SIN_FORMA:"sectorial",I_INFERIDA_POR_VALIDAR:"contextual",U_INSUFICIENTE:"pendiente",X_NO_FUNDACION_EXPLICITA:"no_fundacion"}[f.population_evidence_class]))?.title??"Evidencia")+'</strong><p>'+esc(f.finding_text)+'</p><div>'+links.map(r=>'<a href="'+esc(r.url)+'" target="_blank" rel="noopener noreferrer">Ver fuente: '+esc(r.label)+' ↗</a>').join("")+'</div></article>';
  };
  return '<div class="drawer-backdrop" role="presentation" id="drawer-backdrop"><aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title"><button class="drawer-close" type="button" data-close aria-label="Cerrar ficha">×</button><div class="stage-label">Ficha documental · '+esc(p.problemId)+'</div><h2 id="drawer-title">'+esc(p.title)+'</h2><p class="hint">'+esc(p.warning)+'</p><div class="drawer-summary">'+p.allFindingCount+' hallazgos en '+p.allSourceLinkCount+' fichas de fuentes. Los documentos pueden compartir bases u orígenes; esta cifra no mide frecuencia ni independencia estadística.</div>'+
-  '<div class="drawer-tabs" aria-label="Clases de evidencia">'+[...classes.slice(0,6)].map(x=>'<button type="button" data-dlayer="'+x.id+'" aria-pressed="'+(selectedLayer===x.id)+'">'+esc(x.title)+'</button>').join("")+'</div>'+
+  h1ProblemProfile(h1Data,p.problemId,esc)+'<div class="drawer-tabs" aria-label="Clases de evidencia">'+[...classes.slice(0,6)].map(x=>'<button type="button" data-dlayer="'+x.id+'" aria-pressed="'+(selectedLayer===x.id)+'">'+esc(x.title)+'</button>').join("")+'</div>'+
   '<div class="evidence-list">'+(all.length?all.map(renderItem).join(""):'<p class="hint">No hay hallazgos de esta clase para el problema. Selecciona «Toda la evidencia».</p>')+'</div>'+
   '<div class="callout">Cada dato conserva su población de origen. «Fundaciones» no transforma las muestras mixtas en tasas propias de fundaciones. Los indicadores utilizados en conclusiones deben cotejarse con la fuente primaria.</div></aside></div>';
 }
@@ -123,9 +127,10 @@ function navigate(next,{replace=false,scroll=true}={}){
 }
 async function init(){
  try{
-  const response=await fetch("/analisis/px-r1-2b-attribution-31p-147links-v1.json",{cache:"no-store"});
-  if(!response.ok)throw new Error("Error HTTP "+response.status);
-  data=await response.json();
+  const [response,h1Response]=await Promise.all([fetch("/analisis/px-r1-2b-attribution-31p-147links-v1.json",{cache:"no-store"}),fetch("/preview/h0/h1-data.json",{cache:"no-store"})]);
+  if(!response.ok||!h1Response.ok)throw new Error("Error HTTP: catálogo "+response.status+"; H-1 "+h1Response.status);
+  [data,h1Data]=await Promise.all([response.json(),h1Response.json()]);
+  if(h1Data.schema!=="h1-sdc-2026-v1"||h1Data.counts.problems!==31||h1Data.counts.crosses!==87)throw new Error("Contrato analítico H-1 incompatible");
   state=leerEnlace(location.href,data);
   render();
  }catch(error){
@@ -142,6 +147,8 @@ document.addEventListener("click",event=>{
   if(SECTIONS.includes(section)){navigate({...cambiarSeccion(state,section,data),problemId:null});}
   return;
  }
+ const topic=event.target.closest("[data-topic]");
+ if(topic){topicFilter=topic.dataset.topic;render({scroll:false});return;}
  const row=event.target.closest("[data-problem]");
  if(row){drawerOrigin=row;navigate({...state,problemId:row.dataset.problem},{scroll:false});return;}
  if(event.target.closest("[data-close]")||event.target.id==="drawer-backdrop"){
@@ -152,7 +159,7 @@ document.addEventListener("click",event=>{
  const layer=event.target.closest("[data-dlayer]");
  if(layer){navigate({...state,layer:layer.dataset.dlayer},{replace:true,scroll:false});return;}
  const reset=event.target.closest("[data-reset]");
- if(reset){navigate({...state,query:"",layer:"todas",showContext:true},{replace:true,scroll:false});return;}
+ if(reset){topicFilter="todas";navigate({...state,query:"",layer:"todas",showContext:true},{replace:true,scroll:false});return;}
 });
 document.addEventListener("change",event=>{
  if(!data||!state)return;
