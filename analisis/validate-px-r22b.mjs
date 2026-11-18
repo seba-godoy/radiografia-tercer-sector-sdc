@@ -96,4 +96,6 @@ T("77 · CSV segmentos contiene 122 filas",()=>assert.equal(readFileSync("analis
 T("78 · CSV cruces contiene 88 filas",()=>assert.equal(readFileSync("analisis/px-r2-2b-cruces-87-v1.csv","utf8").trim().split(/\r?\n/).length,88));
 T("79 · CSV temas contiene 8 filas",()=>assert.equal(readFileSync("analisis/px-r2-2b-resumen-7-temas-v1.csv","utf8").trim().split(/\r?\n/).length,8));
 T("80 · CSV indicadores contiene 19 filas",()=>assert.equal(readFileSync("analisis/px-r2-2b-indicadores-18-v1.csv","utf8").trim().split(/\r?\n/).length,19));
+T("81 · I04 anclado exactamente a PDF p.21",()=>assert.ok(ind.some(x=>x.indicator_id==="I04"&&x.primary_source_page_url.endsWith("#page=21")&&x.source_urls[0]===x.primary_source_page_url)));
+T("82 · I05 anclado exactamente a PDF p.22",()=>assert.ok(ind.some(x=>x.indicator_id==="I05"&&x.primary_source_page_url.endsWith("#page=22")&&x.source_urls[0]===x.primary_source_page_url)));
 console.log("PX-R2.2b PASS ·",pass,"/80 pruebas de trazabilidad, universo y gates de inferencia.");
