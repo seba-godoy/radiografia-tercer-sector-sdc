@@ -35,6 +35,10 @@
     {
       "source": "/metodos",
       "destination": "/preview/h0/index.html"
+    },
+    {
+      "source": "/archivo",
+      "destination": "/versiones/v0.6/index.html"
     }
   ],
   "redirects": [
