@@ -10434,7 +10434,6 @@
       "source_base": "255 respuestas válidas de fundaciones y corporaciones.",
       "limitation": "Sin N por figura jurídica y sin duración de interrupción; no nacional",
       "source_urls": [
-        "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=20",
         "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=21",
         "https://onlinelibrary.wiley.com/doi/book/10.1002/9781119176558",
         "https://www.urban.org/sites/default/files/publication/24231/412962-Nonprofit-Government-Contracts-and-Grants-Findings-from-the-National-Survey.PDF#page=29",
@@ -10452,7 +10451,9 @@
       ],
       "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar.",
       "source_verification_mode": "PDF screenshot (UC, 2026-10-27)",
-      "primary_pdf_page_label": "PDF p.21 (N125, 28%)"
+      "primary_pdf_page_label": "PDF p.21 (N125, 28%)",
+      "primary_source_page_url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=21",
+      "link_precision_review": "2026-11-18, PDF UC 2026, lámina 21: cotejo visual con captura de página"
     },
     {
       "indicator_id": "I05",
@@ -10469,8 +10470,7 @@
       "source_base": "255 respuestas válidas de fundaciones y corporaciones.",
       "limitation": "No sumar 62%+42%; PDF diapo 22 requiere cotejo primario",
       "source_urls": [
-        "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=20",
-        "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=21",
+        "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=22",
         "https://onlinelibrary.wiley.com/doi/book/10.1002/9781119176558",
         "https://www.urban.org/sites/default/files/publication/24231/412962-Nonprofit-Government-Contracts-and-Grants-Findings-from-the-National-Survey.PDF#page=29",
         "https://minnesotanonprofits.org/wp-content/uploads/2024/05/principles-and-practice-full.pdf#page=20",
@@ -10487,7 +10487,9 @@
       ],
       "promotion_gate": "Verificar PDF,pregunta,N específico,fecha,unidad,figura jurídica y relación exacta con P antes de comparar.",
       "source_verification_mode": "PDF screenshot (UC, 2026-10-27)",
-      "primary_pdf_page_label": "PDF p.22 (N125, 62%, 42%)"
+      "primary_pdf_page_label": "PDF p.22 (N125, 62%, 42%)",
+      "primary_source_page_url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=22",
+      "link_precision_review": "2026-11-18, PDF UC 2026, lámina 22: cotejo visual con captura de página"
     },
     {
       "indicator_id": "I06",
