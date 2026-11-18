@@ -109,10 +109,32 @@ if isinstance(manifest, list):
     versions = [x.get("version") for x in manifest if isinstance(x, dict)]
     current = [x.get("version") for x in manifest if isinstance(x, dict) and x.get("estado") == "actual"]
     expect(len(versions) == len(set(versions)), "Versiones únicas en manifest")
-    expect(current == ["0.6"], "Un solo corte actual: v0.6")
-    for version in ("v0.5", "v0.4", "v0.3", "v0.2", "base-a"):
+    expect(current == ["0.7"], "Un solo corte publicado en el manifiesto: v0.7")
+    archived_v06 = [x for x in manifest if isinstance(x, dict) and x.get("version") == "0.6"]
+    expect(len(archived_v06) == 1 and archived_v06[0].get("estado") == "archivada", "v0.6 figura archivada sin alterar su contenido")
+    for version in ("v0.6", "v0.5", "v0.4", "v0.3", "v0.2", "base-a"):
         expect((ROOT / "versiones" / version / "index.html").is_file(),
                "Snapshot histórico " + version)
+
+# En el release, index.html de raíz mantiene el original histórico como golden master.
+# La ruta pública '/' redirige a preview/h0/index.html en vercel.json.
+legacy = ROOT / "versiones" / "v0.6" / "index.html"
+expect(legacy.exists() and legacy.read_bytes() == (ROOT / "index.html").read_bytes(),
+       "Archivo v0.6 byte a byte idéntico al antiguo index.html")
+try:
+    vercel = json.loads(read("vercel.json"))
+    redirects = vercel.get("redirects", [])
+    rewrites = vercel.get("rewrites", [])
+    expect(any(x.get("source") == "/" and x.get("destination") == "/preview/h0/index.html" for x in redirects),
+           "Portada pública v0.7 redirigida a experiencia de cuatro etapas")
+    expect(any(x.get("source") == "/archivo" and x.get("destination") == "/versiones/v0.6/index.html" for x in rewrites),
+           "Archivo histórico v0.6 accesible por /archivo")
+except (json.JSONDecodeError, OSError) as exc:
+    expect(False, "Configuración release no válida: " + str(exc))
+preview = read("preview/h0/index.html")
+expect("id=\"scope-top\"" in preview and "methods.css" in preview and "data-go=\"metodos\"" in preview,
+       "Vista v0.7 incluye selector, CSS y sección Métodos y fuentes")
+expect("Archivo v0.6" in preview, "Footer permite consultar v0.6 histórica")
 
 unsafe_urls = re.findall(r'https?://(?:app\.notion\.com|(?:www\.)?notion\.so|drive\.google\.com)/', html)
 expect(not unsafe_urls, "HTML no incorpora URLs de espacios privados Notion/Drive")
@@ -130,4 +152,4 @@ print(f"Validaciones: {len(checks)} PASS; {len(failures)} FAIL")
 if failures:
     print("El gate falla. No publicar hasta corregir o tramitar una migración autorizada.")
     sys.exit(1)
-print("Corte estático v0.6 íntegro. Esto NO valida la investigación ni los flujos UX.")
+print("Corte histórico v0.6 íntegro y contrato de rutas v0.7 validado. Esto NO valida la navegación real ni toda la investigación.")

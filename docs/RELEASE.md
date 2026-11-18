@@ -28,5 +28,12 @@
 ## Evidencia obligatoria del release
 ID de tarea, aprobador real, commit SHA base y final, PR, resultados CI/QA, URL y deployment, checks manuales, hash/snapshot de rollback, excepciones justificadas y una siguiente acción. Si el sitio no cambió, no inventar una versión de producto nueva.
 
-## Corte actual
-Vercel v0.6 (prototipo), datos A 26/31/121, B 11/12/8 y C 4+2. Los archivos de gobernanza pueden mergearse sin alterar `index.html`, pero main igualmente podría disparar build de Vercel; esa ejecución no debe presentarse como nueva versión funcional.
+## Corte nuevo v0.7 (decisión 18-11-2026)
+El propietario autorizó fusionar una **entrega de integración** de PR #8–#19 y desplegar producción de forma controlada antes de R3.1. Para reducir builds parciales se usa un PR único de release, basado en el HEAD H-M ya probado, con todos los cambios acumulados de la cadena. La publicación exige CI de baseline y Chromium PASS, comparación con main al día, revisión de fuente de datos, Vercel READY y smoke de la URL canónica. No fusionar la demo independiente #6 o arquitectura #7 por accidente.
+
+La ruta `/` redirige al HTML de cuatro tarjetas `/preview/h0/index.html`. `/problemas`, `/metodos` y páginas pendientes conservan enlaces directos. El `index.html` de raíz y la copia **byte a byte** `versiones/v0.6/index.html` preservan la versión histórica; `/archivo` ofrece un acceso explícito.
+
+**Gate de reversión:** PR de revert para regresar al commit anterior de main o utilizar el último deployment de producción de Vercel; comprobar ruta pública y commit después de la intervención. No borrar historial ni modificar datos sin migración. Los PR #8–#19 se cierran como incluidos/sustituidos en el release una vez la producción esté READY y auditada.
+
+**Límites:** No confundir cuatro secciones visibles con cuatro investigaciones terminadas. Solo H-1 Problemas y H-M Métodos y fuentes están desarrolladas; criticidad/abordabilidad/IA/negocio quedan como futuras fases. Revisión editorial de Juanra/DIMI aún pendiente.
+

@@ -1,14 +1,29 @@
 [
   {
+    "version": "0.7",
+    "fecha": "2026-11-18",
+    "estado": "actual",
+    "tipo": "radiografía interactiva, cuatro etapas y banco de métodos",
+    "cambios": [
+      "Publicación del recorrido H-0/BR-1: cuatro tarjetas de portada y selector Tercer sector/Fundaciones",
+      "Primera sección 01 Problemas detectados H-1: 31 problemas en 7 temas, 147 relaciones, 245 hallazgos y 87 cruces",
+      "Sección transversal Métodos y fuentes H-M: 26 fichas, 25 raíces candidatas, búsqueda/filtros, CSV y enlaces P ↔ F",
+      "Etapas 02-04 visibles como pendientes de investigación, sin puntuaciones artificiales de criticidad, IA o negocio",
+      "Las 26 fuentes no constituyen 26 estudios independientes y las cifras mixtas no son tasas exclusivas de fundaciones",
+      "Se mantiene versión v0.6 original (blob SHA c9e36797...) en archivo accesible /archivo; sin eliminar catálogos históricos"
+    ]
+  },
+  {
     "version": "0.6",
     "fecha": "2026-11-16",
-    "estado": "actual",
+    "estado": "archivada",
     "tipo": "vista ejecutiva de suficiencia de ranking B",
     "cambios": [
       "Nueva pestaña Suficiencia B con 31 filas, filtros para 15 señales F03 y 16 respaldos sectoriales",
       "Cuatro criterios B con ND explícitos, sin sustituir ausencia de datos por cero",
       "Tres decisiones para la reunión del 17/11, sin presumir acuerdos ni pilotos",
-      "v0.5 archivada; catálogo A, bandas B y opciones C preservadas"
+      "v0.5 archivada; catálogo A, bandas B y opciones C preservadas",
+      "Corte íntegro archivado bajo versiones/v0.6/index.html; original index.html de raíz conservado como legado"
     ]
   },
   {

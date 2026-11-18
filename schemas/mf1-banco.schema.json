@@ -1,0 +1,243 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/seba-godoy/radiografia-tercer-sector-sdc/blob/docs/mf1-banco-fuentes-metodologia-20261118/schemas/mf1-banco.schema.json",
+  "title": "MF-1 · Banco fuente en seis secciones",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "manifest",
+    "sources",
+    "problem_source_links",
+    "findings",
+    "roots",
+    "dependency_risks"
+  ],
+  "properties": {
+    "manifest": {
+      "type": "object",
+      "required": [
+        "id",
+        "version",
+        "cut",
+        "summary",
+        "input_shas",
+        "disclaimer"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "cut": {
+          "type": "string",
+          "format": "date"
+        },
+        "summary": {
+          "type": "object"
+        },
+        "input_shas": {
+          "type": "object"
+        },
+        "disclaimer": {
+          "type": "string"
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 26,
+      "maxItems": 26,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "method_role",
+          "population_scope",
+          "bases_n",
+          "original_url",
+          "document_url",
+          "link_audit",
+          "root_candidate",
+          "problem_ids",
+          "finding_ids",
+          "origin_is_independent_study",
+          "statistical_rate_fundaciones_verified"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^F[0-9]{2}$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 3
+          },
+          "method_role": {
+            "type": "string"
+          },
+          "population_scope": {
+            "type": "string"
+          },
+          "publication_year": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1900,
+            "maximum": 2100
+          },
+          "bases_n": {
+            "type": "array"
+          },
+          "original_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "document_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "link_audit": {
+            "type": "object",
+            "required": [
+              "landing_status",
+              "document_status",
+              "date"
+            ]
+          },
+          "root_candidate": {
+            "type": "string",
+            "minLength": 2
+          },
+          "problem_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^P[0-9]+$"
+            }
+          },
+          "finding_ids": {
+            "type": "array"
+          },
+          "origin_is_independent_study": {
+            "const": false
+          },
+          "statistical_rate_fundaciones_verified": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    "problem_source_links": {
+      "type": "array",
+      "minItems": 147,
+      "maxItems": 147,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "P",
+          "F",
+          "T",
+          "findings",
+          "status"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "P": {
+            "type": "string"
+          },
+          "F": {
+            "type": "string"
+          },
+          "T": {
+            "type": "string"
+          },
+          "findings": {
+            "type": "array"
+          },
+          "status": {
+            "const": "vinculo_documental_no_incidente"
+          }
+        }
+      }
+    },
+    "findings": {
+      "type": "array",
+      "minItems": 245,
+      "maxItems": 245,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "P",
+          "F",
+          "link",
+          "locators",
+          "reverified_pdf_in_mf1",
+          "verification_status"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "P": {
+            "type": "string"
+          },
+          "F": {
+            "type": "string"
+          },
+          "link": {
+            "type": "string"
+          },
+          "locators": {
+            "type": "array"
+          },
+          "reverified_pdf_in_mf1": {
+            "const": false
+          },
+          "verification_status": {
+            "const": "heredado_catálogo_no_recotejado_individualmente"
+          }
+        }
+      }
+    },
+    "roots": {
+      "type": "array",
+      "minItems": 25,
+      "maxItems": 25,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "source_ids",
+          "certified_independent"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "source_ids": {
+            "type": "array"
+          },
+          "certified_independent": {
+            "const": false
+          }
+        }
+      }
+    },
+    "dependency_risks": {
+      "type": "array",
+      "minItems": 5
+    }
+  }
+}

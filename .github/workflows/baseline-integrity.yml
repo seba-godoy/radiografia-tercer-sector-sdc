@@ -23,3 +23,24 @@ jobs:
         run: python3 -m pip install --disable-pip-version-check jsonschema==4.25.1
       - name: Validar contrato PX-1.2 y casos adversariales
         run: python3 scripts/validate_preview_contract.py
+      - name: Node.js version
+        run: node --version
+      - name: QA PX-R1.3 (selector + 31 casos adversariales)
+        run: node analisis/validate-px-r13.mjs
+      - name: QA PX-R2.1 (35 pruebas de fuentes y linaje)
+        run: node analisis/validate-px-r21.mjs
+      - name: QA PX-R2.2a · Taxonomía de 7 temas (54 invariantes)
+        run: node analisis/validate-px-r22a.mjs
+      - name: QA PX-R2.2b · Segmentos y comparabilidad (82 pruebas)
+        run: node analisis/validate-px-r22b.mjs
+      - name: Validar esquema JSON de MF-1 (26 fuentes)
+        run: python3 -c 'import json,jsonschema; d=json.load(open("analisis/mf1-banco-26-fuentes-v1.json")); s=json.load(open("schemas/mf1-banco.schema.json")); jsonschema.validate(d,s); print("MF-1 JSON schema PASS")'
+      - name: QA MF-1 · Fuentes, linaje y contrato H-M
+        run: |
+          node --check analisis/validate-mf1.mjs
+          node analisis/validate-mf1.mjs
+      - name: QA H-M · Integridad, filtros, rutas y CSV seguro
+        run: |
+          node --check preview/h0/methods-view.mjs
+          node --check analisis/validate-hm.mjs
+          node analisis/validate-hm.mjs

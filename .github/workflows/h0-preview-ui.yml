@@ -1,0 +1,65 @@
+name: PX-H0 Preview Browser QA
+on:
+  pull_request:
+    paths:
+      - "preview/h0/**"
+      - "tests/h0.e2e.cjs"
+      - "tests/h0-brand.e2e.cjs"
+      - "tests/h1.e2e.cjs"
+      - "tests/hm.e2e.cjs"
+      - "analisis/validate-hm.mjs"
+      - "analisis/mf1-banco-26-fuentes-v1.json"
+      - "analisis/mf1-metodos-contrato-HM-v1.json"
+      - "analisis/validate-h1.mjs"
+      - "analisis/px-r1-3-selector.mjs"
+      - "analisis/px-r1-2b-attribution-31p-147links-v1.json"
+      - "vercel.json"
+      - ".github/workflows/h0-preview-ui.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  h0-browser:
+    name: H0-Chromium-desktop-mobile
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check JS syntax
+        run: |
+          node --check preview/h0/app.mjs
+          node --check preview/h0/h1-view.mjs
+          node --check preview/h0/methods-view.mjs
+          node --check analisis/validate-hm.mjs
+          node --check tests/hm.e2e.cjs
+          node --check analisis/validate-h1.mjs
+          node --check tests/h1.e2e.cjs
+          node --check analisis/px-r1-3-selector.mjs
+          node --check tests/h0.e2e.cjs
+          node --check tests/h0-brand.e2e.cjs
+      - name: Verify existing contract
+        run: node analisis/validate-px-r13.mjs
+      - name: Verify H-1 documentary integrity
+        run: node analisis/validate-h1.mjs
+      - name: QA H-M · 46 pruebas estructurales y adversariales
+        run: node analisis/validate-hm.mjs
+      - name: Install Chromium Playwright
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Exercise H-0 in a real browser
+        run: node tests/h0.e2e.cjs
+      - name: Exercise H-1 analysis and corrected PDF links
+        run: node tests/h1.e2e.cjs
+      - name: Exercise H-M methods and source bank in Chromium
+        run: node tests/hm.e2e.cjs
+      - name: Brand SdC 2026 (PPT), escritorio y móvil
+        run: node tests/h0-brand.e2e.cjs
+      - name: Upload screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: px-h0-browser-evidence
+          path: preview/h0/test-results/
+          if-no-files-found: ignore
+          retention-days: 14

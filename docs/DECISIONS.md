@@ -4,6 +4,7 @@ Este registro contiene **solo decisiones explícitas o estados pendientes**, no 
 
 | Fecha | Tema | Estado | Fundamento / efecto |
 |---|---|---|---|
+| 2026-11-18 | **Integrar PX-R1/R2, H-0/BR-1, H-1, MF-1 y H-M en main y desplegar v0.7** | **Autorizado por el propietario, ejecución sujeta a gate QA y revisión de despliegue** | Un PR de integración en lugar de 12 merges parciales. Cuatro tarjetas, 01 y métodos completados; 02–04 pendientes. v0.6 archivada. No atribuir aprobación editorial de Juanra/DIMI. |
 | 2026-11-16 | Transformar la biblioteca en recorrido de decisiones para DIMI | Propuesta en discusión | Proceso PX-0 antes de cambiar UI |
 | 2026-11-16 | Fases PX-0...PX-6 e INT/BOT | Plan documentado; ejecución no autorizada en bloque | 49 microtareas detalladas en Notion |
 | 2026-11-16 | Protocolo DIMI v2.0 para agentes | Documentado; adopción operativa por definir | AGENTS, PLANS, QA, seguridad y release |

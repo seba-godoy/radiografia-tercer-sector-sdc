@@ -1,0 +1,288 @@
+{
+  "id": "MF-1-metodos-HM-v1.0.0",
+  "version": "1.0.0",
+  "cut": "2026-11-18",
+  "status": "contrato metodologico: capa R1/R2 aplicada; R3-R6 pendiente",
+  "audience": "Juanra / DIMI",
+  "scope": "presentación interna documentada, no SaaS ni censo representativo",
+  "navigation_contract": {
+    "primary_cards": 4,
+    "stages": [
+      "problemas",
+      "criticidad",
+      "abordabilidad",
+      "oportunidades"
+    ],
+    "secondary_page": "/metodos",
+    "placement": "navegación secundaria y pie, sin quinta tarjeta ni cambio de elegibilidad",
+    "global_scope_values": [
+      "tercer_sector",
+      "fundaciones"
+    ],
+    "scope_relevance": "preservar evidencia directa, mixta y contextual; no ocultar fuentes"
+  },
+  "data_contract": {
+    "source": "analisis/mf1-banco-26-fuentes-v1.json",
+    "source_registry_key": "sources",
+    "source_id_prefix": "F",
+    "source_rows": 26,
+    "links_key": "problem_source_links",
+    "link_rows": 147,
+    "findings_key": "findings",
+    "finding_rows": 245,
+    "roots_key": "roots",
+    "root_candidate_rows": 25,
+    "source_fields_required": [
+      "id",
+      "title",
+      "authors",
+      "publication_year",
+      "method_type",
+      "population_scope",
+      "bases_n",
+      "original_url",
+      "document_url",
+      "root_candidate",
+      "root_shared_with",
+      "problem_ids",
+      "finding_ids",
+      "link_audit",
+      "limitation"
+    ],
+    "relationship_keys": [
+      "P",
+      "F",
+      "T"
+    ],
+    "source_detail_deep_link": "/metodos?fuente=F03",
+    "return_to_origin": "Retener path, scope, problemId, query y filtros al abrir o cerrar; no insertar secuencia insegura en URL",
+    "search_fields": [
+      "id",
+      "title",
+      "authors",
+      "method_role",
+      "problem_ids",
+      "topic_ids"
+    ],
+    "filters": [
+      "publication_year",
+      "method_type",
+      "population_scope",
+      "link_audit.landing_status",
+      "topic_ids"
+    ],
+    "csv_export_rule": "Exportar exactamente las filas visibles del banco 26, encabezados canónicos, comillas dobles RFC4180, BOM opcional; no ejecutar fórmulas al abrir Excel",
+    "reference_priority": "enlace PDF original con página donde exista; cuando no hay documento accesible enlazar ficha editorial marcada 'presentación no disponible'",
+    "reverse_navigation": "problema P→fuentes F; fuente F→P, temas y hallazgos; hallazgo→PDF y retorno",
+    "privacy": "solo material público del catálogo, sin datos privados y sin claves o correos internos; escape de texto y href http(s), rel=noopener noreferrer"
+  },
+  "scopes_and_units": {
+    "levels": [
+      "Fuente-publicación",
+      "Raíz documental candidata",
+      "Vínculo problema-fuente",
+      "Hallazgo con localizador",
+      "Segmento descriptivo",
+      "Encuesta y submuestra",
+      "Mención multirrespuesta",
+      "Caso/expediente"
+    ],
+    "rule": "No convertir una cantidad de fuentes, menciones, encuestas o expedientes en tasa nacional de problemas.",
+    "population_classes": [
+      "F_EXCLUSIVA_EXPLICITA",
+      "M_MIXTA_NO_DESAGREGADA",
+      "G_OSFL_GENERAL",
+      "S_SECTORIAL_SIN_FORMA",
+      "I_INFERIDA_POR_VALIDAR",
+      "U_INSUFICIENTE",
+      "X_NO_FUNDACION_EXPLICITA"
+    ],
+    "selector_foundations": {
+      "direct": 6,
+      "shared_only": 13,
+      "context_only": 12,
+      "interpretation": "categorías de evidencia para las 31 fichas, no 31 fundaciones ni 31 mediciones"
+    },
+    "missing_rule": "ND ≠ 0, no descartar registros sin cruces (P30,P54)",
+    "denominator_rule": "N válido solo para pregunta y submuestra documentadas"
+  },
+  "layer_methods": [
+    {
+      "id": "cobertura",
+      "title": "Detección y cobertura documental",
+      "phases": [
+        "PX-R1",
+        "PX-R2",
+        "H-1"
+      ],
+      "status": "aplicada_con_limitaciones",
+      "purpose": "Describir problemas documentados y vacíos sin ordenar por gravedad",
+      "unit": "31 P, 147 P×F, 245 H, 26 F, 25 raíces candidatas",
+      "selection": "Catálogo curado; asignación de siete temas principales y secundarios; 121 S y 87 cruces P×S",
+      "count_rule": "recuento de fichas, vínculos y hallazgos, sin inferencia de incidencia ni independencia estadística",
+      "overlap_rule": "F11/F12 misma base IFO; atribuciones de 4 F09←F04 y 1 F07←F01; posible solapamiento adicional sin deduplicar automáticamente",
+      "scores": null,
+      "weights": null,
+      "missing": "ND visible",
+      "verification": "4 de 18 indicadores cotejados UC, 14 pendientes; 245 pasajes no recotejados individualmente en MF-1"
+    },
+    {
+      "id": "criticidad",
+      "title": "Ranking de criticidad",
+      "phases": [
+        "PX-R3",
+        "H-2"
+      ],
+      "status": "pendiente_de_validacion",
+      "purpose": "Comparar gravedad, urgencia, alcance y confianza en evidencia",
+      "unit": "problema P",
+      "scores": null,
+      "weights": null,
+      "formula": null,
+      "adversarial": "No convertir cobertura documental ni N mixtos en gravedad; sensibilidad y rúbrica dependen de R3"
+    },
+    {
+      "id": "abordabilidad",
+      "title": "Abordabilidad",
+      "phases": [
+        "PX-R4",
+        "H-3"
+      ],
+      "status": "pendiente_de_validacion",
+      "purpose": "Relacionar problema→causa→tarea y controlabilidad, datos, alternativas sin IA",
+      "unit": "tarea",
+      "scores": null,
+      "weights": null,
+      "formula": null,
+      "adversarial": "No prometer resultados sin línea base ni intervención real"
+    },
+    {
+      "id": "impacto_ia",
+      "title": "Impacto incremental con IA",
+      "phases": [
+        "PX-R5",
+        "H-4"
+      ],
+      "status": "pendiente_de_validacion",
+      "purpose": "Contrastar automatización/IA con una alternativa convencional y medir efecto incremental",
+      "unit": "tarea-solución",
+      "scores": null,
+      "weights": null,
+      "formula": null,
+      "adversarial": "Hipótesis no equivale a impacto observado, comparar con no IA"
+    },
+    {
+      "id": "negocio",
+      "title": "Viabilidad de herramienta pagada",
+      "phases": [
+        "PX-R6",
+        "H-5"
+      ],
+      "status": "pendiente_de_validacion",
+      "purpose": "Separar usuario/pagador, precios verificables, alternativas, costo de servir y escenarios",
+      "unit": "oportunidad y pagador",
+      "scores": null,
+      "weights": null,
+      "formula": null,
+      "adversarial": "No inferir disposición a pagar desde ofertas de cursos ni del tamaño del sector"
+    }
+  ],
+  "warnings": [
+    {
+      "id": "F11-F12",
+      "text": "Una raíz IFO 2025, dos fichas; F12 no tiene presentación íntegra verificada públicamente."
+    },
+    {
+      "id": "F09-F04",
+      "text": "Cuatro pasajes reproducen datos F04, no acreditan cuatro estudios adicionales."
+    },
+    {
+      "id": "F07-F01",
+      "text": "Una atribución F07 reconoce origen administrativo F01."
+    },
+    {
+      "id": "F03-F04",
+      "text": "2025/2026 diferentes muestras y preguntas; no afirmar tendencia sin equivalencia y emparejamiento."
+    },
+    {
+      "id": "F10",
+      "text": "245 organizaciones reportantes ≠ 344 reportes; no extrapolar a universo OSC."
+    },
+    {
+      "id": "F22",
+      "text": "82 menciones de 51 OSC no son 82 OSC; respuestas múltiples."
+    },
+    {
+      "id": "F27",
+      "text": "Portal dinámico sin snapshot nuevo; 2 fundaciones/3 expedientes son casos, no prevalencia."
+    },
+    {
+      "id": "F28",
+      "text": "154 organizaciones demandantes ≠ 49 fichas de oferta ni 27 oferentes."
+    },
+    {
+      "id": "F17",
+      "text": "403 en consulta no prueba enlace roto ni acceso público universal; editorial/libro puede exigir suscripción."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "OSC",
+      "meaning": "Organización de la Sociedad Civil, universo más amplio que fundación."
+    },
+    {
+      "term": "F",
+      "meaning": "Ficha editorial/publicación/portal, no necesariamente estudio independiente."
+    },
+    {
+      "term": "P",
+      "meaning": "Problema detectado en el catálogo, no empresa ni población."
+    },
+    {
+      "term": "S",
+      "meaning": "Segmento en una vista y universo determinados; S121 no se mezcla entre vistas."
+    },
+    {
+      "term": "Raíz candidata",
+      "meaning": "Origen documental deducido, no certificación de independencia de muestras."
+    },
+    {
+      "term": "N",
+      "meaning": "Denominador válido de una pregunta y subpoblación, no tamaño universal."
+    },
+    {
+      "term": "Hallazgo",
+      "meaning": "Pasaje documental atribuido con referencia; puede repetir resultados."
+    },
+    {
+      "term": "Prevalencia",
+      "meaning": "Proporción de población afectada, requiere muestra, unidad y pregunta adecuados."
+    },
+    {
+      "term": "Cotejo",
+      "meaning": "Verificación puntual de cifra, denominador, fuente y página."
+    },
+    {
+      "term": "Enlace reachable",
+      "meaning": "Landing visible; no certifica PDF ni texto de todas las páginas."
+    },
+    {
+      "term": "ND",
+      "meaning": "No disponible o no comprobado; no equivale a cero."
+    },
+    {
+      "term": "Contexto",
+      "meaning": "Referencia indirecta o transferible, no tasa de fundaciones."
+    }
+  ],
+  "completeness_gate": {
+    "baseline_sources": 26,
+    "links": 147,
+    "findings": 245,
+    "roots_candidate": 25,
+    "tests_required": true,
+    "no_html_edits_in_mf1": true,
+    "preview_hm_only_after_qa": true,
+    "reviewer": "Juanra/DIMI pendiente"
+  }
+}

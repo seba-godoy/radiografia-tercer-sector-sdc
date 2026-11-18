@@ -18,6 +18,9 @@ Leer AGENTS, PLANS y el runbook; anotar la base de Git/Notion, objetivo, archivo
 | IA operativa | Casos y respuestas de referencia, manejo «no sé», costo, citas y humano responsable | Prompt injection, documento malicioso, fuga de dato, cita falsa |
 | Ingesta | ID de fuente/versión/hash, validaciones de N/unidad/país, aprobación y recálculo trazable | Archivo duplicado, corrupto, privado, conflictivo, rollback |
 
+## Extensión de QA de release v0.7
+Antes de fusionar, el baseline comprueba que el archivo `versiones/v0.6/index.html` es byte a byte idéntico al histórico `index.html` de la raíz, que el manifiesto marca 0.7 como actual y que las rutas `/`, `/archivo` y `/metodos` están configuradas. Además, Chromium H0/H1/HM/branding debe pasar y se requiere smoke real de preview y producción con ruta raíz, F03/P20, archivo histórico, respuesta HTTP y SHA. Un PASS técnico no equivale a revisión editorial de Juanra.
+
 ## Script automático de referencia
 Ejecutar `python3 scripts/validate_baseline.py` desde la raíz. Sin dependencias externas: verifica integridad del **corte v0.6**, metadatos y archivos esenciales. No valida veracidad de fuentes externas, accesibilidad UI real ni seguridad completa. Antes de alterar esquema/contadores por decisión autorizada, actualizar de forma revisada el propio test y la política de datos, dejando diff que demuestre por qué cambió el baseline.
 

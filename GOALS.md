@@ -1,5 +1,9 @@
 # Objetivo y límites de la presentación para DIMI
 
+> **Decisión vigente de publicación (18-11-2026):** el propietario autorizó integrar las ramas PX-R1/R2, H-0/H-1/MF-1/H-M en `main` y hacer despliegue controlado v0.7. La portada ahora usa **cuatro tarjetas** (01 Problemas detectados, 02 Criticidad, 03 Abordabilidad, 04 Oportunidades IA), más la sección secundaria «Métodos y fuentes». Solo 01 y la sección transversal están desarrolladas; 02–04 no son rankings ni análisis terminados. Se conserva v0.6 en `/archivo` y `versiones/v0.6/index.html`. La audiencia sigue Juanra/DIMI y no se inventan aprobaciones de criterio.
+
+> Los apartados que siguen son el **alcance histórico v0.6 previo al rediseño**. No aplicar seis capítulos 00–05 al sitio v0.7.
+
 **Estado verificado 16-11-2026:** v0.6 es una radiografía documental preliminar actualmente accesible por web pública. PX-0.1 a PX-0.4 terminaron **como trabajo documental y revisión heurística interna**, no como pruebas con usuarios ni aprobación de Juanra. La versión inicial que se quiere construir es una **presentación interactiva de investigación**, no un producto SaaS ni un servicio para fundaciones. El sprint 16–20/11/2026 conserva sus compromisos históricos hasta decisión humana.
 
 ## Problema
