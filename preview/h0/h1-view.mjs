@@ -39,20 +39,9 @@ export function h1Overview(catalog,scope,active,esc,methodsUrl){
       '<strong>'+esc(t.name)+'</strong><div class="h1-meter" aria-hidden="true"><span style="width:'+Math.round(t.problemCount/max*100)+'%"></span></div>'+
       '<small>'+pretty(t.publicationLinks)+' '+denom+' con fuentes · '+pretty(t.findings)+' hallazgos</small></button>';
   }).join("");
-  const indicators=catalog.indicators.filter(x=>x.verified);
   const selectedDetails=selected?'<div class="h1-selected" aria-live="polite"><div><h3>'+esc(selected.name)+'</h3><p>'+esc(selected.description)+'</p></div>'+
     '<div class="h1-selected-numbers"><div><b>'+pretty(selected.publicationDistinct)+'</b><small>Fuentes documentales distintas</small></div><div><b>'+pretty(selected.rootCandidates)+'</b><small>Posibles fuentes de origen tras agrupar publicaciones relacionadas</small></div></div>'+
     (selected.singleSourceProblems.length?'<p class="h1-nd">Atención: '+esc(selected.singleSourceProblems.map(id=>catalog.problems.find(p=>p.id===id)?.title).join(' · '))+' <span>(una sola fuente documental por ficha)</span></p>':'')+'</div>':"";
-  const values={
-    I03:["125 de 255","Organizaciones encuestadas con convenios","Identifica el grupo al que se hicieron las preguntas sobre convenios estatales."],
-    I04:["28%","Término de proyectos por falta de renovación","De las 125 encuestadas con convenios. Muestra una consecuencia reportada para proyectos de atención permanente."],
-    I05:["62% y 42%","Demoras en la revisión de rendiciones","Entre las 125 encuestadas con convenios, 62% reportó rendiciones sin respuesta en plazo y 42% revisiones superiores a siete meses. Las respuestas pueden coincidir."],
-    I06:["38%","Menos de tres meses de autonomía estimada","Entre las 219 respuestas a esa pregunta, en un escenario hipotético sin nuevos ingresos. Mide una estimación declarada."]
-  };
-  const indicatorCards=indicators.map(i=>{
-    const [value,title,detail]=values[i.id];
-    return '<article class="h1-indicator" data-indicator="'+esc(i.id)+'"><div class="h1-indicator-value">'+esc(value)+'</div><h4>'+esc(title)+'</h4><p>'+esc(detail)+'</p>'+safeLink(i.sourceUrl,"Ver lámina de la encuesta UC",esc)+'</article>';
-  }).join("");
   const metrics=[
     [c.problems,"Problemas","Dificultades distintas que tienen una ficha en el catálogo."],
     [c.problem_source_links,"Vínculos con fuentes","Cada vínculo conecta un problema con un documento. Un documento puede respaldar varios problemas."],
@@ -68,8 +57,6 @@ export function h1Overview(catalog,scope,active,esc,methodsUrl){
     '<div class="h1-coverage"><div><h3>Segmentación y límites</h3><p>De los <strong>'+pretty(c.segments)+' segmentos</strong> del catálogo, <strong>'+pretty(c.linked_segments)+'</strong> están vinculados a uno o más problemas. Los otros <strong>'+pretty(c.segments-c.linked_segments)+'</strong> están descritos en las fuentes y aún no tienen un problema asociado aquí.</p><p>Los '+pretty(c.linked_segments)+' segmentos vinculados reúnen <strong>'+pretty(c.crosses)+' relaciones con problemas</strong>. Un mismo segmento puede aparecer en varias relaciones.</p></div><div class="h1-relations">'+
     '<div><b>'+pretty(c.base)+'</b><small><strong>Vínculos documentados</strong><br>Una fuente relaciona al grupo con el problema o con una condición relevante para entenderlo.</small></div>'+
     '<div><b>'+pretty(c.candidate)+'</b><small><strong>Candidatos de investigación</strong><br>Hay una razón para estudiar el problema en ese grupo. La relación queda por comprobar.</small></div></div></div>'+
-    '<details class="h1-indicator-details"><summary>Cómo verificamos las cifras · Ejemplo de la encuesta UC 2026</summary><div class="h1-indicator-head"><p>Este ejemplo muestra cómo verificamos cada cifra antes de usarla: buscamos la pregunta y la página originales, comprobamos cuántas organizaciones respondieron y a qué grupo pertenecían. Por ejemplo, las preguntas sobre convenios se hicieron a 125 de las 255 organizaciones encuestadas.</p><p>Partimos por la encuesta UC 2026 porque reúne varias preguntas sobre sostenibilidad financiera, continuidad de proyectos y rendición de convenios. Fue la primera fuente cotejada cifra por cifra. De las '+pretty(c.indicators)+' cifras seleccionadas de distintas fuentes, '+pretty(c.indicators_rechecked)+' se cotejaron en este documento y '+pretty(c.indicators-c.indicators_rechecked)+' siguen pendientes de esa revisión puntual.</p><p>El estudio usa una muestra intencional y publica resultados conjuntos de fundaciones y corporaciones. Las fichas reúnen evidencia de otras publicaciones que ayudan a entender cada problema.</p></div>'+
-    '<div class="h1-indicator-grid">'+indicatorCards+'</div></details>'+
     '<p class="h1-method-link"><a href="'+esc(methodsUrl)+'" data-go="metodos">Consultar métodos y fuentes ↗</a></p></section>';
 }
 

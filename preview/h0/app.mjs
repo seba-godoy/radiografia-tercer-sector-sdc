@@ -159,11 +159,11 @@ function drawer(view){
   ).join("")+'</section>';
  }).join("");
  const focusIntro=focus?'<div class="drawer-summary h1-foundation-reading"><strong>'+esc(bandInfo[p.band].label)+'</strong><p>'+esc(bandInfo[p.band].desc)+' En esta ficha hay '+p.evidenceCounts.directa+' hallazgos específicos de fundaciones y '+p.evidenceCounts.compartida+' de muestras mixtas.</p></div>':"";
- return '<div class="drawer-backdrop" role="presentation" id="drawer-backdrop"><aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title"><button class="drawer-close" type="button" data-close aria-label="Cerrar ficha">×</button><div class="stage-label">'+(focus?"Perspectiva de fundaciones":"Ficha documental")+'</div><h2 id="drawer-title">'+esc(p.title)+'</h2>'+h1ProblemIntroduction(h1Data,p.problemId,problemProfiles[p.problemId],esc)+focusIntro+
+ return '<dialog class="drawer" aria-labelledby="drawer-title"><button class="drawer-close" type="button" data-close aria-label="Cerrar ficha" autofocus>×</button><div class="stage-label">'+(focus?"Perspectiva de fundaciones":"Ficha documental")+'</div><h2 id="drawer-title">'+esc(p.title)+'</h2>'+h1ProblemIntroduction(h1Data,p.problemId,problemProfiles[p.problemId],esc)+focusIntro+
   h1ProblemProfile(h1Data,p.problemId,state.scope,esc)+'<h3 id="finding-heading">Hallazgos por fuente</h3><p class="hint"><b>Respaldo directo</b> documenta el problema en la población estudiada. <b>Indicio indirecto</b> aporta una pista, por ejemplo desde un grupo más amplio. <b>Contexto</b> ayuda a interpretar la situación. El filtro permite elegir qué tipo de hallazgo ver.</p>'+
   '<div class="drawer-tabs" aria-label="Filtrar hallazgos por clase">'+classes.map(x=>'<button type="button" data-dlayer="'+x.id+'" aria-pressed="'+(selectedLayer===x.id)+'" aria-controls="finding-results">'+esc(x.title)+' ('+(x.id==="todas"?p.allFindingCount:p.evidenceCounts[x.id])+')</button>').join("")+'</div>'+
   '<p class="h1-filter-hint" aria-live="polite">'+esc(classById.get(selectedLayer).desc)+'</p>'+evidenceGuide()+
-  '<div class="evidence-list" id="finding-results">'+(results||'<p class="hint">Esta ficha no tiene hallazgos de la clase seleccionada. Puedes volver a «Toda la evidencia».</p>')+'</div></aside></div>';
+  '<div class="evidence-list" id="finding-results">'+(results||'<p class="hint">Esta ficha no tiene hallazgos de la clase seleccionada. Puedes volver a «Toda la evidencia».</p>')+'</div></dialog>';
 }
 function restoreDrawerFocus(){
  if(drawerOrigin)document.querySelector('[data-problem="'+drawerOrigin+'"]')?.focus({preventScroll:true});
@@ -178,7 +178,7 @@ function render({scroll=false}={}){
  setBusy(false);
  const isDrawer=!isMethods()&&!!view.selectedProblem&&state.section==="problemas";
  document.body.style.overflow=isDrawer?"hidden":"";
- if(isDrawer){document.querySelector("[data-close]")?.focus({preventScroll:true});}
+ if(isDrawer)document.querySelector(".drawer").showModal();
  if(scroll)window.scrollTo({top:0,behavior:"instant"});
  document.title=(isMethods()?"Métodos y fuentes":state.section==="inicio"?"Radiografía del tercer sector":sections.find(x=>x.id===state.section)?.name+" · Radiografía")+" · Simón de Cirene";
 }
@@ -265,7 +265,10 @@ document.addEventListener("click",event=>{
  }
  const row=event.target.closest("[data-problem]");
  if(row){drawerOrigin=row.dataset.problem;navigate({...state,problemId:row.dataset.problem},{scroll:false});return;}
- if(event.target.closest("[data-close]")||event.target.id==="drawer-backdrop"){
+ const dialog=event.target.closest("dialog.drawer");
+ const bounds=dialog===event.target?dialog.getBoundingClientRect():null;
+ const isBackdropClick=bounds&&(event.clientX<bounds.left||event.clientX>=bounds.right||event.clientY<bounds.top||event.clientY>=bounds.bottom);
+ if(event.target.closest("[data-close]")||isBackdropClick){
   navigate({...state,problemId:null},{scroll:false});
   restoreDrawerFocus();
   return;
@@ -319,6 +322,11 @@ document.addEventListener("input",event=>{
 window.addEventListener("popstate",()=>{if(!data)return;drawerLayer=null;state=leerEnlace(location.href,data);methodsFilters=mfParse(location.href);render({scroll:false});});
 window.addEventListener("keydown",event=>{
  if(event.key==="Escape"&&isMethods()&&methodsFilters.fuente){navigateMethods({...methodsFilters,fuente:""},{replace:true});return;}
- if(event.key==="Escape"&&state?.problemId&&!isMethods()){navigate({...state,problemId:null},{scroll:false});restoreDrawerFocus();}
 });
+document.addEventListener("cancel",event=>{
+ if(!event.target.matches("dialog.drawer"))return;
+ event.preventDefault();
+ navigate({...state,problemId:null},{scroll:false});
+ restoreDrawerFocus();
+},{capture:true});
 init();
