@@ -1,5 +1,15 @@
 # Historial de cambios · Radiografía Simón de Cirene
 
+## 0.7 (2026-11-18) · Integración del recorrido institucional y Métodos y fuentes
+- Release agrupa PX-R1/R2 + H-0/BR-1 + H-1 + MF-1 + H-M en un único PR a main, sujeto a CI y smoke Vercel.
+- Portada institucional de cuatro etapas y selector Tercer sector/Fundaciones; identidad Simón de Cirene 2026.
+- 01 Problemas detectados: 31 problemas, siete temas, 147 P×F, 245 hallazgos, 121 segmentos y 87 cruces.
+- Métodos y fuentes: 26 fichas de publicaciones, 25 raíces candidatas, buscador/filtros, CSV y enlaces P↔F↔hallazgo↔documento.
+- Las etapas 02–04 permanecen pendientes; no existen scores de criticidad ni resultados IA/negocio validados.
+- v0.6 conservada íntegra como `versiones/v0.6/index.html`, acceso `/archivo` y archivo de raíz intacto.
+- Revisión editorial de Juanra/DIMI pendiente. El despliegue autorizado no es aprobación de los futuros métodos.
+
+
 ## 0.6 (2026-11-16) · Suficiencia B y preparación de reunión del 17/11
 - Pestaña «Suficiencia B»: 31 fichas con indicador contextual o evidencia cualitativa, 4 criterios, riesgos de inferencia y enlaces públicos
 - Filtros interactivos: 15 con indicador principal F03 y 16 respaldadas en otras fuentes; búsqueda entre 31 filas
