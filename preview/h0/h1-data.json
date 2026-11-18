@@ -1,0 +1,2536 @@
+{
+  "schema": "h1-sdc-2026-v1",
+  "cut": "2026-11-18",
+  "origin": "PX-R2.1 / PX-R2.2a / PX-R2.2b",
+  "methodNote": "Los conteos describen documentos y vínculos del catálogo, no incidencia ni gravedad. Raíces documentales candidatas no son estudios independientes.",
+  "counts": {
+    "problems": 31,
+    "problem_source_links": 147,
+    "findings": 245,
+    "segments": 121,
+    "crosses": 87,
+    "base": 41,
+    "candidate": 46,
+    "linked_segments": 38,
+    "indicators": 18,
+    "indicators_rechecked": 4
+  },
+  "topics": [
+    {
+      "id": "T01",
+      "name": "Captación y sostenibilidad financiera",
+      "short": "Ingresos y donaciones",
+      "description": "Conseguir y diversificar recursos no condicionados o donaciones; mantener fuentes de ingreso sostenibles en el tiempo.",
+      "problemIds": [
+        "P13",
+        "P14",
+        "P15",
+        "P25",
+        "P26",
+        "P54"
+      ],
+      "problemCount": 6,
+      "publicationLinks": 36,
+      "publicationDistinct": 19,
+      "sourceIds": [
+        "F03",
+        "F04",
+        "F06",
+        "F07",
+        "F09",
+        "F10",
+        "F11",
+        "F12",
+        "F14",
+        "F15",
+        "F16",
+        "F17",
+        "F18",
+        "F19",
+        "F20",
+        "F22",
+        "F23",
+        "F26",
+        "F28"
+      ],
+      "rootCandidates": 18,
+      "findings": 59,
+      "singleSourceProblems": [
+        "P54"
+      ],
+      "independentStudies": null
+    },
+    {
+      "id": "T02",
+      "name": "Caja y ciclo de convenios",
+      "short": "Convenios y liquidez",
+      "description": "Administrar el ciclo desde la postulación y adjudicación hasta la instalación y continuidad del financiamiento comprometido.",
+      "problemIds": [
+        "P02",
+        "P16",
+        "P17",
+        "P18",
+        "P19",
+        "P43",
+        "P49"
+      ],
+      "problemCount": 7,
+      "publicationLinks": 36,
+      "publicationDistinct": 14,
+      "sourceIds": [
+        "F01",
+        "F02",
+        "F03",
+        "F04",
+        "F06",
+        "F07",
+        "F09",
+        "F12",
+        "F15",
+        "F17",
+        "F18",
+        "F20",
+        "F26",
+        "F27"
+      ],
+      "rootCandidates": 14,
+      "findings": 60,
+      "singleSourceProblems": [],
+      "independentStudies": null
+    },
+    {
+      "id": "T03",
+      "name": "Rendición y cierre financiero",
+      "short": "Rendiciones y gastos",
+      "description": "Registrar, justificar, revisar, corregir y cerrar rendiciones de fondos y saldos de proyectos.",
+      "problemIds": [
+        "P20",
+        "P21",
+        "P22",
+        "P50",
+        "P51"
+      ],
+      "problemCount": 5,
+      "publicationLinks": 18,
+      "publicationDistinct": 7,
+      "sourceIds": [
+        "F03",
+        "F04",
+        "F06",
+        "F09",
+        "F15",
+        "F26",
+        "F27"
+      ],
+      "rootCandidates": 7,
+      "findings": 27,
+      "singleSourceProblems": [
+        "P51"
+      ],
+      "independentStudies": null
+    },
+    {
+      "id": "T04",
+      "name": "Trámites, datos y reportabilidad",
+      "short": "Registros y memorias",
+      "description": "Mantener y remitir documentos, antecedentes, memorias, balances e información administrativa requerida.",
+      "problemIds": [
+        "P32",
+        "P38",
+        "P40",
+        "P41"
+      ],
+      "problemCount": 4,
+      "publicationLinks": 13,
+      "publicationDistinct": 12,
+      "sourceIds": [
+        "F04",
+        "F07",
+        "F08",
+        "F09",
+        "F10",
+        "F16",
+        "F17",
+        "F18",
+        "F19",
+        "F20",
+        "F23",
+        "F28"
+      ],
+      "rootCandidates": 12,
+      "findings": 23,
+      "singleSourceProblems": [
+        "P40",
+        "P41"
+      ],
+      "independentStudies": null
+    },
+    {
+      "id": "T05",
+      "name": "Gestión interna, talento y evaluación",
+      "short": "Gestión y capacidades",
+      "description": "Fortalecer capacidades de gestión, personas, directorio y medición de resultados de los programas.",
+      "problemIds": [
+        "P11",
+        "P28",
+        "P47"
+      ],
+      "problemCount": 3,
+      "publicationLinks": 24,
+      "publicationDistinct": 14,
+      "sourceIds": [
+        "F02",
+        "F03",
+        "F05",
+        "F09",
+        "F10",
+        "F16",
+        "F17",
+        "F18",
+        "F19",
+        "F20",
+        "F21",
+        "F23",
+        "F26",
+        "F28"
+      ],
+      "rootCandidates": 14,
+      "findings": 40,
+      "singleSourceProblems": [],
+      "independentStudies": null
+    },
+    {
+      "id": "T06",
+      "name": "Operación y cobertura de servicios",
+      "short": "Atención y territorio",
+      "description": "Mantener la prestación y la cobertura del servicio frente a capacidades, población y dispersión territorial.",
+      "problemIds": [
+        "P23",
+        "P48",
+        "P52",
+        "P53"
+      ],
+      "problemCount": 4,
+      "publicationLinks": 4,
+      "publicationDistinct": 2,
+      "sourceIds": [
+        "F03",
+        "F26"
+      ],
+      "rootCandidates": 2,
+      "findings": 7,
+      "singleSourceProblems": [
+        "P23",
+        "P48",
+        "P52",
+        "P53"
+      ],
+      "independentStudies": null
+    },
+    {
+      "id": "T07",
+      "name": "Redes, visibilidad e incidencia",
+      "short": "Visibilidad y políticas",
+      "description": "Participar, ser visible e interactuar con redes y espacios de incidencia relevantes para la organización.",
+      "problemIds": [
+        "P30",
+        "P46"
+      ],
+      "problemCount": 2,
+      "publicationLinks": 16,
+      "publicationDistinct": 14,
+      "sourceIds": [
+        "F04",
+        "F09",
+        "F11",
+        "F12",
+        "F13",
+        "F14",
+        "F17",
+        "F18",
+        "F19",
+        "F21",
+        "F22",
+        "F23",
+        "F26",
+        "F28"
+      ],
+      "rootCandidates": 13,
+      "findings": 29,
+      "singleSourceProblems": [],
+      "independentStudies": null
+    }
+  ],
+  "problems": [
+    {
+      "id": "P02",
+      "title": "Interrumpimos servicios cuando no se renueva un convenio",
+      "themeId": "T02",
+      "theme": "Caja y ciclo de convenios",
+      "secondaryTopicId": "T06",
+      "sourceCount": 9,
+      "findings": 14,
+      "sourceIds": [
+        "F01",
+        "F02",
+        "F03",
+        "F04",
+        "F07",
+        "F09",
+        "F18",
+        "F20",
+        "F26"
+      ],
+      "rootCandidates": 9,
+      "independentStudies": null,
+      "segmentCrossStatus": "parcial_con_cruces_no_exhaustivos"
+    },
+    {
+      "id": "P11",
+      "title": "Nos faltan recursos para medir qué cambió con nuestros programas",
+      "themeId": "T05",
+      "theme": "Gestión interna, talento y evaluación",
+      "secondaryTopicId": "T06",
+      "sourceCount": 12,
+      "findings": 21,
+      "sourceIds": [
+        "F02",
+        "F03",
+        "F05",
+        "F09",
+        "F10",
+        "F17",
+        "F18",
+        "F19",
+        "F20",
+        "F28",
+        "F21",
+        "F23"
+      ],
+      "rootCandidates": 12,
+      "independentStudies": null,
+      "segmentCrossStatus": "parcial_con_cruces_no_exhaustivos"
+    },
+    {
+      "id": "P13",
+      "title": "Nos cuesta asegurar ingresos estables para planificar",
+      "themeId": "T01",
+      "theme": "Captación y sostenibilidad financiera",
+      "secondaryTopicId": null,
+      "sourceCount": 16,
+      "findings": 28,
+      "sourceIds": [
+        "F03",
+        "F04",
+        "F09",
+        "F10",
+        "F11",
+        "F12",
+        "F14",
+        "F15",
+        "F16",
+        "F17",
+        "F18",
+        "F20",
+        "F26",
+        "F28",
+        "F22",
+        "F23"
+      ],
+      "rootCandidates": 15,
+      "independentStudies": null,
+      "segmentCrossStatus": "parcial_con_cruces_no_exhaustivos"
+    },
+    {
+      "id": "P14",
+      "title": "Podríamos sostener pocos meses de operación sin aportes externos",
+      "themeId": "T01",
+      "theme": "Captación y sostenibilidad financiera",
+      "secondaryTopicId": null,
+      "sourceCount": 7,
+      "findings": 11,
+      "sourceIds": [
+        "F03",
+        "F06",
+        "F15",
+        "F17",
+        "F18",
+        "F20",
+        "F26"
+      ],
+      "rootCandidates": 7,
+      "independentStudies": null,
+      "segmentCrossStatus": "parcial_con_cruces_no_exhaustivos"
+    },
+    {
+      "id": "P15",
+      "title": "Perdemos una vía habitual de financiamiento cuando desaparece una convocatoria",
+      "themeId": "T01",
+      "theme": "Captación y sostenibilidad financiera",
+      "secondaryTopicId": null,
+      "sourceCount": 2,
+      "findings": 3,
+      "sourceIds": [
+        "F03",
+        "F04"
+      ],
+      "rootCandidates": 2,
+      "independentStudies": null,
+      "segmentCrossStatus": "parcial_con_cruces_no_exhaustivos"
+    },
+    {
+      "id": "P16",
+      "title": "Las transferencias comprometidas llegan tarde",
+      "themeId": "T02",
+      "theme": "Caja y ciclo de convenios",
+      "secondaryTopicId": null,
+      "sourceCount": 8,
+      "findings": 13,
+      "sourceIds": [
+        "F03",
+        "F04",
+        "F09",
+        "F15",
+        "F17",
+        "F18",
+        "F26",
+        "F27"
+      ],
+      "rootCandidates": 8,
+      "independentStudies": null,
+      "segmentCrossStatus": "parcial_con_cruces_no_exhaustivos"
+    },
+    {
+      "id": "P17",
+      "title": "Tenemos que cubrir costos que el convenio no permite rendir",
+      "themeId": "T02",
+      "theme": "Caja y ciclo de convenios",
+      "secondaryTopicId": "T03",
+      "sourceCount": 8,
+      "findings": 15,
+      "sourceIds": [
+        "F03",
+        "F09",
+        "F12",
+        "F17",
+        "F18",
+        "F20",
+        "F26",
+        "F27"
+      ],
+      "rootCandidates": 8,
+      "independentStudies": null,
+      "segmentCrossStatus": "parcial_con_cruces_no_exhaustivos"
+    },
+    {
+      "id": "P18",
+      "title": "La demora en la toma de razón impide iniciar actividades",
+      "themeId": "T02",
+      "theme": "Caja y ciclo de convenios",
+      "secondaryTopicId": null,
+      "sourceCount": 2,
+      "findings": 2,
+      "sourceIds": [
+        "F03",
+        "F04"
+      ],
+      "rootCandidates": 2,
+      "independentStudies": null,
+      "segmentCrossStatus": "parcial_con_cruces_no_exhaustivos"
+    },
+    {
+      "id": "P19",
+      "title": "Las garantías dificultan que organizaciones pequeñas contraten con el Estado",
+      "themeId": "T02",
+      "theme": "Caja y ciclo de convenios",
+      "secondaryTopicId": "T01",
+      "sourceCount": 4,
+      "findings": 6,
+      "sourceIds": [
+        "F03",
+        "F04",
+        "F06",
+        "F26"
+      ],
+      "rootCandidates": 4,
+      "independentStudies": null,
+      "segmentCrossStatus": "parcial_con_cruces_no_exhaustivos"
+    },
+    {
+      "id": "P20",
+      "title": "Nuestras rendiciones quedan abiertas por falta de respuesta",
+      "themeId": "T03",
+      "theme": "Rendición y cierre financiero",
+      "secondaryTopicId": null,
+      "sourceCount": 7,
+      "findings": 9,
+      "sourceIds": [
+        "F03",
+        "F04",
+        "F06",
+        "F09",
+        "F15",
+        "F26",
+        "F27"
+      ],
+      "rootCandidates": 7,
+      "independentStudies": null,
+      "segmentCrossStatus": "parcial_con_cruces_no_exhaustivos"
+    },
+    {
+      "id": "P21",
+      "title": "Nos piden rehacer rendiciones que ya habían aprobado",
+      "themeId": "T03",
+      "theme": "Rendición y cierre financiero",
+      "secondaryTopicId": null,
+      "sourceCount": 4,
+      "findings": 6,
+      "sourceIds": [
+        "F03",
+        "F04",
+        "F09",
+        "F27"
+      ],
+      "rootCandidates": 4,
+      "independentStudies": null,
+      "segmentCrossStatus": "parcial_con_cruces_no_exhaustivos"
+    },
+    {
+      "id": "P22",
+      "title": "Nos cuesta rendir gastos en SISREC",
+      "themeId": "T03",
+      "theme": "Rendición y cierre financiero",
+      "secondaryTopicId": null,
+      "sourceCount": 4,
+      "findings": 6,
+      "sourceIds": [
+        "F03",
+        "F06",
+        "F09",
+        "F27"
+      ],
+      "rootCandidates": 4,
+      "independentStudies": null,
+      "segmentCrossStatus": "parcial_con_cruces_no_exhaustivos"
+    },
+    {
+      "id": "P23",
+      "title": "Debemos traspasar la atención y los datos si no renuevan el convenio",
+      "themeId": "T06",
+      "theme": "Operación y cobertura de servicios",
+      "secondaryTopicId": "T02",
+      "sourceCount": 1,
+      "findings": 1,
+      "sourceIds": [
+        "F03"
+      ],
+      "rootCandidates": 1,
+      "independentStudies": null,
+      "segmentCrossStatus": "parcial_con_cruces_no_exhaustivos"
+    },
+    {
+      "id": "P25",
+      "title": "Los requisitos dispersos nos dificultan recibir donaciones",
+      "themeId": "T01",
+      "theme": "Captación y sostenibilidad financiera",
+      "secondaryTopicId": "T04",
+      "sourceCount": 6,
+      "findings": 9,
+      "sourceIds": [
+        "F03",
+        "F04",
+        "F07",
+        "F09",
+        "F10",
+        "F22"
+      ],
+      "rootCandidates": 6,
+      "independentStudies": null,
+      "segmentCrossStatus": "parcial_con_cruces_no_exhaustivos"
+    },
+    {
+      "id": "P26",
+      "title": "Los trámites de algunos donantes complican obtener o rendir fondos",
+      "themeId": "T01",
+      "theme": "Captación y sostenibilidad financiera",
+      "secondaryTopicId": "T03",
+      "sourceCount": 4,
+      "findings": 6,
+      "sourceIds": [
+        "F03",
+        "F04",
+        "F18",
+        "F19"
+      ],
+      "rootCandidates": 4,
+      "independentStudies": null,
+      "segmentCrossStatus": "parcial_con_cruces_no_exhaustivos"
+    },
+    {
+      "id": "P28",
+      "title": "Nos cuesta mantener los contratos y retener especialistas",
+      "themeId": "T05",
+      "theme": "Gestión interna, talento y evaluación",
+      "secondaryTopicId": null,
+      "sourceCount": 7,
+      "findings": 11,
+      "sourceIds": [
+        "F03",
+        "F09",
+        "F17",
+        "F18",
+        "F20",
+        "F26",
+        "F28"
+      ],
+      "rootCandidates": 7,
+      "independentStudies": null,
+      "segmentCrossStatus": "parcial_con_cruces_no_exhaustivos"
+    },
+    {
+      "id": "P30",
+      "title": "Nos cuesta aportar a políticas públicas en espacios dispersos e intermitentes",
+      "themeId": "T07",
+      "theme": "Redes, visibilidad e incidencia",
+      "secondaryTopicId": null,
+      "sourceCount": 8,
+      "findings": 17,
+      "sourceIds": [
+        "F04",
+        "F09",
+        "F17",
+        "F18",
+        "F19",
+        "F26",
+        "F21",
+        "F23"
+      ],
+      "rootCandidates": 8,
+      "independentStudies": null,
+      "segmentCrossStatus": "ND_sin_cruce"
+    },
+    {
+      "id": "P32",
+      "title": "Nos falta capacidad de equipo para preparar la memoria y el balance",
+      "themeId": "T04",
+      "theme": "Trámites, datos y reportabilidad",
+      "secondaryTopicId": "T05",
+      "sourceCount": 9,
+      "findings": 14,
+      "sourceIds": [
+        "F04",
+        "F10",
+        "F16",
+        "F17",
+        "F18",
+        "F19",
+        "F20",
+        "F28",
+        "F23"
+      ],
+      "rootCandidates": 9,
+      "independentStudies": null,
+      "segmentCrossStatus": "parcial_con_cruces_no_exhaustivos"
+    },
+    {
+      "id": "P38",
+      "title": "Tenemos que volver a entregar los mismos antecedentes",
+      "themeId": "T04",
+      "theme": "Trámites, datos y reportabilidad",
+      "secondaryTopicId": "T02",
+      "sourceCount": 2,
+      "findings": 5,
+      "sourceIds": [
+        "F07",
+        "F09"
+      ],
+      "rootCandidates": 2,
+      "independentStudies": null,
+      "segmentCrossStatus": "parcial_con_cruces_no_exhaustivos"
+    },
+    {
+      "id": "P40",
+      "title": "Nuestro acceso para enviar la memoria y el balance puede quedar bloqueado",
+      "themeId": "T04",
+      "theme": "Trámites, datos y reportabilidad",
+      "secondaryTopicId": null,
+      "sourceCount": 1,
+      "findings": 2,
+      "sourceIds": [
+        "F08"
+      ],
+      "rootCandidates": 1,
+      "independentStudies": null,
+      "segmentCrossStatus": "parcial_con_cruces_no_exhaustivos"
+    },
+    {
+      "id": "P41",
+      "title": "Tenemos que completar o corregir envíos de memorias y balances",
+      "themeId": "T04",
+      "theme": "Trámites, datos y reportabilidad",
+      "secondaryTopicId": null,
+      "sourceCount": 1,
+      "findings": 2,
+      "sourceIds": [
+        "F08"
+      ],
+      "rootCandidates": 1,
+      "independentStudies": null,
+      "segmentCrossStatus": "parcial_con_cruces_no_exhaustivos"
+    },
+    {
+      "id": "P43",
+      "title": "Tenemos que volver a postular mientras sostenemos un servicio",
+      "themeId": "T02",
+      "theme": "Caja y ciclo de convenios",
+      "secondaryTopicId": "T06",
+      "sourceCount": 3,
+      "findings": 6,
+      "sourceIds": [
+        "F09",
+        "F20",
+        "F26"
+      ],
+      "rootCandidates": 3,
+      "independentStudies": null,
+      "segmentCrossStatus": "parcial_con_cruces_no_exhaustivos"
+    },
+    {
+      "id": "P46",
+      "title": "Nos cuesta dar a conocer nuestro trabajo para acceder a nuevas oportunidades",
+      "themeId": "T07",
+      "theme": "Redes, visibilidad e incidencia",
+      "secondaryTopicId": "T01",
+      "sourceCount": 8,
+      "findings": 12,
+      "sourceIds": [
+        "F11",
+        "F12",
+        "F13",
+        "F14",
+        "F18",
+        "F28",
+        "F22",
+        "F23"
+      ],
+      "rootCandidates": 7,
+      "independentStudies": null,
+      "segmentCrossStatus": "parcial_con_cruces_no_exhaustivos"
+    },
+    {
+      "id": "P47",
+      "title": "Nos cuesta mantener al directorio al día sobre los planes que aprobó",
+      "themeId": "T05",
+      "theme": "Gestión interna, talento y evaluación",
+      "secondaryTopicId": null,
+      "sourceCount": 5,
+      "findings": 8,
+      "sourceIds": [
+        "F16",
+        "F17",
+        "F18",
+        "F20",
+        "F23"
+      ],
+      "rootCandidates": 5,
+      "independentStudies": null,
+      "segmentCrossStatus": "parcial_con_cruces_no_exhaustivos"
+    },
+    {
+      "id": "P48",
+      "title": "Atendemos más casos que plazas financiadas con el mismo equipo",
+      "themeId": "T06",
+      "theme": "Operación y cobertura de servicios",
+      "secondaryTopicId": null,
+      "sourceCount": 1,
+      "findings": 2,
+      "sourceIds": [
+        "F26"
+      ],
+      "rootCandidates": 1,
+      "independentStudies": null,
+      "segmentCrossStatus": "parcial_con_cruces_no_exhaustivos"
+    },
+    {
+      "id": "P49",
+      "title": "Tenemos que financiar la instalación antes de recibir el primer aporte",
+      "themeId": "T02",
+      "theme": "Caja y ciclo de convenios",
+      "secondaryTopicId": "T01",
+      "sourceCount": 2,
+      "findings": 4,
+      "sourceIds": [
+        "F26",
+        "F27"
+      ],
+      "rootCandidates": 2,
+      "independentStudies": null,
+      "segmentCrossStatus": "parcial_con_cruces_no_exhaustivos"
+    },
+    {
+      "id": "P50",
+      "title": "El cierre financiero deja saldos sin resolver tras terminar un convenio",
+      "themeId": "T03",
+      "theme": "Rendición y cierre financiero",
+      "secondaryTopicId": "T02",
+      "sourceCount": 2,
+      "findings": 4,
+      "sourceIds": [
+        "F26",
+        "F27"
+      ],
+      "rootCandidates": 2,
+      "independentStudies": null,
+      "segmentCrossStatus": "parcial_con_cruces_no_exhaustivos"
+    },
+    {
+      "id": "P51",
+      "title": "Nos cuesta separar gastos de varios proyectos en una misma cuenta",
+      "themeId": "T03",
+      "theme": "Rendición y cierre financiero",
+      "secondaryTopicId": null,
+      "sourceCount": 1,
+      "findings": 2,
+      "sourceIds": [
+        "F26"
+      ],
+      "rootCandidates": 1,
+      "independentStudies": null,
+      "segmentCrossStatus": "parcial_con_cruces_no_exhaustivos"
+    },
+    {
+      "id": "P52",
+      "title": "Nos cuesta captar y mantener familias de acogida",
+      "themeId": "T06",
+      "theme": "Operación y cobertura de servicios",
+      "secondaryTopicId": null,
+      "sourceCount": 1,
+      "findings": 2,
+      "sourceIds": [
+        "F26"
+      ],
+      "rootCandidates": 1,
+      "independentStudies": null,
+      "segmentCrossStatus": "parcial_con_cruces_no_exhaustivos"
+    },
+    {
+      "id": "P53",
+      "title": "Llegar a familias en zonas dispersas nos consume más tiempo y recursos",
+      "themeId": "T06",
+      "theme": "Operación y cobertura de servicios",
+      "secondaryTopicId": null,
+      "sourceCount": 1,
+      "findings": 2,
+      "sourceIds": [
+        "F26"
+      ],
+      "rootCandidates": 1,
+      "independentStudies": null,
+      "segmentCrossStatus": "parcial_con_cruces_no_exhaustivos"
+    },
+    {
+      "id": "P54",
+      "title": "Nos falta equipo y tiempo para buscar donantes locales",
+      "themeId": "T01",
+      "theme": "Captación y sostenibilidad financiera",
+      "secondaryTopicId": "T05",
+      "sourceCount": 1,
+      "findings": 2,
+      "sourceIds": [
+        "F22"
+      ],
+      "rootCandidates": 1,
+      "independentStudies": null,
+      "segmentCrossStatus": "ND_sin_cruce"
+    }
+  ],
+  "sources": [
+    {
+      "id": "F01",
+      "name": "Mapa de las Organizaciones de la Sociedad Civil 2023",
+      "url": "https://politicaspublicas.uc.cl/content/uploads/2024/08/Mapa-de-las-organizaciones_2024_digital-1.pdf"
+    },
+    {
+      "id": "F02",
+      "name": "Impacto con rostro humano: radiografía del aporte de la sociedad civil a las personas",
+      "url": "https://politicaspublicas.uc.cl/content/uploads/2026/01/Informe_Radiografia-del-aporte-de-soc-civil-a-las-personas_DIGITAL.pdf"
+    },
+    {
+      "id": "F03",
+      "name": "Encuesta a directoras y directores ejecutivos de fundaciones y corporaciones 2026",
+      "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf"
+    },
+    {
+      "id": "F04",
+      "name": "Resultados encuesta a fundaciones y corporaciones 2025",
+      "url": "https://politicaspublicas.uc.cl/content/uploads/2025/08/sociedad-en-accion_presentacion-1.pdf"
+    },
+    {
+      "id": "F07",
+      "name": "Registro integrado de las organizaciones de la sociedad civil: ¿dónde estamos y cómo avanzamos?",
+      "url": "https://politicaspublicas.uc.cl/content/uploads/2025/11/Informe_Registro-Unico_161025-VF.pdf"
+    },
+    {
+      "id": "F09",
+      "name": "Propuestas presidenciales en sociedad civil: una mirada basada en evidencia para el ciclo político 2026–2030 en Chile",
+      "url": "https://politicaspublicas.uc.cl/content/uploads/2025/10/MESA-soc_civil_DOCUMENTO-COMPLETO_PRESIDeNCIALES-UC_1imp-1.pdf"
+    },
+    {
+      "id": "F18",
+      "name": "Principles & Practices for Nonprofit Excellence",
+      "url": "https://minnesotanonprofits.org/wp-content/uploads/2024/05/principles-and-practice-full.pdf"
+    },
+    {
+      "id": "F20",
+      "name": "Strategic Planning for Nonprofit Organizations · 2.ª edición",
+      "url": "https://fundaciontrascender.cl/download/strategic-planning-for-nonprofit-organizations/"
+    },
+    {
+      "id": "F26",
+      "name": "Estudio del esquema de financiamiento de Protección Especializada",
+      "url": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf"
+    },
+    {
+      "id": "F05",
+      "name": "Confianza a prueba: ¿qué piensan los chilenos de las fundaciones?",
+      "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261001_Presentacion-seminario-Estudio-Confianza-en-Fundaciones_VF.pdf"
+    },
+    {
+      "id": "F10",
+      "name": "Informe FECU Social 2024 · Comunidad de Organizaciones Solidarias",
+      "url": "https://comunidad-org.cl/wp-content/uploads/2026/06/Informe-FECU-Social-2024.pdf"
+    },
+    {
+      "id": "F17",
+      "name": "The Jossey-Bass Handbook of Nonprofit Leadership and Management · 4.ª edición",
+      "url": "https://onlinelibrary.wiley.com/doi/book/10.1002/9781119176558"
+    },
+    {
+      "id": "F19",
+      "name": "Reporte Latinoamericano Filantropía y Comunidades Sostenibles · Localizando los ODS",
+      "url": "https://uai.cdn7pm.net/uploads/2024/05/reporte-filantropia-latinoamericano2023.pdf"
+    },
+    {
+      "id": "F28",
+      "name": "Diagnóstico de necesidades y oferta de fortalecimiento de fundaciones y corporaciones sin fines de lucro",
+      "url": "https://accionsolidaria.cl/wp-content/uploads/2023/11/1694698216517.pdf"
+    },
+    {
+      "id": "F21",
+      "name": "El rol de la sociedad civil organizada para el fortalecimiento de la protección de los derechos humanos en el siglo XXI: un enfoque especial sobre los DESC",
+      "url": "https://www.iidh.ed.cr/images/Publicaciones/RevistaIIDH/Revista-IIDH-51baja.pdf"
+    },
+    {
+      "id": "F23",
+      "name": "Hacia el fortalecimiento de la filantropía institucional en América Latina",
+      "url": "https://filantropialatam.uai.cl/wp-content/uploads/2021/09/hacia_-fortalecimiento-_filantropa_-institucional_-amrica_-latina_07-02-2.pdf"
+    },
+    {
+      "id": "F11",
+      "name": "Del hacer al sostener · Informe IFO 2025",
+      "url": "https://fundaciontrascender.cl/estudio-revela-desafios-clave-para-la-sostenibilidad-de-las-organizaciones-sociales-en-chile/"
+    },
+    {
+      "id": "F12",
+      "name": "Del hacer al sostener · Presentación IFO 2025 y FortalecidOS 2026",
+      "url": "https://fundaciontrascender.cl/estudio-revela-desafios-clave-para-la-sostenibilidad-de-las-organizaciones-sociales-en-chile/"
+    },
+    {
+      "id": "F14",
+      "name": "Programa FortalecidOS · presentación gLOCAL 2025",
+      "url": "https://fundaciontrascender.cl/fundacion-trascender-cierra-exitosa-participacion-en-la-semana-de-la-evaluacion-glocal-2025-presentando-fortalecidos/"
+    },
+    {
+      "id": "F15",
+      "name": "Fuentes de financiación de las organizaciones no lucrativas",
+      "url": "https://dialnet.unirioja.es/descarga/articulo/3675079.pdf"
+    },
+    {
+      "id": "F16",
+      "name": "Guía para la gobernanza efectiva de fundaciones y corporaciones en Chile",
+      "url": "https://ceps.unibas.ch/fileadmin/user_upload/ceps/1_Home/News_Events_Bilder_Doks/20190515_Leitfaden_Governance_Chile_Steffen.pdf"
+    },
+    {
+      "id": "F22",
+      "name": "Filantropía local: desafíos y buenas prácticas en Chile",
+      "url": "https://uai.cdn7pm.net/documentos/filantropia-local-desafios-y-buenas-practicas-en-chile.pdf"
+    },
+    {
+      "id": "F06",
+      "name": "Nuevas regulaciones para la constitución y el registro de fundaciones y corporaciones: ¿hacia dónde vamos?",
+      "url": "https://politicaspublicas.uc.cl/content/uploads/2026/03/Informe_NUEVAS-REGULACIONES-DIC-2025-VF.pdf"
+    },
+    {
+      "id": "F27",
+      "name": "InfoSISREC · buscador público de proyectos y rendiciones",
+      "url": "https://www.rendicioncuentas.cl/info-sisrec/busqueda"
+    },
+    {
+      "id": "F08",
+      "name": "Lineamientos para el fortalecimiento del proceso de fiscalización del Departamento de Personas Jurídicas",
+      "url": "https://politicaspublicas.uc.cl/content/uploads/2025/08/Informe_Lineamienro-fortalecimineto-fiscaliza_231025.pdf"
+    },
+    {
+      "id": "F13",
+      "name": "Encuesta Nacional de Voluntariado y Solidaridad 2025",
+      "url": "https://knowledge.unv.org/sites/default/files/webform/resources/1062/Informe%20ENVS%202025%20Fundacion%20Trascender.pdf"
+    }
+  ],
+  "segments": [
+    {
+      "id": "S11",
+      "title": "Operadoras con convenio estatal",
+      "scope": "contexto_cualitativo",
+      "grain": "registro_fundacion_y_asociacion",
+      "sourceId": "F01",
+      "limitation": "El Mapa no cruza programas operativos con su financiamiento. Se requiere una fuente con datos del episodio.",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2024/08/Mapa-de-las-organizaciones_2024_digital-1.pdf#page=38"
+    },
+    {
+      "id": "S13",
+      "title": "Fundaciones con programas en diversas áreas",
+      "scope": "fundaciones_especificas",
+      "grain": "organizacion_fundacion",
+      "sourceId": "F02",
+      "limitation": "Reúne organizaciones de distintas áreas. Para comparar tareas conviene recortar también por modalidad y tamaño.",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/01/Informe_Radiografia-del-aporte-de-soc-civil-a-las-personas_DIGITAL.pdf#page=14"
+    },
+    {
+      "id": "S14",
+      "title": "Fundaciones sostenedoras educativas",
+      "scope": "fundaciones_especificas",
+      "grain": "organizacion_fundacion",
+      "sourceId": "F02",
+      "limitation": "Identifica un rol institucional concreto. Se conserva separado del recorte amplio de servicios educacionales.",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/01/Informe_Radiografia-del-aporte-de-soc-civil-a-las-personas_DIGITAL.pdf#page=29"
+    },
+    {
+      "id": "S22",
+      "title": "Programas con atención dirigida",
+      "scope": "fundaciones_especificas",
+      "grain": "programa_o_iniciativa_de_fundacion",
+      "sourceId": "F02",
+      "limitation": "La unidad del recorte es el programa. Una fundación puede ejecutar iniciativas de ambas modalidades.",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/01/Informe_Radiografia-del-aporte-de-soc-civil-a-las-personas_DIGITAL.pdf#page=14"
+    },
+    {
+      "id": "S23",
+      "title": "Programas con participación abierta",
+      "scope": "fundaciones_especificas",
+      "grain": "programa_o_iniciativa_de_fundacion",
+      "sourceId": "F02",
+      "limitation": "El recorte corresponde a iniciativas. La cifra excluye actividades que no fue razonable convertir a personas.",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/01/Informe_Radiografia-del-aporte-de-soc-civil-a-las-personas_DIGITAL.pdf#page=22"
+    },
+    {
+      "id": "S27",
+      "title": "Encuestadas con contratos o convenios estatales en 2025",
+      "scope": "mixto_fundaciones_otras",
+      "grain": "organizaciones_respondientes_muestra_mixta",
+      "sourceId": "F03",
+      "limitation": "La submuestra de 125 es la base de las preguntas sobre ejecución y rendición. Mide relación declarada por organización. Muestra intencional de fundaciones y corporaciones; resultados publicados en conjunto.",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=20"
+    },
+    {
+      "id": "S28",
+      "title": "Encuestadas que recibieron donaciones privadas en 2025",
+      "scope": "mixto_fundaciones_otras",
+      "grain": "organizaciones_respondientes_muestra_mixta",
+      "sourceId": "F03",
+      "limitation": "Las preguntas de barreras y relación con donantes usan la submuestra de 200 receptoras. Muestra intencional de fundaciones y corporaciones; resultados publicados en conjunto.",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=27"
+    },
+    {
+      "id": "S33",
+      "title": "Micro",
+      "scope": "mixto_fundaciones_otras",
+      "grain": "organizaciones_respondientes_muestra_mixta",
+      "sourceId": "F03",
+      "limitation": "Clasificación por ingresos en pesos chilenos de 2025. Las preguntas con bases menores no publican el N por tramo. Muestra intencional de fundaciones y corporaciones; resultados publicados en conjunto.",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=16"
+    },
+    {
+      "id": "S34",
+      "title": "Pequeñas",
+      "scope": "mixto_fundaciones_otras",
+      "grain": "organizaciones_respondientes_muestra_mixta",
+      "sourceId": "F03",
+      "limitation": "Clasificación por ingresos en pesos chilenos de 2025. Las preguntas con bases menores no publican el N por tramo. Muestra intencional de fundaciones y corporaciones; resultados publicados en conjunto.",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=16"
+    },
+    {
+      "id": "S36",
+      "title": "Grandes",
+      "scope": "mixto_fundaciones_otras",
+      "grain": "organizaciones_respondientes_muestra_mixta",
+      "sourceId": "F03",
+      "limitation": "Clasificación por ingresos en pesos chilenos de 2025. Las preguntas con bases menores no publican el N por tramo. Muestra intencional de fundaciones y corporaciones; resultados publicados en conjunto.",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=16"
+    },
+    {
+      "id": "S52",
+      "title": "Organizaciones con autonomía estimada de menos de tres meses",
+      "scope": "mixto_fundaciones_otras",
+      "grain": "organizaciones_respondientes_muestra_mixta",
+      "sourceId": "F03",
+      "limitation": "Escenario hipotético con reservas, inversiones o ingresos ganados. Describe una expectativa declarada. Muestra intencional de fundaciones y corporaciones; resultados publicados en conjunto.",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=35"
+    },
+    {
+      "id": "S53",
+      "title": "Organizaciones con autonomía estimada de entre tres y seis meses",
+      "scope": "mixto_fundaciones_otras",
+      "grain": "organizaciones_respondientes_muestra_mixta",
+      "sourceId": "F03",
+      "limitation": "Escenario hipotético con reservas, inversiones o ingresos ganados. Describe una expectativa declarada. Muestra intencional de fundaciones y corporaciones; resultados publicados en conjunto.",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=35"
+    },
+    {
+      "id": "S54",
+      "title": "Organizaciones con autonomía estimada de entre siete y doce meses",
+      "scope": "mixto_fundaciones_otras",
+      "grain": "organizaciones_respondientes_muestra_mixta",
+      "sourceId": "F03",
+      "limitation": "Escenario hipotético con reservas, inversiones o ingresos ganados. Describe una expectativa declarada. Muestra intencional de fundaciones y corporaciones; resultados publicados en conjunto.",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=35"
+    },
+    {
+      "id": "S55",
+      "title": "Organizaciones con autonomía estimada de entre trece y veinticuatro meses",
+      "scope": "mixto_fundaciones_otras",
+      "grain": "organizaciones_respondientes_muestra_mixta",
+      "sourceId": "F03",
+      "limitation": "Escenario hipotético con reservas, inversiones o ingresos ganados. Describe una expectativa declarada. Muestra intencional de fundaciones y corporaciones; resultados publicados en conjunto.",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=35"
+    },
+    {
+      "id": "S56",
+      "title": "Organizaciones con autonomía estimada de más de veinticuatro meses",
+      "scope": "mixto_fundaciones_otras",
+      "grain": "organizaciones_respondientes_muestra_mixta",
+      "sourceId": "F03",
+      "limitation": "Escenario hipotético con reservas, inversiones o ingresos ganados. Describe una expectativa declarada. Muestra intencional de fundaciones y corporaciones; resultados publicados en conjunto.",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=35"
+    },
+    {
+      "id": "S57",
+      "title": "Organizaciones que anticipan un futuro incierto con riesgo de cierre",
+      "scope": "mixto_fundaciones_otras",
+      "grain": "organizaciones_respondientes_muestra_mixta",
+      "sourceId": "F03",
+      "limitation": "Percepción para los cuatro años siguientes. Los porcentajes publicados suman 99% por redondeo. Muestra intencional de fundaciones y corporaciones; resultados publicados en conjunto.",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=39"
+    },
+    {
+      "id": "S58",
+      "title": "Organizaciones que anticipan un futuro frágil con reducción de operaciones o personal",
+      "scope": "mixto_fundaciones_otras",
+      "grain": "organizaciones_respondientes_muestra_mixta",
+      "sourceId": "F03",
+      "limitation": "Percepción para los cuatro años siguientes. Los porcentajes publicados suman 99% por redondeo. Muestra intencional de fundaciones y corporaciones; resultados publicados en conjunto.",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=39"
+    },
+    {
+      "id": "S61",
+      "title": "Organizaciones que reportaron menos ingresos por donaciones",
+      "scope": "mixto_fundaciones_otras",
+      "grain": "organizaciones_respondientes_muestra_mixta",
+      "sourceId": "F03",
+      "limitation": "La caída corresponde a organizaciones encuestadas en el total de 255. Una organización puede reportar más de un canal. La composición media indicada en la evidencia pertenece a la muestra completa.",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=18"
+    },
+    {
+      "id": "S62",
+      "title": "Organizaciones que reportaron menos ingresos por ingresos de la propia organización",
+      "scope": "mixto_fundaciones_otras",
+      "grain": "organizaciones_respondientes_muestra_mixta",
+      "sourceId": "F03",
+      "limitation": "La caída corresponde a organizaciones encuestadas en el total de 255. Una organización puede reportar más de un canal. La composición media indicada en la evidencia pertenece a la muestra completa.",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=18"
+    },
+    {
+      "id": "S63",
+      "title": "Organizaciones que reportaron menos ingresos por Gobierno Central",
+      "scope": "mixto_fundaciones_otras",
+      "grain": "organizaciones_respondientes_muestra_mixta",
+      "sourceId": "F03",
+      "limitation": "La caída corresponde a organizaciones encuestadas en el total de 255. Una organización puede reportar más de un canal. La composición media indicada en la evidencia pertenece a la muestra completa.",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=18"
+    },
+    {
+      "id": "S64",
+      "title": "Organizaciones que reportaron menos ingresos por cooperación internacional",
+      "scope": "mixto_fundaciones_otras",
+      "grain": "organizaciones_respondientes_muestra_mixta",
+      "sourceId": "F03",
+      "limitation": "La caída corresponde a organizaciones encuestadas en el total de 255. Una organización puede reportar más de un canal. La composición media indicada en la evidencia pertenece a la muestra completa.",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=18"
+    },
+    {
+      "id": "S65",
+      "title": "Organizaciones que reportaron menos ingresos por municipios",
+      "scope": "mixto_fundaciones_otras",
+      "grain": "organizaciones_respondientes_muestra_mixta",
+      "sourceId": "F03",
+      "limitation": "La caída corresponde a organizaciones encuestadas en el total de 255. Una organización puede reportar más de un canal. La composición media indicada en la evidencia pertenece a la muestra completa.",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=18"
+    },
+    {
+      "id": "S66",
+      "title": "Organizaciones que reportaron menos ingresos por Gobiernos Regionales",
+      "scope": "mixto_fundaciones_otras",
+      "grain": "organizaciones_respondientes_muestra_mixta",
+      "sourceId": "F03",
+      "limitation": "La caída corresponde a organizaciones encuestadas en el total de 255. Una organización puede reportar más de un canal. La composición media indicada en la evidencia pertenece a la muestra completa.",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=18"
+    },
+    {
+      "id": "S67",
+      "title": "Organizaciones que colaboraron con el Estado en 2024",
+      "scope": "mixto_fundaciones_otras",
+      "grain": "organizaciones_respondientes_muestra_mixta",
+      "sourceId": "F04",
+      "limitation": "Colaboración es la categoría que pregunta F04. F03 usa contratos o convenios para 2025, con otra muestra. Resultados agregados de una muestra intencional de fundaciones y corporaciones, sin desglose por figura jurídica.",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2025/08/sociedad-en-accion_presentacion-1.pdf#page=13"
+    },
+    {
+      "id": "S68",
+      "title": "Organizaciones ubicadas en el grupo de financiamiento privado de F04",
+      "scope": "mixto_fundaciones_otras",
+      "grain": "organizaciones_respondientes_muestra_mixta",
+      "sourceId": "F04",
+      "limitation": "La lámina presenta el grupo junto al de colaboración estatal. No publica cruces de fuentes de ingresos, ni demuestra exclusividad del financiamiento privado. Resultados agregados de una muestra intencional de fundaciones y corporaciones, sin desglose por figura jurídica.",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2025/08/sociedad-en-accion_presentacion-1.pdf#page=13"
+    },
+    {
+      "id": "S72",
+      "title": "Organizaciones que ejecutan políticas públicas con recursos estatales",
+      "scope": "contexto_cualitativo",
+      "grain": "tipo_de_operacion_normativa",
+      "sourceId": "F06",
+      "limitation": "Se define por la operación. El informe no identifica cuáles entidades son ejecutoras ni en cuántos convenios.",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/03/Informe_NUEVAS-REGULACIONES-DIC-2025-VF.pdf#page=18"
+    },
+    {
+      "id": "S74",
+      "title": "Organizaciones que tramitan en un registro habilitante además del constitutivo",
+      "scope": "contexto_cualitativo",
+      "grain": "registro_o_proceso_de_habilitacion",
+      "sourceId": "F07",
+      "limitation": "La misma entidad puede estar en varias bases. Los volúmenes de registros no cuantifican la intersección de organizaciones.",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2025/11/Informe_Registro-Unico_161025-VF.pdf#page=18"
+    },
+    {
+      "id": "S76",
+      "title": "Organizaciones que tramitan por canales presenciales o mixtos",
+      "scope": "contexto_cualitativo",
+      "grain": "registro_o_proceso_de_habilitacion",
+      "sourceId": "F07",
+      "limitation": "El canal puede variar con el registro, el trámite y la fecha. Un paso digital posterior no elimina el paso presencial ya descrito.",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2025/11/Informe_Registro-Unico_161025-VF.pdf#page=25"
+    },
+    {
+      "id": "S78",
+      "title": "Fundaciones que gestionan la carga web de memorias y balances",
+      "scope": "mixto_fundaciones_otras",
+      "grain": "documentos_de_organizaciones_mixtas",
+      "sourceId": "F08",
+      "limitation": "La unidad estimada es documentación. Una entidad puede usar canales diferentes en distintos ejercicios. La fuente describe el proceso conjunto, sin desglose exclusivo de fundaciones.",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2025/08/Informe_Lineamienro-fortalecimineto-fiscaliza_231025.pdf#page=16"
+    },
+    {
+      "id": "S79",
+      "title": "Fundaciones con un envío anual parcial",
+      "scope": "mixto_fundaciones_otras",
+      "grain": "documentos_de_organizaciones_mixtas",
+      "sourceId": "F08",
+      "limitation": "La fuente describe la posibilidad de un envío parcial y su seguimiento. Falta el número de entidades, ejercicios y documentos faltantes. La fuente describe el proceso conjunto, sin desglose exclusivo de fundaciones.",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2025/08/Informe_Lineamienro-fortalecimineto-fiscaliza_231025.pdf#page=18"
+    },
+    {
+      "id": "S80",
+      "title": "Organizaciones que ejecutan servicios recurrentes con convenios de corta duración",
+      "scope": "contexto_cualitativo",
+      "grain": "tipo_de_programa_propuesta",
+      "sourceId": "F09",
+      "limitation": "El informe menciona residencias, cuidados prolongados y servicios terapéuticos. No cuenta organizaciones ni entrega distribución de plazos.",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2025/10/MESA-soc_civil_DOCUMENTO-COMPLETO_PRESIDeNCIALES-UC_1imp-1.pdf#page=17"
+    },
+    {
+      "id": "S81",
+      "title": "Organizaciones que postulan o ejecutan servicios residenciales de protección a la niñez",
+      "scope": "contexto_cualitativo",
+      "grain": "tipo_de_programa_propuesta",
+      "sourceId": "F09",
+      "limitation": "El recuento de procesos no mide organizaciones únicas. Los datos no se extrapolan a todas las residencias, fundaciones o convenios públicos.",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2025/10/MESA-soc_civil_DOCUMENTO-COMPLETO_PRESIDeNCIALES-UC_1imp-1.pdf#page=18"
+    },
+    {
+      "id": "S90",
+      "title": "Hasta CLP 1.000 millones",
+      "scope": "osc_generales",
+      "grain": "organizacion_reportante_fecu",
+      "sourceId": "F10",
+      "limitation": "El gráfico cuenta organizaciones. Los límites y el año difieren de los tramos de otras fuentes.",
+      "sourceUrl": "https://comunidad-org.cl/wp-content/uploads/2026/06/Informe-FECU-Social-2024.pdf#page=23"
+    },
+    {
+      "id": "S102",
+      "title": "Fundaciones, corporaciones y ONG participantes en FortalecidOS",
+      "scope": "mixto_fundaciones_otras",
+      "grain": "organizaciones_respondientes_muestra_mixta",
+      "sourceId": "F11",
+      "limitation": "La categoría agrupa fundaciones, corporaciones y ONG. El informe no publica el resultado exclusivo de fundaciones. El porcentaje se toma del informe. La nota web invierte los grupos.",
+      "sourceUrl": "https://fundaciontrascender.cl/estudio-revela-desafios-clave-para-la-sostenibilidad-de-las-organizaciones-sociales-en-chile/"
+    },
+    {
+      "id": "S103",
+      "title": "Fundaciones familiares",
+      "scope": "contexto_cualitativo",
+      "grain": "tipologia_conceptual_de_fundacion",
+      "sourceId": "F16",
+      "limitation": "Recorte cualitativo. La guía no publica un tamaño comparable por tipo para aplicar esta clasificación al catastro. No equivale a una forma jurídica ni a un tramo de tamaño.",
+      "sourceUrl": "https://ceps.unibas.ch/fileadmin/user_upload/ceps/1_Home/News_Events_Bilder_Doks/20190515_Leitfaden_Governance_Chile_Steffen.pdf#page=28"
+    },
+    {
+      "id": "S104",
+      "title": "Fundaciones empresariales",
+      "scope": "contexto_cualitativo",
+      "grain": "tipologia_conceptual_de_fundacion",
+      "sourceId": "F16",
+      "limitation": "Recorte cualitativo. La guía no publica un tamaño comparable por tipo para aplicar esta clasificación al catastro. No equivale a una forma jurídica ni a un tramo de tamaño.",
+      "sourceUrl": "https://ceps.unibas.ch/fileadmin/user_upload/ceps/1_Home/News_Events_Bilder_Doks/20190515_Leitfaden_Governance_Chile_Steffen.pdf#page=29"
+    },
+    {
+      "id": "S106",
+      "title": "Fundaciones acreditadas que ejecutan protección especializada a la niñez",
+      "scope": "contexto_cualitativo",
+      "grain": "modalidad_o_testimonio_sin_figura_juridica",
+      "sourceId": "F26",
+      "limitation": "La evidencia separa programas, no forma jurídica. No se conoce el número de fundaciones por modalidad ni quiénes dieron los testimonios anónimos.",
+      "sourceUrl": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=117"
+    },
+    {
+      "id": "S107",
+      "title": "Fundaciones ejecutoras con proyectos verificados en InfoSISREC",
+      "scope": "fundaciones_especificas",
+      "grain": "caso_proyecto_verificado",
+      "sourceId": "F27",
+      "limitation": "El conteo describe solo los casos verificados. No representa a todas las fundaciones ni OSC con transferencias. Un ejecutor puede tener varios proyectos.",
+      "sourceUrl": "https://www.rendicioncuentas.cl/info-sisrec/busqueda"
+    }
+  ],
+  "crosses": [
+    {
+      "id": "C001",
+      "problemId": "P11",
+      "segmentId": "S14",
+      "sourceId": "F02",
+      "kind": "candidate",
+      "scope": "fundaciones_especificas",
+      "originAlignment": "misma_fuente",
+      "reason": "La matrícula ofrece un punto de partida para buscar trayectorias educativas. La cifra de matrícula no mide resultados posteriores.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/01/Informe_Radiografia-del-aporte-de-soc-civil-a-las-personas_DIGITAL.pdf#page=29"
+    },
+    {
+      "id": "C002",
+      "problemId": "P11",
+      "segmentId": "S22",
+      "sourceId": "F02",
+      "kind": "candidate",
+      "scope": "fundaciones_especificas",
+      "originAlignment": "misma_fuente",
+      "reason": "Un público identificable permite investigar si existe seguimiento posterior a la participación. La fuente cuantifica cobertura y plantea estudiar resultados.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/01/Informe_Radiografia-del-aporte-de-soc-civil-a-las-personas_DIGITAL.pdf#page=22"
+    },
+    {
+      "id": "C003",
+      "problemId": "P11",
+      "segmentId": "S23",
+      "sourceId": "F02",
+      "kind": "candidate",
+      "scope": "fundaciones_especificas",
+      "originAlignment": "misma_fuente",
+      "reason": "Se puede investigar cómo evaluar actividades abiertas con asistentes difíciles de identificar. El informe describe límites de conteo y propone incorporar resultados.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/01/Informe_Radiografia-del-aporte-de-soc-civil-a-las-personas_DIGITAL.pdf#page=14"
+    },
+    {
+      "id": "C004",
+      "problemId": "P13",
+      "segmentId": "S36",
+      "sourceId": "F03",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "55% del ingreso medio declarado de las grandes proviene del Gobierno Central.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=18"
+    },
+    {
+      "id": "C005",
+      "problemId": "P14",
+      "segmentId": "S33",
+      "sourceId": "F03",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "78% de las micro que respondieron estima operar hasta seis meses.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=35"
+    },
+    {
+      "id": "C006",
+      "problemId": "P14",
+      "segmentId": "S36",
+      "sourceId": "F03",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "70% de las grandes que respondieron estima operar hasta seis meses.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=35"
+    },
+    {
+      "id": "C007",
+      "problemId": "P25",
+      "segmentId": "S28",
+      "sourceId": "F03",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "La pregunta sobre restricciones en tipos de aportes se hizo a receptoras privadas.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=28"
+    },
+    {
+      "id": "C008",
+      "problemId": "P26",
+      "segmentId": "S28",
+      "sourceId": "F03",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "La proporción que percibe burocracia usa la submuestra receptora de donaciones.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=28"
+    },
+    {
+      "id": "C009",
+      "problemId": "P26",
+      "segmentId": "S33",
+      "sourceId": "F03",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "37% de micro receptoras percibe burocracia excesiva.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=28"
+    },
+    {
+      "id": "C010",
+      "problemId": "P28",
+      "segmentId": "S36",
+      "sourceId": "F03",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "La fuente describe mayor capacidad de inversión y menos dificultades entre las grandes, sin publicar tasas por ítem.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=36"
+    },
+    {
+      "id": "C011",
+      "problemId": "P15",
+      "segmentId": "S27",
+      "sourceId": "F03",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "La encuesta mide esta dificultad en las 125 organizaciones con convenios o contratos estatales.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=21"
+    },
+    {
+      "id": "C012",
+      "problemId": "P16",
+      "segmentId": "S27",
+      "sourceId": "F03",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "La encuesta mide esta dificultad en las 125 organizaciones con convenios o contratos estatales.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=21"
+    },
+    {
+      "id": "C013",
+      "problemId": "P17",
+      "segmentId": "S27",
+      "sourceId": "F03",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "La encuesta mide esta dificultad en las 125 organizaciones con convenios o contratos estatales.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=21"
+    },
+    {
+      "id": "C014",
+      "problemId": "P18",
+      "segmentId": "S27",
+      "sourceId": "F03",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "La encuesta mide esta dificultad en las 125 organizaciones con convenios o contratos estatales.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=21"
+    },
+    {
+      "id": "C015",
+      "problemId": "P19",
+      "segmentId": "S27",
+      "sourceId": "F03",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "La encuesta mide esta dificultad en las 125 organizaciones con convenios o contratos estatales.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=21"
+    },
+    {
+      "id": "C016",
+      "problemId": "P20",
+      "segmentId": "S27",
+      "sourceId": "F03",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "La encuesta mide esta dificultad en las 125 organizaciones con convenios o contratos estatales.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=22"
+    },
+    {
+      "id": "C017",
+      "problemId": "P21",
+      "segmentId": "S27",
+      "sourceId": "F03",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "La encuesta mide esta dificultad en las 125 organizaciones con convenios o contratos estatales.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=22"
+    },
+    {
+      "id": "C018",
+      "problemId": "P22",
+      "segmentId": "S27",
+      "sourceId": "F03",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "La encuesta mide esta dificultad en las 125 organizaciones con convenios o contratos estatales.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=22"
+    },
+    {
+      "id": "C019",
+      "problemId": "P23",
+      "segmentId": "S27",
+      "sourceId": "F03",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "La encuesta mide esta dificultad en las 125 organizaciones con convenios o contratos estatales.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=21"
+    },
+    {
+      "id": "C020",
+      "problemId": "P14",
+      "segmentId": "S52",
+      "sourceId": "F03",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "El tramo proviene de la pregunta de autonomía operativa.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=35"
+    },
+    {
+      "id": "C021",
+      "problemId": "P14",
+      "segmentId": "S53",
+      "sourceId": "F03",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "El tramo proviene de la pregunta de autonomía operativa.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=35"
+    },
+    {
+      "id": "C022",
+      "problemId": "P14",
+      "segmentId": "S54",
+      "sourceId": "F03",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "El tramo proviene de la pregunta de autonomía operativa.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=35"
+    },
+    {
+      "id": "C023",
+      "problemId": "P14",
+      "segmentId": "S55",
+      "sourceId": "F03",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "El tramo proviene de la pregunta de autonomía operativa.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=35"
+    },
+    {
+      "id": "C024",
+      "problemId": "P14",
+      "segmentId": "S56",
+      "sourceId": "F03",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "El tramo proviene de la pregunta de autonomía operativa.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=35"
+    },
+    {
+      "id": "C025",
+      "problemId": "P13",
+      "segmentId": "S61",
+      "sourceId": "F03",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "La fuente publica la incidencia de disminución de ingresos por canal.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=34"
+    },
+    {
+      "id": "C026",
+      "problemId": "P13",
+      "segmentId": "S62",
+      "sourceId": "F03",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "La fuente publica la incidencia de disminución de ingresos por canal.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=34"
+    },
+    {
+      "id": "C027",
+      "problemId": "P13",
+      "segmentId": "S63",
+      "sourceId": "F03",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "La fuente publica la incidencia de disminución de ingresos por canal.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=34"
+    },
+    {
+      "id": "C028",
+      "problemId": "P13",
+      "segmentId": "S64",
+      "sourceId": "F03",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "La fuente publica la incidencia de disminución de ingresos por canal.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=34"
+    },
+    {
+      "id": "C029",
+      "problemId": "P13",
+      "segmentId": "S65",
+      "sourceId": "F03",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "La fuente publica la incidencia de disminución de ingresos por canal.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=34"
+    },
+    {
+      "id": "C030",
+      "problemId": "P13",
+      "segmentId": "S66",
+      "sourceId": "F03",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "La fuente publica la incidencia de disminución de ingresos por canal.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=34"
+    },
+    {
+      "id": "C031",
+      "problemId": "P02",
+      "segmentId": "S27",
+      "sourceId": "F03",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "La no renovación de convenios se asocia a términos de proyectos en esta submuestra.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=21"
+    },
+    {
+      "id": "C032",
+      "problemId": "P02",
+      "segmentId": "S57",
+      "sourceId": "F03",
+      "kind": "candidate",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "La percepción de riesgo permite seleccionar casos. El indicador no mide cierres efectivos.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=39"
+    },
+    {
+      "id": "C033",
+      "problemId": "P02",
+      "segmentId": "S58",
+      "sourceId": "F03",
+      "kind": "candidate",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "La fragilidad declarada puede orientar entrevistas sobre continuidad y reducción de atención.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=39"
+    },
+    {
+      "id": "C034",
+      "problemId": "P11",
+      "segmentId": "S28",
+      "sourceId": "F03",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "39% de las receptoras prioriza evaluar resultados o impacto.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=29"
+    },
+    {
+      "id": "C035",
+      "problemId": "P19",
+      "segmentId": "S34",
+      "sourceId": "F03",
+      "kind": "candidate",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "La barrera de garantía se identificó para organizaciones pequeñas en el encuentro. Falta medirla por tramo.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=9"
+    },
+    {
+      "id": "C036",
+      "problemId": "P28",
+      "segmentId": "S33",
+      "sourceId": "F03",
+      "kind": "candidate",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "Las micro permiten explorar cómo los ciclos de ingreso afectan contratos y retención. La tasa publicada corresponde a toda la muestra.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=36"
+    },
+    {
+      "id": "C037",
+      "problemId": "P28",
+      "segmentId": "S27",
+      "sourceId": "F03",
+      "kind": "candidate",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "La vigencia de convenios permite seguir ciclos de financiamiento y estabilidad del equipo en casos concretos.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=36"
+    },
+    {
+      "id": "C038",
+      "problemId": "P02",
+      "segmentId": "S67",
+      "sourceId": "F04",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "La situación de esta ficha fue consultada a las 150 organizaciones colaboradoras. En continuidad se observó la suspensión de contratos como señal.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2025/08/sociedad-en-accion_presentacion-1.pdf#page=15"
+    },
+    {
+      "id": "C039",
+      "problemId": "P15",
+      "segmentId": "S67",
+      "sourceId": "F04",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "La situación de esta ficha fue consultada a las 150 organizaciones colaboradoras. En continuidad se observó la suspensión de contratos como señal.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2025/08/sociedad-en-accion_presentacion-1.pdf#page=15"
+    },
+    {
+      "id": "C040",
+      "problemId": "P16",
+      "segmentId": "S67",
+      "sourceId": "F04",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "La situación de esta ficha fue consultada a las 150 organizaciones colaboradoras. En continuidad se observó la suspensión de contratos como señal.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2025/08/sociedad-en-accion_presentacion-1.pdf#page=15"
+    },
+    {
+      "id": "C041",
+      "problemId": "P18",
+      "segmentId": "S67",
+      "sourceId": "F04",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "La situación de esta ficha fue consultada a las 150 organizaciones colaboradoras. En continuidad se observó la suspensión de contratos como señal.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2025/08/sociedad-en-accion_presentacion-1.pdf#page=15"
+    },
+    {
+      "id": "C042",
+      "problemId": "P19",
+      "segmentId": "S67",
+      "sourceId": "F04",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "La situación de esta ficha fue consultada a las 150 organizaciones colaboradoras. En continuidad se observó la suspensión de contratos como señal.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2025/08/sociedad-en-accion_presentacion-1.pdf#page=15"
+    },
+    {
+      "id": "C043",
+      "problemId": "P20",
+      "segmentId": "S67",
+      "sourceId": "F04",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "La situación de esta ficha fue consultada a las 150 organizaciones colaboradoras. En continuidad se observó la suspensión de contratos como señal.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2025/08/sociedad-en-accion_presentacion-1.pdf#page=15"
+    },
+    {
+      "id": "C044",
+      "problemId": "P21",
+      "segmentId": "S67",
+      "sourceId": "F04",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "La situación de esta ficha fue consultada a las 150 organizaciones colaboradoras. En continuidad se observó la suspensión de contratos como señal.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2025/08/sociedad-en-accion_presentacion-1.pdf#page=15"
+    },
+    {
+      "id": "C045",
+      "problemId": "P25",
+      "segmentId": "S67",
+      "sourceId": "F04",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "La situación de esta ficha fue consultada a las 150 organizaciones colaboradoras. En continuidad se observó la suspensión de contratos como señal.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2025/08/sociedad-en-accion_presentacion-1.pdf#page=15"
+    },
+    {
+      "id": "C046",
+      "problemId": "P26",
+      "segmentId": "S68",
+      "sourceId": "F04",
+      "kind": "candidate",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "Recorte pertinente para entrevistas. La burocracia de fondos privados se midió sobre las 268 respuestas, sin tasa publicada para el grupo de 44%.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2025/08/sociedad-en-accion_presentacion-1.pdf#page=17"
+    },
+    {
+      "id": "C047",
+      "problemId": "P02",
+      "segmentId": "S57",
+      "sourceId": "F04",
+      "kind": "candidate",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "fuentes_diferentes",
+      "reason": "Permite buscar casos de continuidad en riesgo. El gráfico no mide cierres efectivos ni identifica causas.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2025/08/sociedad-en-accion_presentacion-1.pdf#page=19"
+    },
+    {
+      "id": "C048",
+      "problemId": "P02",
+      "segmentId": "S58",
+      "sourceId": "F04",
+      "kind": "candidate",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "fuentes_diferentes",
+      "reason": "Permite buscar casos de continuidad en riesgo. El gráfico no mide cierres efectivos ni identifica causas.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2025/08/sociedad-en-accion_presentacion-1.pdf#page=19"
+    },
+    {
+      "id": "C049",
+      "problemId": "P19",
+      "segmentId": "S72",
+      "sourceId": "F06",
+      "kind": "candidate",
+      "scope": "contexto_cualitativo",
+      "originAlignment": "misma_fuente",
+      "reason": "Buscar casos de garantías dentro del recorte sobre 1.000 UTM definido en la Circular.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/03/Informe_NUEVAS-REGULACIONES-DIC-2025-VF.pdf#page=19"
+    },
+    {
+      "id": "C050",
+      "problemId": "P20",
+      "segmentId": "S72",
+      "sourceId": "F06",
+      "kind": "candidate",
+      "scope": "contexto_cualitativo",
+      "originAlignment": "misma_fuente",
+      "reason": "Examinar rendiciones sucesivas y la fecha de respuesta de cada convenio.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/03/Informe_NUEVAS-REGULACIONES-DIC-2025-VF.pdf#page=18"
+    },
+    {
+      "id": "C051",
+      "problemId": "P38",
+      "segmentId": "S74",
+      "sourceId": "F07",
+      "kind": "candidate",
+      "scope": "contexto_cualitativo",
+      "originAlignment": "misma_fuente",
+      "reason": "El informe describe volver a acreditar existencia, vigencia o elegibilidad. El recorte ayuda a buscar organizaciones con más de un trámite.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2025/11/Informe_Registro-Unico_161025-VF.pdf#page=28"
+    },
+    {
+      "id": "C052",
+      "problemId": "P38",
+      "segmentId": "S76",
+      "sourceId": "F07",
+      "kind": "candidate",
+      "scope": "contexto_cualitativo",
+      "originAlignment": "misma_fuente",
+      "reason": "Conviene observar si la combinación de canales obliga a volver a conseguir o presentar antecedentes.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2025/11/Informe_Registro-Unico_161025-VF.pdf#page=25"
+    },
+    {
+      "id": "C053",
+      "problemId": "P40",
+      "segmentId": "S78",
+      "sourceId": "F08",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "La habilitación era un paso del flujo web descrito. No se informa una tasa de devoluciones.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2025/08/Informe_Lineamienro-fortalecimineto-fiscaliza_231025.pdf#page=17"
+    },
+    {
+      "id": "C054",
+      "problemId": "P41",
+      "segmentId": "S78",
+      "sourceId": "F08",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "La carga separada y la solicitud del archivo pendiente corresponden al flujo web estudiado.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2025/08/Informe_Lineamienro-fortalecimineto-fiscaliza_231025.pdf#page=17"
+    },
+    {
+      "id": "C055",
+      "problemId": "P41",
+      "segmentId": "S79",
+      "sourceId": "F08",
+      "kind": "base",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "El informe vincula el envío de un solo archivo con la necesidad de revisar pendientes.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2025/08/Informe_Lineamienro-fortalecimineto-fiscaliza_231025.pdf#page=18"
+    },
+    {
+      "id": "C056",
+      "problemId": "P43",
+      "segmentId": "S80",
+      "sourceId": "F09",
+      "kind": "candidate",
+      "scope": "contexto_cualitativo",
+      "originAlignment": "misma_fuente",
+      "reason": "Buscar un caso de renovación de un servicio que sigue operando.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2025/10/MESA-soc_civil_DOCUMENTO-COMPLETO_PRESIDeNCIALES-UC_1imp-1.pdf#page=17"
+    },
+    {
+      "id": "C057",
+      "problemId": "P43",
+      "segmentId": "S81",
+      "sourceId": "F09",
+      "kind": "candidate",
+      "scope": "contexto_cualitativo",
+      "originAlignment": "misma_fuente",
+      "reason": "La cifra de adjudicaciones permite acotar un subsector. No mide el trabajo de postulación de cada organización.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2025/10/MESA-soc_civil_DOCUMENTO-COMPLETO_PRESIDeNCIALES-UC_1imp-1.pdf#page=18"
+    },
+    {
+      "id": "C058",
+      "problemId": "P02",
+      "segmentId": "S80",
+      "sourceId": "F09",
+      "kind": "candidate",
+      "scope": "contexto_cualitativo",
+      "originAlignment": "misma_fuente",
+      "reason": "Contrastar fechas de la atención, del convenio anterior y de la renovación.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2025/10/MESA-soc_civil_DOCUMENTO-COMPLETO_PRESIDeNCIALES-UC_1imp-1.pdf#page=17"
+    },
+    {
+      "id": "C059",
+      "problemId": "P02",
+      "segmentId": "S81",
+      "sourceId": "F09",
+      "kind": "candidate",
+      "scope": "contexto_cualitativo",
+      "originAlignment": "misma_fuente",
+      "reason": "Buscar expedientes para verificar cómo se sostuvo la atención ante una renovación incierta.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2025/10/MESA-soc_civil_DOCUMENTO-COMPLETO_PRESIDeNCIALES-UC_1imp-1.pdf#page=18"
+    },
+    {
+      "id": "C060",
+      "problemId": "P17",
+      "segmentId": "S81",
+      "sourceId": "F09",
+      "kind": "candidate",
+      "scope": "contexto_cualitativo",
+      "originAlignment": "misma_fuente",
+      "reason": "Revisar los gastos propios de cada residencia y cómo los financió. No extrapolar el estudio citado.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2025/10/MESA-soc_civil_DOCUMENTO-COMPLETO_PRESIDeNCIALES-UC_1imp-1.pdf#page=18"
+    },
+    {
+      "id": "C061",
+      "problemId": "P28",
+      "segmentId": "S80",
+      "sourceId": "F09",
+      "kind": "candidate",
+      "scope": "contexto_cualitativo",
+      "originAlignment": "misma_fuente",
+      "reason": "Comparar decisiones de contratación o retención durante el ciclo de renovación.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2025/10/MESA-soc_civil_DOCUMENTO-COMPLETO_PRESIDeNCIALES-UC_1imp-1.pdf#page=17"
+    },
+    {
+      "id": "C062",
+      "problemId": "P32",
+      "segmentId": "S90",
+      "sourceId": "F10",
+      "kind": "candidate",
+      "scope": "osc_generales",
+      "originAlignment": "misma_fuente",
+      "reason": "Buscar casos de menor escala de ingresos y verificar qué apoyo de reporte necesitan. El tramo no mide capacidad.",
+      "referenceUrl": "https://comunidad-org.cl/wp-content/uploads/2026/06/Informe-FECU-Social-2024.pdf#page=23"
+    },
+    {
+      "id": "C063",
+      "problemId": "P46",
+      "segmentId": "S102",
+      "sourceId": "F11",
+      "kind": "candidate",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "El puntaje de comunicaciones ayuda a ubicar equipos para comprobar qué trabajo les cuesta al comunicar su labor.",
+      "referenceUrl": "https://fundaciontrascender.cl/estudio-revela-desafios-clave-para-la-sostenibilidad-de-las-organizaciones-sociales-en-chile/"
+    },
+    {
+      "id": "C064",
+      "problemId": "P13",
+      "segmentId": "S102",
+      "sourceId": "F11",
+      "kind": "candidate",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "misma_fuente",
+      "reason": "El puntaje de finanzas orienta dónde buscar casos. Falta comprobar flujos, fuentes de ingreso y sus variaciones.",
+      "referenceUrl": "https://fundaciontrascender.cl/estudio-revela-desafios-clave-para-la-sostenibilidad-de-las-organizaciones-sociales-en-chile/"
+    },
+    {
+      "id": "C065",
+      "problemId": "P47",
+      "segmentId": "S104",
+      "sourceId": "F16",
+      "kind": "base",
+      "scope": "contexto_cualitativo",
+      "originAlignment": "misma_fuente",
+      "reason": "La guía identifica a Fundación CMPC como empresarial y describe su desafío de informar al directorio y seguir planes. El vínculo se limita al caso.",
+      "referenceUrl": "https://ceps.unibas.ch/fileadmin/user_upload/ceps/1_Home/News_Events_Bilder_Doks/20190515_Leitfaden_Governance_Chile_Steffen.pdf#page=34"
+    },
+    {
+      "id": "C066",
+      "problemId": "P47",
+      "segmentId": "S103",
+      "sourceId": "F16",
+      "kind": "candidate",
+      "scope": "contexto_cualitativo",
+      "originAlignment": "misma_fuente",
+      "reason": "La guía recomienda agendas y antecedentes previos en fundaciones familiares. Permite buscar casos, sin demostrar frecuencia de la traba.",
+      "referenceUrl": "https://ceps.unibas.ch/fileadmin/user_upload/ceps/1_Home/News_Events_Bilder_Doks/20190515_Leitfaden_Governance_Chile_Steffen.pdf#page=57"
+    },
+    {
+      "id": "C067",
+      "problemId": "P14",
+      "segmentId": "S27",
+      "sourceId": "F17",
+      "kind": "candidate",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "fuentes_diferentes",
+      "reason": "La base chilena identifica a quienes declaran convenios. El ejercicio de caja ayuda a observar vencimientos, saldo libre y cobros esperados dentro de ese grupo. Falta vincular los indicadores para las mismas organizaciones.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=20"
+    },
+    {
+      "id": "C068",
+      "problemId": "P11",
+      "segmentId": "S90",
+      "sourceId": "F18",
+      "kind": "candidate",
+      "scope": "osc_generales",
+      "originAlignment": "fuentes_diferentes",
+      "reason": "El tramo de ingresos permite elegir casos. Para examinar capacidad de evaluación conviene observar dotación, presupuesto y actividades por separado. Aún falta vincular las dos variables para cada organización.",
+      "referenceUrl": "https://comunidad-org.cl/wp-content/uploads/2026/06/Informe-FECU-Social-2024.pdf#page=23"
+    },
+    {
+      "id": "C069",
+      "problemId": "P17",
+      "segmentId": "S11",
+      "sourceId": "F18",
+      "kind": "candidate",
+      "scope": "contexto_cualitativo",
+      "originAlignment": "fuentes_diferentes",
+      "reason": "F02 permite ubicar programas con participación de organizaciones. La pauta de F18 orienta el cotejo de convenios y costos para quienes los ejecutan. Hace falta confirmar la modalidad del convenio y los gastos de cada caso.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/01/Informe_Radiografia-del-aporte-de-soc-civil-a-las-personas_DIGITAL.pdf#page=35"
+    },
+    {
+      "id": "C070",
+      "problemId": "P11",
+      "segmentId": "S13",
+      "sourceId": "F19",
+      "kind": "candidate",
+      "scope": "fundaciones_especificas",
+      "originAlignment": "fuentes_diferentes",
+      "reason": "F02 permite seleccionar fundaciones chilenas con programas. F19 ofrece una forma de distinguir una etiqueta ODS de un indicador medible. Falta observar los recursos que cada equipo dedica a medir cambios.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/01/Informe_Radiografia-del-aporte-de-soc-civil-a-las-personas_DIGITAL.pdf#page=14"
+    },
+    {
+      "id": "C071",
+      "problemId": "P17",
+      "segmentId": "S80",
+      "sourceId": "F20",
+      "kind": "candidate",
+      "scope": "contexto_cualitativo",
+      "originAlignment": "fuentes_diferentes",
+      "reason": "En servicios recurrentes con convenios cortos se puede contrastar cuánto cuesta sostener el servicio y qué cubre cada convenio. Se necesita presupuesto y convenio del mismo caso.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2025/10/MESA-soc_civil_DOCUMENTO-COMPLETO_PRESIDeNCIALES-UC_1imp-1.pdf#page=17"
+    },
+    {
+      "id": "C072",
+      "problemId": "P43",
+      "segmentId": "S27",
+      "sourceId": "F20",
+      "kind": "candidate",
+      "scope": "mixto_fundaciones_otras",
+      "originAlignment": "fuentes_diferentes",
+      "reason": "La encuesta chilena identifica a quienes declaran convenios. La guía ayuda a reconstruir su calendario institucional y los hitos por financiador. Falta observar cuándo coinciden postulaciones, reporte y servicio.",
+      "referenceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=20"
+    },
+    {
+      "id": "C073",
+      "problemId": "P13",
+      "segmentId": "S106",
+      "sourceId": "F26",
+      "kind": "candidate",
+      "scope": "contexto_cualitativo",
+      "originAlignment": "misma_fuente",
+      "reason": "Identificar una fundación operadora y reconstruir su mezcla de ingresos y la variación mensual de los abonos.",
+      "referenceUrl": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=145"
+    },
+    {
+      "id": "C074",
+      "problemId": "P16",
+      "segmentId": "S106",
+      "sourceId": "F26",
+      "kind": "candidate",
+      "scope": "contexto_cualitativo",
+      "originAlignment": "misma_fuente",
+      "reason": "Buscar en una fundación acreditada una atención, su fecha de pago y el efecto sobre la caja.",
+      "referenceUrl": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=126"
+    },
+    {
+      "id": "C075",
+      "problemId": "P17",
+      "segmentId": "S106",
+      "sourceId": "F26",
+      "kind": "candidate",
+      "scope": "contexto_cualitativo",
+      "originAlignment": "misma_fuente",
+      "reason": "Identificar una fundación FAE y cotejar gasto incurrido, convenio y eventual rechazo.",
+      "referenceUrl": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=138"
+    },
+    {
+      "id": "C076",
+      "problemId": "P28",
+      "segmentId": "S106",
+      "sourceId": "F26",
+      "kind": "candidate",
+      "scope": "contexto_cualitativo",
+      "originAlignment": "misma_fuente",
+      "reason": "Contrastar fechas de concurso y desvinculación en una fundación DCE o FAE.",
+      "referenceUrl": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=140"
+    },
+    {
+      "id": "C077",
+      "problemId": "P48",
+      "segmentId": "S106",
+      "sourceId": "F26",
+      "kind": "candidate",
+      "scope": "contexto_cualitativo",
+      "originAlignment": "misma_fuente",
+      "reason": "Comparar plazas, casos por profesional y refuerzos en una fundación que ejecute AFT o FAE.",
+      "referenceUrl": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=143"
+    },
+    {
+      "id": "C078",
+      "problemId": "P49",
+      "segmentId": "S106",
+      "sourceId": "F26",
+      "kind": "candidate",
+      "scope": "contexto_cualitativo",
+      "originAlignment": "misma_fuente",
+      "reason": "Verificar en una fundación gastos, fecha de adjudicación y primer abono. La referencia a fundaciones de mayor tamaño proviene del Servicio.",
+      "referenceUrl": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=117"
+    },
+    {
+      "id": "C079",
+      "problemId": "P50",
+      "segmentId": "S81",
+      "sourceId": "F26",
+      "kind": "candidate",
+      "scope": "contexto_cualitativo",
+      "originAlignment": "fuentes_diferentes",
+      "reason": "Buscar el cierre de un convenio residencial de una fundación y comprobar saldo y fechas. La fuente no identifica forma jurídica del caso.",
+      "referenceUrl": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=139"
+    },
+    {
+      "id": "C080",
+      "problemId": "P51",
+      "segmentId": "S106",
+      "sourceId": "F26",
+      "kind": "candidate",
+      "scope": "contexto_cualitativo",
+      "originAlignment": "misma_fuente",
+      "reason": "El Servicio menciona fundaciones con una sola cuenta para varios proyectos. Falta comprobar horas, errores y observaciones con el propio equipo.",
+      "referenceUrl": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=139"
+    },
+    {
+      "id": "C081",
+      "problemId": "P52",
+      "segmentId": "S106",
+      "sourceId": "F26",
+      "kind": "candidate",
+      "scope": "contexto_cualitativo",
+      "originAlignment": "misma_fuente",
+      "reason": "Identificar una fundación FAE y comparar familias que ingresan, continúan y se desvinculan y qué apoyo recibió cada una.",
+      "referenceUrl": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=129"
+    },
+    {
+      "id": "C082",
+      "problemId": "P53",
+      "segmentId": "S106",
+      "sourceId": "F26",
+      "kind": "candidate",
+      "scope": "contexto_cualitativo",
+      "originAlignment": "misma_fuente",
+      "reason": "Verificar en una fundación AFT itinerarios, costo de traslado y horas de atención en terreno.",
+      "referenceUrl": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=141"
+    },
+    {
+      "id": "C083",
+      "problemId": "P16",
+      "segmentId": "S107",
+      "sourceId": "F27",
+      "kind": "candidate",
+      "scope": "fundaciones_especificas",
+      "originAlignment": "misma_fuente",
+      "reason": "La ficha muestra el giro. El atraso requiere cotejar la cuota y el abono con el convenio.",
+      "referenceUrl": "https://www.rendicioncuentas.cl/info-sisrec/busqueda"
+    },
+    {
+      "id": "C084",
+      "problemId": "P20",
+      "segmentId": "S107",
+      "sourceId": "F27",
+      "kind": "candidate",
+      "scope": "fundaciones_especificas",
+      "originAlignment": "misma_fuente",
+      "reason": "Los meses de septiembre y octubre están rendidos y en poder del otorgante. Falta observar las fechas de entrada, respuesta y vencimiento.",
+      "referenceUrl": "https://www.rendicioncuentas.cl/info-sisrec/busqueda"
+    },
+    {
+      "id": "C085",
+      "problemId": "P21",
+      "segmentId": "S107",
+      "sourceId": "F27",
+      "kind": "candidate",
+      "scope": "fundaciones_especificas",
+      "originAlignment": "misma_fuente",
+      "reason": "La FAQ identifica la ruta de desbloqueo. Hay que localizar un caso con aprobación, reapertura y solicitud del otorgante para atribuir retrabajo.",
+      "referenceUrl": "https://www.rendicioncuentas.cl/ca/preguntas-frecuentes"
+    },
+    {
+      "id": "C086",
+      "problemId": "P22",
+      "segmentId": "S107",
+      "sourceId": "F27",
+      "kind": "candidate",
+      "scope": "fundaciones_especificas",
+      "originAlignment": "misma_fuente",
+      "reason": "Probar en un expediente autorizado los pasos de corrección, firma y reenvío y cuánto trabajo agregaron.",
+      "referenceUrl": "https://www.rendicioncuentas.cl/ca/preguntas-frecuentes"
+    },
+    {
+      "id": "C087",
+      "problemId": "P50",
+      "segmentId": "S107",
+      "sourceId": "F27",
+      "kind": "candidate",
+      "scope": "fundaciones_especificas",
+      "originAlignment": "misma_fuente",
+      "reason": "Comparar un cierre en revisión sin saldo con un reintegro ya resuelto. Para confirmar un saldo retenido se necesita otro episodio con saldo y fecha de resolución.",
+      "referenceUrl": "https://www.rendicioncuentas.cl/info-sisrec/busqueda"
+    }
+  ],
+  "indicators": [
+    {
+      "id": "I01",
+      "title": "F01 registro OSC: fundaciones y asociaciones 37.518 de 403.159 OSC (2023)",
+      "problemId": null,
+      "themeId": null,
+      "sourceId": "F01",
+      "denominator": "403.159 OSC registradas; 37.518 incluye fundaciones y asociaciones",
+      "comparability": "descriptivo_del_registro_no_exclusivo",
+      "limitation": "9,3% no es porcentaje de fundaciones con dolor",
+      "verified": false,
+      "verificationMethod": "Pendiente cotejo individual PDF",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2024/08/Mapa-de-las-organizaciones_2024_digital-1.pdf#page=22",
+      "eligibleForFoundationRate": false
+    },
+    {
+      "id": "I02",
+      "title": "F02 970 fundaciones de múltiples áreas y 6.644 iniciativas (estudio, no censo)",
+      "problemId": null,
+      "themeId": null,
+      "sourceId": "F02",
+      "denominator": "970 fundaciones seleccionadas; 6.644 iniciativas",
+      "comparability": "fundacion_solo_descriptivo",
+      "limitation": "No vincular automáticamente iniciativas a tasas de dificultad de fundaciones",
+      "verified": false,
+      "verificationMethod": "Pendiente cotejo individual PDF",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/01/Informe_Radiografia-del-aporte-de-soc-civil-a-las-personas_DIGITAL.pdf#page=14",
+      "eligibleForFoundationRate": false
+    },
+    {
+      "id": "I03",
+      "title": "F03 125 organizaciones con convenios entre 255 respuestas, encuesta 2026",
+      "problemId": "P20",
+      "themeId": "T03",
+      "sourceId": "F03",
+      "denominator": "125 de 255 fundaciones y corporaciones encuestadas",
+      "comparability": "mixto_submuestra",
+      "limitation": "No significa 125 fundaciones",
+      "verified": true,
+      "verificationMethod": "Cotejo puntual PDF UC 2026; no representativo de fundaciones",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=20",
+      "eligibleForFoundationRate": false
+    },
+    {
+      "id": "I04",
+      "title": "P02 28% de 125 reportó término de proyectos por no renovación (F03)",
+      "problemId": "P02",
+      "themeId": "T02",
+      "sourceId": "F03",
+      "denominator": "N=125 con convenios; fundaciones + corporaciones",
+      "comparability": "solo_dentro_de_muestra_mixta",
+      "limitation": "Sin N por figura jurídica y sin duración de interrupción; no nacional",
+      "verified": true,
+      "verificationMethod": "Cotejo puntual PDF UC 2026; no representativo de fundaciones",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=21",
+      "eligibleForFoundationRate": false
+    },
+    {
+      "id": "I05",
+      "title": "P20 62% reportó falta de respuesta y 42% revisión superior a siete meses (F03)",
+      "problemId": "P20",
+      "themeId": "T03",
+      "sourceId": "F03",
+      "denominator": "Base de convenios F03 N=125 según catálogo, N específico por ítem sin reabrir PDF",
+      "comparability": "solo_dentro_de_muestra_mixta",
+      "limitation": "No sumar 62%+42%; PDF diapo 22 requiere cotejo primario",
+      "verified": true,
+      "verificationMethod": "Cotejo puntual PDF UC 2026; no representativo de fundaciones",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=22",
+      "eligibleForFoundationRate": false
+    },
+    {
+      "id": "I06",
+      "title": "F03 38% de 219 respuestas estima autonomía menor a 3 meses",
+      "problemId": "P14",
+      "themeId": "T01",
+      "sourceId": "F03",
+      "denominator": "N=219 respuestas a pregunta de horizonte sin ingresos nuevos",
+      "comparability": "solo_dentro_de_muestra_mixta",
+      "limitation": "No es saldo de caja real ni tasa de cierre",
+      "verified": true,
+      "verificationMethod": "Cotejo puntual PDF UC 2026; no representativo de fundaciones",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=35",
+      "eligibleForFoundationRate": false
+    },
+    {
+      "id": "I07",
+      "title": "F04 encuesta 2025: 268 directivos y submuestra colaboración estatal N=150",
+      "problemId": "P20",
+      "themeId": "T03",
+      "sourceId": "F04",
+      "denominator": "N=268 total; N=150 colaboración 2024",
+      "comparability": "muestra_mixta_otro_año",
+      "limitation": "La variable colaboración F04 difiere de contrato/convenio 2025 F03; no sumar ni afirmar tendencia",
+      "verified": false,
+      "verificationMethod": "Pendiente cotejo individual PDF",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2025/08/sociedad-en-accion_presentacion-1.pdf#page=13",
+      "eligibleForFoundationRate": false
+    },
+    {
+      "id": "I08",
+      "title": "F08 85% de documentación por canal presencial (estimación de proceso)",
+      "problemId": null,
+      "themeId": null,
+      "sourceId": "F08",
+      "denominator": "Documentación; sin denominador total de entidades y documentos auditado",
+      "comparability": "no_tasa_de_entidades",
+      "limitation": "No afirmar 85% de fundaciones; unidad documento, y universo fundaciones/corporaciones",
+      "verified": false,
+      "verificationMethod": "Pendiente cotejo individual PDF",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2025/08/Informe_Lineamienro-fortalecimineto-fiscaliza_231025.pdf#page=16",
+      "eligibleForFoundationRate": false
+    },
+    {
+      "id": "I09",
+      "title": "F10 64,2% de 344 reportes FECU vía web",
+      "problemId": null,
+      "themeId": null,
+      "sourceId": "F10",
+      "denominator": "344 reportes (ejercicio 2024)",
+      "comparability": "reportes_no_entidades",
+      "limitation": "No equivalen a 245 organizaciones reportantes ni a fundaciones exclusivas",
+      "verified": false,
+      "verificationMethod": "Pendiente cotejo individual PDF",
+      "sourceUrl": "https://comunidad-org.cl/wp-content/uploads/2026/06/Informe-FECU-Social-2024.pdf#page=10",
+      "eligibleForFoundationRate": false
+    },
+    {
+      "id": "I10",
+      "title": "F10 71,4% de 245 organizaciones FECU tienen ingresos hasta CLP 1.000 millones",
+      "problemId": null,
+      "themeId": null,
+      "sourceId": "F10",
+      "denominator": "245 organizaciones que reportaron",
+      "comparability": "muestra_oscs_autoreportantes",
+      "limitation": "No es censo OSC ni fundaciones; umbrales distintos de F03",
+      "verified": false,
+      "verificationMethod": "Pendiente cotejo individual PDF",
+      "sourceUrl": "https://comunidad-org.cl/wp-content/uploads/2026/06/Informe-FECU-Social-2024.pdf#page=23",
+      "eligibleForFoundationRate": false
+    },
+    {
+      "id": "I11",
+      "title": "F11 79% de 110 OSC autodiagnosticadas son fundaciones, corporaciones u ONG (IFO 2025)",
+      "problemId": null,
+      "themeId": null,
+      "sourceId": "F11",
+      "denominator": "N=110 OSC autodiagnósticos",
+      "comparability": "mixto_sin_separacion",
+      "limitation": "F11 y F12 comparten origen; no son 2 muestras",
+      "verified": false,
+      "verificationMethod": "Pendiente cotejo individual PDF",
+      "sourceUrl": "https://fundaciontrascender.cl/estudio-revela-desafios-clave-para-la-sostenibilidad-de-las-organizaciones-sociales-en-chile/",
+      "eligibleForFoundationRate": false
+    },
+    {
+      "id": "I12",
+      "title": "F27 dos fundaciones con tres expedientes InfoSISREC",
+      "problemId": "P20",
+      "themeId": "T03",
+      "sourceId": "F27",
+      "denominator": "2 fundaciones, 3 expedientes seleccionados",
+      "comparability": "caso_dirigido_sin_prevalencia",
+      "limitation": "Permiten reconstruir procedimiento, no extrapolar incidencia de rendiciones abiertas",
+      "verified": false,
+      "verificationMethod": "Pendiente cotejo individual PDF",
+      "sourceUrl": "https://www.rendicioncuentas.cl/info-sisrec/busqueda",
+      "eligibleForFoundationRate": false
+    },
+    {
+      "id": "I13",
+      "title": "F28 demanda formativa: 154 entidades únicas, 162 respuestas iniciales",
+      "problemId": null,
+      "themeId": null,
+      "sourceId": "F28",
+      "denominator": "154 fundaciones/corporaciones únicas, respuestas duplicadas depuradas",
+      "comparability": "mixta_no_probabilistica",
+      "limitation": "Preferencia formativa ≠ falla operativa ≠ disposición de pago",
+      "verified": false,
+      "verificationMethod": "Pendiente cotejo individual PDF",
+      "sourceUrl": "https://accionsolidaria.cl/wp-content/uploads/2023/11/1694698216517.pdf#page=7",
+      "eligibleForFoundationRate": false
+    },
+    {
+      "id": "I14",
+      "title": "F28 oferta: 49 fichas de cursos de 27 entidades fortalecedoras",
+      "problemId": null,
+      "themeId": null,
+      "sourceId": "F28",
+      "denominator": "49 fichas de oferta; 27 oferentes",
+      "comparability": "oferta_formativa",
+      "limitation": "No comparar como si fueran 49 organizaciones demandantes",
+      "verified": false,
+      "verificationMethod": "Pendiente cotejo individual PDF",
+      "sourceUrl": "https://accionsolidaria.cl/wp-content/uploads/2023/11/1694698216517.pdf#page=28",
+      "eligibleForFoundationRate": false
+    },
+    {
+      "id": "I15",
+      "title": "F22 82 menciones de barreras internas de 51 OSC",
+      "problemId": "P54",
+      "themeId": "T01",
+      "sourceId": "F22",
+      "denominator": "51 OSC y 82 menciones de respuestas múltiples",
+      "comparability": "menciones_no_tasa_OSC",
+      "limitation": "43,9% falta personal y 29,3% tiempo son proporciones de menciones, no de OSC ni de fundaciones",
+      "verified": false,
+      "verificationMethod": "Pendiente cotejo individual PDF",
+      "sourceUrl": "https://uai.cdn7pm.net/documentos/filantropia-local-desafios-y-buenas-practicas-en-chile.pdf#page=47",
+      "eligibleForFoundationRate": false
+    },
+    {
+      "id": "I16",
+      "title": "F23 84 fundaciones filantrópicas chilenas respondieron de 108 identificadas (2015–2016)",
+      "problemId": null,
+      "themeId": null,
+      "sourceId": "F23",
+      "denominator": "84 de 108 entidades filantrópicas identificadas; corte 2015–2016",
+      "comparability": "fundacion_subconjunto_no_representativo",
+      "limitation": "No representa todas las fundaciones ni su dolor actual",
+      "verified": false,
+      "verificationMethod": "Pendiente cotejo individual PDF",
+      "sourceUrl": "https://filantropialatam.uai.cl/wp-content/uploads/2021/09/hacia_-fortalecimiento-_filantropa_-institucional_-amrica_-latina_07-02-2.pdf#page=17",
+      "eligibleForFoundationRate": false
+    },
+    {
+      "id": "I17",
+      "title": "F02 2.269.718 personas usuarias estimadas en programas abiertos",
+      "problemId": "P11",
+      "themeId": "T05",
+      "sourceId": "F02",
+      "denominator": "Iniciativas abiertas cuantificables del grupo de 970 fundaciones",
+      "comparability": "personas_no_fundaciones",
+      "limitation": "No número de OSC, no impacto demostrado ni métrica del dolor P11",
+      "verified": false,
+      "verificationMethod": "Pendiente cotejo individual PDF",
+      "sourceUrl": "https://politicaspublicas.uc.cl/content/uploads/2026/01/Informe_Radiografia-del-aporte-de-soc-civil-a-las-personas_DIGITAL.pdf#page=22",
+      "eligibleForFoundationRate": false
+    },
+    {
+      "id": "I18",
+      "title": "F26 testimonios operacionales niñez; figura jurídica no desagregada",
+      "problemId": "P48",
+      "themeId": "T06",
+      "sourceId": "F26",
+      "denominator": null,
+      "comparability": "sin_denominador",
+      "limitation": "La palabra fundaciones en ficha no significa muestra de fundaciones; casos no permiten prevalencia",
+      "verified": false,
+      "verificationMethod": "Pendiente cotejo individual PDF",
+      "sourceUrl": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=117",
+      "eligibleForFoundationRate": false
+    }
+  ]
+}
