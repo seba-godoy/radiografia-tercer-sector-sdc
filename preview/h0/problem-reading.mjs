@@ -247,41 +247,6 @@ export const findingNotes = {
   "P54__F22__02": "Muestra que sumar horas podría ser insuficiente si también faltan capacidades o contactos con donantes."
 };
 
-// Preguntas para contrastar en fundaciones; no representan resultados de una medición.
-export const foundationQuestions = {
-  "P02": "Si una fundación depende de convenios para servicios permanentes, conviene seguir qué atención se mantuvo o detuvo después del vencimiento y con qué financiamiento.",
-  "P11": "En una fundación con varios programas, conviene identificar quién sigue los resultados después de la atención y cuánto tiempo y presupuesto tiene para reunir esos datos.",
-  "P13": "Conviene revisar qué parte del presupuesto de una fundación depende de convenios por renovar, aportes restringidos o donaciones que varían entre meses.",
-  "P14": "Para estimar la autonomía de una fundación, interesa saber qué parte de su saldo puede usar libremente y qué gastos vencen antes del próximo ingreso.",
-  "P15": "Conviene distinguir si una fundación perdió acceso porque un concurso no abrió, porque dejó de cumplir sus requisitos o porque decidió no postular.",
-  "P16": "En una fundación ejecutora, la comparación entre fecha pactada y abono permite identificar qué sueldos, cotizaciones o servicios tuvo que adelantar durante la espera.",
-  "P17": "Para una fundación ejecutora, conviene contrastar las partidas admitidas en el convenio con el costo real de prestar el servicio y registrar quién cubrió la diferencia.",
-  "P18": "Para una fundación adjudicataria, interesa ubicar qué actividades quedaron a la espera de la toma de razón y cuáles alcanzó a preparar con recursos propios.",
-  "P19": "Conviene comprobar si una fundación pequeña dispone de liquidez o acceso a un instrumento de garantía y si esa exigencia afectó su decisión de postular.",
-  "P20": "Para estudiar la demora en una fundación ejecutora hacen falta las fechas de entrega, vencimiento y respuesta de cada rendición. Un estado pendiente en el visor no permite calcularla por sí solo.",
-  "P21": "Conviene seguir el historial de una rendición de la fundación, desde su primera aprobación hasta una eventual reapertura, y contar qué documentos tuvo que preparar otra vez.",
-  "P22": "En una fundación que usa SISREC, conviene separar el tiempo de ingresar gastos, resolver observaciones y obtener firmas o apoyo de la mesa de ayuda.",
-  "P23": "En un traspaso desde una fundación ejecutora, interesa saber cómo se aseguró la continuidad de la atención y quién entregó y recibió los registros.",
-  "P25": "Conviene partir del tipo de aporte y del régimen que usa la fundación para identificar qué inscripción, autorización o certificado le demoró recibirlo.",
-  "P26": "Para entender la carga de un aporte privado en una fundación, conviene seguir por separado los requisitos de postulación, los documentos de rendición y el tiempo que exigió cada etapa.",
-  "P28": "En una fundación con programas financiados por periodos, conviene observar qué cargos se desocupan cerca del término del convenio y qué atención pierde continuidad hasta cubrirlos.",
-  "P30": "Para estudiar incidencia en fundaciones, conviene distinguir si el equipo no se enteró de una consulta, no pudo preparar su aporte o participó sin recibir devolución.",
-  "P32": "Conviene seguir cómo una fundación reúne la información de programas y contabilidad, quién valida los datos y cuánto tiempo toma preparar cada documento.",
-  "P38": "En una fundación que postula a fondos, conviene identificar qué acreditaciones se le vuelven a pedir y si ya constan en un registro accesible al organismo.",
-  "P40": "Para una fundación que presenta memoria y balance, conviene verificar en qué paso del acceso se exige regularizar antecedentes y cuánto demora retomar el envío.",
-  "P41": "Conviene revisar cómo una fundación registra qué archivo envió, qué observación recibió y cómo confirma que ambos documentos quedaron aceptados.",
-  "P43": "En una fundación que presta atención continua, interesa medir cuándo la nueva postulación coincide con la operación y qué recursos se arriesgan durante la espera.",
-  "P46": "Para una fundación que busca socios o donantes, conviene conectar el canal de difusión con consultas, postulaciones o aportes que llegaron a partir de él.",
-  "P47": "En un directorio de fundación, conviene seguir un acuerdo para comprobar si tiene responsable, fecha, indicadores de avance y nueva revisión.",
-  "P48": "En fundaciones que ejecuten programas comparables, interesa registrar plazas financiadas, casos efectivos y capacidad del equipo antes y después de un sobrecupo.",
-  "P49": "Conviene revisar qué gastos de habilitación y contratación pagó la fundación, en qué fecha y con qué recursos antes del primer abono.",
-  "P50": "Para una fundación ejecutora, interesa separar la aprobación de los gastos de la fecha de cierre del convenio y distinguir saldos por traspasar de reintegros.",
-  "P51": "Una fundación con varios proyectos puede revisar cómo vincula cada cargo de su cuenta con un convenio y dónde aparecen los errores al conciliar.",
-  "P52": "Al estudiar una fundación que ejecute acogimiento, conviene separar la inscripción inicial de familias, las salidas y los apoyos que necesita cada familia para continuar.",
-  "P53": "En fundaciones que trabajan en zonas aisladas, conviene observar horas de viaje, costos de traslado y visitas afectadas por distancia o falta de señal.",
-  "P54": "En una fundación que busca donantes locales, conviene distinguir falta de horas, de habilidades para captar aportes y de contactos con quienes podrían donar."
-};
-
 // Lecturas específicas donde la fuente permite identificar el grupo o delimitar un caso concreto.
 export const foundationFindingNotes = {
   "P02__F01__01": "El registro agrupa fundaciones y asociaciones. Para atribuir una interrupción a un convenio de una fundación habría que seguir por separado su servicio y la fecha de renovación.",

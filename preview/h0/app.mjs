@@ -1,6 +1,7 @@
-import {findingNotes,foundationQuestions,foundationFindingNotes} from "/preview/h0/problem-reading.mjs";
+import {problemProfiles,sectorRelationOverrides} from "/preview/h0/problem-profiles.mjs";
+import {findingNotes,foundationFindingNotes} from "/preview/h0/problem-reading.mjs";
 import {mfDefaults,mfParse,mfUrl,mfVisible,mfCsv,mfRender,mfSourceShortcut} from "/preview/h0/methods-view.mjs";
-import {h1Overview,h1RowTag,h1ProblemProfile,h1TopicOf} from "/preview/h0/h1-view.mjs";
+import {h1Overview,h1RowTag,h1ProblemProfile,h1ProblemIntroduction,h1TopicOf} from "/preview/h0/h1-view.mjs";
 import {
   construirVista,leerEnlace,construirEnlace,cambiarSeccion,cambiarUniverso,
   normalizarEstado,SECTIONS,EVIDENCE_LAYER
@@ -36,10 +37,14 @@ const bandInfo={
  contexto:{label:"Contexto complementario",desc:"La ficha orienta qué investigar a partir de estudios generales, casos de programas o guías. Falta respaldo que identifique a fundaciones."}
 };
 const foundationOrder=["directa","compartida","contexto"];
-const foundationLayers=["directa","compartida"];
+const relationLevels=[
+ {value:1,label:"Respaldo directo"},
+ {value:0.5,label:"Indicio indirecto"},
+ {value:0,label:"Contexto"}
+];
 const isFoundation=()=>state.scope==="fundaciones";
 let data=null,state=null,drawerOrigin=null,loading=false,h1Data=null,topicFilter="todas",drawerLayer=null;
-let methodsData=null,methodsContract=null,methodsFilters=mfDefaults();
+let methodsData=null,methodsContract=null,methodsFilters=mfDefaults(),linksById;
 const isMethods=()=>location.pathname==="/metodos";
 const root=document.getElementById("content"),scopeSelect=document.getElementById("scope-top");
 const esc=v=>String(v??"").replace(/[&<>"']/g,x=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[x]));
@@ -88,7 +93,7 @@ function problemCard(p){
  const band=focus?'<span class="tag '+p.band+'">'+esc(bandInfo[p.band].label)+'</span>':"";
  const n=state.layer!=="todas"?p.activeFindingCount:focus&&p.band!=="contexto"?p.evidenceCounts[p.band]:p.allFindingCount;
  const detail=state.layer!=="todas"?" con el filtro":focus?(p.band==="directa"?" sobre fundaciones":p.band==="compartida"?" de muestra mixta":" de contexto"):"";
- return '<button class="pain-row" type="button" data-problem="'+esc(p.problemId)+'" aria-label="Abrir '+esc(p.title)+'"><span class="row-content"><h3>'+esc(p.title)+'</h3><span class="row-meta">'+band+'<span class="tag">'+n+(n===1?" hallazgo":" hallazgos")+esc(detail)+'</span>'+h1RowTag(h1Data,p.problemId,esc)+'</span></span><span class="row-more" aria-hidden="true">↗</span></button>';
+ return '<button class="pain-row" type="button" data-problem="'+esc(p.problemId)+'" aria-label="Abrir '+esc(p.title)+'" aria-describedby="summary-'+esc(p.problemId)+'"><span class="row-content"><h3>'+esc(p.title)+'</h3><span class="h1-card-description" id="summary-'+esc(p.problemId)+'">'+esc(problemProfiles[p.problemId].summary)+'</span><span class="row-meta">'+band+'<span class="tag">'+n+(n===1?" hallazgo":" hallazgos")+esc(detail)+'</span>'+h1RowTag(h1Data,p.problemId,esc)+'</span></span><span class="row-more" aria-hidden="true">↗</span></button>';
 }
 function problems(view){
  const focus=isFoundation();
@@ -101,7 +106,7 @@ function problems(view){
   const items=visible.filter(p=>p.band===band);
   return items.length?'<section class="h1-problem-group"><h3>'+esc(bandInfo[band].label)+' <span>· '+items.length+'</span></h3>'+problemList(items)+'</section>':"";
  }).join(""):problemList(visible);
- const intro=focus?"El mapa resume el catálogo completo de 31 problemas. Al explorar las fichas, esta vista pone primero la evidencia sobre fundaciones, luego los resultados de muestras mixtas y al final las pistas de contexto. Dentro de cada ficha cambia el orden de los hallazgos y segmentos, y se explica qué se puede decir sobre fundaciones con cada respaldo.":"Esta vista recorre los 31 problemas del catálogo. Cada hallazgo conserva la población de la fuente que lo documenta.";
+ const intro=focus?"El mapa resume el catálogo completo de 31 problemas. Al explorar las fichas, esta vista pone primero la evidencia sobre fundaciones, luego los resultados de muestras mixtas y al final las pistas de contexto. Dentro de cada ficha se explica qué aporta cada fuente y qué se puede decir sobre fundaciones a partir de sus hallazgos.":"Esta vista recorre los 31 problemas del catálogo. Cada hallazgo conserva la población de la fuente que lo documenta.";
  return primaryNav()+'<div class="interior wrap"><div class="page-top"><div><div class="stage-label">01 / Problemas detectados</div><h1>Explora los problemas documentados.</h1></div><a href="/" data-go="inicio" class="outline-btn">← Volver a portada</a></div>'+
   '<div class="callout"><div><strong>'+ (focus?"Qué cambia en Fundaciones":"Cómo leer la vista Tercer sector")+'</strong><p>'+esc(intro)+'</p></div></div>'+evidenceBands(view)+h1Overview(h1Data,state.scope,topicFilter,esc,methodsHref())+
   '<div class="h1-results-title"><h2>Explorar fichas de problemas</h2><p>'+(focus?"Las fichas se agrupan por el respaldo más específico disponible sobre fundaciones y se ordenan alfabéticamente dentro de cada grupo.":"Las fichas se ordenan alfabéticamente por título.")+' El orden facilita la búsqueda. La criticidad se evaluará en una etapa posterior.</p></div>'+tools()+
@@ -126,23 +131,36 @@ function drawer(view){
  if(!p||state.section!=="problemas")return "";
  const focus=isFoundation();
  const selectedLayer=drawerLayer??state.layer;
- const all=[...(selectedLayer==="todas"?Object.values(p.evidenceLayers).flat():p.evidenceLayers[selectedLayer])].sort((a,b)=>a.source_id.localeCompare(b.source_id));
- const titleBySource=new Map(h1Data.sources.map(s=>[s.id,s.name]));
+ const all=selectedLayer==="todas"?Object.values(p.evidenceLayers).flat():p.evidenceLayers[selectedLayer];
+ const findingsBySource=new Map();
+ for(const finding of all){
+  if(!findingsBySource.has(finding.source_id))findingsBySource.set(finding.source_id,[]);
+  findingsBySource.get(finding.source_id).push(finding);
+ }
+ const sourceGroups=[...findingsBySource].sort(([a],[b])=>a.localeCompare(b)).map(([id,findings])=>{
+  const link=linksById.get(findings[0].link_id);
+  const baseRelation=link.original_relation_marker;
+  return {id,title:link.source_title,findings,relation:focus?baseRelation:(sectorRelationOverrides[link.link_id]??baseRelation)};
+ });
  const renderItem=f=>{
   const layer=EVIDENCE_LAYER[f.population_evidence_class];
   const links=(f.reference_locations??[]).filter(x=>/^https?:\/\//.test(x.url)).slice(0,2);
-  return '<article class="evidence-item" data-finding="'+esc(f.finding_id)+'"><strong>'+esc(classById.get(layer).title)+'</strong><p class="h1-finding-source">'+esc(titleBySource.get(f.source_id)??f.source_id)+'</p><p>'+esc(f.finding_text)+'</p>'+
+  return '<article class="evidence-item" data-finding="'+esc(f.finding_id)+'"><strong>'+esc(classById.get(layer).title)+'</strong><p>'+esc(f.finding_text)+'</p>'+
    '<p class="h1-finding-reading"><b>Qué aporta al problema</b> '+esc(findingNotes[f.finding_id])+'</p>'+
    (focus?'<p class="h1-finding-scope"><b>Lectura para fundaciones</b> '+esc(foundationFindingNotes[f.finding_id]??foundationReading[layer])+'</p>':"")+
-   '<div>'+links.map(r=>'<a href="'+esc(r.url)+'" target="_blank" rel="noopener noreferrer">Ver fuente: '+esc(r.label)+' ↗</a>').join("")+'</div>'+mfSourceShortcut(f.source_id,state.scope,esc,construirEnlace(state,data))+'</article>';
+   '<div>'+links.map(r=>'<a href="'+esc(r.url)+'" target="_blank" rel="noopener noreferrer">Ver fuente: '+esc(r.label)+' ↗</a>').join("")+'</div></article>';
  };
- const group=(title,findings)=>findings.length?'<section class="h1-findings-group"><h4>'+esc(title)+' <span>· '+findings.length+'</span></h4>'+findings.map(renderItem).join("")+'</section>':"";
- const results=focus&&selectedLayer==="todas"
-  ? group("Hallazgos sobre fundaciones",p.evidenceLayers.directa)+group("Hallazgos de muestras mixtas",p.evidenceLayers.compartida)+group("Contexto para seguir investigando",all.filter(f=>!foundationLayers.includes(EVIDENCE_LAYER[f.population_evidence_class])))
-  : all.map(renderItem).join("");
- const focusIntro=focus?'<div class="drawer-summary h1-foundation-reading"><strong>'+esc(bandInfo[p.band].label)+'</strong><p>'+esc(bandInfo[p.band].desc)+' En esta ficha hay '+p.evidenceCounts.directa+' hallazgos específicos de fundaciones y '+p.evidenceCounts.compartida+' de muestras mixtas.</p><p><b>Qué conviene mirar en fundaciones</b> '+esc(foundationQuestions[p.problemId])+'</p></div>':"";
- return '<div class="drawer-backdrop" role="presentation" id="drawer-backdrop"><aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title"><button class="drawer-close" type="button" data-close aria-label="Cerrar ficha">×</button><div class="stage-label">'+(focus?"Perspectiva de fundaciones":"Ficha documental")+'</div><h2 id="drawer-title">'+esc(p.title)+'</h2>'+focusIntro+
-  h1ProblemProfile(h1Data,p.problemId,state.scope,esc)+'<h3 id="finding-heading">Hallazgos encontrados</h3><p class="hint">Filtra los hallazgos de esta ficha según la población o el tipo de respaldo. Cada tarjeta explica qué aporta al problema.</p>'+
+ const results=relationLevels.map(({value,label})=>{
+  const sources=sourceGroups.filter(source=>source.relation===value);
+  if(!sources.length)return "";
+  return '<section class="h1-findings-group" data-relation="'+value+'"><h4>'+esc(label)+'</h4>'+sources.map(source=>
+   '<section class="h1-source-group" data-source="'+esc(source.id)+'"><div class="h1-source-heading"><h5>'+esc(source.title)+'</h5><span class="h1-relation-tag" data-relation="'+value+'">'+esc(label)+'</span></div>'+
+   source.findings.map(renderItem).join("")+mfSourceShortcut(source.id,state.scope,esc,construirEnlace(state,data))+'</section>'
+  ).join("")+'</section>';
+ }).join("");
+ const focusIntro=focus?'<div class="drawer-summary h1-foundation-reading"><strong>'+esc(bandInfo[p.band].label)+'</strong><p>'+esc(bandInfo[p.band].desc)+' En esta ficha hay '+p.evidenceCounts.directa+' hallazgos específicos de fundaciones y '+p.evidenceCounts.compartida+' de muestras mixtas.</p></div>':"";
+ return '<div class="drawer-backdrop" role="presentation" id="drawer-backdrop"><aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title"><button class="drawer-close" type="button" data-close aria-label="Cerrar ficha">×</button><div class="stage-label">'+(focus?"Perspectiva de fundaciones":"Ficha documental")+'</div><h2 id="drawer-title">'+esc(p.title)+'</h2>'+h1ProblemIntroduction(h1Data,p.problemId,problemProfiles[p.problemId],esc)+focusIntro+
+  h1ProblemProfile(h1Data,p.problemId,state.scope,esc)+'<h3 id="finding-heading">Hallazgos por fuente</h3><p class="hint"><b>Respaldo directo</b> documenta el problema en la población estudiada. <b>Indicio indirecto</b> aporta una pista, por ejemplo desde un grupo más amplio. <b>Contexto</b> ayuda a interpretar la situación. El filtro permite elegir qué tipo de hallazgo ver.</p>'+
   '<div class="drawer-tabs" aria-label="Filtrar hallazgos por clase">'+classes.map(x=>'<button type="button" data-dlayer="'+x.id+'" aria-pressed="'+(selectedLayer===x.id)+'" aria-controls="finding-results">'+esc(x.title)+' ('+(x.id==="todas"?p.allFindingCount:p.evidenceCounts[x.id])+')</button>').join("")+'</div>'+
   '<p class="h1-filter-hint" aria-live="polite">'+esc(classById.get(selectedLayer).desc)+'</p>'+evidenceGuide()+
   '<div class="evidence-list" id="finding-results">'+(results||'<p class="hint">Esta ficha no tiene hallazgos de la clase seleccionada. Puedes volver a «Toda la evidencia».</p>')+'</div></aside></div>';
@@ -200,6 +218,7 @@ async function init(){
   const [response,h1Response,mfResponse,mcResponse]=await Promise.all([fetch("/analisis/px-r1-2b-attribution-31p-147links-v1.json",{cache:"no-store"}),fetch("/preview/h0/h1-data.json",{cache:"no-store"}),fetch("/analisis/mf1-banco-26-fuentes-v1.json",{cache:"no-store"}),fetch("/analisis/mf1-metodos-contrato-HM-v1.json",{cache:"no-store"})]);
   if(!response.ok||!h1Response.ok)throw new Error("Error HTTP: catálogo "+response.status+"; H-1 "+h1Response.status);
   [data,h1Data]=await Promise.all([response.json(),h1Response.json()]);
+  linksById=new Map(data.links.map(link=>[link.link_id,link]));
   if(h1Data.schema!=="h1-sdc-2026-v1"||h1Data.counts.problems!==31||h1Data.counts.crosses!==87)throw new Error("Contrato analítico H-1 incompatible");
   if(mfResponse.ok&&mcResponse.ok){
    [methodsData,methodsContract]=await Promise.all([mfResponse.json(),mcResponse.json()]);

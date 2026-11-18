@@ -68,7 +68,7 @@ export function h1Overview(catalog,scope,active,esc,methodsUrl){
     '<div class="h1-coverage"><div><h3>Segmentación y límites</h3><p>De los <strong>'+pretty(c.segments)+' segmentos</strong> del catálogo, <strong>'+pretty(c.linked_segments)+'</strong> están vinculados a uno o más problemas. Los otros <strong>'+pretty(c.segments-c.linked_segments)+'</strong> están descritos en las fuentes y aún no tienen un problema asociado aquí.</p><p>Los '+pretty(c.linked_segments)+' segmentos vinculados reúnen <strong>'+pretty(c.crosses)+' relaciones con problemas</strong>. Un mismo segmento puede aparecer en varias relaciones.</p></div><div class="h1-relations">'+
     '<div><b>'+pretty(c.base)+'</b><small><strong>Vínculos documentados</strong><br>Una fuente relaciona al grupo con el problema o con una condición relevante para entenderlo.</small></div>'+
     '<div><b>'+pretty(c.candidate)+'</b><small><strong>Candidatos de investigación</strong><br>Hay una razón para estudiar el problema en ese grupo. La relación queda por comprobar.</small></div></div></div>'+
-    '<details class="h1-indicator-details"><summary>Cifras revisadas en la encuesta UC 2026</summary><div class="h1-indicator-head"><p>El equipo seleccionó '+pretty(c.indicators)+' cifras de distintas fuentes para revisar su población y comparabilidad. Estas '+pretty(c.indicators_rechecked)+' ya se comprobaron en las láminas originales. Todas provienen de la encuesta UC 2026 porque ese fue el primer documento cotejado cifra por cifra. Las otras '+pretty(c.indicators-c.indicators_rechecked)+' siguen pendientes de esa comprobación.</p><p>Sirven para entender situaciones concretas como la interrupción de proyectos o las demoras de rendición. La encuesta reúne fundaciones y corporaciones en una muestra intencional. Los resultados de estas preguntas se publicaron en conjunto.</p></div>'+
+    '<details class="h1-indicator-details"><summary>Cómo verificamos las cifras · Ejemplo de la encuesta UC 2026</summary><div class="h1-indicator-head"><p>Este ejemplo muestra cómo verificamos cada cifra antes de usarla: buscamos la pregunta y la página originales, comprobamos cuántas organizaciones respondieron y a qué grupo pertenecían. Por ejemplo, las preguntas sobre convenios se hicieron a 125 de las 255 organizaciones encuestadas.</p><p>Partimos por la encuesta UC 2026 porque reúne varias preguntas sobre sostenibilidad financiera, continuidad de proyectos y rendición de convenios. Fue la primera fuente cotejada cifra por cifra. De las '+pretty(c.indicators)+' cifras seleccionadas de distintas fuentes, '+pretty(c.indicators_rechecked)+' se cotejaron en este documento y '+pretty(c.indicators-c.indicators_rechecked)+' siguen pendientes de esa revisión puntual.</p><p>El estudio usa una muestra intencional y publica resultados conjuntos de fundaciones y corporaciones. Las fichas reúnen evidencia de otras publicaciones que ayudan a entender cada problema.</p></div>'+
     '<div class="h1-indicator-grid">'+indicatorCards+'</div></details>'+
     '<p class="h1-method-link"><a href="'+esc(methodsUrl)+'" data-go="metodos">Consultar métodos y fuentes ↗</a></p></section>';
 }
@@ -79,11 +79,22 @@ const segmentScope={
   mixto_fundaciones_otras:{order:1,reading:"El grupo reúne fundaciones y otras organizaciones. Hace falta un desglose para atribuirles un resultado propio."}
 };
 const otherSegment={order:2,reading:"Sirve para localizar grupos o procesos similares que convendría estudiar en fundaciones."};
+export function h1ProblemIntroduction(catalog,problemId,profile,esc){
+  const p=catalog.problems.find(x=>x.id===problemId);
+  const secondary=catalog.topics.find(x=>x.id===p.secondaryTopicId);
+  const rows=[
+    ["Tema",p.theme+(secondary?" · También relacionado con "+secondary.name:"")],
+    ["Ámbito · A quién o a qué proceso se refiere",profile.audience],
+    ["Qué trabajo dificulta",profile.impact],
+    ["Qué muestra la evidencia",profile.evidence],
+    ["Alcance · Hasta dónde aplica la evidencia",profile.limit]
+  ];
+  return '<section class="h1-problem-introduction" aria-labelledby="problem-explanation"><h3 id="problem-explanation">¿En qué consiste el problema?</h3>'+
+    '<p>'+esc(profile.summary)+'</p><dl>'+rows.map(([label,value])=>'<div><dt>'+esc(label)+'</dt><dd>'+esc(value)+'</dd></div>').join("")+'</dl></section>';
+}
 export function h1ProblemProfile(catalog,problemId,scope,esc){
   const p=catalog?.problems.find(x=>x.id===problemId);
   if(!p)return "";
-  const topic=catalog.topics.find(x=>x.id===p.themeId);
-  const secondary=catalog.topics.find(x=>x.id===p.secondaryTopicId);
   const focus=scope==="fundaciones";
   const intersections=catalog.crosses.filter(x=>x.problemId===problemId);
   const segments=new Map(catalog.segments.map(s=>[s.id,s]));
@@ -102,7 +113,7 @@ export function h1ProblemProfile(catalog,problemId,scope,esc){
         (focus?'<p class="h1-segment-reading">'+esc(segmentReading(x).reading)+'</p>':'')+safeLink(x.referenceUrl,"Referencia original",esc)+'</div>';
     }).join("")+'</div></details>';
   }).join(""):'<div class="h1-nd"><strong>Sin cruce segmental registrado (ND).</strong> Aún no se ha registrado qué grupos específicos se relacionan con este problema.</div>';
-  return '<section class="h1-drawer-profile" aria-label="Tema y segmentos"><div class="h1-drawer-topic"><span>'+esc(topic?.name??p.theme)+'</span>'+(secondary?' <small>También relacionado con '+esc(secondary.name)+'</small>':'')+'</div>'+
+  return '<section class="h1-drawer-profile" aria-label="Segmentos vinculados">'+
     '<div class="h1-drawer-counters"><span><b>'+p.sourceCount+'</b> fuentes documentales</span><span><b>'+p.findings+'</b> hallazgos</span><span><b>'+intersections.length+'</b> relaciones con segmentos</span></div>'+
     '<p class="h1-drawer-caveat">Conteos de la ficha completa. Describen su respaldo documental.</p>'+
     '<h3>'+(focus?"¿Qué grupos ayudan a entender el problema en fundaciones?":"¿A qué segmentos se ha vinculado?")+'</h3>'+
