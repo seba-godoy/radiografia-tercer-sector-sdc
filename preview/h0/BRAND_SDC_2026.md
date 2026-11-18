@@ -20,10 +20,8 @@ Presentación aportada por el equipo: `Copia de PPT PLANTILLA SdC 2026 (30 años
 **Tipografía:** Montserrat, con pesos 400/500/600/700/800/900 y énfasis en ExtraBold. El PPT usa la familia `Montserrat`, `Montserrat SemiBold` y `Montserrat ExtraBold`. En web se carga mediante Google Fonts, sin empaquetar ni distribuir archivos tipográficos. Fallback `Arial, sans-serif`.
 
 ## Logo y sello
-- `preview/h0/assets/sdc-symbol-2026.svg`: contorno vectorizado de las formas naranja y azul del símbolo original presente en la primera diapositiva, conservando colores. **No es un archivo oficial de vectores de marca**; es una adaptación derivada de la imagen original suministrada.
-- Texto del nombre de la organización y lema `Sin afecto no hay efectos` en el encabezado, en gris institucional y Montserrat.
-- Sello `30 AÑOS · DESDE 1996` reconstruido como HTML/CSS usando naranjo, azul y gradiente. Mantiene la referencia conmemorativa, aunque **no sustituye un original editable del logo aniversario**.
-- Para materiales institucionales oficiales, usar el PNG completo que viene incluido dentro del archivo de plantilla. Para este dashboard se usó la adaptación optimizada para web.
+
+El encabezado usa el PNG original de la portada de `Copia de PPT PLANTILLA SdC 2026 (30 años)(3).pptx` (`ppt/media/image1.png`). La imagen contiene el símbolo, el nombre, el lema y el sello de los 30 años. Se extrae sin modificar el archivo y se muestra respetando sus proporciones.
 
 ## Aplicación realizada
 - Se sustituyó el tema anterior verde/teal por la identidad crema, azul y naranjo; sin cambios al modelo de datos.
@@ -45,7 +43,7 @@ Presentación aportada por el equipo: `Copia de PPT PLANTILLA SdC 2026 (30 años
 ## Verificación
 - Archivo JSON de tokens: [brand-sdc.json](./brand-sdc.json).
 - Estilos institucionales: [brand-sdc.css](./brand-sdc.css).
-- Símbolo vectorial: [assets/sdc-symbol-2026.svg](./assets/sdc-symbol-2026.svg).
+- Logo del encabezado: [assets/sdc-logo-30-anos-2026.png](./assets/sdc-logo-30-anos-2026.png).
 - Pruebas reales: `tests/h0-brand.e2e.cjs`, agregadas a `.github/workflows/h0-preview-ui.yml`.
 - El nuevo tema vive en rama de desarrollo de H-0, encadenada a PR #12. **Producción v0.6 sin cambios.**
 

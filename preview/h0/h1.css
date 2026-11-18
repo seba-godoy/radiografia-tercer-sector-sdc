@@ -78,6 +78,10 @@
 .h1-method-link{margin:16px 0 0;font-size:.84rem}
 .h1-method-link a{text-decoration:underline;color:#1b5f98}
 .callout p,.h1-foundation-reading p{margin:4px 0 0}
+.h1-results-link{color:#1b5f98;font-weight:700;text-decoration:underline;text-underline-offset:2px}
+#fichas-problemas{scroll-margin-top:105px}
+#list-filter-instruction{margin-bottom:0}
+#list-filter-instruction+.tools-panel{margin-top:10px}
 .h1-filter-hint,.h1-filter-guide{color:var(--muted);font-size:.81rem;line-height:1.5}
 .h1-filter-guide dl{display:grid;gap:8px;margin:10px 0}
 .h1-filter-guide dt{font-weight:700}

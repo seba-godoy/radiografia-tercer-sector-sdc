@@ -66,10 +66,8 @@
     "note": "Los hex originales no siempre alcanzan contraste para texto pequeño; las variantes oscuras son derivaciones funcionales, no colores oficiales adicionales."
   },
   "logos": {
-    "mark_svg": "preview/h0/assets/sdc-symbol-2026.svg",
-    "mark_source": "símbolo naranjo/azul de la lámina 1, vectorizado a mano desde los contornos del PNG de la plantilla",
-    "wordmark": "Texto HTML Montserrat basado en el lockup de la lámina 1; reproducción web, no vector oficial completo",
-    "anniversary": "Sello tipográfico 30 AÑOS DESDE 1996 como componente HTML/CSS de la plantilla, no archivo oficial vectorial",
+    "header_png": "preview/h0/assets/sdc-logo-30-anos-2026.png",
+    "header_source": "Copia de PPT PLANTILLA SdC 2026 (30 años)(3).pptx, diapositiva 1, ppt/media/image1.png",
     "phrase": "Sin afecto no hay efectos"
   },
   "ui_rules": [
@@ -84,7 +82,7 @@
   "updated_files": [
     "preview/h0/index.html",
     "preview/h0/brand-sdc.css",
-    "preview/h0/assets/sdc-symbol-2026.svg"
+    "preview/h0/assets/sdc-logo-30-anos-2026.png"
   ],
   "production_not_modified": true
 }
