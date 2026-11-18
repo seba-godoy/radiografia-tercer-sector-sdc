@@ -8,8 +8,9 @@ Proyecto: Radiografía del tercer sector, prototipo de investigación de Fundaci
 3. Recuperar la página **INICIO AQUÍ · Estado autorizado y continuidad del Plan B/C**, la propuesta **PROPUESTA · Radiografía DIMI como sistema de decisiones** y la fase correspondiente (PX-0...PX-6/INT/BOT) en Notion, si el conector está disponible. Notion define decisiones; GitHub define los bytes. Si no hay acceso, registrar el bloqueo: no deducir aprobación.
 4. Leer el commit base, comprobar si alguien avanzó y decidir la primera microtarea realmente pendiente. No tratar resúmenes antiguos como autoridad.
 
-## Invariantes del corte v0.6
-- El archivo `index.html` es el sitio público actual; `versiones/` contiene cortes históricos. No reescribirlos por documentación.
+## Invariantes de publicación v0.7 (decisión de integración del propietario 18-11-2026)
+- La portada pública `/` usa redirección de Vercel a `preview/h0/index.html` (H-0 + H-1 + H-M). El `index.html` de raíz conserva v0.6 como *golden master* y su copia exacta está en `versiones/v0.6/index.html`, accesible por `/archivo`. No sobrescribir ningún legado.
+- El manifiesto `versiones.json` registra v0.7 como actual y v0.6 como archivada. Los datos históricos conservan sus propias versiones; las etapas 02-04 de v0.7 son pendientes, no rankings aprobados.
 - Catálogo A: 26 fuentes, 31 problemas, 121 segmentos. B: 11 alta, 12 media, 8 por validar. C: 4 propuestas IA + 2 alternativas convencionales. Solo cambian con migración y decisión verificadas.
 - Las bandas B son editoriales, no un ranking cuantitativo aprobado. Frecuencias/impactos/urgencias comparables pueden ser ND. No imputar ND=0.
 - F03 distingue N=125, 200, 219 y 255 según pregunta. F11/F12 no constituyen estudios independientes. F22 incluye menciones, no equivalentes a organizaciones. No generalizar casos F26 a todas las fundaciones.
