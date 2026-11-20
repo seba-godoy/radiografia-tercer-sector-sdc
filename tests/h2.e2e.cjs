@@ -52,16 +52,17 @@ async function run() {
     assert.doesNotMatch(await page.locator('[data-h2-task="P43"]').innerText(), /Primer bloque/);
     const closure = page.locator("#h2-closure-P13");
     const index = page.locator("[data-h2-index=P13]");
-    assert.match(await closure.innerText(), /Investigación cerrada[\s\S]*37%[\s\S]*255[\s\S]*puesto de criticidad sigue por determinar/);
-    assert.match(await index.innerText(), /37\/100 · Puntaje provisional[\s\S]*25% del peso medido[\s\S]*muestra mixta/i);
+    assert.match(await closure.innerText(), /Evidencia documentada[\s\S]*37%[\s\S]*255[\s\S]*puesto de criticidad sigue por determinar/);
+    assert.match(await index.innerText(), /Puntaje de criticidad pendiente[\s\S]*25% del peso con indicador[\s\S]*muestra mixta/i);
+    assert.doesNotMatch(await index.innerText(), /37\/100/);
     await index.locator("summary").click();
     assert.equal(await index.getByText("Sin dato comparable", {exact:false}).count(), 3);
-    assert.match(await index.innerText(), /Alcance · 25%\s*· 37 puntos/);
+    assert.match(await index.innerText(), /Alcance · 25%\s*· 37 · indicador parcial/);
     assert.doesNotMatch(await closure.innerText(), /Corporación Cultiva/);
     assert.equal(await closure.locator('a[href*="fundacionsentido.cl"]').count(), 1);
     const closedTask = page.locator('[data-h2-task="P13"]');
     await closedTask.locator("summary").click();
-    assert.equal(await closedTask.getByRole("link",{name:"Ver el cierre y sus fuentes"}).getAttribute("href"), "#h2-closure-P13");
+    assert.equal(await closedTask.getByRole("link",{name:"Ver la evidencia y sus brechas"}).getAttribute("href"), "#h2-closure-P13");
     const p20 = page.locator("[data-h2-pilot=P20]");
     const reach = p20.locator("summary").filter({hasText:"Alcance muestral"});
     await reach.click();
@@ -91,7 +92,7 @@ async function run() {
     assert.equal(await page.locator("[data-h2-pilot]").count(), 0);
     assert.equal(await page.locator(".h2-source-group li").count(), 245);
     assert.match(await closure.innerText(), /47%[\s\S]*Corporación Cultiva[\s\S]*38,6%[\s\S]*9,6%/);
-    assert.match(await index.innerText(), /37\/100[\s\S]*Fundaciones y Tercer sector aún carecen de puntaje propio/);
+    assert.match(await index.innerText(), /Puntaje de criticidad pendiente[\s\S]*Fundaciones y Tercer sector aún carecen de puntaje propio/);
     assert.doesNotMatch(await closure.innerText(), /base incluye 255/);
     assert.equal(await closure.locator('a[href*="cultiva.cl"]').count(), 1);
     const sectorP20 = page.locator("[data-h2-sector=P20]");
@@ -122,3 +123,4 @@ async function run() {
   }
 }
 run().catch(error => {console.error(error);process.exitCode = 1;});
+

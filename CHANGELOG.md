@@ -2,7 +2,7 @@
 
 ## Vista previa de Criticidad (2026-11-20)
 
-- Presenta el índice piloto de cuatro criterios y el puntaje provisional de P13, con cobertura del cálculo y alcance muestral explícitos.
+- Corrige el método de criticidad a v0.2: retira el 37/100 de P13, conserva el 37% como indicador parcial y evita renormalizar faltantes. Documenta rúbricas, linaje por estudio, confianza separada y brechas para completar P13. La versión v0.1 queda en historial.
 - Incorpora el cierre de investigación de P13 con hallazgos, alcance y fuentes en Fundaciones y Tercer sector. El puesto de criticidad sigue por determinar.
 - Reordena los próximos pasos para comenzar por los problemas que pueden estudiarse fuera de la relación con el Estado.
 
@@ -65,3 +65,4 @@
 ## base-a (2026-11-13)
 - Corte de 26 fuentes, 31 problemas y 121 segmentos
 - Evidencia y metodología de respaldo
+

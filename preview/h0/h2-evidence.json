@@ -614,7 +614,7 @@
     }
   },
   "criticalityIndex": {
-    "version": "0.1",
+    "version": "0.2",
     "weights": {
       "I": 35,
       "F": 25,
@@ -622,10 +622,10 @@
       "U": 15
     },
     "anchors": {
-      "I": "100 × proporción de servicios o actividades planificadas perdidas, mediana en organizaciones afectadas.",
-      "F": "25 × mediana de episodios por organización afectada en 12 meses.",
-      "A": "100 × proporción de organizaciones expuestas que reportan el episodio.",
-      "U": "100 × (1 − días de margen para evitar el daño / 90), con la mediana entre casos comparables."
+      "I": "Rúbrica de consecuencias: carga absorbible, ajuste material con continuidad, reducción de servicios o pérdida de servicio esencial. Usar distribución o resultado típico medido; no el caso más grave.",
+      "F": "Repetición o persistencia observada por organización: aislada, esporádica, varias veces al año, frecuente o permanente. Publicaciones y olas no equivalen a episodios.",
+      "A": "Proporción de organizaciones elegibles que experimentó el evento. Las caídas por fuente se presentan separadas si se desconoce su superposición.",
+      "U": "Plazo para evitar daño adicional: hasta 1 mes, más de 1–3, más de 3–6, más de 6–12, más de 12. Conservar intervalos publicados y justificar proxies."
     },
     "scores": {
       "P13": {
@@ -636,10 +636,24 @@
           "U": null
         },
         "population": "Muestra intencional mixta de 255 fundaciones y corporaciones · encuesta UC 2026.",
-        "finding": "El 37% declaró una caída en los ingresos por donaciones entre 2024 y 2025. Es la aproximación de alcance para este corte.",
-        "limits": "El valor es una referencia de la muestra mixta. Fundaciones y Tercer sector aún carecen de puntaje propio. La comparabilidad del índice sigue por determinar.",
-        "references": ["F03.34"]
+        "finding": "El 37% declarado corresponde a caída de donaciones; no mide toda la inestabilidad de ingresos ni equivale a criticidad.",
+        "limits": "Fundaciones y Tercer sector aún carecen de puntaje propio. La puntuación de P13 está abierta; el 37% se conserva como indicador parcial de una muestra mixta.",
+        "references": [
+          "F03.34"
+        ],
+        "ready": false,
+        "status": "puntuacion_abierta",
+        "confidence": "Parcial para alcance; insuficiente para el total. La confianza se informa separada de la criticidad.",
+        "gaps": {
+          "I": "Falta una distribución o consecuencia típica agregada compatible con ingresos privados/propios. UC 2024 ya aporta daño agregado, pero mezcla financiamiento público y privado.",
+          "F": "Falta repetición o persistencia por organización, no otra publicación del mismo estudio.",
+          "A": "El 37% es un indicador parcial. Falta consolidar el evento de P13 y confirmar la base elegible por ítem sin sumar porcentajes superpuestos.",
+          "U": "Falta un plazo o rango agregado hasta daño adicional evitable. Las reservas hipotéticas no son por sí solas ese plazo."
+        }
       }
-    }
+    },
+    "missingDataPolicy": "Sin renormalización: un componente observado no se publica como total. Cuatro componentes defendibles y aplicación validada antes de mostrar el índice.",
+    "sourcePolicy": "Una base empírica por resultado y levantamiento de origen. Informe, presentación y republicación del mismo estudio no añaden muestras. No sumar N de estudios con solapamiento desconocido.",
+    "formula": "C = 0,35 I + 0,25 F + 0,25 A + 0,15 U"
   }
 }
