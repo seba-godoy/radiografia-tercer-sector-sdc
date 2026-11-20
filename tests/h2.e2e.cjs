@@ -56,7 +56,8 @@ async function run() {
     assert.equal(await application.locator('[data-p13-publication]').count(), 16);
     assert.equal(await application.locator('[data-p13-claim]').count(), 28);
     await application.locator('[data-p13-study="BARO"] > summary').click();
-    assert.match(await application.locator('[data-p13-study="BARO"]').innerText(), /49,3%[\s\S]*2018/);
+    assert.match(await application.locator('[data-p13-study="BARO"]').innerText(), /49,3%/);
+    assert.match(await application.locator('[data-p13-study="BARO"]').innerText(), /2018–2023/);
     const closure = page.locator("#h2-closure-P13");
     const index = page.locator("[data-h2-index=P13]");
     assert.match(await closure.innerText(), /Evidencia documentada[\s\S]*37%[\s\S]*255[\s\S]*puesto de criticidad sigue por determinar/);
