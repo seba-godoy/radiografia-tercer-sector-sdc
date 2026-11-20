@@ -44,3 +44,5 @@ jobs:
           node --check preview/h0/methods-view.mjs
           node --check analisis/validate-hm.mjs
           node analisis/validate-hm.mjs
+      - name: QA PX-R3.5 · seis familias de errores de criticidad
+        run: python3 analisis/validate_px_r3_5_adversarial.py
