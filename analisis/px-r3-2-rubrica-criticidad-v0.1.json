@@ -1,0 +1,486 @@
+{
+  "fase": "PX-R3.2",
+  "version": "0.1.0",
+  "estado": "propuesta_para_calibracion",
+  "entrada_px_r3_1": "ca304d50bbc2e324ec67382ded103dcbd5902b1b",
+  "ventana_frecuencia_alcance_meses": 12,
+  "criterios": {
+    "I": {
+      "nombre": "impacto",
+      "peso_propuesto": 35,
+      "unidad": "porcentaje de pérdida operativa por episodio",
+      "niveles": [
+        {
+          "nivel": 0,
+          "minimo": 0,
+          "maximo": 0,
+          "minimo_inclusivo": true,
+          "maximo_inclusivo": true
+        },
+        {
+          "nivel": 1,
+          "minimo": 0,
+          "maximo": 5,
+          "minimo_inclusivo": false,
+          "maximo_inclusivo": false
+        },
+        {
+          "nivel": 2,
+          "minimo": 5,
+          "maximo": 15,
+          "minimo_inclusivo": true,
+          "maximo_inclusivo": false
+        },
+        {
+          "nivel": 3,
+          "minimo": 15,
+          "maximo": 30,
+          "minimo_inclusivo": true,
+          "maximo_inclusivo": false
+        },
+        {
+          "nivel": 4,
+          "minimo": 30,
+          "maximo": 100,
+          "minimo_inclusivo": true,
+          "maximo_inclusivo": true
+        }
+      ]
+    },
+    "F": {
+      "nombre": "frecuencia",
+      "peso_propuesto": 25,
+      "unidad": "episodios por organización afectada en 12 meses, mediana",
+      "niveles": [
+        {
+          "nivel": 0,
+          "minimo": 0,
+          "maximo": 0,
+          "minimo_inclusivo": true,
+          "maximo_inclusivo": true
+        },
+        {
+          "nivel": 1,
+          "minimo": 1,
+          "maximo": 2,
+          "minimo_inclusivo": true,
+          "maximo_inclusivo": false
+        },
+        {
+          "nivel": 2,
+          "minimo": 2,
+          "maximo": 4,
+          "minimo_inclusivo": true,
+          "maximo_inclusivo": false
+        },
+        {
+          "nivel": 3,
+          "minimo": 4,
+          "maximo": 12,
+          "minimo_inclusivo": true,
+          "maximo_inclusivo": false
+        },
+        {
+          "nivel": 4,
+          "minimo": 12,
+          "maximo": null,
+          "minimo_inclusivo": true,
+          "maximo_inclusivo": false
+        }
+      ]
+    },
+    "A": {
+      "nombre": "alcance",
+      "peso_propuesto": 25,
+      "unidad": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+      "niveles": [
+        {
+          "nivel": 0,
+          "minimo": 0,
+          "maximo": 0,
+          "minimo_inclusivo": true,
+          "maximo_inclusivo": true
+        },
+        {
+          "nivel": 1,
+          "minimo": 0,
+          "maximo": 5,
+          "minimo_inclusivo": false,
+          "maximo_inclusivo": false
+        },
+        {
+          "nivel": 2,
+          "minimo": 5,
+          "maximo": 20,
+          "minimo_inclusivo": true,
+          "maximo_inclusivo": false
+        },
+        {
+          "nivel": 3,
+          "minimo": 20,
+          "maximo": 50,
+          "minimo_inclusivo": true,
+          "maximo_inclusivo": false
+        },
+        {
+          "nivel": 4,
+          "minimo": 50,
+          "maximo": 100,
+          "minimo_inclusivo": true,
+          "maximo_inclusivo": true
+        }
+      ]
+    },
+    "U": {
+      "nombre": "urgencia",
+      "peso_propuesto": 15,
+      "unidad": "días naturales restantes para evitar daño adicional",
+      "niveles": [
+        {
+          "nivel": 0,
+          "minimo": 90,
+          "maximo": null,
+          "minimo_inclusivo": false,
+          "maximo_inclusivo": false
+        },
+        {
+          "nivel": 1,
+          "minimo": 30,
+          "maximo": 90,
+          "minimo_inclusivo": false,
+          "maximo_inclusivo": true
+        },
+        {
+          "nivel": 2,
+          "minimo": 7,
+          "maximo": 30,
+          "minimo_inclusivo": false,
+          "maximo_inclusivo": true
+        },
+        {
+          "nivel": 3,
+          "minimo": 2,
+          "maximo": 7,
+          "minimo_inclusivo": false,
+          "maximo_inclusivo": true
+        },
+        {
+          "nivel": 4,
+          "minimo": 0,
+          "maximo": 2,
+          "minimo_inclusivo": true,
+          "maximo_inclusivo": true
+        }
+      ]
+    }
+  },
+  "estados": [
+    "observado",
+    "estimado",
+    "juicio_experto",
+    "ND"
+  ],
+  "nivel_ND": null,
+  "agregado_autorizado": false,
+  "imputar_ND": false,
+  "redistribuir_pesos": false,
+  "requisitos_por_celda": [
+    "escenario",
+    "territorio",
+    "poblacion",
+    "periodo",
+    "unidad",
+    "n",
+    "unidad_n",
+    "fuente",
+    "localizador",
+    "identificador_medicion",
+    "metodo",
+    "estado",
+    "valor_o_intervalo",
+    "nivel_o_motivo_ND",
+    "version_escala",
+    "justificacion"
+  ],
+  "casos_limite_para_mediciones_elegibles": [
+    {
+      "criterio": "I",
+      "valor": 0,
+      "nivel_esperado": 0
+    },
+    {
+      "criterio": "I",
+      "valor": 0.01,
+      "nivel_esperado": 1
+    },
+    {
+      "criterio": "I",
+      "valor": 4.999,
+      "nivel_esperado": 1
+    },
+    {
+      "criterio": "I",
+      "valor": 5,
+      "nivel_esperado": 2
+    },
+    {
+      "criterio": "I",
+      "valor": 14.999,
+      "nivel_esperado": 2
+    },
+    {
+      "criterio": "I",
+      "valor": 15,
+      "nivel_esperado": 3
+    },
+    {
+      "criterio": "I",
+      "valor": 29.999,
+      "nivel_esperado": 3
+    },
+    {
+      "criterio": "I",
+      "valor": 30,
+      "nivel_esperado": 4
+    },
+    {
+      "criterio": "I",
+      "valor": 100,
+      "nivel_esperado": 4
+    },
+    {
+      "criterio": "I",
+      "valor": -1,
+      "nivel_esperado": null
+    },
+    {
+      "criterio": "I",
+      "valor": 101,
+      "nivel_esperado": null
+    },
+    {
+      "criterio": "F",
+      "valor": 0,
+      "nivel_esperado": 0
+    },
+    {
+      "criterio": "F",
+      "valor": 0.99,
+      "nivel_esperado": null
+    },
+    {
+      "criterio": "F",
+      "valor": 1,
+      "nivel_esperado": 1
+    },
+    {
+      "criterio": "F",
+      "valor": 1.5,
+      "nivel_esperado": 1
+    },
+    {
+      "criterio": "F",
+      "valor": 2,
+      "nivel_esperado": 2
+    },
+    {
+      "criterio": "F",
+      "valor": 3.99,
+      "nivel_esperado": 2
+    },
+    {
+      "criterio": "F",
+      "valor": 4,
+      "nivel_esperado": 3
+    },
+    {
+      "criterio": "F",
+      "valor": 11.99,
+      "nivel_esperado": 3
+    },
+    {
+      "criterio": "F",
+      "valor": 12,
+      "nivel_esperado": 4
+    },
+    {
+      "criterio": "F",
+      "valor": 50,
+      "nivel_esperado": 4
+    },
+    {
+      "criterio": "F",
+      "valor": -1,
+      "nivel_esperado": null
+    },
+    {
+      "criterio": "A",
+      "valor": 0,
+      "nivel_esperado": 0
+    },
+    {
+      "criterio": "A",
+      "valor": 4.999,
+      "nivel_esperado": 1
+    },
+    {
+      "criterio": "A",
+      "valor": 5,
+      "nivel_esperado": 2
+    },
+    {
+      "criterio": "A",
+      "valor": 19.999,
+      "nivel_esperado": 2
+    },
+    {
+      "criterio": "A",
+      "valor": 20,
+      "nivel_esperado": 3
+    },
+    {
+      "criterio": "A",
+      "valor": 49.999,
+      "nivel_esperado": 3
+    },
+    {
+      "criterio": "A",
+      "valor": 50,
+      "nivel_esperado": 4
+    },
+    {
+      "criterio": "A",
+      "valor": 62,
+      "nivel_esperado": 4
+    },
+    {
+      "criterio": "A",
+      "valor": 100,
+      "nivel_esperado": 4
+    },
+    {
+      "criterio": "A",
+      "valor": 101,
+      "nivel_esperado": null
+    },
+    {
+      "criterio": "U",
+      "valor": 0,
+      "nivel_esperado": 4
+    },
+    {
+      "criterio": "U",
+      "valor": 2,
+      "nivel_esperado": 4
+    },
+    {
+      "criterio": "U",
+      "valor": 2.001,
+      "nivel_esperado": 3
+    },
+    {
+      "criterio": "U",
+      "valor": 7,
+      "nivel_esperado": 3
+    },
+    {
+      "criterio": "U",
+      "valor": 7.001,
+      "nivel_esperado": 2
+    },
+    {
+      "criterio": "U",
+      "valor": 30,
+      "nivel_esperado": 2
+    },
+    {
+      "criterio": "U",
+      "valor": 30.001,
+      "nivel_esperado": 1
+    },
+    {
+      "criterio": "U",
+      "valor": 90,
+      "nivel_esperado": 1
+    },
+    {
+      "criterio": "U",
+      "valor": 90.001,
+      "nivel_esperado": 0
+    },
+    {
+      "criterio": "U",
+      "valor": -1,
+      "nivel_esperado": null
+    }
+  ],
+  "casos_elegibilidad": [
+    {
+      "caso": "P20_escenario_fundaciones",
+      "criterio": "A",
+      "dato": "62% de 125 mixtas con convenios",
+      "motivo": "poblacion_incompatible",
+      "esperado": "ND"
+    },
+    {
+      "caso": "P20_duracion_ya_transcurrida",
+      "criterio": "U",
+      "dato": "42% declaró más de siete meses",
+      "motivo": "unidad_incompatible",
+      "esperado": "ND"
+    },
+    {
+      "caso": "P48_testimonio_sectorial",
+      "criterios": [
+        "I",
+        "F",
+        "A",
+        "U"
+      ],
+      "motivo": "cuantificacion_insuficiente",
+      "esperado": "ND"
+    },
+    {
+      "caso": "P54_menciones",
+      "criterio": "A",
+      "dato": "82 menciones entre 51 OSC",
+      "motivo": "unidad_incompatible",
+      "esperado": "ND"
+    },
+    {
+      "caso": "A_intervalo_cruza_corte",
+      "criterio": "A",
+      "intervalo": [
+        18,
+        22
+      ],
+      "niveles_posibles": [
+        2,
+        3
+      ],
+      "esperado": "ND"
+    },
+    {
+      "caso": "A_intervalo_en_un_nivel",
+      "criterio": "A",
+      "intervalo": [
+        21,
+        23
+      ],
+      "nivel_esperado": 3
+    },
+    {
+      "caso": "F_cero_sin_seguimiento",
+      "criterio": "F",
+      "dato": "0 sin cobertura verificable",
+      "motivo": "dato_insuficiente",
+      "esperado": "ND"
+    },
+    {
+      "caso": "experto_no_imputa",
+      "estado": "juicio_experto",
+      "nivel_empirico": null,
+      "esperado": "ND"
+    }
+  ]
+}
