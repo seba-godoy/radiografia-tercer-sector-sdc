@@ -1,9 +1,11 @@
 # Historial de cambios · Radiografía Simón de Cirene
 
-## Próxima actualización
-- Aclara los conteos y relaciones del mapa documental, permite alternar cada tema y documenta el orden y los filtros de fichas.
-- Distingue en Fundaciones el respaldo específico, las muestras mixtas y el contexto. Agrega una lectura editorial por hallazgo y preguntas para investigar cada problema en fundaciones.
-- Presenta las cuatro cifras revisadas de la encuesta UC en un apartado desplegable con sus poblaciones y límites.
+## 0.7 (2026-11-20) · Revisión de Problemas detectados
+
+- Aclara los conteos del mapa, añade una guía para llegar a las fichas y permite alternar los filtros temáticos.
+- Abre las fichas en una ventana centrada y presenta tema, ámbito, trabajo afectado, evidencia y alcance. Ordena las fuentes por respaldo directo, indicio indirecto y contexto.
+- Retira el apartado destacado de la encuesta UC 2026. Sus citas siguen disponibles en las fichas correspondientes.
+- Usa el logo original de la plantilla institucional y el sello de los 30 años en el encabezado.
 
 ## 0.7 (2026-11-18) · Integración del recorrido institucional y Métodos y fuentes
 - Release agrupa PX-R1/R2 + H-0/BR-1 + H-1 + MF-1 + H-M en un único PR a main, sujeto a CI y smoke Vercel.
