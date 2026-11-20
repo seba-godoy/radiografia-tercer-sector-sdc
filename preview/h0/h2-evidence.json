@@ -612,5 +612,34 @@
         ]
       }
     }
+  },
+  "criticalityIndex": {
+    "version": "0.1",
+    "weights": {
+      "I": 35,
+      "F": 25,
+      "A": 25,
+      "U": 15
+    },
+    "anchors": {
+      "I": "100 × proporción de servicios o actividades planificadas perdidas, mediana en organizaciones afectadas.",
+      "F": "25 × mediana de episodios por organización afectada en 12 meses.",
+      "A": "100 × proporción de organizaciones expuestas que reportan el episodio.",
+      "U": "100 × (1 − días de margen para evitar el daño / 90), con la mediana entre casos comparables."
+    },
+    "scores": {
+      "P13": {
+        "components": {
+          "I": null,
+          "F": null,
+          "A": 37,
+          "U": null
+        },
+        "population": "Muestra intencional mixta de 255 fundaciones y corporaciones · encuesta UC 2026.",
+        "finding": "El 37% declaró una caída en los ingresos por donaciones entre 2024 y 2025. Es la aproximación de alcance para este corte.",
+        "limits": "El valor es una referencia de la muestra mixta. Fundaciones y Tercer sector aún carecen de puntaje propio. La comparabilidad del índice sigue por determinar.",
+        "references": ["F03.34"]
+      }
+    }
   }
 }

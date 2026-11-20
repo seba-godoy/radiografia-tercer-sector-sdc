@@ -2,6 +2,7 @@
 
 ## Vista previa de Criticidad (2026-11-20)
 
+- Presenta el índice piloto de cuatro criterios y el puntaje provisional de P13, con cobertura del cálculo y alcance muestral explícitos.
 - Incorpora el cierre de investigación de P13 con hallazgos, alcance y fuentes en Fundaciones y Tercer sector. El puesto de criticidad sigue por determinar.
 - Reordena los próximos pasos para comenzar por los problemas que pueden estudiarse fuera de la relación con el Estado.
 

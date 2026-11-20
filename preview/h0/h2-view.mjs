@@ -61,6 +61,37 @@ function sourceList(references, evidence, esc) {
   }).join("");
 }
 
+function criticalityScore(id, evidence, esc) {
+  const index = evidence.criticalityIndex;
+  const score = index?.scores[id];
+  if (!score) return "";
+
+  const measured = criteria.filter(([key]) => score.components[key] != null);
+  const coverage = measured.reduce((total, [key]) => total + index.weights[key], 0);
+  if (!coverage) return "";
+  const weighted = measured.reduce((total, [key]) => total + index.weights[key] * score.components[key], 0);
+  const totalWeight = Object.values(index.weights).reduce((total, weight) => total + weight, 0);
+  const coveragePercent = Math.round(100 * coverage / totalWeight);
+  const status = coverage === totalWeight ? "Puntaje en la población indicada" : "Puntaje provisional";
+  return `<div class="h2-index" data-h2-index="${esc(id)}">
+    <div class="h2-index-header">
+      <p><strong class="h2-index-value">${Math.round(weighted / coverage)}/100</strong> · ${status}</p>
+      <p>${coveragePercent}% del peso medido · ${measured.length} de ${criteria.length} criterios</p>
+    </div>
+    <p>${esc(score.population)} ${esc(score.finding)}</p>
+    <p>${esc(score.limits)}</p>
+    <ul class="h2-sources">${sourceList(score.references, evidence, esc)}</ul>
+    <details class="h2-index-method">
+      <summary>Cómo se calcula el índice · v${esc(index.version)}</summary>
+      <p>Se ponderan cuatro criterios, cada uno con piso 1 y techo 100. El puntaje provisional divide la suma ponderada por el peso total de los criterios medidos. La cobertura indica ese peso.</p>
+      <ul class="h2-gaps">${criteria.map(([key, label]) => `<li><strong>${label} · ${esc(index.weights[key])}%</strong>
+        · ${score.components[key] == null ? "Sin dato comparable" : esc(score.components[key]) + " puntos"}<br>
+        ${esc(index.anchors[key])}</li>`).join("")}</ul>
+      <p>Para ordenar problemas se requieren datos de poblaciones, períodos y dimensiones comparables. Se prueba la sensibilidad a cambios de pesos y anclas. La abordabilidad por IA se evalúa aparte.</p>
+    </details>
+  </div>`;
+}
+
 function researchClosures(evidence, scope, esc) {
   return Object.entries(evidence.closures || {}).map(([id, closure]) => {
     const date = new Intl.DateTimeFormat("es-CL", {dateStyle: "long", timeZone: "UTC"})
@@ -68,6 +99,7 @@ function researchClosures(evidence, scope, esc) {
     return `<section class="h2-closure" id="h2-closure-${esc(id)}" aria-labelledby="h2-closure-title-${esc(id)}">
       <p class="h2-closure-status">Investigación cerrada · <time datetime="${esc(closure.date)}">${esc(date)}</time></p>
       <h2 id="h2-closure-title-${esc(id)}">${esc(id)} · ${esc(closure.title)}</h2>
+      ${criticalityScore(id, evidence, esc)}
       <div class="h2-closure-findings">${closure[scope].findings.map(item => `<article>
         <h3>${esc(item.title)}</h3><p>${esc(item.finding)}</p>
         <ul class="h2-sources">${sourceList(item.references, evidence, esc)}</ul>

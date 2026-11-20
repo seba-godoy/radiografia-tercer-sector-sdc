@@ -50,6 +50,41 @@
   margin-bottom: .35rem;
 }
 
+.h2-index {
+  margin: .9rem 0 1rem;
+  padding: 1rem;
+  border: 1px solid var(--sdc-border);
+  border-radius: 10px;
+  background: #edf6fe;
+  font-size: .86rem;
+}
+
+.h2-index-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: .25rem 1rem;
+}
+
+.h2-index p {
+  margin: 0 0 .55rem;
+}
+
+.h2-index-value {
+  color: var(--sdc-blue-deep);
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+}
+
+.h2-index-method summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.h2-index-method > :not(summary) {
+  margin-top: .65rem;
+}
+
 .h2-closure-findings {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
