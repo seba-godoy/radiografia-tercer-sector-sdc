@@ -1,0 +1,456 @@
+{
+  "fase": "PX-R3.4",
+  "version": "1.0.0",
+  "entrada": "9d477da1598596317e37ea3ae3b58c0440d3f04c",
+  "metodo": "Escenarios hipotéticos, comparación condicional sin imputación ni orden global",
+  "pesos_propuestos_pct": {
+    "base_propuesta": {
+      "I": 35,
+      "F": 25,
+      "A": 25,
+      "U": 15
+    },
+    "continuidad": {
+      "I": 50,
+      "F": 15,
+      "A": 15,
+      "U": 20
+    },
+    "convenios": {
+      "I": 25,
+      "F": 20,
+      "A": 45,
+      "U": 10
+    },
+    "sostenibilidad": {
+      "I": 45,
+      "F": 25,
+      "A": 15,
+      "U": 15
+    }
+  },
+  "escenario_principal": {
+    "id": "FUNDACIONES_CL",
+    "celdas_nd": 124
+  },
+  "escenario_muestral": {
+    "id": "F03_CONVENIOS_125_2025",
+    "n": 125,
+    "niveles_A": {
+      "P02": 3,
+      "P16": 4,
+      "P18": 3,
+      "P20": 4,
+      "P21": 3,
+      "P22": 3,
+      "P23": 2
+    },
+    "grupos_A": {
+      "2": 1,
+      "3": 4,
+      "4": 2
+    }
+  },
+  "sensibilidad_pesos": {
+    "base_propuesta": {
+      "n_totales_principal": 0,
+      "n_totales_muestrales": 0,
+      "pares_muestrales_sin_orden_robusto": 21,
+      "P02_menos_P20_muestra": {
+        "min_centésimas": -325,
+        "max_centésimas": 275,
+        "empate_posible": true,
+        "inversion_posible": true
+      },
+      "P48_menos_P50_principal": {
+        "min_centésimas": -400,
+        "max_centésimas": 400,
+        "empate_posible": true,
+        "inversion_posible": true
+      },
+      "ejemplo_sintetico_P02_menos_P20_con_I_mas_1": 10
+    },
+    "continuidad": {
+      "n_totales_principal": 0,
+      "n_totales_muestrales": 0,
+      "pares_muestrales_sin_orden_robusto": 21,
+      "P02_menos_P20_muestra": {
+        "min_centésimas": -355,
+        "max_centésimas": 325,
+        "empate_posible": true,
+        "inversion_posible": true
+      },
+      "P48_menos_P50_principal": {
+        "min_centésimas": -400,
+        "max_centésimas": 400,
+        "empate_posible": true,
+        "inversion_posible": true
+      },
+      "ejemplo_sintetico_P02_menos_P20_con_I_mas_1": 35
+    },
+    "convenios": {
+      "n_totales_principal": 0,
+      "n_totales_muestrales": 0,
+      "pares_muestrales_sin_orden_robusto": 21,
+      "P02_menos_P20_muestra": {
+        "min_centésimas": -265,
+        "max_centésimas": 175,
+        "empate_posible": true,
+        "inversion_posible": true
+      },
+      "P48_menos_P50_principal": {
+        "min_centésimas": -400,
+        "max_centésimas": 400,
+        "empate_posible": true,
+        "inversion_posible": true
+      },
+      "ejemplo_sintetico_P02_menos_P20_con_I_mas_1": -20
+    },
+    "sostenibilidad": {
+      "n_totales_principal": 0,
+      "n_totales_muestrales": 0,
+      "pares_muestrales_sin_orden_robusto": 21,
+      "P02_menos_P20_muestra": {
+        "min_centésimas": -355,
+        "max_centésimas": 325,
+        "empate_posible": true,
+        "inversion_posible": true
+      },
+      "P48_menos_P50_principal": {
+        "min_centésimas": -400,
+        "max_centésimas": 400,
+        "empate_posible": true,
+        "inversion_posible": true
+      },
+      "ejemplo_sintetico_P02_menos_P20_con_I_mas_1": 30
+    }
+  },
+  "sensibilidad_umbrales": {
+    "redondeo_pp": 0.5,
+    "n_combinaciones_moderadas": 27,
+    "rangos_moderados": [
+      [
+        3,
+        15,
+        45
+      ],
+      [
+        3,
+        15,
+        50
+      ],
+      [
+        3,
+        15,
+        55
+      ],
+      [
+        3,
+        20,
+        45
+      ],
+      [
+        3,
+        20,
+        50
+      ],
+      [
+        3,
+        20,
+        55
+      ],
+      [
+        3,
+        25,
+        45
+      ],
+      [
+        3,
+        25,
+        50
+      ],
+      [
+        3,
+        25,
+        55
+      ],
+      [
+        5,
+        15,
+        45
+      ],
+      [
+        5,
+        15,
+        50
+      ],
+      [
+        5,
+        15,
+        55
+      ],
+      [
+        5,
+        20,
+        45
+      ],
+      [
+        5,
+        20,
+        50
+      ],
+      [
+        5,
+        20,
+        55
+      ],
+      [
+        5,
+        25,
+        45
+      ],
+      [
+        5,
+        25,
+        50
+      ],
+      [
+        5,
+        25,
+        55
+      ],
+      [
+        7,
+        15,
+        45
+      ],
+      [
+        7,
+        15,
+        50
+      ],
+      [
+        7,
+        15,
+        55
+      ],
+      [
+        7,
+        20,
+        45
+      ],
+      [
+        7,
+        20,
+        50
+      ],
+      [
+        7,
+        20,
+        55
+      ],
+      [
+        7,
+        25,
+        45
+      ],
+      [
+        7,
+        25,
+        50
+      ],
+      [
+        7,
+        25,
+        55
+      ]
+    ],
+    "niveles_moderados_por_problema": {
+      "P02": [
+        3
+      ],
+      "P16": [
+        4
+      ],
+      "P18": [
+        3
+      ],
+      "P20": [
+        4
+      ],
+      "P21": [
+        3
+      ],
+      "P22": [
+        3
+      ],
+      "P23": [
+        2
+      ]
+    },
+    "estres_por_corte_superior_pct": {
+      "35": {
+        "P02": [
+          3
+        ],
+        "P16": [
+          4
+        ],
+        "P18": [
+          4
+        ],
+        "P20": [
+          4
+        ],
+        "P21": [
+          4
+        ],
+        "P22": [
+          4
+        ],
+        "P23": [
+          2
+        ]
+      },
+      "40": {
+        "P02": [
+          3
+        ],
+        "P16": [
+          4
+        ],
+        "P18": [
+          4
+        ],
+        "P20": [
+          4
+        ],
+        "P21": [
+          4
+        ],
+        "P22": [
+          3,
+          4
+        ],
+        "P23": [
+          2
+        ]
+      },
+      "45": {
+        "P02": [
+          3
+        ],
+        "P16": [
+          4
+        ],
+        "P18": [
+          3
+        ],
+        "P20": [
+          4
+        ],
+        "P21": [
+          3
+        ],
+        "P22": [
+          3
+        ],
+        "P23": [
+          2
+        ]
+      },
+      "50": {
+        "P02": [
+          3
+        ],
+        "P16": [
+          4
+        ],
+        "P18": [
+          3
+        ],
+        "P20": [
+          4
+        ],
+        "P21": [
+          3
+        ],
+        "P22": [
+          3
+        ],
+        "P23": [
+          2
+        ]
+      },
+      "55": {
+        "P02": [
+          3
+        ],
+        "P16": [
+          4
+        ],
+        "P18": [
+          3
+        ],
+        "P20": [
+          4
+        ],
+        "P21": [
+          3
+        ],
+        "P22": [
+          3
+        ],
+        "P23": [
+          2
+        ]
+      },
+      "60": {
+        "P02": [
+          3
+        ],
+        "P16": [
+          3
+        ],
+        "P18": [
+          3
+        ],
+        "P20": [
+          4
+        ],
+        "P21": [
+          3
+        ],
+        "P22": [
+          3
+        ],
+        "P23": [
+          2
+        ]
+      },
+      "65": {
+        "P02": [
+          3
+        ],
+        "P16": [
+          3
+        ],
+        "P18": [
+          3
+        ],
+        "P20": [
+          3
+        ],
+        "P21": [
+          3
+        ],
+        "P22": [
+          3
+        ],
+        "P23": [
+          2
+        ]
+      }
+    }
+  }
+}
