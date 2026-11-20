@@ -4,7 +4,7 @@
 
 ## Resultado y método
 
-La [matriz v1](./px-r3-1-matriz-indicadores-31-v1.csv) registra 31 problemas, un indicador principal por problema, unidad, población, base, ventana temporal, página y una lectura del posible daño o del límite de inferencia. Se parte de M17a/M17c, del linaje PX-R2.1 y del mapa H-1, con el runbook de criticidad y el roadmap vigente como contrato. Los recuentos de cobertura son 31 problemas, 147 vínculos con 26 publicaciones y 245 hallazgos. Las raíces acreditadas son candidatas y no un conteo de estudios independientes.
+La matriz v1 en [CSV](./px-r3-1-matriz-indicadores-31-v1.csv) y [JSON](./px-r3-1-matriz-indicadores-31-v1.json) registra 31 problemas, un indicador principal por problema, unidad, población, base, ventana temporal, página y una lectura del posible daño o del límite de inferencia. Se parte de M17a/M17c, del linaje PX-R2.1 y del mapa H-1, con el runbook de criticidad y el roadmap vigente como contrato. Los recuentos de cobertura son 31 problemas, 147 vínculos con 26 publicaciones y 245 hallazgos. Las raíces acreditadas son candidatas y no un conteo de estudios independientes.
 
 | Dimensión | Qué permite usar este corte |
 | --- | --- |
@@ -23,6 +23,7 @@ La [matriz v1](./px-r3-1-matriz-indicadores-31-v1.csv) registra 31 problemas, un
 ## Auditoría de salida
 
 - PASS · 16 comprobaciones específicas sobre identidad, sumas, fuentes, bases, tipos, ND y contraejemplos. Incluyen los dos ítems P17/P28, los N de F03, P48, P54 y el origen F11/F12.
+- PASS · Equivalencia de los 31 registros y campos entre CSV y JSON.
 - PASS · Baseline 54 verificaciones; comparabilidad PX-R2.2b 82 comprobaciones ejecutadas; MF-1 88 verificaciones. El validador heredado R2.2b imprime un denominador fijo desactualizado de 80.
 - Alcance del cotejo · Se revisó el pasaje principal de cada fila en nueve documentos o páginas primarias. Para P46 se cotejó la nota institucional de F11, no la tabla del informe IFO. No se realizó una reauditoría individual de los 245 hallazgos ni una búsqueda exhaustiva de evidencia nueva. ND expresa insuficiencia en el corte.
 - Reversión · Archivos aditivos de investigación, reversibles al descartar la rama. Los datasets canónicos, HTML, bandas editoriales, puntajes y producción permanecen intactos.
