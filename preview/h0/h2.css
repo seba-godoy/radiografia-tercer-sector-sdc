@@ -353,3 +353,15 @@
   .h2-contrasts { grid-template-columns: 1fr; }
   .h2-record-meta { max-width: 27%; text-align: right; }
 }
+
+
+.p13-application h3 { margin-top: 1.2rem; }
+.p13-application-scroll { width:100%; overflow-x:auto; border:1px solid var(--sdc-border); border-radius:10px; }
+.p13-application-table { width:100%; min-width:840px; border-collapse:collapse; font-size:.82rem; line-height:1.55; }
+.p13-application-table th, .p13-application-table td { padding:.8rem; vertical-align:top; text-align:left; border-bottom:1px solid var(--sdc-border); }
+.p13-application-table th { color:var(--sdc-blue-deep); }
+.p13-application-table p { margin:.5rem 0 0; }
+.p13-application .h2-record { scroll-margin-top:6rem; }
+.p13-bank-claims { padding-left:1.2rem; }
+.p13-bank-claims li { margin:.7rem 0; }
+.p13-application small { color:var(--sdc-gray); }
