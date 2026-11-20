@@ -37,7 +37,7 @@ const populationLabels = {
 const contrasts = [
   ["Continuidad de la atención", "P02 documenta cierre de proyectos por no renovación. Para compararlo con P16, falta saber cuántas atenciones se perdieron por transferencias tardías o si hubo reemplazo oportuno."],
   ["Alcance declarado en convenios", "P20 (62%), P16 (57%) y P02 (28%). Muestra mixta de 125 fundaciones y corporaciones con convenios estatales, referencia 2025. Son proporciones de reporte; los datos de daño siguen incompletos."],
-  ["Operación y protección especializada", "P16 tiene evidencia de dificultades de caja; P13 y P28 aportan indicios sobre ingresos y equipos. P48 se documenta en protección especializada, con una población y una unidad de análisis distintas."]
+  ["Operación y protección especializada", "P16 documenta dificultades de caja. P13 reúne casos de consecuencias operativas y P28 recoge dificultades de retención declaradas. P48 se estudia dentro de programas de protección especializada."]
 ];
 
 function external(url, label, esc) {
@@ -54,18 +54,39 @@ function observation(obs, esc) {
   return `<li><p>${esc(obs.texto)}</p><small>${esc(obs.poblacion)} · ${esc(obs.periodo)} · ${esc(base)}</small><small>${esc(obs.limitacion)}</small><small>${external(obs.url, `${obs.fuente} · ${obs.localizador}`, esc)}</small></li>`;
 }
 
+function sourceList(references, evidence, esc) {
+  return references.map(ref => {
+    const source = evidence.references[ref];
+    return `<li>${external(source.url, `${source.title} · ${source.locator}`, esc)}</li>`;
+  }).join("");
+}
+
+function researchClosures(evidence, scope, esc) {
+  return Object.entries(evidence.closures || {}).map(([id, closure]) => {
+    const date = new Intl.DateTimeFormat("es-CL", {dateStyle: "long", timeZone: "UTC"})
+      .format(new Date(closure.date));
+    return `<section class="h2-closure" id="h2-closure-${esc(id)}" aria-labelledby="h2-closure-title-${esc(id)}">
+      <p class="h2-closure-status">Investigación cerrada · <time datetime="${esc(closure.date)}">${esc(date)}</time></p>
+      <h2 id="h2-closure-title-${esc(id)}">${esc(id)} · ${esc(closure.title)}</h2>
+      <div class="h2-closure-findings">${closure[scope].findings.map(item => `<article>
+        <h3>${esc(item.title)}</h3><p>${esc(item.finding)}</p>
+        <ul class="h2-sources">${sourceList(item.references, evidence, esc)}</ul>
+      </article>`).join("")}</div>
+      <p class="h2-closure-limits">${esc(closure.limits)}</p>
+    </section>`;
+  }).join("");
+}
+
 function pilotTable(rows, evidence, links, esc) {
   const body = rows.map(row => {
+    const closed = Object.hasOwn(evidence.closures || {}, row.id);
     const cells = criteria.map(([id, title]) => {
       const cell = evidence.pilot[row.id][id];
-      const sources = cell.references.map(ref => {
-        const source = evidence.references[ref];
-        return `<li>${external(source.url, `${source.title} · ${source.locator}`, esc)}</li>`;
-      }).join("");
+      const sources = sourceList(cell.references, evidence, esc);
       return `<td><details class="h2-cell"><summary aria-label="${esc(row.id)} · ${esc(title)} · ${esc(evidenceLabels[cell.status])}">
         <span>${esc(evidenceLabels[cell.status])}</span><span aria-hidden="true" class="h2-expand">+</span>
         </summary><div class="h2-cell-body"><p>${esc(cell.finding)}</p><p class="h2-scope">${esc(cell.scope)}</p>
-        <p><strong>Falta medir</strong> ${esc(cell.gap)}</p><ul class="h2-sources">${sources}</ul></div></details></td>`;
+        <p><strong>${closed ? "Límite" : "Falta medir"}</strong> ${esc(cell.gap)}</p><ul class="h2-sources">${sources}</ul></div></details></td>`;
     }).join("");
     return `<tr data-h2-pilot="${esc(row.id)}"><th scope="row"><span class="h2-code">${esc(row.id)}</span>
       ${esc(row.titulo)}<small>${mapLink(row, links, esc)}</small></th>${cells}</tr>`;
@@ -102,25 +123,28 @@ function gapList(row, scope, pilot, esc) {
     `<li><b>${label}</b> ${esc(pilot ? pilot[key].gap : row.vistas[scope].criterios[key].dato_faltante)}</li>`).join("")}</ul>`;
 }
 
-function task(row, {scope, pilot, note, first}, links, esc) {
+function task(row, {scope, pilot, note, first, closed}, links, esc) {
+  const status = closed ? "Investigación cerrada" : first ? "Primer bloque" : "";
+  const detail = closed
+    ? `<p><a href="#h2-closure-${esc(row.id)}">Ver el cierre y sus fuentes</a></p>`
+    : gapList(row, scope, pilot, esc);
   return `<details class="h2-record" data-h2-task="${esc(row.id)}"><summary><span><b class="h2-code">${esc(row.id)}</b> ${esc(row.titulo)}</span>
-    ${first ? '<span class="h2-record-meta">Tanda propuesta</span>' : ""}</summary>
-    <div class="h2-record-body">${note ? `<p>${esc(note)}</p>` : ""}${gapList(row, scope, pilot, esc)}
+    ${status ? `<span class="h2-record-meta">${status}</span>` : ""}</summary>
+    <div class="h2-record-body">${note ? `<p>${esc(note)}</p>` : ""}${detail}
     <p>${mapLink(row, links, esc)}</p></div></details>`;
 }
 
 function researchPlan(rows, pilotRows, deferredRows, evidence, scope, links, esc) {
   const foundations = scope === "fundaciones";
-  const note = foundations
-    ? "Completar los vacíos de los ocho casos y aplicar el mismo marco a los 23 pendientes. La primera tanda propuesta combina convenios y donaciones."
-    : "Comprobar en qué tipos de organizaciones aparece cada problema. Comparar dentro de poblaciones, períodos y unidades equivalentes antes de proponer un orden.";
+  const note = "La investigación actual avanza problema por problema. Primero se estudian ingresos, reservas, equipo y otras capacidades internas. Los convenios y trámites estatales quedan para el bloque final. P14, meses de operación sin nuevos aportes, es el siguiente problema.";
+  const closed = row => Object.hasOwn(evidence.closures || {}, row.id);
   const groups = foundations
-    ? `<div data-h2-research="pilot"><h3>8 casos del piloto · Qué falta medir</h3>${pilotRows.map(row =>
-      task(row, {scope, pilot: evidence.pilot[row.id]}, links, esc)).join("")}</div>
+    ? `<div data-h2-research="pilot"><h3>8 casos del piloto</h3>${pilotRows.map(row =>
+      task(row, {scope, pilot: evidence.pilot[row.id], closed: closed(row)}, links, esc)).join("")}</div>
       <div data-h2-research="deferred"><h3>23 problemas por profundizar</h3>${deferredRows.map(row =>
         task(row, {scope, note: evidence.deferred[row.id], first: evidence.proposedBatch.includes(row.id)}, links, esc)).join("")}</div>`
-    : `<div data-h2-research="sector"><h3>31 problemas por comparar</h3>${rows.map(row =>
-      task(row, {scope}, links, esc)).join("")}</div>`;
+    : `<div data-h2-research="sector"><h3>31 problemas y su estado de investigación</h3>${rows.map(row =>
+      task(row, {scope, closed: closed(row), first: evidence.proposedBatch.includes(row.id)}, links, esc)).join("")}</div>`;
   return `<section class="h2-research" aria-labelledby="h2-research"><h2 id="h2-research">Próximos pasos de investigación</h2><p>${note}</p>${groups}</section>`;
 }
 
@@ -132,9 +156,10 @@ export function h2Render(contract, evidence, bank, scope, links, esc) {
   const foundations = scope === "fundaciones";
   const rows = [...contract.problemas].sort((a, b) => a.titulo.localeCompare(b.titulo, "es-CL"));
   const pilot = rows.filter(row => Object.hasOwn(evidence.pilot, row.id));
-  const batch = new Set(evidence.proposedBatch);
+  const batchOrder = new Map(evidence.proposedBatch.map((id, index) => [id, index]));
+  const afterBatch = batchOrder.size;
   const deferred = rows.filter(row => !Object.hasOwn(evidence.pilot, row.id))
-    .sort((a, b) => Number(batch.has(b.id)) - Number(batch.has(a.id)));
+    .sort((a, b) => (batchOrder.get(a.id) ?? afterBatch) - (batchOrder.get(b.id) ?? afterBatch));
   const context = {
     findings: new Map(bank.findings.map(finding => [finding.id, finding])),
     sources: new Map(bank.sources.map(source => [source.id, source]))
@@ -148,6 +173,7 @@ export function h2Render(contract, evidence, bank, scope, links, esc) {
     <a href="#h2-research" class="outline-btn">Ir a próximos pasos ↓</a></div>
     <div class="h2-actions"><a href="${esc(links.map)}" data-go="problemas">Ver mapa de 31 problemas</a>
       <a href="${esc(links.methods)}" data-go="metodos" data-method-target="criticidad">Métodos y fuentes</a></div>
+    ${researchClosures(evidence, scope, esc)}
     ${foundations ? pilotTable(pilot, evidence, links, esc)
       : `<section aria-labelledby="h2-sector-title"><h2 id="h2-sector-title">31 problemas documentados</h2>
         <p>Abre un problema para ver las observaciones de referencia y los hallazgos agrupados por población.</p>

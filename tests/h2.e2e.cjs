@@ -45,9 +45,18 @@ async function run() {
       ["Problema","Impacto","Recurrencia","Alcance","Urgencia"]);
     assert.equal(await page.locator(".h2-cell .h2-sources").count(), 32);
     assert.equal(await page.locator("main a[href^=\"http:\"]").count(), 0);
-    for (const id of ["P43","P21","P25","P54"]) {
-      assert.match(await page.locator(`[data-h2-research=deferred] [data-h2-task="${id}"]`).innerText(), /Tanda propuesta/);
+    for (const id of ["P14","P11","P47","P26","P54"]) {
+      assert.match(await page.locator(`[data-h2-research=deferred] [data-h2-task="${id}"]`).innerText(), /Primer bloque/);
     }
+    assert.equal(await deferred.first().getAttribute("data-h2-task"), "P14");
+    assert.doesNotMatch(await page.locator('[data-h2-task="P43"]').innerText(), /Primer bloque/);
+    const closure = page.locator("#h2-closure-P13");
+    assert.match(await closure.innerText(), /Investigación cerrada[\s\S]*37%[\s\S]*255[\s\S]*puesto de criticidad sigue por determinar/);
+    assert.doesNotMatch(await closure.innerText(), /Corporación Cultiva/);
+    assert.equal(await closure.locator('a[href*="fundacionsentido.cl"]').count(), 1);
+    const closedTask = page.locator('[data-h2-task="P13"]');
+    await closedTask.locator("summary").click();
+    assert.equal(await closedTask.getByRole("link",{name:"Ver el cierre y sus fuentes"}).getAttribute("href"), "#h2-closure-P13");
     const p20 = page.locator("[data-h2-pilot=P20]");
     const reach = p20.locator("summary").filter({hasText:"Alcance muestral"});
     await reach.click();
@@ -73,9 +82,12 @@ async function run() {
     await page.locator("#h2-sector-title").waitFor();
     assert.equal(await page.locator("[data-h2-sector]").count(), 31);
     assert.equal(await sector.count(), 31);
-    assert.equal(await sector.locator(".h2-gaps li").count(), 124);
+    assert.equal(await sector.locator(".h2-gaps li").count(), 120);
     assert.equal(await page.locator("[data-h2-pilot]").count(), 0);
     assert.equal(await page.locator(".h2-source-group li").count(), 245);
+    assert.match(await closure.innerText(), /47%[\s\S]*Corporación Cultiva[\s\S]*38,6%[\s\S]*9,6%/);
+    assert.doesNotMatch(await closure.innerText(), /base incluye 255/);
+    assert.equal(await closure.locator('a[href*="cultiva.cl"]').count(), 1);
     const sectorP20 = page.locator("[data-h2-sector=P20]");
     await sectorP20.locator(":scope > summary").click();
     assert.match(await sectorP20.innerText(), /62%[\s\S]*125/);
@@ -95,7 +107,7 @@ async function run() {
     assert.ok(widths.scroll > widths.table, "la tabla contiene su desplazamiento");
     await page.getByRole("link",{name:"Ir a próximos pasos"}).click();
     assert.equal(await deferred.count(), 23);
-    assert.equal(await foundations.locator(".h2-gaps li").count(), 32);
+    assert.equal(await foundations.locator(".h2-gaps li").count(), 28);
     assert.deepEqual(errors, []);
     console.log("H-2.2 PASS · 8 × 4, 23, 31, 245 hallazgos, fuentes, rutas, selector y móvil.");
   } finally {

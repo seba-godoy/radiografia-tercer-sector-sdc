@@ -34,6 +34,50 @@
   font-size: .86rem;
 }
 
+.h2-closure {
+  padding: clamp(1rem, 3vw, 1.8rem);
+  border: 1px solid var(--sdc-border);
+  border-top: 3px solid var(--sdc-blue-deep);
+  border-radius: 14px;
+  background: #fff;
+  scroll-margin-top: 5rem;
+}
+
+.h2-closure .h2-closure-status {
+  color: var(--sdc-blue-deep);
+  font-size: .8rem;
+  font-weight: 700;
+  margin-bottom: .35rem;
+}
+
+.h2-closure-findings {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: .75rem;
+  margin: 1rem 0;
+}
+
+.h2-closure-findings article {
+  padding: .9rem;
+  background: var(--sdc-cream-soft);
+  border-radius: 10px;
+  overflow-wrap: anywhere;
+}
+
+.h2-closure-findings p, .h2-closure-findings ul {
+  font-size: .85rem;
+  margin: 0;
+}
+
+.h2-closure-findings ul {
+  margin-top: .6rem;
+}
+
+.h2-closure .h2-closure-limits {
+  margin: 0;
+  font-size: .85rem;
+}
+
 .h2-page a:not(.outline-btn) {
   color: var(--sdc-blue-deep);
   text-decoration: underline;

@@ -124,45 +124,42 @@
     },
     "P13": {
       "A": {
-        "status": "medicion_anual_otra_poblacion",
-        "finding": "39,5% declaró que los ingresos no cubrieron costos en 2023. La encuesta UC registró 44% de primera mención de financiamiento estable.",
-        "scope": "CoMov: 86 OSC en el estudio, base exacta del ítem no publicada en el pasaje. UC: 255 respuestas mixtas.",
-        "gap": "Medir brechas efectivas en fundaciones en 2025 y denominador de fundaciones operativas elegibles.",
+        "status": "alcance_muestral",
+        "finding": "37% declaró caída de donaciones y 31% caída de ingresos propios entre 2024 y 2025.",
+        "scope": "Chile · N=255 fundaciones y corporaciones · encuesta UC 2026 de muestra intencional.",
+        "gap": "Sin estimación exclusiva de fundaciones. Los dos ítems pueden superponerse.",
         "references": [
-          "COMOV.8",
-          "COMOV.18",
-          "F03.32",
-          "F28.31"
+          "F03.34"
         ]
       },
       "I": {
         "status": "caso_cuantificado_no_comparable",
-        "finding": "Para la Confianza reportó que su equipo pasó de unas 30 a 10 personas tras la quiebra de un aliado; también informó superávit al cierre. CoMov registró respuestas como cubrir con ahorros o reducir costos.",
-        "scope": "Una fundación en 2024; agregado OSC para costos de 2023.",
-        "gap": "Actividades perdidas, magnitud de brecha y efecto atribuible medido con la misma unidad que P28.",
+        "finding": "Para la Confianza redujo su equipo. Sentido cerró sus viviendas de transición y Neo Inclusión informó la pausa de un taller.",
+        "scope": "Tres fundaciones chilenas identificadas. Los efectos provienen de memorias y comunicaciones institucionales.",
+        "gap": "Sin medida comparable de daño operativo para el conjunto de fundaciones.",
         "references": [
           "CONF.2024",
-          "COMOV.18"
+          "SENT.CIERRE",
+          "NEO.PAUSA"
         ]
       },
       "F": {
         "status": "sin_medida",
-        "finding": "Hay un resultado anual y señales de dependencia financiera.",
-        "scope": "Períodos y poblaciones mixtas distintos.",
-        "gap": "Brechas mensuales o eventos por fundación/año, sin duplicar el resultado si causaron salidas de personal.",
+        "finding": "La evidencia documenta cambios anuales de ingresos y episodios en organizaciones identificadas.",
+        "scope": "Casos en Chile y encuesta de fundaciones y corporaciones.",
+        "gap": "Sin serie comparable de episodios por organización y año.",
         "references": [
-          "COMOV.18",
-          "F03.34"
+          "F03.34",
+          "SENT.CIERRE"
         ]
       },
       "U": {
-        "status": "escenario_hipotetico",
-        "finding": "El 59% en CoMov estima operar hasta seis meses sin ingresos nuevos; la UC mide otro escenario de reserva.",
-        "scope": "CoMov estudio de 86 OSC y UC base 219 para la pregunta de reservas.",
-        "gap": "Fecha de primer gasto indispensable sin cobertura y margen real para responder.",
+        "status": "plazo_sin_dano_atribuido",
+        "finding": "En Sentido, el directorio conoció el riesgo en agosto de 2025 y los principales financiamientos privados terminaban en diciembre.",
+        "scope": "Cronología de una fundación chilena.",
+        "gap": "Sin ventana comparable para actuar antes del daño adicional.",
         "references": [
-          "COMOV.18",
-          "F03.35"
+          "SENT.CIERRE"
         ]
       }
     },
@@ -513,6 +510,21 @@
       "title": "Acta de evaluación · Acción Social",
       "locator": "PDF p. 1",
       "url": "https://www.midesof.gob.cl/wp-content/uploads/2026/01/0131-ANX-16-52-1.pdf#page=1"
+    },
+    "SENT.CIERRE": {
+      "title": "Fundación Sentido",
+      "locator": "Carta de cierre",
+      "url": "https://nuevo.fundacionsentido.cl/carta-de-margarita-guzman-presidenta-de-fundacion-sentido/"
+    },
+    "NEO.PAUSA": {
+      "title": "Neo Inclusión",
+      "locator": "Comunicado sobre el taller",
+      "url": "https://es.linkedin.com/posts/nexoinclusivo_un-bello-proyecto-de-fundaci%C3%B3n-neo-inclusi%C3%B3n-activity-7199477338558918658-RYOj"
+    },
+    "CULT.2025": {
+      "title": "Corporación Cultiva · FECU 2025",
+      "locator": "Estado de actividades, PDF p. 20",
+      "url": "https://www.cultiva.cl/wp-content/uploads/2026/08/FECU_corporacion-cultiva_2025-1.pdf#page=20"
     }
   },
   "deferred": {
@@ -541,9 +553,64 @@
     "P54": "La base es de menciones. Se conserva como pista para P13 o P46 si aparecen datos por organización y resultados observables."
   },
   "proposedBatch": [
-    "P43",
-    "P21",
-    "P25",
+    "P14",
+    "P11",
+    "P47",
+    "P26",
     "P54"
-  ]
+  ],
+  "closures": {
+    "P13": {
+      "title": "Ingresos inestables",
+      "date": "2026-11-20",
+      "limits": "El puesto de criticidad sigue por determinar. La frecuencia de episodios, el daño poblacional y la urgencia comparable quedaron sin estimación.",
+      "fundaciones": {
+        "findings": [
+          {
+            "title": "Consecuencias sobre equipos y servicios",
+            "finding": "Para la Confianza atribuyó a la quiebra de un aliado un recorte de unas 30 a 10 personas. Sentido cerró sus viviendas de transición tras el vencimiento de sus principales aportes privados. Neo Inclusión informó la suspensión temporal de un taller por falta de donaciones.",
+            "references": [
+              "CONF.2024",
+              "SENT.CIERRE",
+              "NEO.PAUSA"
+            ]
+          },
+          {
+            "title": "Alcance en la muestra UC",
+            "finding": "Entre 2024 y 2025, 37% reportó una caída de donaciones y 31% una caída de ingresos propios. La base incluye 255 fundaciones y corporaciones. Las respuestas pueden coincidir y la encuesta no publica una tasa exclusiva de fundaciones para estos ítems.",
+            "references": [
+              "F03.34"
+            ]
+          }
+        ]
+      },
+      "tercer_sector": {
+        "findings": [
+          {
+            "title": "Caída de ingresos en la muestra CoMov",
+            "finding": "El 47% reportó una caída real de ingresos entre 2021 y 2023. En el estudio participaron voluntariamente 86 organizaciones de la sociedad civil. La base exacta del ítem queda sin confirmar.",
+            "references": [
+              "COMOV.18"
+            ]
+          },
+          {
+            "title": "Contraste en una corporación",
+            "finding": "En Corporación Cultiva, las donaciones privadas bajaron 38,6% y los ingresos operacionales totales subieron 9,6% nominal entre 2024 y 2025. Aumentaron los ingresos por proyectos privados.",
+            "references": [
+              "CULT.2025"
+            ]
+          },
+          {
+            "title": "Consecuencias documentadas en fundaciones",
+            "finding": "Los casos de reducción de equipo, cierre de viviendas y pausa de un taller corresponden al estrato de fundaciones. El alcance de esos efectos en otras figuras jurídicas queda sin estimación.",
+            "references": [
+              "CONF.2024",
+              "SENT.CIERRE",
+              "NEO.PAUSA"
+            ]
+          }
+        ]
+      }
+    }
+  }
 }

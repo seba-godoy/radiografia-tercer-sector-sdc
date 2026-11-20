@@ -1,5 +1,10 @@
 # Historial de cambios · Radiografía Simón de Cirene
 
+## Vista previa de Criticidad (2026-11-20)
+
+- Incorpora el cierre de investigación de P13 con hallazgos, alcance y fuentes en Fundaciones y Tercer sector. El puesto de criticidad sigue por determinar.
+- Reordena los próximos pasos para comenzar por los problemas que pueden estudiarse fuera de la relación con el Estado.
+
 ## 0.7 (2026-11-20) · Revisión de Problemas detectados
 
 - Aclara los conteos del mapa, añade una guía para llegar a las fichas y permite alternar los filtros temáticos.
