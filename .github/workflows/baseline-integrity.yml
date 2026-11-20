@@ -46,3 +46,7 @@ jobs:
           node analisis/validate-hm.mjs
       - name: QA PX-R3.5 · seis familias de errores de criticidad
         run: python3 analisis/validate_px_r3_5_adversarial.py
+      - name: QA H-2.1 · Criticidad por universo
+        run: |
+          python3 analisis/build_h_2_1.py --check
+          python3 analisis/validate_h_2_1.py
