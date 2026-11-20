@@ -1,0 +1,3886 @@
+{
+  "version": "1.0.0",
+  "universos": {
+    "tercer_sector": "OSC pertinentes al proyecto en Chile",
+    "fundaciones": "Organizaciones de forma jurídica fundación en Chile"
+  },
+  "criterios": {
+    "I": "Impacto",
+    "F": "Recurrencia",
+    "A": "Alcance",
+    "U": "Urgencia"
+  },
+  "insumos": {
+    "catalogo": "../preview/h0/h1-data.json",
+    "banco": "mf1-banco-26-fuentes-v1.json",
+    "afirmaciones": "px-r1-2b-attribution-31p-147links-v1.json",
+    "indicadores": "px-r3-1-matriz-indicadores-31-v1.json",
+    "rubrica": "px-r3-3-matriz-aplicacion-124-v1.json"
+  },
+  "pesos_aplicados": false,
+  "resumen": {
+    "tercer_sector": {
+      "problemas": 31,
+      "aplicabilidad_documental": {
+        "documentado": 31
+      },
+      "mediciones_comparables": {
+        "I": 0,
+        "F": 0,
+        "A": 0,
+        "U": 0
+      },
+      "observaciones_muestrales_de_alcance": 7,
+      "problemas_elegibles_para_ranking": []
+    },
+    "fundaciones": {
+      "problemas": 31,
+      "aplicabilidad_documental": {
+        "especifica": 6,
+        "mixta": 13,
+        "aplicabilidad_por_confirmar": 12
+      },
+      "mediciones_comparables": {
+        "I": 0,
+        "F": 0,
+        "A": 0,
+        "U": 0
+      },
+      "observaciones_muestrales_de_alcance": 7,
+      "problemas_elegibles_para_ranking": []
+    }
+  },
+  "problemas": [
+    {
+      "id": "P02",
+      "titulo": "Interrumpimos servicios cuando no se renueva un convenio",
+      "tema": "T02",
+      "observaciones_de_fuente": [
+        {
+          "id": "P02__PX-R3.1__PRINCIPAL",
+          "fuente": "F03",
+          "localizador": "PDF p. 21",
+          "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=21",
+          "tipo": "situacion_declarada",
+          "texto": "28% reportó terminar proyectos de atención permanente por no renovación.",
+          "poblacion": "Fundaciones y corporaciones encuestadas con convenios o contratos estatales en 2025",
+          "periodo": "2025",
+          "n": 125,
+          "unidad_n": "organizaciones encuestadas",
+          "limitacion": "Término del servicio declarado. Personas afectadas y duración de la interrupción ND."
+        }
+      ],
+      "vistas": {
+        "tercer_sector": {
+          "aplicabilidad_documental": "documentado",
+          "hallazgos_por_poblacion": {
+            "mixta": [
+              "P02__F01__01",
+              "P02__F03__01",
+              "P02__F03__02",
+              "P02__F04__01",
+              "P02__F04__02"
+            ],
+            "general": [
+              "P02__F01__02",
+              "P02__F07__01",
+              "P02__F09__01"
+            ],
+            "especifica": [
+              "P02__F02__01"
+            ],
+            "contextual": [
+              "P02__F18__01",
+              "P02__F18__02",
+              "P02__F20__01",
+              "P02__F20__02"
+            ],
+            "sectorial": [
+              "P02__F26__01"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en atenciones entregadas.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de proyecto de atención permanente terminado por no renovación por OSC afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Falta una proporción de OSC elegibles con el episodio definido en 12 meses, para el universo de esta vista. Término del servicio declarado. Personas afectadas y duración de la interrupción ND.",
+              "observacion_muestral": {
+                "grupo": "F03_CONVENIOS_125_2025",
+                "poblacion": "Fundaciones y corporaciones encuestadas con contratos o convenios estatales",
+                "fuente": "F03",
+                "porcentaje": 28,
+                "episodio": "Término de al menos un proyecto de atención permanente por no renovación",
+                "n": 125,
+                "unidad_n": "organizaciones encuestadas",
+                "periodo": "2025",
+                "localizador": "PDF p. 21",
+                "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=21",
+                "metodo": "Encuesta F03 intencional; porcentaje publicado redondeado"
+              }
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con proyecto de atención permanente terminado por no renovación.",
+              "observacion_muestral": null
+            }
+          }
+        },
+        "fundaciones": {
+          "aplicabilidad_documental": "especifica",
+          "hallazgos_por_poblacion": {
+            "mixta": [
+              "P02__F01__01",
+              "P02__F03__01",
+              "P02__F03__02",
+              "P02__F04__01",
+              "P02__F04__02"
+            ],
+            "general": [
+              "P02__F01__02",
+              "P02__F07__01",
+              "P02__F09__01"
+            ],
+            "especifica": [
+              "P02__F02__01"
+            ],
+            "contextual": [
+              "P02__F18__01",
+              "P02__F18__02",
+              "P02__F20__01",
+              "P02__F20__02"
+            ],
+            "sectorial": [
+              "P02__F26__01"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en atenciones entregadas.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de proyecto de atención permanente terminado por no renovación por fundación afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "La fuente mide una población distinta o no desagregada por figura jurídica.",
+              "observacion_muestral": {
+                "grupo": "F03_CONVENIOS_125_2025",
+                "poblacion": "Fundaciones y corporaciones encuestadas con contratos o convenios estatales",
+                "fuente": "F03",
+                "porcentaje": 28,
+                "episodio": "Término de al menos un proyecto de atención permanente por no renovación",
+                "n": 125,
+                "unidad_n": "organizaciones encuestadas",
+                "periodo": "2025",
+                "localizador": "PDF p. 21",
+                "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=21",
+                "metodo": "Encuesta F03 intencional; porcentaje publicado redondeado"
+              }
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con proyecto de atención permanente terminado por no renovación.",
+              "observacion_muestral": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "P11",
+      "titulo": "Nos faltan recursos para medir qué cambió con nuestros programas",
+      "tema": "T05",
+      "observaciones_de_fuente": [
+        {
+          "id": "P11__PX-R3.1__PRINCIPAL",
+          "fuente": "F09",
+          "localizador": "PDF p. 28",
+          "url": "https://politicaspublicas.uc.cl/content/uploads/2025/10/MESA-soc_civil_DOCUMENTO-COMPLETO_PRESIDeNCIALES-UC_1imp-1.pdf#page=28",
+          "tipo": "diagnostico_cualitativo",
+          "texto": "La mesa describe falta de capacidades técnicas y financieras para medir efectos.",
+          "poblacion": "OSC chilenas tratadas en la mesa",
+          "periodo": "Diagnóstico publicado en 2025; ventana de incidencia ND",
+          "n": null,
+          "unidad_n": "diagnóstico",
+          "limitacion": "Costo, cobertura de la deficiencia y decisiones afectadas ND."
+        }
+      ],
+      "vistas": {
+        "tercer_sector": {
+          "aplicabilidad_documental": "documentado",
+          "hallazgos_por_poblacion": {
+            "general": [
+              "P11__F02__01",
+              "P11__F02__02",
+              "P11__F09__01",
+              "P11__F09__02",
+              "P11__F09__03",
+              "P11__F10__01",
+              "P11__F19__01",
+              "P11__F19__02",
+              "P11__F19__03",
+              "P11__F23__01"
+            ],
+            "mixta": [
+              "P11__F03__01",
+              "P11__F28__01"
+            ],
+            "contextual": [
+              "P11__F05__01",
+              "P11__F17__01",
+              "P11__F17__02",
+              "P11__F18__01",
+              "P11__F18__02",
+              "P11__F20__01",
+              "P11__F20__02",
+              "P11__F21__01",
+              "P11__F21__02"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en evaluaciones completadas.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de evaluación de resultados omitida o incompleta por falta de recursos por OSC afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Falta una proporción de OSC elegibles con el episodio definido en 12 meses, para el universo de esta vista. Costo, cobertura de la deficiencia y decisiones afectadas ND.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con evaluación de resultados omitida o incompleta por falta de recursos.",
+              "observacion_muestral": null
+            }
+          }
+        },
+        "fundaciones": {
+          "aplicabilidad_documental": "mixta",
+          "hallazgos_por_poblacion": {
+            "general": [
+              "P11__F02__01",
+              "P11__F02__02",
+              "P11__F09__01",
+              "P11__F09__02",
+              "P11__F09__03",
+              "P11__F10__01",
+              "P11__F19__01",
+              "P11__F19__02",
+              "P11__F19__03",
+              "P11__F23__01"
+            ],
+            "mixta": [
+              "P11__F03__01",
+              "P11__F28__01"
+            ],
+            "contextual": [
+              "P11__F05__01",
+              "P11__F17__01",
+              "P11__F17__02",
+              "P11__F18__01",
+              "P11__F18__02",
+              "P11__F20__01",
+              "P11__F20__02",
+              "P11__F21__01",
+              "P11__F21__02"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en evaluaciones completadas.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de evaluación de resultados omitida o incompleta por falta de recursos por fundación afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "La evidencia principal no entrega una proporción elegible de fundaciones con al menos un episodio durante 2025.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con evaluación de resultados omitida o incompleta por falta de recursos.",
+              "observacion_muestral": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "P13",
+      "titulo": "Nos cuesta asegurar ingresos estables para planificar",
+      "tema": "T01",
+      "observaciones_de_fuente": [
+        {
+          "id": "P13__PX-R3.1__PRINCIPAL",
+          "fuente": "F03",
+          "localizador": "PDF p. 32",
+          "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=32",
+          "tipo": "prioridad_declarada",
+          "texto": "44% mencionó primero el financiamiento estable y predecible como condición para su misión.",
+          "poblacion": "Fundaciones y corporaciones, muestra total de la encuesta",
+          "periodo": "levantamiento julio–agosto 2026; pregunta sin ventana retrospectiva explícita",
+          "n": 255,
+          "unidad_n": "organizaciones encuestadas",
+          "limitacion": "La pregunta recoge una prioridad. Dificultad efectivamente vivida y pérdidas ND para este ítem."
+        }
+      ],
+      "vistas": {
+        "tercer_sector": {
+          "aplicabilidad_documental": "documentado",
+          "hallazgos_por_poblacion": {
+            "mixta": [
+              "P13__F03__01",
+              "P13__F03__02",
+              "P13__F03__03",
+              "P13__F03__04",
+              "P13__F04__01",
+              "P13__F04__02",
+              "P13__F04__03",
+              "P13__F28__01"
+            ],
+            "general": [
+              "P13__F09__01",
+              "P13__F10__01",
+              "P13__F11__01",
+              "P13__F11__02",
+              "P13__F12__01",
+              "P13__F12__02",
+              "P13__F14__01",
+              "P13__F16__01",
+              "P13__F22__01",
+              "P13__F23__01"
+            ],
+            "contextual": [
+              "P13__F15__01",
+              "P13__F15__02",
+              "P13__F17__01",
+              "P13__F17__02",
+              "P13__F18__01",
+              "P13__F18__02",
+              "P13__F20__01",
+              "P13__F20__02"
+            ],
+            "sectorial": [
+              "P13__F26__01",
+              "P13__F26__02"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en actividades del plan financiadas.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de brecha efectiva de ingresos para un plan operativo aprobado por OSC afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Falta una proporción de OSC elegibles con el episodio definido en 12 meses, para el universo de esta vista. La pregunta recoge una prioridad. Dificultad efectivamente vivida y pérdidas ND para este ítem.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con brecha efectiva de ingresos para un plan operativo aprobado.",
+              "observacion_muestral": null
+            }
+          }
+        },
+        "fundaciones": {
+          "aplicabilidad_documental": "mixta",
+          "hallazgos_por_poblacion": {
+            "mixta": [
+              "P13__F03__01",
+              "P13__F03__02",
+              "P13__F03__03",
+              "P13__F03__04",
+              "P13__F04__01",
+              "P13__F04__02",
+              "P13__F04__03",
+              "P13__F28__01"
+            ],
+            "general": [
+              "P13__F09__01",
+              "P13__F10__01",
+              "P13__F11__01",
+              "P13__F11__02",
+              "P13__F12__01",
+              "P13__F12__02",
+              "P13__F14__01",
+              "P13__F16__01",
+              "P13__F22__01",
+              "P13__F23__01"
+            ],
+            "contextual": [
+              "P13__F15__01",
+              "P13__F15__02",
+              "P13__F17__01",
+              "P13__F17__02",
+              "P13__F18__01",
+              "P13__F18__02",
+              "P13__F20__01",
+              "P13__F20__02"
+            ],
+            "sectorial": [
+              "P13__F26__01",
+              "P13__F26__02"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en actividades del plan financiadas.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de brecha efectiva de ingresos para un plan operativo aprobado por fundación afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "La evidencia principal no entrega una proporción elegible de fundaciones con al menos un episodio durante 2025.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con brecha efectiva de ingresos para un plan operativo aprobado.",
+              "observacion_muestral": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "P14",
+      "titulo": "Podríamos sostener pocos meses de operación sin aportes externos",
+      "tema": "T01",
+      "observaciones_de_fuente": [
+        {
+          "id": "P14__PX-R3.1__PRINCIPAL",
+          "fuente": "F03",
+          "localizador": "PDF p. 35",
+          "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=35",
+          "tipo": "escenario_hipotetico",
+          "texto": "38% estima menos de 3 meses y 30% estima 3 a 6 meses de operación sin nuevos aportes externos.",
+          "poblacion": "Fundaciones y corporaciones que respondieron el escenario hipotético",
+          "periodo": "levantamiento julio–agosto 2026; pregunta sin ventana retrospectiva explícita",
+          "n": 219,
+          "unidad_n": "organizaciones encuestadas",
+          "limitacion": "Autonomía estimada usando reservas, inversiones o ingresos propios. Cierres observados y urgencia comparable ND."
+        }
+      ],
+      "vistas": {
+        "tercer_sector": {
+          "aplicabilidad_documental": "documentado",
+          "hallazgos_por_poblacion": {
+            "mixta": [
+              "P14__F03__01",
+              "P14__F03__02"
+            ],
+            "general": [
+              "P14__F06__01"
+            ],
+            "contextual": [
+              "P14__F15__01",
+              "P14__F17__01",
+              "P14__F17__02",
+              "P14__F18__01",
+              "P14__F18__02",
+              "P14__F20__01",
+              "P14__F20__02"
+            ],
+            "sectorial": [
+              "P14__F26__01"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en servicios mantenidos.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de interrupción efectiva de operación tras el cese de aportes externos por OSC afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Falta una proporción de OSC elegibles con el episodio definido en 12 meses, para el universo de esta vista. Autonomía estimada usando reservas, inversiones o ingresos propios. Cierres observados y urgencia comparable ND.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con interrupción efectiva de operación tras el cese de aportes externos.",
+              "observacion_muestral": null
+            }
+          }
+        },
+        "fundaciones": {
+          "aplicabilidad_documental": "mixta",
+          "hallazgos_por_poblacion": {
+            "mixta": [
+              "P14__F03__01",
+              "P14__F03__02"
+            ],
+            "general": [
+              "P14__F06__01"
+            ],
+            "contextual": [
+              "P14__F15__01",
+              "P14__F17__01",
+              "P14__F17__02",
+              "P14__F18__01",
+              "P14__F18__02",
+              "P14__F20__01",
+              "P14__F20__02"
+            ],
+            "sectorial": [
+              "P14__F26__01"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en servicios mantenidos.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de interrupción efectiva de operación tras el cese de aportes externos por fundación afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "La evidencia principal no entrega una proporción elegible de fundaciones con al menos un episodio durante 2025.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con interrupción efectiva de operación tras el cese de aportes externos.",
+              "observacion_muestral": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "P15",
+      "titulo": "Perdemos una vía habitual de financiamiento cuando desaparece una convocatoria",
+      "tema": "T01",
+      "observaciones_de_fuente": [
+        {
+          "id": "P15__PX-R3.1__PRINCIPAL",
+          "fuente": "F03",
+          "localizador": "PDF p. 21",
+          "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=21",
+          "tipo": "situacion_declarada",
+          "texto": "54% reportó que convocatorias habitualmente realizadas dejaron de hacerse.",
+          "poblacion": "Fundaciones y corporaciones encuestadas con convenios o contratos estatales en 2025",
+          "periodo": "2025",
+          "n": 125,
+          "unidad_n": "organizaciones encuestadas",
+          "limitacion": "Número de convocatorias canceladas e ingresos dejados de percibir ND."
+        }
+      ],
+      "vistas": {
+        "tercer_sector": {
+          "aplicabilidad_documental": "documentado",
+          "hallazgos_por_poblacion": {
+            "mixta": [
+              "P15__F03__01",
+              "P15__F04__01"
+            ],
+            "especifica": [
+              "P15__F03__02"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en actividades financiadas por el mecanismo.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de pérdida de una vía habitual de financiamiento por convocatoria cancelada por OSC afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Falta una proporción de OSC elegibles con el episodio definido en 12 meses, para el universo de esta vista. Número de convocatorias canceladas e ingresos dejados de percibir ND.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con pérdida de una vía habitual de financiamiento por convocatoria cancelada.",
+              "observacion_muestral": null
+            }
+          }
+        },
+        "fundaciones": {
+          "aplicabilidad_documental": "especifica",
+          "hallazgos_por_poblacion": {
+            "mixta": [
+              "P15__F03__01",
+              "P15__F04__01"
+            ],
+            "especifica": [
+              "P15__F03__02"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en actividades financiadas por el mecanismo.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de pérdida de una vía habitual de financiamiento por convocatoria cancelada por fundación afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "El 54% corresponde a convocatorias canceladas. El 39% corresponde a dejar de postular. La lámina no vincula ambos hechos individualmente ni mide pérdida de acceso al fondo.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con pérdida de una vía habitual de financiamiento por convocatoria cancelada.",
+              "observacion_muestral": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "P16",
+      "titulo": "Las transferencias comprometidas llegan tarde",
+      "tema": "T02",
+      "observaciones_de_fuente": [
+        {
+          "id": "P16__PX-R3.1__PRINCIPAL",
+          "fuente": "F03",
+          "localizador": "PDF p. 21",
+          "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=21",
+          "tipo": "situacion_declarada",
+          "texto": "57% reportó transferencias públicas fuera del plazo comprometido.",
+          "poblacion": "Fundaciones y corporaciones encuestadas con convenios o contratos estatales en 2025",
+          "periodo": "2025",
+          "n": 125,
+          "unidad_n": "organizaciones encuestadas",
+          "limitacion": "Atraso declarado. Días de atraso, monto y perjuicio ND."
+        }
+      ],
+      "vistas": {
+        "tercer_sector": {
+          "aplicabilidad_documental": "documentado",
+          "hallazgos_por_poblacion": {
+            "mixta": [
+              "P16__F03__01",
+              "P16__F04__01",
+              "P16__F09__01"
+            ],
+            "especifica": [
+              "P16__F03__02"
+            ],
+            "contextual": [
+              "P16__F15__01",
+              "P16__F15__02",
+              "P16__F17__01",
+              "P16__F17__02",
+              "P16__F18__01"
+            ],
+            "sectorial": [
+              "P16__F26__01",
+              "P16__F26__02",
+              "P16__F27__01",
+              "P16__F27__02"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en actividades financiadas ejecutadas a tiempo.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de transferencia pactada recibida fuera de plazo por OSC afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Falta una proporción de OSC elegibles con el episodio definido en 12 meses, para el universo de esta vista. Atraso declarado. Días de atraso, monto y perjuicio ND.",
+              "observacion_muestral": {
+                "grupo": "F03_CONVENIOS_125_2025",
+                "poblacion": "Fundaciones y corporaciones encuestadas con contratos o convenios estatales",
+                "fuente": "F03",
+                "porcentaje": 57,
+                "episodio": "Al menos una transferencia fuera del plazo comprometido",
+                "n": 125,
+                "unidad_n": "organizaciones encuestadas",
+                "periodo": "2025",
+                "localizador": "PDF p. 21",
+                "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=21",
+                "metodo": "Encuesta F03 intencional; porcentaje publicado redondeado"
+              }
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con transferencia pactada recibida fuera de plazo.",
+              "observacion_muestral": null
+            }
+          }
+        },
+        "fundaciones": {
+          "aplicabilidad_documental": "especifica",
+          "hallazgos_por_poblacion": {
+            "mixta": [
+              "P16__F03__01",
+              "P16__F04__01",
+              "P16__F09__01"
+            ],
+            "especifica": [
+              "P16__F03__02"
+            ],
+            "contextual": [
+              "P16__F15__01",
+              "P16__F15__02",
+              "P16__F17__01",
+              "P16__F17__02",
+              "P16__F18__01"
+            ],
+            "sectorial": [
+              "P16__F26__01",
+              "P16__F26__02",
+              "P16__F27__01",
+              "P16__F27__02"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en actividades financiadas ejecutadas a tiempo.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de transferencia pactada recibida fuera de plazo por fundación afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "La fuente mide una población distinta o no desagregada por figura jurídica.",
+              "observacion_muestral": {
+                "grupo": "F03_CONVENIOS_125_2025",
+                "poblacion": "Fundaciones y corporaciones encuestadas con contratos o convenios estatales",
+                "fuente": "F03",
+                "porcentaje": 57,
+                "episodio": "Al menos una transferencia fuera del plazo comprometido",
+                "n": 125,
+                "unidad_n": "organizaciones encuestadas",
+                "periodo": "2025",
+                "localizador": "PDF p. 21",
+                "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=21",
+                "metodo": "Encuesta F03 intencional; porcentaje publicado redondeado"
+              }
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con transferencia pactada recibida fuera de plazo.",
+              "observacion_muestral": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "P17",
+      "titulo": "Tenemos que cubrir costos que el convenio no permite rendir",
+      "tema": "T02",
+      "observaciones_de_fuente": [
+        {
+          "id": "P17__PX-R3.1__PRINCIPAL",
+          "fuente": "F03",
+          "localizador": "PDF p. 21",
+          "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=21",
+          "tipo": "situacion_declarada",
+          "texto": "52% reportó imposibilidad de considerar gastos financieros (p. 21). Otro 40% reportó imposibilidad de rendir gastos operativos (p. 22).",
+          "poblacion": "Fundaciones y corporaciones encuestadas con convenios o contratos estatales en 2025",
+          "periodo": "2025",
+          "n": 125,
+          "unidad_n": "organizaciones encuestadas",
+          "limitacion": "Preguntas distintas. Solapamiento, costo no cubierto y daño ND."
+        }
+      ],
+      "vistas": {
+        "tercer_sector": {
+          "aplicabilidad_documental": "documentado",
+          "hallazgos_por_poblacion": {
+            "mixta": [
+              "P17__F03__01",
+              "P17__F03__02"
+            ],
+            "general": [
+              "P17__F09__01",
+              "P17__F09__02",
+              "P17__F09__03",
+              "P17__F12__01"
+            ],
+            "contextual": [
+              "P17__F17__01",
+              "P17__F17__02",
+              "P17__F18__01",
+              "P17__F18__02",
+              "P17__F20__01",
+              "P17__F20__02"
+            ],
+            "sectorial": [
+              "P17__F26__01",
+              "P17__F26__02",
+              "P17__F27__01"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en actividades financiadas ejecutadas.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de gasto de ejecución indispensable que la entidad debió cubrir al quedar excluido de rendición por OSC afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Falta una proporción de OSC elegibles con el episodio definido en 12 meses, para el universo de esta vista. Preguntas distintas. Solapamiento, costo no cubierto y daño ND.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con gasto de ejecución indispensable que la entidad debió cubrir al quedar excluido de rendición.",
+              "observacion_muestral": null
+            }
+          }
+        },
+        "fundaciones": {
+          "aplicabilidad_documental": "mixta",
+          "hallazgos_por_poblacion": {
+            "mixta": [
+              "P17__F03__01",
+              "P17__F03__02"
+            ],
+            "general": [
+              "P17__F09__01",
+              "P17__F09__02",
+              "P17__F09__03",
+              "P17__F12__01"
+            ],
+            "contextual": [
+              "P17__F17__01",
+              "P17__F17__02",
+              "P17__F18__01",
+              "P17__F18__02",
+              "P17__F20__01",
+              "P17__F20__02"
+            ],
+            "sectorial": [
+              "P17__F26__01",
+              "P17__F26__02",
+              "P17__F27__01"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en actividades financiadas ejecutadas.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de gasto de ejecución indispensable que la entidad debió cubrir al quedar excluido de rendición por fundación afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "52% para gastos financieros y 40% para gastos operativos. No se dispone de la unión por organización ni del gasto efectivamente solventado; los ítems conservan sus propias definiciones.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con gasto de ejecución indispensable que la entidad debió cubrir al quedar excluido de rendición.",
+              "observacion_muestral": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "P18",
+      "titulo": "La demora en la toma de razón impide iniciar actividades",
+      "tema": "T02",
+      "observaciones_de_fuente": [
+        {
+          "id": "P18__PX-R3.1__PRINCIPAL",
+          "fuente": "F03",
+          "localizador": "PDF p. 21",
+          "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=21",
+          "tipo": "situacion_declarada",
+          "texto": "42% reportó dilación de toma de razón que impidió iniciar actividades.",
+          "poblacion": "Fundaciones y corporaciones encuestadas con convenios o contratos estatales en 2025",
+          "periodo": "2025",
+          "n": 125,
+          "unidad_n": "organizaciones encuestadas",
+          "limitacion": "Inicio impedido declarado. Base de contratos sujetos a toma de razón, días y pérdida ND."
+        }
+      ],
+      "vistas": {
+        "tercer_sector": {
+          "aplicabilidad_documental": "documentado",
+          "hallazgos_por_poblacion": {
+            "mixta": [
+              "P18__F03__01",
+              "P18__F04__01"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en actividades programadas iniciadas.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de inicio de actividades impedido por demora en toma de razón por OSC afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Falta una proporción de OSC elegibles con el episodio definido en 12 meses, para el universo de esta vista. Inicio impedido declarado. Base de contratos sujetos a toma de razón, días y pérdida ND.",
+              "observacion_muestral": {
+                "grupo": "F03_CONVENIOS_125_2025",
+                "poblacion": "Fundaciones y corporaciones encuestadas con contratos o convenios estatales",
+                "fuente": "F03",
+                "porcentaje": 42,
+                "episodio": "Al menos un inicio de actividades impedido por demora de toma de razón",
+                "n": 125,
+                "unidad_n": "organizaciones encuestadas",
+                "periodo": "2025",
+                "localizador": "PDF p. 21",
+                "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=21",
+                "metodo": "Encuesta F03 intencional; porcentaje publicado redondeado"
+              }
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con inicio de actividades impedido por demora en toma de razón.",
+              "observacion_muestral": null
+            }
+          }
+        },
+        "fundaciones": {
+          "aplicabilidad_documental": "mixta",
+          "hallazgos_por_poblacion": {
+            "mixta": [
+              "P18__F03__01",
+              "P18__F04__01"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en actividades programadas iniciadas.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de inicio de actividades impedido por demora en toma de razón por fundación afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "La fuente mide una población distinta o no desagregada por figura jurídica.",
+              "observacion_muestral": {
+                "grupo": "F03_CONVENIOS_125_2025",
+                "poblacion": "Fundaciones y corporaciones encuestadas con contratos o convenios estatales",
+                "fuente": "F03",
+                "porcentaje": 42,
+                "episodio": "Al menos un inicio de actividades impedido por demora de toma de razón",
+                "n": 125,
+                "unidad_n": "organizaciones encuestadas",
+                "periodo": "2025",
+                "localizador": "PDF p. 21",
+                "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=21",
+                "metodo": "Encuesta F03 intencional; porcentaje publicado redondeado"
+              }
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con inicio de actividades impedido por demora en toma de razón.",
+              "observacion_muestral": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "P19",
+      "titulo": "Las garantías dificultan que organizaciones pequeñas contraten con el Estado",
+      "tema": "T02",
+      "observaciones_de_fuente": [
+        {
+          "id": "P19__PX-R3.1__PRINCIPAL",
+          "fuente": "F03",
+          "localizador": "PDF p. 21",
+          "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=21",
+          "tipo": "condicion_declarada",
+          "texto": "26% reportó garantías superiores al 5% del contrato.",
+          "poblacion": "Fundaciones y corporaciones encuestadas con convenios o contratos estatales en 2025",
+          "periodo": "2025",
+          "n": 125,
+          "unidad_n": "organizaciones encuestadas",
+          "limitacion": "Mide una exigencia, no exclusión ni dificultad por tamaño. Los efectos sobre pequeñas organizaciones siguen ND."
+        }
+      ],
+      "vistas": {
+        "tercer_sector": {
+          "aplicabilidad_documental": "documentado",
+          "hallazgos_por_poblacion": {
+            "mixta": [
+              "P19__F03__01",
+              "P19__F04__01"
+            ],
+            "especifica": [
+              "P19__F03__02"
+            ],
+            "general": [
+              "P19__F06__01",
+              "P19__F06__02"
+            ],
+            "sectorial": [
+              "P19__F26__01"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en contrataciones viables concretadas.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de contratación con el Estado impedida por garantía en organización pequeña por OSC afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Falta una proporción de OSC elegibles con el episodio definido en 12 meses, para el universo de esta vista. Mide una exigencia, no exclusión ni dificultad por tamaño. Los efectos sobre pequeñas organizaciones siguen ND.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con contratación con el Estado impedida por garantía en organización pequeña.",
+              "observacion_muestral": null
+            }
+          }
+        },
+        "fundaciones": {
+          "aplicabilidad_documental": "especifica",
+          "hallazgos_por_poblacion": {
+            "mixta": [
+              "P19__F03__01",
+              "P19__F04__01"
+            ],
+            "especifica": [
+              "P19__F03__02"
+            ],
+            "general": [
+              "P19__F06__01",
+              "P19__F06__02"
+            ],
+            "sectorial": [
+              "P19__F26__01"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en contrataciones viables concretadas.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de contratación con el Estado impedida por garantía en organización pequeña por fundación afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "El 26% mide garantías superiores al 5% del contrato; se desconoce la proporción de organizaciones pequeñas efectivamente impedidas de contratar.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con contratación con el Estado impedida por garantía en organización pequeña.",
+              "observacion_muestral": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "P20",
+      "titulo": "Nuestras rendiciones quedan abiertas por falta de respuesta",
+      "tema": "T03",
+      "observaciones_de_fuente": [
+        {
+          "id": "CLM-F03-D22-RENDICION-62",
+          "fuente": "F03",
+          "localizador": "diap. 22",
+          "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=22",
+          "tipo": "self_reported_situation",
+          "texto": "62% declara rendiciones sin respuesta dentro del plazo contractual.",
+          "poblacion": "Encuestadas con contratos o convenios estatales en 2025; fundaciones y corporaciones",
+          "periodo": "2025, según pregunta",
+          "n": 125,
+          "unidad_n": "organizaciones encuestadas",
+          "limitacion": "El 62% mide falta de respuesta en plazo y el 42% mide duración superior a siete meses. Los grupos pueden superponerse. Muestra intencional de fundaciones y corporaciones; resultados publicados en conjunto."
+        },
+        {
+          "id": "CLM-F03-D22-REVISION-42",
+          "fuente": "F03",
+          "localizador": "diap. 22, otra pregunta",
+          "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=22",
+          "tipo": "other_question",
+          "texto": "42% declara períodos de revisión que superan los siete meses.",
+          "poblacion": "Encuestadas que respondieron pregunta sobre duración; base exacta no acreditada aquí",
+          "periodo": "2025, según pregunta",
+          "n": null,
+          "unidad_n": null,
+          "limitacion": "No agregar al 62%: denominador e intersección exacta de ambas preguntas no comprobados en este contrato."
+        }
+      ],
+      "vistas": {
+        "tercer_sector": {
+          "aplicabilidad_documental": "documentado",
+          "hallazgos_por_poblacion": {
+            "mixta": [
+              "P20__F03__01",
+              "P20__F03__02",
+              "P20__F04__01",
+              "P20__F09__01"
+            ],
+            "general": [
+              "P20__F06__01"
+            ],
+            "contextual": [
+              "P20__F15__01"
+            ],
+            "sectorial": [
+              "P20__F26__01",
+              "P20__F27__01",
+              "P20__F27__02"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en siguientes hitos operativos ejecutados.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de rendición sin respuesta dentro del plazo aplicable por OSC afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Falta una proporción de OSC elegibles con el episodio definido en 12 meses, para el universo de esta vista. Siete meses es umbral de duración declarada. Solapamiento, episodios por organización y daño ND.",
+              "observacion_muestral": {
+                "grupo": "F03_CONVENIOS_125_2025",
+                "poblacion": "Fundaciones y corporaciones encuestadas con contratos o convenios estatales",
+                "fuente": "F03",
+                "porcentaje": 62,
+                "episodio": "Al menos una rendición sin respuesta dentro del plazo del contrato",
+                "n": 125,
+                "unidad_n": "organizaciones encuestadas",
+                "periodo": "2025",
+                "localizador": "PDF p. 22",
+                "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=22",
+                "metodo": "Encuesta F03 intencional; porcentaje publicado redondeado"
+              }
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "El dato de siete meses describe duración transcurrida de revisión. El plazo restante para evitar un daño adicional no está medido.",
+              "observacion_muestral": null
+            }
+          }
+        },
+        "fundaciones": {
+          "aplicabilidad_documental": "mixta",
+          "hallazgos_por_poblacion": {
+            "mixta": [
+              "P20__F03__01",
+              "P20__F03__02",
+              "P20__F04__01",
+              "P20__F09__01"
+            ],
+            "general": [
+              "P20__F06__01"
+            ],
+            "contextual": [
+              "P20__F15__01"
+            ],
+            "sectorial": [
+              "P20__F26__01",
+              "P20__F27__01",
+              "P20__F27__02"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en siguientes hitos operativos ejecutados.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de rendición sin respuesta dentro del plazo aplicable por fundación afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "El 62% queda como alcance en las 125 encuestadas. El 42% informa duración de revisión superior a siete meses; el solapamiento sigue ND.",
+              "observacion_muestral": {
+                "grupo": "F03_CONVENIOS_125_2025",
+                "poblacion": "Fundaciones y corporaciones encuestadas con contratos o convenios estatales",
+                "fuente": "F03",
+                "porcentaje": 62,
+                "episodio": "Al menos una rendición sin respuesta dentro del plazo del contrato",
+                "n": 125,
+                "unidad_n": "organizaciones encuestadas",
+                "periodo": "2025",
+                "localizador": "PDF p. 22",
+                "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=22",
+                "metodo": "Encuesta F03 intencional; porcentaje publicado redondeado"
+              }
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "El dato de siete meses describe duración transcurrida de revisión. El plazo restante para evitar un daño adicional no está medido.",
+              "observacion_muestral": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "P21",
+      "titulo": "Nos piden rehacer rendiciones que ya habían aprobado",
+      "tema": "T03",
+      "observaciones_de_fuente": [
+        {
+          "id": "P21__PX-R3.1__PRINCIPAL",
+          "fuente": "F03",
+          "localizador": "PDF p. 22",
+          "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=22",
+          "tipo": "situacion_declarada",
+          "texto": "43% reportó solicitudes de volver a rendir cuentas ya aprobadas.",
+          "poblacion": "Fundaciones y corporaciones encuestadas con convenios o contratos estatales en 2025",
+          "periodo": "2025",
+          "n": 125,
+          "unidad_n": "organizaciones encuestadas",
+          "limitacion": "Reapertura declarada. Número de expedientes y horas de retrabajo ND."
+        }
+      ],
+      "vistas": {
+        "tercer_sector": {
+          "aplicabilidad_documental": "documentado",
+          "hallazgos_por_poblacion": {
+            "mixta": [
+              "P21__F03__01",
+              "P21__F04__01",
+              "P21__F09__01"
+            ],
+            "especifica": [
+              "P21__F03__02"
+            ],
+            "sectorial": [
+              "P21__F27__01",
+              "P21__F27__02"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en rendiciones tramitadas a tiempo.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de solicitud de volver a rendir una cuenta ya aprobada por OSC afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Falta una proporción de OSC elegibles con el episodio definido en 12 meses, para el universo de esta vista. Reapertura declarada. Número de expedientes y horas de retrabajo ND.",
+              "observacion_muestral": {
+                "grupo": "F03_CONVENIOS_125_2025",
+                "poblacion": "Fundaciones y corporaciones encuestadas con contratos o convenios estatales",
+                "fuente": "F03",
+                "porcentaje": 43,
+                "episodio": "Al menos una solicitud de volver a rendir cuentas ya aprobadas",
+                "n": 125,
+                "unidad_n": "organizaciones encuestadas",
+                "periodo": "2025",
+                "localizador": "PDF p. 22",
+                "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=22",
+                "metodo": "Encuesta F03 intencional; porcentaje publicado redondeado"
+              }
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con solicitud de volver a rendir una cuenta ya aprobada.",
+              "observacion_muestral": null
+            }
+          }
+        },
+        "fundaciones": {
+          "aplicabilidad_documental": "especifica",
+          "hallazgos_por_poblacion": {
+            "mixta": [
+              "P21__F03__01",
+              "P21__F04__01",
+              "P21__F09__01"
+            ],
+            "especifica": [
+              "P21__F03__02"
+            ],
+            "sectorial": [
+              "P21__F27__01",
+              "P21__F27__02"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en rendiciones tramitadas a tiempo.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de solicitud de volver a rendir una cuenta ya aprobada por fundación afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "La fuente mide una población distinta o no desagregada por figura jurídica.",
+              "observacion_muestral": {
+                "grupo": "F03_CONVENIOS_125_2025",
+                "poblacion": "Fundaciones y corporaciones encuestadas con contratos o convenios estatales",
+                "fuente": "F03",
+                "porcentaje": 43,
+                "episodio": "Al menos una solicitud de volver a rendir cuentas ya aprobadas",
+                "n": 125,
+                "unidad_n": "organizaciones encuestadas",
+                "periodo": "2025",
+                "localizador": "PDF p. 22",
+                "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=22",
+                "metodo": "Encuesta F03 intencional; porcentaje publicado redondeado"
+              }
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con solicitud de volver a rendir una cuenta ya aprobada.",
+              "observacion_muestral": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "P22",
+      "titulo": "Nos cuesta rendir gastos en SISREC",
+      "tema": "T03",
+      "observaciones_de_fuente": [
+        {
+          "id": "P22__PX-R3.1__PRINCIPAL",
+          "fuente": "F03",
+          "localizador": "PDF p. 22",
+          "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=22",
+          "tipo": "situacion_declarada",
+          "texto": "40% reportó dificultades al rendir gastos en SISREC.",
+          "poblacion": "Fundaciones y corporaciones encuestadas con convenios o contratos estatales en 2025",
+          "periodo": "2025",
+          "n": 125,
+          "unidad_n": "organizaciones encuestadas",
+          "limitacion": "Base de usuarios efectivos de SISREC y retraso atribuible al sistema ND."
+        }
+      ],
+      "vistas": {
+        "tercer_sector": {
+          "aplicabilidad_documental": "documentado",
+          "hallazgos_por_poblacion": {
+            "mixta": [
+              "P22__F03__01"
+            ],
+            "general": [
+              "P22__F06__01",
+              "P22__F09__01",
+              "P22__F09__02"
+            ],
+            "sectorial": [
+              "P22__F27__01",
+              "P22__F27__02"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en rendiciones entregadas a tiempo.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de dificultad concreta al rendir gastos mediante SISREC por OSC afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Falta una proporción de OSC elegibles con el episodio definido en 12 meses, para el universo de esta vista. Base de usuarios efectivos de SISREC y retraso atribuible al sistema ND.",
+              "observacion_muestral": {
+                "grupo": "F03_CONVENIOS_125_2025",
+                "poblacion": "Fundaciones y corporaciones encuestadas con contratos o convenios estatales",
+                "fuente": "F03",
+                "porcentaje": 40,
+                "episodio": "Dificultad reportada al rendir gastos mediante SISREC",
+                "n": 125,
+                "unidad_n": "organizaciones encuestadas",
+                "periodo": "2025",
+                "localizador": "PDF p. 22",
+                "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=22",
+                "metodo": "Encuesta F03 intencional; porcentaje publicado redondeado"
+              }
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con dificultad concreta al rendir gastos mediante SISREC.",
+              "observacion_muestral": null
+            }
+          }
+        },
+        "fundaciones": {
+          "aplicabilidad_documental": "mixta",
+          "hallazgos_por_poblacion": {
+            "mixta": [
+              "P22__F03__01"
+            ],
+            "general": [
+              "P22__F06__01",
+              "P22__F09__01",
+              "P22__F09__02"
+            ],
+            "sectorial": [
+              "P22__F27__01",
+              "P22__F27__02"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en rendiciones entregadas a tiempo.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de dificultad concreta al rendir gastos mediante SISREC por fundación afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "El 40% usa como base a las 125 encuestadas con convenios; el denominador de usuarias efectivas de SISREC queda ND.",
+              "observacion_muestral": {
+                "grupo": "F03_CONVENIOS_125_2025",
+                "poblacion": "Fundaciones y corporaciones encuestadas con contratos o convenios estatales",
+                "fuente": "F03",
+                "porcentaje": 40,
+                "episodio": "Dificultad reportada al rendir gastos mediante SISREC",
+                "n": 125,
+                "unidad_n": "organizaciones encuestadas",
+                "periodo": "2025",
+                "localizador": "PDF p. 22",
+                "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=22",
+                "metodo": "Encuesta F03 intencional; porcentaje publicado redondeado"
+              }
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con dificultad concreta al rendir gastos mediante SISREC.",
+              "observacion_muestral": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "P23",
+      "titulo": "Debemos traspasar la atención y los datos si no renuevan el convenio",
+      "tema": "T06",
+      "observaciones_de_fuente": [
+        {
+          "id": "P23__PX-R3.1__PRINCIPAL",
+          "fuente": "F03",
+          "localizador": "PDF p. 21",
+          "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=21",
+          "tipo": "situacion_declarada",
+          "texto": "10% reportó traspaso de intervención y datos tras la no renovación.",
+          "poblacion": "Fundaciones y corporaciones encuestadas con convenios o contratos estatales en 2025",
+          "periodo": "2025",
+          "n": 125,
+          "unidad_n": "organizaciones encuestadas",
+          "limitacion": "Traspaso declarado. Continuidad de atención, calidad y personas afectadas ND."
+        }
+      ],
+      "vistas": {
+        "tercer_sector": {
+          "aplicabilidad_documental": "documentado",
+          "hallazgos_por_poblacion": {
+            "mixta": [
+              "P23__F03__01"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en atenciones mantenidas durante el traspaso.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de traspaso de intervención y datos por no renovación por OSC afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Falta una proporción de OSC elegibles con el episodio definido en 12 meses, para el universo de esta vista. Traspaso declarado. Continuidad de atención, calidad y personas afectadas ND.",
+              "observacion_muestral": {
+                "grupo": "F03_CONVENIOS_125_2025",
+                "poblacion": "Fundaciones y corporaciones encuestadas con contratos o convenios estatales",
+                "fuente": "F03",
+                "porcentaje": 10,
+                "episodio": "Al menos un traspaso de intervención y datos por no renovación",
+                "n": 125,
+                "unidad_n": "organizaciones encuestadas",
+                "periodo": "2025",
+                "localizador": "PDF p. 21",
+                "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=21",
+                "metodo": "Encuesta F03 intencional; porcentaje publicado redondeado"
+              }
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con traspaso de intervención y datos por no renovación.",
+              "observacion_muestral": null
+            }
+          }
+        },
+        "fundaciones": {
+          "aplicabilidad_documental": "mixta",
+          "hallazgos_por_poblacion": {
+            "mixta": [
+              "P23__F03__01"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en atenciones mantenidas durante el traspaso.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de traspaso de intervención y datos por no renovación por fundación afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "La fuente mide una población distinta o no desagregada por figura jurídica.",
+              "observacion_muestral": {
+                "grupo": "F03_CONVENIOS_125_2025",
+                "poblacion": "Fundaciones y corporaciones encuestadas con contratos o convenios estatales",
+                "fuente": "F03",
+                "porcentaje": 10,
+                "episodio": "Al menos un traspaso de intervención y datos por no renovación",
+                "n": 125,
+                "unidad_n": "organizaciones encuestadas",
+                "periodo": "2025",
+                "localizador": "PDF p. 21",
+                "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=21",
+                "metodo": "Encuesta F03 intencional; porcentaje publicado redondeado"
+              }
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con traspaso de intervención y datos por no renovación.",
+              "observacion_muestral": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "P25",
+      "titulo": "Los requisitos dispersos nos dificultan recibir donaciones",
+      "tema": "T01",
+      "observaciones_de_fuente": [
+        {
+          "id": "P25__PX-R3.1__PRINCIPAL",
+          "fuente": "F03",
+          "localizador": "PDF p. 33",
+          "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=33",
+          "tipo": "percepcion_declarada",
+          "texto": "57% estuvo de acuerdo o muy de acuerdo en que la multiplicidad normativa dificulta gestionar donaciones.",
+          "poblacion": "Fundaciones y corporaciones, muestra total de la encuesta",
+          "periodo": "levantamiento julio–agosto 2026; pregunta sin ventana retrospectiva explícita",
+          "n": 255,
+          "unidad_n": "organizaciones encuestadas",
+          "limitacion": "Acuerdo declarado. Número de trámites, donaciones perdidas y costo ND."
+        }
+      ],
+      "vistas": {
+        "tercer_sector": {
+          "aplicabilidad_documental": "documentado",
+          "hallazgos_por_poblacion": {
+            "mixta": [
+              "P25__F03__01",
+              "P25__F03__02",
+              "P25__F04__01"
+            ],
+            "especifica": [
+              "P25__F03__03"
+            ],
+            "general": [
+              "P25__F07__01",
+              "P25__F09__01",
+              "P25__F09__02",
+              "P25__F10__01",
+              "P25__F22__01"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en donaciones elegibles concretadas.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de donación impedida o postergada por requisitos dispersos por OSC afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Falta una proporción de OSC elegibles con el episodio definido en 12 meses, para el universo de esta vista. Acuerdo declarado. Número de trámites, donaciones perdidas y costo ND.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con donación impedida o postergada por requisitos dispersos.",
+              "observacion_muestral": null
+            }
+          }
+        },
+        "fundaciones": {
+          "aplicabilidad_documental": "especifica",
+          "hallazgos_por_poblacion": {
+            "mixta": [
+              "P25__F03__01",
+              "P25__F03__02",
+              "P25__F04__01"
+            ],
+            "especifica": [
+              "P25__F03__03"
+            ],
+            "general": [
+              "P25__F07__01",
+              "P25__F09__01",
+              "P25__F09__02",
+              "P25__F10__01",
+              "P25__F22__01"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en donaciones elegibles concretadas.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de donación impedida o postergada por requisitos dispersos por fundación afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "La evidencia principal no entrega una proporción elegible de fundaciones con al menos un episodio durante 2025.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con donación impedida o postergada por requisitos dispersos.",
+              "observacion_muestral": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "P26",
+      "titulo": "Los trámites de algunos donantes complican obtener o rendir fondos",
+      "tema": "T01",
+      "observaciones_de_fuente": [
+        {
+          "id": "P26__PX-R3.1__PRINCIPAL",
+          "fuente": "F03",
+          "localizador": "PDF p. 28",
+          "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=28",
+          "tipo": "percepcion_declarada",
+          "texto": "30% estuvo de acuerdo o muy de acuerdo con que existe excesiva burocracia empresarial para asignar fondos.",
+          "poblacion": "Fundaciones y corporaciones encuestadas receptoras de donaciones privadas en 2025",
+          "periodo": "2025",
+          "n": 200,
+          "unidad_n": "organizaciones encuestadas",
+          "limitacion": "Acuerdo de receptoras de donaciones privadas. Horas y recursos perdidos ND."
+        }
+      ],
+      "vistas": {
+        "tercer_sector": {
+          "aplicabilidad_documental": "documentado",
+          "hallazgos_por_poblacion": {
+            "mixta": [
+              "P26__F03__01",
+              "P26__F03__02",
+              "P26__F04__01"
+            ],
+            "contextual": [
+              "P26__F18__01",
+              "P26__F18__02"
+            ],
+            "general": [
+              "P26__F19__01"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en procesos de donación completados.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de obtención o rendición de fondos dificultada por trámite exigido por donante por OSC afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Falta una proporción de OSC elegibles con el episodio definido en 12 meses, para el universo de esta vista. Acuerdo de receptoras de donaciones privadas. Horas y recursos perdidos ND.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con obtención o rendición de fondos dificultada por trámite exigido por donante.",
+              "observacion_muestral": null
+            }
+          }
+        },
+        "fundaciones": {
+          "aplicabilidad_documental": "mixta",
+          "hallazgos_por_poblacion": {
+            "mixta": [
+              "P26__F03__01",
+              "P26__F03__02",
+              "P26__F04__01"
+            ],
+            "contextual": [
+              "P26__F18__01",
+              "P26__F18__02"
+            ],
+            "general": [
+              "P26__F19__01"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en procesos de donación completados.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de obtención o rendición de fondos dificultada por trámite exigido por donante por fundación afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "La evidencia principal no entrega una proporción elegible de fundaciones con al menos un episodio durante 2025.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con obtención o rendición de fondos dificultada por trámite exigido por donante.",
+              "observacion_muestral": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "P28",
+      "titulo": "Nos cuesta mantener los contratos y retener especialistas",
+      "tema": "T05",
+      "observaciones_de_fuente": [
+        {
+          "id": "P28__PX-R3.1__PRINCIPAL",
+          "fuente": "F03",
+          "localizador": "PDF p. 36",
+          "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=36",
+          "tipo": "percepcion_declarada",
+          "texto": "52% declaró dificultad para mantener estabilidad contractual y 52% para retener especialistas, en ítems separados.",
+          "poblacion": "Fundaciones y corporaciones, muestra total de la encuesta",
+          "periodo": "enero 2025 a junio 2026",
+          "n": 255,
+          "unidad_n": "organizaciones encuestadas",
+          "limitacion": "Intersección, rotación efectivamente medida y costo ND."
+        }
+      ],
+      "vistas": {
+        "tercer_sector": {
+          "aplicabilidad_documental": "documentado",
+          "hallazgos_por_poblacion": {
+            "mixta": [
+              "P28__F03__01",
+              "P28__F03__02",
+              "P28__F28__01"
+            ],
+            "general": [
+              "P28__F09__01"
+            ],
+            "contextual": [
+              "P28__F17__01",
+              "P28__F18__01",
+              "P28__F18__02",
+              "P28__F20__01",
+              "P28__F20__02"
+            ],
+            "sectorial": [
+              "P28__F26__01",
+              "P28__F26__02"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en puestos especializados cubiertos.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de pérdida de continuidad de contrato o de un especialista por OSC afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Falta una proporción de OSC elegibles con el episodio definido en 12 meses, para el universo de esta vista. Intersección, rotación efectivamente medida y costo ND.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con pérdida de continuidad de contrato o de un especialista.",
+              "observacion_muestral": null
+            }
+          }
+        },
+        "fundaciones": {
+          "aplicabilidad_documental": "mixta",
+          "hallazgos_por_poblacion": {
+            "mixta": [
+              "P28__F03__01",
+              "P28__F03__02",
+              "P28__F28__01"
+            ],
+            "general": [
+              "P28__F09__01"
+            ],
+            "contextual": [
+              "P28__F17__01",
+              "P28__F18__01",
+              "P28__F18__02",
+              "P28__F20__01",
+              "P28__F20__02"
+            ],
+            "sectorial": [
+              "P28__F26__01",
+              "P28__F26__02"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en puestos especializados cubiertos.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de pérdida de continuidad de contrato o de un especialista por fundación afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Los dos ítems de 52% se refieren a estabilidad contractual y retención. No se conoce su intersección ni el número de episodios efectivos.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con pérdida de continuidad de contrato o de un especialista.",
+              "observacion_muestral": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "P30",
+      "titulo": "Nos cuesta aportar a políticas públicas en espacios dispersos e intermitentes",
+      "tema": "T07",
+      "observaciones_de_fuente": [
+        {
+          "id": "P30__PX-R3.1__PRINCIPAL",
+          "fuente": "F09",
+          "localizador": "PDF p. 25",
+          "url": "https://politicaspublicas.uc.cl/content/uploads/2025/10/MESA-soc_civil_DOCUMENTO-COMPLETO_PRESIDeNCIALES-UC_1imp-1.pdf#page=25",
+          "tipo": "diagnostico_cualitativo",
+          "texto": "Las consultas específicas y espacios informales limitan la participación sostenida.",
+          "poblacion": "OSC vinculadas a procesos de participación en Chile",
+          "periodo": "Diagnóstico publicado en 2025; ventana de incidencia ND",
+          "n": null,
+          "unidad_n": "diagnóstico",
+          "limitacion": "Intensidad y consecuencias comparables para organizaciones ND."
+        }
+      ],
+      "vistas": {
+        "tercer_sector": {
+          "aplicabilidad_documental": "documentado",
+          "hallazgos_por_poblacion": {
+            "mixta": [
+              "P30__F04__01",
+              "P30__F04__02",
+              "P30__F04__03",
+              "P30__F09__02"
+            ],
+            "general": [
+              "P30__F09__01",
+              "P30__F09__03",
+              "P30__F09__04",
+              "P30__F19__01",
+              "P30__F19__02",
+              "P30__F23__01"
+            ],
+            "contextual": [
+              "P30__F17__01",
+              "P30__F17__02",
+              "P30__F18__01",
+              "P30__F18__02",
+              "P30__F21__01",
+              "P30__F21__02"
+            ],
+            "sectorial": [
+              "P30__F26__01"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en instancias de incidencia concretadas.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de participación en una política impedida por un espacio disperso o discontinuo por OSC afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Falta una proporción de OSC elegibles con el episodio definido en 12 meses, para el universo de esta vista. Intensidad y consecuencias comparables para organizaciones ND.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con participación en una política impedida por un espacio disperso o discontinuo.",
+              "observacion_muestral": null
+            }
+          }
+        },
+        "fundaciones": {
+          "aplicabilidad_documental": "mixta",
+          "hallazgos_por_poblacion": {
+            "mixta": [
+              "P30__F04__01",
+              "P30__F04__02",
+              "P30__F04__03",
+              "P30__F09__02"
+            ],
+            "general": [
+              "P30__F09__01",
+              "P30__F09__03",
+              "P30__F09__04",
+              "P30__F19__01",
+              "P30__F19__02",
+              "P30__F23__01"
+            ],
+            "contextual": [
+              "P30__F17__01",
+              "P30__F17__02",
+              "P30__F18__01",
+              "P30__F18__02",
+              "P30__F21__01",
+              "P30__F21__02"
+            ],
+            "sectorial": [
+              "P30__F26__01"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en instancias de incidencia concretadas.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de participación en una política impedida por un espacio disperso o discontinuo por fundación afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "La evidencia principal no entrega una proporción elegible de fundaciones con al menos un episodio durante 2025.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con participación en una política impedida por un espacio disperso o discontinuo.",
+              "observacion_muestral": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "P32",
+      "titulo": "Nos falta capacidad de equipo para preparar la memoria y el balance",
+      "tema": "T04",
+      "observaciones_de_fuente": [
+        {
+          "id": "P32__PX-R3.1__PRINCIPAL",
+          "fuente": "F10",
+          "localizador": "PDF p. 3",
+          "url": "https://comunidad-org.cl/wp-content/uploads/2026/06/Informe-FECU-Social-2024.pdf#page=3",
+          "tipo": "diagnostico_cualitativo",
+          "texto": "El informe describe equipos insuficientes para memoria y balance y prioridad del trabajo misional.",
+          "poblacion": "Fundaciones y corporaciones sujetas a reportabilidad en Chile",
+          "periodo": "Informe FECU Social 2024; incidencia del problema ND",
+          "n": null,
+          "unidad_n": "diagnóstico",
+          "limitacion": "Horas de preparación y proporción de entidades afectadas ND."
+        }
+      ],
+      "vistas": {
+        "tercer_sector": {
+          "aplicabilidad_documental": "documentado",
+          "hallazgos_por_poblacion": {
+            "mixta": [
+              "P32__F04__01",
+              "P32__F04__02"
+            ],
+            "general": [
+              "P32__F10__01",
+              "P32__F10__02",
+              "P32__F16__01",
+              "P32__F19__01",
+              "P32__F19__02",
+              "P32__F23__01"
+            ],
+            "contextual": [
+              "P32__F17__01",
+              "P32__F18__01",
+              "P32__F18__02",
+              "P32__F20__01",
+              "P32__F20__02",
+              "P32__F28__01"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en entregables de reporte completados.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de memoria o balance incompleto por falta de capacidad del equipo por OSC afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Falta una proporción de OSC elegibles con el episodio definido en 12 meses, para el universo de esta vista. Horas de preparación y proporción de entidades afectadas ND.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con memoria o balance incompleto por falta de capacidad del equipo.",
+              "observacion_muestral": null
+            }
+          }
+        },
+        "fundaciones": {
+          "aplicabilidad_documental": "mixta",
+          "hallazgos_por_poblacion": {
+            "mixta": [
+              "P32__F04__01",
+              "P32__F04__02"
+            ],
+            "general": [
+              "P32__F10__01",
+              "P32__F10__02",
+              "P32__F16__01",
+              "P32__F19__01",
+              "P32__F19__02",
+              "P32__F23__01"
+            ],
+            "contextual": [
+              "P32__F17__01",
+              "P32__F18__01",
+              "P32__F18__02",
+              "P32__F20__01",
+              "P32__F20__02",
+              "P32__F28__01"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en entregables de reporte completados.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de memoria o balance incompleto por falta de capacidad del equipo por fundación afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "La evidencia principal no entrega una proporción elegible de fundaciones con al menos un episodio durante 2025.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con memoria o balance incompleto por falta de capacidad del equipo.",
+              "observacion_muestral": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "P38",
+      "titulo": "Tenemos que volver a entregar los mismos antecedentes",
+      "tema": "T04",
+      "observaciones_de_fuente": [
+        {
+          "id": "P38__PX-R3.1__PRINCIPAL",
+          "fuente": "F07",
+          "localizador": "PDF p. 28",
+          "url": "https://politicaspublicas.uc.cl/content/uploads/2025/11/Informe_Registro-Unico_161025-VF.pdf#page=28",
+          "tipo": "diagnostico_cualitativo",
+          "texto": "Se advierte repetición de documentos y revisión manual en diferentes reparticiones.",
+          "poblacion": "Registros públicos chilenos; población de OSC afectadas ND",
+          "periodo": "Diagnóstico publicado en 2025; ventana de incidencia ND",
+          "n": 8,
+          "unidad_n": "entrevistas a responsables de registros, base metodológica",
+          "limitacion": "Las ocho entrevistas no son ocho OSC afectadas. Volumen de trámites y horas ND."
+        }
+      ],
+      "vistas": {
+        "tercer_sector": {
+          "aplicabilidad_documental": "documentado",
+          "hallazgos_por_poblacion": {
+            "general": [
+              "P38__F07__01",
+              "P38__F07__02",
+              "P38__F07__03",
+              "P38__F07__04",
+              "P38__F09__01"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en trámites completados a tiempo.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de solicitud repetida de antecedentes ya entregados por OSC afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Falta una proporción de OSC elegibles con el episodio definido en 12 meses, para el universo de esta vista. Las ocho entrevistas no son ocho OSC afectadas. Volumen de trámites y horas ND.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con solicitud repetida de antecedentes ya entregados.",
+              "observacion_muestral": null
+            }
+          }
+        },
+        "fundaciones": {
+          "aplicabilidad_documental": "aplicabilidad_por_confirmar",
+          "hallazgos_por_poblacion": {
+            "general": [
+              "P38__F07__01",
+              "P38__F07__02",
+              "P38__F07__03",
+              "P38__F07__04",
+              "P38__F09__01"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en trámites completados a tiempo.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de solicitud repetida de antecedentes ya entregados por fundación afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "La base conocida son ocho entrevistas a responsables de registros; falta el denominador de OSC afectadas.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con solicitud repetida de antecedentes ya entregados.",
+              "observacion_muestral": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "P40",
+      "titulo": "Nuestro acceso para enviar la memoria y el balance puede quedar bloqueado",
+      "tema": "T04",
+      "observaciones_de_fuente": [
+        {
+          "id": "P40__PX-R3.1__PRINCIPAL",
+          "fuente": "F08",
+          "localizador": "PDF p. 17",
+          "url": "https://politicaspublicas.uc.cl/content/uploads/2025/08/Informe_Lineamienro-fortalecimineto-fiscaliza_231025.pdf#page=17",
+          "tipo": "proceso_institucional",
+          "texto": "Un funcionario verifica requisitos en otro sistema antes de habilitar la carga.",
+          "poblacion": "Portal de memorias y balances del Ministerio de Justicia de Chile",
+          "periodo": "Flujo documentado en 2025; vigencia posterior ND",
+          "n": null,
+          "unidad_n": "flujo administrativo",
+          "limitacion": "Tiempos efectivos, rechazos y vigencia actual del flujo ND."
+        }
+      ],
+      "vistas": {
+        "tercer_sector": {
+          "aplicabilidad_documental": "documentado",
+          "hallazgos_por_poblacion": {
+            "general": [
+              "P40__F08__01",
+              "P40__F08__02"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en envíos efectuados a tiempo.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de bloqueo efectivo de acceso al envío de memoria y balance por OSC afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Falta una proporción de OSC elegibles con el episodio definido en 12 meses, para el universo de esta vista. Tiempos efectivos, rechazos y vigencia actual del flujo ND.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con bloqueo efectivo de acceso al envío de memoria y balance.",
+              "observacion_muestral": null
+            }
+          }
+        },
+        "fundaciones": {
+          "aplicabilidad_documental": "aplicabilidad_por_confirmar",
+          "hallazgos_por_poblacion": {
+            "general": [
+              "P40__F08__01",
+              "P40__F08__02"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en envíos efectuados a tiempo.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de bloqueo efectivo de acceso al envío de memoria y balance por fundación afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "La evidencia principal no entrega una proporción elegible de fundaciones con al menos un episodio durante 2025.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con bloqueo efectivo de acceso al envío de memoria y balance.",
+              "observacion_muestral": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "P41",
+      "titulo": "Tenemos que completar o corregir envíos de memorias y balances",
+      "tema": "T04",
+      "observaciones_de_fuente": [
+        {
+          "id": "P41__PX-R3.1__PRINCIPAL",
+          "fuente": "F08",
+          "localizador": "PDF p. 17",
+          "url": "https://politicaspublicas.uc.cl/content/uploads/2025/08/Informe_Lineamienro-fortalecimineto-fiscaliza_231025.pdf#page=17",
+          "tipo": "proceso_institucional",
+          "texto": "La falta de un archivo puede exigir una revisión manual y una solicitud adicional.",
+          "poblacion": "Portal de memorias y balances del Ministerio de Justicia de Chile",
+          "periodo": "Flujo documentado en 2025; vigencia posterior ND",
+          "n": null,
+          "unidad_n": "flujo administrativo",
+          "limitacion": "Cantidad de devoluciones, tiempo y vigencia actual del flujo ND."
+        }
+      ],
+      "vistas": {
+        "tercer_sector": {
+          "aplicabilidad_documental": "documentado",
+          "hallazgos_por_poblacion": {
+            "general": [
+              "P41__F08__01",
+              "P41__F08__02"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en reportes aceptados a tiempo.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de devolución para completar o corregir memoria o balance enviado por OSC afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Falta una proporción de OSC elegibles con el episodio definido en 12 meses, para el universo de esta vista. Cantidad de devoluciones, tiempo y vigencia actual del flujo ND.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con devolución para completar o corregir memoria o balance enviado.",
+              "observacion_muestral": null
+            }
+          }
+        },
+        "fundaciones": {
+          "aplicabilidad_documental": "aplicabilidad_por_confirmar",
+          "hallazgos_por_poblacion": {
+            "general": [
+              "P41__F08__01",
+              "P41__F08__02"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en reportes aceptados a tiempo.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de devolución para completar o corregir memoria o balance enviado por fundación afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "La evidencia principal no entrega una proporción elegible de fundaciones con al menos un episodio durante 2025.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con devolución para completar o corregir memoria o balance enviado.",
+              "observacion_muestral": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "P43",
+      "titulo": "Tenemos que volver a postular mientras sostenemos un servicio",
+      "tema": "T02",
+      "observaciones_de_fuente": [
+        {
+          "id": "P43__PX-R3.1__PRINCIPAL",
+          "fuente": "F09",
+          "localizador": "PDF p. 17",
+          "url": "https://politicaspublicas.uc.cl/content/uploads/2025/10/MESA-soc_civil_DOCUMENTO-COMPLETO_PRESIDeNCIALES-UC_1imp-1.pdf#page=17",
+          "tipo": "diagnostico_cualitativo",
+          "texto": "El informe identifica tensión entre continuidad de servicios y financiamiento discontinuo.",
+          "poblacion": "OSC colaboradoras que prestan servicios de continuidad en Chile",
+          "periodo": "Diagnóstico publicado en 2025; ventana de incidencia ND",
+          "n": null,
+          "unidad_n": "diagnóstico",
+          "limitacion": "Interrupciones atribuibles y costo de nuevas postulaciones ND."
+        }
+      ],
+      "vistas": {
+        "tercer_sector": {
+          "aplicabilidad_documental": "documentado",
+          "hallazgos_por_poblacion": {
+            "general": [
+              "P43__F09__01",
+              "P43__F09__02",
+              "P43__F09__03"
+            ],
+            "contextual": [
+              "P43__F20__01",
+              "P43__F20__02"
+            ],
+            "sectorial": [
+              "P43__F26__01"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en atenciones sostenidas al repostular.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de repostulación requerida mientras se mantiene un servicio por OSC afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Falta una proporción de OSC elegibles con el episodio definido en 12 meses, para el universo de esta vista. Interrupciones atribuibles y costo de nuevas postulaciones ND.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con repostulación requerida mientras se mantiene un servicio.",
+              "observacion_muestral": null
+            }
+          }
+        },
+        "fundaciones": {
+          "aplicabilidad_documental": "aplicabilidad_por_confirmar",
+          "hallazgos_por_poblacion": {
+            "general": [
+              "P43__F09__01",
+              "P43__F09__02",
+              "P43__F09__03"
+            ],
+            "contextual": [
+              "P43__F20__01",
+              "P43__F20__02"
+            ],
+            "sectorial": [
+              "P43__F26__01"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en atenciones sostenidas al repostular.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de repostulación requerida mientras se mantiene un servicio por fundación afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "La evidencia principal no entrega una proporción elegible de fundaciones con al menos un episodio durante 2025.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con repostulación requerida mientras se mantiene un servicio.",
+              "observacion_muestral": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "P46",
+      "titulo": "Nos cuesta dar a conocer nuestro trabajo para acceder a nuevas oportunidades",
+      "tema": "T07",
+      "observaciones_de_fuente": [
+        {
+          "id": "P46__PX-R3.1__PRINCIPAL",
+          "fuente": "F11",
+          "localizador": "Nota institucional del IFO 2025",
+          "url": "https://fundaciontrascender.cl/estudio-revela-desafios-clave-para-la-sostenibilidad-de-las-organizaciones-sociales-en-chile/",
+          "tipo": "autodiagnostico",
+          "texto": "Trascender reporta brechas de capacidades de comunicación en el IFO.",
+          "poblacion": "OSC chilenas participantes, agrupación jurídica mixta",
+          "periodo": "IFO 2025; período específico de comunicaciones ND",
+          "n": 110,
+          "unidad_n": "OSC participantes en IFO 2025; puntuación 1–5",
+          "limitacion": "Pérdidas de oportunidades y relación causal ND. F11/F12 describen la misma investigación."
+        }
+      ],
+      "vistas": {
+        "tercer_sector": {
+          "aplicabilidad_documental": "documentado",
+          "hallazgos_por_poblacion": {
+            "general": [
+              "P46__F11__01",
+              "P46__F11__02",
+              "P46__F12__01",
+              "P46__F14__01",
+              "P46__F22__01",
+              "P46__F22__02",
+              "P46__F23__01"
+            ],
+            "contextual": [
+              "P46__F13__01",
+              "P46__F13__02",
+              "P46__F18__01",
+              "P46__F18__02"
+            ],
+            "mixta": [
+              "P46__F28__01"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en oportunidades elegibles aprovechadas.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de oportunidad de acceso perdida por falta de difusión del trabajo por OSC afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Falta una proporción de OSC elegibles con el episodio definido en 12 meses, para el universo de esta vista. Pérdidas de oportunidades y relación causal ND. F11/F12 describen la misma investigación.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con oportunidad de acceso perdida por falta de difusión del trabajo.",
+              "observacion_muestral": null
+            }
+          }
+        },
+        "fundaciones": {
+          "aplicabilidad_documental": "mixta",
+          "hallazgos_por_poblacion": {
+            "general": [
+              "P46__F11__01",
+              "P46__F11__02",
+              "P46__F12__01",
+              "P46__F14__01",
+              "P46__F22__01",
+              "P46__F22__02",
+              "P46__F23__01"
+            ],
+            "contextual": [
+              "P46__F13__01",
+              "P46__F13__02",
+              "P46__F18__01",
+              "P46__F18__02"
+            ],
+            "mixta": [
+              "P46__F28__01"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en oportunidades elegibles aprovechadas.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de oportunidad de acceso perdida por falta de difusión del trabajo por fundación afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "El IFO usa 110 OSC y una escala de autodiagnóstico. Falta la proporción afectada por pérdida de oportunidades; F11 y F12 comparten origen.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con oportunidad de acceso perdida por falta de difusión del trabajo.",
+              "observacion_muestral": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "P47",
+      "titulo": "Nos cuesta mantener al directorio al día sobre los planes que aprobó",
+      "tema": "T05",
+      "observaciones_de_fuente": [
+        {
+          "id": "P47__PX-R3.1__PRINCIPAL",
+          "fuente": "F16",
+          "localizador": "PDF p. 55",
+          "url": "https://ceps.unibas.ch/fileadmin/user_upload/ceps/1_Home/News_Events_Bilder_Doks/20190515_Leitfaden_Governance_Chile_Steffen.pdf#page=55",
+          "tipo": "caso_institucional",
+          "texto": "Caso de preparación de reuniones para mantener informado al directorio y revisar el avance de planes.",
+          "poblacion": "Fundación CMPC, caso chileno",
+          "periodo": "Guía publicada en 2019; ventana de incidencia ND",
+          "n": 1,
+          "unidad_n": "fundación descrita",
+          "limitacion": "Ejemplo de práctica; prevalencia de fallas y daño ND."
+        }
+      ],
+      "vistas": {
+        "tercer_sector": {
+          "aplicabilidad_documental": "documentado",
+          "hallazgos_por_poblacion": {
+            "general": [
+              "P47__F16__01",
+              "P47__F16__02",
+              "P47__F23__01"
+            ],
+            "contextual": [
+              "P47__F17__01",
+              "P47__F18__01",
+              "P47__F18__02",
+              "P47__F20__01",
+              "P47__F20__02"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en hitos de supervisión completados.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de seguimiento de plan impedido por falta de información al directorio por OSC afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Falta una proporción de OSC elegibles con el episodio definido en 12 meses, para el universo de esta vista. Ejemplo de práctica; prevalencia de fallas y daño ND.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con seguimiento de plan impedido por falta de información al directorio.",
+              "observacion_muestral": null
+            }
+          }
+        },
+        "fundaciones": {
+          "aplicabilidad_documental": "aplicabilidad_por_confirmar",
+          "hallazgos_por_poblacion": {
+            "general": [
+              "P47__F16__01",
+              "P47__F16__02",
+              "P47__F23__01"
+            ],
+            "contextual": [
+              "P47__F17__01",
+              "P47__F18__01",
+              "P47__F18__02",
+              "P47__F20__01",
+              "P47__F20__02"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en hitos de supervisión completados.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de seguimiento de plan impedido por falta de información al directorio por fundación afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Un caso institucional documenta una práctica. No permite estimar afectación para el universo de fundaciones.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con seguimiento de plan impedido por falta de información al directorio.",
+              "observacion_muestral": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "P48",
+      "titulo": "Atendemos más casos que plazas financiadas con el mismo equipo",
+      "tema": "T06",
+      "observaciones_de_fuente": [
+        {
+          "id": "P48__PX-R3.1__PRINCIPAL",
+          "fuente": "F26",
+          "localizador": "PDF p. 158",
+          "url": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=158",
+          "tipo": "cualitativo_sectorial",
+          "texto": "Sobrecupos y atrasos en recursos dificultan contratar dotación adicional y sostener estándares.",
+          "poblacion": "Colaboradores de protección especializada en Chile; no desagregado por figura jurídica",
+          "periodo": "Informe publicado en 2025; ventana de incidencia ND",
+          "n": null,
+          "unidad_n": "testimonios y diagnóstico sectorial",
+          "limitacion": "Presión sobre equipos documentada; personas afectadas y daño comparable ND."
+        }
+      ],
+      "vistas": {
+        "tercer_sector": {
+          "aplicabilidad_documental": "documentado",
+          "hallazgos_por_poblacion": {
+            "sectorial": [
+              "P48__F26__01",
+              "P48__F26__02"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en atenciones que cumplen estándar de equipo.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de atención sobre plazas financiadas sin aumento proporcional de dotación por OSC afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Falta una proporción de OSC elegibles con el episodio definido en 12 meses, para el universo de esta vista. Presión sobre equipos documentada; personas afectadas y daño comparable ND.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con atención sobre plazas financiadas sin aumento proporcional de dotación.",
+              "observacion_muestral": null
+            }
+          }
+        },
+        "fundaciones": {
+          "aplicabilidad_documental": "aplicabilidad_por_confirmar",
+          "hallazgos_por_poblacion": {
+            "sectorial": [
+              "P48__F26__01",
+              "P48__F26__02"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en atenciones que cumplen estándar de equipo.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de atención sobre plazas financiadas sin aumento proporcional de dotación por fundación afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Los testimonios sectoriales identifican el mecanismo; falta el denominador de entidades afectadas y el desglose por figura jurídica.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con atención sobre plazas financiadas sin aumento proporcional de dotación.",
+              "observacion_muestral": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "P49",
+      "titulo": "Tenemos que financiar la instalación antes de recibir el primer aporte",
+      "tema": "T02",
+      "observaciones_de_fuente": [
+        {
+          "id": "P49__PX-R3.1__PRINCIPAL",
+          "fuente": "F26",
+          "localizador": "PDF p. 117",
+          "url": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=117",
+          "tipo": "cualitativo_sectorial",
+          "texto": "Costo de instalación previo a la operación sin financiamiento específico.",
+          "poblacion": "Colaboradores de protección especializada en Chile; no desagregado por figura jurídica",
+          "periodo": "Informe publicado en 2025; ventana de incidencia ND",
+          "n": null,
+          "unidad_n": "testimonios y diagnóstico sectorial",
+          "limitacion": "La puesta en marcha puede requerir recursos operativos. Monto y alcance comparables ND."
+        }
+      ],
+      "vistas": {
+        "tercer_sector": {
+          "aplicabilidad_documental": "documentado",
+          "hallazgos_por_poblacion": {
+            "sectorial": [
+              "P49__F26__01",
+              "P49__F26__02",
+              "P49__F26__03",
+              "P49__F27__01"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en actividades iniciadas conforme al plan.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de instalación financiada con recursos propios antes de recibir el primer aporte por OSC afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Falta una proporción de OSC elegibles con el episodio definido en 12 meses, para el universo de esta vista. La puesta en marcha puede requerir recursos operativos. Monto y alcance comparables ND.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con instalación financiada con recursos propios antes de recibir el primer aporte.",
+              "observacion_muestral": null
+            }
+          }
+        },
+        "fundaciones": {
+          "aplicabilidad_documental": "aplicabilidad_por_confirmar",
+          "hallazgos_por_poblacion": {
+            "sectorial": [
+              "P49__F26__01",
+              "P49__F26__02",
+              "P49__F26__03",
+              "P49__F27__01"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en actividades iniciadas conforme al plan.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de instalación financiada con recursos propios antes de recibir el primer aporte por fundación afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "La evidencia principal no entrega una proporción elegible de fundaciones con al menos un episodio durante 2025.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con instalación financiada con recursos propios antes de recibir el primer aporte.",
+              "observacion_muestral": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "P50",
+      "titulo": "El cierre financiero deja saldos sin resolver tras terminar un convenio",
+      "tema": "T03",
+      "observaciones_de_fuente": [
+        {
+          "id": "P50__PX-R3.1__PRINCIPAL",
+          "fuente": "F26",
+          "localizador": "PDF p. 140",
+          "url": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=140",
+          "tipo": "cualitativo_sectorial",
+          "texto": "Testimonio de saldos sin traspasar por demoras en el cierre financiero.",
+          "poblacion": "Colaboradores de protección especializada en Chile; no desagregado por figura jurídica",
+          "periodo": "Informe publicado en 2025; ventana de incidencia ND",
+          "n": null,
+          "unidad_n": "testimonios y diagnóstico sectorial",
+          "limitacion": "Saldo retenido en el caso descrito; monto, distribución de plazos y daño comparable ND."
+        }
+      ],
+      "vistas": {
+        "tercer_sector": {
+          "aplicabilidad_documental": "documentado",
+          "hallazgos_por_poblacion": {
+            "sectorial": [
+              "P50__F26__01",
+              "P50__F26__02",
+              "P50__F27__01",
+              "P50__F27__02"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en actividades de cierre y continuidad financiadas.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de saldo pendiente de resolver tras cierre de convenio por OSC afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Falta una proporción de OSC elegibles con el episodio definido en 12 meses, para el universo de esta vista. Saldo retenido en el caso descrito; monto, distribución de plazos y daño comparable ND.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con saldo pendiente de resolver tras cierre de convenio.",
+              "observacion_muestral": null
+            }
+          }
+        },
+        "fundaciones": {
+          "aplicabilidad_documental": "aplicabilidad_por_confirmar",
+          "hallazgos_por_poblacion": {
+            "sectorial": [
+              "P50__F26__01",
+              "P50__F26__02",
+              "P50__F27__01",
+              "P50__F27__02"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en actividades de cierre y continuidad financiadas.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de saldo pendiente de resolver tras cierre de convenio por fundación afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "La evidencia principal no entrega una proporción elegible de fundaciones con al menos un episodio durante 2025.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con saldo pendiente de resolver tras cierre de convenio.",
+              "observacion_muestral": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "P51",
+      "titulo": "Nos cuesta separar gastos de varios proyectos en una misma cuenta",
+      "tema": "T03",
+      "observaciones_de_fuente": [
+        {
+          "id": "P51__PX-R3.1__PRINCIPAL",
+          "fuente": "F26",
+          "localizador": "PDF p. 139",
+          "url": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=139",
+          "tipo": "cualitativo_sectorial",
+          "texto": "Una cuenta única por colaborador dificulta la trazabilidad y gestión financiera por proyecto.",
+          "poblacion": "Colaboradores de protección especializada en Chile; no desagregado por figura jurídica",
+          "periodo": "Informe publicado en 2025; ventana de incidencia ND",
+          "n": null,
+          "unidad_n": "testimonios y diagnóstico sectorial",
+          "limitacion": "Retrabajo, errores y daño comparable ND. La fuente describe excepciones."
+        }
+      ],
+      "vistas": {
+        "tercer_sector": {
+          "aplicabilidad_documental": "documentado",
+          "hallazgos_por_poblacion": {
+            "sectorial": [
+              "P51__F26__01",
+              "P51__F26__02"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en movimientos conciliados a tiempo.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de dificultad de conciliación de gastos entre proyectos en cuenta compartida por OSC afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Falta una proporción de OSC elegibles con el episodio definido en 12 meses, para el universo de esta vista. Retrabajo, errores y daño comparable ND. La fuente describe excepciones.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con dificultad de conciliación de gastos entre proyectos en cuenta compartida.",
+              "observacion_muestral": null
+            }
+          }
+        },
+        "fundaciones": {
+          "aplicabilidad_documental": "aplicabilidad_por_confirmar",
+          "hallazgos_por_poblacion": {
+            "sectorial": [
+              "P51__F26__01",
+              "P51__F26__02"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en movimientos conciliados a tiempo.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de dificultad de conciliación de gastos entre proyectos en cuenta compartida por fundación afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "La evidencia principal no entrega una proporción elegible de fundaciones con al menos un episodio durante 2025.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con dificultad de conciliación de gastos entre proyectos en cuenta compartida.",
+              "observacion_muestral": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "P52",
+      "titulo": "Nos cuesta captar y mantener familias de acogida",
+      "tema": "T06",
+      "observaciones_de_fuente": [
+        {
+          "id": "P52__PX-R3.1__PRINCIPAL",
+          "fuente": "F26",
+          "localizador": "PDF p. 129",
+          "url": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=129",
+          "tipo": "cualitativo_sectorial",
+          "texto": "El informe registra dificultades para captar y mantener familias de acogida.",
+          "poblacion": "Programa de Familias de Acogida Especializada en Chile",
+          "periodo": "Informe publicado en 2025; ventana de incidencia ND",
+          "n": null,
+          "unidad_n": "testimonios y diagnóstico sectorial",
+          "limitacion": "Familias de acogida no son fundaciones. Brecha cuantitativa de cobertura y tiempo de espera ND."
+        }
+      ],
+      "vistas": {
+        "tercer_sector": {
+          "aplicabilidad_documental": "documentado",
+          "hallazgos_por_poblacion": {
+            "sectorial": [
+              "P52__F26__01",
+              "P52__F26__02"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en plazas de acogida cubiertas.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de déficit de captación o retención de familias de acogida para una necesidad identificada por OSC afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Falta una proporción de OSC elegibles con el episodio definido en 12 meses, para el universo de esta vista. Familias de acogida no son fundaciones. Brecha cuantitativa de cobertura y tiempo de espera ND.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con déficit de captación o retención de familias de acogida para una necesidad identificada.",
+              "observacion_muestral": null
+            }
+          }
+        },
+        "fundaciones": {
+          "aplicabilidad_documental": "aplicabilidad_por_confirmar",
+          "hallazgos_por_poblacion": {
+            "sectorial": [
+              "P52__F26__01",
+              "P52__F26__02"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en plazas de acogida cubiertas.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de déficit de captación o retención de familias de acogida para una necesidad identificada por fundación afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "La evidencia principal no entrega una proporción elegible de fundaciones con al menos un episodio durante 2025.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con déficit de captación o retención de familias de acogida para una necesidad identificada.",
+              "observacion_muestral": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "P53",
+      "titulo": "Llegar a familias en zonas dispersas nos consume más tiempo y recursos",
+      "tema": "T06",
+      "observaciones_de_fuente": [
+        {
+          "id": "P53__PX-R3.1__PRINCIPAL",
+          "fuente": "F26",
+          "localizador": "PDF p. 141",
+          "url": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=141",
+          "tipo": "cualitativo_sectorial",
+          "texto": "Dispersión geográfica, conectividad y traslados dificultan la cobertura.",
+          "poblacion": "Programas de protección especializada en zonas dispersas de Chile",
+          "periodo": "Informe publicado en 2025; ventana de incidencia ND",
+          "n": null,
+          "unidad_n": "testimonios y diagnóstico sectorial",
+          "limitacion": "Comunas, población afectada y costo atribuible ND."
+        }
+      ],
+      "vistas": {
+        "tercer_sector": {
+          "aplicabilidad_documental": "documentado",
+          "hallazgos_por_poblacion": {
+            "sectorial": [
+              "P53__F26__01",
+              "P53__F26__02"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en atenciones territoriales entregadas.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de atención territorial no realizada a tiempo por dispersión o traslado por OSC afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Falta una proporción de OSC elegibles con el episodio definido en 12 meses, para el universo de esta vista. Comunas, población afectada y costo atribuible ND.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con atención territorial no realizada a tiempo por dispersión o traslado.",
+              "observacion_muestral": null
+            }
+          }
+        },
+        "fundaciones": {
+          "aplicabilidad_documental": "aplicabilidad_por_confirmar",
+          "hallazgos_por_poblacion": {
+            "sectorial": [
+              "P53__F26__01",
+              "P53__F26__02"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en atenciones territoriales entregadas.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de atención territorial no realizada a tiempo por dispersión o traslado por fundación afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "La evidencia principal no entrega una proporción elegible de fundaciones con al menos un episodio durante 2025.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con atención territorial no realizada a tiempo por dispersión o traslado.",
+              "observacion_muestral": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "P54",
+      "titulo": "Nos falta equipo y tiempo para buscar donantes locales",
+      "tema": "T01",
+      "observaciones_de_fuente": [
+        {
+          "id": "P54__PX-R3.1__PRINCIPAL",
+          "fuente": "F22",
+          "localizador": "PDF p. 47",
+          "url": "https://uai.cdn7pm.net/documentos/filantropia-local-desafios-y-buenas-practicas-en-chile.pdf#page=47",
+          "tipo": "proporcion_de_menciones",
+          "texto": "43,9% de las menciones identifica falta de equipo; 29,3% falta de tiempo.",
+          "poblacion": "OSC participantes del estudio de filantropía local en Chile",
+          "periodo": "Período de la pregunta ND",
+          "n": 82,
+          "unidad_n": "menciones de 51 OSC, respuesta múltiple",
+          "limitacion": "El gráfico usa 82 menciones, no 51 organizaciones como denominador. Efecto sobre donaciones ND."
+        }
+      ],
+      "vistas": {
+        "tercer_sector": {
+          "aplicabilidad_documental": "documentado",
+          "hallazgos_por_poblacion": {
+            "general": [
+              "P54__F22__01",
+              "P54__F22__02"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en gestiones de captación completadas.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de actividad de captación local omitida por falta de tiempo o equipo por OSC afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Falta una proporción de OSC elegibles con el episodio definido en 12 meses, para el universo de esta vista. El gráfico usa 82 menciones, no 51 organizaciones como denominador. Efecto sobre donaciones ND.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con actividad de captación local omitida por falta de tiempo o equipo.",
+              "observacion_muestral": null
+            }
+          }
+        },
+        "fundaciones": {
+          "aplicabilidad_documental": "aplicabilidad_por_confirmar",
+          "hallazgos_por_poblacion": {
+            "general": [
+              "P54__F22__01",
+              "P54__F22__02"
+            ]
+          },
+          "criterios": {
+            "I": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de pérdida operativa por episodio",
+              "dato_faltante": "Faltan una referencia operativa positiva y una pérdida atribuible por episodio en gestiones de captación completadas.",
+              "observacion_muestral": null
+            },
+            "F": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "episodios por organización afectada en 12 meses, mediana",
+              "dato_faltante": "Faltan recuentos de actividad de captación local omitida por falta de tiempo o equipo por fundación afectada en una ventana de 12 meses.",
+              "observacion_muestral": null
+            },
+            "A": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "porcentaje de organizaciones elegibles con al menos un episodio en 12 meses",
+              "dato_faltante": "Los porcentajes usan 82 menciones de 51 OSC. Falta la proporción por organización y el desglose de fundaciones.",
+              "observacion_muestral": null
+            },
+            "U": {
+              "estado": "datos_insuficientes",
+              "valor_comparable": null,
+              "unidad_objetivo": "días naturales restantes para evitar daño adicional",
+              "dato_faltante": "Faltan fecha de intervención posible y plazo restante medido hasta el daño adicional relacionado con actividad de captación local omitida por falta de tiempo o equipo.",
+              "observacion_muestral": null
+            }
+          }
+        }
+      }
+    }
+  ]
+}
