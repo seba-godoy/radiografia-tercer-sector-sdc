@@ -50,6 +50,13 @@ async function run() {
     }
     assert.equal(await deferred.first().getAttribute("data-h2-task"), "P14");
     assert.doesNotMatch(await page.locator('[data-h2-task="P43"]').innerText(), /Primer bloque/);
+    const application = page.locator('#p13-aplicacion');
+    assert.equal(await application.locator('.p13-application-table tbody tr').count(), 4);
+    assert.equal(await application.locator('[data-p13-study]').count(), 9);
+    assert.equal(await application.locator('[data-p13-publication]').count(), 16);
+    assert.equal(await application.locator('[data-p13-claim]').count(), 28);
+    await application.locator('[data-p13-study="BARO"] > summary').click();
+    assert.match(await application.locator('[data-p13-study="BARO"]').innerText(), /49,3%[\s\S]*2018/);
     const closure = page.locator("#h2-closure-P13");
     const index = page.locator("[data-h2-index=P13]");
     assert.match(await closure.innerText(), /Evidencia documentada[\s\S]*37%[\s\S]*255[\s\S]*puesto de criticidad sigue por determinar/);
@@ -88,6 +95,7 @@ async function run() {
     await page.locator("#h2-sector-title").waitFor();
     assert.equal(await page.locator("[data-h2-sector]").count(), 31);
     assert.equal(await sector.count(), 31);
+    assert.equal(await application.getAttribute("data-p13-scope"), "tercer_sector");
     assert.equal(await sector.locator(".h2-gaps li").count(), 120);
     assert.equal(await page.locator("[data-h2-pilot]").count(), 0);
     assert.equal(await page.locator(".h2-source-group li").count(), 245);

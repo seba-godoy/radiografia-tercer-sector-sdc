@@ -1,3 +1,5 @@
+import {renderP13Application} from './p13-application.mjs';
+
 const criteria = [
   ["I", "Impacto", "Qué daño produce cuando ocurre."],
   ["F", "Recurrencia", "Cuántas veces se repite por organización."],
@@ -208,6 +210,7 @@ export function h2Render(contract, evidence, bank, scope, links, esc) {
     <div class="h2-actions"><a href="${esc(links.map)}" data-go="problemas">Ver mapa de 31 problemas</a>
       <a href="${esc(links.methods)}" data-go="metodos" data-method-target="criticidad">Métodos y fuentes</a></div>
     ${researchClosures(evidence, scope, esc)}
+    ${renderP13Application(evidence.applications?.P13, scope, esc)}
     ${foundations ? pilotTable(pilot, evidence, links, esc)
       : `<section aria-labelledby="h2-sector-title"><h2 id="h2-sector-title">31 problemas documentados</h2>
         <p>Abre un problema para ver las observaciones de referencia y los hallazgos agrupados por población.</p>

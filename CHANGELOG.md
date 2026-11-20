@@ -2,6 +2,8 @@
 
 ## Vista previa de Criticidad (2026-11-20)
 
+- Aplica v0.2 a P13: límite lógico del proxy de alcance, contraste longitudinal CEFIS/SII, nueve bloques de estudio y trazabilidad visible de 16 publicaciones/28 hallazgos. Total no identificado; no se suman muestras ni se inventan componentes faltantes.
+
 - Corrige el método de criticidad a v0.2: retira el 37/100 de P13, conserva el 37% como indicador parcial y evita renormalizar faltantes. Documenta rúbricas, linaje por estudio, confianza separada y brechas para completar P13. La versión v0.1 queda en historial.
 - Incorpora el cierre de investigación de P13 con hallazgos, alcance y fuentes en Fundaciones y Tercer sector. El puesto de criticidad sigue por determinar.
 - Reordena los próximos pasos para comenzar por los problemas que pueden estudiarse fuera de la relación con el Estado.
