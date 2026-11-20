@@ -128,13 +128,13 @@
     },
     {
       "id": "criticidad",
-      "title": "Ranking de criticidad",
+      "title": "Criticidad",
       "phases": [
         "PX-R3",
         "H-2"
       ],
       "status": "pendiente_de_validacion",
-      "purpose": "Comparar gravedad, urgencia, alcance y confianza en evidencia",
+      "purpose": "Comparar impacto, recurrencia, alcance y urgencia. En Fundaciones, el piloto examina ocho problemas; en Tercer sector se describe la evidencia catalogada. La posición queda indeterminada donde falten mediciones comparables.",
       "unit": "problema P",
       "scores": null,
       "weights": null,
