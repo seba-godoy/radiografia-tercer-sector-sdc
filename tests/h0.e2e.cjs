@@ -71,7 +71,7 @@ const sleep=(ms)=>new Promise(r=>setTimeout(r,ms));
   assert.equal(await page.locator(".pain-row").count(),31);
   passed.push("búsqueda y estado vacío");
   await page.locator(".subnav a[data-go=criticidad]").click();
-  assert.match(await page.locator("h2").first().innerText(),/Análisis pendiente de validación/);
+  assert.match(await page.locator("#h2-pilot-title").innerText(),/Comparación de criticidad/);
   assert.equal(await page.locator("#scope-top").inputValue(),"fundaciones");
   assert.ok(page.url().includes("scope=fundaciones"));
   passed.push("navegación criticidad sin ranking inventado");

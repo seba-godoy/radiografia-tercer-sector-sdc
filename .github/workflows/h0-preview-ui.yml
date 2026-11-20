@@ -6,6 +6,8 @@ on:
       - "tests/h0.e2e.cjs"
       - "tests/h0-brand.e2e.cjs"
       - "tests/h1.e2e.cjs"
+      - "tests/h2.e2e.cjs"
+      - "analisis/h-2-1-criticidad-por-universo-v1.json"
       - "tests/hm.e2e.cjs"
       - "analisis/validate-hm.mjs"
       - "analisis/mf1-banco-26-fuentes-v1.json"
@@ -51,6 +53,8 @@ jobs:
         run: node tests/h0.e2e.cjs
       - name: Exercise H-1 analysis and corrected PDF links
         run: node tests/h1.e2e.cjs
+      - name: Exercise H-2.2 criticidad and next research steps
+        run: node tests/h2.e2e.cjs
       - name: Exercise H-M methods and source bank in Chromium
         run: node tests/hm.e2e.cjs
       - name: Brand SdC 2026 (PPT), escritorio y móvil

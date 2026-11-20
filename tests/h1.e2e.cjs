@@ -138,9 +138,9 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
     assert.equal(await dialog.count(),0);
     passed.push("390px sin overflow, P20/P48 móvil y fichas navegables");
     await page.locator(".subnav a[data-go=criticidad]").click();
-    assert.match(await page.locator(".waiting-panel").innerText(),/pendiente de validación/i);
+    assert.match(await page.locator("#h2-pilot-title").innerText(),/Comparación de criticidad/i);
     assert.equal(await page.locator("#scope-top").inputValue(),"fundaciones");
-    passed.push("criticidad pendiente y selector persistente");
+    passed.push("comparación de criticidad y selector persistente");
     assert.deepEqual(errors,[],"sin errores en consola/recursos H1");
     console.log("H-1 BROWSER PASS "+passed.length+" bloques: "+passed.join(" | "));
   }finally{if(browser)await browser.close();server.kill("SIGTERM");}

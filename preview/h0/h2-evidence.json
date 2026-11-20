@@ -1,0 +1,645 @@
+{
+  "pilot": {
+    "P02": {
+      "A": {
+        "status": "alcance_muestral",
+        "finding": "28% de las 125 reportó terminar proyectos de atención permanente por no renovación.",
+        "scope": "Chile, fundaciones y corporaciones con contrato o convenio, 2025. F04 refiere a colaboración 2024.",
+        "gap": "Exposición específica a renovación y base exclusivamente de fundaciones. El 15% de F04 mide suspensión unilateral o anticipada.",
+        "references": [
+          "F03.21",
+          "F04.15"
+        ]
+      },
+      "I": {
+        "status": "resultado_reportado_sin_magnitud",
+        "finding": "El término de proyecto está reportado. F26 describe cierres, rechazos e intervenciones suspendidas por condiciones financieras.",
+        "scope": "Muestra mixta de convenios y contraste cualitativo de colaboradores de protección especializada, sin desglose jurídico.",
+        "gap": "Días y personas que quedaron sin atención, continuidad mediante otro ejecutor y causa de cada interrupción.",
+        "references": [
+          "F03.21",
+          "F26.146",
+          "F26.174"
+        ]
+      },
+      "F": {
+        "status": "sin_medida",
+        "finding": "La pregunta registra presencia durante el año.",
+        "scope": "Muestra mixta N=125, 2025.",
+        "gap": "Cierres por fundación expuesta en 12 meses y registro de renovaciones.",
+        "references": [
+          "F03.21"
+        ]
+      },
+      "U": {
+        "status": "sin_medida",
+        "finding": "La encuesta identifica la no renovación como causa del cierre reportado.",
+        "scope": "Muestra mixta N=125, 2025.",
+        "gap": "Días entre aviso de no renovación e interrupción evitable.",
+        "references": [
+          "F03.21"
+        ]
+      }
+    },
+    "P16": {
+      "A": {
+        "status": "alcance_muestral",
+        "finding": "57% de N=125 en 2025 y 47% de N=150 en 2024 reportaron transferencias fuera de plazo.",
+        "scope": "Olas intencionales mixtas. Colaboración 2024 y contratos o convenios 2025.",
+        "gap": "Desglose por forma jurídica, denominadores expuestos por hito y comparabilidad entre olas.",
+        "references": [
+          "F03.21",
+          "F04.15"
+        ]
+      },
+      "I": {
+        "status": "mecanismo_con_efecto_reportado",
+        "finding": "Colaboradores reportan problemas de liquidez y dificultades para pagar personal y arriendos por atrasos, especialmente art. 80 bis.",
+        "scope": "Chile, talleres de colaboradores de protección especializada, informe de 2025; N y forma jurídica específicos no publicados para el pasaje.",
+        "gap": "Monto, brecha de caja, días de reducción de operación y atención afectada por transferencia identificada.",
+        "references": [
+          "F26.174",
+          "F26.277"
+        ]
+      },
+      "F": {
+        "status": "mecanismo_sin_tasa",
+        "finding": "El informe cualitativo describe atrasos que se repiten sin conteos por entidad.",
+        "scope": "Colaboradores de protección especializada, 2025 como fecha del informe.",
+        "gap": "Cuotas tardías por fundación y año, con fechas comprometidas y efectivas.",
+        "references": [
+          "F26.277"
+        ]
+      },
+      "U": {
+        "status": "sin_medida",
+        "finding": "Se describe presión de corto plazo en obligaciones operativas.",
+        "scope": "Casos sectoriales y registro público de transferencias como ruta de enlace.",
+        "gap": "Fecha de alerta, primer impago o suspensión evitable, con calendario de convenio y caja.",
+        "references": [
+          "F26.174",
+          "REG.5"
+        ]
+      }
+    },
+    "P20": {
+      "A": {
+        "status": "alcance_muestral",
+        "finding": "62% de N=125 en 2025 y 49% de N=150 en 2024 reportaron rendiciones fuera de plazo de respuesta.",
+        "scope": "Olas intencionales mixtas; el marco de elegibilidad puede diferir.",
+        "gap": "N de entidades que efectivamente rindieron con plazo y desglose de fundaciones.",
+        "references": [
+          "F03.22",
+          "F04.15"
+        ]
+      },
+      "I": {
+        "status": "indicio_operativo",
+        "finding": "Auditoría específica documenta problemas de traspaso y demora en obtener antecedentes; F26 describe cierre financiero tardío como otro proceso.",
+        "scope": "Contraste histórico 2020–2021 y talleres sectoriales. Ninguno vincula este ítem con daño de atención.",
+        "gap": "Horas de seguimiento, cuotas bloqueadas y prestación afectada trazada desde la rendición concreta.",
+        "references": [
+          "CGR.439",
+          "F26.139"
+        ]
+      },
+      "F": {
+        "status": "sin_medida",
+        "finding": "El 62% registra ocurrencia por organización, sin número de atrasos.",
+        "scope": "Muestra mixta N=125, 2025.",
+        "gap": "Casos tardíos sobre rendiciones y por fundación reportante durante 12 meses.",
+        "references": [
+          "F03.22"
+        ]
+      },
+      "U": {
+        "status": "duracion_pasada",
+        "finding": "En la misma lámina, 42% declara revisiones superiores a siete meses; base exacta del recuadro sin confirmar.",
+        "scope": "Período de referencia de la lámina: 2025. Sin base específica acreditada para el 42%.",
+        "gap": "Inicio de revisión, fecha de respuesta y días restantes hasta una consecuencia evitable.",
+        "references": [
+          "F03.22"
+        ]
+      }
+    },
+    "P13": {
+      "A": {
+        "status": "alcance_muestral",
+        "finding": "37% declaró caída de donaciones y 31% caída de ingresos propios entre 2024 y 2025.",
+        "scope": "Chile · N=255 fundaciones y corporaciones · encuesta UC 2026 de muestra intencional.",
+        "gap": "Sin estimación exclusiva de fundaciones. Los dos ítems pueden superponerse.",
+        "references": [
+          "F03.34"
+        ]
+      },
+      "I": {
+        "status": "caso_cuantificado_no_comparable",
+        "finding": "Para la Confianza redujo su equipo. Sentido cerró sus viviendas de transición y Neo Inclusión informó la pausa de un taller.",
+        "scope": "Tres fundaciones chilenas identificadas. Los efectos provienen de memorias y comunicaciones institucionales.",
+        "gap": "Sin medida comparable de daño operativo para el conjunto de fundaciones.",
+        "references": [
+          "CONF.2024",
+          "SENT.CIERRE",
+          "NEO.PAUSA"
+        ]
+      },
+      "F": {
+        "status": "sin_medida",
+        "finding": "La evidencia documenta cambios anuales de ingresos y episodios en organizaciones identificadas.",
+        "scope": "Casos en Chile y encuesta de fundaciones y corporaciones.",
+        "gap": "Sin serie comparable de episodios por organización y año.",
+        "references": [
+          "F03.34",
+          "SENT.CIERRE"
+        ]
+      },
+      "U": {
+        "status": "plazo_sin_dano_atribuido",
+        "finding": "En Sentido, el directorio conoció el riesgo en agosto de 2025 y los principales financiamientos privados terminaban en diciembre.",
+        "scope": "Cronología de una fundación chilena.",
+        "gap": "Sin ventana comparable para actuar antes del daño adicional.",
+        "references": [
+          "SENT.CIERRE"
+        ]
+      }
+    },
+    "P28": {
+      "A": {
+        "status": "percepcion_muestral",
+        "finding": "Dos ítems independientes de 52%: estabilidad contractual y retención por inestabilidad contractual.",
+        "scope": "Base mixta N=255; enero 2025 a junio 2026; acuerda o muy de acuerdo.",
+        "gap": "Empleadoras de especialistas elegibles y fundaciones con salida o vacante sin cobertura.",
+        "references": [
+          "F03.36"
+        ]
+      },
+      "I": {
+        "status": "mecanismo_con_efecto_reportado",
+        "finding": "Estudios sectoriales vinculan rotación e inestabilidad con pérdida de continuidad en la intervención.",
+        "scope": "Entrevistas y análisis de protección especializada; sin tasa general de fundaciones.",
+        "gap": "Días sin cobertura de la vacante, atenciones perdidas o reasignadas y vínculo causal.",
+        "references": [
+          "F26.140",
+          "F26.161",
+          "UNI.50"
+        ]
+      },
+      "F": {
+        "status": "mecanismo_sin_tasa",
+        "finding": "Hay testimonios de rotación alta, sin recuento anual por entidad.",
+        "scope": "Sector protección especializada; sin denominador por empleador.",
+        "gap": "Salidas observadas por fundación empleadora y año, separando renuncia, despido y fin contractual.",
+        "references": [
+          "F26.161",
+          "UNI.50"
+        ]
+      },
+      "U": {
+        "status": "sin_medida",
+        "finding": "Se identifica la inestabilidad de proyectos como factor cualitativo.",
+        "scope": "Percepción mixta y talleres sectoriales.",
+        "gap": "Días entre notificación de salida y pérdida de cobertura evitable.",
+        "references": [
+          "F03.36",
+          "F26.161"
+        ]
+      }
+    },
+    "P32": {
+      "A": {
+        "status": "contexto_y_medida_de_otra_conducta",
+        "finding": "FECU 2024 recibió 344 reportes a la fecha del informe y analizó 245 OSC; PEG registró 47,37% que no publica FECU o memoria y balance en su sitio.",
+        "scope": "OSC reportantes y autodiagnóstico PEG de 76 entidades. Publicación web es otro evento.",
+        "gap": "Denominador de fundaciones con reporte exigible o comprometido y casos de atraso atribuible a falta de capacidad.",
+        "references": [
+          "F10.4",
+          "PEG.32"
+        ]
+      },
+      "I": {
+        "status": "sin_medida",
+        "finding": "FECU muestra tamaños de equipo y promueve acompañamiento; sin horas de confección ni tareas misionales desplazadas en las secciones verificadas.",
+        "scope": "245 OSC analizadas; 242 declaran trabajadores.",
+        "gap": "Registro de horas por reporte y actividad postergada, con personal dedicado y asistencia recibida.",
+        "references": [
+          "F10.14",
+          "F10.15",
+          "F10.34"
+        ]
+      },
+      "F": {
+        "status": "sin_medida",
+        "finding": "El número de reportes recibidos cuenta entregas; no retrabajos ni incumplimientos.",
+        "scope": "Muestra de reportantes y autodiagnóstico de publicación.",
+        "gap": "Reprogramaciones o correcciones atribuibles por fundación y ejercicio; distinguir de un nuevo reporte.",
+        "references": [
+          "F10.4",
+          "PEG.32"
+        ]
+      },
+      "U": {
+        "status": "sin_medida",
+        "finding": "El formato FECU describe la tarea anual.",
+        "scope": "Instrumento para OSFL, sin cohorte con fecha y consecuencia trazadas.",
+        "gap": "Días desde inicio o alerta hasta vencimiento y primera consecuencia verificable.",
+        "references": [
+          "F10.2",
+          "FECU.WEB"
+        ]
+      }
+    },
+    "P48": {
+      "A": {
+        "status": "caso_fundacion_y_contexto_sectorial",
+        "finding": "UNICEF recoge solicitudes reiteradas de sobrecupo en el equipo FAE de Fundación San José; otro estudio describe el mecanismo en colaboradores.",
+        "scope": "Un caso de fundación y evidencia sectorial sin desglose.",
+        "gap": "Programas-mes con atención sobre plazas, dotación y base de programas elegibles por modalidad.",
+        "references": [
+          "UNI.35",
+          "F26.158"
+        ]
+      },
+      "I": {
+        "status": "mecanismo_con_efecto_reportado",
+        "finding": "Talleres describen recursos de seguimiento que se restan a casos vigentes y equipos que atienden sobre el estándar sin refuerzo oportuno.",
+        "scope": "Protección especializada ambulatoria; triangulación entre estudios con posible solapamiento institucional.",
+        "gap": "Número de casos por jornada de personal, retraso y atenciones bajo estándar medidos por programa.",
+        "references": [
+          "F26.158",
+          "UNI.35"
+        ]
+      },
+      "F": {
+        "status": "mecanismo_sin_tasa",
+        "finding": "Solicitudes repetidas en un caso y testimonios de sobrecupo regular.",
+        "scope": "Solicitud y atención efectiva son unidades distintas; no hay serie programa-mes en el corte.",
+        "gap": "Episodios o meses sobre plazas convenidas y dotación medida para la misma ventana.",
+        "references": [
+          "UNI.35",
+          "F26.158"
+        ]
+      },
+      "U": {
+        "status": "sin_medida",
+        "finding": "El informe sectorial describe financiamiento con desfase; las respuestas DCE delimitan el proceso y la capacidad técnica.",
+        "scope": "Estudio de 2025 y aclaraciones DCE de 2026, con modalidades y ventanas distintas.",
+        "gap": "Tiempo hasta atención fuera de estándar o daño adicional atribuible, con fecha de refuerzo disponible.",
+        "references": [
+          "F26.158",
+          "SNPE.DCE"
+        ]
+      }
+    },
+    "P46": {
+      "A": {
+        "status": "capacidad_autodiagnosticada",
+        "finding": "Comunicaciones 1,9/5 en IFO; 55% declaró estrategia de comunicación en el informe CoMov.",
+        "scope": "110 OSC IFO con agrupación de fundaciones, corporaciones y ONG; CoMov 86 OSC en el estudio.",
+        "gap": "Proporción de fundaciones activamente postulantes que perdieron oportunidad por la brecha.",
+        "references": [
+          "IFO.8",
+          "IFO.11",
+          "COMOV.16"
+        ]
+      },
+      "I": {
+        "status": "indicio_sin_atribucion",
+        "finding": "Las bases piden antecedentes de experiencia y el acta publica evaluación multicriterio; IFO identifica brecha de capacidades.",
+        "scope": "Autodiagnóstico y un concurso chileno 2025 con población postulante distinta.",
+        "gap": "Monto u oportunidad perdida con causal documentada de falta de acreditación o difusión, controlando otras razones.",
+        "references": [
+          "IFO.8",
+          "PVM.BASES",
+          "PVM.ACTA"
+        ]
+      },
+      "F": {
+        "status": "sin_medida",
+        "finding": "Estrategia de comunicación y criterio de experiencia no cuentan oportunidades perdidas.",
+        "scope": "OSC participantes de diagnósticos y postulantes admisibles de un concurso.",
+        "gap": "Eventos perdidos por fundación afectada y 12 meses, con atribución registrada.",
+        "references": [
+          "IFO.8",
+          "COMOV.16",
+          "PVM.ACTA"
+        ]
+      },
+      "U": {
+        "status": "plazo_sin_dano_atribuido",
+        "finding": "El concurso tiene apertura y cierre definidos, sin fecha de detección de la brecha por postulante.",
+        "scope": "Una convocatoria nacional de 2025.",
+        "gap": "Días entre detectar la falta de acreditación y cerrar la oportunidad.",
+        "references": [
+          "PVM.BASES"
+        ]
+      }
+    }
+  },
+  "references": {
+    "F03.21": {
+      "title": "Encuesta UC 2026",
+      "locator": "PDF p. 21",
+      "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=21"
+    },
+    "F04.15": {
+      "title": "Encuesta UC 2025",
+      "locator": "PDF p. 15",
+      "url": "https://politicaspublicas.uc.cl/content/uploads/2025/08/sociedad-en-accion_presentacion-1.pdf#page=15"
+    },
+    "F26.146": {
+      "title": "Estudio de financiamiento de Protección Especializada",
+      "locator": "PDF p. 146",
+      "url": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=146"
+    },
+    "F26.174": {
+      "title": "Estudio de financiamiento de Protección Especializada",
+      "locator": "PDF p. 174",
+      "url": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=174"
+    },
+    "F26.277": {
+      "title": "Estudio de financiamiento de Protección Especializada",
+      "locator": "PDF p. 277",
+      "url": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=277"
+    },
+    "REG.5": {
+      "title": "Registro de transferencias · Diario Oficial",
+      "locator": "PDF p. 5",
+      "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2025/08/23/44232/01/2689474.pdf#page=5"
+    },
+    "F03.22": {
+      "title": "Encuesta UC 2026",
+      "locator": "PDF p. 22",
+      "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=22"
+    },
+    "CGR.439": {
+      "title": "Contraloría, informe 439/2022 · extracto reproducido",
+      "locator": "Conclusiones",
+      "url": "https://vlex.cl/vid/informe-final-439-2022-939777216"
+    },
+    "F26.139": {
+      "title": "Estudio de financiamiento de Protección Especializada",
+      "locator": "PDF p. 139",
+      "url": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=139"
+    },
+    "COMOV.8": {
+      "title": "Informe de sostenibilidad financiera · CoMov",
+      "locator": "PDF p. 8",
+      "url": "https://comunidad-org.cl/wp-content/uploads/2025/01/20241202-Informe-instrumento-sostenibilidad-financiera-1.pdf#page=8"
+    },
+    "COMOV.18": {
+      "title": "Informe de sostenibilidad financiera · CoMov",
+      "locator": "PDF p. 18",
+      "url": "https://comunidad-org.cl/wp-content/uploads/2025/01/20241202-Informe-instrumento-sostenibilidad-financiera-1.pdf#page=18"
+    },
+    "F03.32": {
+      "title": "Encuesta UC 2026",
+      "locator": "PDF p. 32",
+      "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=32"
+    },
+    "F28.31": {
+      "title": "Diagnóstico de necesidades de fortalecimiento",
+      "locator": "PDF p. 31",
+      "url": "https://accionsolidaria.cl/wp-content/uploads/2023/11/1694698216517.pdf#page=31"
+    },
+    "CONF.2024": {
+      "title": "Fundación Para la Confianza · FECU 2024",
+      "locator": "Mensaje de dirección",
+      "url": "https://www.paralaconfianza.org/transparencia/fecu-2024/"
+    },
+    "F03.34": {
+      "title": "Encuesta UC 2026",
+      "locator": "PDF p. 34",
+      "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=34"
+    },
+    "F03.35": {
+      "title": "Encuesta UC 2026",
+      "locator": "PDF p. 35",
+      "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=35"
+    },
+    "F03.36": {
+      "title": "Encuesta UC 2026",
+      "locator": "PDF p. 36",
+      "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=36"
+    },
+    "F26.140": {
+      "title": "Estudio de financiamiento de Protección Especializada",
+      "locator": "PDF p. 140",
+      "url": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=140"
+    },
+    "F26.161": {
+      "title": "Estudio de financiamiento de Protección Especializada",
+      "locator": "PDF p. 161",
+      "url": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=161"
+    },
+    "UNI.50": {
+      "title": "Evaluación del Servicio · UNICEF",
+      "locator": "PDF p. 50",
+      "url": "https://www.unicef.org/chile/media/13916/file/Evaluaci%C3%B3n_SNPE_Informe%20final.pdf.pdf#page=50"
+    },
+    "F10.4": {
+      "title": "Informe FECU Social 2024",
+      "locator": "PDF p. 4",
+      "url": "https://comunidad-org.cl/wp-content/uploads/2026/06/Informe-FECU-Social-2024.pdf#page=4"
+    },
+    "PEG.32": {
+      "title": "Programa Excelencia en Gestión 2024 · COS",
+      "locator": "PDF p. 32",
+      "url": "https://comunidad-org.cl/wp-content/uploads/2025/09/REPORTE_PEG_2024_II.pdf#page=32"
+    },
+    "F10.14": {
+      "title": "Informe FECU Social 2024",
+      "locator": "PDF p. 14",
+      "url": "https://comunidad-org.cl/wp-content/uploads/2026/06/Informe-FECU-Social-2024.pdf#page=14"
+    },
+    "F10.15": {
+      "title": "Informe FECU Social 2024",
+      "locator": "PDF p. 15",
+      "url": "https://comunidad-org.cl/wp-content/uploads/2026/06/Informe-FECU-Social-2024.pdf#page=15"
+    },
+    "F10.34": {
+      "title": "Informe FECU Social 2024",
+      "locator": "PDF p. 34",
+      "url": "https://comunidad-org.cl/wp-content/uploads/2026/06/Informe-FECU-Social-2024.pdf#page=34"
+    },
+    "F10.2": {
+      "title": "Informe FECU Social 2024",
+      "locator": "PDF p. 2",
+      "url": "https://comunidad-org.cl/wp-content/uploads/2026/06/Informe-FECU-Social-2024.pdf#page=2"
+    },
+    "FECU.WEB": {
+      "title": "Herramienta FECU Social · COS",
+      "locator": "Descripción de la herramienta",
+      "url": "https://comunidad-org.cl/fecu-social/"
+    },
+    "UNI.35": {
+      "title": "Evaluación del Servicio · UNICEF",
+      "locator": "PDF p. 35",
+      "url": "https://www.unicef.org/chile/media/13916/file/Evaluaci%C3%B3n_SNPE_Informe%20final.pdf.pdf#page=35"
+    },
+    "F26.158": {
+      "title": "Estudio de financiamiento de Protección Especializada",
+      "locator": "PDF p. 158",
+      "url": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=158"
+    },
+    "SNPE.DCE": {
+      "title": "Consultas y respuestas de licitación DCE",
+      "locator": "Consultas 55–56",
+      "url": "https://www.servicioproteccion.gob.cl/601/articles-5042_recurso_7.pdf?ts=1793275104"
+    },
+    "IFO.8": {
+      "title": "IFO 2025 · Fundación Trascender",
+      "locator": "Informe enlazado, p. 8",
+      "url": "https://fundaciontrascender.cl/estudio-revela-desafios-clave-para-la-sostenibilidad-de-las-organizaciones-sociales-en-chile/"
+    },
+    "IFO.11": {
+      "title": "IFO 2025 · Fundación Trascender",
+      "locator": "Informe enlazado, p. 11",
+      "url": "https://fundaciontrascender.cl/estudio-revela-desafios-clave-para-la-sostenibilidad-de-las-organizaciones-sociales-en-chile/"
+    },
+    "COMOV.16": {
+      "title": "Informe de sostenibilidad financiera · CoMov",
+      "locator": "PDF p. 16",
+      "url": "https://comunidad-org.cl/wp-content/uploads/2025/01/20241202-Informe-instrumento-sostenibilidad-financiera-1.pdf#page=16"
+    },
+    "PVM.BASES": {
+      "title": "Para Vivir Mejor 2025",
+      "locator": "Bases y calendario",
+      "url": "https://www.midesof.gob.cl/sociedad-civil/fondos-concursables/fondos-concursables/fondos-para-vivir-mejor-2025/"
+    },
+    "PVM.ACTA": {
+      "title": "Acta de evaluación · Acción Social",
+      "locator": "PDF p. 1",
+      "url": "https://www.midesof.gob.cl/wp-content/uploads/2026/01/0131-ANX-16-52-1.pdf#page=1"
+    },
+    "SENT.CIERRE": {
+      "title": "Fundación Sentido",
+      "locator": "Carta de cierre",
+      "url": "https://nuevo.fundacionsentido.cl/carta-de-margarita-guzman-presidenta-de-fundacion-sentido/"
+    },
+    "NEO.PAUSA": {
+      "title": "Neo Inclusión",
+      "locator": "Comunicado sobre el taller",
+      "url": "https://es.linkedin.com/posts/nexoinclusivo_un-bello-proyecto-de-fundaci%C3%B3n-neo-inclusi%C3%B3n-activity-7199477338558918658-RYOj"
+    },
+    "CULT.2025": {
+      "title": "Corporación Cultiva · FECU 2025",
+      "locator": "Estado de actividades, PDF p. 20",
+      "url": "https://www.cultiva.cl/wp-content/uploads/2026/08/FECU_corporacion-cultiva_2025-1.pdf#page=20"
+    }
+  },
+  "deferred": {
+    "P11": "La capacidad de evaluación de resultados se describe cualitativamente. P28 ofrece un primer contraste de capacidad con un episodio observable.",
+    "P14": "La estimación hipotética de meses de reserva se conserva como pista para P13. Falta una interrupción observada atribuible.",
+    "P15": "La convocatoria no realizada prueba exposición a una pérdida de oportunidad. Falta saber si produjo una brecha de ingreso. Puede aportar contraste para P13.",
+    "P17": "La exclusión de gastos agrupa rubros con efectos diferentes. Se acota el piloto de convenios para comparar continuidad, pago y rendición.",
+    "P18": "La toma de razón aplica a un hito y una exposición específicos. Se conserva como posible contraste; el piloto de convenios sigue con P02/P16/P20.",
+    "P19": "El importe de la garantía y el abandono o desistimiento atribuible son observaciones distintas. Se reserva como barrera de entrada para un recorte de postulantes.",
+    "P21": "Reabrir una rendición previamente aprobada es otro episodio. Puede contrastar carga administrativa de P20, sin agregar ambos ítems.",
+    "P22": "La exposición relevante es el uso efectivo de SISREC. La base disponible de convenios no acredita cuántas organizaciones lo usaron.",
+    "P23": "El traspaso es una respuesta a la no renovación y su efecto debe observarse por separado. Puede explicar la continuidad en P02.",
+    "P25": "Dispersión normativa en donaciones y pérdida de ingresos requieren una conexión acreditada. P13 permite buscar primero la brecha efectiva.",
+    "P26": "Los trámites de donantes corresponden a una población elegible más específica. Se difiere hasta medir desembolso o esfuerzo atribuible.",
+    "P30": "La participación en políticas públicas tiene un efecto distinto y el respaldo principal es cualitativo. P46 ofrece una ruta inicial para observar oportunidades perdidas.",
+    "P38": "Ocho entrevistas ayudan a ubicar el mecanismo, con frecuencia y carga no medidas. Se difiere para preservar un caso comparador de reporte, P32.",
+    "P40": "La verificación previa a habilitar el acceso documenta un proceso. La proporción de bloqueos y el estado actual requieren confirmación.",
+    "P41": "El flujo de correcciones señala una causa posible. Se reserva como pista para P32 hasta distinguir correcciones recurrentes y atraso atribuible.",
+    "P43": "La repostulación concurrente puede ser un antecedente de P02. Falta una medida que distinga carga de repostular y riesgo de interrupción.",
+    "P47": "El respaldo principal describe un caso organizacional. Se difiere hasta conseguir evidencia transversal para gobernanza interna.",
+    "P49": "La instalación de programas tiene un momento y una base de gastos propios. Puede contrastar con P16 sin combinar ambos episodios.",
+    "P50": "El saldo pendiente en el cierre financiero ocurre en otra fase. Se conserva como contraste sectorial y se evita atribuirlo a P20.",
+    "P51": "La cuenta única por colaborador describe una restricción de trazabilidad. Su daño requiere recuento de errores o costos atribuibles.",
+    "P52": "La captación de familias de acogida requiere un piloto dentro de FAE. P48 conserva una primera comparación operativa sectorial.",
+    "P53": "La dispersión geográfica requiere un recorte territorial y una base de traslados. Se difiere hasta poder medir tiempo y cobertura.",
+    "P54": "La base es de menciones. Se conserva como pista para P13 o P46 si aparecen datos por organización y resultados observables."
+  },
+  "proposedBatch": [
+    "P14",
+    "P11",
+    "P47",
+    "P26",
+    "P54"
+  ],
+  "closures": {
+    "P13": {
+      "title": "Ingresos inestables",
+      "date": "2026-11-20",
+      "limits": "El puesto de criticidad sigue por determinar. La frecuencia de episodios, el daño poblacional y la urgencia comparable quedaron sin estimación.",
+      "fundaciones": {
+        "findings": [
+          {
+            "title": "Consecuencias sobre equipos y servicios",
+            "finding": "Para la Confianza atribuyó a la quiebra de un aliado un recorte de unas 30 a 10 personas. Sentido cerró sus viviendas de transición tras el vencimiento de sus principales aportes privados. Neo Inclusión informó la suspensión temporal de un taller por falta de donaciones.",
+            "references": [
+              "CONF.2024",
+              "SENT.CIERRE",
+              "NEO.PAUSA"
+            ]
+          },
+          {
+            "title": "Alcance en la muestra UC",
+            "finding": "Entre 2024 y 2025, 37% reportó una caída de donaciones y 31% una caída de ingresos propios. La base incluye 255 fundaciones y corporaciones. Las respuestas pueden coincidir y la encuesta no publica una tasa exclusiva de fundaciones para estos ítems.",
+            "references": [
+              "F03.34"
+            ]
+          }
+        ]
+      },
+      "tercer_sector": {
+        "findings": [
+          {
+            "title": "Caída de ingresos en la muestra CoMov",
+            "finding": "El 47% reportó una caída real de ingresos entre 2021 y 2023. En el estudio participaron voluntariamente 86 organizaciones de la sociedad civil. La base exacta del ítem queda sin confirmar.",
+            "references": [
+              "COMOV.18"
+            ]
+          },
+          {
+            "title": "Contraste en una corporación",
+            "finding": "En Corporación Cultiva, las donaciones privadas bajaron 38,6% y los ingresos operacionales totales subieron 9,6% nominal entre 2024 y 2025. Aumentaron los ingresos por proyectos privados.",
+            "references": [
+              "CULT.2025"
+            ]
+          },
+          {
+            "title": "Consecuencias documentadas en fundaciones",
+            "finding": "Los casos de reducción de equipo, cierre de viviendas y pausa de un taller corresponden al estrato de fundaciones. El alcance de esos efectos en otras figuras jurídicas queda sin estimación.",
+            "references": [
+              "CONF.2024",
+              "SENT.CIERRE",
+              "NEO.PAUSA"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "criticalityIndex": {
+    "version": "0.1",
+    "weights": {
+      "I": 35,
+      "F": 25,
+      "A": 25,
+      "U": 15
+    },
+    "anchors": {
+      "I": "100 × proporción de servicios o actividades planificadas perdidas, mediana en organizaciones afectadas.",
+      "F": "25 × mediana de episodios por organización afectada en 12 meses.",
+      "A": "100 × proporción de organizaciones expuestas que reportan el episodio.",
+      "U": "100 × (1 − días de margen para evitar el daño / 90), con la mediana entre casos comparables."
+    },
+    "scores": {
+      "P13": {
+        "components": {
+          "I": null,
+          "F": null,
+          "A": 37,
+          "U": null
+        },
+        "population": "Muestra intencional mixta de 255 fundaciones y corporaciones · encuesta UC 2026.",
+        "finding": "El 37% declaró una caída en los ingresos por donaciones entre 2024 y 2025. Es la aproximación de alcance para este corte.",
+        "limits": "El valor es una referencia de la muestra mixta. Fundaciones y Tercer sector aún carecen de puntaje propio. La comparabilidad del índice sigue por determinar.",
+        "references": ["F03.34"]
+      }
+    }
+  }
+}

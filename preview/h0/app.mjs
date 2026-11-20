@@ -1,3 +1,4 @@
+import {h2Render} from "/preview/h0/h2-view.mjs";
 import {problemProfiles,sectorRelationOverrides} from "/preview/h0/problem-profiles.mjs";
 import {findingNotes,foundationFindingNotes} from "/preview/h0/problem-reading.mjs";
 import {mfDefaults,mfParse,mfUrl,mfVisible,mfCsv,mfRender,mfSourceShortcut} from "/preview/h0/methods-view.mjs";
@@ -9,7 +10,7 @@ import {
 
 const sections=[
 {id:"problemas",n:"01",name:"Problemas detectados",sub:"Qué dolores encontramos",desc:"Explora las fichas y sus respaldos sin confundir cobertura documental con frecuencia.",status:"Explorar evidencia",symbol:"↗"},
-{id:"criticidad",n:"02",name:"Ranking de criticidad",sub:"Cuáles importan más",desc:"Contrastar gravedad, alcance y urgencia con criterios verificables y vacíos visibles.",status:"Análisis en desarrollo",symbol:"↗"},
+{id:"criticidad",n:"02",name:"Criticidad",sub:"Qué sabemos sobre la gravedad",desc:"Compara evidencias de impacto, recurrencia, alcance y urgencia.",status:"Comparar evidencia",symbol:"↗"},
 {id:"abordabilidad",n:"03",name:"Abordabilidad",sub:"Qué podemos resolver",desc:"Conectar los problemas con causas, tareas y capacidad real de intervención.",status:"Análisis en desarrollo",symbol:"↗"},
 {id:"oportunidades",n:"04",name:"Oportunidades con IA",sub:"Qué soluciones vale la pena probar",desc:"Explorar alternativas tecnológicas, impacto potencial y viabilidad comercial.",status:"Análisis en desarrollo",symbol:"↗"}];
 const classes=[
@@ -45,6 +46,7 @@ const relationLevels=[
 const isFoundation=()=>state.scope==="fundaciones";
 let data=null,state=null,drawerOrigin=null,loading=false,h1Data=null,topicFilter="todas",drawerLayer=null;
 let methodsData=null,methodsContract=null,methodsFilters=mfDefaults(),linksById;
+let h2Contract=null,h2Evidence=null;
 const isMethods=()=>location.pathname==="/metodos";
 const root=document.getElementById("content"),scopeSelect=document.getElementById("scope-top");
 const esc=v=>String(v??"").replace(/[&<>"']/g,x=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[x]));
@@ -109,13 +111,12 @@ function problems(view){
  const intro=focus?"El mapa resume el catálogo completo de 31 problemas. Al explorar las fichas, esta vista pone primero la evidencia sobre fundaciones, luego los resultados de muestras mixtas y al final las pistas de contexto. Dentro de cada ficha se explica qué aporta cada fuente y qué se puede decir sobre fundaciones a partir de sus hallazgos.":"Esta vista recorre los 31 problemas del catálogo. Cada hallazgo conserva la población de la fuente que lo documenta.";
  return primaryNav()+'<div class="interior wrap"><div class="page-top"><div><div class="stage-label">01 / Problemas detectados</div><h1>Explora los problemas documentados.</h1><p class="page-intro">Las fichas de los problemas están más abajo, en <a class="h1-results-link" href="#fichas-problemas">Explorar fichas de problemas</a>. Selecciona un tema en el mapa o usa los filtros de búsqueda y evidencia para cambiar qué fichas aparecen en el listado.</p></div><a href="/" data-go="inicio" class="outline-btn">← Volver a portada</a></div>'+
   '<div class="callout"><div><strong>'+ (focus?"Qué cambia en Fundaciones":"Cómo leer la vista Tercer sector")+'</strong><p>'+esc(intro)+'</p></div></div>'+evidenceBands(view)+h1Overview(h1Data,state.scope,topicFilter,esc,methodsHref())+
-  '<div class="h1-results-title"><h2 id="fichas-problemas">Explorar fichas de problemas</h2><p>'+(focus?"Las fichas se agrupan por el respaldo más específico disponible sobre fundaciones y se ordenan alfabéticamente dentro de cada grupo.":"Las fichas se ordenan alfabéticamente por título.")+' El orden facilita la búsqueda. La criticidad se evaluará en una etapa posterior.</p></div>'+tools()+
+  '<div class="h1-results-title"><h2 id="fichas-problemas">Explorar fichas de problemas</h2><p>'+(focus?"Las fichas se agrupan por el respaldo más específico disponible sobre fundaciones y se ordenan alfabéticamente dentro de cada grupo.":"Las fichas se ordenan alfabéticamente por título.")+' El orden facilita la búsqueda. Consulta la evidencia de criticidad en la siguiente sección.</p></div>'+tools()+
   '<div class="result-meta"><span id="result-count" aria-live="polite">'+fnum(resultCount)+' de '+h1Data.counts.problems+' problemas visibles'+(activeTopic?' · '+esc(activeTopic.name):"")+'</span></div>'+
   (resultCount?results:'<div class="empty"><h3>No hay coincidencias con estos filtros.</h3><button type="button" class="small-btn" data-reset>Restablecer filtros</button></div>')+
-  '<div class="forward"><div><small>Próxima etapa de análisis</small><strong>02 · Ranking de criticidad</strong></div><a href="'+esc(linkTo("criticidad"))+'" data-go="criticidad">Continuar →</a></div></div>';
+  '<div class="forward"><div><small>Próxima etapa de análisis</small><strong>02 · Criticidad</strong></div><a href="'+esc(linkTo("criticidad"))+'" data-go="criticidad">Continuar →</a></div></div>';
 }
 const pendingCopy={
- criticidad:{number:"02",title:"¿Cuáles son los problemas más críticos?",lead:"Separaremos los problemas mejor documentados de los potencialmente más graves, sin convertir cantidad de fuentes en gravedad.",points:["Criterios de impacto, urgencia y alcance","Evidencia comparable y contraevidencia","Incertidumbre y razón de cada selección"],next:"abordabilidad",nextLabel:"03 · Abordabilidad"},
  abordabilidad:{number:"03",title:"¿Qué problemas podemos abordar?",lead:"La intervención se analizará a nivel de tareas concretas, distinguiendo las causas estructurales y las condiciones de factibilidad.",points:["Problema → causa → tarea concreta","Capacidad de intervención, riesgos y datos","Alternativas con IA y sin IA"],next:"oportunidades",nextLabel:"04 · Oportunidades con IA"},
  oportunidades:{number:"04",title:"¿Qué oportunidades con IA valen la pena?",lead:"Partiremos de tareas abordables para comparar beneficios potenciales, alternativas convencionales y posteriormente la viabilidad comercial.",points:["Hipótesis de solución vinculadas a problemas","Impacto potencial y baseline sin IA","Potencial de herramienta pagada: investigación pendiente"],next:"problemas",nextLabel:"01 · Problemas detectados"}
 };
@@ -173,7 +174,15 @@ function render({scroll=false}={}){
  if(!data||!state)return;
  const view=construirVista(data,state);
  scopeSelect.value=state.scope;
- const html=isMethods()?primaryNav()+mfRender(methodsData,methodsContract,methodsFilters,state.scope,esc,id=>construirEnlace({...state,section:"problemas",problemId:id},data)):state.section==="inicio"?hero()+cards():state.section==="problemas"?problems(view):pending();
+ const problemHref=id=>construirEnlace({...state,section:"problemas",problemId:id},data);
+ let html;
+ if(isMethods())html=primaryNav()+mfRender(methodsData,methodsContract,methodsFilters,state.scope,esc,problemHref);
+ else if(state.section==="criticidad")html=primaryNav()+h2Render(h2Contract,h2Evidence,methodsData,state.scope,{
+  problem:problemHref,map:linkTo("problemas"),methods:methodsHref()+"#metodo-criticidad"
+ },esc);
+ else if(state.section==="inicio")html=hero()+cards();
+ else if(state.section==="problemas")html=problems(view);
+ else html=pending();
  root.innerHTML=html+(isMethods()?"":drawer(view));
  setBusy(false);
  const isDrawer=!isMethods()&&!!view.selectedProblem&&state.section==="problemas";
@@ -213,9 +222,20 @@ function methodsExport(){
  setTimeout(()=>URL.revokeObjectURL(url),500);
 }
 
+async function optionalJson(url){
+ try{
+  const response=await fetch(url,{cache:"no-store"});
+  return response.ok?await response.json():null;
+ }catch{return null;}
+}
 async function init(){
  try{
-  const [response,h1Response,mfResponse,mcResponse]=await Promise.all([fetch("/analisis/px-r1-2b-attribution-31p-147links-v1.json",{cache:"no-store"}),fetch("/preview/h0/h1-data.json",{cache:"no-store"}),fetch("/analisis/mf1-banco-26-fuentes-v1.json",{cache:"no-store"}),fetch("/analisis/mf1-metodos-contrato-HM-v1.json",{cache:"no-store"})]);
+  const [response,h1Response,mfResponse,mcResponse,criticidad,evidence]=await Promise.all([fetch("/analisis/px-r1-2b-attribution-31p-147links-v1.json",{cache:"no-store"}),fetch("/preview/h0/h1-data.json",{cache:"no-store"}),fetch("/analisis/mf1-banco-26-fuentes-v1.json",{cache:"no-store"}),fetch("/analisis/mf1-metodos-contrato-HM-v1.json",{cache:"no-store"}),
+   optionalJson("/analisis/h-2-1-criticidad-por-universo-v1.json"),optionalJson("/preview/h0/h2-evidence.json")]);
+  if(criticidad?.problemas?.length===31&&Object.keys(evidence?.pilot??{}).length===8&&Object.keys(evidence?.deferred??{}).length===23){
+   h2Contract=criticidad;
+   h2Evidence=evidence;
+  }
   if(!response.ok||!h1Response.ok)throw new Error("Error HTTP: catálogo "+response.status+"; H-1 "+h1Response.status);
   [data,h1Data]=await Promise.all([response.json(),h1Response.json()]);
   linksById=new Map(data.links.map(link=>[link.link_id,link]));
@@ -246,6 +266,12 @@ document.addEventListener("click",event=>{
   if(p){event.preventDefault();navigate({...state,section:"problemas",problemId:p.dataset.mfProblem},{scroll:true});return;}
   const ret=event.target.closest("[data-mf-return]");
   if(ret){event.preventDefault();const dest=methodsFilters.volver;if(dest){history.pushState({},"",dest);state=leerEnlace(location.href,data);render({scroll:true});}return;}
+ }
+ const h2Problem=event.target.closest("[data-h2-problem]");
+ if(h2Problem&&!event.ctrlKey&&!event.metaKey&&!event.shiftKey&&!event.altKey){
+  event.preventDefault();
+  navigate({...state,section:"problemas",problemId:h2Problem.dataset.h2Problem},{scroll:true});
+  return;
  }
  const go=event.target.closest("[data-go]");
  if(go){
@@ -291,7 +317,7 @@ document.addEventListener("change",event=>{
  if(isMethods()&&event.target.hasAttribute("data-mf-filter")){navigateMethods({...methodsFilters,[event.target.dataset.mfFilter]:event.target.value,fuente:""},{replace:true});return;}
  if(event.target.id==="scope-top"){
   if(isMethods()){state=cambiarUniverso(state,event.target.value,data);navigateMethods(methodsFilters,{replace:true});}
-  else navigate(cambiarUniverso(state,event.target.value,data),{scroll:false});
+  else navigate(cambiarUniverso(state,event.target.value,data),{scroll:state.section==="criticidad"});
   return;
  }
  if(event.target.id==="layer-select"){navigate({...state,layer:event.target.value},{replace:true,scroll:false});return;}
