@@ -19,21 +19,19 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
   await page.goto(BASE,{waitUntil:"networkidle"});
   await page.locator(".stage-card").first().waitFor();
   assert.equal(await page.locator(".stage-card").count(),4);
-  assert.equal(await page.locator(".brand-symbol").count(),1);
-  assert.equal(await page.locator(".anniversary-mark").count(),1);
-  assert.match(await page.locator(".brand-wordmark").innerText(),/SIMÓN DE\s*CIRENE/);
-  assert.match(await page.locator(".brand-wordmark").innerText(),/Sin afecto no hay efectos/);
-  assert.match(await page.locator(".anniversary-mark").innerText(),/30\s*AÑOS/);
+  const headerLogo=page.getByRole("img",{name:/Simón de Cirene.*30 años/});
+  assert.equal(await headerLogo.count(),1);
+  assert.equal((await page.locator(".brand").textContent()).trim(),"");
   const brand=await page.evaluate(()=>{
    const root=getComputedStyle(document.documentElement);
-   const logo=document.querySelector(".brand-symbol");
+   const logo=document.querySelector(".brand-logo");
    return {
     font:getComputedStyle(document.querySelector("h1")).fontFamily,
     background:getComputedStyle(document.body).backgroundColor,
     colorBlue:root.getPropertyValue("--sdc-blue").trim(),
     colorOrange:root.getPropertyValue("--sdc-orange").trim(),
     colorCream:root.getPropertyValue("--sdc-cream").trim(),
-    iconLoaded:logo.complete&&logo.naturalWidth>0&&logo.naturalHeight>0,
+    iconLoaded:logo.complete&&logo.naturalWidth===2048&&logo.naturalHeight===605,
     logoSrc:logo.getAttribute("src"),
     footerBar:getComputedStyle(document.querySelector(".site-footer")).backgroundImage,
    };
@@ -43,8 +41,8 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
   assert.equal(brand.colorBlue.toUpperCase(),"#418FDE");
   assert.equal(brand.colorOrange.toUpperCase(),"#FF9E19");
   assert.equal(brand.colorCream.toUpperCase(),"#FFF2E1");
-  assert.equal(brand.iconLoaded,true,"El símbolo del PPT debe cargarse");
-  assert.match(brand.logoSrc,/sdc-symbol-2026\.svg/);
+  assert.equal(brand.iconLoaded,true,"El PNG original del PPT debe cargarse");
+  assert.match(brand.logoSrc,/sdc-logo-30-anos-2026\.png/);
   assert.match(brand.footerBar,/linear-gradient/);
   mkdirSync(OUT,{recursive:true});
   await page.screenshot({path:path.join(OUT,"H0-marca-SdC-portada-desktop.png"),fullPage:true});
@@ -63,7 +61,7 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
     innerWidth,scrollWidth:document.documentElement.scrollWidth,
     brandWidth:document.querySelector(".brand").getBoundingClientRect().width,
     selectRight:document.querySelector("#scope-top").getBoundingClientRect().right,
-    logoVisible:document.querySelector(".brand-symbol").getBoundingClientRect().width>0,
+    logoVisible:document.querySelector(".brand-logo").getBoundingClientRect().width>0,
    }));
    assert.ok(dims.scrollWidth<=dims.innerWidth+1,"Overflow a "+width+"px: "+JSON.stringify(dims));
    assert.ok(dims.logoVisible,"Logo debe verse en móvil "+width);
@@ -73,6 +71,6 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
   await page.locator(".subnav a[data-go=inicio]").click();
   assert.equal(await page.locator(".stage-card").count(),4);
   assert.deepEqual(errors,[],"Errores JS en navegador");
-  console.log("H-0 BRAND PASS: paleta hex original, Montserrat, símbolo plantilla, aniversario, 4 secciones, 31 problemas, panel y móvil 390/320, consola limpia");
+  console.log("H-0 BRAND PASS: paleta hex original, Montserrat, logo y sello originales de la plantilla, 4 secciones, 31 problemas, panel y móvil 390/320, consola limpia");
  } finally {if(browser)await browser.close();server.kill("SIGTERM");}
 })().catch(e=>{console.error("H-0 BRAND FAIL",e);process.exitCode=1;});

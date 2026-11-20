@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 import {readFileSync} from "node:fs";
 import assert from "node:assert/strict";
+import {findingNotes,foundationFindingNotes} from "../preview/h0/problem-reading.mjs";
+import {problemProfiles,sectorRelationOverrides} from "../preview/h0/problem-profiles.mjs";
 const read=p=>JSON.parse(readFileSync(p,"utf8"));
 const x=read("preview/h0/h1-data.json");
 const t=read("analisis/px-r2-2a-taxonomia-31p-7temas-v1.json");
@@ -45,4 +47,34 @@ test("conteos fuente y origen del segmento",()=>assert.ok(x.segments.every(z=>z.
 test("sólo PDF y links públicos en los cruces",()=>assert.ok(x.crosses.every(z=>!z.referenceUrl||/^https?:\/\//.test(z.referenceUrl))));
 test("marca y selector se mantienen",()=>{const h=readFileSync("preview/h0/index.html","utf8");assert.ok(h.includes("brand-sdc.css")&&h.includes("scope-top")&&h.includes("h1.css"))});
 test("módulo de datos H1 cargado",()=>assert.ok(readFileSync("preview/h0/app.mjs","utf8").includes("h1-data.json")));
+test("lecturas editoriales para los 245 hallazgos",()=>{
+  assert.deepEqual(new Set(Object.keys(findingNotes)),new Set(a.findings.map(f=>f.finding_id)));
+  assert.ok(Object.values(findingNotes).every(note=>typeof note==="string"&&note.trim().length>0));
+  assert.ok(Object.keys(foundationFindingNotes).every(id=>Object.hasOwn(findingNotes,id)));
+  assert.ok(a.findings.filter(f=>f.population_evidence_class==="F_EXCLUSIVA_EXPLICITA")
+    .every(f=>Object.hasOwn(foundationFindingNotes,f.finding_id)));
+});
+test("las 31 fichas tienen introducción, ámbito, trabajo, evidencia y alcance",()=>{
+  assert.deepEqual(new Set(Object.keys(problemProfiles)),new Set(x.problems.map(p=>p.id)));
+  for(const profile of Object.values(problemProfiles)){
+    assert.deepEqual(Object.keys(profile),["summary","audience","impact","evidence","limit"]);
+    assert.ok(Object.values(profile).every(value=>typeof value==="string"&&value.trim().length>0));
+  }
+});
+test("los 147 vínculos reproducen la relación v0.6 en ambos universos",()=>{
+  const archive=readFileSync("versiones/v0.6/index.html","utf8");
+  const legacy=JSON.parse(archive.match(/<script type="application\/json" id="data">([\s\S]*?)<\/script>/)[1]);
+  const byId=new Map(legacy.problems.map(p=>[p.id,p]));
+  const byTitle=new Map(legacy.sector.problems.map(p=>[p.title,p]));
+  const usedOverrides=new Set();
+  for(const link of a.links){
+    const foundation=byId.get(link.problem_id);
+    const sector=byTitle.get(foundation.title);
+    assert.ok([1,0.5,0].includes(link.original_relation_marker));
+    assert.equal(link.original_relation_marker,foundation.backing.find(b=>b.source===link.source_id).relation);
+    assert.equal(sectorRelationOverrides[link.link_id]??link.original_relation_marker,sector.backing.find(b=>b.source===link.source_id).relation);
+    if(Object.hasOwn(sectorRelationOverrides,link.link_id))usedOverrides.add(link.link_id);
+  }
+  assert.deepEqual(usedOverrides,new Set(Object.keys(sectorRelationOverrides)));
+});
 console.log("H-1 DATA PASS "+pass+" / "+pass+" invariantes");

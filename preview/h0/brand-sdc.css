@@ -45,7 +45,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible {
   outline:3px solid var(--sdc-orange);
   outline-offset:3px;
 }
-/* Identidad de encabezado: símbolo original del PPT vectorizado, nombre y sello aniversario */
+/* Encabezado con el logo y el sello aniversario de la plantilla. */
 .site-header {
   background:rgba(255,242,225,.98);
   border-top:4px solid var(--sdc-orange);
@@ -54,51 +54,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible {
   gap:24px;
   min-height:87px;
 }
-.brand { min-width:310px; display:flex; gap:12px; align-items:center; }
-.brand-symbol { display:block; width:38px; height:41px; object-fit:contain; flex-shrink:0; }
-.brand-wordmark { padding-top:1px; min-width:124px; }
-.brand .brand-wordmark strong {
-  font-size:12px;
-  font-family:var(--sdc-montserrat);
-  font-weight:800;
-  letter-spacing:.035em;
-  line-height:1.1;
-  color:#666;
-  display:block;
-}
-.brand .brand-wordmark small {
-  display:block;
-  font-size:7.5px;
-  margin-top:3px;
-  color:#737373;
-  font-weight:700;
-  letter-spacing:0;
-  text-transform:none;
-}
-.anniversary-mark {
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  min-width:54px;
-  padding:0 0 0 12px;
-  margin-left:2px;
-  border-left:1px solid #CBB9A6;
-  line-height:1;
-}
-.brand .anniversary-mark strong {
-  font-size:26px;
-  font-weight:900;
-  letter-spacing:-.085em;
-  background:linear-gradient(145deg,#FFD08C 0%,#FF9E19 72%);
-  background-clip:text;
-  -webkit-background-clip:text;
-  color:transparent;
-  display:block;
-  line-height:.95;
-}
-.anniversary-mark span { color:var(--sdc-blue);font-size:9px;font-weight:900;letter-spacing:.018em;margin-top:1px; }
-.brand .anniversary-mark small { color:#A98A5E;font-size:5.8px;letter-spacing:.12em;margin-top:4px;white-space:nowrap; }
+.brand { min-width:0; flex-shrink:0; }
+.brand-logo { display:block; width:224px; height:auto; }
 .top-tag {
   border-left:1px solid #D7C3AC;
   font-weight:700;
@@ -255,7 +212,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible {
 .row-more {color:#267FC4;}
 .empty {border-color:#BECCE1;}
 .empty h3 {color:var(--sdc-blue-deep);}
-.drawer-backdrop {background:rgba(39,48,63,.61);}
+.drawer::backdrop {background:rgba(39,48,63,.61);}
 .drawer {background:var(--sdc-cream-soft);}
 .drawer h2 {color:var(--sdc-blue);}
 .drawer .hint {color:#666;}
@@ -284,20 +241,11 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible {
 .loading {color:#575757;}
 /* Logo, selector y espacios ajustados sin sacrificar legibilidad móvil */
 @media(max-width:900px) {
-  .brand {min-width:270px;}
   .site-header {gap:10px;}
 }
 @media(max-width:600px) {
   .site-header {height:77px;min-height:77px;padding:0 14px;gap:6px;}
-  .brand {min-width:0;gap:7px;}
-  .brand-symbol {width:28px;height:31px;}
-  .brand-wordmark {min-width:79px;}
-  .brand .brand-wordmark strong {font-size:9px;line-height:1.12;}
-  .brand .brand-wordmark small {font-size:5.9px;line-height:1.2;letter-spacing:0;}
-  .anniversary-mark {min-width:37px;padding-left:6px;margin-left:0;}
-  .brand .anniversary-mark strong {font-size:20px;}
-  .anniversary-mark span {font-size:6.8px;}
-  .brand .anniversary-mark small {font-size:4.8px;}
+  .brand-logo {width:clamp(148px,42vw,180px);}
   .scope-wrap select {min-width:111px;max-width:125px;font-size:.72rem;border-radius:7px;padding:8px 14px 8px 7px;}
   .home-hero:before {left:12px;top:55px;width:4px;height:105px;}
   .home-hero {padding-left:8px;}
@@ -308,9 +256,5 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible {
   .site-footer {padding-bottom:29px;}
 }
 @media(max-width:355px) {
-  .brand .brand-wordmark small {display:none;}
-  .brand-wordmark {min-width:68px;}
-  .brand .brand-wordmark strong {font-size:8.5px;}
-  .anniversary-mark {min-width:31px;padding-left:4px;}
   .scope-wrap select {max-width:110px;min-width:103px;font-size:.67rem;}
 }
