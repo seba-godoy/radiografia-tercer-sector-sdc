@@ -78,3 +78,11 @@ test('main render exposes 31 scores, 124 reasons, caveats, and an escape boundar
  const evil=structuredClone(data);evil.rows[0].title='<img src=x onerror=alert(1)>';
  assert.ok(!renderRanking31(evil,bank,links,esc).includes('<img src=x'));
 });
+
+test('previously collected P13 studies resolve without enlarging the frozen bank',()=>{
+ const prior=read('analisis/p13-aplicacion-v02.json').studies;
+ assert.deepEqual(data.existingP13Studies,prior);
+ for(const c of data.rows.find(x=>x.id==='P13').components)
+  for(const id of c.supplementalRefs||[]) assert.ok(prior.some(s=>s.id===id));
+ assert.equal(bank.findings.length,245);
+});

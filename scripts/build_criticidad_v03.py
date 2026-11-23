@@ -268,8 +268,13 @@ for r in rows:
  r['judgmentRankRange']=[min([r['rank']]+[v['rank'] for v in variations]),max([r['rank']]+[v['rank'] for v in variations])]
  # A deletion review changes evidential support, not measured severity; no ND=0 or invented replacement.
  r['originRemoval']=[dict(origin=o,componentsLosingAllCitedSupport=[c['key'] for c in r['components'] if all(findings[x]['root_credited']==o for x in c['refs'])]) for o in r['attributedOrigins']]
+p13=next(r for r in rows if r['id']=='P13')
+p13['components'][0]['supplementalRefs']=['UC24','COMOV']
+p13['components'][1]['supplementalRefs']=['UC26','BARO']
+p13['components'][2]['supplementalRefs']=['COMOV','FECU','LOCAL']
+existing_studies=json.loads((APP/'analisis/p13-aplicacion-v02.json').read_text())['studies']
 rows.sort(key=lambda r:(-r['score'],r['id']))
-out=dict(method=method,bank=dict(path='analisis/mf1-banco-26-fuentes-v1.json',sha256=hashlib.sha256(BANK.read_bytes()).hexdigest(),publications=26,problems=31,links=147,claims=245),rows=rows,weightScenarios=scenarios)
+out=dict(method=method,existingP13Studies=existing_studies,bank=dict(path='analisis/mf1-banco-26-fuentes-v1.json',sha256=hashlib.sha256(BANK.read_bytes()).hexdigest(),publications=26,problems=31,links=147,claims=245),rows=rows,weightScenarios=scenarios)
 (APP/'analisis/criticidad-31-v03.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n')
 evidence_path=APP/'preview/h0/h2-evidence.json'
 evidence=json.loads(evidence_path.read_text());evidence['ranking31']=out
@@ -291,6 +296,9 @@ for r in rows:
   for ref in c['refs']:
    x=findings[ref];loc=x['locators'][0]
    md+=[f"  - {ref}: {x['claim_text']} [{loc['label']}]({loc['url']}) · origen: {x['root_credited']}."]
+ for sid in sorted({x for c in r['components'] for x in c.get('supplementalRefs',[])}):
+  study=next(x for x in existing_studies if x['id']==sid)
+  md += [f"- Estudio previamente recopilado {sid}: {study['finding']} {study['population']} [{study['locator']}]({study['url']})."]
  md+=['',r['limit'],f"Sensibilidad a pesos: puntos {r['weightScoreRange']}, puestos {r['weightRankRange']}. Cambio de un nivel inferido a la vez: puntos {r['judgmentScoreRange']}, puestos {r['judgmentRankRange']}.",'']
 md+=['## Reproducibilidad',f"Banco SHA-256: {out['bank']['sha256']}. Los 245 hallazgos de las 26 publicaciones permanecen accesibles por problema y en Métodos y fuentes. Sólo los hallazgos citados sustentan cada juicio; los demás se conservan como contexto/contraevidencia, sin bono de puntuación."]
 (APP/'analisis/CRITICIDAD_31_v0.3.md').write_text('\n'.join(md)+'\n')

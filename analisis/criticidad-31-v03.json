@@ -76,6 +76,116 @@
       }
     ]
   },
+  "existingP13Studies": [
+    {
+      "id": "UC26",
+      "family": "SEA-DIRECCIONES",
+      "title": "UC · Encuesta de directores/as 2026",
+      "population": "255 fundaciones y corporaciones · muestreo intencional; reservas N=219; panel N=130.",
+      "period": "Cambios de ingresos 2024–2025; levantamiento julio–agosto de 2026.",
+      "finding": "Caída de donaciones: 37%; ingresos propios: 31%. Los dos ítems comparten N=255. El panel no se suma a la muestra total.",
+      "role": "Indicador principal de alcance del proxy. Reservas y percepciones son contrastes, no urgencia efectiva ni episodios repetidos.",
+      "locator": "PDF p.13 ficha; p.34 / lámina 33 ingresos; p.35 reservas; p.36 equipos.",
+      "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=34",
+      "verification": "PDF original y gráfico cotejados en esta iteración."
+    },
+    {
+      "id": "COMOV",
+      "family": "COMOV-FONDOAFONDO-2024",
+      "title": "CoMov / FondoAFondo · Sostenibilidad financiera",
+      "population": "86 OSC voluntarias; base efectiva por indicador no explicitada.",
+      "period": "Resultados 2021–2023; cuerpo metodológico indica aplicación mayo–julio 2024.",
+      "finding": "Para 2023 frente a 2022, 20% reporta caída de fondos privados y 16% de donaciones de personas. El informe también registra 47% con caída real total 2021–2023 y 39,5% sin cobertura de costos de 2023.",
+      "role": "Corrobora variación privada y fragilidad con otro instrumento. No se promedia con UC: cambian ventana, fuente y selección.",
+      "locator": "pp.8,17–18,21–23; preguntas 42–50 y 60–63.",
+      "url": "https://comunidad-org.cl/wp-content/uploads/2025/01/20241202-Informe-instrumento-sostenibilidad-financiera-1.pdf#page=22",
+      "verification": "PDF y gráfico cotejados. El resumen dice 2023 y el cuerpo 2024 para aplicación: discrepancia conservada; la tabla financiera no publica su N efectivo."
+    },
+    {
+      "id": "BARO",
+      "family": "CEFIS-BAROMETRO-2024-SII",
+      "title": "CEFIS · Segundo Barómetro de Filantropía",
+      "population": "Registros SII: cohorte receptora de 2018; N no explicitado en tabla 9. La encuesta a 157 donatarias es otra base.",
+      "period": "Seguimiento administrativo 2018–2023.",
+      "finding": "Tabla 9: 50,7% recibió donaciones declaradas todos los años; 11,5% aparece en ambos extremos con huecos intermedios; 24,2% aparece después de 2018 pero no en 2023; 13,6% solo en 2018.",
+      "role": "Nuevo contraste temporal: 49,3% no tiene recepción registrada continua. No mide magnitud de ingresos, cese de actividad ni daño; omite flujos fuera de los mecanismos cubiertos.",
+      "locator": "pp.11–14 metodología; p.31 tabla 9.",
+      "url": "https://uai.cdn7pm.net/documentos/segundo-barometro-de-la-filantropia-en-chile-tendencias-e-indice-de-desarrollo-2018-2023.pdf#page=31",
+      "verification": "Tabla original y metodología cotejadas. El texto contiguo dice 13,8% donde la tabla dice 13,6%; se usa la tabla, que suma 100%, y se registra la discrepancia."
+    },
+    {
+      "id": "FECU",
+      "family": "COS-FECU-2024",
+      "title": "COS · Informe FECU Social 2024",
+      "population": "245 OSC reportantes en 2024; 281 en 2023, composición no idéntica acreditada.",
+      "period": "Ejercicio 2024 y contraste agregado 2023.",
+      "finding": "49,8% reporta solo ingresos operacionales privados y 45,7% financiamiento mixto: 95,5% tiene algún componente privado.",
+      "role": "Dimensiona exposición financiera. No convierte 95,5% en afectadas ni mide recurrencia: comparar agregados de muestras distintas no es seguir organizaciones.",
+      "locator": "pp.25–27; composición por organización en p.26.",
+      "url": "https://comunidad-org.cl/wp-content/uploads/2026/06/Informe-FECU-Social-2024.pdf#page=26",
+      "verification": "Página oficial actual y original público previamente descargado cotejados; web no reabrió PDF por tamaño."
+    },
+    {
+      "id": "IFO",
+      "family": "IFO-TRASCENDER-2025",
+      "title": "Fundación Trascender · IFO 2025",
+      "population": "110 OSC diagnosticadas; tipos jurídicos mezclados.",
+      "period": "Diagnóstico 2025, publicado en 2026.",
+      "finding": "Finanzas sostenibles se ubica alrededor de 2,02/5; las brechas financieras acompañan capacidades misionales más fuertes.",
+      "role": "Contraste de capacidad organizacional. No se transforma en criticidad. F11 y F12 son una base; gLOCAL no añade otra muestra independiente acreditada.",
+      "locator": "Informe PDF pp.6–8 y12; presentación del mismo estudio.",
+      "url": "https://fundaciontrascender.cl/estudio-revela-desafios-clave-para-la-sostenibilidad-de-las-organizaciones-sociales-en-chile/",
+      "verification": "Publicación primaria y original local cotejados. gLOCAL informa 120 diagnósticos acumulados, 70 en 2025; no equiparar automáticamente con N=110 ni sumarlos."
+    },
+    {
+      "id": "LOCAL",
+      "family": "CEFIS-FILANTROPIA-LOCAL-2022",
+      "title": "CEFIS · Filantropía local",
+      "population": "105 OSC que buscan donaciones locales, base específica del gráfico 7.",
+      "period": "Estudio publicado en 2022.",
+      "finding": "40,0% de ese grupo depende de donaciones para más de la mitad de sus recursos.",
+      "role": "Exposición y mecanismo de dependencia. Su selección y variable difieren de caída de ingresos; no es prevalencia ni recurrencia de P13.",
+      "locator": "p.23, gráfico 7.",
+      "url": "https://uai.cdn7pm.net/documentos/filantropia-local-desafios-y-buenas-practicas-en-chile.pdf#page=23",
+      "verification": "Original público y página de CEFIS cotejados; se conserva N del ítem, sin sustituirlo por el de otras preguntas."
+    },
+    {
+      "id": "UC24",
+      "family": "SEA-DIRECCIONES",
+      "title": "UC · Encuesta post Caso Convenios 2024",
+      "population": "140 OSC; resultados mezclan financiamiento público y privado.",
+      "period": "Caída de ingresos 2022–2023, publicación 2024.",
+      "finding": "La publicación oficial informa 30% del total con pérdida de atención a beneficiarios por menores ingresos; la mitad de las afectadas frenó programas nuevos o redujo cobertura.",
+      "role": "Evidencia agregada de consecuencias en un perímetro más amplio. No se atribuye todo a ingresos privados ni se convierten organizaciones afectadas en fracción de servicios perdidos.",
+      "locator": "Nota oficial: consecuencias para beneficiarios y programas.",
+      "url": "https://politicaspublicas.uc.cl/noticia/encuesta-de-sociedad-en-accion-revela-crisis-en-la-relacion-entre-el-estado-y-las-organizaciones-de-la-sociedad-civil-tras-el-caso-convenios/",
+      "verification": "Nota primaria cotejada; enlace al PPT original devuelve 404. No se deriva una distribución de severidad desde la nota."
+    },
+    {
+      "id": "UC25",
+      "family": "SEA-DIRECCIONES",
+      "title": "UC · Encuesta de fundaciones y corporaciones 2025",
+      "population": "268 directivos/as de fundaciones y corporaciones.",
+      "period": "Levantamiento 2025; referencia general de contexto y prioridades.",
+      "finding": "41% priorizó financiamiento estable y predecible como primera condición para la misión.",
+      "role": "Antecedente de relevancia percibida. No equivale a incidencia ni a repetición individual; se conserva en la familia UC.",
+      "locator": "p.21.",
+      "url": "https://politicaspublicas.uc.cl/content/uploads/2025/08/sociedad-en-accion_presentacion-1.pdf#page=21",
+      "verification": "Página primaria y extracción original local cotejadas; reapertura web del PDF limitada por tamaño."
+    },
+    {
+      "id": "SCM",
+      "family": "FSCM-FORTALECIMIENTO-2023",
+      "title": "San Carlos de Maipo y aliados · Necesidades de fortalecimiento",
+      "population": "154 fundaciones y corporaciones únicas; 162 respuestas depuradas tomando la primera por entidad.",
+      "period": "Enero–marzo 2023 para demanda.",
+      "finding": "26% priorizó formación en búsqueda de fondos.",
+      "role": "Demanda declarada de capacidades. No se interpreta como tasa de organizaciones con ingresos inestables. Los estudios que cita en la introducción conservan sus propios orígenes.",
+      "locator": "pp.7 y22.",
+      "url": "https://accionsolidaria.cl/wp-content/uploads/2023/11/1694698216517.pdf#page=22",
+      "verification": "Método y resultado cotejados en el PDF público."
+    }
+  ],
   "bank": {
     "path": "analisis/mf1-banco-26-fuentes-v1.json",
     "sha256": "d88998401d7322556306facc0da8da6f4f1f568318c0f269c9ac6adae9498804",
@@ -713,6 +823,10 @@
           "refs": [
             "P13__F03__02",
             "P13__F09__01"
+          ],
+          "supplementalRefs": [
+            "UC24",
+            "COMOV"
           ]
         },
         {
@@ -724,6 +838,10 @@
           "refs": [
             "P13__F03__04",
             "P13__F18__01"
+          ],
+          "supplementalRefs": [
+            "UC26",
+            "BARO"
           ]
         },
         {
@@ -736,6 +854,11 @@
             "P13__F03__02",
             "P13__F11__01",
             "P13__F22__01"
+          ],
+          "supplementalRefs": [
+            "COMOV",
+            "FECU",
+            "LOCAL"
           ]
         },
         {
