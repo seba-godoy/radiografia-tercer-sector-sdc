@@ -1,3 +1,4 @@
+import {mountRankingWeights} from "/preview/h0/ranking31-weights.mjs";
 import {h2Render} from "/preview/h0/h2-view.mjs";
 import {problemProfiles,sectorRelationOverrides} from "/preview/h0/problem-profiles.mjs";
 import {findingNotes,foundationFindingNotes} from "/preview/h0/problem-reading.mjs";
@@ -184,6 +185,7 @@ function render({scroll=false}={}){
  else if(state.section==="problemas")html=problems(view);
  else html=pending();
  root.innerHTML=html+(isMethods()?"":drawer(view));
+ if(!isMethods()&&state.section==="criticidad"&&h2Evidence?.ranking31)mountRankingWeights(root,h2Evidence.ranking31);
  setBusy(false);
  const isDrawer=!isMethods()&&!!view.selectedProblem&&state.section==="problemas";
  document.body.style.overflow=isDrawer?"hidden":"";

@@ -3,6 +3,7 @@ import {test} from 'node:test';
 import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {renderRanking31} from '../preview/h0/ranking31-view.mjs';
+import {validateWeights,rankingWithWeights,scenarioExport} from '../preview/h0/ranking31-weights.mjs';
 const read=p=>JSON.parse(readFileSync(p,'utf8'));
 const data=read('analisis/criticidad-31-v03.json');
 const bank=read('analisis/mf1-banco-26-fuentes-v1.json');
@@ -85,4 +86,42 @@ test('previously collected P13 studies resolve without enlarging the frozen bank
  for(const c of data.rows.find(x=>x.id==='P13').components)
   for(const id of c.supplementalRefs||[]) assert.ok(prior.some(s=>s.id===id));
  assert.equal(bank.findings.length,245);
+});
+
+test('editable weights reject missing, invalid and non-100 totals without imputing zeros',()=>{
+ for(const weights of [{},{I:'',F:25,A:25,U:50},{I:-1,F:26,A:25,U:50},
+  {I:101,F:0,A:0,U:0},{I:NaN,F:25,A:25,U:25},{I:Infinity,F:0,A:0,U:0},
+  {I:true,F:25,A:25,U:49},{I:0,F:0,A:0,U:0},{I:35,F:25,A:25,U:14}]) {
+  assert.equal(validateWeights(weights).valid,false);
+  assert.throws(()=>rankingWithWeights(data.rows,weights),RangeError);
+ }
+ assert.equal(validateWeights({I:'33.3',F:'33.3',A:'33.4',U:'0'}).valid,true);
+ assert.equal(validateWeights({I:0,F:0,A:0,U:100}).valid,true);
+});
+
+test('reweighting agrees with the original, obeys extreme weights, and preserves evidence',()=>{
+ const before=JSON.stringify(data);
+ assert.deepEqual(rankingWithWeights(data.rows,data.method.weights),data.rows);
+ const impact=rankingWithWeights(data.rows,{I:100,F:0,A:0,U:0});
+ for(const r of impact){
+  const level=r.components.find(c=>c.key==='I').level;
+  assert.equal(r.score,Math.round(1+99*(level-1)/4));
+  assert.equal(r.rank,1+impact.filter(x=>x.score>r.score).length);
+ }
+ assert.equal(impact.find(x=>x.id==='P02').score,100);
+ assert.equal(impact.find(x=>x.id==='P52').rank,1);
+ assert.equal(rankingWithWeights(data.rows,{I:50,F:20,A:20,U:10}).find(x=>x.id==='P20').score,65);
+ assert.equal(JSON.stringify(data),before);
+});
+
+test('scenario export states the applied weights and keeps original results separate',()=>{
+ const weights={I:0,F:100,A:0,U:0};
+ const out=scenarioExport(data,weights);
+ assert.deepEqual(out.scenario.weights,weights);
+ assert.equal(out.rows.length,31);
+ const p17=out.rows.find(x=>x.id==='P17');
+ assert.equal(p17.score,100);assert.equal(p17.baseScore,81);
+ assert.equal(p17.rank,1);assert.equal(p17.baseRank,2);
+ assert.deepEqual(out.baselineMethod.weights,data.method.weights);
+ assert.deepEqual(p17.components,data.rows.find(x=>x.id==='P17').components);
 });

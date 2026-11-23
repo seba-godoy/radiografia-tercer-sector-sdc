@@ -380,3 +380,22 @@
 .rank31-history { margin-top:3rem; }
 .rank31-bank { margin:1rem 0; }
 .rank31 a { overflow-wrap:anywhere; }
+
+/* Editable criticality weights */
+.rank31-weights { margin:1.25rem 0; padding:1.25rem; background:#f4f7f3; border:1px solid #ccd7c8; border-radius:16px; }
+.rank31-weights fieldset { margin:0; padding:0; border:0; min-width:0; }
+.rank31-weights legend { font-size:1.25rem; font-weight:700; padding:0; }
+.rank31-weight-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:1rem; margin:1.25rem 0; }
+.rank31-weight-grid label { display:flex; flex-direction:column; gap:.65rem; font-weight:600; }
+.rank31-weight-input { display:flex; align-items:center; gap:.5rem; }
+.rank31-weight-input input { box-sizing:border-box; width:100%; min-width:0; min-height:48px; border:1px solid #82917c; border-radius:8px; padding:.65rem; background:#fff; color:#202820; font:inherit; font-size:1.15rem; }
+.rank31-weight-input input:focus-visible { outline:3px solid #415d34; outline-offset:2px; }
+.rank31-weights[data-valid="false"] [data-rank31-weight-status] { color:#8b2415; font-weight:600; }
+.rank31-weight-actions { display:flex; flex-wrap:wrap; gap:.7rem; }
+.rank31-weight-actions button { min-height:44px; padding:.6rem .9rem; border:1px solid #536b47; border-radius:8px; background:#fff; color:#233b19; cursor:pointer; font:inherit; }
+.rank31-weight-actions button:focus-visible { outline:3px solid #415d34; outline-offset:2px; }
+.rank31-weight-actions button:disabled { opacity:.5; cursor:not-allowed; }
+.rank31-weight-note { font-size:.9rem; }
+[data-rank31-applied] { font-weight:600; }
+@media(max-width:700px) { .rank31-weight-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .rank31-weights { padding:1rem; } }
+@media(max-width:360px) { .rank31-weight-grid { grid-template-columns:1fr; } }

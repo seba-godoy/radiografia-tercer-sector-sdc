@@ -1,3 +1,9 @@
+## 2026-11-23 · Pesos editables de criticidad
+
+- Añade cuatro campos porcentuales I/F/A/U al comienzo del ranking: recalcula puntajes, puestos, empates y fichas al sumar 100%.
+- Valida límites y campos vacíos; mantiene el último ranking válido si la combinación está incompleta. Restauración de pesos originales y exportación CSV/JSON del escenario actual.
+- Conserva el escenario al navegar entre universos y fuentes durante la visita. Datos, evidencia y confianza originales no se modifican.
+
 ## 2026-11-23 · Criticidad documental v0.3
 
 - Puntúa los 31 problemas con 124 juicios trazables; I35/F25/A25/U15, escala 1–5 convertida a 1–100. Confianza separada y empates conservados.
