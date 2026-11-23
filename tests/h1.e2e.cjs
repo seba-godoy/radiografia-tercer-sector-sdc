@@ -138,7 +138,7 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
     assert.equal(await dialog.count(),0);
     passed.push("390px sin overflow, P20/P48 móvil y fichas navegables");
     await page.locator(".subnav a[data-go=criticidad]").click();
-    assert.match(await page.locator("#h2-pilot-title").innerText(),/Comparación de criticidad/i);
+    assert.match(await page.locator("#ranking31-title").innerText(),/Ranking documental provisional/i);
     assert.equal(await page.locator("#scope-top").inputValue(),"fundaciones");
     passed.push("comparación de criticidad y selector persistente");
     assert.deepEqual(errors,[],"sin errores en consola/recursos H1");
