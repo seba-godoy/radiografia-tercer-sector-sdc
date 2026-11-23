@@ -1,3 +1,4 @@
+import {opRender,mountOp} from "/preview/h0/op-view.mjs";
 import {abRender,mountAb} from "/preview/h0/ab-view.mjs";
 import {mountRankingWeights} from "/preview/h0/ranking31-weights.mjs";
 import {h2Render} from "/preview/h0/h2-view.mjs";
@@ -14,7 +15,7 @@ const sections=[
 {id:"problemas",n:"01",name:"Problemas detectados",sub:"Qué dolores encontramos",desc:"Explora las fichas y sus respaldos sin confundir cobertura documental con frecuencia.",status:"Explorar evidencia",symbol:"↗"},
 {id:"criticidad",n:"02",name:"Criticidad",sub:"Qué sabemos sobre la gravedad",desc:"Compara evidencias de impacto, recurrencia, alcance y urgencia.",status:"Comparar evidencia",symbol:"↗"},
 {id:"abordabilidad",n:"03",name:"Abordabilidad",sub:"Qué podemos resolver",desc:"Compara intervenciones de SdC con control, preparación, condiciones y fuentes.",status:"Explorar abordabilidad",symbol:"↗"},
-{id:"oportunidades",n:"04",name:"Oportunidades con IA",sub:"Qué soluciones vale la pena probar",desc:"Explorar alternativas tecnológicas, impacto potencial y viabilidad comercial.",status:"Análisis en desarrollo",symbol:"↗"}];
+{id:"oportunidades",n:"04",name:"Oportunidades",sub:"Qué herramienta gratuita vale la pena probar",desc:"Compara siete herramientas, impacto potencial, alternativas existentes y gratuidad sostenible.",status:"Explorar oportunidades",symbol:"↗"}];
 const classes=[
 {id:"todas",title:"Toda la evidencia",desc:"Incluye hallazgos de todas las poblaciones y tipos de fuente."},
 {id:"directa",title:"Fundaciones explícitas",desc:"La afirmación se refiere a fundaciones de forma explícita. Puede describir un grupo, un testimonio o el modo en que se hizo un estudio."},
@@ -48,7 +49,7 @@ const relationLevels=[
 const isFoundation=()=>state.scope==="fundaciones";
 let data=null,state=null,drawerOrigin=null,loading=false,h1Data=null,topicFilter="todas",drawerLayer=null;
 let methodsData=null,methodsContract=null,methodsFilters=mfDefaults(),linksById;
-let h2Contract=null,h2Evidence=null,abData=null;
+let h2Contract=null,h2Evidence=null,abData=null,opData=null;
 const isMethods=()=>location.pathname==="/metodos";
 const root=document.getElementById("content"),scopeSelect=document.getElementById("scope-top");
 const esc=v=>String(v??"").replace(/[&<>"']/g,x=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[x]));
@@ -183,12 +184,14 @@ function render({scroll=false}={}){
   problem:problemHref,map:linkTo("problemas"),methods:methodsHref()+"#metodo-criticidad"
  },esc);
  else if(state.section==="abordabilidad")html=primaryNav()+abRender(abData,methodsData,h2Evidence?.ranking31,state.scope,{problem:problemHref,criticality:linkTo("criticidad"),methods:methodsHref()+"#metodo-abordabilidad"},esc);
+ else if(state.section==="oportunidades")html=primaryNav()+opRender(opData,methodsData,h2Evidence?.ranking31,abData,state.scope,{problem:problemHref,methods:methodsHref()+"#metodo-impacto_ia"},esc);
  else if(state.section==="inicio")html=hero()+cards();
  else if(state.section==="problemas")html=problems(view);
  else html=pending();
  root.innerHTML=html+(isMethods()?"":drawer(view));
  if(!isMethods()&&state.section==="criticidad"&&h2Evidence?.ranking31)mountRankingWeights(root,h2Evidence.ranking31);
  if(!isMethods()&&state.section==="abordabilidad"&&abData&&h2Evidence?.ranking31)mountAb(root,abData,h2Evidence.ranking31);
+ if(!isMethods()&&state.section==="oportunidades"&&opData&&abData&&h2Evidence?.ranking31)mountOp(root,opData,h2Evidence.ranking31,abData);
  setBusy(false);
  const isDrawer=!isMethods()&&!!view.selectedProblem&&state.section==="problemas";
  document.body.style.overflow=isDrawer?"hidden":"";
@@ -235,9 +238,10 @@ async function optionalJson(url){
 }
 async function init(){
  try{
-  const [response,h1Response,mfResponse,mcResponse,criticidad,evidence,abordabilidad]=await Promise.all([fetch("/analisis/px-r1-2b-attribution-31p-147links-v1.json",{cache:"no-store"}),fetch("/preview/h0/h1-data.json",{cache:"no-store"}),fetch("/analisis/mf1-banco-26-fuentes-v1.json",{cache:"no-store"}),fetch("/analisis/mf1-metodos-contrato-HM-v1.json",{cache:"no-store"}),
-   optionalJson("/analisis/h-2-1-criticidad-por-universo-v1.json"),optionalJson("/preview/h0/h2-evidence.json"),optionalJson("/analisis/abordabilidad-31-v1.json")]);
+  const [response,h1Response,mfResponse,mcResponse,criticidad,evidence,abordabilidad,oportunidades]=await Promise.all([fetch("/analisis/px-r1-2b-attribution-31p-147links-v1.json",{cache:"no-store"}),fetch("/preview/h0/h1-data.json",{cache:"no-store"}),fetch("/analisis/mf1-banco-26-fuentes-v1.json",{cache:"no-store"}),fetch("/analisis/mf1-metodos-contrato-HM-v1.json",{cache:"no-store"}),
+   optionalJson("/analisis/h-2-1-criticidad-por-universo-v1.json"),optionalJson("/preview/h0/h2-evidence.json"),optionalJson("/analisis/abordabilidad-31-v1.json"),optionalJson("/analisis/oportunidades-7-v1.json")]);
   if(abordabilidad?.rows?.length===31)abData=abordabilidad;
+  if(oportunidades?.rows?.length===7&&oportunidades?.triage?.length===31)opData=oportunidades;
   if(criticidad?.problemas?.length===31&&Object.keys(evidence?.pilot??{}).length===8&&Object.keys(evidence?.deferred??{}).length===23){
    h2Contract=criticidad;
    h2Evidence=evidence;

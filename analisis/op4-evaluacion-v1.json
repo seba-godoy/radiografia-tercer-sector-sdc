@@ -1,0 +1,2225 @@
+{
+  "version": "1.0",
+  "rows": [
+    {
+      "id": "OP01",
+      "title": "Acuerdos al día",
+      "primary": "P47",
+      "user": "Secretaría o coordinación que prepara reuniones de directorio.",
+      "task": "Pasar acuerdos y avances a una carpeta de reunión con responsables, plazos y evidencia.",
+      "features": [
+        "Registro de acuerdos con responsable, plazo, estado y evidencia enlazada",
+        "Vista de pendientes y carpeta imprimible de reunión",
+        "Exportación CSV y guía para actualizar sin rehacer el registro"
+      ],
+      "inputs": "Acuerdos aprobados y avances agregados, sin datos de beneficiarios. Responsable de actualización por confirmar.",
+      "result": "Carpeta trazable de acuerdos pendientes y avances para revisión humana.",
+      "outside": "No asegura compromiso, cumplimiento de acuerdos ni resultados estratégicos del directorio.",
+      "current": "Actas, correos o archivos dispersos, únicamente como escenario de diseño: no se observó el flujo real de un equipo.",
+      "alternative": "Plantilla de Sheets o tablero Trello Free con responsables y fechas; adaptar antes de crear otro gestor.",
+      "gap": "Brecha hipotética de puesta en marcha y carpeta orientada a directorio; funciones generales ya están cubiertas.",
+      "ai": "Extraer borradores de acuerdos desde actas anonimizadas, con cita de pasaje y aprobación humana; no interpretar decisiones como definitivas.",
+      "delta": "Valor adicional de IA desconocido. Un tablero no la necesita; mantenerla fuera del núcleo inicial.",
+      "mode": "Adaptar primero",
+      "feasibility": "Acotada, condicionada a responsable y datos. No requiere backend; colaboración en el archivo de cada organización.",
+      "benchmark": [
+        "OP-B1",
+        "OP-B4"
+      ],
+      "levels": {
+        "M": 3,
+        "A": 3,
+        "F": 4,
+        "D": 3
+      },
+      "problems": [
+        "P47"
+      ],
+      "secondary": [],
+      "confidence": "Baja",
+      "confidenceReason": "Mecanismo documentado; no se ha probado eficacia, adopción, alcance ni costo laboral del producto concreto.",
+      "claimIds": [
+        "P47__F16__01",
+        "P47__F16__02",
+        "P47__F18__01",
+        "P47__F20__02"
+      ],
+      "origins": [
+        "ALLISON-KAYE-PLANEACION-2005-ED2",
+        "CEFIS-SAN-CARLOS-GOBERNANZA-2019",
+        "MINNESOTA-COUNCIL-NONPROFITS-PRACTICES-2014"
+      ],
+      "observed": {
+        "netMinutesSaved": null,
+        "activeOrganizations": null,
+        "taskExecutions": null,
+        "qualityDelta": null,
+        "aiIncrement": null,
+        "status": "Por medir; no se imputan ceros ni ahorro supuesto"
+      },
+      "naturalMetric": {
+        "primary": "Minutos netos por carpeta de reunión con el mismo conjunto de acuerdos y calidad.",
+        "quality": "Proporción de acuerdos con responsable/plazo correctos; omisiones y estados atribuidos sin respaldo.",
+        "formula": "Ahorro neto = ejecuciones × (tiempo total actual − tiempo total herramienta) − formación/actualización adicional no incluida por ejecución. Preparación, uso, revisión y corrección se incluyen en cada tiempo total.",
+        "aggregate": "Sólo agregar por organizaciones activas únicas, evitando usuarios y beneficios duplicados.",
+        "socialImpact": "No se ha medido efecto sobre beneficiarios finales."
+      },
+      "costAssumptions": {
+        "developmentHoursRange": [
+          24,
+          48
+        ],
+        "maintenanceHoursMonthlyRange": [
+          2,
+          4
+        ],
+        "supportMinutesPerActiveOrgMonth": 10,
+        "optionalAiRequestsPerOrgMonth": 8,
+        "basis": "Supuestos de planificación propios, no cotización, benchmark de productividad ni presupuesto aprobado. No incluyen integraciones, autenticación o base de datos central."
+      },
+      "score": 55,
+      "rank": 1,
+      "components": [
+        {
+          "key": "M",
+          "level": 3,
+          "basis": "Inferencia documental y supuesto explícito del producto; efecto no observado",
+          "reason": "Un registro único podría reducir conciliación y retrabajo frente a dispersión; ganancia moderada, sin minutos observados y con alternativa gratuita ya disponible.",
+          "claimRefs": [
+            "P47__F16__01",
+            "P47__F16__02",
+            "P47__F18__01",
+            "P47__F20__02"
+          ],
+          "benchmarkRefs": [
+            "OP-B1",
+            "OP-B4"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 3,
+          "basis": "Inferencia documental y supuesto explícito del producto; efecto no observado",
+          "reason": "Campos de acuerdo, responsable y fecha son transferibles entre varios perfiles con directorio; alcance relativo condicionado a disponer de registro y responsable, no N de una encuesta.",
+          "claimRefs": [
+            "P47__F16__01",
+            "P47__F16__02",
+            "P47__F18__01",
+            "P47__F20__02"
+          ],
+          "benchmarkRefs": [
+            "OP-B1",
+            "OP-B4"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 4,
+          "basis": "Inferencia documental y supuesto explícito del producto; efecto no observado",
+          "reason": "Se supone revisión mensual o por reunión en el horizonte de doce meses; guía de gobernanza apoya seguimiento periódico, no doce usos observados.",
+          "claimRefs": [
+            "P47__F16__01",
+            "P47__F16__02",
+            "P47__F18__01",
+            "P47__F20__02"
+          ],
+          "benchmarkRefs": [
+            "OP-B1",
+            "OP-B4"
+          ]
+        },
+        {
+          "key": "D",
+          "level": 3,
+          "basis": "Inferencia documental y supuesto explícito del producto; efecto no observado",
+          "reason": "La rutina puede persistir si se asigna actualización y revisión; conservar archivos no demuestra por sí solo capacidad duradera.",
+          "claimRefs": [
+            "P47__F16__01",
+            "P47__F16__02",
+            "P47__F18__01",
+            "P47__F20__02"
+          ],
+          "benchmarkRefs": [
+            "OP-B1",
+            "OP-B4"
+          ]
+        }
+      ],
+      "weightScoreRange": [
+        54,
+        57
+      ],
+      "weightRankRange": [
+        1,
+        1
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "M",
+          "delta": -1,
+          "score": 46,
+          "rank": 3
+        },
+        {
+          "key": "M",
+          "delta": 1,
+          "score": 65,
+          "rank": 1
+        },
+        {
+          "key": "A",
+          "delta": -1,
+          "score": 49,
+          "rank": 2
+        },
+        {
+          "key": "A",
+          "delta": 1,
+          "score": 62,
+          "rank": 1
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 51,
+          "rank": 2
+        },
+        {
+          "key": "F",
+          "delta": 1,
+          "score": 60,
+          "rank": 1
+        },
+        {
+          "key": "D",
+          "delta": -1,
+          "score": 52,
+          "rank": 2
+        },
+        {
+          "key": "D",
+          "delta": 1,
+          "score": 59,
+          "rank": 1
+        }
+      ],
+      "judgmentScoreRange": [
+        46,
+        65
+      ],
+      "judgmentRankRange": [
+        1,
+        3
+      ],
+      "pairedScenarios": {
+        "conservador": {
+          "levels": {
+            "M": 2,
+            "A": 2,
+            "F": 4,
+            "D": 3
+          },
+          "score": 39
+        },
+        "central": {
+          "levels": {
+            "M": 3,
+            "A": 3,
+            "F": 4,
+            "D": 3
+          },
+          "score": 55
+        },
+        "favorable": {
+          "levels": {
+            "M": 4,
+            "A": 4,
+            "F": 4,
+            "D": 3
+          },
+          "score": 72
+        }
+      },
+      "criticality": 57,
+      "addressability": 64,
+      "addressabilityNote": "ASdC del problema/intervención de entrada, con sus supuestos. No es evaluación automática de cualquier producto o arquitectura. Factibilidad específica descrita por separado.",
+      "reviewTrigger": "Revisar puntaje/selección si se observa línea base distinta, alternativa suficiente, carga de datos mayor, adopción menor, errores de calidad o mantenimiento sin responsable."
+    },
+    {
+      "id": "OP03",
+      "title": "Caja visible",
+      "primary": "P13",
+      "user": "Coordinación financiera de una organización que registra aportes y compromisos.",
+      "task": "Construir un flujo mensual diferenciando fondos comprometidos, probables y restringidos, y explorar atrasos.",
+      "features": [
+        "Importación o carga de ingresos y egresos agregados con restricciones",
+        "Escenarios base/atraso y saldo mensual calculado con reglas explícitas",
+        "Alertas de brecha y exportación para revisión; sin recomendación de inversión"
+      ],
+      "inputs": "Saldos, calendario de compromisos y aportes agregados, calidad y disponibilidad por confirmar. Ejemplos sintéticos permiten probar cálculos.",
+      "result": "Brechas de caja visibles bajo supuestos declarados; decisiones siguen a cargo de la organización.",
+      "outside": "No consigue aportes, aumenta reservas ni acelera transferencias. P14 es resistencia declarada a un escenario hipotético, no crisis observada.",
+      "current": "Saldos y compromisos en registros separados como hipótesis. Si ya existe una planilla fiable la ganancia puede ser marginal.",
+      "alternative": "Planilla de flujo de caja en Sheets/Excel con fórmulas revisadas; esa será la comparación mínima.",
+      "gap": "Posible simplificación de carga y visualización de fondos restringidos. Diferenciación frente a planilla aún por medir.",
+      "ai": "Explicar un escenario ya calculado por reglas deterministas; sin inventar cifras o clasificar restricciones sin revisión.",
+      "delta": "Los cálculos no necesitan IA. Sólo añadir explicación si una prueba muestra mejor comprensión sin nuevos errores.",
+      "mode": "Adaptar planilla y probar",
+      "feasibility": "Condicionada a datos y revisión financiera. Más esfuerzo de QA que un tablero; sin conexiones bancarias ni backend inicial.",
+      "benchmark": [
+        "OP-B4"
+      ],
+      "levels": {
+        "M": 3,
+        "A": 3,
+        "F": 4,
+        "D": 3
+      },
+      "problems": [
+        "P13",
+        "P14",
+        "P16",
+        "P17",
+        "P49"
+      ],
+      "secondary": [
+        "P14",
+        "P16",
+        "P17",
+        "P49"
+      ],
+      "confidence": "Baja",
+      "confidenceReason": "Mecanismo documentado; no se ha probado eficacia, adopción, alcance ni costo laboral del producto concreto.",
+      "claimIds": [
+        "P13__F03__02",
+        "P13__F16__01",
+        "P13__F18__01",
+        "P13__F20__02",
+        "P14__F03__01",
+        "P14__F15__01",
+        "P14__F18__01",
+        "P14__F18__02",
+        "P16__F03__01",
+        "P16__F17__02",
+        "P16__F26__01",
+        "P16__F27__02",
+        "P17__F03__01",
+        "P17__F03__02",
+        "P17__F18__01",
+        "P17__F26__01",
+        "P49__F26__01",
+        "P49__F26__02",
+        "P49__F26__03",
+        "P49__F27__01"
+      ],
+      "origins": [
+        "ACEDO-RAMIREZ-2011",
+        "ALLISON-KAYE-PLANEACION-2005-ED2",
+        "CEFIS-SAN-CARLOS-GOBERNANZA-2019",
+        "CGR-INFOSISREC-REGISTRO-2026",
+        "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025",
+        "JOSSEY-BASS-HANDBOOK-NONPROFIT-2016",
+        "MINNESOTA-COUNCIL-NONPROFITS-PRACTICES-2014",
+        "SEA-DIRECCIONES-2026"
+      ],
+      "observed": {
+        "netMinutesSaved": null,
+        "activeOrganizations": null,
+        "taskExecutions": null,
+        "qualityDelta": null,
+        "aiIncrement": null,
+        "status": "Por medir; no se imputan ceros ni ahorro supuesto"
+      },
+      "naturalMetric": {
+        "primary": "Minutos netos para preparar un escenario y días de anticipación de brechas correctamente identificadas.",
+        "quality": "Saldos correctos, tratamiento de fondos restringidos y ausencia de alertas equivocadas en casos conocidos.",
+        "formula": "Ahorro neto = ejecuciones × (tiempo total actual − tiempo total herramienta) − formación/actualización adicional no incluida por ejecución. Preparación, uso, revisión y corrección se incluyen en cada tiempo total.",
+        "aggregate": "Sólo agregar por organizaciones activas únicas, evitando usuarios y beneficios duplicados.",
+        "socialImpact": "No se ha medido efecto sobre beneficiarios finales."
+      },
+      "costAssumptions": {
+        "developmentHoursRange": [
+          40,
+          80
+        ],
+        "maintenanceHoursMonthlyRange": [
+          4,
+          8
+        ],
+        "supportMinutesPerActiveOrgMonth": 15,
+        "optionalAiRequestsPerOrgMonth": 8,
+        "basis": "Supuestos de planificación propios, no cotización, benchmark de productividad ni presupuesto aprobado. No incluyen integraciones, autenticación o base de datos central."
+      },
+      "score": 55,
+      "rank": 1,
+      "components": [
+        {
+          "key": "M",
+          "level": 3,
+          "basis": "Inferencia documental y supuesto explícito del producto; efecto no observado",
+          "reason": "Hacer explícitos compromisos y escenarios podría mejorar una decisión operativa, con ganancia moderada de preparación; no se puntúan ingresos nuevos ni probabilidad de supervivencia.",
+          "claimRefs": [
+            "P13__F03__02",
+            "P13__F16__01",
+            "P13__F18__01",
+            "P13__F20__02",
+            "P14__F03__01",
+            "P14__F15__01",
+            "P14__F18__01",
+            "P14__F18__02",
+            "P16__F03__01",
+            "P16__F17__02",
+            "P16__F26__01",
+            "P16__F27__02",
+            "P17__F03__01",
+            "P17__F03__02",
+            "P17__F18__01",
+            "P17__F26__01",
+            "P49__F26__01",
+            "P49__F26__02",
+            "P49__F26__03",
+            "P49__F27__01"
+          ],
+          "benchmarkRefs": [
+            "OP-B4"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 3,
+          "basis": "Inferencia documental y supuesto explícito del producto; efecto no observado",
+          "reason": "Aplica a equipos con registro mínimo de caja y compromisos; transferibilidad a varios perfiles es inferencia, no mercado ni porcentaje de fundaciones.",
+          "claimRefs": [
+            "P13__F03__02",
+            "P13__F16__01",
+            "P13__F18__01",
+            "P13__F20__02",
+            "P14__F03__01",
+            "P14__F15__01",
+            "P14__F18__01",
+            "P14__F18__02",
+            "P16__F03__01",
+            "P16__F17__02",
+            "P16__F26__01",
+            "P16__F27__02",
+            "P17__F03__01",
+            "P17__F03__02",
+            "P17__F18__01",
+            "P17__F26__01",
+            "P49__F26__01",
+            "P49__F26__02",
+            "P49__F26__03",
+            "P49__F27__01"
+          ],
+          "benchmarkRefs": [
+            "OP-B4"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 4,
+          "basis": "Inferencia documental y supuesto explícito del producto; efecto no observado",
+          "reason": "Se supone actualización mensual y ante cambios de aportes. No se toma el 68% hipotético de P14 como frecuencia de uso.",
+          "claimRefs": [
+            "P13__F03__02",
+            "P13__F16__01",
+            "P13__F18__01",
+            "P13__F20__02",
+            "P14__F03__01",
+            "P14__F15__01",
+            "P14__F18__01",
+            "P14__F18__02",
+            "P16__F03__01",
+            "P16__F17__02",
+            "P16__F26__01",
+            "P16__F27__02",
+            "P17__F03__01",
+            "P17__F03__02",
+            "P17__F18__01",
+            "P17__F26__01",
+            "P49__F26__01",
+            "P49__F26__02",
+            "P49__F26__03",
+            "P49__F27__01"
+          ],
+          "benchmarkRefs": [
+            "OP-B4"
+          ]
+        },
+        {
+          "key": "D",
+          "level": 3,
+          "basis": "Inferencia documental y supuesto explícito del producto; efecto no observado",
+          "reason": "Un hábito de actualización puede sostener el proceso durante el horizonte, condicionado a calidad de datos y responsable; no soluciona dependencia financiera permanente.",
+          "claimRefs": [
+            "P13__F03__02",
+            "P13__F16__01",
+            "P13__F18__01",
+            "P13__F20__02",
+            "P14__F03__01",
+            "P14__F15__01",
+            "P14__F18__01",
+            "P14__F18__02",
+            "P16__F03__01",
+            "P16__F17__02",
+            "P16__F26__01",
+            "P16__F27__02",
+            "P17__F03__01",
+            "P17__F03__02",
+            "P17__F18__01",
+            "P17__F26__01",
+            "P49__F26__01",
+            "P49__F26__02",
+            "P49__F26__03",
+            "P49__F27__01"
+          ],
+          "benchmarkRefs": [
+            "OP-B4"
+          ]
+        }
+      ],
+      "weightScoreRange": [
+        54,
+        57
+      ],
+      "weightRankRange": [
+        1,
+        1
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "M",
+          "delta": -1,
+          "score": 46,
+          "rank": 3
+        },
+        {
+          "key": "M",
+          "delta": 1,
+          "score": 65,
+          "rank": 1
+        },
+        {
+          "key": "A",
+          "delta": -1,
+          "score": 49,
+          "rank": 2
+        },
+        {
+          "key": "A",
+          "delta": 1,
+          "score": 62,
+          "rank": 1
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 51,
+          "rank": 2
+        },
+        {
+          "key": "F",
+          "delta": 1,
+          "score": 60,
+          "rank": 1
+        },
+        {
+          "key": "D",
+          "delta": -1,
+          "score": 52,
+          "rank": 2
+        },
+        {
+          "key": "D",
+          "delta": 1,
+          "score": 59,
+          "rank": 1
+        }
+      ],
+      "judgmentScoreRange": [
+        46,
+        65
+      ],
+      "judgmentRankRange": [
+        1,
+        3
+      ],
+      "pairedScenarios": {
+        "conservador": {
+          "levels": {
+            "M": 2,
+            "A": 2,
+            "F": 4,
+            "D": 3
+          },
+          "score": 39
+        },
+        "central": {
+          "levels": {
+            "M": 3,
+            "A": 3,
+            "F": 4,
+            "D": 3
+          },
+          "score": 55
+        },
+        "favorable": {
+          "levels": {
+            "M": 4,
+            "A": 4,
+            "F": 4,
+            "D": 3
+          },
+          "score": 72
+        }
+      },
+      "criticality": 75,
+      "addressability": 35,
+      "addressabilityNote": "ASdC del problema/intervención de entrada, con sus supuestos. No es evaluación automática de cualquier producto o arquitectura. Factibilidad específica descrita por separado.",
+      "reviewTrigger": "Revisar puntaje/selección si se observa línea base distinta, alternativa suficiente, carga de datos mayor, adopción menor, errores de calidad o mantenimiento sin responsable."
+    },
+    {
+      "id": "OP07",
+      "title": "Agenda de vínculos locales",
+      "primary": "P54",
+      "user": "Equipo pequeño que organiza contactos institucionales de posibles aliados.",
+      "task": "Registrar relaciones y próximos pasos para un conjunto de contactos ya autorizado.",
+      "features": [
+        "Registro mínimo de institución, responsable, etapa y próximo paso",
+        "Vista de tareas pendientes y notas de interacción",
+        "Importación/exportación y eliminación de registros bajo control de la organización"
+      ],
+      "inputs": "Contactos institucionales autorizados; sin scraping, enriquecimiento de personas o envíos automáticos.",
+      "result": "Seguimiento ordenado de próximas acciones con aliados.",
+      "outside": "No identifica donantes con certeza, promete conversión ni acredita aumento de aportes.",
+      "current": "Contactos y pendientes dispersos como hipótesis. La fuente F22 no mide un pipeline ni demanda de CRM.",
+      "alternative": "Planilla de seguimiento o CiviCRM si se justifica su instalación/operación; licencia gratuita no elimina mantenimiento.",
+      "gap": "Posible simplificación para equipo pequeño, pero ya existe CRM especializado y la brecha no está validada.",
+      "ai": "Borrador de mensaje a partir de relación y evidencia autorizadas; sin clasificación sensible ni envío autónomo.",
+      "delta": "IA no resuelve falta de tiempo para relacionarse. Beneficio adicional de borradores todavía desconocido.",
+      "mode": "Comparar antes de construir",
+      "feasibility": "Datos de contacto y permisos elevan carga de operación. Mantener archivo local sin servicio central en una prueba inicial.",
+      "benchmark": [
+        "OP-B6",
+        "OP-B4"
+      ],
+      "levels": {
+        "M": 3,
+        "A": 2,
+        "F": 4,
+        "D": 3
+      },
+      "problems": [
+        "P54"
+      ],
+      "secondary": [],
+      "confidence": "Baja",
+      "confidenceReason": "Mecanismo documentado; no se ha probado eficacia, adopción, alcance ni costo laboral del producto concreto.",
+      "claimIds": [
+        "P54__F22__01",
+        "P54__F22__02"
+      ],
+      "origins": [
+        "CEFIS-UAI-FILANTROPIA-LOCAL-2022"
+      ],
+      "observed": {
+        "netMinutesSaved": null,
+        "activeOrganizations": null,
+        "taskExecutions": null,
+        "qualityDelta": null,
+        "aiIncrement": null,
+        "status": "Por medir; no se imputan ceros ni ahorro supuesto"
+      },
+      "naturalMetric": {
+        "primary": "Minutos netos para preparar la lista de próximos pasos, con registro completo.",
+        "quality": "Próximos pasos correctos, contactos no autorizados y registros desactualizados.",
+        "formula": "Ahorro neto = ejecuciones × (tiempo total actual − tiempo total herramienta) − formación/actualización adicional no incluida por ejecución. Preparación, uso, revisión y corrección se incluyen en cada tiempo total.",
+        "aggregate": "Sólo agregar por organizaciones activas únicas, evitando usuarios y beneficios duplicados.",
+        "socialImpact": "No se ha medido efecto sobre beneficiarios finales."
+      },
+      "costAssumptions": {
+        "developmentHoursRange": [
+          32,
+          64
+        ],
+        "maintenanceHoursMonthlyRange": [
+          4,
+          8
+        ],
+        "supportMinutesPerActiveOrgMonth": 15,
+        "optionalAiRequestsPerOrgMonth": 12,
+        "basis": "Supuestos de planificación propios, no cotización, benchmark de productividad ni presupuesto aprobado. No incluyen integraciones, autenticación o base de datos central."
+      },
+      "score": 49,
+      "rank": 3,
+      "components": [
+        {
+          "key": "M",
+          "level": 3,
+          "basis": "Inferencia documental y supuesto explícito del producto; efecto no observado",
+          "reason": "Centralizar próximos pasos podría reducir trabajo de coordinación frente a dispersión. No se puntúan ingresos o conversión de donantes.",
+          "claimRefs": [
+            "P54__F22__01",
+            "P54__F22__02"
+          ],
+          "benchmarkRefs": [
+            "OP-B6",
+            "OP-B4"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 2,
+          "basis": "Inferencia documental y supuesto explícito del producto; efecto no observado",
+          "reason": "Acotada a equipos con contactos institucionales y autorización de uso; las menciones F22 no acreditan organizaciones alcanzables.",
+          "claimRefs": [
+            "P54__F22__01",
+            "P54__F22__02"
+          ],
+          "benchmarkRefs": [
+            "OP-B6",
+            "OP-B4"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 4,
+          "basis": "Inferencia documental y supuesto explícito del producto; efecto no observado",
+          "reason": "Se supone seguimiento mensual o mayor durante campañas; cadencia es un supuesto de diseño y no una observación de la encuesta.",
+          "claimRefs": [
+            "P54__F22__01",
+            "P54__F22__02"
+          ],
+          "benchmarkRefs": [
+            "OP-B6",
+            "OP-B4"
+          ]
+        },
+        {
+          "key": "D",
+          "level": 3,
+          "basis": "Inferencia documental y supuesto explícito del producto; efecto no observado",
+          "reason": "La rutina puede persistir con un responsable y registros actualizados; no se deduce una red de apoyo permanente por conservar contactos.",
+          "claimRefs": [
+            "P54__F22__01",
+            "P54__F22__02"
+          ],
+          "benchmarkRefs": [
+            "OP-B6",
+            "OP-B4"
+          ]
+        }
+      ],
+      "weightScoreRange": [
+        48,
+        51
+      ],
+      "weightRankRange": [
+        3,
+        3
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "M",
+          "delta": -1,
+          "score": 39,
+          "rank": 5
+        },
+        {
+          "key": "M",
+          "delta": 1,
+          "score": 59,
+          "rank": 1
+        },
+        {
+          "key": "A",
+          "delta": -1,
+          "score": 43,
+          "rank": 3
+        },
+        {
+          "key": "A",
+          "delta": 1,
+          "score": 55,
+          "rank": 1
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 44,
+          "rank": 3
+        },
+        {
+          "key": "F",
+          "delta": 1,
+          "score": 54,
+          "rank": 3
+        },
+        {
+          "key": "D",
+          "delta": -1,
+          "score": 46,
+          "rank": 3
+        },
+        {
+          "key": "D",
+          "delta": 1,
+          "score": 53,
+          "rank": 3
+        }
+      ],
+      "judgmentScoreRange": [
+        39,
+        59
+      ],
+      "judgmentRankRange": [
+        1,
+        5
+      ],
+      "pairedScenarios": {
+        "conservador": {
+          "levels": {
+            "M": 2,
+            "A": 1,
+            "F": 4,
+            "D": 3
+          },
+          "score": 33
+        },
+        "central": {
+          "levels": {
+            "M": 3,
+            "A": 2,
+            "F": 4,
+            "D": 3
+          },
+          "score": 49
+        },
+        "favorable": {
+          "levels": {
+            "M": 4,
+            "A": 3,
+            "F": 4,
+            "D": 3
+          },
+          "score": 65
+        }
+      },
+      "criticality": 57,
+      "addressability": 39,
+      "addressabilityNote": "ASdC del problema/intervención de entrada, con sus supuestos. No es evaluación automática de cualquier producto o arquitectura. Factibilidad específica descrita por separado.",
+      "reviewTrigger": "Revisar puntaje/selección si se observa línea base distinta, alternativa suficiente, carga de datos mayor, adopción menor, errores de calidad o mantenimiento sin responsable."
+    },
+    {
+      "id": "OP05",
+      "title": "Comunicación con respaldo",
+      "primary": "P46",
+      "user": "Responsable de difusión sin equipo dedicado de diseño.",
+      "task": "Preparar una pieza y calendario de comunicación usando resultados autorizados y verificables.",
+      "features": [
+        "Ficha de mensaje con público, objetivo y evidencia",
+        "Plantillas y calendario reutilizable",
+        "Checklist de permisos, cifras y coherencia antes de publicar manualmente"
+      ],
+      "inputs": "Resultados públicos/agregados y mensajes aprobados. No historias identificables de beneficiarios sin autorización.",
+      "result": "Pieza coherente con fuentes y calendario de difusión.",
+      "outside": "No aumenta automáticamente alcance, confianza, donaciones ni oportunidades de financiación.",
+      "current": "Preparación manual como hipótesis de trabajo; no se midió el proceso actual.",
+      "alternative": "Plantillas existentes, documentos y Canva; Nonprofits es una opción sujeta a elegibilidad, no un beneficio universal.",
+      "gap": "Curaduría de mensajes y fuentes podría ayudar; un nuevo editor de diseño duplicaría oferta.",
+      "ai": "Borradores de versiones de mensajes con evidencia suministrada; cifras y publicación siempre revisadas.",
+      "delta": "Potencial en redacción por comprobar frente a plantillas; velocidad aislada no basta si aparecen cifras falsas.",
+      "mode": "Adaptar contenidos existentes",
+      "feasibility": "Acotada para kit; acceso a beneficios Nonprofits se verifica por organización. No desarrollar editor propio.",
+      "benchmark": [
+        "OP-B5",
+        "OP-B4"
+      ],
+      "levels": {
+        "M": 2,
+        "A": 3,
+        "F": 4,
+        "D": 2
+      },
+      "problems": [
+        "P46"
+      ],
+      "secondary": [],
+      "confidence": "Baja",
+      "confidenceReason": "Mecanismo documentado; no se ha probado eficacia, adopción, alcance ni costo laboral del producto concreto.",
+      "claimIds": [
+        "P46__F11__01",
+        "P46__F18__01",
+        "P46__F18__02",
+        "P46__F22__01"
+      ],
+      "origins": [
+        "CEFIS-UAI-FILANTROPIA-LOCAL-2022",
+        "IFO-2025-TRASCENDER",
+        "MINNESOTA-COUNCIL-NONPROFITS-PRACTICES-2014"
+      ],
+      "observed": {
+        "netMinutesSaved": null,
+        "activeOrganizations": null,
+        "taskExecutions": null,
+        "qualityDelta": null,
+        "aiIncrement": null,
+        "status": "Por medir; no se imputan ceros ni ahorro supuesto"
+      },
+      "naturalMetric": {
+        "primary": "Minutos netos por pieza aceptada con igual calidad y respaldo.",
+        "quality": "Cifras sin fuente, mensajes engañosos, correcciones y uso indebido de datos personales.",
+        "formula": "Ahorro neto = ejecuciones × (tiempo total actual − tiempo total herramienta) − formación/actualización adicional no incluida por ejecución. Preparación, uso, revisión y corrección se incluyen en cada tiempo total.",
+        "aggregate": "Sólo agregar por organizaciones activas únicas, evitando usuarios y beneficios duplicados.",
+        "socialImpact": "No se ha medido efecto sobre beneficiarios finales."
+      },
+      "costAssumptions": {
+        "developmentHoursRange": [
+          16,
+          32
+        ],
+        "maintenanceHoursMonthlyRange": [
+          4,
+          8
+        ],
+        "supportMinutesPerActiveOrgMonth": 10,
+        "optionalAiRequestsPerOrgMonth": 12,
+        "basis": "Supuestos de planificación propios, no cotización, benchmark de productividad ni presupuesto aprobado. No incluyen integraciones, autenticación o base de datos central."
+      },
+      "score": 42,
+      "rank": 4,
+      "components": [
+        {
+          "key": "M",
+          "level": 2,
+          "basis": "Inferencia documental y supuesto explícito del producto; efecto no observado",
+          "reason": "Las plantillas y editores existentes ya cubren gran parte de la creación. Mejora adicional de preparación sería pequeña y condicionada a contenidos disponibles.",
+          "claimRefs": [
+            "P46__F11__01",
+            "P46__F18__01",
+            "P46__F18__02",
+            "P46__F22__01"
+          ],
+          "benchmarkRefs": [
+            "OP-B5",
+            "OP-B4"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 3,
+          "basis": "Inferencia documental y supuesto explícito del producto; efecto no observado",
+          "reason": "La tarea es transferible a distintos equipos de OSC con resultados aprobados; no presupone elegibilidad universal a Canva Nonprofits.",
+          "claimRefs": [
+            "P46__F11__01",
+            "P46__F18__01",
+            "P46__F18__02",
+            "P46__F22__01"
+          ],
+          "benchmarkRefs": [
+            "OP-B5",
+            "OP-B4"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 4,
+          "basis": "Inferencia documental y supuesto explícito del producto; efecto no observado",
+          "reason": "Se supone una cadencia mensual o más frecuente de piezas; F22 cuenta menciones, no equipos usuarios ni publicaciones mensuales observadas.",
+          "claimRefs": [
+            "P46__F11__01",
+            "P46__F18__01",
+            "P46__F18__02",
+            "P46__F22__01"
+          ],
+          "benchmarkRefs": [
+            "OP-B5",
+            "OP-B4"
+          ]
+        },
+        {
+          "key": "D",
+          "level": 2,
+          "basis": "Inferencia documental y supuesto explícito del producto; efecto no observado",
+          "reason": "El kit puede reutilizarse por campaña; el contenido requiere renovación y no demuestra capacidad permanente.",
+          "claimRefs": [
+            "P46__F11__01",
+            "P46__F18__01",
+            "P46__F18__02",
+            "P46__F22__01"
+          ],
+          "benchmarkRefs": [
+            "OP-B5",
+            "OP-B4"
+          ]
+        }
+      ],
+      "weightScoreRange": [
+        40,
+        44
+      ],
+      "weightRankRange": [
+        4,
+        5
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "M",
+          "delta": -1,
+          "score": 32,
+          "rank": 6
+        },
+        {
+          "key": "M",
+          "delta": 1,
+          "score": 52,
+          "rank": 3
+        },
+        {
+          "key": "A",
+          "delta": -1,
+          "score": 36,
+          "rank": 5
+        },
+        {
+          "key": "A",
+          "delta": 1,
+          "score": 48,
+          "rank": 4
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 37,
+          "rank": 5
+        },
+        {
+          "key": "F",
+          "delta": 1,
+          "score": 47,
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "delta": -1,
+          "score": 38,
+          "rank": 5
+        },
+        {
+          "key": "D",
+          "delta": 1,
+          "score": 46,
+          "rank": 4
+        }
+      ],
+      "judgmentScoreRange": [
+        32,
+        52
+      ],
+      "judgmentRankRange": [
+        3,
+        6
+      ],
+      "pairedScenarios": {
+        "conservador": {
+          "levels": {
+            "M": 1,
+            "A": 2,
+            "F": 4,
+            "D": 2
+          },
+          "score": 26
+        },
+        "central": {
+          "levels": {
+            "M": 2,
+            "A": 3,
+            "F": 4,
+            "D": 2
+          },
+          "score": 42
+        },
+        "favorable": {
+          "levels": {
+            "M": 3,
+            "A": 4,
+            "F": 4,
+            "D": 2
+          },
+          "score": 58
+        }
+      },
+      "criticality": 53,
+      "addressability": 56,
+      "addressabilityNote": "ASdC del problema/intervención de entrada, con sus supuestos. No es evaluación automática de cualquier producto o arquitectura. Factibilidad específica descrita por separado.",
+      "reviewTrigger": "Revisar puntaje/selección si se observa línea base distinta, alternativa suficiente, carga de datos mayor, adopción menor, errores de calidad o mantenimiento sin responsable."
+    },
+    {
+      "id": "OP04",
+      "title": "Carpeta de antecedentes",
+      "primary": "P25",
+      "user": "Administración que reúne requisitos de un trámite o donante determinado.",
+      "task": "Mantener un inventario reutilizable y un checklist revisado para una ruta específica de aportes.",
+      "features": [
+        "Inventario de documentos con fecha, responsable y enlace",
+        "Checklist de una ruta con fuente oficial y fecha de revisión",
+        "Exportación de pendientes; revisión humana de vigencia y aplicabilidad"
+      ],
+      "inputs": "Fuentes oficiales vigentes de la ruta elegida y antecedentes organizacionales. No se cargan identificaciones personales al sitio de investigación.",
+      "result": "Lista trazable de pendientes y antecedentes reutilizables para el trámite seleccionado.",
+      "outside": "No interpreta automáticamente toda la normativa, autoriza donaciones ni garantiza admisibilidad. La ruta legal no se ha elegido.",
+      "current": "Recolección repetida descrita en los problemas; la modalidad operativa de cada equipo sigue sin observar.",
+      "alternative": "Inventario y checklist en Sheets con carpeta de documentos; enlaces a la autoridad del trámite elegido.",
+      "gap": "La brecha puede ser de guía y actualización, no de software. No publicar reglas de vigencia como asesoría sin especialista.",
+      "ai": "Sugerir documentos mencionados en una guía pública seleccionada, con cita y lista cerrada; revisión especialista obligatoria.",
+      "delta": "Beneficio adicional sin demostrar y riesgo de reglas desactualizadas. Preferir checklist curado sin IA.",
+      "mode": "Reserva: requiere curador",
+      "feasibility": "Bloqueada para contenido normativo productivo hasta elegir ruta y responsable de vigencia; diseño sintético sí es posible.",
+      "benchmark": [
+        "OP-B4"
+      ],
+      "levels": {
+        "M": 3,
+        "A": 2,
+        "F": 3,
+        "D": 2
+      },
+      "problems": [
+        "P25",
+        "P38",
+        "P26"
+      ],
+      "secondary": [
+        "P38",
+        "P26"
+      ],
+      "confidence": "Baja",
+      "confidenceReason": "Mecanismo documentado; no se ha probado eficacia, adopción, alcance ni costo laboral del producto concreto.",
+      "claimIds": [
+        "P25__F03__01",
+        "P25__F03__02",
+        "P25__F07__01",
+        "P25__F09__01",
+        "P38__F07__02",
+        "P38__F07__03",
+        "P38__F07__04",
+        "P38__F09__01",
+        "P26__F03__01",
+        "P26__F04__01",
+        "P26__F18__01",
+        "P26__F18__02"
+      ],
+      "origins": [
+        "MINNESOTA-COUNCIL-NONPROFITS-PRACTICES-2014",
+        "SEA-DIRECCIONES-2025",
+        "SEA-DIRECCIONES-2026",
+        "SEA-MESA-SOCIEDAD-CIVIL-2025",
+        "SEA-REGISTROS-OSC-2025"
+      ],
+      "observed": {
+        "netMinutesSaved": null,
+        "activeOrganizations": null,
+        "taskExecutions": null,
+        "qualityDelta": null,
+        "aiIncrement": null,
+        "status": "Por medir; no se imputan ceros ni ahorro supuesto"
+      },
+      "naturalMetric": {
+        "primary": "Minutos netos para reunir un expediente y omisiones por checklist revisado.",
+        "quality": "Fuentes vigentes, requisitos mal aplicados, documentos omitidos y duplicados.",
+        "formula": "Ahorro neto = ejecuciones × (tiempo total actual − tiempo total herramienta) − formación/actualización adicional no incluida por ejecución. Preparación, uso, revisión y corrección se incluyen en cada tiempo total.",
+        "aggregate": "Sólo agregar por organizaciones activas únicas, evitando usuarios y beneficios duplicados.",
+        "socialImpact": "No se ha medido efecto sobre beneficiarios finales."
+      },
+      "costAssumptions": {
+        "developmentHoursRange": [
+          32,
+          64
+        ],
+        "maintenanceHoursMonthlyRange": [
+          6,
+          12
+        ],
+        "supportMinutesPerActiveOrgMonth": 15,
+        "optionalAiRequestsPerOrgMonth": 4,
+        "basis": "Supuestos de planificación propios, no cotización, benchmark de productividad ni presupuesto aprobado. No incluyen integraciones, autenticación o base de datos central."
+      },
+      "score": 41,
+      "rank": 5,
+      "components": [
+        {
+          "key": "M",
+          "level": 3,
+          "basis": "Inferencia documental y supuesto explícito del producto; efecto no observado",
+          "reason": "Reutilizar antecedentes puede reducir repeticiones y omisiones; la validez del trámite no queda resuelta por el checklist. Ganancia moderada condicionada.",
+          "claimRefs": [
+            "P25__F03__01",
+            "P25__F03__02",
+            "P25__F07__01",
+            "P25__F09__01",
+            "P38__F07__02",
+            "P38__F07__03",
+            "P38__F07__04",
+            "P38__F09__01",
+            "P26__F03__01",
+            "P26__F04__01",
+            "P26__F18__01",
+            "P26__F18__02"
+          ],
+          "benchmarkRefs": [
+            "OP-B4"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 2,
+          "basis": "Inferencia documental y supuesto explícito del producto; efecto no observado",
+          "reason": "Alcance acotado a una ruta elegida, con requisitos comunes; no se generaliza a todos los regímenes ni donantes.",
+          "claimRefs": [
+            "P25__F03__01",
+            "P25__F03__02",
+            "P25__F07__01",
+            "P25__F09__01",
+            "P38__F07__02",
+            "P38__F07__03",
+            "P38__F07__04",
+            "P38__F09__01",
+            "P26__F03__01",
+            "P26__F04__01",
+            "P26__F18__01",
+            "P26__F18__02"
+          ],
+          "benchmarkRefs": [
+            "OP-B4"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 3,
+          "basis": "Inferencia documental y supuesto explícito del producto; efecto no observado",
+          "reason": "Se supone uso en varios trámites/convocatorias del año; no se multiplica por cada documento aportado.",
+          "claimRefs": [
+            "P25__F03__01",
+            "P25__F03__02",
+            "P25__F07__01",
+            "P25__F09__01",
+            "P38__F07__02",
+            "P38__F07__03",
+            "P38__F07__04",
+            "P38__F09__01",
+            "P26__F03__01",
+            "P26__F04__01",
+            "P26__F18__01",
+            "P26__F18__02"
+          ],
+          "benchmarkRefs": [
+            "OP-B4"
+          ]
+        },
+        {
+          "key": "D",
+          "level": 2,
+          "basis": "Inferencia documental y supuesto explícito del producto; efecto no observado",
+          "reason": "El beneficio depende de actualizar requisitos y vigencias. Reutilizar un archivo no basta para acreditar cambio duradero.",
+          "claimRefs": [
+            "P25__F03__01",
+            "P25__F03__02",
+            "P25__F07__01",
+            "P25__F09__01",
+            "P38__F07__02",
+            "P38__F07__03",
+            "P38__F07__04",
+            "P38__F09__01",
+            "P26__F03__01",
+            "P26__F04__01",
+            "P26__F18__01",
+            "P26__F18__02"
+          ],
+          "benchmarkRefs": [
+            "OP-B4"
+          ]
+        }
+      ],
+      "weightScoreRange": [
+        38,
+        42
+      ],
+      "weightRankRange": [
+        4,
+        5
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "M",
+          "delta": -1,
+          "score": 31,
+          "rank": 6
+        },
+        {
+          "key": "M",
+          "delta": 1,
+          "score": 51,
+          "rank": 3
+        },
+        {
+          "key": "A",
+          "delta": -1,
+          "score": 34,
+          "rank": 5
+        },
+        {
+          "key": "A",
+          "delta": 1,
+          "score": 47,
+          "rank": 4
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 36,
+          "rank": 5
+        },
+        {
+          "key": "F",
+          "delta": 1,
+          "score": 46,
+          "rank": 4
+        },
+        {
+          "key": "D",
+          "delta": -1,
+          "score": 37,
+          "rank": 5
+        },
+        {
+          "key": "D",
+          "delta": 1,
+          "score": 44,
+          "rank": 4
+        }
+      ],
+      "judgmentScoreRange": [
+        31,
+        51
+      ],
+      "judgmentRankRange": [
+        3,
+        6
+      ],
+      "pairedScenarios": {
+        "conservador": {
+          "levels": {
+            "M": 2,
+            "A": 1,
+            "F": 3,
+            "D": 2
+          },
+          "score": 25
+        },
+        "central": {
+          "levels": {
+            "M": 3,
+            "A": 2,
+            "F": 3,
+            "D": 2
+          },
+          "score": 41
+        },
+        "favorable": {
+          "levels": {
+            "M": 4,
+            "A": 3,
+            "F": 3,
+            "D": 2
+          },
+          "score": 57
+        }
+      },
+      "criticality": 63,
+      "addressability": 39,
+      "addressabilityNote": "ASdC del problema/intervención de entrada, con sus supuestos. No es evaluación automática de cualquier producto o arquitectura. Factibilidad específica descrita por separado.",
+      "reviewTrigger": "Revisar puntaje/selección si se observa línea base distinta, alternativa suficiente, carga de datos mayor, adopción menor, errores de calidad o mantenimiento sin responsable."
+    },
+    {
+      "id": "OP06",
+      "title": "Traspaso de funciones",
+      "primary": "P28",
+      "user": "Coordinación que documenta procesos antes de una rotación o incorporación.",
+      "task": "Ordenar instrucciones, responsables y evidencia de un proceso para entregar el rol.",
+      "features": [
+        "Plantilla de procedimiento y mapa de archivos",
+        "Checklist de entrega y tareas de incorporación",
+        "Historial de actualización y prueba de recuperación de una instrucción"
+      ],
+      "inputs": "Procedimientos internos previamente autorizados y responsable. Los contratos/salarios no son necesarios para el prototipo.",
+      "result": "Paquete de traspaso recuperable y actualizado.",
+      "outside": "No retiene especialistas, mejora contratos ni sustituye la experiencia profesional perdida.",
+      "current": "Traspaso informal como hipótesis; no se dispone de tiempos ni casos operativos comparables.",
+      "alternative": "Documentos y carpeta compartida con plantillas; repositorio convencional basta para el núcleo.",
+      "gap": "La dificultad puede ser tiempo para documentar y mantener, no acceso a otra aplicación.",
+      "ai": "Responder preguntas sólo desde procedimientos aprobados con cita; borrador no vinculante.",
+      "delta": "Búsqueda semántica podría ayudar; sin corpus y prueba no supera a índice y búsqueda convencional.",
+      "mode": "Postergar producto nuevo",
+      "feasibility": "Requiere corpus y dueño de actualización no acreditados. Mayor riesgo de instrucciones obsoletas que una plantilla simple.",
+      "benchmark": [
+        "OP-B4"
+      ],
+      "levels": {
+        "M": 2,
+        "A": 2,
+        "F": 3,
+        "D": 3
+      },
+      "problems": [
+        "P28"
+      ],
+      "secondary": [],
+      "confidence": "Baja",
+      "confidenceReason": "Mecanismo documentado; no se ha probado eficacia, adopción, alcance ni costo laboral del producto concreto.",
+      "claimIds": [
+        "P28__F03__01",
+        "P28__F18__01",
+        "P28__F18__02",
+        "P28__F26__01"
+      ],
+      "origins": [
+        "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025",
+        "MINNESOTA-COUNCIL-NONPROFITS-PRACTICES-2014",
+        "SEA-DIRECCIONES-2026"
+      ],
+      "observed": {
+        "netMinutesSaved": null,
+        "activeOrganizations": null,
+        "taskExecutions": null,
+        "qualityDelta": null,
+        "aiIncrement": null,
+        "status": "Por medir; no se imputan ceros ni ahorro supuesto"
+      },
+      "naturalMetric": {
+        "primary": "Minutos para localizar una instrucción correcta en una tarea de traspaso.",
+        "quality": "Instrucciones vigentes, respuestas sin respaldo y pasos omitidos.",
+        "formula": "Ahorro neto = ejecuciones × (tiempo total actual − tiempo total herramienta) − formación/actualización adicional no incluida por ejecución. Preparación, uso, revisión y corrección se incluyen en cada tiempo total.",
+        "aggregate": "Sólo agregar por organizaciones activas únicas, evitando usuarios y beneficios duplicados.",
+        "socialImpact": "No se ha medido efecto sobre beneficiarios finales."
+      },
+      "costAssumptions": {
+        "developmentHoursRange": [
+          24,
+          48
+        ],
+        "maintenanceHoursMonthlyRange": [
+          4,
+          8
+        ],
+        "supportMinutesPerActiveOrgMonth": 15,
+        "optionalAiRequestsPerOrgMonth": 8,
+        "basis": "Supuestos de planificación propios, no cotización, benchmark de productividad ni presupuesto aprobado. No incluyen integraciones, autenticación o base de datos central."
+      },
+      "score": 34,
+      "rank": 6,
+      "components": [
+        {
+          "key": "M",
+          "level": 2,
+          "basis": "Inferencia documental y supuesto explícito del producto; efecto no observado",
+          "reason": "Documentar ayuda al traspaso, pero es una porción pequeña de la retención de especialistas; no se puntúa permanencia laboral como beneficio del repositorio.",
+          "claimRefs": [
+            "P28__F03__01",
+            "P28__F18__01",
+            "P28__F18__02",
+            "P28__F26__01"
+          ],
+          "benchmarkRefs": [
+            "OP-B4"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 2,
+          "basis": "Inferencia documental y supuesto explícito del producto; efecto no observado",
+          "reason": "Se limita a equipos con procedimientos documentables y dueño de actualización. Corpus disponible y uso son condiciones pendientes.",
+          "claimRefs": [
+            "P28__F03__01",
+            "P28__F18__01",
+            "P28__F18__02",
+            "P28__F26__01"
+          ],
+          "benchmarkRefs": [
+            "OP-B4"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 3,
+          "basis": "Inferencia documental y supuesto explícito del producto; efecto no observado",
+          "reason": "Se supone consulta de procedimientos varias veces por año; los eventos de rotación no se convierten en una tasa observada.",
+          "claimRefs": [
+            "P28__F03__01",
+            "P28__F18__01",
+            "P28__F18__02",
+            "P28__F26__01"
+          ],
+          "benchmarkRefs": [
+            "OP-B4"
+          ]
+        },
+        {
+          "key": "D",
+          "level": 3,
+          "basis": "Inferencia documental y supuesto explícito del producto; efecto no observado",
+          "reason": "Procedimientos actualizados podrían sostener conocimiento entre entregas, condicionado a mantenimiento; no se premia sólo el número de consultas.",
+          "claimRefs": [
+            "P28__F03__01",
+            "P28__F18__01",
+            "P28__F18__02",
+            "P28__F26__01"
+          ],
+          "benchmarkRefs": [
+            "OP-B4"
+          ]
+        }
+      ],
+      "weightScoreRange": [
+        33,
+        38
+      ],
+      "weightRankRange": [
+        5,
+        6
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "M",
+          "delta": -1,
+          "score": 25,
+          "rank": 7
+        },
+        {
+          "key": "M",
+          "delta": 1,
+          "score": 44,
+          "rank": 4
+        },
+        {
+          "key": "A",
+          "delta": -1,
+          "score": 28,
+          "rank": 6
+        },
+        {
+          "key": "A",
+          "delta": 1,
+          "score": 41,
+          "rank": 5
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 29,
+          "rank": 6
+        },
+        {
+          "key": "F",
+          "delta": 1,
+          "score": 39,
+          "rank": 6
+        },
+        {
+          "key": "D",
+          "delta": -1,
+          "score": 31,
+          "rank": 6
+        },
+        {
+          "key": "D",
+          "delta": 1,
+          "score": 38,
+          "rank": 6
+        }
+      ],
+      "judgmentScoreRange": [
+        25,
+        44
+      ],
+      "judgmentRankRange": [
+        4,
+        7
+      ],
+      "pairedScenarios": {
+        "conservador": {
+          "levels": {
+            "M": 1,
+            "A": 1,
+            "F": 3,
+            "D": 3
+          },
+          "score": 18
+        },
+        "central": {
+          "levels": {
+            "M": 2,
+            "A": 2,
+            "F": 3,
+            "D": 3
+          },
+          "score": 34
+        },
+        "favorable": {
+          "levels": {
+            "M": 3,
+            "A": 3,
+            "F": 3,
+            "D": 3
+          },
+          "score": 51
+        }
+      },
+      "criticality": 75,
+      "addressability": 28,
+      "addressabilityNote": "ASdC del problema/intervención de entrada, con sus supuestos. No es evaluación automática de cualquier producto o arquitectura. Factibilidad específica descrita por separado.",
+      "reviewTrigger": "Revisar puntaje/selección si se observa línea base distinta, alternativa suficiente, carga de datos mayor, adopción menor, errores de calidad o mantenimiento sin responsable."
+    },
+    {
+      "id": "OP02",
+      "title": "Evidencias listas para FECU",
+      "primary": "P32",
+      "user": "Equipo administrativo que prepara memoria y balance.",
+      "task": "Inventariar antecedentes y pendientes antes de trabajar en FECU Social Web.",
+      "features": [
+        "Lista de antecedentes, responsable y enlace al documento de respaldo",
+        "Identificación manual de campos sin evidencia",
+        "Guía de traspaso a FECU Social, sin duplicar su llenado ni sus validaciones"
+      ],
+      "inputs": "Documentos públicos o agregados de gestión y respaldo contable revisado por profesional. Sin acceso automático a FECU.",
+      "result": "Inventario de antecedentes y pendientes para alimentar la plataforma existente.",
+      "outside": "No emite estados financieros, no certifica cumplimiento ni reemplaza a contador/FECU.",
+      "current": "Preparación fragmentada como hipótesis; no observada. La plataforma existente ya puede resolver parte importante del proceso.",
+      "alternative": "Usar FECU Social Web gratuita y su material de apoyo; planilla sólo para antecedentes previos.",
+      "gap": "No se ha comprobado que falte un organizador previo respecto de la plataforma; validar brecha antes de desarrollar.",
+      "ai": "Borrador de texto de gestión con citas a evidencia pública; sin cálculo contable ni envío oficial.",
+      "delta": "Incremento de IA sin medir; podría añadir revisión y duplicar funciones. No se recomienda como primer producto.",
+      "mode": "Complementar si hay brecha",
+      "feasibility": "Requiere contraparte contable y comprobar la brecha con FECU. No se acredita necesidad de software nuevo.",
+      "benchmark": [
+        "OP-B2",
+        "OP-B3",
+        "OP-B4"
+      ],
+      "levels": {
+        "M": 2,
+        "A": 3,
+        "F": 1,
+        "D": 2
+      },
+      "problems": [
+        "P32",
+        "P41"
+      ],
+      "secondary": [
+        "P41"
+      ],
+      "confidence": "Baja",
+      "confidenceReason": "Mecanismo documentado; no se ha probado eficacia, adopción, alcance ni costo laboral del producto concreto.",
+      "claimIds": [
+        "P32__F10__01",
+        "P32__F18__01",
+        "P32__F18__02",
+        "P32__F20__02",
+        "P41__F08__01",
+        "P41__F08__02"
+      ],
+      "origins": [
+        "ALLISON-KAYE-PLANEACION-2005-ED2",
+        "COS-FECU-SOCIAL-2024",
+        "MINNESOTA-COUNCIL-NONPROFITS-PRACTICES-2014",
+        "SEA-FISCALIZACION-PJ-2025"
+      ],
+      "observed": {
+        "netMinutesSaved": null,
+        "activeOrganizations": null,
+        "taskExecutions": null,
+        "qualityDelta": null,
+        "aiIncrement": null,
+        "status": "Por medir; no se imputan ceros ni ahorro supuesto"
+      },
+      "naturalMetric": {
+        "primary": "Minutos netos para reunir antecedentes de una memoria con igual integridad.",
+        "quality": "Campos sustentados, errores críticos y correcciones después de revisión profesional.",
+        "formula": "Ahorro neto = ejecuciones × (tiempo total actual − tiempo total herramienta) − formación/actualización adicional no incluida por ejecución. Preparación, uso, revisión y corrección se incluyen en cada tiempo total.",
+        "aggregate": "Sólo agregar por organizaciones activas únicas, evitando usuarios y beneficios duplicados.",
+        "socialImpact": "No se ha medido efecto sobre beneficiarios finales."
+      },
+      "costAssumptions": {
+        "developmentHoursRange": [
+          24,
+          56
+        ],
+        "maintenanceHoursMonthlyRange": [
+          4,
+          8
+        ],
+        "supportMinutesPerActiveOrgMonth": 15,
+        "optionalAiRequestsPerOrgMonth": 2,
+        "basis": "Supuestos de planificación propios, no cotización, benchmark de productividad ni presupuesto aprobado. No incluyen integraciones, autenticación o base de datos central."
+      },
+      "score": 27,
+      "rank": 7,
+      "components": [
+        {
+          "key": "M",
+          "level": 2,
+          "basis": "Inferencia documental y supuesto explícito del producto; efecto no observado",
+          "reason": "Se reduce a mejora pequeña adicional por inventario previo: FECU ya tiene revisión, histórico y alertas. No atribuir de nuevo esas funciones al producto propuesto.",
+          "claimRefs": [
+            "P32__F10__01",
+            "P32__F18__01",
+            "P32__F18__02",
+            "P32__F20__02",
+            "P41__F08__01",
+            "P41__F08__02"
+          ],
+          "benchmarkRefs": [
+            "OP-B2",
+            "OP-B3",
+            "OP-B4"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 3,
+          "basis": "Inferencia documental y supuesto explícito del producto; efecto no observado",
+          "reason": "La memoria/balance es aplicable a diversos equipos, pero datos y revisión contable son condiciones; se desconoce cuántos usarían el complemento.",
+          "claimRefs": [
+            "P32__F10__01",
+            "P32__F18__01",
+            "P32__F18__02",
+            "P32__F20__02",
+            "P41__F08__01",
+            "P41__F08__02"
+          ],
+          "benchmarkRefs": [
+            "OP-B2",
+            "OP-B3",
+            "OP-B4"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 1,
+          "basis": "Inferencia documental y supuesto explícito del producto; efecto no observado",
+          "reason": "Unidad: ciclo anual de preparación de memoria/balance. No se cuentan cada campo o corrección como entregas nuevas.",
+          "claimRefs": [
+            "P32__F10__01",
+            "P32__F18__01",
+            "P32__F18__02",
+            "P32__F20__02",
+            "P41__F08__01",
+            "P41__F08__02"
+          ],
+          "benchmarkRefs": [
+            "OP-B2",
+            "OP-B3",
+            "OP-B4"
+          ]
+        },
+        {
+          "key": "D",
+          "level": 2,
+          "basis": "Inferencia documental y supuesto explícito del producto; efecto no observado",
+          "reason": "El inventario apoya el ciclo y puede reutilizarse; su permanencia no demuestra una mejora sostenida de gestión entre ciclos.",
+          "claimRefs": [
+            "P32__F10__01",
+            "P32__F18__01",
+            "P32__F18__02",
+            "P32__F20__02",
+            "P41__F08__01",
+            "P41__F08__02"
+          ],
+          "benchmarkRefs": [
+            "OP-B2",
+            "OP-B3",
+            "OP-B4"
+          ]
+        }
+      ],
+      "weightScoreRange": [
+        25,
+        29
+      ],
+      "weightRankRange": [
+        7,
+        7
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "M",
+          "delta": -1,
+          "score": 17,
+          "rank": 7
+        },
+        {
+          "key": "M",
+          "delta": 1,
+          "score": 37,
+          "rank": 6
+        },
+        {
+          "key": "A",
+          "delta": -1,
+          "score": 21,
+          "rank": 7
+        },
+        {
+          "key": "A",
+          "delta": 1,
+          "score": 33,
+          "rank": 7
+        },
+        {
+          "key": "F",
+          "delta": 1,
+          "score": 32,
+          "rank": 7
+        },
+        {
+          "key": "D",
+          "delta": -1,
+          "score": 23,
+          "rank": 7
+        },
+        {
+          "key": "D",
+          "delta": 1,
+          "score": 31,
+          "rank": 7
+        }
+      ],
+      "judgmentScoreRange": [
+        17,
+        37
+      ],
+      "judgmentRankRange": [
+        6,
+        7
+      ],
+      "pairedScenarios": {
+        "conservador": {
+          "levels": {
+            "M": 1,
+            "A": 2,
+            "F": 1,
+            "D": 2
+          },
+          "score": 11
+        },
+        "central": {
+          "levels": {
+            "M": 2,
+            "A": 3,
+            "F": 1,
+            "D": 2
+          },
+          "score": 27
+        },
+        "favorable": {
+          "levels": {
+            "M": 3,
+            "A": 4,
+            "F": 1,
+            "D": 2
+          },
+          "score": 43
+        }
+      },
+      "criticality": 51,
+      "addressability": 47,
+      "addressabilityNote": "ASdC del problema/intervención de entrada, con sus supuestos. No es evaluación automática de cualquier producto o arquitectura. Factibilidad específica descrita por separado.",
+      "reviewTrigger": "Revisar puntaje/selección si se observa línea base distinta, alternativa suficiente, carga de datos mayor, adopción menor, errores de calidad o mantenimiento sin responsable."
+    }
+  ],
+  "weightScenarios": [
+    {
+      "id": "base",
+      "weights": {
+        "M": 40,
+        "A": 25,
+        "F": 20,
+        "D": 15
+      },
+      "scores": {
+        "OP01": 55,
+        "OP02": 27,
+        "OP03": 55,
+        "OP04": 41,
+        "OP05": 42,
+        "OP06": 34,
+        "OP07": 49
+      },
+      "ranks": {
+        "OP01": 1,
+        "OP02": 7,
+        "OP03": 1,
+        "OP04": 5,
+        "OP05": 4,
+        "OP06": 6,
+        "OP07": 3
+      }
+    },
+    {
+      "id": "iguales",
+      "weights": {
+        "M": 25,
+        "A": 25,
+        "F": 25,
+        "D": 25
+      },
+      "scores": {
+        "OP01": 57,
+        "OP02": 26,
+        "OP03": 57,
+        "OP04": 38,
+        "OP05": 44,
+        "OP06": 38,
+        "OP07": 51
+      },
+      "ranks": {
+        "OP01": 1,
+        "OP02": 7,
+        "OP03": 1,
+        "OP04": 5,
+        "OP05": 4,
+        "OP06": 5,
+        "OP07": 3
+      }
+    },
+    {
+      "id": "M-5",
+      "weights": {
+        "M": 35,
+        "A": 27.083333333333332,
+        "F": 21.666666666666668,
+        "D": 16.25
+      },
+      "scores": {
+        "OP01": 56,
+        "OP02": 27,
+        "OP03": 56,
+        "OP04": 40,
+        "OP05": 43,
+        "OP06": 35,
+        "OP07": 49
+      },
+      "ranks": {
+        "OP01": 1,
+        "OP02": 7,
+        "OP03": 1,
+        "OP04": 5,
+        "OP05": 4,
+        "OP06": 6,
+        "OP07": 3
+      }
+    },
+    {
+      "id": "M5",
+      "weights": {
+        "M": 45,
+        "A": 22.916666666666668,
+        "F": 18.333333333333332,
+        "D": 13.75
+      },
+      "scores": {
+        "OP01": 55,
+        "OP02": 27,
+        "OP03": 55,
+        "OP04": 41,
+        "OP05": 40,
+        "OP06": 34,
+        "OP07": 49
+      },
+      "ranks": {
+        "OP01": 1,
+        "OP02": 7,
+        "OP03": 1,
+        "OP04": 4,
+        "OP05": 5,
+        "OP06": 6,
+        "OP07": 3
+      }
+    },
+    {
+      "id": "A-5",
+      "weights": {
+        "M": 42.666666666666664,
+        "A": 20,
+        "F": 21.333333333333332,
+        "D": 16.0
+      },
+      "scores": {
+        "OP01": 56,
+        "OP02": 25,
+        "OP03": 56,
+        "OP04": 42,
+        "OP05": 41,
+        "OP06": 35,
+        "OP07": 51
+      },
+      "ranks": {
+        "OP01": 1,
+        "OP02": 7,
+        "OP03": 1,
+        "OP04": 4,
+        "OP05": 5,
+        "OP06": 6,
+        "OP07": 3
+      }
+    },
+    {
+      "id": "A5",
+      "weights": {
+        "M": 37.333333333333336,
+        "A": 30,
+        "F": 18.666666666666668,
+        "D": 14.0
+      },
+      "scores": {
+        "OP01": 55,
+        "OP02": 29,
+        "OP03": 55,
+        "OP04": 40,
+        "OP05": 42,
+        "OP06": 34,
+        "OP07": 48
+      },
+      "ranks": {
+        "OP01": 1,
+        "OP02": 7,
+        "OP03": 1,
+        "OP04": 5,
+        "OP05": 4,
+        "OP06": 6,
+        "OP07": 3
+      }
+    },
+    {
+      "id": "F-5",
+      "weights": {
+        "M": 42.5,
+        "A": 26.5625,
+        "F": 15,
+        "D": 15.9375
+      },
+      "scores": {
+        "OP01": 54,
+        "OP02": 29,
+        "OP03": 54,
+        "OP04": 40,
+        "OP05": 40,
+        "OP06": 33,
+        "OP07": 48
+      },
+      "ranks": {
+        "OP01": 1,
+        "OP02": 7,
+        "OP03": 1,
+        "OP04": 4,
+        "OP05": 4,
+        "OP06": 6,
+        "OP07": 3
+      }
+    },
+    {
+      "id": "F5",
+      "weights": {
+        "M": 37.5,
+        "A": 23.4375,
+        "F": 25,
+        "D": 14.0625
+      },
+      "scores": {
+        "OP01": 57,
+        "OP02": 25,
+        "OP03": 57,
+        "OP04": 41,
+        "OP05": 44,
+        "OP06": 35,
+        "OP07": 51
+      },
+      "ranks": {
+        "OP01": 1,
+        "OP02": 7,
+        "OP03": 1,
+        "OP04": 5,
+        "OP05": 4,
+        "OP06": 6,
+        "OP07": 3
+      }
+    },
+    {
+      "id": "D-5",
+      "weights": {
+        "M": 42.35294117647059,
+        "A": 26.470588235294116,
+        "F": 21.176470588235293,
+        "D": 10
+      },
+      "scores": {
+        "OP01": 56,
+        "OP02": 27,
+        "OP03": 56,
+        "OP04": 41,
+        "OP05": 43,
+        "OP06": 33,
+        "OP07": 49
+      },
+      "ranks": {
+        "OP01": 1,
+        "OP02": 7,
+        "OP03": 1,
+        "OP04": 5,
+        "OP05": 4,
+        "OP06": 6,
+        "OP07": 3
+      }
+    },
+    {
+      "id": "D5",
+      "weights": {
+        "M": 37.64705882352941,
+        "A": 23.529411764705884,
+        "F": 18.823529411764707,
+        "D": 20
+      },
+      "scores": {
+        "OP01": 55,
+        "OP02": 27,
+        "OP03": 55,
+        "OP04": 40,
+        "OP05": 41,
+        "OP06": 35,
+        "OP07": 49
+      },
+      "ranks": {
+        "OP01": 1,
+        "OP02": 7,
+        "OP03": 1,
+        "OP04": 5,
+        "OP05": 4,
+        "OP06": 6,
+        "OP07": 3
+      }
+    }
+  ],
+  "benchmarkStatus": "Comparación documental de funciones y acceso; no benchmark cronometrado, experimento causal ni prueba con usuarios.",
+  "sources": [
+    {
+      "id": "OP-M1",
+      "kind": "Método",
+      "title": "Impact Frontiers · How Much",
+      "url": "https://impactfrontiers.org/norms/five-dimensions-of-impact/how-much/",
+      "finding": "Distingue escala, profundidad y duración del efecto. No valida nuestra fórmula ni sus pesos.",
+      "origin": "Impact Frontiers · Norms",
+      "checked": "2026-11-23",
+      "verification": "Lectura documental pública; sin registro, contratación o prueba de eficacia"
+    },
+    {
+      "id": "OP-M2",
+      "kind": "Método",
+      "title": "Impact Frontiers · Contribution",
+      "url": "https://impactfrontiers.org/norms/five-dimensions-of-impact/enterprise-contribution/",
+      "finding": "La contribución exige comparar con lo que habría ocurrido de todas formas.",
+      "origin": "Impact Frontiers · Norms",
+      "checked": "2026-11-23",
+      "verification": "Lectura documental pública; sin registro, contratación o prueba de eficacia"
+    },
+    {
+      "id": "OP-M3",
+      "kind": "Método",
+      "title": "HM Treasury · Evaluación de intervenciones IA",
+      "url": "https://www.gov.uk/government/publications/the-magenta-book/guidance-on-the-impact-evaluation-of-ai-interventions-html",
+      "finding": "Orienta línea base y evaluación de resultados; eficiencia, calidad y precisión requieren comprobación.",
+      "origin": "HM Treasury · 15/05/2026",
+      "checked": "2026-11-23",
+      "verification": "Lectura documental pública; sin registro, contratación o prueba de eficacia"
+    },
+    {
+      "id": "OP-B1",
+      "kind": "Alternativa",
+      "title": "Trello · Free",
+      "url": "https://trello.com/pricing",
+      "finding": "Free: hasta 10 colaboradores y 10 tableros por espacio; responsables, fechas y 250 ejecuciones de automatización al mes. IA figura en planes superiores.",
+      "origin": "Atlassian · oferta del proveedor",
+      "checked": "2026-11-23",
+      "verification": "Lectura documental pública; sin registro, contratación o prueba de eficacia"
+    },
+    {
+      "id": "OP-B2",
+      "kind": "Alternativa",
+      "title": "FECU Social Web · funciones",
+      "url": "https://fecusocial.comunidad-org.cl/",
+      "finding": "Ya ofrece perfiles de llenado/revisión, histórico y alertas de descuadre. Son funciones declaradas por COS, no exactitud probada por este proyecto.",
+      "origin": "COS · FECU Social",
+      "checked": "2026-11-23",
+      "verification": "Lectura documental pública; sin registro, contratación o prueba de eficacia"
+    },
+    {
+      "id": "OP-B3",
+      "kind": "Acceso",
+      "title": "COS · acceso gratuito a FECU Social",
+      "url": "https://comunidad-org.cl/blog/por-que-es-crucial-la-transparencia-en-las-organizaciones-sociales-en-chile/",
+      "finding": "COS informa registro gratuito para fundaciones y corporaciones chilenas, socias o no. No se presume soporte especializado gratuito para todas.",
+      "origin": "COS · FECU Social",
+      "checked": "2026-11-23",
+      "verification": "Lectura documental pública; sin registro, contratación o prueba de eficacia"
+    },
+    {
+      "id": "OP-B4",
+      "kind": "Alternativa",
+      "title": "Google Sheets · funciones y acceso",
+      "url": "https://workspace.google.com/products/sheets/",
+      "finding": "Permite crear con cuenta Google, coeditar, controlar permisos y recuperar versiones. Algunas funciones Gemini requieren planes de Workspace.",
+      "origin": "Google · Sheets",
+      "checked": "2026-11-23",
+      "verification": "Lectura documental pública; sin registro, contratación o prueba de eficacia"
+    },
+    {
+      "id": "OP-B5",
+      "kind": "Alternativa",
+      "title": "Canva Nonprofits · elegibilidad",
+      "url": "https://www.canva.com/nonprofits/",
+      "finding": "El programa ofrece prestaciones sin cargo a organizaciones elegibles y exige acreditar requisitos; no toda fundación califica, incluidas exclusiones para grant-making foundations.",
+      "origin": "Canva · programa Nonprofits",
+      "checked": "2026-11-23",
+      "verification": "Lectura documental pública; sin registro, contratación o prueba de eficacia"
+    },
+    {
+      "id": "OP-B6",
+      "kind": "Alternativa",
+      "title": "CiviCRM · documentación oficial",
+      "url": "https://docs.civicrm.org/user/en/latest/introduction/what-is-civicrm/",
+      "finding": "CRM de código abierto sin tarifa de licencia/usuario; incluye contactos, contribuciones y actividades. Instalarlo y sostenerlo exige operación propia o un servicio.",
+      "origin": "CiviCRM · guía oficial",
+      "checked": "2026-11-23",
+      "verification": "Lectura documental pública; sin registro, contratación o prueba de eficacia"
+    },
+    {
+      "id": "OP-C1",
+      "kind": "Costo",
+      "title": "Cloudflare Pages · tarifas de funciones y estáticos",
+      "url": "https://developers.cloudflare.com/pages/functions/pricing/",
+      "finding": "Peticiones a archivos estáticos gratuitas e ilimitadas; funciones consumen cuotas distintas. Se usa sólo como referencia de publicación estática, sin dominio ni backend.",
+      "origin": "Cloudflare · documentación",
+      "checked": "2026-11-23",
+      "verification": "Lectura documental pública; sin registro, contratación o prueba de eficacia"
+    },
+    {
+      "id": "OP-C2",
+      "kind": "Costo",
+      "title": "Gemini Developer API · precios estándar",
+      "url": "https://aistudio.google.com/docs/pricing#gemini-3.1-flash-lite",
+      "finding": "Referencia Gemini 3.1 Flash-Lite estándar texto: USD 0,25 por millón de tokens de entrada y USD 1,50 de salida. No incluye búsquedas, caché ni backend; tarifa sujeta a cambio.",
+      "origin": "Google · Gemini Developer API",
+      "checked": "2026-11-23",
+      "verification": "Lectura documental pública; sin registro, contratación o prueba de eficacia"
+    }
+  ]
+}

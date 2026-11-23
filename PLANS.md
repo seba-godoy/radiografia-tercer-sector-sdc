@@ -46,3 +46,10 @@ PROPUESTA → PENDIENTE AUTORIZADA → EN CURSO → IMPLEMENTADA → VERIFICADA 
 
 ## Plan de ejecución grande
 Para una fase que necesita varias sesiones, abrir un ExecPlan autocontenido siguiendo `docs/PROTOCOL.md`: objetivo observable, contexto, hitos, progreso, sorpresas, decisiones, pruebas, recuperación. Anotar el enlace/commit en el acta de fase. No sustituir el plan de Notion por un documento paralelo contradictorio.
+
+
+## OP-1 a OP-6 · autorización y corte23/11/2026
+
+El propietario autorizó completar secuencialmente las seis fases, auditarlas y persistir. Se aplica IPH documental propio a siete oportunidades de herramienta gratuita, con M40/A25/F20/D15, confianza Baja, métricas naturales y valor adicional de IA sin medir. Once referencias complementarias de método/productos/costos se separan del banco congelado26/31/147/245. No se modifican puntuaciones anteriores ni se cuentan publicaciones derivadas como estudios nuevos.
+
+OP-6 implementa la sección informativa Oportunidades y su preview, no el MVP operativo, pruebas con personas, gasto o contratación. Las reglas antiguas de fase pendiente quedan como antecedente para este alcance autorizado. Auditoría y especificaciones: docs/op/OP-1-cierre.md a OP-6-cierre.md y analisis/oportunidades-7-v1.json.

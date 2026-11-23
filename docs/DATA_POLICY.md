@@ -40,3 +40,10 @@ Fuente/version/hash inmutable → extracción con citas → detección de duplic
 6. F26 no cuenta como incidencia nacional.
 7. Fuente no disponible o URL fallida no genera datos inventados.
 8. Una fuente extranjera no altera automáticamente cifras chilenas.
+
+
+## OP-1 a OP-6 · autorización y corte23/11/2026
+
+El propietario autorizó completar secuencialmente las seis fases, auditarlas y persistir. Se aplica IPH documental propio a siete oportunidades de herramienta gratuita, con M40/A25/F20/D15, confianza Baja, métricas naturales y valor adicional de IA sin medir. Once referencias complementarias de método/productos/costos se separan del banco congelado26/31/147/245. No se modifican puntuaciones anteriores ni se cuentan publicaciones derivadas como estudios nuevos.
+
+OP-6 implementa la sección informativa Oportunidades y su preview, no el MVP operativo, pruebas con personas, gasto o contratación. Las reglas antiguas de fase pendiente quedan como antecedente para este alcance autorizado. Auditoría y especificaciones: docs/op/OP-1-cierre.md a OP-6-cierre.md y analisis/oportunidades-7-v1.json.

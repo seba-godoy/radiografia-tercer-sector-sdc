@@ -33,7 +33,7 @@ export function abRender(data,bank,critical,scope,links,e){
  <h2>Intervenciones, fundamentos y condiciones</h2><div data-ab-cards>${cards}</div>
  <details class="h2-record" id="ab-method"><summary>Rúbrica, cálculo, calibración y fuentes de SdC</summary><div class="h2-record-body"><p>${e(m.formula)}</p><p>${e(m.controlRule)}</p><p>${e(m.meaning)}</p><p>${e(m.unit)}</p><p>${e(m.scenario)}</p>${m.criteria.map(c=>`<h3>${e(c.name)} · ${c.key==='C'?'factor limitante':c.weight+'% original'}</h3><ul>${c.anchors.map(x=>`<li>${e(x)}</li>`).join('')}</ul>`).join('')}
  <h3>Calibración antes de los 31</h3><ul>${data.calibration.cases.map(c=>`<li>${c.id}: ${e(c.correction)} Resultado ${c.scoreBefore}→${c.scoreAfter}.</li>`).join('')}</ul><p>El contraste de suma simple permite que P15 llegue a53 frente a16 con factor de control. Se mantiene el factor para que una tarea sencilla no parezca resolver decisiones externas.</p><p>${e(m.sensitivity)}</p><p>${e(m.confidence)}</p><p>${e(m.missing)}</p><p>${e(m.sources)}</p><p>${e(m.overlap)}</p><h3>Fuentes institucionales de encaje</h3><ul>${m.institutionalSources.map(s=>source(s.id)).join('')}</ul></div></details>
- <section class="ab-next"><h2>Siguiente etapa: oportunidades</h2><p>Comparar intervenciones concretas con alternativas convencionales, beneficio incremental de IA y condiciones de una posible herramienta pagada. Los puntajes de esta etapa no prueban que IA sea necesaria o que exista disposición a pagar.</p></section></div>`;
+ <section class="ab-next"><h2>Siguiente etapa: oportunidades</h2><p>Ya se compararon siete oportunidades de herramienta gratuita, sus alternativas y el beneficio adicional de IA por demostrar. Los índices se conservan separados. <a href="/oportunidades" data-go="oportunidades">Explorar oportunidades y gratuidad →</a></p></section></div>`;
 }
 
 export function mountAb(root,data,critical){
@@ -78,3 +78,6 @@ export function mountAb(root,data,critical){
   const url=URL.createObjectURL(new Blob([text],{type})),a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),500);
  });
 }
+
+// El cruce en Oportunidades usa el escenario aplicado durante esta visita.
+export function appliedAbWeights(data){return {...(sessions.get(data)?.applied??data.method.weights)};}

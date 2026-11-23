@@ -1,0 +1,534 @@
+{
+  "version": "1.0",
+  "date": "2026-11-23",
+  "model": {
+    "currency": "USD",
+    "checked": "2026-11-23",
+    "architecture": "Referencia mínima de kit/archivo por organización y publicación estática sin backend, cuentas centrales, integración o datos de beneficiarios. Cloudflare sólo es referencia, no proveedor contratado ni migración de la web actual.",
+    "staticHostingUsdMonth": 0,
+    "staticHostingCondition": "Sólo peticiones a archivos estáticos bajo las condiciones publicadas; dominio, funciones, almacenamiento central, autenticación, correo e integraciones no incluidos.",
+    "aiReference": {
+      "provider": "Gemini Developer API",
+      "model": "gemini-3.1-flash-lite",
+      "tier": "Estándar de pago, texto, sin batch",
+      "inputUsdPerMillion": 0.25,
+      "outputUsdPerMillion": 1.5,
+      "inputTokensPerRequest": 4000,
+      "outputTokensPerRequest": 1000,
+      "requestsPerTask": 2,
+      "sourceId": "OP-C2",
+      "limits": "Tarifas consultadas 23/11/2026, no garantía de vigencia doce meses. No se seleccionó proveedor ni se enviaron datos. Sin búsqueda, caché, audio o reintentos adicionales.",
+      "requiredOtherCosts": "Una variante IA exige backend seguro y controles de consumo; esos costos y desarrollo extra están sin cotizar. Esta cifra es sólo API, nunca TCO."
+    },
+    "usageScenarios": [
+      {
+        "id": "bajo",
+        "activeOrgs": 25
+      },
+      {
+        "id": "medio",
+        "activeOrgs": 100
+      },
+      {
+        "id": "alto",
+        "activeOrgs": 300
+      }
+    ],
+    "workforce": "Desarrollo, mantenimiento y soporte son supuestos propios. Tarifa laboral, disponibilidad y presupuesto no acreditados: TCO monetario completo no determinado. No se infiere personal gratuito.",
+    "payer": "Posible SdC, alianza o patrocinador; financiación no acordada. No se cobra al usuario en el alcance inicial.",
+    "stopRule": "Sin responsable editorial/técnico y capacidad de soporte no se publica servicio permanente; queda kit descargable con fecha y alcance. API desactivada por defecto; si se evalúa después, fijar tope aprobado y fallback sin IA. No hay gasto autorizado.",
+    "paidLater": "Precio, disposición a pagar y modelo comercial pendientes. No son filtro de esta primera evaluación gratuita."
+  },
+  "rows": [
+    {
+      "id": "OP01",
+      "assumptions": {
+        "developmentHoursRange": [
+          24,
+          48
+        ],
+        "maintenanceHoursMonthlyRange": [
+          2,
+          4
+        ],
+        "supportMinutesPerActiveOrgMonth": 10,
+        "basis": "Supuestos de planificación propios, no cotización, benchmark de productividad ni presupuesto aprobado. No incluyen integraciones, autenticación o base de datos central.",
+        "tasksPerOrgYear": 12
+      },
+      "scenarios": [
+        {
+          "id": "bajo",
+          "activeOrgs": 25,
+          "tasksMonthlyEquivalent": 25.0,
+          "supportHoursMonth": 4.166666666666667,
+          "laborHoursMonthRange": [
+            6.166666666666667,
+            8.166666666666668
+          ],
+          "knownStaticCashUsdMonth": 0,
+          "optionalAiApiOnlyUsdMonth": 0.125,
+          "optionalAiApiOnlyUsdYear": 1.5,
+          "optionalAiApiUsdPerTask": 0.005,
+          "optionalAiApiUsdPerActiveOrgMonth": 0.005,
+          "fullTcoUsdMonth": null,
+          "laborUnitCostUsd": null
+        },
+        {
+          "id": "medio",
+          "activeOrgs": 100,
+          "tasksMonthlyEquivalent": 100.0,
+          "supportHoursMonth": 16.666666666666668,
+          "laborHoursMonthRange": [
+            18.666666666666668,
+            20.666666666666668
+          ],
+          "knownStaticCashUsdMonth": 0,
+          "optionalAiApiOnlyUsdMonth": 0.5,
+          "optionalAiApiOnlyUsdYear": 6.0,
+          "optionalAiApiUsdPerTask": 0.005,
+          "optionalAiApiUsdPerActiveOrgMonth": 0.005,
+          "fullTcoUsdMonth": null,
+          "laborUnitCostUsd": null
+        },
+        {
+          "id": "alto",
+          "activeOrgs": 300,
+          "tasksMonthlyEquivalent": 300.0,
+          "supportHoursMonth": 50.0,
+          "laborHoursMonthRange": [
+            52.0,
+            54.0
+          ],
+          "knownStaticCashUsdMonth": 0,
+          "optionalAiApiOnlyUsdMonth": 1.5,
+          "optionalAiApiOnlyUsdYear": 18.0,
+          "optionalAiApiUsdPerTask": 0.005,
+          "optionalAiApiUsdPerActiveOrgMonth": 0.005,
+          "fullTcoUsdMonth": null,
+          "laborUnitCostUsd": null
+        }
+      ],
+      "condition": "Asignar responsable del kit y soporte de arranque; derivar al archivo/espacio del usuario. Evitar administrar tableros de todas las organizaciones."
+    },
+    {
+      "id": "OP03",
+      "assumptions": {
+        "developmentHoursRange": [
+          40,
+          80
+        ],
+        "maintenanceHoursMonthlyRange": [
+          4,
+          8
+        ],
+        "supportMinutesPerActiveOrgMonth": 15,
+        "basis": "Supuestos de planificación propios, no cotización, benchmark de productividad ni presupuesto aprobado. No incluyen integraciones, autenticación o base de datos central.",
+        "tasksPerOrgYear": 12
+      },
+      "scenarios": [
+        {
+          "id": "bajo",
+          "activeOrgs": 25,
+          "tasksMonthlyEquivalent": 25.0,
+          "supportHoursMonth": 6.25,
+          "laborHoursMonthRange": [
+            10.25,
+            14.25
+          ],
+          "knownStaticCashUsdMonth": 0,
+          "optionalAiApiOnlyUsdMonth": 0.125,
+          "optionalAiApiOnlyUsdYear": 1.5,
+          "optionalAiApiUsdPerTask": 0.005,
+          "optionalAiApiUsdPerActiveOrgMonth": 0.005,
+          "fullTcoUsdMonth": null,
+          "laborUnitCostUsd": null
+        },
+        {
+          "id": "medio",
+          "activeOrgs": 100,
+          "tasksMonthlyEquivalent": 100.0,
+          "supportHoursMonth": 25.0,
+          "laborHoursMonthRange": [
+            29.0,
+            33.0
+          ],
+          "knownStaticCashUsdMonth": 0,
+          "optionalAiApiOnlyUsdMonth": 0.5,
+          "optionalAiApiOnlyUsdYear": 6.0,
+          "optionalAiApiUsdPerTask": 0.005,
+          "optionalAiApiUsdPerActiveOrgMonth": 0.005,
+          "fullTcoUsdMonth": null,
+          "laborUnitCostUsd": null
+        },
+        {
+          "id": "alto",
+          "activeOrgs": 300,
+          "tasksMonthlyEquivalent": 300.0,
+          "supportHoursMonth": 75.0,
+          "laborHoursMonthRange": [
+            79.0,
+            83.0
+          ],
+          "knownStaticCashUsdMonth": 0,
+          "optionalAiApiOnlyUsdMonth": 1.5,
+          "optionalAiApiOnlyUsdYear": 18.0,
+          "optionalAiApiUsdPerTask": 0.005,
+          "optionalAiApiUsdPerActiveOrgMonth": 0.005,
+          "fullTcoUsdMonth": null,
+          "laborUnitCostUsd": null
+        }
+      ],
+      "condition": "Responsable financiero revisa fórmulas y escenarios; sin esa revisión, sólo plantilla ilustrativa."
+    },
+    {
+      "id": "OP07",
+      "assumptions": {
+        "developmentHoursRange": [
+          32,
+          64
+        ],
+        "maintenanceHoursMonthlyRange": [
+          4,
+          8
+        ],
+        "supportMinutesPerActiveOrgMonth": 15,
+        "basis": "Supuestos de planificación propios, no cotización, benchmark de productividad ni presupuesto aprobado. No incluyen integraciones, autenticación o base de datos central.",
+        "tasksPerOrgYear": 24
+      },
+      "scenarios": [
+        {
+          "id": "bajo",
+          "activeOrgs": 25,
+          "tasksMonthlyEquivalent": 50.0,
+          "supportHoursMonth": 6.25,
+          "laborHoursMonthRange": [
+            10.25,
+            14.25
+          ],
+          "knownStaticCashUsdMonth": 0,
+          "optionalAiApiOnlyUsdMonth": 0.25,
+          "optionalAiApiOnlyUsdYear": 3.0,
+          "optionalAiApiUsdPerTask": 0.005,
+          "optionalAiApiUsdPerActiveOrgMonth": 0.01,
+          "fullTcoUsdMonth": null,
+          "laborUnitCostUsd": null
+        },
+        {
+          "id": "medio",
+          "activeOrgs": 100,
+          "tasksMonthlyEquivalent": 200.0,
+          "supportHoursMonth": 25.0,
+          "laborHoursMonthRange": [
+            29.0,
+            33.0
+          ],
+          "knownStaticCashUsdMonth": 0,
+          "optionalAiApiOnlyUsdMonth": 1.0,
+          "optionalAiApiOnlyUsdYear": 12.0,
+          "optionalAiApiUsdPerTask": 0.005,
+          "optionalAiApiUsdPerActiveOrgMonth": 0.01,
+          "fullTcoUsdMonth": null,
+          "laborUnitCostUsd": null
+        },
+        {
+          "id": "alto",
+          "activeOrgs": 300,
+          "tasksMonthlyEquivalent": 600.0,
+          "supportHoursMonth": 75.0,
+          "laborHoursMonthRange": [
+            79.0,
+            83.0
+          ],
+          "knownStaticCashUsdMonth": 0,
+          "optionalAiApiOnlyUsdMonth": 3.0,
+          "optionalAiApiOnlyUsdYear": 36.0,
+          "optionalAiApiUsdPerTask": 0.005,
+          "optionalAiApiUsdPerActiveOrgMonth": 0.01,
+          "fullTcoUsdMonth": null,
+          "laborUnitCostUsd": null
+        }
+      ],
+      "condition": "Responsable de contactos autorizados y de borrado/exportación; sin datos centrales inicialmente."
+    },
+    {
+      "id": "OP05",
+      "assumptions": {
+        "developmentHoursRange": [
+          16,
+          32
+        ],
+        "maintenanceHoursMonthlyRange": [
+          4,
+          8
+        ],
+        "supportMinutesPerActiveOrgMonth": 10,
+        "basis": "Supuestos de planificación propios, no cotización, benchmark de productividad ni presupuesto aprobado. No incluyen integraciones, autenticación o base de datos central.",
+        "tasksPerOrgYear": 48
+      },
+      "scenarios": [
+        {
+          "id": "bajo",
+          "activeOrgs": 25,
+          "tasksMonthlyEquivalent": 100.0,
+          "supportHoursMonth": 4.166666666666667,
+          "laborHoursMonthRange": [
+            8.166666666666668,
+            12.166666666666668
+          ],
+          "knownStaticCashUsdMonth": 0,
+          "optionalAiApiOnlyUsdMonth": 0.5,
+          "optionalAiApiOnlyUsdYear": 6.0,
+          "optionalAiApiUsdPerTask": 0.005,
+          "optionalAiApiUsdPerActiveOrgMonth": 0.02,
+          "fullTcoUsdMonth": null,
+          "laborUnitCostUsd": null
+        },
+        {
+          "id": "medio",
+          "activeOrgs": 100,
+          "tasksMonthlyEquivalent": 400.0,
+          "supportHoursMonth": 16.666666666666668,
+          "laborHoursMonthRange": [
+            20.666666666666668,
+            24.666666666666668
+          ],
+          "knownStaticCashUsdMonth": 0,
+          "optionalAiApiOnlyUsdMonth": 2.0,
+          "optionalAiApiOnlyUsdYear": 24.0,
+          "optionalAiApiUsdPerTask": 0.005,
+          "optionalAiApiUsdPerActiveOrgMonth": 0.02,
+          "fullTcoUsdMonth": null,
+          "laborUnitCostUsd": null
+        },
+        {
+          "id": "alto",
+          "activeOrgs": 300,
+          "tasksMonthlyEquivalent": 1200.0,
+          "supportHoursMonth": 50.0,
+          "laborHoursMonthRange": [
+            54.0,
+            58.0
+          ],
+          "knownStaticCashUsdMonth": 0,
+          "optionalAiApiOnlyUsdMonth": 6.0,
+          "optionalAiApiOnlyUsdYear": 72.0,
+          "optionalAiApiUsdPerTask": 0.005,
+          "optionalAiApiUsdPerActiveOrgMonth": 0.02,
+          "fullTcoUsdMonth": null,
+          "laborUnitCostUsd": null
+        }
+      ],
+      "condition": "Responsable de contenidos, permisos y fechas; usar recursos existentes y verificar elegibilidad por organización."
+    },
+    {
+      "id": "OP04",
+      "assumptions": {
+        "developmentHoursRange": [
+          32,
+          64
+        ],
+        "maintenanceHoursMonthlyRange": [
+          6,
+          12
+        ],
+        "supportMinutesPerActiveOrgMonth": 15,
+        "basis": "Supuestos de planificación propios, no cotización, benchmark de productividad ni presupuesto aprobado. No incluyen integraciones, autenticación o base de datos central.",
+        "tasksPerOrgYear": 6
+      },
+      "scenarios": [
+        {
+          "id": "bajo",
+          "activeOrgs": 25,
+          "tasksMonthlyEquivalent": 12.5,
+          "supportHoursMonth": 6.25,
+          "laborHoursMonthRange": [
+            12.25,
+            18.25
+          ],
+          "knownStaticCashUsdMonth": 0,
+          "optionalAiApiOnlyUsdMonth": 0.0625,
+          "optionalAiApiOnlyUsdYear": 0.75,
+          "optionalAiApiUsdPerTask": 0.005,
+          "optionalAiApiUsdPerActiveOrgMonth": 0.0025,
+          "fullTcoUsdMonth": null,
+          "laborUnitCostUsd": null
+        },
+        {
+          "id": "medio",
+          "activeOrgs": 100,
+          "tasksMonthlyEquivalent": 50.0,
+          "supportHoursMonth": 25.0,
+          "laborHoursMonthRange": [
+            31.0,
+            37.0
+          ],
+          "knownStaticCashUsdMonth": 0,
+          "optionalAiApiOnlyUsdMonth": 0.25,
+          "optionalAiApiOnlyUsdYear": 3.0,
+          "optionalAiApiUsdPerTask": 0.005,
+          "optionalAiApiUsdPerActiveOrgMonth": 0.0025,
+          "fullTcoUsdMonth": null,
+          "laborUnitCostUsd": null
+        },
+        {
+          "id": "alto",
+          "activeOrgs": 300,
+          "tasksMonthlyEquivalent": 150.0,
+          "supportHoursMonth": 75.0,
+          "laborHoursMonthRange": [
+            81.0,
+            87.0
+          ],
+          "knownStaticCashUsdMonth": 0,
+          "optionalAiApiOnlyUsdMonth": 0.75,
+          "optionalAiApiOnlyUsdYear": 9.0,
+          "optionalAiApiUsdPerTask": 0.005,
+          "optionalAiApiUsdPerActiveOrgMonth": 0.0025,
+          "fullTcoUsdMonth": null,
+          "laborUnitCostUsd": null
+        }
+      ],
+      "condition": "Elegir una ruta y un curador de vigencia. Sin ello, no publicar checklist normativo como vigente."
+    },
+    {
+      "id": "OP06",
+      "assumptions": {
+        "developmentHoursRange": [
+          24,
+          48
+        ],
+        "maintenanceHoursMonthlyRange": [
+          4,
+          8
+        ],
+        "supportMinutesPerActiveOrgMonth": 15,
+        "basis": "Supuestos de planificación propios, no cotización, benchmark de productividad ni presupuesto aprobado. No incluyen integraciones, autenticación o base de datos central.",
+        "tasksPerOrgYear": 12
+      },
+      "scenarios": [
+        {
+          "id": "bajo",
+          "activeOrgs": 25,
+          "tasksMonthlyEquivalent": 25.0,
+          "supportHoursMonth": 6.25,
+          "laborHoursMonthRange": [
+            10.25,
+            14.25
+          ],
+          "knownStaticCashUsdMonth": 0,
+          "optionalAiApiOnlyUsdMonth": 0.125,
+          "optionalAiApiOnlyUsdYear": 1.5,
+          "optionalAiApiUsdPerTask": 0.005,
+          "optionalAiApiUsdPerActiveOrgMonth": 0.005,
+          "fullTcoUsdMonth": null,
+          "laborUnitCostUsd": null
+        },
+        {
+          "id": "medio",
+          "activeOrgs": 100,
+          "tasksMonthlyEquivalent": 100.0,
+          "supportHoursMonth": 25.0,
+          "laborHoursMonthRange": [
+            29.0,
+            33.0
+          ],
+          "knownStaticCashUsdMonth": 0,
+          "optionalAiApiOnlyUsdMonth": 0.5,
+          "optionalAiApiOnlyUsdYear": 6.0,
+          "optionalAiApiUsdPerTask": 0.005,
+          "optionalAiApiUsdPerActiveOrgMonth": 0.005,
+          "fullTcoUsdMonth": null,
+          "laborUnitCostUsd": null
+        },
+        {
+          "id": "alto",
+          "activeOrgs": 300,
+          "tasksMonthlyEquivalent": 300.0,
+          "supportHoursMonth": 75.0,
+          "laborHoursMonthRange": [
+            79.0,
+            83.0
+          ],
+          "knownStaticCashUsdMonth": 0,
+          "optionalAiApiOnlyUsdMonth": 1.5,
+          "optionalAiApiOnlyUsdYear": 18.0,
+          "optionalAiApiUsdPerTask": 0.005,
+          "optionalAiApiUsdPerActiveOrgMonth": 0.005,
+          "fullTcoUsdMonth": null,
+          "laborUnitCostUsd": null
+        }
+      ],
+      "condition": "Dueño de cada procedimiento y revisión programada; no añadir buscador IA a un corpus obsoleto."
+    },
+    {
+      "id": "OP02",
+      "assumptions": {
+        "developmentHoursRange": [
+          24,
+          56
+        ],
+        "maintenanceHoursMonthlyRange": [
+          4,
+          8
+        ],
+        "supportMinutesPerActiveOrgMonth": 15,
+        "basis": "Supuestos de planificación propios, no cotización, benchmark de productividad ni presupuesto aprobado. No incluyen integraciones, autenticación o base de datos central.",
+        "tasksPerOrgYear": 1
+      },
+      "scenarios": [
+        {
+          "id": "bajo",
+          "activeOrgs": 25,
+          "tasksMonthlyEquivalent": 2.0833333333333335,
+          "supportHoursMonth": 6.25,
+          "laborHoursMonthRange": [
+            10.25,
+            14.25
+          ],
+          "knownStaticCashUsdMonth": 0,
+          "optionalAiApiOnlyUsdMonth": 0.010417,
+          "optionalAiApiOnlyUsdYear": 0.125,
+          "optionalAiApiUsdPerTask": 0.005,
+          "optionalAiApiUsdPerActiveOrgMonth": 0.000417,
+          "fullTcoUsdMonth": null,
+          "laborUnitCostUsd": null
+        },
+        {
+          "id": "medio",
+          "activeOrgs": 100,
+          "tasksMonthlyEquivalent": 8.333333333333334,
+          "supportHoursMonth": 25.0,
+          "laborHoursMonthRange": [
+            29.0,
+            33.0
+          ],
+          "knownStaticCashUsdMonth": 0,
+          "optionalAiApiOnlyUsdMonth": 0.041667,
+          "optionalAiApiOnlyUsdYear": 0.5,
+          "optionalAiApiUsdPerTask": 0.005,
+          "optionalAiApiUsdPerActiveOrgMonth": 0.000417,
+          "fullTcoUsdMonth": null,
+          "laborUnitCostUsd": null
+        },
+        {
+          "id": "alto",
+          "activeOrgs": 300,
+          "tasksMonthlyEquivalent": 25.0,
+          "supportHoursMonth": 75.0,
+          "laborHoursMonthRange": [
+            79.0,
+            83.0
+          ],
+          "knownStaticCashUsdMonth": 0,
+          "optionalAiApiOnlyUsdMonth": 0.125,
+          "optionalAiApiOnlyUsdYear": 1.5,
+          "optionalAiApiUsdPerTask": 0.005,
+          "optionalAiApiUsdPerActiveOrgMonth": 0.000417,
+          "fullTcoUsdMonth": null,
+          "laborUnitCostUsd": null
+        }
+      ],
+      "condition": "Acordar curaduría contable y comprobar brecha con FECU; si no existe, recomendar la plataforma y acompañar su uso."
+    }
+  ]
+}

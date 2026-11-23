@@ -2,7 +2,7 @@
   "id": "MF-1-metodos-HM-v1.0.0",
   "version": "1.0.0",
   "cut": "2026-11-18",
-  "status": "contrato metodologico: capa R1/R2 aplicada; R3-R6 pendiente",
+  "status": "Cobertura y tres índices documentales aplicados con límites; negocio pagado pendiente",
   "audience": "Juanra / DIMI",
   "scope": "presentación interna documentada, no SaaS ni censo representativo",
   "navigation_contract": {
@@ -168,18 +168,22 @@
     },
     {
       "id": "impacto_ia",
-      "title": "Impacto incremental con IA",
+      "title": "Impacto potencial de la herramienta · IPH",
       "phases": [
-        "PX-R5",
-        "H-4"
+        "OP-1 a OP-6"
       ],
-      "status": "pendiente_de_validacion",
-      "purpose": "Contrastar automatización/IA con una alternativa convencional y medir efecto incremental",
-      "unit": "tarea-solución",
-      "scores": null,
-      "weights": null,
-      "formula": null,
-      "adversarial": "Hipótesis no equivale a impacto observado, comparar con no IA"
+      "status": "aplicada_documental_provisional",
+      "purpose": "Comparar siete herramientas gratuitas, alternativa simple, impacto potencial y aporte adicional de IA todavía sin medir",
+      "unit": "oportunidad-tarea-variante simple; horizonte12 meses",
+      "scores": "analisis/oportunidades-7-v1.json",
+      "weights": {
+        "M": 40,
+        "A": 25,
+        "F": 20,
+        "D": 15
+      },
+      "formula": "IPH = redondear(1 + 99 × ((40M + 25A + 20F + 15D)/100 − 1)/4)",
+      "adversarial": "Los niveles son juicio documental de confianza Baja, no ahorro medido. No sumar criticidad, ASdC o beneficios; incremento de IA no demostrado."
     },
     {
       "id": "negocio",
