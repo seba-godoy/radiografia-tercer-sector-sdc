@@ -68,7 +68,7 @@ export function mountAb(root,data,critical){
   if(b.dataset.abExport==='json'){
    text=JSON.stringify({methodVersion:data.version,scenario:{preparationWeights:session.applied,criticalityWeights:crit.weights,control:'C original por intervención'},baselineMethod:data.method,inputHashes:data.inputHashes,rows:rows.map(r=>{
     const {weightScoreRange,weightRankRange,judgmentScoreRange,judgmentRankRange,judgmentScenarios,conservativeScore,additiveComparator,...current}=r;
-    return {...current,criticality:crit.rows.get(r.id).score,baselineSensitivity:{weightScoreRange,weightRankRange,judgmentScoreRange,judgmentRankRange,judgmentScenarios,conservativeScore,additiveComparator}};
+    return {...current,criticality:crit.rows.get(r.id).score,criticalityRank:crit.rows.get(r.id).rank,baselineSensitivity:{weightScoreRange,weightRankRange,judgmentScoreRange,judgmentRankRange,judgmentScenarios,conservativeScore,additiveComparator}};
    })},null,2);type='application/json';name='abordabilidad_31_escenario.json';
   }else{
    const encode=v=>'"'+String(v).replaceAll('"','""')+'"';

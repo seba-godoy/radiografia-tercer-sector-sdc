@@ -90,6 +90,7 @@ async function run() {
       assert.deepEqual(out.scenario.preparationWeights,{K:100,D:0,E:0,A:0});
       assert.deepEqual(out.scenario.criticalityWeights,{I:0,F:100,A:0,U:0});
       assert.equal(out.rows.length,31);assert.equal(out.rows.find(r=>r.id==='P47').score,75);
+      assert.equal(out.rows.find(r=>r.id==='P17').criticalityRank,1);
       const csvEvent=page.waitForEvent('download');await page.locator('[data-ab-export=csv]').click();
       const csvFile=await csvEvent;const csv=await readFile(await csvFile.path(),'utf8');
       assert.equal(csv.trim().split('\n').length,32);assert.match(csv,/F_peso_criticidad/);
