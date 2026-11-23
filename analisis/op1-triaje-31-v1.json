@@ -1,0 +1,774 @@
+{
+  "version": "1.0",
+  "date": "2026-11-23",
+  "rule": "No umbral arbitrario ni producto C×ASdC. Se agrupan tareas compartidas, sin sumar criticidades, encuestas o beneficios. Dominancia sólo descriptiva; sensibilidad y confianza acompañan cada entrada.",
+  "counts": {
+    "reviewed": 31,
+    "routed": 14,
+    "outsideFirstMvp": 17,
+    "opportunities": 7
+  },
+  "paretoDescriptive": [
+    "P13",
+    "P14",
+    "P25",
+    "P47"
+  ],
+  "rows": [
+    {
+      "id": "P02",
+      "title": "Interrumpimos servicios cuando no se renueva un convenio",
+      "criticality": 75,
+      "criticalityConfidence": "Media",
+      "criticalityWeightRange": [
+        73,
+        77
+      ],
+      "addressability": 16,
+      "addressabilityConfidence": "Baja",
+      "addressabilityWeightRange": [
+        16,
+        17
+      ],
+      "opportunity": null,
+      "decision": "Fuera del primer MVP",
+      "reason": "No renovación de servicios requiere decisiones de terceros; la planificación de caja sólo ayuda a anticipar escenarios.",
+      "claimIds": [
+        "P02__F03__01",
+        "P02__F09__01",
+        "P02__F18__02",
+        "P02__F20__02"
+      ]
+    },
+    {
+      "id": "P11",
+      "title": "Nos faltan recursos para medir qué cambió con nuestros programas",
+      "criticality": 53,
+      "criticalityConfidence": "Baja",
+      "criticalityWeightRange": [
+        51,
+        55
+      ],
+      "addressability": 24,
+      "addressabilityConfidence": "Baja",
+      "addressabilityWeightRange": [
+        23,
+        25
+      ],
+      "opportunity": null,
+      "decision": "Fuera del primer MVP",
+      "reason": "Definir resultados e instrumentos es previo al software; automatizar indicadores no prueba impacto de programas.",
+      "claimIds": [
+        "P11__F09__01",
+        "P11__F17__01",
+        "P11__F18__01",
+        "P11__F18__02"
+      ]
+    },
+    {
+      "id": "P13",
+      "title": "Nos cuesta asegurar ingresos estables para planificar",
+      "criticality": 75,
+      "criticalityConfidence": "Media",
+      "criticalityWeightRange": [
+        75,
+        75
+      ],
+      "addressability": 35,
+      "addressabilityConfidence": "Media",
+      "addressabilityWeightRange": [
+        34,
+        36
+      ],
+      "opportunity": "OP03",
+      "decision": "Explorar tarea acotada",
+      "reason": "Entrada a OP03; la herramienta sólo aborda la tarea interna, no el problema completo. La decisión de donar, el monto y continuidad de los aportes.",
+      "claimIds": [
+        "P13__F03__02",
+        "P13__F16__01",
+        "P13__F18__01",
+        "P13__F20__02"
+      ]
+    },
+    {
+      "id": "P14",
+      "title": "Podríamos sostener pocos meses de operación sin aportes externos",
+      "criticality": 90,
+      "criticalityConfidence": "Media",
+      "criticalityWeightRange": [
+        88,
+        91
+      ],
+      "addressability": 21,
+      "addressabilityConfidence": "Baja",
+      "addressabilityWeightRange": [
+        21,
+        22
+      ],
+      "opportunity": "OP03",
+      "decision": "Explorar tarea acotada",
+      "reason": "Entrada a OP03; la herramienta sólo aborda la tarea interna, no el problema completo. Crear reservas, compensar ingresos perdidos o garantizar continuidad frente al shock hipotético.",
+      "claimIds": [
+        "P14__F03__01",
+        "P14__F15__01",
+        "P14__F18__01",
+        "P14__F18__02"
+      ]
+    },
+    {
+      "id": "P15",
+      "title": "Perdemos una vía habitual de financiamiento cuando desaparece una convocatoria",
+      "criticality": 65,
+      "criticalityConfidence": "Media",
+      "criticalityWeightRange": [
+        63,
+        66
+      ],
+      "addressability": 16,
+      "addressabilityConfidence": "Baja",
+      "addressabilityWeightRange": [
+        16,
+        16
+      ],
+      "opportunity": null,
+      "decision": "Fuera del primer MVP",
+      "reason": "Cancelación de fondos no se resuelve con software; evitar prometer financiación alternativa.",
+      "claimIds": [
+        "P15__F03__01",
+        "P15__F03__02",
+        "P15__F04__01"
+      ]
+    },
+    {
+      "id": "P16",
+      "title": "Las transferencias comprometidas llegan tarde",
+      "criticality": 79,
+      "criticalityConfidence": "Media",
+      "criticalityWeightRange": [
+        78,
+        81
+      ],
+      "addressability": 11,
+      "addressabilityConfidence": "Baja",
+      "addressabilityWeightRange": [
+        11,
+        11
+      ],
+      "opportunity": "OP03",
+      "decision": "Explorar tarea acotada",
+      "reason": "Entrada a OP03; la herramienta sólo aborda la tarea interna, no el problema completo. La fecha efectiva del pago estatal y el coste financiero de esperar.",
+      "claimIds": [
+        "P16__F03__01",
+        "P16__F17__02",
+        "P16__F26__01",
+        "P16__F27__02"
+      ]
+    },
+    {
+      "id": "P17",
+      "title": "Tenemos que cubrir costos que el convenio no permite rendir",
+      "criticality": 81,
+      "criticalityConfidence": "Media",
+      "criticalityWeightRange": [
+        80,
+        83
+      ],
+      "addressability": 21,
+      "addressabilityConfidence": "Baja",
+      "addressabilityWeightRange": [
+        21,
+        22
+      ],
+      "opportunity": "OP03",
+      "decision": "Explorar tarea acotada",
+      "reason": "Entrada a OP03; la herramienta sólo aborda la tarea interna, no el problema completo. Cambiar la admisibilidad de gastos o obtener aportes adicionales.",
+      "claimIds": [
+        "P17__F03__01",
+        "P17__F03__02",
+        "P17__F18__01",
+        "P17__F26__01"
+      ]
+    },
+    {
+      "id": "P18",
+      "title": "La demora en la toma de razón impide iniciar actividades",
+      "criticality": 73,
+      "criticalityConfidence": "Media",
+      "criticalityWeightRange": [
+        71,
+        75
+      ],
+      "addressability": 7,
+      "addressabilityConfidence": "Baja",
+      "addressabilityWeightRange": [
+        7,
+        7
+      ],
+      "opportunity": null,
+      "decision": "Fuera del primer MVP",
+      "reason": "Toma de razón es un proceso externo; no se prometen menores plazos.",
+      "claimIds": [
+        "P18__F03__01",
+        "P18__F04__01"
+      ]
+    },
+    {
+      "id": "P19",
+      "title": "Las garantías dificultan que organizaciones pequeñas contraten con el Estado",
+      "criticality": 51,
+      "criticalityConfidence": "Baja",
+      "criticalityWeightRange": [
+        51,
+        51
+      ],
+      "addressability": 21,
+      "addressabilityConfidence": "Baja",
+      "addressabilityWeightRange": [
+        21,
+        21
+      ],
+      "opportunity": null,
+      "decision": "Fuera del primer MVP",
+      "reason": "Una herramienta puede ordenar condiciones, pero no emitir garantías ni financiar su costo.",
+      "claimIds": [
+        "P19__F03__02",
+        "P19__F06__01",
+        "P19__F06__02",
+        "P19__F26__01"
+      ]
+    },
+    {
+      "id": "P20",
+      "title": "Nuestras rendiciones quedan abiertas por falta de respuesta",
+      "criticality": 69,
+      "criticalityConfidence": "Media",
+      "criticalityWeightRange": [
+        67,
+        71
+      ],
+      "addressability": 10,
+      "addressabilityConfidence": "Baja",
+      "addressabilityWeightRange": [
+        9,
+        10
+      ],
+      "opportunity": null,
+      "decision": "Fuera del primer MVP",
+      "reason": "No respuesta de organismos es externa; seguimiento no asegura respuesta.",
+      "claimIds": [
+        "P20__F03__01",
+        "P20__F03__02",
+        "P20__F06__01",
+        "P20__F27__02"
+      ]
+    },
+    {
+      "id": "P21",
+      "title": "Nos piden rehacer rendiciones que ya habían aprobado",
+      "criticality": 63,
+      "criticalityConfidence": "Media",
+      "criticalityWeightRange": [
+        62,
+        64
+      ],
+      "addressability": 18,
+      "addressabilityConfidence": "Baja",
+      "addressabilityWeightRange": [
+        18,
+        19
+      ],
+      "opportunity": null,
+      "decision": "Fuera del primer MVP",
+      "reason": "Reapertura de rendiciones depende del organismo revisor y de reglas; fuera del primer alcance documental.",
+      "claimIds": [
+        "P21__F03__01",
+        "P21__F03__02",
+        "P21__F27__01",
+        "P21__F27__02"
+      ]
+    },
+    {
+      "id": "P22",
+      "title": "Nos cuesta rendir gastos en SISREC",
+      "criticality": 63,
+      "criticalityConfidence": "Media",
+      "criticalityWeightRange": [
+        62,
+        64
+      ],
+      "addressability": 36,
+      "addressabilityConfidence": "Media",
+      "addressabilityWeightRange": [
+        35,
+        37
+      ],
+      "opportunity": null,
+      "decision": "Fuera del primer MVP",
+      "reason": "Preparación de rendiciones exige reglas vigentes y prueba con SISREC; no construir integración ni duplicar el sistema oficial en el primer MVP.",
+      "claimIds": [
+        "P22__F03__01",
+        "P22__F06__01",
+        "P22__F27__01",
+        "P22__F27__02"
+      ]
+    },
+    {
+      "id": "P23",
+      "title": "Debemos traspasar la atención y los datos si no renuevan el convenio",
+      "criticality": 63,
+      "criticalityConfidence": "Baja",
+      "criticalityWeightRange": [
+        60,
+        66
+      ],
+      "addressability": 8,
+      "addressabilityConfidence": "Baja",
+      "addressabilityWeightRange": [
+        8,
+        9
+      ],
+      "opportunity": null,
+      "decision": "Fuera del primer MVP",
+      "reason": "Traspaso de ejecutor depende del servicio y convenios; no basta un repositorio.",
+      "claimIds": [
+        "P23__F03__01"
+      ]
+    },
+    {
+      "id": "P25",
+      "title": "Los requisitos dispersos nos dificultan recibir donaciones",
+      "criticality": 63,
+      "criticalityConfidence": "Media",
+      "criticalityWeightRange": [
+        62,
+        64
+      ],
+      "addressability": 39,
+      "addressabilityConfidence": "Media",
+      "addressabilityWeightRange": [
+        38,
+        39
+      ],
+      "opportunity": "OP04",
+      "decision": "Explorar tarea acotada",
+      "reason": "Entrada a OP04; la herramienta sólo aborda la tarea interna, no el problema completo. Simplificar leyes o garantizar autorización y acceso al beneficio.",
+      "claimIds": [
+        "P25__F03__01",
+        "P25__F03__02",
+        "P25__F07__01",
+        "P25__F09__01"
+      ]
+    },
+    {
+      "id": "P26",
+      "title": "Los trámites de algunos donantes complican obtener o rendir fondos",
+      "criticality": 51,
+      "criticalityConfidence": "Media",
+      "criticalityWeightRange": [
+        51,
+        51
+      ],
+      "addressability": 24,
+      "addressabilityConfidence": "Media",
+      "addressabilityWeightRange": [
+        23,
+        24
+      ],
+      "opportunity": "OP04",
+      "decision": "Explorar tarea acotada",
+      "reason": "Entrada a OP04; la herramienta sólo aborda la tarea interna, no el problema completo. Cambiar requerimientos, evaluaciones o decisiones de los donantes.",
+      "claimIds": [
+        "P26__F03__01",
+        "P26__F04__01",
+        "P26__F18__01",
+        "P26__F18__02"
+      ]
+    },
+    {
+      "id": "P28",
+      "title": "Nos cuesta mantener los contratos y retener especialistas",
+      "criticality": 75,
+      "criticalityConfidence": "Media",
+      "criticalityWeightRange": [
+        75,
+        75
+      ],
+      "addressability": 28,
+      "addressabilityConfidence": "Media",
+      "addressabilityWeightRange": [
+        27,
+        30
+      ],
+      "opportunity": "OP06",
+      "decision": "Explorar tarea acotada",
+      "reason": "Entrada a OP06; la herramienta sólo aborda la tarea interna, no el problema completo. Garantizar salarios, renovar convenios o demostrar retención de profesionales.",
+      "claimIds": [
+        "P28__F03__01",
+        "P28__F18__01",
+        "P28__F18__02",
+        "P28__F26__01"
+      ]
+    },
+    {
+      "id": "P30",
+      "title": "Nos cuesta aportar a políticas públicas en espacios dispersos e intermitentes",
+      "criticality": 47,
+      "criticalityConfidence": "Baja",
+      "criticalityWeightRange": [
+        44,
+        48
+      ],
+      "addressability": 13,
+      "addressabilityConfidence": "Baja",
+      "addressabilityWeightRange": [
+        13,
+        14
+      ],
+      "opportunity": null,
+      "decision": "Fuera del primer MVP",
+      "reason": "Participación/incidencia requiere acceso y representación institucional, no sólo una herramienta.",
+      "claimIds": [
+        "P30__F09__01",
+        "P30__F09__03",
+        "P30__F09__04",
+        "P30__F18__01"
+      ]
+    },
+    {
+      "id": "P32",
+      "title": "Nos falta capacidad de equipo para preparar la memoria y el balance",
+      "criticality": 51,
+      "criticalityConfidence": "Baja",
+      "criticalityWeightRange": [
+        51,
+        51
+      ],
+      "addressability": 47,
+      "addressabilityConfidence": "Media",
+      "addressabilityWeightRange": [
+        46,
+        48
+      ],
+      "opportunity": "OP02",
+      "decision": "Explorar tarea acotada",
+      "reason": "Entrada a OP02; la herramienta sólo aborda la tarea interna, no el problema completo. Crear datos inexistentes, financiar más equipo o firmar/certificar estados financieros.",
+      "claimIds": [
+        "P32__F10__01",
+        "P32__F18__01",
+        "P32__F18__02",
+        "P32__F20__02"
+      ]
+    },
+    {
+      "id": "P38",
+      "title": "Tenemos que volver a entregar los mismos antecedentes",
+      "criticality": 54,
+      "criticalityConfidence": "Baja",
+      "criticalityWeightRange": [
+        52,
+        57
+      ],
+      "addressability": 29,
+      "addressabilityConfidence": "Media",
+      "addressabilityWeightRange": [
+        28,
+        29
+      ],
+      "opportunity": "OP04",
+      "decision": "Explorar tarea acotada",
+      "reason": "Entrada a OP04; la herramienta sólo aborda la tarea interna, no el problema completo. Eliminar la solicitud externa o integrar registros públicos.",
+      "claimIds": [
+        "P38__F07__02",
+        "P38__F07__03",
+        "P38__F07__04",
+        "P38__F09__01"
+      ]
+    },
+    {
+      "id": "P40",
+      "title": "Nuestro acceso para enviar la memoria y el balance puede quedar bloqueado",
+      "criticality": 38,
+      "criticalityConfidence": "Baja",
+      "criticalityWeightRange": [
+        37,
+        39
+      ],
+      "addressability": 15,
+      "addressabilityConfidence": "Baja",
+      "addressabilityWeightRange": [
+        15,
+        16
+      ],
+      "opportunity": null,
+      "decision": "Fuera del primer MVP",
+      "reason": "Bloqueos de acceso/carga son del portal externo; sin API o control acreditado no se ofrece corrección.",
+      "claimIds": [
+        "P40__F08__01",
+        "P40__F08__02"
+      ]
+    },
+    {
+      "id": "P41",
+      "title": "Tenemos que completar o corregir envíos de memorias y balances",
+      "criticality": 42,
+      "criticalityConfidence": "Baja",
+      "criticalityWeightRange": [
+        41,
+        44
+      ],
+      "addressability": 54,
+      "addressabilityConfidence": "Media",
+      "addressabilityWeightRange": [
+        53,
+        55
+      ],
+      "opportunity": "OP02",
+      "decision": "Explorar tarea acotada",
+      "reason": "Entrada a OP02; la herramienta sólo aborda la tarea interna, no el problema completo. Reformar el portal o su revisión; no garantiza que el organismo acepte cada documento.",
+      "claimIds": [
+        "P41__F08__01",
+        "P41__F08__02"
+      ]
+    },
+    {
+      "id": "P43",
+      "title": "Tenemos que volver a postular mientras sostenemos un servicio",
+      "criticality": 63,
+      "criticalityConfidence": "Baja",
+      "criticalityWeightRange": [
+        62,
+        64
+      ],
+      "addressability": 24,
+      "addressabilityConfidence": "Baja",
+      "addressabilityWeightRange": [
+        23,
+        24
+      ],
+      "opportunity": null,
+      "decision": "Fuera del primer MVP",
+      "reason": "La renovación de convenios depende de decisiones externas; un calendario no cambia las bases ni asegura continuidad.",
+      "claimIds": [
+        "P43__F09__01",
+        "P43__F09__03",
+        "P43__F20__01",
+        "P43__F20__02"
+      ]
+    },
+    {
+      "id": "P46",
+      "title": "Nos cuesta dar a conocer nuestro trabajo para acceder a nuevas oportunidades",
+      "criticality": 53,
+      "criticalityConfidence": "Baja",
+      "criticalityWeightRange": [
+        51,
+        55
+      ],
+      "addressability": 56,
+      "addressabilityConfidence": "Media",
+      "addressabilityWeightRange": [
+        55,
+        57
+      ],
+      "opportunity": "OP05",
+      "decision": "Explorar tarea acotada",
+      "reason": "Entrada a OP05; la herramienta sólo aborda la tarea interna, no el problema completo. Garantizar alcance, aportes o nuevas oportunidades; un buscador de fondos por sí solo no resuelve visibilidad.",
+      "claimIds": [
+        "P46__F11__01",
+        "P46__F18__01",
+        "P46__F18__02",
+        "P46__F22__01"
+      ]
+    },
+    {
+      "id": "P47",
+      "title": "Nos cuesta mantener al directorio al día sobre los planes que aprobó",
+      "criticality": 57,
+      "criticalityConfidence": "Baja",
+      "criticalityWeightRange": [
+        55,
+        58
+      ],
+      "addressability": 64,
+      "addressabilityConfidence": "Media",
+      "addressabilityWeightRange": [
+        63,
+        65
+      ],
+      "opportunity": "OP01",
+      "decision": "Explorar tarea acotada",
+      "reason": "Entrada a OP01; la herramienta sólo aborda la tarea interna, no el problema completo. Asegurar compromiso del directorio, resultados estratégicos o eficacia de la gobernanza.",
+      "claimIds": [
+        "P47__F16__01",
+        "P47__F16__02",
+        "P47__F18__01",
+        "P47__F20__02"
+      ]
+    },
+    {
+      "id": "P48",
+      "title": "Atendemos más casos que plazas financiadas con el mismo equipo",
+      "criticality": 73,
+      "criticalityConfidence": "Baja",
+      "criticalityWeightRange": [
+        70,
+        76
+      ],
+      "addressability": 6,
+      "addressabilityConfidence": "Baja",
+      "addressabilityWeightRange": [
+        6,
+        6
+      ],
+      "opportunity": null,
+      "decision": "Fuera del primer MVP",
+      "reason": "Sobrecarga estructural requiere recursos o rediseño; agregar una aplicación puede aumentar trabajo.",
+      "claimIds": [
+        "P48__F26__01",
+        "P48__F26__02"
+      ]
+    },
+    {
+      "id": "P49",
+      "title": "Tenemos que financiar la instalación antes de recibir el primer aporte",
+      "criticality": 60,
+      "criticalityConfidence": "Baja",
+      "criticalityWeightRange": [
+        58,
+        63
+      ],
+      "addressability": 21,
+      "addressabilityConfidence": "Baja",
+      "addressabilityWeightRange": [
+        21,
+        22
+      ],
+      "opportunity": "OP03",
+      "decision": "Explorar tarea acotada",
+      "reason": "Entrada a OP03; la herramienta sólo aborda la tarea interna, no el problema completo. Aportar capital de trabajo, adelantar fondos públicos o garantizar crédito.",
+      "claimIds": [
+        "P49__F26__01",
+        "P49__F26__02",
+        "P49__F26__03",
+        "P49__F27__01"
+      ]
+    },
+    {
+      "id": "P50",
+      "title": "El cierre financiero deja saldos sin resolver tras terminar un convenio",
+      "criticality": 44,
+      "criticalityConfidence": "Baja",
+      "criticalityWeightRange": [
+        43,
+        46
+      ],
+      "addressability": 10,
+      "addressabilityConfidence": "Baja",
+      "addressabilityWeightRange": [
+        9,
+        10
+      ],
+      "opportunity": null,
+      "decision": "Fuera del primer MVP",
+      "reason": "Cierre administrativo/financiero de programas exige intervención especializada; sin automatización oficial acreditada.",
+      "claimIds": [
+        "P50__F26__01",
+        "P50__F26__02",
+        "P50__F27__01",
+        "P50__F27__02"
+      ]
+    },
+    {
+      "id": "P51",
+      "title": "Nos cuesta separar gastos de varios proyectos en una misma cuenta",
+      "criticality": 57,
+      "criticalityConfidence": "Baja",
+      "criticalityWeightRange": [
+        54,
+        60
+      ],
+      "addressability": 32,
+      "addressabilityConfidence": "Baja",
+      "addressabilityWeightRange": [
+        31,
+        32
+      ],
+      "opportunity": null,
+      "decision": "Fuera del primer MVP",
+      "reason": "Separar imputaciones de proyectos demanda reglas contables y validación especializada; una planilla genérica no acredita exactitud.",
+      "claimIds": [
+        "P51__F26__01",
+        "P51__F26__02"
+      ]
+    },
+    {
+      "id": "P52",
+      "title": "Nos cuesta captar y mantener familias de acogida",
+      "criticality": 75,
+      "criticalityConfidence": "Baja",
+      "criticalityWeightRange": [
+        72,
+        79
+      ],
+      "addressability": 11,
+      "addressabilityConfidence": "Baja",
+      "addressabilityWeightRange": [
+        11,
+        11
+      ],
+      "opportunity": null,
+      "decision": "Fuera del primer MVP",
+      "reason": "Captación de familias de acogida exige salvaguardas y especialistas del programa; fuera del piloto generalista.",
+      "claimIds": [
+        "P52__F26__01",
+        "P52__F26__02"
+      ]
+    },
+    {
+      "id": "P53",
+      "title": "Llegar a familias en zonas dispersas nos consume más tiempo y recursos",
+      "criticality": 60,
+      "criticalityConfidence": "Baja",
+      "criticalityWeightRange": [
+        58,
+        63
+      ],
+      "addressability": 13,
+      "addressabilityConfidence": "Baja",
+      "addressabilityWeightRange": [
+        13,
+        14
+      ],
+      "opportunity": null,
+      "decision": "Fuera del primer MVP",
+      "reason": "Costos rurales y visitas exigen recursos y diseño de servicios; beneficio digital no acreditado.",
+      "claimIds": [
+        "P53__F26__01",
+        "P53__F26__02"
+      ]
+    },
+    {
+      "id": "P54",
+      "title": "Nos falta equipo y tiempo para buscar donantes locales",
+      "criticality": 57,
+      "criticalityConfidence": "Baja",
+      "criticalityWeightRange": [
+        55,
+        58
+      ],
+      "addressability": 39,
+      "addressabilityConfidence": "Media",
+      "addressabilityWeightRange": [
+        38,
+        39
+      ],
+      "opportunity": "OP07",
+      "decision": "Explorar tarea acotada",
+      "reason": "Entrada a OP07; la herramienta sólo aborda la tarea interna, no el problema completo. Añadir capacidad laboral o asegurar respuesta y aportes de donantes.",
+      "claimIds": [
+        "P54__F22__01",
+        "P54__F22__02"
+      ]
+    }
+  ]
+}

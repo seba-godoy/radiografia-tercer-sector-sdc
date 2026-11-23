@@ -1,0 +1,709 @@
+{
+  "version": "1.0",
+  "methodVersion": "0.2",
+  "date": "2026-11-20",
+  "problem": "P13",
+  "title": "P13 · Aplicación con evidencia agregada",
+  "status": "aplicacion_completada_total_no_identificado",
+  "headline": "Alcance acotado; criticidad total pendiente",
+  "scope": "Referencia de muestras mixtas y registros de donatarias. No es una estimación nacional ni exclusiva de fundaciones.",
+  "decision": "La aplicación del método v0.2 mejora la medición del alcance y agrega un contraste temporal administrativo. No permite aún un total de criticidad: impacto típico, recurrencia del problema y urgencia efectiva siguen sin puntuación compatible.",
+  "summary": "Se reutilizan las 16 publicaciones y 28 hallazgos del banco de P13 y se vinculan UC 2024, CoMov y el Segundo Barómetro CEFIS. Las publicaciones del mismo estudio se agrupan por origen; no se suman muestras.",
+  "components": [
+    {
+      "key": "I",
+      "name": "Impacto",
+      "weight": 35,
+      "result": "Sin puntuación comparable",
+      "interpretation": "Hay consecuencias agregadas y casos con efectos operativos, pero no una distribución de severidad atribuible al perímetro privado/propio de P13.",
+      "confidence": "Parcial para existencia del daño; insuficiente para su magnitud típica.",
+      "refs": [
+        "UC24",
+        "UC26",
+        "COMOV"
+      ],
+      "next": "Cotejar distribución publicada de ajustes, reducción de servicios y cierres entre organizaciones afectadas por ingresos privados o propios."
+    },
+    {
+      "key": "F",
+      "name": "Recurrencia",
+      "weight": 25,
+      "result": "Contraste temporal disponible; sin puntos",
+      "interpretation": "CEFIS/SII observa continuidad anual de donaciones declaradas, no número de episodios de inestabilidad de ingresos totales ni su persistencia operativa.",
+      "confidence": "Directa para continuidad del registro tributario; proxy histórico para P13.",
+      "refs": [
+        "BARO",
+        "UC26"
+      ],
+      "next": "Distinguir pérdida transitoria, repetida y persistente en una serie enlazada por organización; contrastar otros ingresos y actividad."
+    },
+    {
+      "key": "A",
+      "name": "Alcance",
+      "weight": 25,
+      "result": "37–68% · límite lógico del proxy",
+      "interpretation": "Proporción que declaró al menos una caída en donaciones o ingresos propios, calculada a partir de los porcentajes publicados. No es un intervalo de confianza ni prevalencia del problema completo.",
+      "confidence": "Base e ítems cotejados; superposición no publicada y muestra intencional.",
+      "refs": [
+        "UC26",
+        "COMOV"
+      ],
+      "next": "Una tabla de coocurrencia publicada estrecharía el rango. Una caída por partida puede compensarse con otra fuente."
+    },
+    {
+      "key": "U",
+      "name": "Urgencia",
+      "weight": 15,
+      "result": "Sin plazo efectivo comparable",
+      "interpretation": "Las reservas ante suspensión hipotética de aportes miden resistencia a un escenario; no el tiempo real hasta un daño adicional por P13.",
+      "confidence": "Medición de estrés disponible; urgencia actual no identificada.",
+      "refs": [
+        "UC26",
+        "COMOV"
+      ],
+      "next": "Plazos de compromisos y vencimientos junto a déficit y fondos utilizables, o una distribución agregada publicada de tiempo hasta recortes."
+    }
+  ],
+  "calculations": {
+    "donations": 37,
+    "ownIncome": 31,
+    "denominator": 255,
+    "reachNominal": [
+      37,
+      68
+    ],
+    "reachRoundingEnvelope": [
+      36.5,
+      69
+    ],
+    "formula": "máx(37,31) ≤ P(caída de donaciones o ingresos propios) ≤ mín(100,37+31)",
+    "roundingNote": "37–68% usa los porcentajes publicados como valores nominales. Si fueron redondeados al entero más cercano, la envolvente aproximada se amplía a 36,5–menos de 69%. No se reconstruyen conteos exactos.",
+    "siiContinuity": 50.7,
+    "siiDiscontinuity": 49.3,
+    "siiCohort": "Donatarias presentes en el registro de 2018 seguidas hasta 2023; N de esa cohorte no explicitado junto a la tabla 9.",
+    "total": null,
+    "logicalBoundsNominal": [
+      10,
+      92
+    ],
+    "logicalBoundsNote": "Solo bajo el supuesto de usar el proxy A=37–68 y dejar I/F/U libres entre 1 y 100, la fórmula abarca 10–92 redondeado. Es un límite aritmético de falta de identificación, no un puntaje, intervalo de confianza ni estimación de criticidad.",
+    "sensitivity": "Variar el peso de A entre 20 y 30%, reescalando los demás proporcionalmente, deja una envolvente aritmética aproximada de 8–94. Con pesos iguales se conserva 10–92. Ningún escenario identifica un total."
+  },
+  "studies": [
+    {
+      "id": "UC26",
+      "family": "SEA-DIRECCIONES",
+      "title": "UC · Encuesta de directores/as 2026",
+      "population": "255 fundaciones y corporaciones · muestreo intencional; reservas N=219; panel N=130.",
+      "period": "Cambios de ingresos 2024–2025; levantamiento julio–agosto de 2026.",
+      "finding": "Caída de donaciones: 37%; ingresos propios: 31%. Los dos ítems comparten N=255. El panel no se suma a la muestra total.",
+      "role": "Indicador principal de alcance del proxy. Reservas y percepciones son contrastes, no urgencia efectiva ni episodios repetidos.",
+      "locator": "PDF p.13 ficha; p.34 / lámina 33 ingresos; p.35 reservas; p.36 equipos.",
+      "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=34",
+      "verification": "PDF original y gráfico cotejados en esta iteración."
+    },
+    {
+      "id": "COMOV",
+      "family": "COMOV-FONDOAFONDO-2024",
+      "title": "CoMov / FondoAFondo · Sostenibilidad financiera",
+      "population": "86 OSC voluntarias; base efectiva por indicador no explicitada.",
+      "period": "Resultados 2021–2023; cuerpo metodológico indica aplicación mayo–julio 2024.",
+      "finding": "Para 2023 frente a 2022, 20% reporta caída de fondos privados y 16% de donaciones de personas. El informe también registra 47% con caída real total 2021–2023 y 39,5% sin cobertura de costos de 2023.",
+      "role": "Corrobora variación privada y fragilidad con otro instrumento. No se promedia con UC: cambian ventana, fuente y selección.",
+      "locator": "pp.8,17–18,21–23; preguntas 42–50 y 60–63.",
+      "url": "https://comunidad-org.cl/wp-content/uploads/2025/01/20241202-Informe-instrumento-sostenibilidad-financiera-1.pdf#page=22",
+      "verification": "PDF y gráfico cotejados. El resumen dice 2023 y el cuerpo 2024 para aplicación: discrepancia conservada; la tabla financiera no publica su N efectivo."
+    },
+    {
+      "id": "BARO",
+      "family": "CEFIS-BAROMETRO-2024-SII",
+      "title": "CEFIS · Segundo Barómetro de Filantropía",
+      "population": "Registros SII: cohorte receptora de 2018; N no explicitado en tabla 9. La encuesta a 157 donatarias es otra base.",
+      "period": "Seguimiento administrativo 2018–2023.",
+      "finding": "Tabla 9: 50,7% recibió donaciones declaradas todos los años; 11,5% aparece en ambos extremos con huecos intermedios; 24,2% aparece después de 2018 pero no en 2023; 13,6% solo en 2018.",
+      "role": "Nuevo contraste temporal: 49,3% no tiene recepción registrada continua. No mide magnitud de ingresos, cese de actividad ni daño; omite flujos fuera de los mecanismos cubiertos.",
+      "locator": "pp.11–14 metodología; p.31 tabla 9.",
+      "url": "https://uai.cdn7pm.net/documentos/segundo-barometro-de-la-filantropia-en-chile-tendencias-e-indice-de-desarrollo-2018-2023.pdf#page=31",
+      "verification": "Tabla original y metodología cotejadas. El texto contiguo dice 13,8% donde la tabla dice 13,6%; se usa la tabla, que suma 100%, y se registra la discrepancia."
+    },
+    {
+      "id": "FECU",
+      "family": "COS-FECU-2024",
+      "title": "COS · Informe FECU Social 2024",
+      "population": "245 OSC reportantes en 2024; 281 en 2023, composición no idéntica acreditada.",
+      "period": "Ejercicio 2024 y contraste agregado 2023.",
+      "finding": "49,8% reporta solo ingresos operacionales privados y 45,7% financiamiento mixto: 95,5% tiene algún componente privado.",
+      "role": "Dimensiona exposición financiera. No convierte 95,5% en afectadas ni mide recurrencia: comparar agregados de muestras distintas no es seguir organizaciones.",
+      "locator": "pp.25–27; composición por organización en p.26.",
+      "url": "https://comunidad-org.cl/wp-content/uploads/2026/06/Informe-FECU-Social-2024.pdf#page=26",
+      "verification": "Página oficial actual y original público previamente descargado cotejados; web no reabrió PDF por tamaño."
+    },
+    {
+      "id": "IFO",
+      "family": "IFO-TRASCENDER-2025",
+      "title": "Fundación Trascender · IFO 2025",
+      "population": "110 OSC diagnosticadas; tipos jurídicos mezclados.",
+      "period": "Diagnóstico 2025, publicado en 2026.",
+      "finding": "Finanzas sostenibles se ubica alrededor de 2,02/5; las brechas financieras acompañan capacidades misionales más fuertes.",
+      "role": "Contraste de capacidad organizacional. No se transforma en criticidad. F11 y F12 son una base; gLOCAL no añade otra muestra independiente acreditada.",
+      "locator": "Informe PDF pp.6–8 y12; presentación del mismo estudio.",
+      "url": "https://fundaciontrascender.cl/estudio-revela-desafios-clave-para-la-sostenibilidad-de-las-organizaciones-sociales-en-chile/",
+      "verification": "Publicación primaria y original local cotejados. gLOCAL informa 120 diagnósticos acumulados, 70 en 2025; no equiparar automáticamente con N=110 ni sumarlos."
+    },
+    {
+      "id": "LOCAL",
+      "family": "CEFIS-FILANTROPIA-LOCAL-2022",
+      "title": "CEFIS · Filantropía local",
+      "population": "105 OSC que buscan donaciones locales, base específica del gráfico 7.",
+      "period": "Estudio publicado en 2022.",
+      "finding": "40,0% de ese grupo depende de donaciones para más de la mitad de sus recursos.",
+      "role": "Exposición y mecanismo de dependencia. Su selección y variable difieren de caída de ingresos; no es prevalencia ni recurrencia de P13.",
+      "locator": "p.23, gráfico 7.",
+      "url": "https://uai.cdn7pm.net/documentos/filantropia-local-desafios-y-buenas-practicas-en-chile.pdf#page=23",
+      "verification": "Original público y página de CEFIS cotejados; se conserva N del ítem, sin sustituirlo por el de otras preguntas."
+    },
+    {
+      "id": "UC24",
+      "family": "SEA-DIRECCIONES",
+      "title": "UC · Encuesta post Caso Convenios 2024",
+      "population": "140 OSC; resultados mezclan financiamiento público y privado.",
+      "period": "Caída de ingresos 2022–2023, publicación 2024.",
+      "finding": "La publicación oficial informa 30% del total con pérdida de atención a beneficiarios por menores ingresos; la mitad de las afectadas frenó programas nuevos o redujo cobertura.",
+      "role": "Evidencia agregada de consecuencias en un perímetro más amplio. No se atribuye todo a ingresos privados ni se convierten organizaciones afectadas en fracción de servicios perdidos.",
+      "locator": "Nota oficial: consecuencias para beneficiarios y programas.",
+      "url": "https://politicaspublicas.uc.cl/noticia/encuesta-de-sociedad-en-accion-revela-crisis-en-la-relacion-entre-el-estado-y-las-organizaciones-de-la-sociedad-civil-tras-el-caso-convenios/",
+      "verification": "Nota primaria cotejada; enlace al PPT original devuelve 404. No se deriva una distribución de severidad desde la nota."
+    },
+    {
+      "id": "UC25",
+      "family": "SEA-DIRECCIONES",
+      "title": "UC · Encuesta de fundaciones y corporaciones 2025",
+      "population": "268 directivos/as de fundaciones y corporaciones.",
+      "period": "Levantamiento 2025; referencia general de contexto y prioridades.",
+      "finding": "41% priorizó financiamiento estable y predecible como primera condición para la misión.",
+      "role": "Antecedente de relevancia percibida. No equivale a incidencia ni a repetición individual; se conserva en la familia UC.",
+      "locator": "p.21.",
+      "url": "https://politicaspublicas.uc.cl/content/uploads/2025/08/sociedad-en-accion_presentacion-1.pdf#page=21",
+      "verification": "Página primaria y extracción original local cotejadas; reapertura web del PDF limitada por tamaño."
+    },
+    {
+      "id": "SCM",
+      "family": "FSCM-FORTALECIMIENTO-2023",
+      "title": "San Carlos de Maipo y aliados · Necesidades de fortalecimiento",
+      "population": "154 fundaciones y corporaciones únicas; 162 respuestas depuradas tomando la primera por entidad.",
+      "period": "Enero–marzo 2023 para demanda.",
+      "finding": "26% priorizó formación en búsqueda de fondos.",
+      "role": "Demanda declarada de capacidades. No se interpreta como tasa de organizaciones con ingresos inestables. Los estudios que cita en la introducción conservan sus propios orígenes.",
+      "locator": "pp.7 y22.",
+      "url": "https://accionsolidaria.cl/wp-content/uploads/2023/11/1694698216517.pdf#page=22",
+      "verification": "Método y resultado cotejados en el PDF público."
+    }
+  ],
+  "counterEvidence": [
+    "La caída de una fuente puede compensarse con otra: los casos financieros ya documentados impiden asumir caída total automática.",
+    "La continuidad de recepción registrada en SII para 50,7% de la cohorte contrapesa una caracterización de inestabilidad universal.",
+    "Las fuentes de capacidad, composición o demanda formativa no se convierten en episodios ni efectos observados.",
+    "Los registros SII y publicaciones CEFIS basadas en ellos comparten origen administrativo para los mismos resultados; no generan dos bases por citar ambas instituciones."
+  ],
+  "nextStep": "P13 · comprobar disponibilidad de un panel público de donaciones por organización y año (4/10 estimada). Partir por la nómina SII que usa CEFIS y verificar que los campos permitan enlazar recepción, continuidad e ingresos; si solo hay recepción tributaria, conservar ese perímetro. No iniciar P14 ni PX-R4 en esta microfase.",
+  "limitations": "Aplicación completada para los insumos revisados; puntuación total no identificada. No se declara agotamiento de todas las rutas públicas ni se asigna el punto medio de rangos por falta de datos.",
+  "bank": {
+    "publicationCount": 16,
+    "findingCount": 28,
+    "additionalStudyCount": 3
+  },
+  "bankPublications": [
+    {
+      "id": "F03",
+      "title": "Encuesta a directoras y directores ejecutivos de fundaciones y corporaciones 2026",
+      "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf",
+      "role": "Alcance: caídas por fuente; prioridad percibida como contexto.",
+      "claims": [
+        {
+          "id": "P13__F03__01",
+          "text": "44% prioriza el acceso a financiamiento estable y predecible como primera mención.",
+          "locators": [
+            {
+              "label": "diap. 32 · condiciones para la misión",
+              "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=32"
+            }
+          ],
+          "verification": "Hallazgo heredado del banco; recotejo específico según bloque de estudio."
+        },
+        {
+          "id": "P13__F03__02",
+          "text": "En 2025 frente a 2024, 37% declara una caída en donaciones, 31% en ingresos propios y 28% en Gobierno Central. El 37% reporta una caída en al menos una fuente pública.",
+          "locators": [
+            {
+              "label": "diap. 34 · cambios en ingresos",
+              "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=34"
+            }
+          ],
+          "verification": "Hallazgo heredado del banco; recotejo específico según bloque de estudio."
+        },
+        {
+          "id": "P13__F03__03",
+          "text": "Las proporciones medias de ingreso son 37% donaciones y 30% fuentes estatales.",
+          "locators": [
+            {
+              "label": "diap. 18 · composición media",
+              "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=18"
+            }
+          ],
+          "verification": "Hallazgo heredado del banco; recotejo específico según bloque de estudio."
+        },
+        {
+          "id": "P13__F03__04",
+          "text": "El 44% de caída de donaciones de la ola 2026 corresponde al panel de 130. En las 255 respuestas de 2026, el resultado es 37%.",
+          "locators": [
+            {
+              "label": "diap. 34 · panel y muestra completa",
+              "url": "https://politicaspublicas.uc.cl/content/uploads/2026/10/20261027_Evento-Encuesta-directores-2026.pdf#page=34"
+            }
+          ],
+          "verification": "Hallazgo heredado del banco; recotejo específico según bloque de estudio."
+        }
+      ],
+      "originKey": "SEA-DIRECCIONES-2026",
+      "empiricalReuseOnly": false,
+      "independentSampleClaimed": false
+    },
+    {
+      "id": "F04",
+      "title": "Resultados encuesta a fundaciones y corporaciones 2025",
+      "url": "https://politicaspublicas.uc.cl/content/uploads/2025/08/sociedad-en-accion_presentacion-1.pdf",
+      "role": "Prioridad percibida y antecedente temporal.",
+      "claims": [
+        {
+          "id": "P13__F04__01",
+          "text": "36% de las menciones de desafíos se refirió a financiamiento y sostenibilidad. El gráfico admite menciones repetidas (N=268 encuestadas).",
+          "locators": [
+            {
+              "label": "diap. 12 · desafío de sostenibilidad",
+              "url": "https://politicaspublicas.uc.cl/content/uploads/2025/08/sociedad-en-accion_presentacion-1.pdf#page=12"
+            }
+          ],
+          "verification": "Hallazgo heredado del banco; recotejo específico según bloque de estudio."
+        },
+        {
+          "id": "P13__F04__02",
+          "text": "41% priorizó primero el acceso a financiamiento estable y predecible (N=268).",
+          "locators": [
+            {
+              "label": "diap. 21 · primera prioridad financiera",
+              "url": "https://politicaspublicas.uc.cl/content/uploads/2025/08/sociedad-en-accion_presentacion-1.pdf#page=21"
+            }
+          ],
+          "verification": "Hallazgo heredado del banco; recotejo específico según bloque de estudio."
+        },
+        {
+          "id": "P13__F04__03",
+          "text": "44% expresó acuerdo con que el marco permitía acceder a financiamiento de forma transparente y sin barreras (N=268).",
+          "locators": [
+            {
+              "label": "diap. 11 · acceso percibido a recursos",
+              "url": "https://politicaspublicas.uc.cl/content/uploads/2025/08/sociedad-en-accion_presentacion-1.pdf#page=11"
+            }
+          ],
+          "verification": "Hallazgo heredado del banco; recotejo específico según bloque de estudio."
+        }
+      ],
+      "originKey": "SEA-DIRECCIONES-2025",
+      "empiricalReuseOnly": false,
+      "independentSampleClaimed": false
+    },
+    {
+      "id": "F09",
+      "title": "Propuestas presidenciales en sociedad civil: una mirada basada en evidencia para el ciclo político 2026–2030 en Chile",
+      "url": "https://politicaspublicas.uc.cl/content/uploads/2025/10/MESA-soc_civil_DOCUMENTO-COMPLETO_PRESIDeNCIALES-UC_1imp-1.pdf",
+      "role": "Síntesis: acreditar cada resultado a su estudio citado; no agrega muestra.",
+      "claims": [
+        {
+          "id": "P13__F09__01",
+          "text": "La agenda menciona caída total de ingresos en un levantamiento y disminución en al menos una fuente en otro. Las preguntas no son directamente comparables.",
+          "locators": [
+            {
+              "label": "p. 14 · estabilidad y bases distintas",
+              "url": "https://politicaspublicas.uc.cl/content/uploads/2025/10/MESA-soc_civil_DOCUMENTO-COMPLETO_PRESIDeNCIALES-UC_1imp-1.pdf#page=14"
+            }
+          ],
+          "verification": "Hallazgo heredado del banco; recotejo específico según bloque de estudio."
+        }
+      ],
+      "originKey": "SECONDARY-REUSE-ORIGINAL-UC-STUDIES",
+      "empiricalReuseOnly": true,
+      "independentSampleClaimed": false
+    },
+    {
+      "id": "F10",
+      "title": "Informe FECU Social 2024 · Comunidad de Organizaciones Solidarias",
+      "url": "https://comunidad-org.cl/wp-content/uploads/2026/06/Informe-FECU-Social-2024.pdf",
+      "role": "Composición financiera y exposición; no incidencia de inestabilidad.",
+      "claims": [
+        {
+          "id": "P13__F10__01",
+          "text": "49,8% reporta solo ingresos operacionales privados, 45,7% mezcla, 3,7% solo públicos y 0,8% sin operacionales.",
+          "locators": [
+            {
+              "label": "p. 26 · mezcla de financiamiento",
+              "url": "https://comunidad-org.cl/wp-content/uploads/2026/06/Informe-FECU-Social-2024.pdf#page=26"
+            }
+          ],
+          "verification": "Hallazgo heredado del banco; recotejo específico según bloque de estudio."
+        }
+      ],
+      "originKey": "COS-FECU-SOCIAL-2024",
+      "empiricalReuseOnly": false,
+      "independentSampleClaimed": false
+    },
+    {
+      "id": "F11",
+      "title": "Del hacer al sostener · Informe IFO 2025",
+      "url": "https://fundaciontrascender.cl/estudio-revela-desafios-clave-para-la-sostenibilidad-de-las-organizaciones-sociales-en-chile/",
+      "role": "Capacidad financiera IFO; mismo estudio que F12.",
+      "claims": [
+        {
+          "id": "P13__F11__01",
+          "text": "Finanzas sostenibles obtiene 2,02 de 5 en el gráfico general. El estudio lo interpreta como una limitación para asegurar recursos.",
+          "locators": [
+            {
+              "label": "p. 8 del PDF · finanzas sostenibles",
+              "url": "https://fundaciontrascender.cl/estudio-revela-desafios-clave-para-la-sostenibilidad-de-las-organizaciones-sociales-en-chile/"
+            }
+          ],
+          "verification": "Hallazgo heredado del banco; recotejo específico según bloque de estudio."
+        },
+        {
+          "id": "P13__F11__02",
+          "text": "Finanzas sostenibles promedia 2,04 en el grupo de fundaciones, corporaciones y ONG. No hay cifra separada para fundaciones ni medición de sus flujos o reservas.",
+          "locators": [
+            {
+              "label": "p. 12 del PDF · finanzas por tipo de OSC",
+              "url": "https://fundaciontrascender.cl/estudio-revela-desafios-clave-para-la-sostenibilidad-de-las-organizaciones-sociales-en-chile/"
+            }
+          ],
+          "verification": "Hallazgo heredado del banco; recotejo específico según bloque de estudio."
+        }
+      ],
+      "originKey": "IFO-2025-TRASCENDER",
+      "empiricalReuseOnly": false,
+      "independentSampleClaimed": false
+    },
+    {
+      "id": "F12",
+      "title": "Del hacer al sostener · Presentación IFO 2025 y FortalecidOS 2026",
+      "url": "https://fundaciontrascender.cl/estudio-revela-desafios-clave-para-la-sostenibilidad-de-las-organizaciones-sociales-en-chile/",
+      "role": "Presentación del IFO de F11; no duplica base.",
+      "claims": [
+        {
+          "id": "P13__F12__01",
+          "text": "Finanzas sostenibles obtiene 2,02 de 5 en el conjunto.",
+          "locators": [
+            {
+              "label": "Lám. 6 del PDF · finanzas sostenibles",
+              "url": "https://fundaciontrascender.cl/estudio-revela-desafios-clave-para-la-sostenibilidad-de-las-organizaciones-sociales-en-chile/"
+            }
+          ],
+          "verification": "Hallazgo heredado del banco; recotejo específico según bloque de estudio."
+        },
+        {
+          "id": "P13__F12__02",
+          "text": "Finanzas marca 2,04 en el grupo de fundaciones, corporaciones y ONG, y 1,93 en comunitarias.",
+          "locators": [
+            {
+              "label": "Lám. 9 del PDF · comparación por tipo",
+              "url": "https://fundaciontrascender.cl/estudio-revela-desafios-clave-para-la-sostenibilidad-de-las-organizaciones-sociales-en-chile/"
+            }
+          ],
+          "verification": "Hallazgo heredado del banco; recotejo específico según bloque de estudio."
+        }
+      ],
+      "originKey": "IFO-2025-TRASCENDER",
+      "empiricalReuseOnly": true,
+      "independentSampleClaimed": false
+    },
+    {
+      "id": "F14",
+      "title": "Programa FortalecidOS · presentación gLOCAL 2025",
+      "url": "https://fundaciontrascender.cl/fundacion-trascender-cierra-exitosa-participacion-en-la-semana-de-la-evaluacion-glocal-2025-presentando-fortalecidos/",
+      "role": "Diagnóstico relacionado con IFO; solapamiento no resuelto, no se suma.",
+      "claims": [
+        {
+          "id": "P13__F14__01",
+          "text": "Finanzas registra 2,2 en fundaciones, corporaciones u ONG como grupo. No hay puntaje exclusivo de fundaciones.",
+          "locators": [
+            {
+              "label": "p. 24 del PDF · finanzas por tipo",
+              "url": "https://fundaciontrascender.cl/fundacion-trascender-cierra-exitosa-participacion-en-la-semana-de-la-evaluacion-glocal-2025-presentando-fortalecidos/"
+            }
+          ],
+          "verification": "Hallazgo heredado del banco; recotejo específico según bloque de estudio."
+        }
+      ],
+      "originKey": "IFO-RELATED-OVERLAP-UNRESOLVED",
+      "empiricalReuseOnly": true,
+      "independentSampleClaimed": false
+    },
+    {
+      "id": "F15",
+      "title": "Fuentes de financiación de las organizaciones no lucrativas",
+      "url": "https://dialnet.unirioja.es/descarga/articulo/3675079.pdf",
+      "role": "Marco conceptual de fuentes y riesgos.",
+      "claims": [
+        {
+          "id": "P13__F15__01",
+          "text": "El capítulo describe la incertidumbre de renovación de aportes públicos como un mecanismo que puede afectar la continuidad.",
+          "locators": [
+            {
+              "label": "p. 118 impresa · origen y renovación",
+              "url": "https://dialnet.unirioja.es/descarga/articulo/3675079.pdf#page=2"
+            }
+          ],
+          "verification": "Hallazgo heredado del banco; recotejo específico según bloque de estudio."
+        },
+        {
+          "id": "P13__F15__02",
+          "text": "Distingue excedentes retenidos, aportes externos y deuda. Un desembolso de deuda implica una obligación posterior y debe registrarse aparte de los ingresos.",
+          "locators": [
+            {
+              "label": "p. 119 impresa · autofinanciación y recursos externos",
+              "url": "https://dialnet.unirioja.es/descarga/articulo/3675079.pdf#page=3"
+            }
+          ],
+          "verification": "Hallazgo heredado del banco; recotejo específico según bloque de estudio."
+        }
+      ],
+      "originKey": "ACEDO-RAMIREZ-2011",
+      "empiricalReuseOnly": false,
+      "independentSampleClaimed": false
+    },
+    {
+      "id": "F16",
+      "title": "Guía para la gobernanza efectiva de fundaciones y corporaciones en Chile",
+      "url": "https://ceps.unibas.ch/fileadmin/user_upload/ceps/1_Home/News_Events_Bilder_Doks/20190515_Leitfaden_Governance_Chile_Steffen.pdf",
+      "role": "Gobernanza y responsabilidades; separar estudios citados de la guía.",
+      "claims": [
+        {
+          "id": "P13__F16__01",
+          "text": "Para las organizaciones que dependen de fondos externos, la guía distingue el apoyo del directorio y el trabajo de la dirección ejecutiva para conseguir recursos.",
+          "locators": [
+            {
+              "label": "p. 58 del PDF · responsabilidades de recaudación",
+              "url": "https://ceps.unibas.ch/fileadmin/user_upload/ceps/1_Home/News_Events_Bilder_Doks/20190515_Leitfaden_Governance_Chile_Steffen.pdf#page=58"
+            }
+          ],
+          "verification": "Hallazgo heredado del banco; recotejo específico según bloque de estudio."
+        }
+      ],
+      "originKey": "CEFIS-SAN-CARLOS-GOBERNANZA-2019",
+      "empiricalReuseOnly": false,
+      "independentSampleClaimed": false
+    },
+    {
+      "id": "F17",
+      "title": "The Jossey-Bass Handbook of Nonprofit Leadership and Management · 4.ª edición",
+      "url": "https://onlinelibrary.wiley.com/doi/book/10.1002/9781119176558",
+      "role": "Marco conceptual y mecanismos; no tasa chilena actual.",
+      "claims": [
+        {
+          "id": "P13__F17__01",
+          "text": "Young y Soh relacionan la fuente de financiación con los beneficios que genera cada programa y examinan la estabilidad de distintas fuentes.",
+          "locators": [
+            {
+              "label": "p. 527 impresa · hoja 559 del PDF · mezcla de ingresos",
+              "url": "https://onlinelibrary.wiley.com/doi/book/10.1002/9781119176558"
+            }
+          ],
+          "verification": "Hallazgo heredado del banco; recotejo específico según bloque de estudio."
+        },
+        {
+          "id": "P13__F17__02",
+          "text": "Nathan y Tempel presentan tareas que el directorio puede asumir en una cartera de donantes. Sirven para separar planificación de ingresos y gestión de relaciones.",
+          "locators": [
+            {
+              "label": "p. 506 impresa · hoja 538 del PDF · recaudación y directorio",
+              "url": "https://onlinelibrary.wiley.com/doi/book/10.1002/9781119176558"
+            }
+          ],
+          "verification": "Hallazgo heredado del banco; recotejo específico según bloque de estudio."
+        }
+      ],
+      "originKey": "JOSSEY-BASS-HANDBOOK-NONPROFIT-2016",
+      "empiricalReuseOnly": false,
+      "independentSampleClaimed": false
+    },
+    {
+      "id": "F18",
+      "title": "Principles & Practices for Nonprofit Excellence",
+      "url": "https://minnesotanonprofits.org/wp-content/uploads/2024/05/principles-and-practice-full.pdf",
+      "role": "Buenas prácticas y diversificación; no medición de daño.",
+      "claims": [
+        {
+          "id": "P13__F18__01",
+          "text": "MCN propone evitar depender de un solo tipo de ingreso, cuando sea posible, y registrar las restricciones ligadas a cada aporte.",
+          "locators": [
+            {
+              "label": "p. 19 impresa · finanzas 16 y 18",
+              "url": "https://minnesotanonprofits.org/wp-content/uploads/2024/05/principles-and-practice-full.pdf#page=21"
+            }
+          ],
+          "verification": "Hallazgo heredado del banco; recotejo específico según bloque de estudio."
+        },
+        {
+          "id": "P13__F18__02",
+          "text": "Sugiere conectar el plan de recaudación con el presupuesto y prever cuándo conviene rechazar un aporte por su destino o sus condiciones.",
+          "locators": [
+            {
+              "label": "p. 20 impresa · captación 1–2",
+              "url": "https://minnesotanonprofits.org/wp-content/uploads/2024/05/principles-and-practice-full.pdf#page=22"
+            }
+          ],
+          "verification": "Hallazgo heredado del banco; recotejo específico según bloque de estudio."
+        }
+      ],
+      "originKey": "MINNESOTA-COUNCIL-NONPROFITS-PRACTICES-2014",
+      "empiricalReuseOnly": false,
+      "independentSampleClaimed": false
+    },
+    {
+      "id": "F20",
+      "title": "Strategic Planning for Nonprofit Organizations · 2.ª edición",
+      "url": "https://fundaciontrascender.cl/download/strategic-planning-for-nonprofit-organizations/",
+      "role": "Planificación financiera; no muestra de afectación.",
+      "claims": [
+        {
+          "id": "P13__F20__01",
+          "text": "La pauta pide revisar subsidios entre servicios y diversificación de ingresos al evaluar continuidad.",
+          "locators": [
+            {
+              "label": "p. 149 impresa · hoja 171 del PDF · preguntas sobre finanzas",
+              "url": "https://fundaciontrascender.cl/download/strategic-planning-for-nonprofit-organizations/"
+            }
+          ],
+          "verification": "Hallazgo heredado del banco; recotejo específico según bloque de estudio."
+        },
+        {
+          "id": "P13__F20__02",
+          "text": "El plan de captación parte de ingresos, costos y capacidades. Vincularlo al alcance previsto permite señalar qué actividad depende de un aporte aún incierto.",
+          "locators": [
+            {
+              "label": "p. 244 impresa · hoja 266 del PDF · proyección y captación",
+              "url": "https://fundaciontrascender.cl/download/strategic-planning-for-nonprofit-organizations/"
+            }
+          ],
+          "verification": "Hallazgo heredado del banco; recotejo específico según bloque de estudio."
+        }
+      ],
+      "originKey": "ALLISON-KAYE-PLANEACION-2005-ED2",
+      "empiricalReuseOnly": false,
+      "independentSampleClaimed": false
+    },
+    {
+      "id": "F22",
+      "title": "Filantropía local: desafíos y buenas prácticas en Chile",
+      "url": "https://uai.cdn7pm.net/documentos/filantropia-local-desafios-y-buenas-practicas-en-chile.pdf",
+      "role": "Dependencia de donaciones locales en subgrupo seleccionado.",
+      "claims": [
+        {
+          "id": "P13__F22__01",
+          "text": "40,0% de 105 OSC que buscan donaciones locales atribuye más de la mitad de sus recursos a donaciones. Este porcentaje describe composición financiera, sin medir variabilidad de ingresos.",
+          "locators": [
+            {
+              "label": "p. 23 · gráfico 7 · dependencia de donaciones",
+              "url": "https://uai.cdn7pm.net/documentos/filantropia-local-desafios-y-buenas-practicas-en-chile.pdf#page=23"
+            }
+          ],
+          "verification": "Hallazgo heredado del banco; recotejo específico según bloque de estudio."
+        }
+      ],
+      "originKey": "CEFIS-UAI-FILANTROPIA-LOCAL-2022",
+      "empiricalReuseOnly": false,
+      "independentSampleClaimed": false
+    },
+    {
+      "id": "F23",
+      "title": "Hacia el fortalecimiento de la filantropía institucional en América Latina",
+      "url": "https://filantropialatam.uai.cl/wp-content/uploads/2021/09/hacia_-fortalecimiento-_filantropa_-institucional_-amrica_-latina_07-02-2.pdf",
+      "role": "Filantropía institucional: población donante distinta de OSC operadoras.",
+      "claims": [
+        {
+          "id": "P13__F23__01",
+          "text": "35% regional y 27% Chile declaran fondos patrimoniales. La clasificación de recursos principales no equivale a flujos, vencimientos ni caja disponible.",
+          "locators": [
+            {
+              "label": "p. 15 · definición de filantropía institucional",
+              "url": "https://filantropialatam.uai.cl/wp-content/uploads/2021/09/hacia_-fortalecimiento-_filantropa_-institucional_-amrica_-latina_07-02-2.pdf#page=15"
+            },
+            {
+              "label": "p. 46 · patrimonio",
+              "url": "https://filantropialatam.uai.cl/wp-content/uploads/2021/09/hacia_-fortalecimiento-_filantropa_-institucional_-amrica_-latina_07-02-2.pdf#page=46"
+            }
+          ],
+          "verification": "Hallazgo heredado del banco; recotejo específico según bloque de estudio."
+        }
+      ],
+      "originKey": "UP-CEFIS-GPR-LATAM-2019",
+      "empiricalReuseOnly": false,
+      "independentSampleClaimed": false
+    },
+    {
+      "id": "F26",
+      "title": "Estudio del esquema de financiamiento de Protección Especializada",
+      "url": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf",
+      "role": "Mecanismo sectorial estatal; sin tasa privada general.",
+      "claims": [
+        {
+          "id": "P13__F26__01",
+          "text": "Un colaborador AFT declaró que el único ingreso regular de su entidad era el aporte estatal. En DCE, el informe relata que la restricción de ejecutar solo esa modalidad agravó la capacidad de absorber la incertidumbre.",
+          "locators": [
+            {
+              "label": "p. 168 · §4.9.4 · dependencia de un aporte",
+              "url": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=168"
+            },
+            {
+              "label": "p. 169 · DCE y sostenibilidad",
+              "url": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=169"
+            }
+          ],
+          "verification": "Hallazgo heredado del banco; recotejo específico según bloque de estudio."
+        },
+        {
+          "id": "P13__F26__02",
+          "text": "Los colaboradores describen financiar con fondos propios personal adicional, insumos y traslados para sostener la operación. La brecha entre aporte y costo real agrava la incertidumbre presupuestaria.",
+          "locators": [
+            {
+              "label": "p. 145 · §4.6.4 · cubrir operación con recursos propios",
+              "url": "https://servicioproteccion.gob.cl/601/articles-3776_archivo_01.pdf#page=145"
+            }
+          ],
+          "verification": "Hallazgo heredado del banco; recotejo específico según bloque de estudio."
+        }
+      ],
+      "originKey": "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025",
+      "empiricalReuseOnly": false,
+      "independentSampleClaimed": false
+    },
+    {
+      "id": "F28",
+      "title": "Diagnóstico de necesidades y oferta de fortalecimiento de fundaciones y corporaciones sin fines de lucro",
+      "url": "https://accionsolidaria.cl/wp-content/uploads/2023/11/1694698216517.pdf",
+      "role": "Demanda formativa; no incidencia de inestabilidad.",
+      "claims": [
+        {
+          "id": "P13__F28__01",
+          "text": "La búsqueda de fondos figura como prioridad de formación en 26% de las 154 organizaciones; la encuesta no mide continuidad de ingresos ni trabajo dedicado a financiamiento.",
+          "locators": [
+            {
+              "label": "p. 22 · cuadro 1 · prioridades",
+              "url": "https://accionsolidaria.cl/wp-content/uploads/2023/11/1694698216517.pdf#page=22"
+            }
+          ],
+          "verification": "Hallazgo heredado del banco; recotejo específico según bloque de estudio."
+        }
+      ],
+      "originKey": "FSCM-ENCUESTA-FORTALECIMIENTO-2023",
+      "empiricalReuseOnly": false,
+      "independentSampleClaimed": false
+    }
+  ]
+}

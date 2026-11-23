@@ -1,8 +1,29 @@
+## 2026-11-23 · Abordabilidad SdC v1.0
+
+- AB-1–AB-5: 31 intervenciones, 155 juicios C/K/D/E/A, calibración de cuatro casos y sensibilidad a pesos/niveles/supuestos. Catálogo y criticidad intactos.
+- AB-6: etapa Abordabilidad con pesos de preparación editables, factor de control visible, cruce con el escenario de criticidad vigente, condiciones, fuentes, fichas y exportaciones.
+- P47=64, P46=56, P41=54 y P32=47 en el escenario original. Los puntajes son documentales y condicionados; no eficacia o disponibilidad de equipo probadas.
+
+## 2026-11-23 · Pesos editables de criticidad
+
+- Añade cuatro campos porcentuales I/F/A/U al comienzo del ranking: recalcula puntajes, puestos, empates y fichas al sumar 100%.
+- Valida límites y campos vacíos; mantiene el último ranking válido si la combinación está incompleta. Restauración de pesos originales y exportación CSV/JSON del escenario actual.
+- Conserva el escenario al navegar entre universos y fuentes durante la visita. Datos, evidencia y confianza originales no se modifican.
+
+## 2026-11-23 · Criticidad documental v0.3
+
+- Puntúa los 31 problemas con 124 juicios trazables; I35/F25/A25/U15, escala 1–5 convertida a 1–100. Confianza separada y empates conservados.
+- Publica fuentes por criterio, los 245 hallazgos heredados, dependencias de origen, diez escenarios de pesos y cambios de un nivel inferido. No realizó nuevas búsquedas.
+- P13: 75/100, confianza media; sustituye el bloqueo de medición v0.2 en la vista activa y conserva sus antecedentes como archivo.
+- Catálogo y golden master sin cambios.
+
 # Historial de cambios · Radiografía Simón de Cirene
 
 ## Vista previa de Criticidad (2026-11-20)
 
-- Presenta el índice piloto de cuatro criterios y el puntaje provisional de P13, con cobertura del cálculo y alcance muestral explícitos.
+- Aplica v0.2 a P13: límite lógico del proxy de alcance, contraste longitudinal CEFIS/SII, nueve bloques de estudio y trazabilidad visible de 16 publicaciones/28 hallazgos. Total no identificado; no se suman muestras ni se inventan componentes faltantes.
+
+- Corrige el método de criticidad a v0.2: retira el 37/100 de P13, conserva el 37% como indicador parcial y evita renormalizar faltantes. Documenta rúbricas, linaje por estudio, confianza separada y brechas para completar P13. La versión v0.1 queda en historial.
 - Incorpora el cierre de investigación de P13 con hallazgos, alcance y fuentes en Fundaciones y Tercer sector. El puesto de criticidad sigue por determinar.
 - Reordena los próximos pasos para comenzar por los problemas que pueden estudiarse fuera de la relación con el Estado.
 
@@ -65,3 +86,9 @@
 ## base-a (2026-11-13)
 - Corte de 26 fuentes, 31 problemas y 121 segmentos
 - Evidencia y metodología de respaldo
+
+
+
+## 2026-11-23 · OP-1 a OP-6 · Preview de oportunidades gratuitas
+
+Siete tareas con IPH documental, fuentes/comparadores y gratuidad sostenible. Treinta y un problemas tienen decisión de entrada o exclusión del primer MVP. Controles de pesos/escenarios y simulador de costos conservan métricas desconocidas como tales, TCO completo ND y cruce separado con criticidad/ASdC. FECU existente reduce la propuesta a preparación de antecedentes. Acuerdos es el primer experimento propuesto, caja el segundo; no hay MVP operativo ni gasto. QA completo del primer código aprobado; corte definitivo se registra en PR #32 y Notion.

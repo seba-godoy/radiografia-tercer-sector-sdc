@@ -1,3 +1,6 @@
+import {renderP13Application} from './p13-application.mjs';
+import {renderRanking31} from './ranking31-view.mjs';
+
 const criteria = [
   ["I", "Impacto", "Qué daño produce cuando ocurre."],
   ["F", "Recurrencia", "Cuántas veces se repite por organización."],
@@ -66,28 +69,30 @@ function criticalityScore(id, evidence, esc) {
   const score = index?.scores[id];
   if (!score) return "";
 
-  const measured = criteria.filter(([key]) => score.components[key] != null);
+  const measured = criteria.filter(([key]) => Number.isFinite(score.components[key]) && score.components[key] >= 1 && score.components[key] <= 100);
   const coverage = measured.reduce((total, [key]) => total + index.weights[key], 0);
-  if (!coverage) return "";
-  const weighted = measured.reduce((total, [key]) => total + index.weights[key] * score.components[key], 0);
   const totalWeight = Object.values(index.weights).reduce((total, weight) => total + weight, 0);
-  const coveragePercent = Math.round(100 * coverage / totalWeight);
-  const status = coverage === totalWeight ? "Puntaje en la población indicada" : "Puntaje provisional";
+  const coveragePercent = totalWeight > 0 ? Math.round(100 * coverage / totalWeight) : 0;
+  const complete = measured.length === criteria.length && totalWeight === 100 && score.ready === true;
+  const weighted = complete ? measured.reduce((total, [key]) => total + index.weights[key] * score.components[key], 0) / 100 : null;
+  const headline = complete ? `${Math.round(weighted)}/100 · Puntaje documental provisional` : 'Puntaje de criticidad pendiente';
   return `<div class="h2-index" data-h2-index="${esc(id)}">
     <div class="h2-index-header">
-      <p><strong class="h2-index-value">${Math.round(weighted / coverage)}/100</strong> · ${status}</p>
-      <p>${coveragePercent}% del peso medido · ${measured.length} de ${criteria.length} criterios</p>
+      <p><strong class="h2-index-value">${esc(headline)}</strong></p>
+      <p>${coveragePercent}% del peso con indicador · ${measured.length} de ${criteria.length} criterios${complete ? '' : ' · cobertura parcial'}</p>
     </div>
     <p>${esc(score.population)} ${esc(score.finding)}</p>
     <p>${esc(score.limits)}</p>
+    <p>${esc(score.confidence || '')}</p>
     <ul class="h2-sources">${sourceList(score.references, evidence, esc)}</ul>
     <details class="h2-index-method">
       <summary>Cómo se calcula el índice · v${esc(index.version)}</summary>
-      <p>Se ponderan cuatro criterios, cada uno con piso 1 y techo 100. El puntaje provisional divide la suma ponderada por el peso total de los criterios medidos. La cobertura indica ese peso.</p>
+      <p>${esc(index.formula || '')}. ${esc(index.missingDataPolicy || '')}</p>
       <ul class="h2-gaps">${criteria.map(([key, label]) => `<li><strong>${label} · ${esc(index.weights[key])}%</strong>
-        · ${score.components[key] == null ? "Sin dato comparable" : esc(score.components[key]) + " puntos"}<br>
-        ${esc(index.anchors[key])}</li>`).join("")}</ul>
-      <p>Para ordenar problemas se requieren datos de poblaciones, períodos y dimensiones comparables. Se prueba la sensibilidad a cambios de pesos y anclas. La abordabilidad por IA se evalúa aparte.</p>
+        · ${score.components[key] == null ? "Sin dato comparable" : esc(score.components[key]) + " · indicador parcial"}<br>
+        ${esc(index.anchors[key])}<br>${esc(score.gaps?.[key] || '')}</li>`).join("")}</ul>
+      <p>${esc(index.sourcePolicy || '')}</p>
+      <p>Los pesos y las anclas son decisiones del piloto sujetas a calibración. Se comprueba sensibilidad y se conserva la incertidumbre. La abordabilidad por IA se evalúa después.</p>
     </details>
   </div>`;
 }
@@ -97,7 +102,7 @@ function researchClosures(evidence, scope, esc) {
     const date = new Intl.DateTimeFormat("es-CL", {dateStyle: "long", timeZone: "UTC"})
       .format(new Date(closure.date));
     return `<section class="h2-closure" id="h2-closure-${esc(id)}" aria-labelledby="h2-closure-title-${esc(id)}">
-      <p class="h2-closure-status">Investigación cerrada · <time datetime="${esc(closure.date)}">${esc(date)}</time></p>
+      <p class="h2-closure-status">Evidencia documentada · <time datetime="${esc(closure.date)}">${esc(date)}</time></p>
       <h2 id="h2-closure-title-${esc(id)}">${esc(id)} · ${esc(closure.title)}</h2>
       ${criticalityScore(id, evidence, esc)}
       <div class="h2-closure-findings">${closure[scope].findings.map(item => `<article>
@@ -156,9 +161,9 @@ function gapList(row, scope, pilot, esc) {
 }
 
 function task(row, {scope, pilot, note, first, closed}, links, esc) {
-  const status = closed ? "Investigación cerrada" : first ? "Primer bloque" : "";
+  const status = closed ? "Puntuación abierta" : first ? "Primer bloque" : "";
   const detail = closed
-    ? `<p><a href="#h2-closure-${esc(row.id)}">Ver el cierre y sus fuentes</a></p>`
+    ? `<p><a href="#h2-closure-${esc(row.id)}">Ver la evidencia y sus brechas</a></p>`
     : gapList(row, scope, pilot, esc);
   return `<details class="h2-record" data-h2-task="${esc(row.id)}"><summary><span><b class="h2-code">${esc(row.id)}</b> ${esc(row.titulo)}</span>
     ${status ? `<span class="h2-record-meta">${status}</span>` : ""}</summary>
@@ -168,7 +173,7 @@ function task(row, {scope, pilot, note, first, closed}, links, esc) {
 
 function researchPlan(rows, pilotRows, deferredRows, evidence, scope, links, esc) {
   const foundations = scope === "fundaciones";
-  const note = "La investigación actual avanza problema por problema. Primero se estudian ingresos, reservas, equipo y otras capacidades internas. Los convenios y trámites estatales quedan para el bloque final. P14, meses de operación sin nuevos aportes, es el siguiente problema.";
+  const note = "La investigación actual avanza problema por problema. Primero se estudian ingresos, reservas, equipo y otras capacidades internas. Los convenios y trámites estatales quedan para el bloque final. El paso activo es completar la puntuación de P13 con evidencia agregada y método v0.2. Después se retomará P14, meses de operación sin nuevos aportes.";
   const closed = row => Object.hasOwn(evidence.closures || {}, row.id);
   const groups = foundations
     ? `<div data-h2-research="pilot"><h3>8 casos del piloto</h3>${pilotRows.map(row =>
@@ -177,7 +182,7 @@ function researchPlan(rows, pilotRows, deferredRows, evidence, scope, links, esc
         task(row, {scope, note: evidence.deferred[row.id], first: evidence.proposedBatch.includes(row.id)}, links, esc)).join("")}</div>`
     : `<div data-h2-research="sector"><h3>31 problemas y su estado de investigación</h3>${rows.map(row =>
       task(row, {scope, closed: closed(row), first: evidence.proposedBatch.includes(row.id)}, links, esc)).join("")}</div>`;
-  return `<section class="h2-research" aria-labelledby="h2-research"><h2 id="h2-research">Próximos pasos de investigación</h2><p>${note}</p>${groups}</section>`;
+  return `<section class="h2-research" aria-labelledby="h2-research-historico"><h2 id="h2-research-historico">Próximos pasos de investigación · antecedente histórico</h2><p>${note}</p>${groups}</section>`;
 }
 
 export function h2Render(contract, evidence, bank, scope, links, esc) {
@@ -196,20 +201,24 @@ export function h2Render(contract, evidence, bank, scope, links, esc) {
     findings: new Map(bank.findings.map(finding => [finding.id, finding])),
     sources: new Map(bank.sources.map(source => [source.id, source]))
   };
-  const intro = foundations
-    ? "Compara los ocho casos investigados en profundidad. La prioridad sigue indeterminada donde faltan mediciones comparables."
-    : "Consulta la evidencia descriptiva de los 31 problemas y qué población cubre cada hallazgo. La comparación de criticidad por tipo de organización queda pendiente.";
+  const intro = "31 problemas puntuados con una rúbrica documental común. Consulta sus fundamentos, confianza y sensibilidad; la evidencia de cada población conserva sus límites.";
   return `<div class="interior wrap h2-page">
     <div class="page-top"><div><div class="stage-label">02 / Criticidad</div><h1>Criticidad de los problemas</h1>
     <p class="page-intro"><strong>${foundations ? "Fundaciones" : "Tercer sector"}</strong> · ${intro}</p></div>
     <a href="#h2-research" class="outline-btn">Ir a próximos pasos ↓</a></div>
     <div class="h2-actions"><a href="${esc(links.map)}" data-go="problemas">Ver mapa de 31 problemas</a>
       <a href="${esc(links.methods)}" data-go="metodos" data-method-target="criticidad">Métodos y fuentes</a></div>
+    ${renderRanking31(evidence.ranking31, bank, links, esc)}
+    <details class="h2-record rank31-history"><summary>Antecedente histórico · aplicación v0.2 y piloto de ocho casos</summary><div class="h2-record-body"><p>Este antecedente conserva los datos y las brechas del intento de medición directa. Sus menciones a puntuación pendiente y próximos pasos corresponden a v0.2 y fueron sustituidas por el ranking documental v0.3 de los 31 problemas.</p>
     ${researchClosures(evidence, scope, esc)}
+    ${renderP13Application(evidence.applications?.P13, scope, esc)}
     ${foundations ? pilotTable(pilot, evidence, links, esc)
       : `<section aria-labelledby="h2-sector-title"><h2 id="h2-sector-title">31 problemas documentados</h2>
         <p>Abre un problema para ver las observaciones de referencia y los hallazgos agrupados por población.</p>
         ${rows.map(row => sectorItem(row, context, links, esc)).join("")}</section>`}
     ${researchPlan(rows, pilot, deferred, evidence, scope, links, esc)}
+    </div></details>
+    <section id="h2-research"><h2>Continuar a Abordabilidad</h2><p>Los 31 problemas ya tienen criticidad documental provisional. La etapa de Abordabilidad evalúa 31 intervenciones de SdC con control, preparación, condiciones y fuentes. La criticidad no demuestra que una solución de IA sea viable ni que alguien esté dispuesto a pagar.</p><a href="/abordabilidad" data-go="abordabilidad">Ver las 31 intervenciones de SdC →</a></section>
   </div>`;
 }
+

@@ -23,3 +23,8 @@ Cualquier excepción a invariantes o release requiere motivo, alcance temporal, 
 - PROTOCOLO DIMI v2.0 · IA con auditorías, pruebas, trazabilidad y relevo
 - INICIO AQUÍ · Estado autorizado y continuidad del Plan B/C
 - RUNBOOK · Rediseño DIMI PX-0 en discusión
+
+
+## OP · 23/11/2026
+
+Autorización explícita del propietario: ejecutar OP-1 a OP-6 sin pausas, revisar cada fase y persistir. Gratuidad primero. Se aplica IPH propio M40/A25/F20/D15 con confianza Baja y métricas naturales sin medir. No combinar índices ni contar orígenes duplicados. OP01/OP03 empatan55; se propone adaptar kit de acuerdos primero por alcance y trabajo estimado más acotados, no superioridad demostrada. Comparar con una plantilla real antes de hacer aplicación propia. FECU ya existente y gratuita invalida duplicar su plataforma. Negocio pagado se mantiene futuro. Herramienta operativa, piloto humano y presupuesto no forman parte de OP-6.

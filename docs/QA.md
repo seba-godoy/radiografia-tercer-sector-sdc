@@ -33,3 +33,10 @@ Ejecutar `python3 scripts/validate_baseline.py` desde la raíz. Sin dependencias
 
 ## Lista de salida
 Guardar acta: nombre de test, resultado, herramienta, commit analizado y fecha; capturas o reportes cuando existan; fuente original enlazada; pruebas no ejecutadas; P0/P1/P2 abiertos; confirmación de persistencia (lectura posterior). Para interfaz verificar con navegador real antes de afirmar que funciona; CI solo prueba propiedades que el script conoce.
+
+
+## OP-1 a OP-6 · autorización y corte23/11/2026
+
+El propietario autorizó completar secuencialmente las seis fases, auditarlas y persistir. Se aplica IPH documental propio a siete oportunidades de herramienta gratuita, con M40/A25/F20/D15, confianza Baja, métricas naturales y valor adicional de IA sin medir. Once referencias complementarias de método/productos/costos se separan del banco congelado26/31/147/245. No se modifican puntuaciones anteriores ni se cuentan publicaciones derivadas como estudios nuevos.
+
+OP-6 implementa la sección informativa Oportunidades y su preview, no el MVP operativo, pruebas con personas, gasto o contratación. Las reglas antiguas de fase pendiente quedan como antecedente para este alcance autorizado. Auditoría y especificaciones: docs/op/OP-1-cierre.md a OP-6-cierre.md y analisis/oportunidades-7-v1.json.

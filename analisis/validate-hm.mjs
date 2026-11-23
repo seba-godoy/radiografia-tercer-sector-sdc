@@ -16,7 +16,7 @@ T("147 relaciones originales",()=>assert.equal(data.problem_source_links.length,
 T("245 hallazgos",()=>assert.equal(data.findings.length,245));
 T("4 tarjetas del contrato",()=>assert.equal(contract.navigation_contract.primary_cards,4));
 T("métodos 5 capas",()=>assert.equal(contract.layer_methods.length,5));
-T("métodos pendientes sin scores",()=>assert.ok(contract.layer_methods.slice(1).every(x=>x.status==="pendiente_de_validacion"&&x.scores===null)));
+T("criticidad y abordabilidad provisionales; negocio futuro sin scores",()=>assert.ok(contract.layer_methods.slice(4).every(x=>x.status==="pendiente_de_validacion"&&x.scores===null)&&contract.layer_methods[1].status==="aplicada_documental_provisional"&&contract.layer_methods[3].status==="aplicada_documental_provisional"));
 T("H1 se conserva",()=>assert.equal(prior.problems.length,31));
 T("filtro sin restricciones devuelve 26",()=>assert.equal(mfVisible(data,mfDefaults()).length,26));
 T("ordena fuentes por ID",()=>assert.deepEqual(mfVisible(data,mfDefaults()).map(x=>x.id).slice(0,3),["F01","F02","F03"]));
@@ -59,5 +59,5 @@ T("escapa XSS en títulos de fuentes",()=>{
  const html=mfRender(copy,contract,mfDefaults(),"tercer_sector",esc,ph);
  assert.doesNotMatch(html,/<img src=x onerror/);assert.match(html,/&lt;img/);
 });
-T("mostrar método no presenta rankings aplicados",()=>{const h=mfRender(data,contract,mfDefaults(),"tercer_sector",esc,ph);assert.match(h,/Sin fórmula ni pesos aprobados/);assert.match(h,/Pendiente de validación/)});
+T("método distingue criticidad provisional de métodos futuros",()=>{const h=mfRender(data,contract,mfDefaults(),"tercer_sector",esc,ph);assert.match(h,/Sin fórmula ni pesos aprobados/);assert.match(h,/Pendiente de validación/)});
 console.log("H-M UNIT PASS "+pass+"/"+pass+" comprobaciones estructurales, filtros, XSS y CSV");

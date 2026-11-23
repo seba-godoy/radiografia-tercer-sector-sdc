@@ -1,3 +1,7 @@
+> **Autorización AB · 23-11-2026:** el propietario encargó AB-1 a AB-6 en secuencia con revisión por fase y persistencia. Se aplica el índice documental de intervenciones SdC (factor C y preparación K/D/E/A), sin alterar criticidad ni catálogo. Encaje institucional no implica recursos disponibles. Ver `analisis/ab-2-metodo.json` y actas AB.
+
+> **Decisión del propietario · 23-11-2026 · v0.3:** autorizado aplicar una rúbrica documental provisional a los 31 problemas con la evidencia existente, sin nuevas búsquedas. Permite inferencias explícitas por criterio, confianza separada, fuentes por origen y sensibilidad. Sustituye sólo la exigencia anterior de cuatro mediciones directas para este índice de decisión. No convierte inferencias en incidencia, conserva el catálogo histórico y no autoriza modificar sus bandas B. Método y aplicación: `analisis/CRITICIDAD_31_v0.3.md`.
+
 # Hoja de ruta de ejecución (referencia de agentes)
 
 > **Actualización de release 18-11-2026 (reemplaza solo la puerta operativa anterior para v0.7):** el propietario autorizó integración de PR #8–#19 como una entrega; H-0, BR-1, PX-R1/R2, H-1, MF-1 y H-M se completaron en ramas con pruebas. La primera sección «Problemas detectados» y «Métodos y fuentes» quedan publicadas v0.7 cuando el gate de CI/producción resulte PASS. 02 Criticidad, 03 Abordabilidad y 04 Oportunidades siguen pendientes. La siguiente microfase de investigación **PX-R3.1 (4/10)** separa documentación, recurrencia, prevalencia y daño/urgencia. No modificar los estudios ni asignar puntuaciones no verificadas. Las notas históricas más abajo no anulan esta decisión.
@@ -42,3 +46,10 @@ PROPUESTA → PENDIENTE AUTORIZADA → EN CURSO → IMPLEMENTADA → VERIFICADA 
 
 ## Plan de ejecución grande
 Para una fase que necesita varias sesiones, abrir un ExecPlan autocontenido siguiendo `docs/PROTOCOL.md`: objetivo observable, contexto, hitos, progreso, sorpresas, decisiones, pruebas, recuperación. Anotar el enlace/commit en el acta de fase. No sustituir el plan de Notion por un documento paralelo contradictorio.
+
+
+## OP-1 a OP-6 · autorización y corte23/11/2026
+
+El propietario autorizó completar secuencialmente las seis fases, auditarlas y persistir. Se aplica IPH documental propio a siete oportunidades de herramienta gratuita, con M40/A25/F20/D15, confianza Baja, métricas naturales y valor adicional de IA sin medir. Once referencias complementarias de método/productos/costos se separan del banco congelado26/31/147/245. No se modifican puntuaciones anteriores ni se cuentan publicaciones derivadas como estudios nuevos.
+
+OP-6 implementa la sección informativa Oportunidades y su preview, no el MVP operativo, pruebas con personas, gasto o contratación. Las reglas antiguas de fase pendiente quedan como antecedente para este alcance autorizado. Auditoría y especificaciones: docs/op/OP-1-cierre.md a OP-6-cierre.md y analisis/oportunidades-7-v1.json.

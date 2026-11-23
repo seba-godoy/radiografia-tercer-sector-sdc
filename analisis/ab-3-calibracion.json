@@ -1,0 +1,91 @@
+{
+  "method": "1.0",
+  "cases": [
+    {
+      "id": "P16",
+      "before": {
+        "C": 1,
+        "K": 4,
+        "D": 2,
+        "E": 3,
+        "A": 3
+      },
+      "after": {
+        "C": 1,
+        "K": 4,
+        "D": 2,
+        "E": 3,
+        "A": 3
+      },
+      "scoreBefore": 11,
+      "scoreAfter": 11,
+      "correction": "El flujo de caja no cambia la fecha del pago; C permanece en 1."
+    },
+    {
+      "id": "P32",
+      "before": {
+        "C": 5,
+        "K": 4,
+        "D": 3,
+        "E": 3,
+        "A": 3
+      },
+      "after": {
+        "C": 4,
+        "K": 4,
+        "D": 3,
+        "E": 3,
+        "A": 3
+      },
+      "scoreBefore": 58,
+      "scoreAfter": 47,
+      "correction": "Se reduce C de 5 a 4: estructurar el reporte no crea registros, equipo ni certificación."
+    },
+    {
+      "id": "P13",
+      "before": {
+        "C": 4,
+        "K": 4,
+        "D": 3,
+        "E": 3,
+        "A": 3
+      },
+      "after": {
+        "C": 3,
+        "K": 4,
+        "D": 3,
+        "E": 3,
+        "A": 3
+      },
+      "scoreBefore": 47,
+      "scoreAfter": 35,
+      "correction": "Se reduce C de 4 a 3: gestión de cartera es parte del mecanismo; la decisión del aportante sigue fuera."
+    },
+    {
+      "id": "P48",
+      "before": {
+        "C": 3,
+        "K": 2,
+        "D": 2,
+        "E": 2,
+        "A": 2
+      },
+      "after": {
+        "C": 1,
+        "K": 2,
+        "D": 2,
+        "E": 2,
+        "A": 2
+      },
+      "scoreBefore": 16,
+      "scoreAfter": 6,
+      "correction": "Se reduce C de 3 a 1: medir sobrecupos no modifica financiación ni dotación."
+    }
+  ],
+  "checks": [
+    "Control externo no se compensa con tareas fáciles",
+    "P32 no equivale a certificación contable",
+    "P13 no garantiza ingresos",
+    "P48 no crea plazas o recursos"
+  ]
+}

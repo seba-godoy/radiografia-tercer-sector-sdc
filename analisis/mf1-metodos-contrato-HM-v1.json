@@ -2,7 +2,7 @@
   "id": "MF-1-metodos-HM-v1.0.0",
   "version": "1.0.0",
   "cut": "2026-11-18",
-  "status": "contrato metodologico: capa R1/R2 aplicada; R3-R6 pendiente",
+  "status": "Cobertura y tres índices documentales aplicados con límites; negocio pagado pendiente",
   "audience": "Juanra / DIMI",
   "scope": "presentación interna documentada, no SaaS ni censo representativo",
   "navigation_contract": {
@@ -133,13 +133,18 @@
         "PX-R3",
         "H-2"
       ],
-      "status": "pendiente_de_validacion",
-      "purpose": "Comparar impacto, recurrencia, alcance y urgencia. En Fundaciones, el piloto examina ocho problemas; en Tercer sector se describe la evidencia catalogada. La posición queda indeterminada donde falten mediciones comparables.",
+      "status": "aplicada_documental_provisional",
+      "purpose": "31 problemas con juicio documental trazable v0.3: puntaje, cuatro fundamentos, confianza separada y sensibilidad. No estima prevalencia nacional ni gravedad medida.",
       "unit": "problema P",
-      "scores": null,
-      "weights": null,
-      "formula": null,
-      "adversarial": "No convertir cobertura documental ni N mixtos en gravedad; sensibilidad y rúbrica dependen de R3"
+      "scores": "analisis/criticidad-31-v03.json",
+      "weights": {
+        "I": 35,
+        "F": 25,
+        "A": 25,
+        "U": 15
+      },
+      "formula": "redondear(1 + 99 × (media ponderada de niveles 1–5 − 1) / 4)",
+      "adversarial": "No sumar fuentes dependientes, porcentajes o problemas. ND no se vuelve cero; la inferencia se justifica por criterio. Ver escenarios y límites en Criticidad."
     },
     {
       "id": "abordabilidad",
@@ -148,28 +153,37 @@
         "PX-R4",
         "H-3"
       ],
-      "status": "pendiente_de_validacion",
-      "purpose": "Relacionar problema→causa→tarea y controlabilidad, datos, alternativas sin IA",
-      "unit": "tarea",
-      "scores": null,
-      "weights": null,
-      "formula": null,
+      "status": "aplicada_documental_provisional",
+      "purpose": "31 intervenciones de SdC con control sobre la causa, preparación, condiciones, confianza y fuentes. Índice documental provisional; no eficacia probada.",
+      "unit": "problema e intervención delimitada de SdC",
+      "scores": "analisis/abordabilidad-31-v1.json",
+      "weights": {
+        "K": 30,
+        "D": 25,
+        "E": 25,
+        "A": 20
+      },
+      "formula": "B=0,30K+0,25D+0,25E+0,20A; ASdC=redondear(1+99×(C/5)×(B−1)/4)",
       "adversarial": "No prometer resultados sin línea base ni intervención real"
     },
     {
       "id": "impacto_ia",
-      "title": "Impacto incremental con IA",
+      "title": "Impacto potencial de la herramienta · IPH",
       "phases": [
-        "PX-R5",
-        "H-4"
+        "OP-1 a OP-6"
       ],
-      "status": "pendiente_de_validacion",
-      "purpose": "Contrastar automatización/IA con una alternativa convencional y medir efecto incremental",
-      "unit": "tarea-solución",
-      "scores": null,
-      "weights": null,
-      "formula": null,
-      "adversarial": "Hipótesis no equivale a impacto observado, comparar con no IA"
+      "status": "aplicada_documental_provisional",
+      "purpose": "Comparar siete herramientas gratuitas, alternativa simple, impacto potencial y aporte adicional de IA todavía sin medir",
+      "unit": "oportunidad-tarea-variante simple; horizonte12 meses",
+      "scores": "analisis/oportunidades-7-v1.json",
+      "weights": {
+        "M": 40,
+        "A": 25,
+        "F": 20,
+        "D": 15
+      },
+      "formula": "IPH = redondear(1 + 99 × ((40M + 25A + 20F + 15D)/100 − 1)/4)",
+      "adversarial": "Los niveles son juicio documental de confianza Baja, no ahorro medido. No sumar criticidad, ASdC o beneficios; incremento de IA no demostrado."
     },
     {
       "id": "negocio",

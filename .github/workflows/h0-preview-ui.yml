@@ -1,3 +1,4 @@
+# OP-6 final audit: rerun the full browser suite after editorial and handoff corrections.
 name: PX-H0 Preview Browser QA
 on:
   pull_request:
@@ -39,6 +40,8 @@ jobs:
           node --check analisis/px-r1-3-selector.mjs
           node --check tests/h0.e2e.cjs
           node --check tests/h0-brand.e2e.cjs
+      - name: Verify documentary ranking and historical measurement contracts
+        run: node --test tests/ranking31.test.mjs tests/criticality-index.test.mjs tests/p13-application.test.mjs tests/ab.test.mjs tests/op.test.mjs
       - name: Verify existing contract
         run: node analisis/validate-px-r13.mjs
       - name: Verify H-1 documentary integrity
@@ -55,6 +58,10 @@ jobs:
         run: node tests/h1.e2e.cjs
       - name: Exercise H-2.2 criticidad and next research steps
         run: node tests/h2.e2e.cjs
+      - name: Exercise AB-6 addressability in Chromium
+        run: node tests/ab.e2e.cjs
+      - name: Exercise OP-6 opportunities and cost scenarios
+        run: node tests/op.e2e.cjs
       - name: Exercise H-M methods and source bank in Chromium
         run: node tests/hm.e2e.cjs
       - name: Brand SdC 2026 (PPT), escritorio y móvil

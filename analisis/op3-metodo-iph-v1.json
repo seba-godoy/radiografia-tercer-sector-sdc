@@ -1,0 +1,139 @@
+{
+  "version": "1.0",
+  "date": "2026-11-23",
+  "status": "aplicada_documental_provisional",
+  "name": "Índice de Impacto Potencial de la Herramienta · IPH",
+  "authorization": "OP-1 a OP-6 autorizadas en secuencia con auditoría y persistencia. Evaluar y mostrar oportunidades no autoriza gasto ni prueba con usuarios reales.",
+  "unit": "Oportunidad y variante simple especificada → usuario → tarea → resultado. El índice no puntúa un problema genérico ni una plataforma de siete módulos.",
+  "horizon": "Doce meses desde un eventual despliegue; sin fecha comprometida.",
+  "weights": {
+    "M": 40,
+    "A": 25,
+    "F": 20,
+    "D": 15
+  },
+  "formula": "IPH = redondear(1 + 99 × ((40M + 25A + 20F + 15D)/100 − 1)/4), niveles 1–5.",
+  "meaning": "Juicio documental provisional de beneficio operativo potencial. No es porcentaje resuelto, horas ahorradas, probabilidad de éxito, adopción ni impacto social medido. Las diferencias pequeñas no constituyen evidencia de superioridad.",
+  "comparators": "Se puntúa la variante simple frente al proceso actual hipotético. Se contrasta además con la mejor alternativa gratuita/simple y se declara brecha. No se presenta ventaja de producto nuevo frente a una alternativa existente como demostrada.",
+  "ai": "Incremento de IA frente a variante simple: no medido en las siete. Se mantiene separado y sin IPH adicional inventado; ninguna función de IA es necesaria para el primer núcleo.",
+  "confidence": "Baja en las siete: hay mecanismos y documentos, sin resultados, adopción ni costos laborales del producto medidos. Confianza separada, no multiplicador ni descuento oculto.",
+  "missing": "Las métricas naturales ausentes se conservan null/por medir. Cada nivel ordinal tiene razón específica; no se imputa falta de datos como 0 o 3. A evalúa transferibilidad condicionada, no un número de organizaciones.",
+  "deduplication": "Un problema tiene una ruta principal en OP-1; problemas secundarios no suman puntajes, muestras o beneficios. F11/F12 comparten origen, igual que reproducciones. Las dos referencias FECU son una oferta/proveedor, no dos estudios de eficacia. Las dos referencias Impact Frontiers comparten marco.",
+  "sensitivity": "Base, pesos iguales y ocho variaciones ±5 puntos compensadas proporcionalmente; un criterio ±1 a la vez; escenarios conjunto conservador/favorable M y A ±1 dentro de 1–5. Son escenarios ordinales, no intervalos estadísticos ni tasas de adopción. Rangos se refieren al escenario original y se etiquetan al editar pesos.",
+  "criteria": [
+    {
+      "key": "M",
+      "name": "Magnitud de mejora neta por uso",
+      "weight": 40,
+      "definition": "Cambio en la tarea frente al proceso actual hipotético, incluyendo preparación, revisión, corrección y carga nueva. La alternativa simple limita qué mejora se atribuye a producto nuevo.",
+      "anchors": [
+        "1 · mejora marginal; puede no compensar la carga nueva",
+        "2 · simplifica un paso limitado sin cambiar el flujo central",
+        "3 · reduce coordinación/retrabajo de una tarea delimitada",
+        "4 · reemplaza varios pasos costosos conservando la calidad relevante",
+        "5 · transforma el resultado operativo de la tarea con ganancia neta muy grande; exige evidencia sólida para sostener el juicio"
+      ]
+    },
+    {
+      "key": "A",
+      "name": "Alcance aplicable relativo",
+      "weight": 25,
+      "definition": "Transferibilidad de la tarea y condiciones mínimas de uso entre perfiles. Sin organizaciones activas observadas, es aplicabilidad ordinal condicionada; no volumen ni adopción estimada.",
+      "anchors": [
+        "1 · un caso o contexto altamente singular",
+        "2 · una ruta, corpus o perfil especializado con condiciones importantes",
+        "3 · varios perfiles con campos comunes, sujetos a datos y responsable",
+        "4 · tarea transversal con pocas restricciones de acceso y uso",
+        "5 · cobertura amplia con condiciones y uso documentados; no se asigna por tamaño de encuesta"
+      ]
+    },
+    {
+      "key": "F",
+      "name": "Recurrencia del beneficio",
+      "weight": 20,
+      "definition": "Cadencia de ejecuciones completas de la tarea por organización en doce meses. No cuenta campos, clics ni correcciones del mismo entregable. Todos los usos aquí son supuestos de diseño.",
+      "anchors": [
+        "1 · una entrega anual o excepcional",
+        "2 · unas pocas entregas/ciclos al año",
+        "3 · varios usos al año, cadencia irregular o por campaña",
+        "4 · actualización mensual o varias veces por mes",
+        "5 · uso semanal o diario sostenido, que necesita corroboración para dejar de ser supuesto"
+      ]
+    },
+    {
+      "key": "D",
+      "name": "Persistencia del cambio",
+      "weight": 15,
+      "definition": "Permanencia de una mejora en el proceso entre usos, con responsable y actualización. No vuelve a premiar repetir la tarea ni conservar un archivo. Horizonte común de doce meses.",
+      "anchors": [
+        "1 · resultado de una ejecución sin cambio de proceso",
+        "2 · reutilización limitada a una entrega o campaña",
+        "3 · rutina que podría mantenerse durante el horizonte con responsable",
+        "4 · capacidad reutilizable entre ciclos y cambios de personal, condicionada a mantenimiento",
+        "5 · mejora durable del proceso respaldada por seguimiento; no se asigna por permanencia del software"
+      ]
+    }
+  ],
+  "calibration": [
+    {
+      "case": "Anual intensa frente a frecuente pequeña",
+      "annual": {
+        "M": 5,
+        "A": 3,
+        "F": 1,
+        "D": 3
+      },
+      "frequent": {
+        "M": 1,
+        "A": 3,
+        "F": 5,
+        "D": 2
+      },
+      "why": "La tarea anual obtiene más puntos: frecuencia alta no basta para desplazar una mejora neta grande.",
+      "annualScore": 60,
+      "frequentScore": 37
+    },
+    {
+      "case": "Corrección FECU frente a oferta existente",
+      "before": {
+        "M": 4,
+        "A": 3,
+        "F": 1,
+        "D": 3
+      },
+      "after": {
+        "M": 2,
+        "A": 3,
+        "F": 1,
+        "D": 2
+      },
+      "why": "Se retiran ventajas de revisión e histórico ya provistas por FECU. Queda un inventario previo de brecha no acreditada; se reduce magnitud y persistencia.",
+      "beforeScore": 51,
+      "afterScore": 27
+    },
+    {
+      "case": "Duración no se deduce de frecuencia",
+      "before": {
+        "M": 3,
+        "A": 3,
+        "F": 4,
+        "D": 4
+      },
+      "after": {
+        "M": 3,
+        "A": 3,
+        "F": 4,
+        "D": 3
+      },
+      "why": "Una actualización frecuente no acredita capacidad que sobreviva a cambios de equipo. Las rutinas OP01/OP03/OP07 conservan D3 condicionado.",
+      "beforeScore": 59,
+      "afterScore": 55
+    }
+  ],
+  "methodRefs": [
+    "OP-M1",
+    "OP-M2",
+    "OP-M3"
+  ],
+  "sourceRule": "Las once referencias complementarias apoyan método, funciones o tarifas; no amplían el banco histórico ni acreditan ahorro o eficacia. No se cotizó ni se crearon cuentas."
+}
