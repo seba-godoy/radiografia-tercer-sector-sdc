@@ -39,6 +39,8 @@ jobs:
           node --check analisis/px-r1-3-selector.mjs
           node --check tests/h0.e2e.cjs
           node --check tests/h0-brand.e2e.cjs
+      - name: Verify documentary ranking and historical measurement contracts
+        run: node --test tests/ranking31.test.mjs tests/criticality-index.test.mjs tests/p13-application.test.mjs
       - name: Verify existing contract
         run: node analisis/validate-px-r13.mjs
       - name: Verify H-1 documentary integrity

@@ -365,3 +365,18 @@
 .p13-bank-claims { padding-left:1.2rem; }
 .p13-bank-claims li { margin:.7rem 0; }
 .p13-application small { color:var(--sdc-gray); }
+
+/* Documentary ranking v0.3 */
+.rank31 { margin: 2rem 0 3rem; }
+.rank31-table { min-width: 1050px; }
+.rank31-table th:first-child { width: auto; }
+.rank31-table tbody th { min-width: 290px; }
+.rank31-table td { vertical-align: top; }
+.rank31-table small { display:block; margin-top:.5rem; font-weight:400; }
+.rank31-warning, .rank31-limit { background:var(--surface,#f4f5f4); border-left:4px solid #d68b34; padding:1rem; margin:1.25rem 0; }
+.rank31-criterion { padding:.8rem 0; border-bottom:1px solid #ddd; }
+.rank31-detail { scroll-margin-top:8rem; }
+.rank31-detail > summary { gap:1rem; flex-wrap:wrap; }
+.rank31-history { margin-top:3rem; }
+.rank31-bank { margin:1rem 0; }
+.rank31 a { overflow-wrap:anywhere; }

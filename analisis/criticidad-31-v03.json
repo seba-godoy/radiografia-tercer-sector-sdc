@@ -1,0 +1,5598 @@
+{
+  "method": {
+    "version": "0.3",
+    "date": "2026-11-23",
+    "name": "Priorización documental provisional de los 31 problemas",
+    "status": "aplicada_31_de_31_sin_validacion_de_campo",
+    "decision": "Se permite juicio analítico trazable sobre evidencia ya recolectada. Sustituye el bloqueo de v0.2 por mediciones completas; conserva esa aplicación como antecedente histórico.",
+    "scope": "Una referencia documental común para los 31 problemas. Incluye muestras mixtas, diagnósticos, casos y programas especializados. No estima prevalencia nacional ni puntajes exclusivos de fundaciones; el selector de universo no crea una segunda muestra.",
+    "weights": {
+      "I": 35,
+      "F": 25,
+      "A": 25,
+      "U": 15
+    },
+    "formula": "C = redondear(1 + 99 × ((0,35 I + 0,25 F + 0,25 A + 0,15 U) − 1) / 4), con I,F,A,U entre 1 y 5.",
+    "meaning": "El resultado ordena juicios documentales bajo esta convención. 75/100 no significa 75% de organizaciones afectadas, probabilidad de cierre ni carga económica medida. El redondeo no convierte la escala ordinal en una medición precisa.",
+    "missing": "No se imputa ND=0 ni ND=3. Toda dimensión recibe un juicio razonado específico con citas; los datos empíricos ausentes siguen ausentes. Si faltara incluso un mecanismo documentado, no se podría puntuar. Los 31 tienen mecanismo documentado.",
+    "confidence": "Media: combinación de observación agregada directa y mecanismos, con inferencias todavía importantes. Baja: mecanismo principalmente cualitativo, proxy o evidencia sectorial/caso para componentes relevantes. No se asigna Alta: no hay cuatro componentes medidos de forma comparable. La confianza no multiplica ni descuenta puntos.",
+    "sources": "Cada afirmación mantiene su localizador y origen atribuido. Informe y presentación IFO cuentan como un origen; F09 que reproduce F04 y F07 que reproduce F01 conservan el origen original. Olas UC2025/2026 son mediciones distintas con posible solapamiento, no réplicas independientes. Los libros y guías explican mecanismos; no acreditan incidencia chilena. Los conteos de publicaciones no dan puntos.",
+    "overlap": "Los 31 problemas se solapan causalmente: no sumar sus puntajes ni sus muestras. P13 (estabilidad), P14 (autonomía), P16 (atrasos), P17 (costos no cubiertos) y P28 (retención) pueden compartir efectos; la suma no representa un impacto total.",
+    "sensitivity": "Se comparan pesos iguales y ocho cambios de ±5 puntos porcentuales por criterio, compensados proporcionalmente en los otros tres. Además se cambia ±1 nivel, de a una, en cada dimensión inferida. Los rangos son escenarios de decisión, no intervalos estadísticos. Se conservan empates con ranking de competición.",
+    "exclusions": "No incorpora factibilidad de IA, facilidad de resolver, disposición a pagar ni número de fuentes. Esas decisiones vienen después.",
+    "criteria": [
+      {
+        "key": "I",
+        "name": "Impacto",
+        "weight": 35,
+        "definition": "Gravedad de la consecuencia operativa documentada cuando ocurre; juicio sobre el mecanismo, no pérdida media poblacional.",
+        "anchors": [
+          "1 · fricción menor y reversible",
+          "2 · retrabajo administrativo acotado",
+          "3 · costo o deterioro material de capacidad/decisión",
+          "4 · deterioro de servicios, personal o capacidad de cumplir la misión",
+          "5 · interrupción de atención esencial o del vínculo protector; riesgo directo de continuidad"
+        ]
+      },
+      {
+        "key": "F",
+        "name": "Persistencia o recurrencia",
+        "weight": 25,
+        "definition": "Carácter episódico, cíclico o persistente del mecanismo para una organización expuesta. Dos encuestas anuales no son dos episodios por organización.",
+        "anchors": [
+          "1 · episodio excepcional delimitado",
+          "2 · hito ocasional: arranque, cierre o cambio de operador",
+          "3 · ciclo anual/bianual o convocatoria",
+          "4 · ciclos operativos repetidos o vulnerabilidad que se mantiene entre ciclos",
+          "5 · carga en la operación cotidiana mientras existe la condición"
+        ]
+      },
+      {
+        "key": "A",
+        "name": "Alcance",
+        "weight": 25,
+        "definition": "Extensión del problema en la población y modalidad explícitamente descritas. Juicio estructural que combina medidas disponibles y delimitación del mecanismo. No equivale a estimar cuántas OSC de Chile lo padecen.",
+        "anchors": [
+          "1 · caso singular sin extensión del mecanismo a otro grupo identificado",
+          "2 · subgrupo de una modalidad/territorio o reporte menor a 20% en la base elegible",
+          "3 · modelo operativo o grupo elegible identificable; reporte de 20–39% cuando el ítem mide el problema",
+          "4 · varios perfiles de organizaciones o reporte de 40–59% en la base elegible",
+          "5 · requisito transversal documentado o reporte de al menos 60% en la base elegible"
+        ],
+        "caution": "Los umbrales son anclas, no conversiones automáticas de porcentajes. Prioridades, percepciones y porcentajes de menciones se identifican como proxies. En evidencia cualitativa la extensión se justifica por el diseño del proceso o la modalidad, nunca por el número de documentos."
+      },
+      {
+        "key": "U",
+        "name": "Urgencia",
+        "weight": 15,
+        "definition": "Margen operativo para actuar antes de agravar la consecuencia, inferido del proceso o de un escenario explícito. No se inventan días de espera.",
+        "anchors": [
+          "1 · no se identifica un hito operativo próximo que obligue a intervenir",
+          "2 · mejora planificable en la revisión anual",
+          "3 · decisión antes de la próxima convocatoria, reunión o entrega periódica",
+          "4 · compromisos de caja/equipo/servicio del ciclo actual, en horizonte de meses",
+          "5 · atención o protección en curso, inicio obligatorio o pagos inmediatos comprometidos"
+        ]
+      }
+    ]
+  },
+  "bank": {
+    "path": "analisis/mf1-banco-26-fuentes-v1.json",
+    "sha256": "d88998401d7322556306facc0da8da6f4f1f568318c0f269c9ac6adae9498804",
+    "publications": 26,
+    "problems": 31,
+    "links": 147,
+    "claims": 245
+  },
+  "rows": [
+    {
+      "id": "P14",
+      "title": "Podríamos sostener pocos meses de operación sin aportes externos",
+      "scope": "219 encuestadas ante el escenario hipotético de cesar aportes externos",
+      "score": 90,
+      "confidence": "Media",
+      "components": [
+        {
+          "key": "I",
+          "level": 5,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Agotar la capacidad de sostener operación compromete la continuidad de la misión. Es severidad condicional al escenario, no cierre observado.",
+          "refs": [
+            "P14__F03__01"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 4,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La exposición de caja se mantiene mientras hay compromisos y reservas limitadas; se infiere persistencia de la vulnerabilidad, no repetición de interrupciones de aportes.",
+          "refs": [
+            "P14__F18__01",
+            "P14__F18__02"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 5,
+          "basis": "Anclaje observado; nivel asignado",
+          "inferred": false,
+          "reason": "38% menos de tres meses más 30% entre tres y seis: 68% de N219 hasta seis meses bajo el escenario publicado. No se extrapola a Chile ni a un shock efectivamente ocurrido.",
+          "refs": [
+            "P14__F03__01"
+          ]
+        },
+        {
+          "key": "U",
+          "level": 4,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "El escenario sitúa el margen en meses para buena parte de las respuestas. No permite asignar una crisis inmediata a las 219 entidades.",
+          "refs": [
+            "P14__F03__01"
+          ]
+        }
+      ],
+      "limit": "Es resistencia declarada a un escenario, no incidencia de falta de caja. P14 es especialmente sensible a cómo se valore ese escenario; no debe presentarse como daño ya ocurrido.",
+      "scoredClaimIds": [
+        "P14__F03__01",
+        "P14__F18__01",
+        "P14__F18__02"
+      ],
+      "allClaimIds": [
+        "P14__F03__01",
+        "P14__F03__02",
+        "P14__F06__01",
+        "P14__F15__01",
+        "P14__F17__01",
+        "P14__F17__02",
+        "P14__F18__01",
+        "P14__F18__02",
+        "P14__F20__01",
+        "P14__F20__02",
+        "P14__F26__01"
+      ],
+      "publicationIds": [
+        "F03",
+        "F06",
+        "F15",
+        "F17",
+        "F18",
+        "F20",
+        "F26"
+      ],
+      "attributedOrigins": [
+        "MINNESOTA-COUNCIL-NONPROFITS-PRACTICES-2014",
+        "SEA-DIRECCIONES-2026"
+      ],
+      "originNote": "Orígenes atribuidos; independencia estadística no certificada. El número no aumenta el puntaje.",
+      "rank": 1,
+      "weightScoreRange": [
+        88,
+        91
+      ],
+      "weightRankRange": [
+        1,
+        1
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "I",
+          "delta": -1,
+          "score": 81,
+          "rank": 1
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 84,
+          "rank": 1
+        },
+        {
+          "key": "F",
+          "delta": 1,
+          "score": 96,
+          "rank": 1
+        },
+        {
+          "key": "U",
+          "delta": -1,
+          "score": 86,
+          "rank": 1
+        },
+        {
+          "key": "U",
+          "delta": 1,
+          "score": 94,
+          "rank": 1
+        }
+      ],
+      "judgmentScoreRange": [
+        81,
+        96
+      ],
+      "judgmentRankRange": [
+        1,
+        1
+      ],
+      "originRemoval": [
+        {
+          "origin": "MINNESOTA-COUNCIL-NONPROFITS-PRACTICES-2014",
+          "componentsLosingAllCitedSupport": [
+            "F"
+          ]
+        },
+        {
+          "origin": "SEA-DIRECCIONES-2026",
+          "componentsLosingAllCitedSupport": [
+            "I",
+            "A",
+            "U"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P17",
+      "title": "Tenemos que cubrir costos que el convenio no permite rendir",
+      "scope": "Ejecutoras con convenios cuyos costos necesarios no son financiables",
+      "score": 81,
+      "confidence": "Media",
+      "components": [
+        {
+          "key": "I",
+          "level": 4,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Cubrir gastos indispensables con recursos propios reduce capacidad de sostener el programa; hay ejemplos de soporte y apoyo a familias.",
+          "refs": [
+            "P17__F26__01",
+            "P17__F26__02"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 5,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La incompatibilidad entre costo necesario y gasto rendible opera cada vez que se incurre en ese costo durante el convenio; juicio de carga persistente.",
+          "refs": [
+            "P17__F09__01",
+            "P17__F26__01"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 4,
+          "basis": "Anclaje observado; nivel asignado",
+          "inferred": false,
+          "reason": "52% declara gastos financieros no admisibles y 40% gastos operativos/administrativos. Son ítems distintos, no 92% ni total único.",
+          "refs": [
+            "P17__F03__01",
+            "P17__F03__02"
+          ]
+        },
+        {
+          "key": "U",
+          "level": 4,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Los gastos deben cubrirse durante el ciclo actual aunque no sean admisibles; se infiere presión en meses, sin plazo promedio medido.",
+          "refs": [
+            "P17__F26__01",
+            "P17__F26__02"
+          ]
+        }
+      ],
+      "limit": "La recomendación de reservar 10%–20% no es una medición de la brecha. El 26% de costeo residencial no se extrapola a otros programas.",
+      "scoredClaimIds": [
+        "P17__F03__01",
+        "P17__F03__02",
+        "P17__F09__01",
+        "P17__F26__01",
+        "P17__F26__02"
+      ],
+      "allClaimIds": [
+        "P17__F03__01",
+        "P17__F03__02",
+        "P17__F09__01",
+        "P17__F09__02",
+        "P17__F09__03",
+        "P17__F12__01",
+        "P17__F17__01",
+        "P17__F17__02",
+        "P17__F18__01",
+        "P17__F18__02",
+        "P17__F20__01",
+        "P17__F20__02",
+        "P17__F26__01",
+        "P17__F26__02",
+        "P17__F27__01"
+      ],
+      "publicationIds": [
+        "F03",
+        "F09",
+        "F12",
+        "F17",
+        "F18",
+        "F20",
+        "F26",
+        "F27"
+      ],
+      "attributedOrigins": [
+        "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025",
+        "SEA-DIRECCIONES-2026",
+        "SEA-MESA-SOCIEDAD-CIVIL-2025"
+      ],
+      "originNote": "Orígenes atribuidos; independencia estadística no certificada. El número no aumenta el puntaje.",
+      "rank": 2,
+      "weightScoreRange": [
+        80,
+        83
+      ],
+      "weightRankRange": [
+        2,
+        2
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "I",
+          "delta": -1,
+          "score": 73,
+          "rank": 7
+        },
+        {
+          "key": "I",
+          "delta": 1,
+          "score": 90,
+          "rank": 1
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 75,
+          "rank": 3
+        },
+        {
+          "key": "U",
+          "delta": -1,
+          "score": 78,
+          "rank": 3
+        },
+        {
+          "key": "U",
+          "delta": 1,
+          "score": 85,
+          "rank": 2
+        }
+      ],
+      "judgmentScoreRange": [
+        73,
+        90
+      ],
+      "judgmentRankRange": [
+        1,
+        7
+      ],
+      "originRemoval": [
+        {
+          "origin": "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025",
+          "componentsLosingAllCitedSupport": [
+            "I",
+            "U"
+          ]
+        },
+        {
+          "origin": "SEA-DIRECCIONES-2026",
+          "componentsLosingAllCitedSupport": [
+            "A"
+          ]
+        },
+        {
+          "origin": "SEA-MESA-SOCIEDAD-CIVIL-2025",
+          "componentsLosingAllCitedSupport": []
+        }
+      ]
+    },
+    {
+      "id": "P16",
+      "title": "Las transferencias comprometidas llegan tarde",
+      "scope": "Ejecutoras con compromisos estatales; ejemplos de Protección Especializada",
+      "score": 79,
+      "confidence": "Media",
+      "components": [
+        {
+          "key": "I",
+          "level": 4,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Los testimonios describen crédito y postergación de sueldos/cotizaciones; el daño de caja afecta capacidad operativa, aunque no se cuantifica la pérdida típica.",
+          "refs": [
+            "P16__F26__01",
+            "P16__F26__02"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 4,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Los desembolsos y pagos laborales se repiten en la ejecución; se infiere exposición entre ciclos, no una tasa de episodios por fundación.",
+          "refs": [
+            "P16__F03__01",
+            "P16__F26__01"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 4,
+          "basis": "Anclaje observado; nivel asignado",
+          "inferred": false,
+          "reason": "57% de 125 declara transferencias fuera de plazo; el 47% de la ola anterior corrobora la señal sin ser una réplica independiente.",
+          "refs": [
+            "P16__F03__01",
+            "P16__F04__01"
+          ]
+        },
+        {
+          "key": "U",
+          "level": 5,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "El personal debe pagarse mientras no llega el aporte: obligación del ciclo inmediato, respaldada por casos de uno y medio a tres meses.",
+          "refs": [
+            "P16__F26__01",
+            "P16__F26__02"
+          ]
+        }
+      ],
+      "limit": "El giro posterior al inicio de F27 no demuestra atraso contractual: faltan fecha pactada y abono bancario. No se usa como un atraso verificado.",
+      "scoredClaimIds": [
+        "P16__F03__01",
+        "P16__F04__01",
+        "P16__F26__01",
+        "P16__F26__02"
+      ],
+      "allClaimIds": [
+        "P16__F03__01",
+        "P16__F03__02",
+        "P16__F04__01",
+        "P16__F09__01",
+        "P16__F15__01",
+        "P16__F15__02",
+        "P16__F17__01",
+        "P16__F17__02",
+        "P16__F18__01",
+        "P16__F26__01",
+        "P16__F26__02",
+        "P16__F27__01",
+        "P16__F27__02"
+      ],
+      "publicationIds": [
+        "F03",
+        "F04",
+        "F09",
+        "F15",
+        "F17",
+        "F18",
+        "F26",
+        "F27"
+      ],
+      "attributedOrigins": [
+        "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025",
+        "SEA-DIRECCIONES-2025",
+        "SEA-DIRECCIONES-2026"
+      ],
+      "originNote": "Orígenes atribuidos; independencia estadística no certificada. El número no aumenta el puntaje.",
+      "rank": 3,
+      "weightScoreRange": [
+        78,
+        81
+      ],
+      "weightRankRange": [
+        2,
+        3
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "I",
+          "delta": -1,
+          "score": 70,
+          "rank": 9
+        },
+        {
+          "key": "I",
+          "delta": 1,
+          "score": 88,
+          "rank": 2
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 73,
+          "rank": 7
+        },
+        {
+          "key": "F",
+          "delta": 1,
+          "score": 85,
+          "rank": 2
+        },
+        {
+          "key": "U",
+          "delta": -1,
+          "score": 75,
+          "rank": 3
+        }
+      ],
+      "judgmentScoreRange": [
+        70,
+        88
+      ],
+      "judgmentRankRange": [
+        2,
+        9
+      ],
+      "originRemoval": [
+        {
+          "origin": "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025",
+          "componentsLosingAllCitedSupport": [
+            "I",
+            "U"
+          ]
+        },
+        {
+          "origin": "SEA-DIRECCIONES-2025",
+          "componentsLosingAllCitedSupport": []
+        },
+        {
+          "origin": "SEA-DIRECCIONES-2026",
+          "componentsLosingAllCitedSupport": []
+        }
+      ]
+    },
+    {
+      "id": "P02",
+      "title": "Interrumpimos servicios cuando no se renueva un convenio",
+      "scope": "Ejecutoras con convenios estatales; atención permanente",
+      "score": 75,
+      "confidence": "Media",
+      "components": [
+        {
+          "key": "I",
+          "level": 5,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Terminar un proyecto de atención permanente interrumpe la continuidad del servicio; no se conoce la cantidad de personas ni la duración.",
+          "refs": [
+            "P02__F03__01"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La renovación constituye un ciclo contractual; se valora como cíclico, sin inferir cuántas veces le ocurrió a cada entidad.",
+          "refs": [
+            "P02__F09__01"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 3,
+          "basis": "Anclaje observado; nivel asignado",
+          "inferred": false,
+          "reason": "28% de 125 encuestadas con convenios declara el término por no renovación; el alcance se limita a esa base mixta.",
+          "refs": [
+            "P02__F03__01"
+          ]
+        },
+        {
+          "key": "U",
+          "level": 5,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Cuando se decide no renovar, la atención permanente requiere una transición inmediata para evitar una interrupción. Es una inferencia del servicio descrito.",
+          "refs": [
+            "P02__F03__01"
+          ]
+        }
+      ],
+      "limit": "El 54,9% de inactividad registral de F01 no mide cierres de servicios. No se usa para puntuar. F26 tampoco acredita específicamente la no renovación.",
+      "scoredClaimIds": [
+        "P02__F03__01",
+        "P02__F09__01"
+      ],
+      "allClaimIds": [
+        "P02__F01__01",
+        "P02__F01__02",
+        "P02__F02__01",
+        "P02__F03__01",
+        "P02__F03__02",
+        "P02__F04__01",
+        "P02__F04__02",
+        "P02__F07__01",
+        "P02__F09__01",
+        "P02__F18__01",
+        "P02__F18__02",
+        "P02__F20__01",
+        "P02__F20__02",
+        "P02__F26__01"
+      ],
+      "publicationIds": [
+        "F01",
+        "F02",
+        "F03",
+        "F04",
+        "F07",
+        "F09",
+        "F18",
+        "F20",
+        "F26"
+      ],
+      "attributedOrigins": [
+        "SEA-DIRECCIONES-2026",
+        "SEA-MESA-SOCIEDAD-CIVIL-2025"
+      ],
+      "originNote": "Orígenes atribuidos; independencia estadística no certificada. El número no aumenta el puntaje.",
+      "rank": 4,
+      "weightScoreRange": [
+        73,
+        77
+      ],
+      "weightRankRange": [
+        4,
+        8
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "I",
+          "delta": -1,
+          "score": 67,
+          "rank": 10
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 69,
+          "rank": 9
+        },
+        {
+          "key": "F",
+          "delta": 1,
+          "score": 81,
+          "rank": 2
+        },
+        {
+          "key": "U",
+          "delta": -1,
+          "score": 72,
+          "rank": 9
+        }
+      ],
+      "judgmentScoreRange": [
+        67,
+        81
+      ],
+      "judgmentRankRange": [
+        2,
+        10
+      ],
+      "originRemoval": [
+        {
+          "origin": "SEA-DIRECCIONES-2026",
+          "componentsLosingAllCitedSupport": [
+            "I",
+            "A",
+            "U"
+          ]
+        },
+        {
+          "origin": "SEA-MESA-SOCIEDAD-CIVIL-2025",
+          "componentsLosingAllCitedSupport": [
+            "F"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P13",
+      "title": "Nos cuesta asegurar ingresos estables para planificar",
+      "scope": "Estabilidad de ingresos privados/propios; muestras mixtas y contraste agregado",
+      "score": 75,
+      "confidence": "Media",
+      "components": [
+        {
+          "key": "I",
+          "level": 4,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Las consecuencias operativas de reducciones de ingresos justifican riesgo para servicios y equipo. La atribución exclusiva a ingresos privados/propios es parcial; no se toma el cierre como consecuencia típica.",
+          "refs": [
+            "P13__F03__02",
+            "P13__F09__01"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 4,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La cartera de aportes y su renovación se gestionan entre ciclos; se juzga persistencia de la incertidumbre. Las olas UC no cuentan como episodios ni el registro SII como pérdidas operativas.",
+          "refs": [
+            "P13__F03__04",
+            "P13__F18__01"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 4,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Se triangulan 37% con caída de donaciones y 31% en ingresos propios, autodiagnóstico financiero IFO y dependencia de donaciones locales. Se juzga extensión entre perfiles; no se suman porcentajes ni se usa 44% de prioridad como incidencia.",
+          "refs": [
+            "P13__F03__02",
+            "P13__F11__01",
+            "P13__F22__01"
+          ]
+        },
+        {
+          "key": "U",
+          "level": 4,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La incertidumbre afecta decisiones de presupuesto y de continuidad del ciclo en curso. El horizonte de meses es un juicio operativo, no un plazo medido para la muestra de P13.",
+          "refs": [
+            "P13__F20__01",
+            "P13__F20__02"
+          ]
+        }
+      ],
+      "limit": "Una caída de donaciones puede compensarse con otros ingresos: el caso Cultiva del expediente previo lo ilustra. Composición financiera, interés en formación e índices IFO no miden variación de caja. P13 no recibe 37 puntos por el 37%.",
+      "scoredClaimIds": [
+        "P13__F03__02",
+        "P13__F03__04",
+        "P13__F09__01",
+        "P13__F11__01",
+        "P13__F18__01",
+        "P13__F20__01",
+        "P13__F20__02",
+        "P13__F22__01"
+      ],
+      "allClaimIds": [
+        "P13__F03__01",
+        "P13__F03__02",
+        "P13__F03__03",
+        "P13__F03__04",
+        "P13__F04__01",
+        "P13__F04__02",
+        "P13__F04__03",
+        "P13__F09__01",
+        "P13__F10__01",
+        "P13__F11__01",
+        "P13__F11__02",
+        "P13__F12__01",
+        "P13__F12__02",
+        "P13__F14__01",
+        "P13__F15__01",
+        "P13__F15__02",
+        "P13__F16__01",
+        "P13__F17__01",
+        "P13__F17__02",
+        "P13__F18__01",
+        "P13__F18__02",
+        "P13__F20__01",
+        "P13__F20__02",
+        "P13__F26__01",
+        "P13__F26__02",
+        "P13__F28__01",
+        "P13__F22__01",
+        "P13__F23__01"
+      ],
+      "publicationIds": [
+        "F03",
+        "F04",
+        "F09",
+        "F10",
+        "F11",
+        "F12",
+        "F14",
+        "F15",
+        "F16",
+        "F17",
+        "F18",
+        "F20",
+        "F22",
+        "F23",
+        "F26",
+        "F28"
+      ],
+      "attributedOrigins": [
+        "ALLISON-KAYE-PLANEACION-2005-ED2",
+        "CEFIS-UAI-FILANTROPIA-LOCAL-2022",
+        "IFO-2025-TRASCENDER",
+        "MINNESOTA-COUNCIL-NONPROFITS-PRACTICES-2014",
+        "SEA-DIRECCIONES-2026",
+        "SEA-MESA-SOCIEDAD-CIVIL-2025"
+      ],
+      "originNote": "Orígenes atribuidos; independencia estadística no certificada. El número no aumenta el puntaje.",
+      "rank": 4,
+      "weightScoreRange": [
+        75,
+        75
+      ],
+      "weightRankRange": [
+        4,
+        7
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "I",
+          "delta": -1,
+          "score": 67,
+          "rank": 10
+        },
+        {
+          "key": "I",
+          "delta": 1,
+          "score": 84,
+          "rank": 2
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 69,
+          "rank": 9
+        },
+        {
+          "key": "F",
+          "delta": 1,
+          "score": 81,
+          "rank": 2
+        },
+        {
+          "key": "A",
+          "delta": -1,
+          "score": 69,
+          "rank": 9
+        },
+        {
+          "key": "A",
+          "delta": 1,
+          "score": 81,
+          "rank": 2
+        },
+        {
+          "key": "U",
+          "delta": -1,
+          "score": 72,
+          "rank": 9
+        },
+        {
+          "key": "U",
+          "delta": 1,
+          "score": 79,
+          "rank": 3
+        }
+      ],
+      "judgmentScoreRange": [
+        67,
+        84
+      ],
+      "judgmentRankRange": [
+        2,
+        10
+      ],
+      "originRemoval": [
+        {
+          "origin": "ALLISON-KAYE-PLANEACION-2005-ED2",
+          "componentsLosingAllCitedSupport": [
+            "U"
+          ]
+        },
+        {
+          "origin": "CEFIS-UAI-FILANTROPIA-LOCAL-2022",
+          "componentsLosingAllCitedSupport": []
+        },
+        {
+          "origin": "IFO-2025-TRASCENDER",
+          "componentsLosingAllCitedSupport": []
+        },
+        {
+          "origin": "MINNESOTA-COUNCIL-NONPROFITS-PRACTICES-2014",
+          "componentsLosingAllCitedSupport": []
+        },
+        {
+          "origin": "SEA-DIRECCIONES-2026",
+          "componentsLosingAllCitedSupport": []
+        },
+        {
+          "origin": "SEA-MESA-SOCIEDAD-CIVIL-2025",
+          "componentsLosingAllCitedSupport": []
+        }
+      ]
+    },
+    {
+      "id": "P28",
+      "title": "Nos cuesta mantener los contratos y retener especialistas",
+      "scope": "Fundaciones/corporaciones empleadoras; contraste en programas especializados",
+      "score": 75,
+      "confidence": "Media",
+      "components": [
+        {
+          "key": "I",
+          "level": 4,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La salida de equipos perjudica experiencia y continuidad del vínculo con familias. Se valora capacidad de servicio, sin asumir que toda rotación lo interrumpe.",
+          "refs": [
+            "P28__F03__01",
+            "P28__F26__01"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 4,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La incertidumbre de contratos y reconstrucción de equipos se mantiene entre ciclos; la recurrencia se infiere, no se observa una tasa de rotación.",
+          "refs": [
+            "P28__F09__01",
+            "P28__F26__02"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 4,
+          "basis": "Anclaje observado; nivel asignado",
+          "inferred": false,
+          "reason": "52% reporta estabilidad contractual problemática y 52% retención; no se suman ni se consideran eventos independientes.",
+          "refs": [
+            "P28__F03__01"
+          ]
+        },
+        {
+          "key": "U",
+          "level": 4,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Vacantes, remuneraciones y vínculos de atención afectan el ciclo actual; el horizonte de meses es juicio, sin tiempo promedio de reemplazo.",
+          "refs": [
+            "P28__F26__01",
+            "P28__F26__02"
+          ]
+        }
+      ],
+      "limit": "88% declara tener especialistas: no se afirma ausencia generalizada de profesionales. Interés en capacitación F28 no es evidencia adicional de rotación.",
+      "scoredClaimIds": [
+        "P28__F03__01",
+        "P28__F09__01",
+        "P28__F26__01",
+        "P28__F26__02"
+      ],
+      "allClaimIds": [
+        "P28__F03__01",
+        "P28__F03__02",
+        "P28__F09__01",
+        "P28__F17__01",
+        "P28__F18__01",
+        "P28__F18__02",
+        "P28__F20__01",
+        "P28__F20__02",
+        "P28__F26__01",
+        "P28__F26__02",
+        "P28__F28__01"
+      ],
+      "publicationIds": [
+        "F03",
+        "F09",
+        "F17",
+        "F18",
+        "F20",
+        "F26",
+        "F28"
+      ],
+      "attributedOrigins": [
+        "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025",
+        "SEA-DIRECCIONES-2026",
+        "SEA-MESA-SOCIEDAD-CIVIL-2025"
+      ],
+      "originNote": "Orígenes atribuidos; independencia estadística no certificada. El número no aumenta el puntaje.",
+      "rank": 4,
+      "weightScoreRange": [
+        75,
+        75
+      ],
+      "weightRankRange": [
+        4,
+        7
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "I",
+          "delta": -1,
+          "score": 67,
+          "rank": 10
+        },
+        {
+          "key": "I",
+          "delta": 1,
+          "score": 84,
+          "rank": 2
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 69,
+          "rank": 9
+        },
+        {
+          "key": "F",
+          "delta": 1,
+          "score": 81,
+          "rank": 2
+        },
+        {
+          "key": "U",
+          "delta": -1,
+          "score": 72,
+          "rank": 9
+        },
+        {
+          "key": "U",
+          "delta": 1,
+          "score": 79,
+          "rank": 3
+        }
+      ],
+      "judgmentScoreRange": [
+        67,
+        84
+      ],
+      "judgmentRankRange": [
+        2,
+        10
+      ],
+      "originRemoval": [
+        {
+          "origin": "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025",
+          "componentsLosingAllCitedSupport": [
+            "U"
+          ]
+        },
+        {
+          "origin": "SEA-DIRECCIONES-2026",
+          "componentsLosingAllCitedSupport": [
+            "A"
+          ]
+        },
+        {
+          "origin": "SEA-MESA-SOCIEDAD-CIVIL-2025",
+          "componentsLosingAllCitedSupport": []
+        }
+      ]
+    },
+    {
+      "id": "P52",
+      "title": "Nos cuesta captar y mantener familias de acogida",
+      "scope": "Programas FAE que captan y mantienen familias acogedoras",
+      "score": 75,
+      "confidence": "Baja",
+      "components": [
+        {
+          "key": "I",
+          "level": 5,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La desvinculación de familias afecta continuidad del vínculo protector; se valora consecuencia esencial, sin inventar número de niños afectados.",
+          "refs": [
+            "P52__F26__02"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 4,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Captar, apoyar y conservar familias es función sostenida del modelo FAE. No se conoce tasa ni repetición individual de deserción.",
+          "refs": [
+            "P52__F26__01"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 2,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Es un subgrupo/modalidad especializada: familias acogedoras no equivalen a fundaciones ni representan al conjunto del tercer sector.",
+          "refs": [
+            "P52__F26__01"
+          ]
+        },
+        {
+          "key": "U",
+          "level": 5,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La continuidad del cuidado protector puede verse afectada con una desvinculación; se infiere urgencia de la atención en curso.",
+          "refs": [
+            "P52__F26__02"
+          ]
+        }
+      ],
+      "limit": "Un estudio sectorial cualitativo. El puntaje alto refleja el vínculo protector, no cantidad nacional afectada. Validar antes de elegirlo como oportunidad para todo el sector.",
+      "scoredClaimIds": [
+        "P52__F26__01",
+        "P52__F26__02"
+      ],
+      "allClaimIds": [
+        "P52__F26__01",
+        "P52__F26__02"
+      ],
+      "publicationIds": [
+        "F26"
+      ],
+      "attributedOrigins": [
+        "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025"
+      ],
+      "originNote": "Orígenes atribuidos; independencia estadística no certificada. El número no aumenta el puntaje.",
+      "rank": 4,
+      "weightScoreRange": [
+        72,
+        79
+      ],
+      "weightRankRange": [
+        3,
+        8
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "I",
+          "delta": -1,
+          "score": 67,
+          "rank": 10
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 69,
+          "rank": 9
+        },
+        {
+          "key": "F",
+          "delta": 1,
+          "score": 81,
+          "rank": 2
+        },
+        {
+          "key": "A",
+          "delta": -1,
+          "score": 69,
+          "rank": 9
+        },
+        {
+          "key": "A",
+          "delta": 1,
+          "score": 81,
+          "rank": 2
+        },
+        {
+          "key": "U",
+          "delta": -1,
+          "score": 72,
+          "rank": 9
+        }
+      ],
+      "judgmentScoreRange": [
+        67,
+        81
+      ],
+      "judgmentRankRange": [
+        2,
+        10
+      ],
+      "originRemoval": [
+        {
+          "origin": "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025",
+          "componentsLosingAllCitedSupport": [
+            "I",
+            "F",
+            "A",
+            "U"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P18",
+      "title": "La demora en la toma de razón impide iniciar actividades",
+      "scope": "Convenios sometidos al trámite; muestra mixta con contratos estatales",
+      "score": 73,
+      "confidence": "Media",
+      "components": [
+        {
+          "key": "I",
+          "level": 4,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "El ítem declara que no pudieron iniciar actividades: afecta la ejecución del servicio, sin medir atenciones perdidas.",
+          "refs": [
+            "P18__F03__01"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La toma de razón corresponde al inicio de un acto/convenio, no a una carga diaria. Se valora como ciclo contractual.",
+          "refs": [
+            "P18__F03__01"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 4,
+          "basis": "Anclaje observado; nivel asignado",
+          "inferred": false,
+          "reason": "42% de N125 reportó el impedimento; no se conoce la base exacta de contratos sujetos al trámite. Ese límite reduce confianza en la interpretación del alcance.",
+          "refs": [
+            "P18__F03__01"
+          ]
+        },
+        {
+          "key": "U",
+          "level": 5,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La actividad prevista queda impedida al inicio comprometido; se valora urgencia del hito, sin inventar días de demora.",
+          "refs": [
+            "P18__F03__01"
+          ]
+        }
+      ],
+      "limit": "No todos los contratos están sujetos a toma de razón. 34% en 2024 y 42% en 2025 no acreditan que empeoró una misma cohorte.",
+      "scoredClaimIds": [
+        "P18__F03__01"
+      ],
+      "allClaimIds": [
+        "P18__F03__01",
+        "P18__F04__01"
+      ],
+      "publicationIds": [
+        "F03",
+        "F04"
+      ],
+      "attributedOrigins": [
+        "SEA-DIRECCIONES-2026"
+      ],
+      "originNote": "Orígenes atribuidos; independencia estadística no certificada. El número no aumenta el puntaje.",
+      "rank": 8,
+      "weightScoreRange": [
+        71,
+        75
+      ],
+      "weightRankRange": [
+        4,
+        9
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "I",
+          "delta": -1,
+          "score": 64,
+          "rank": 11
+        },
+        {
+          "key": "I",
+          "delta": 1,
+          "score": 81,
+          "rank": 2
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 67,
+          "rank": 10
+        },
+        {
+          "key": "F",
+          "delta": 1,
+          "score": 79,
+          "rank": 3
+        },
+        {
+          "key": "U",
+          "delta": -1,
+          "score": 69,
+          "rank": 9
+        }
+      ],
+      "judgmentScoreRange": [
+        64,
+        81
+      ],
+      "judgmentRankRange": [
+        2,
+        11
+      ],
+      "originRemoval": [
+        {
+          "origin": "SEA-DIRECCIONES-2026",
+          "componentsLosingAllCitedSupport": [
+            "I",
+            "F",
+            "A",
+            "U"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P48",
+      "title": "Atendemos más casos que plazas financiadas con el mismo equipo",
+      "scope": "Proyectos AFT con sobrecupos sin recursos adicionales",
+      "score": 73,
+      "confidence": "Baja",
+      "components": [
+        {
+          "key": "I",
+          "level": 4,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Más casos con igual equipo deteriora seguimiento y genera desgaste: capacidad de atención, sin afirmar interrupción efectiva.",
+          "refs": [
+            "P48__F26__01",
+            "P48__F26__02"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 5,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Mientras dura el sobrecupo, la carga se añade al trabajo cotidiano; es persistencia del mecanismo relatado.",
+          "refs": [
+            "P48__F26__01",
+            "P48__F26__02"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 2,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Se limita a proyectos con esa condición dentro de AFT. El taller no permite extenderla a todas las modalidades ni calcular una tasa.",
+          "refs": [
+            "P48__F26__01"
+          ]
+        },
+        {
+          "key": "U",
+          "level": 5,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Los casos ya están siendo atendidos y el refuerzo puede llegar demasiado tarde; la carga incide en la atención actual.",
+          "refs": [
+            "P48__F26__02"
+          ]
+        }
+      ],
+      "limit": "Un solo estudio sectorial, sin N ni tasa de sobrecupos. Una criticidad alta dentro del mecanismo no indica tamaño nacional del problema.",
+      "scoredClaimIds": [
+        "P48__F26__01",
+        "P48__F26__02"
+      ],
+      "allClaimIds": [
+        "P48__F26__01",
+        "P48__F26__02"
+      ],
+      "publicationIds": [
+        "F26"
+      ],
+      "attributedOrigins": [
+        "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025"
+      ],
+      "originNote": "Orígenes atribuidos; independencia estadística no certificada. El número no aumenta el puntaje.",
+      "rank": 8,
+      "weightScoreRange": [
+        70,
+        76
+      ],
+      "weightRankRange": [
+        4,
+        10
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "I",
+          "delta": -1,
+          "score": 64,
+          "rank": 11
+        },
+        {
+          "key": "I",
+          "delta": 1,
+          "score": 81,
+          "rank": 2
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 67,
+          "rank": 10
+        },
+        {
+          "key": "A",
+          "delta": -1,
+          "score": 67,
+          "rank": 10
+        },
+        {
+          "key": "A",
+          "delta": 1,
+          "score": 79,
+          "rank": 3
+        },
+        {
+          "key": "U",
+          "delta": -1,
+          "score": 69,
+          "rank": 9
+        }
+      ],
+      "judgmentScoreRange": [
+        64,
+        81
+      ],
+      "judgmentRankRange": [
+        2,
+        11
+      ],
+      "originRemoval": [
+        {
+          "origin": "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025",
+          "componentsLosingAllCitedSupport": [
+            "I",
+            "F",
+            "A",
+            "U"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P20",
+      "title": "Nuestras rendiciones quedan abiertas por falta de respuesta",
+      "scope": "Ejecutoras con rendiciones sujetas a respuesta del otorgante",
+      "score": 69,
+      "confidence": "Media",
+      "components": [
+        {
+          "key": "I",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La incertidumbre y seguimiento de expedientes abiertos consumen capacidad; no toda rendición abierta demuestra dinero retenido o servicio interrumpido.",
+          "refs": [
+            "P20__F03__01",
+            "P20__F06__01"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 4,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La rendición ocurre en ciclos de ejecución y una revisión prolongada mantiene expedientes entre ciclos. Es persistencia inferida, no número de reaperturas.",
+          "refs": [
+            "P20__F03__02"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 5,
+          "basis": "Anclaje observado; nivel asignado",
+          "inferred": false,
+          "reason": "62% de N125 declara falta de respuesta en plazo. El 42% sobre siete meses tiene otra pregunta/base y no se agrega.",
+          "refs": [
+            "P20__F03__01",
+            "P20__F03__02"
+          ]
+        },
+        {
+          "key": "U",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Hay plazos contractuales y de revisión para gestionar; los siete meses transcurridos no revelan tiempo restante para evitar daño. Se asigna urgencia de gestión periódica.",
+          "refs": [
+            "P20__F06__01"
+          ]
+        }
+      ],
+      "limit": "F09 reproduce F04: una sola observación original. F27 permite distinguir estados, pero no prueba incumplimiento del plazo de los casos revisados.",
+      "scoredClaimIds": [
+        "P20__F03__01",
+        "P20__F03__02",
+        "P20__F06__01"
+      ],
+      "allClaimIds": [
+        "P20__F03__01",
+        "P20__F03__02",
+        "P20__F04__01",
+        "P20__F06__01",
+        "P20__F09__01",
+        "P20__F15__01",
+        "P20__F26__01",
+        "P20__F27__01",
+        "P20__F27__02"
+      ],
+      "publicationIds": [
+        "F03",
+        "F04",
+        "F06",
+        "F09",
+        "F15",
+        "F26",
+        "F27"
+      ],
+      "attributedOrigins": [
+        "SEA-DIRECCIONES-2026",
+        "SEA-REGULACIONES-OSC-2025"
+      ],
+      "originNote": "Orígenes atribuidos; independencia estadística no certificada. El número no aumenta el puntaje.",
+      "rank": 10,
+      "weightScoreRange": [
+        67,
+        71
+      ],
+      "weightRankRange": [
+        9,
+        10
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "I",
+          "delta": -1,
+          "score": 60,
+          "rank": 16
+        },
+        {
+          "key": "I",
+          "delta": 1,
+          "score": 78,
+          "rank": 4
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 63,
+          "rank": 11
+        },
+        {
+          "key": "F",
+          "delta": 1,
+          "score": 75,
+          "rank": 4
+        },
+        {
+          "key": "U",
+          "delta": -1,
+          "score": 65,
+          "rank": 10
+        },
+        {
+          "key": "U",
+          "delta": 1,
+          "score": 73,
+          "rank": 8
+        }
+      ],
+      "judgmentScoreRange": [
+        60,
+        78
+      ],
+      "judgmentRankRange": [
+        4,
+        16
+      ],
+      "originRemoval": [
+        {
+          "origin": "SEA-DIRECCIONES-2026",
+          "componentsLosingAllCitedSupport": [
+            "F",
+            "A"
+          ]
+        },
+        {
+          "origin": "SEA-REGULACIONES-OSC-2025",
+          "componentsLosingAllCitedSupport": [
+            "U"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P15",
+      "title": "Perdemos una vía habitual de financiamiento cuando desaparece una convocatoria",
+      "scope": "Ejecutoras que concurren a convocatorias estatales habituales",
+      "score": 65,
+      "confidence": "Media",
+      "components": [
+        {
+          "key": "I",
+          "level": 4,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Perder una convocatoria habitual elimina una vía de recursos para sostener programas. El daño sobre servicios se infiere; no toda convocatoria ausente implica cierre.",
+          "refs": [
+            "P15__F03__01"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "El mecanismo se activa en cada calendario de convocatoria; las respuestas de dos olas no demuestran repetición individual.",
+          "refs": [
+            "P15__F03__01",
+            "P15__F04__01"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 4,
+          "basis": "Anclaje observado; nivel asignado",
+          "inferred": false,
+          "reason": "54% reporta ausencia de convocatorias habituales; el 39% que no postuló es otra pregunta y no se suma.",
+          "refs": [
+            "P15__F03__01"
+          ]
+        },
+        {
+          "key": "U",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La búsqueda de alternativa debe anticiparse al próximo calendario de financiamiento; no hay plazo de caja documentado para este ítem.",
+          "refs": [
+            "P15__F03__01"
+          ]
+        }
+      ],
+      "limit": "Las olas 2025 y 2026 pueden compartir participantes. No equivalen a dos fuentes estadísticamente independientes ni permiten sumar 51% y 54%.",
+      "scoredClaimIds": [
+        "P15__F03__01",
+        "P15__F04__01"
+      ],
+      "allClaimIds": [
+        "P15__F03__01",
+        "P15__F03__02",
+        "P15__F04__01"
+      ],
+      "publicationIds": [
+        "F03",
+        "F04"
+      ],
+      "attributedOrigins": [
+        "SEA-DIRECCIONES-2025",
+        "SEA-DIRECCIONES-2026"
+      ],
+      "originNote": "Orígenes atribuidos; independencia estadística no certificada. El número no aumenta el puntaje.",
+      "rank": 11,
+      "weightScoreRange": [
+        63,
+        66
+      ],
+      "weightRankRange": [
+        11,
+        12
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "I",
+          "delta": -1,
+          "score": 57,
+          "rank": 18
+        },
+        {
+          "key": "I",
+          "delta": 1,
+          "score": 74,
+          "rank": 8
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 59,
+          "rank": 18
+        },
+        {
+          "key": "F",
+          "delta": 1,
+          "score": 72,
+          "rank": 10
+        },
+        {
+          "key": "U",
+          "delta": -1,
+          "score": 62,
+          "rank": 16
+        },
+        {
+          "key": "U",
+          "delta": 1,
+          "score": 69,
+          "rank": 10
+        }
+      ],
+      "judgmentScoreRange": [
+        57,
+        74
+      ],
+      "judgmentRankRange": [
+        8,
+        18
+      ],
+      "originRemoval": [
+        {
+          "origin": "SEA-DIRECCIONES-2025",
+          "componentsLosingAllCitedSupport": []
+        },
+        {
+          "origin": "SEA-DIRECCIONES-2026",
+          "componentsLosingAllCitedSupport": [
+            "I",
+            "A",
+            "U"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P21",
+      "title": "Nos piden rehacer rendiciones que ya habían aprobado",
+      "scope": "Ejecutoras a las que reabren rendiciones aprobadas",
+      "score": 63,
+      "confidence": "Media",
+      "components": [
+        {
+          "key": "I",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Rehacer antecedentes ya aprobados implica retrabajo y reasignación material de gestión; horas y daño financiero no están cuantificados.",
+          "refs": [
+            "P21__F03__01",
+            "P21__F03__02"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 4,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Se infiere repetición en ciclos de rendición a partir del mecanismo de reapertura; no se interpreta 43% como cantidad de eventos.",
+          "refs": [
+            "P21__F03__01",
+            "P21__F27__01"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 4,
+          "basis": "Anclaje observado; nivel asignado",
+          "inferred": false,
+          "reason": "43% de N125 reporta volver a rendir cuentas aprobadas; 40% de la ola previa es un contraste, no otra muestra independiente que se suma.",
+          "refs": [
+            "P21__F03__01",
+            "P21__F04__01"
+          ]
+        },
+        {
+          "key": "U",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La corrección debe coordinarse con otorgante y mesa de ayuda en el ciclo de respuesta; no hay vencimiento inmediato acreditado.",
+          "refs": [
+            "P21__F27__01"
+          ]
+        }
+      ],
+      "limit": "Una transacción aprobada dentro de una rendición aún observada no es necesariamente una reapertura. Los registros públicos revisados no permiten contar los episodios.",
+      "scoredClaimIds": [
+        "P21__F03__01",
+        "P21__F03__02",
+        "P21__F04__01",
+        "P21__F27__01"
+      ],
+      "allClaimIds": [
+        "P21__F03__01",
+        "P21__F03__02",
+        "P21__F04__01",
+        "P21__F09__01",
+        "P21__F27__01",
+        "P21__F27__02"
+      ],
+      "publicationIds": [
+        "F03",
+        "F04",
+        "F09",
+        "F27"
+      ],
+      "attributedOrigins": [
+        "CGR-INFOSISREC-REGISTRO-2026",
+        "SEA-DIRECCIONES-2025",
+        "SEA-DIRECCIONES-2026"
+      ],
+      "originNote": "Orígenes atribuidos; independencia estadística no certificada. El número no aumenta el puntaje.",
+      "rank": 12,
+      "weightScoreRange": [
+        62,
+        64
+      ],
+      "weightRankRange": [
+        11,
+        15
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "I",
+          "delta": -1,
+          "score": 54,
+          "rank": 21
+        },
+        {
+          "key": "I",
+          "delta": 1,
+          "score": 72,
+          "rank": 10
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 57,
+          "rank": 18
+        },
+        {
+          "key": "F",
+          "delta": 1,
+          "score": 69,
+          "rank": 10
+        },
+        {
+          "key": "U",
+          "delta": -1,
+          "score": 59,
+          "rank": 18
+        },
+        {
+          "key": "U",
+          "delta": 1,
+          "score": 67,
+          "rank": 11
+        }
+      ],
+      "judgmentScoreRange": [
+        54,
+        72
+      ],
+      "judgmentRankRange": [
+        10,
+        21
+      ],
+      "originRemoval": [
+        {
+          "origin": "CGR-INFOSISREC-REGISTRO-2026",
+          "componentsLosingAllCitedSupport": [
+            "U"
+          ]
+        },
+        {
+          "origin": "SEA-DIRECCIONES-2025",
+          "componentsLosingAllCitedSupport": []
+        },
+        {
+          "origin": "SEA-DIRECCIONES-2026",
+          "componentsLosingAllCitedSupport": [
+            "I"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P22",
+      "title": "Nos cuesta rendir gastos en SISREC",
+      "scope": "Ejecutoras usuarias de SISREC",
+      "score": 63,
+      "confidence": "Media",
+      "components": [
+        {
+          "key": "I",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La corrección, revisión, firma y reenvío movilizan al equipo y pueden impedir cerrar el trámite; no se acreditan pérdidas de servicios por sí mismas.",
+          "refs": [
+            "P22__F27__01",
+            "P22__F27__02"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 4,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Las rendiciones y correcciones se repiten por períodos de ejecución: carga recurrente inferida del flujo.",
+          "refs": [
+            "P22__F27__01"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 4,
+          "basis": "Anclaje observado; nivel asignado",
+          "inferred": false,
+          "reason": "40% de la submuestra con convenios reportó dificultades en SISREC; no es 40% de todas las fundaciones ni de todos los usuarios del sistema.",
+          "refs": [
+            "P22__F03__01"
+          ]
+        },
+        {
+          "key": "U",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Las firmas y subsanaciones exigen respuesta antes del siguiente hito de rendición; el banco no fija días comparables.",
+          "refs": [
+            "P22__F27__01",
+            "P22__F27__02"
+          ]
+        }
+      ],
+      "limit": "La FAQ confirma pasos y mecanismos, no incidencia ni horas. La automatización es una propuesta, no una mejora ya evaluada.",
+      "scoredClaimIds": [
+        "P22__F03__01",
+        "P22__F27__01",
+        "P22__F27__02"
+      ],
+      "allClaimIds": [
+        "P22__F03__01",
+        "P22__F06__01",
+        "P22__F09__01",
+        "P22__F09__02",
+        "P22__F27__01",
+        "P22__F27__02"
+      ],
+      "publicationIds": [
+        "F03",
+        "F06",
+        "F09",
+        "F27"
+      ],
+      "attributedOrigins": [
+        "CGR-INFOSISREC-REGISTRO-2026",
+        "SEA-DIRECCIONES-2026"
+      ],
+      "originNote": "Orígenes atribuidos; independencia estadística no certificada. El número no aumenta el puntaje.",
+      "rank": 12,
+      "weightScoreRange": [
+        62,
+        64
+      ],
+      "weightRankRange": [
+        11,
+        15
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "I",
+          "delta": -1,
+          "score": 54,
+          "rank": 21
+        },
+        {
+          "key": "I",
+          "delta": 1,
+          "score": 72,
+          "rank": 10
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 57,
+          "rank": 18
+        },
+        {
+          "key": "F",
+          "delta": 1,
+          "score": 69,
+          "rank": 10
+        },
+        {
+          "key": "U",
+          "delta": -1,
+          "score": 59,
+          "rank": 18
+        },
+        {
+          "key": "U",
+          "delta": 1,
+          "score": 67,
+          "rank": 11
+        }
+      ],
+      "judgmentScoreRange": [
+        54,
+        72
+      ],
+      "judgmentRankRange": [
+        10,
+        21
+      ],
+      "originRemoval": [
+        {
+          "origin": "CGR-INFOSISREC-REGISTRO-2026",
+          "componentsLosingAllCitedSupport": [
+            "I",
+            "F",
+            "U"
+          ]
+        },
+        {
+          "origin": "SEA-DIRECCIONES-2026",
+          "componentsLosingAllCitedSupport": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P23",
+      "title": "Debemos traspasar la atención y los datos si no renuevan el convenio",
+      "scope": "Cambio de ejecutor de un convenio con atención en curso",
+      "score": 63,
+      "confidence": "Baja",
+      "components": [
+        {
+          "key": "I",
+          "level": 5,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Traspasar intervención y datos exige preservar continuidad y protección de usuarios. La severidad alta es riesgo del traspaso, no daño efectivo demostrado.",
+          "refs": [
+            "P23__F03__01"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 2,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Es un hito ocasional al cambiar de operador; no se presume repetición anual en la misma organización.",
+          "refs": [
+            "P23__F03__01"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 2,
+          "basis": "Anclaje observado; nivel asignado",
+          "inferred": false,
+          "reason": "10% de las encuestadas con convenios declara el traspaso; se limita a ese subgrupo expuesto.",
+          "refs": [
+            "P23__F03__01"
+          ]
+        },
+        {
+          "key": "U",
+          "level": 5,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La atención está en curso y la transición debe coordinarse en el cambio de operador; se infiere urgencia para evitar pérdida del vínculo.",
+          "refs": [
+            "P23__F03__01"
+          ]
+        }
+      ],
+      "limit": "Un solo origen empírico y ausencia de datos sobre fallas, tiempos o personas afectadas. No confundir un traspaso efectuado con interrupción inevitable.",
+      "scoredClaimIds": [
+        "P23__F03__01"
+      ],
+      "allClaimIds": [
+        "P23__F03__01"
+      ],
+      "publicationIds": [
+        "F03"
+      ],
+      "attributedOrigins": [
+        "SEA-DIRECCIONES-2026"
+      ],
+      "originNote": "Orígenes atribuidos; independencia estadística no certificada. El número no aumenta el puntaje.",
+      "rank": 12,
+      "weightScoreRange": [
+        60,
+        66
+      ],
+      "weightRankRange": [
+        11,
+        17
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "I",
+          "delta": -1,
+          "score": 54,
+          "rank": 21
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 57,
+          "rank": 18
+        },
+        {
+          "key": "F",
+          "delta": 1,
+          "score": 69,
+          "rank": 10
+        },
+        {
+          "key": "U",
+          "delta": -1,
+          "score": 59,
+          "rank": 18
+        }
+      ],
+      "judgmentScoreRange": [
+        54,
+        69
+      ],
+      "judgmentRankRange": [
+        10,
+        21
+      ],
+      "originRemoval": [
+        {
+          "origin": "SEA-DIRECCIONES-2026",
+          "componentsLosingAllCitedSupport": [
+            "I",
+            "F",
+            "A",
+            "U"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P25",
+      "title": "Los requisitos dispersos nos dificultan recibir donaciones",
+      "scope": "OSC que buscan recibir donaciones bajo distintos regímenes",
+      "score": 63,
+      "confidence": "Media",
+      "components": [
+        {
+          "key": "I",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La dispersión de requisitos consume gestión y puede impedir aprovechar aportes; no se mide la pérdida económica ni su efecto final en servicios.",
+          "refs": [
+            "P25__F03__02",
+            "P25__F09__01"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 4,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Las acreditaciones y condiciones vuelven a importar al cambiar régimen, oportunidad o donante; se infiere recurrencia entre ciclos de captación.",
+          "refs": [
+            "P25__F07__01",
+            "P25__F09__01"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 4,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "57% de N255 percibe dificultad por multiplicidad normativa; es percepción agregada. El 28% de N200 mide restricciones concretas en otra pregunta.",
+          "refs": [
+            "P25__F03__01",
+            "P25__F03__02"
+          ]
+        },
+        {
+          "key": "U",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La elegibilidad debe resolverse antes de la oportunidad de aporte; no se documenta una fecha crítica común.",
+          "refs": [
+            "P25__F09__01"
+          ]
+        }
+      ],
+      "limit": "El 82% que recibe donaciones en FECU no mide trabas. No se convierte el porcentaje de menciones de F22 en porcentaje de OSC.",
+      "scoredClaimIds": [
+        "P25__F03__01",
+        "P25__F03__02",
+        "P25__F07__01",
+        "P25__F09__01"
+      ],
+      "allClaimIds": [
+        "P25__F03__01",
+        "P25__F03__02",
+        "P25__F03__03",
+        "P25__F04__01",
+        "P25__F07__01",
+        "P25__F09__01",
+        "P25__F09__02",
+        "P25__F10__01",
+        "P25__F22__01"
+      ],
+      "publicationIds": [
+        "F03",
+        "F04",
+        "F07",
+        "F09",
+        "F10",
+        "F22"
+      ],
+      "attributedOrigins": [
+        "SEA-DIRECCIONES-2026",
+        "SEA-MESA-SOCIEDAD-CIVIL-2025",
+        "SEA-REGISTROS-OSC-2025"
+      ],
+      "originNote": "Orígenes atribuidos; independencia estadística no certificada. El número no aumenta el puntaje.",
+      "rank": 12,
+      "weightScoreRange": [
+        62,
+        64
+      ],
+      "weightRankRange": [
+        11,
+        15
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "I",
+          "delta": -1,
+          "score": 54,
+          "rank": 21
+        },
+        {
+          "key": "I",
+          "delta": 1,
+          "score": 72,
+          "rank": 10
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 57,
+          "rank": 18
+        },
+        {
+          "key": "F",
+          "delta": 1,
+          "score": 69,
+          "rank": 10
+        },
+        {
+          "key": "A",
+          "delta": -1,
+          "score": 57,
+          "rank": 18
+        },
+        {
+          "key": "A",
+          "delta": 1,
+          "score": 69,
+          "rank": 10
+        },
+        {
+          "key": "U",
+          "delta": -1,
+          "score": 59,
+          "rank": 18
+        },
+        {
+          "key": "U",
+          "delta": 1,
+          "score": 67,
+          "rank": 11
+        }
+      ],
+      "judgmentScoreRange": [
+        54,
+        72
+      ],
+      "judgmentRankRange": [
+        10,
+        21
+      ],
+      "originRemoval": [
+        {
+          "origin": "SEA-DIRECCIONES-2026",
+          "componentsLosingAllCitedSupport": [
+            "A"
+          ]
+        },
+        {
+          "origin": "SEA-MESA-SOCIEDAD-CIVIL-2025",
+          "componentsLosingAllCitedSupport": [
+            "U"
+          ]
+        },
+        {
+          "origin": "SEA-REGISTROS-OSC-2025",
+          "componentsLosingAllCitedSupport": []
+        }
+      ]
+    },
+    {
+      "id": "P43",
+      "title": "Tenemos que volver a postular mientras sostenemos un servicio",
+      "scope": "Ejecutoras de servicios permanentes bajo concursos anuales/bianuales",
+      "score": 63,
+      "confidence": "Baja",
+      "components": [
+        {
+          "key": "I",
+          "level": 4,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Preparar una nueva postulación mientras se atiende sin certeza de continuidad tensiona equipo y servicio. El daño final no se deduce de licitaciones no adjudicadas.",
+          "refs": [
+            "P43__F09__01"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 3,
+          "basis": "Anclaje observado; nivel asignado",
+          "inferred": false,
+          "reason": "La fuente identifica explícitamente concursos anuales o bianuales.",
+          "refs": [
+            "P43__F09__01"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "El mecanismo se extiende al modelo de servicios permanentes concursables; 24 de 74 son adjudicaciones de procesos, no fracción de entidades que sufren el problema.",
+          "refs": [
+            "P43__F09__01",
+            "P43__F09__02"
+          ]
+        },
+        {
+          "key": "U",
+          "level": 4,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "El servicio sigue en curso durante la postulación, con decisiones de personal y continuidad en el ciclo actual.",
+          "refs": [
+            "P43__F09__01",
+            "P43__F26__01"
+          ]
+        }
+      ],
+      "limit": "La referencia a ciclos DCE apoya incertidumbre laboral, pero no observa directamente cada repostulación del mismo ejecutor. Convenios plurianuales son una propuesta.",
+      "scoredClaimIds": [
+        "P43__F09__01",
+        "P43__F09__02",
+        "P43__F26__01"
+      ],
+      "allClaimIds": [
+        "P43__F09__01",
+        "P43__F09__02",
+        "P43__F09__03",
+        "P43__F20__01",
+        "P43__F20__02",
+        "P43__F26__01"
+      ],
+      "publicationIds": [
+        "F09",
+        "F20",
+        "F26"
+      ],
+      "attributedOrigins": [
+        "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025",
+        "SEA-MESA-SOCIEDAD-CIVIL-2025"
+      ],
+      "originNote": "Orígenes atribuidos; independencia estadística no certificada. El número no aumenta el puntaje.",
+      "rank": 12,
+      "weightScoreRange": [
+        62,
+        64
+      ],
+      "weightRankRange": [
+        11,
+        16
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "I",
+          "delta": -1,
+          "score": 54,
+          "rank": 21
+        },
+        {
+          "key": "I",
+          "delta": 1,
+          "score": 72,
+          "rank": 10
+        },
+        {
+          "key": "A",
+          "delta": -1,
+          "score": 57,
+          "rank": 18
+        },
+        {
+          "key": "A",
+          "delta": 1,
+          "score": 69,
+          "rank": 10
+        },
+        {
+          "key": "U",
+          "delta": -1,
+          "score": 59,
+          "rank": 18
+        },
+        {
+          "key": "U",
+          "delta": 1,
+          "score": 67,
+          "rank": 11
+        }
+      ],
+      "judgmentScoreRange": [
+        54,
+        72
+      ],
+      "judgmentRankRange": [
+        10,
+        21
+      ],
+      "originRemoval": [
+        {
+          "origin": "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025",
+          "componentsLosingAllCitedSupport": []
+        },
+        {
+          "origin": "SEA-MESA-SOCIEDAD-CIVIL-2025",
+          "componentsLosingAllCitedSupport": [
+            "I",
+            "F",
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P49",
+      "title": "Tenemos que financiar la instalación antes de recibir el primer aporte",
+      "scope": "Colaboradores que deben instalar un programa antes del primer aporte",
+      "score": 60,
+      "confidence": "Baja",
+      "components": [
+        {
+          "key": "I",
+          "level": 4,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Habilitar inmuebles, contratar y capacitar sin aporte de arranque compromete capacidad de iniciar y cubrir gastos. No se acredita cuánto quedó sin pagar.",
+          "refs": [
+            "P49__F26__01",
+            "P49__F26__02"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 2,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Es un hito de instalación de proyecto, no un gasto diario de prefínanciamiento repetido en cada mes.",
+          "refs": [
+            "P49__F26__01"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "El mecanismo corresponde al modelo de puesta en marcha descrito en Protección Especializada; se juzga alcance del modelo, no prevalencia nacional.",
+          "refs": [
+            "P49__F26__01",
+            "P49__F26__02"
+          ]
+        },
+        {
+          "key": "U",
+          "level": 5,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Se exige funcionamiento completo desde el inicio y los gastos preceden a los primeros abonos: hito operativo inmediato.",
+          "refs": [
+            "P49__F26__02"
+          ]
+        }
+      ],
+      "limit": "CLP5 millones es un testimonio, no promedio. F27 muestra un giro posterior al inicio, pero no prueba que la entidad haya prefinanciado instalación.",
+      "scoredClaimIds": [
+        "P49__F26__01",
+        "P49__F26__02"
+      ],
+      "allClaimIds": [
+        "P49__F26__01",
+        "P49__F26__02",
+        "P49__F26__03",
+        "P49__F27__01"
+      ],
+      "publicationIds": [
+        "F26",
+        "F27"
+      ],
+      "attributedOrigins": [
+        "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025"
+      ],
+      "originNote": "Orígenes atribuidos; independencia estadística no certificada. El número no aumenta el puntaje.",
+      "rank": 17,
+      "weightScoreRange": [
+        58,
+        63
+      ],
+      "weightRankRange": [
+        11,
+        19
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "I",
+          "delta": -1,
+          "score": 52,
+          "rank": 24
+        },
+        {
+          "key": "I",
+          "delta": 1,
+          "score": 69,
+          "rank": 10
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 54,
+          "rank": 21
+        },
+        {
+          "key": "F",
+          "delta": 1,
+          "score": 67,
+          "rank": 11
+        },
+        {
+          "key": "A",
+          "delta": -1,
+          "score": 54,
+          "rank": 21
+        },
+        {
+          "key": "A",
+          "delta": 1,
+          "score": 67,
+          "rank": 11
+        },
+        {
+          "key": "U",
+          "delta": -1,
+          "score": 57,
+          "rank": 18
+        }
+      ],
+      "judgmentScoreRange": [
+        52,
+        69
+      ],
+      "judgmentRankRange": [
+        10,
+        24
+      ],
+      "originRemoval": [
+        {
+          "origin": "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025",
+          "componentsLosingAllCitedSupport": [
+            "I",
+            "F",
+            "A",
+            "U"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P53",
+      "title": "Llegar a familias en zonas dispersas nos consume más tiempo y recursos",
+      "scope": "Programas en territorios rurales, extremos o aislados",
+      "score": 60,
+      "confidence": "Baja",
+      "components": [
+        {
+          "key": "I",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "El traslado consume tiempo y costos, limitando capacidad de visitas; no se observa interrupción de protección atribuible a cada visita.",
+          "refs": [
+            "P53__F26__01",
+            "P53__F26__02"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 5,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La dispersión geográfica persiste en el territorio y afecta cada desplazamiento necesario; no se inventa frecuencia de visitas.",
+          "refs": [
+            "P53__F26__02"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 2,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "El mecanismo se restringe a territorios y programas con dispersión. No hay participación geográfica para extrapolarlo.",
+          "refs": [
+            "P53__F26__02"
+          ]
+        },
+        {
+          "key": "U",
+          "level": 4,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "El equipo debe cubrir visitas del servicio en curso; se valora presión en el ciclo actual, sin fijar un plazo por hogar.",
+          "refs": [
+            "P53__F26__01"
+          ]
+        }
+      ],
+      "limit": "Una visita de un día es un caso AFT, no el promedio de costo/tiempo del programa. La falta de señal se conserva como condición de ese contexto.",
+      "scoredClaimIds": [
+        "P53__F26__01",
+        "P53__F26__02"
+      ],
+      "allClaimIds": [
+        "P53__F26__01",
+        "P53__F26__02"
+      ],
+      "publicationIds": [
+        "F26"
+      ],
+      "attributedOrigins": [
+        "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025"
+      ],
+      "originNote": "Orígenes atribuidos; independencia estadística no certificada. El número no aumenta el puntaje.",
+      "rank": 17,
+      "weightScoreRange": [
+        58,
+        63
+      ],
+      "weightRankRange": [
+        11,
+        18
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "I",
+          "delta": -1,
+          "score": 52,
+          "rank": 24
+        },
+        {
+          "key": "I",
+          "delta": 1,
+          "score": 69,
+          "rank": 10
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 54,
+          "rank": 21
+        },
+        {
+          "key": "A",
+          "delta": -1,
+          "score": 54,
+          "rank": 21
+        },
+        {
+          "key": "A",
+          "delta": 1,
+          "score": 67,
+          "rank": 11
+        },
+        {
+          "key": "U",
+          "delta": -1,
+          "score": 57,
+          "rank": 18
+        },
+        {
+          "key": "U",
+          "delta": 1,
+          "score": 64,
+          "rank": 12
+        }
+      ],
+      "judgmentScoreRange": [
+        52,
+        69
+      ],
+      "judgmentRankRange": [
+        10,
+        24
+      ],
+      "originRemoval": [
+        {
+          "origin": "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025",
+          "componentsLosingAllCitedSupport": [
+            "I",
+            "F",
+            "A",
+            "U"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P47",
+      "title": "Nos cuesta mantener al directorio al día sobre los planes que aprobó",
+      "scope": "Directorios que deben seguir planes y acuerdos; caso chileno y guías",
+      "score": 57,
+      "confidence": "Baja",
+      "components": [
+        {
+          "key": "I",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "No seguir planes aprobados deteriora control y decisiones; el caso no acredita pérdidas operativas o incumplimientos específicos.",
+          "refs": [
+            "P47__F16__01",
+            "P47__F17__01"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 4,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Actualizar indicadores y acuerdos se requiere entre reuniones: se infiere función recurrente, no fallas repetidas observadas.",
+          "refs": [
+            "P47__F16__01",
+            "P47__F20__02"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "El mecanismo de seguimiento pertenece al modelo de gobierno con directorio y planes. La extensión es estructural inferida: el banco sólo ejemplifica el desafío en un caso.",
+          "refs": [
+            "P47__F16__01",
+            "P47__F18__01"
+          ]
+        },
+        {
+          "key": "U",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La información debe estar disponible para la próxima revisión/reunión; no hay una decisión crítica inminente identificada.",
+          "refs": [
+            "P47__F16__01",
+            "P47__F18__02"
+          ]
+        }
+      ],
+      "limit": "7,2 miembros y 5,7 reuniones regionales caracterizan directorios; no miden acuerdos incumplidos. Las guías no son encuestas de fallas.",
+      "scoredClaimIds": [
+        "P47__F16__01",
+        "P47__F17__01",
+        "P47__F18__01",
+        "P47__F18__02",
+        "P47__F20__02"
+      ],
+      "allClaimIds": [
+        "P47__F16__01",
+        "P47__F16__02",
+        "P47__F17__01",
+        "P47__F18__01",
+        "P47__F18__02",
+        "P47__F20__01",
+        "P47__F20__02",
+        "P47__F23__01"
+      ],
+      "publicationIds": [
+        "F16",
+        "F17",
+        "F18",
+        "F20",
+        "F23"
+      ],
+      "attributedOrigins": [
+        "ALLISON-KAYE-PLANEACION-2005-ED2",
+        "CEFIS-SAN-CARLOS-GOBERNANZA-2019",
+        "JOSSEY-BASS-HANDBOOK-NONPROFIT-2016",
+        "MINNESOTA-COUNCIL-NONPROFITS-PRACTICES-2014"
+      ],
+      "originNote": "Orígenes atribuidos; independencia estadística no certificada. El número no aumenta el puntaje.",
+      "rank": 19,
+      "weightScoreRange": [
+        55,
+        58
+      ],
+      "weightRankRange": [
+        19,
+        20
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "I",
+          "delta": -1,
+          "score": 48,
+          "rank": 27
+        },
+        {
+          "key": "I",
+          "delta": 1,
+          "score": 65,
+          "rank": 11
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 51,
+          "rank": 24
+        },
+        {
+          "key": "F",
+          "delta": 1,
+          "score": 63,
+          "rank": 12
+        },
+        {
+          "key": "A",
+          "delta": -1,
+          "score": 51,
+          "rank": 24
+        },
+        {
+          "key": "A",
+          "delta": 1,
+          "score": 63,
+          "rank": 12
+        },
+        {
+          "key": "U",
+          "delta": -1,
+          "score": 53,
+          "rank": 22
+        },
+        {
+          "key": "U",
+          "delta": 1,
+          "score": 60,
+          "rank": 17
+        }
+      ],
+      "judgmentScoreRange": [
+        48,
+        65
+      ],
+      "judgmentRankRange": [
+        11,
+        27
+      ],
+      "originRemoval": [
+        {
+          "origin": "ALLISON-KAYE-PLANEACION-2005-ED2",
+          "componentsLosingAllCitedSupport": []
+        },
+        {
+          "origin": "CEFIS-SAN-CARLOS-GOBERNANZA-2019",
+          "componentsLosingAllCitedSupport": []
+        },
+        {
+          "origin": "JOSSEY-BASS-HANDBOOK-NONPROFIT-2016",
+          "componentsLosingAllCitedSupport": []
+        },
+        {
+          "origin": "MINNESOTA-COUNCIL-NONPROFITS-PRACTICES-2014",
+          "componentsLosingAllCitedSupport": []
+        }
+      ]
+    },
+    {
+      "id": "P51",
+      "title": "Nos cuesta separar gastos de varios proyectos en una misma cuenta",
+      "scope": "Colaboradores con varios proyectos en una cuenta institucional",
+      "score": 57,
+      "confidence": "Baja",
+      "components": [
+        {
+          "key": "I",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La confusión de gastos produce lentitud, errores y observaciones de rendición: deterioro material de control, no sanción probada.",
+          "refs": [
+            "P51__F26__01",
+            "P51__F26__02"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 5,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Cada transacción y rendición de proyectos compartidos exige asignación y trazabilidad: carga persistente mientras se usa esa estructura.",
+          "refs": [
+            "P51__F26__01"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 2,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Aplica al subgrupo con múltiples proyectos en una cuenta dentro del sistema descrito. No se conoce su tamaño ni se extiende a toda fundación.",
+          "refs": [
+            "P51__F26__01"
+          ]
+        },
+        {
+          "key": "U",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Los errores deben resolverse antes de las próximas rendiciones/fiscalizaciones; no hay fecha crítica o daño inmediato acreditado.",
+          "refs": [
+            "P51__F26__02"
+          ]
+        }
+      ],
+      "limit": "Se han permitido varias cuentas en algunos casos. La cuenta única no es una condición universal e invariable de todos los convenios.",
+      "scoredClaimIds": [
+        "P51__F26__01",
+        "P51__F26__02"
+      ],
+      "allClaimIds": [
+        "P51__F26__01",
+        "P51__F26__02"
+      ],
+      "publicationIds": [
+        "F26"
+      ],
+      "attributedOrigins": [
+        "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025"
+      ],
+      "originNote": "Orígenes atribuidos; independencia estadística no certificada. El número no aumenta el puntaje.",
+      "rank": 19,
+      "weightScoreRange": [
+        54,
+        60
+      ],
+      "weightRankRange": [
+        17,
+        22
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "I",
+          "delta": -1,
+          "score": 48,
+          "rank": 27
+        },
+        {
+          "key": "I",
+          "delta": 1,
+          "score": 65,
+          "rank": 11
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 51,
+          "rank": 24
+        },
+        {
+          "key": "A",
+          "delta": -1,
+          "score": 51,
+          "rank": 24
+        },
+        {
+          "key": "A",
+          "delta": 1,
+          "score": 63,
+          "rank": 12
+        },
+        {
+          "key": "U",
+          "delta": -1,
+          "score": 53,
+          "rank": 22
+        },
+        {
+          "key": "U",
+          "delta": 1,
+          "score": 60,
+          "rank": 17
+        }
+      ],
+      "judgmentScoreRange": [
+        48,
+        65
+      ],
+      "judgmentRankRange": [
+        11,
+        27
+      ],
+      "originRemoval": [
+        {
+          "origin": "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025",
+          "componentsLosingAllCitedSupport": [
+            "I",
+            "F",
+            "A",
+            "U"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P54",
+      "title": "Nos falta equipo y tiempo para buscar donantes locales",
+      "scope": "OSC que buscan donaciones locales con equipo/tiempo insuficiente",
+      "score": 57,
+      "confidence": "Baja",
+      "components": [
+        {
+          "key": "I",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Falta de equipo, tiempo y capacidades restringe captación: costo material de capacidad. No se miden aportes perdidos ni interrupciones causadas.",
+          "refs": [
+            "P54__F22__01",
+            "P54__F22__02"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 4,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Buscar donantes requiere trabajo continuado mientras se mantenga esa carencia; persistencia inferida, no horas ni episodios medidos.",
+          "refs": [
+            "P54__F22__01"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "51 OSC aportan 82 menciones de barreras internas. Se juzga alcance del modelo de captación con equipo acotado; 43,9% y 29,3% son menciones y no prevalencia de OSC.",
+          "refs": [
+            "P54__F22__01"
+          ]
+        },
+        {
+          "key": "U",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Captar aportes requiere preparar el siguiente ciclo de oportunidades; no hay plazo actual de caja acreditado.",
+          "refs": [
+            "P54__F22__01"
+          ]
+        }
+      ],
+      "limit": "Un único origen empírico sobre donación local. No sumar menciones ni extrapolar a las 209 respuestas del estudio.",
+      "scoredClaimIds": [
+        "P54__F22__01",
+        "P54__F22__02"
+      ],
+      "allClaimIds": [
+        "P54__F22__01",
+        "P54__F22__02"
+      ],
+      "publicationIds": [
+        "F22"
+      ],
+      "attributedOrigins": [
+        "CEFIS-UAI-FILANTROPIA-LOCAL-2022"
+      ],
+      "originNote": "Orígenes atribuidos; independencia estadística no certificada. El número no aumenta el puntaje.",
+      "rank": 19,
+      "weightScoreRange": [
+        55,
+        58
+      ],
+      "weightRankRange": [
+        19,
+        20
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "I",
+          "delta": -1,
+          "score": 48,
+          "rank": 27
+        },
+        {
+          "key": "I",
+          "delta": 1,
+          "score": 65,
+          "rank": 11
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 51,
+          "rank": 24
+        },
+        {
+          "key": "F",
+          "delta": 1,
+          "score": 63,
+          "rank": 12
+        },
+        {
+          "key": "A",
+          "delta": -1,
+          "score": 51,
+          "rank": 24
+        },
+        {
+          "key": "A",
+          "delta": 1,
+          "score": 63,
+          "rank": 12
+        },
+        {
+          "key": "U",
+          "delta": -1,
+          "score": 53,
+          "rank": 22
+        },
+        {
+          "key": "U",
+          "delta": 1,
+          "score": 60,
+          "rank": 17
+        }
+      ],
+      "judgmentScoreRange": [
+        48,
+        65
+      ],
+      "judgmentRankRange": [
+        11,
+        27
+      ],
+      "originRemoval": [
+        {
+          "origin": "CEFIS-UAI-FILANTROPIA-LOCAL-2022",
+          "componentsLosingAllCitedSupport": [
+            "I",
+            "F",
+            "A",
+            "U"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P38",
+      "title": "Tenemos que volver a entregar los mismos antecedentes",
+      "scope": "Solicitantes que interactúan con varios registros y organismos públicos",
+      "score": 54,
+      "confidence": "Baja",
+      "components": [
+        {
+          "key": "I",
+          "level": 2,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Volver a entregar certificados y antecedentes implica retrabajo administrativo; el banco no mide pérdida de financiamiento o daño al servicio por esta causa.",
+          "refs": [
+            "P38__F07__03",
+            "P38__F07__04"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 4,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La validación se repite en trámites ante distintos organismos; se infiere carga recurrente entre gestiones.",
+          "refs": [
+            "P38__F07__02",
+            "P38__F07__04"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 4,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "El diseño documentado en entrevistas a responsables de ocho registros muestra el mecanismo en varios procesos, no una tasa de OSC afectadas.",
+          "refs": [
+            "P38__F07__01",
+            "P38__F07__04"
+          ]
+        },
+        {
+          "key": "U",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Los antecedentes son requisitos del siguiente trámite; sin plazo crítico acreditado, se valora urgencia del ciclo de entrega.",
+          "refs": [
+            "P38__F07__03"
+          ]
+        }
+      ],
+      "limit": "Ocho registros no equivalen a ocho estudios ni a ocho fundaciones. La propuesta de reutilizar datos no demuestra una solución implementada.",
+      "scoredClaimIds": [
+        "P38__F07__01",
+        "P38__F07__02",
+        "P38__F07__03",
+        "P38__F07__04"
+      ],
+      "allClaimIds": [
+        "P38__F07__01",
+        "P38__F07__02",
+        "P38__F07__03",
+        "P38__F07__04",
+        "P38__F09__01"
+      ],
+      "publicationIds": [
+        "F07",
+        "F09"
+      ],
+      "attributedOrigins": [
+        "SEA-REGISTROS-OSC-2025"
+      ],
+      "originNote": "Orígenes atribuidos; independencia estadística no certificada. El número no aumenta el puntaje.",
+      "rank": 22,
+      "weightScoreRange": [
+        52,
+        57
+      ],
+      "weightRankRange": [
+        19,
+        24
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "I",
+          "delta": -1,
+          "score": 46,
+          "rank": 28
+        },
+        {
+          "key": "I",
+          "delta": 1,
+          "score": 63,
+          "rank": 12
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 48,
+          "rank": 27
+        },
+        {
+          "key": "F",
+          "delta": 1,
+          "score": 60,
+          "rank": 17
+        },
+        {
+          "key": "A",
+          "delta": -1,
+          "score": 48,
+          "rank": 27
+        },
+        {
+          "key": "A",
+          "delta": 1,
+          "score": 60,
+          "rank": 17
+        },
+        {
+          "key": "U",
+          "delta": -1,
+          "score": 51,
+          "rank": 24
+        },
+        {
+          "key": "U",
+          "delta": 1,
+          "score": 58,
+          "rank": 19
+        }
+      ],
+      "judgmentScoreRange": [
+        46,
+        63
+      ],
+      "judgmentRankRange": [
+        12,
+        28
+      ],
+      "originRemoval": [
+        {
+          "origin": "SEA-REGISTROS-OSC-2025",
+          "componentsLosingAllCitedSupport": [
+            "I",
+            "F",
+            "A",
+            "U"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P11",
+      "title": "Nos faltan recursos para medir qué cambió con nuestros programas",
+      "scope": "OSC que evalúan resultados; evidencia chilena y contexto filantrópico",
+      "score": 53,
+      "confidence": "Baja",
+      "components": [
+        {
+          "key": "I",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La falta de recursos para evaluar deteriora decisiones y aprendizaje; no está demostrado que provoque por sí sola cierres o interrupciones.",
+          "refs": [
+            "P11__F09__01"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 4,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Medir, sistematizar y comunicar son funciones continuadas del programa: se infiere persistencia de la brecha mientras no se asignen capacidades.",
+          "refs": [
+            "P11__F09__01"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "El diagnóstico abarca capacidades de OSC; el 39% prioriza evaluar, pero no mide incapacidad. Se juzga alcance de un modelo de gestión, sin asignar ese 39% como prevalencia.",
+          "refs": [
+            "P11__F09__01",
+            "P11__F03__01"
+          ]
+        },
+        {
+          "key": "U",
+          "level": 2,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La mejora puede incorporarse al presupuesto y planificación de evaluación; el banco no acredita un vencimiento inmediato.",
+          "refs": [
+            "P11__F18__02"
+          ]
+        }
+      ],
+      "limit": "F19 indica 80% que mide y reporta y F23 políticas de evaluación en 64% de la muestra chilena: medir, tener una política y medir cambios causalmente son cosas distintas. No se afirma incapacidad generalizada.",
+      "scoredClaimIds": [
+        "P11__F03__01",
+        "P11__F09__01",
+        "P11__F18__02"
+      ],
+      "allClaimIds": [
+        "P11__F02__01",
+        "P11__F02__02",
+        "P11__F03__01",
+        "P11__F05__01",
+        "P11__F09__01",
+        "P11__F09__02",
+        "P11__F09__03",
+        "P11__F10__01",
+        "P11__F17__01",
+        "P11__F17__02",
+        "P11__F18__01",
+        "P11__F18__02",
+        "P11__F19__01",
+        "P11__F19__02",
+        "P11__F19__03",
+        "P11__F20__01",
+        "P11__F20__02",
+        "P11__F28__01",
+        "P11__F21__01",
+        "P11__F21__02",
+        "P11__F23__01"
+      ],
+      "publicationIds": [
+        "F02",
+        "F03",
+        "F05",
+        "F09",
+        "F10",
+        "F17",
+        "F18",
+        "F19",
+        "F20",
+        "F21",
+        "F23",
+        "F28"
+      ],
+      "attributedOrigins": [
+        "MINNESOTA-COUNCIL-NONPROFITS-PRACTICES-2014",
+        "SEA-DIRECCIONES-2026",
+        "SEA-MESA-SOCIEDAD-CIVIL-2025"
+      ],
+      "originNote": "Orígenes atribuidos; independencia estadística no certificada. El número no aumenta el puntaje.",
+      "rank": 23,
+      "weightScoreRange": [
+        51,
+        55
+      ],
+      "weightRankRange": [
+        22,
+        23
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "I",
+          "delta": -1,
+          "score": 44,
+          "rank": 28
+        },
+        {
+          "key": "I",
+          "delta": 1,
+          "score": 62,
+          "rank": 17
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 47,
+          "rank": 27
+        },
+        {
+          "key": "F",
+          "delta": 1,
+          "score": 59,
+          "rank": 19
+        },
+        {
+          "key": "A",
+          "delta": -1,
+          "score": 47,
+          "rank": 27
+        },
+        {
+          "key": "A",
+          "delta": 1,
+          "score": 59,
+          "rank": 19
+        },
+        {
+          "key": "U",
+          "delta": -1,
+          "score": 49,
+          "rank": 27
+        },
+        {
+          "key": "U",
+          "delta": 1,
+          "score": 57,
+          "rank": 19
+        }
+      ],
+      "judgmentScoreRange": [
+        44,
+        62
+      ],
+      "judgmentRankRange": [
+        17,
+        28
+      ],
+      "originRemoval": [
+        {
+          "origin": "MINNESOTA-COUNCIL-NONPROFITS-PRACTICES-2014",
+          "componentsLosingAllCitedSupport": [
+            "U"
+          ]
+        },
+        {
+          "origin": "SEA-DIRECCIONES-2026",
+          "componentsLosingAllCitedSupport": []
+        },
+        {
+          "origin": "SEA-MESA-SOCIEDAD-CIVIL-2025",
+          "componentsLosingAllCitedSupport": [
+            "I",
+            "F"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P46",
+      "title": "Nos cuesta dar a conocer nuestro trabajo para acceder a nuevas oportunidades",
+      "scope": "OSC con brechas de comunicaciones y captación de oportunidades",
+      "score": 53,
+      "confidence": "Baja",
+      "components": [
+        {
+          "key": "I",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La brecha de comunicación limita posicionamiento y acceso a oportunidades; no se miden donaciones o usuarios perdidos por ella.",
+          "refs": [
+            "P46__F11__01"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 4,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Comunicar y conectar con públicos son funciones mantenidas de gestión; se infiere persistencia, no incidentes por organización.",
+          "refs": [
+            "P46__F18__01",
+            "P46__F18__02"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "IFO y el diagnóstico de donación local describen la brecha en sus grupos; índices y menciones no son incidencia. Se juzga extensión a un modelo de organización con comunicación débil.",
+          "refs": [
+            "P46__F11__01",
+            "P46__F22__01"
+          ]
+        },
+        {
+          "key": "U",
+          "level": 2,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La mejora es planificable por canales y públicos; no se identifica una oportunidad concreta próxima a vencer.",
+          "refs": [
+            "P46__F18__02"
+          ]
+        }
+      ],
+      "limit": "F11/F12 son un mismo estudio. El 47,2% de ENVS describe ciudadanía que no sabe dónde participar, no OSC que perdieron oportunidades. Interés en redes no mide pérdida.",
+      "scoredClaimIds": [
+        "P46__F11__01",
+        "P46__F18__01",
+        "P46__F18__02",
+        "P46__F22__01"
+      ],
+      "allClaimIds": [
+        "P46__F11__01",
+        "P46__F11__02",
+        "P46__F12__01",
+        "P46__F13__01",
+        "P46__F13__02",
+        "P46__F14__01",
+        "P46__F18__01",
+        "P46__F18__02",
+        "P46__F28__01",
+        "P46__F22__01",
+        "P46__F22__02",
+        "P46__F23__01"
+      ],
+      "publicationIds": [
+        "F11",
+        "F12",
+        "F13",
+        "F14",
+        "F18",
+        "F22",
+        "F23",
+        "F28"
+      ],
+      "attributedOrigins": [
+        "CEFIS-UAI-FILANTROPIA-LOCAL-2022",
+        "IFO-2025-TRASCENDER",
+        "MINNESOTA-COUNCIL-NONPROFITS-PRACTICES-2014"
+      ],
+      "originNote": "Orígenes atribuidos; independencia estadística no certificada. El número no aumenta el puntaje.",
+      "rank": 23,
+      "weightScoreRange": [
+        51,
+        55
+      ],
+      "weightRankRange": [
+        22,
+        23
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "I",
+          "delta": -1,
+          "score": 44,
+          "rank": 28
+        },
+        {
+          "key": "I",
+          "delta": 1,
+          "score": 62,
+          "rank": 17
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 47,
+          "rank": 27
+        },
+        {
+          "key": "F",
+          "delta": 1,
+          "score": 59,
+          "rank": 19
+        },
+        {
+          "key": "A",
+          "delta": -1,
+          "score": 47,
+          "rank": 27
+        },
+        {
+          "key": "A",
+          "delta": 1,
+          "score": 59,
+          "rank": 19
+        },
+        {
+          "key": "U",
+          "delta": -1,
+          "score": 49,
+          "rank": 27
+        },
+        {
+          "key": "U",
+          "delta": 1,
+          "score": 57,
+          "rank": 19
+        }
+      ],
+      "judgmentScoreRange": [
+        44,
+        62
+      ],
+      "judgmentRankRange": [
+        17,
+        28
+      ],
+      "originRemoval": [
+        {
+          "origin": "CEFIS-UAI-FILANTROPIA-LOCAL-2022",
+          "componentsLosingAllCitedSupport": []
+        },
+        {
+          "origin": "IFO-2025-TRASCENDER",
+          "componentsLosingAllCitedSupport": [
+            "I"
+          ]
+        },
+        {
+          "origin": "MINNESOTA-COUNCIL-NONPROFITS-PRACTICES-2014",
+          "componentsLosingAllCitedSupport": [
+            "F",
+            "U"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P19",
+      "title": "Las garantías dificultan que organizaciones pequeñas contraten con el Estado",
+      "scope": "Organizaciones pequeñas/medianas o nuevas al contratar con el Estado",
+      "score": 51,
+      "confidence": "Baja",
+      "components": [
+        {
+          "key": "I",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Las garantías pueden exigir endeudamiento o bloquear el acceso. No está medida la exclusión por tamaño: se valora costo/barrera material, no cierre probado.",
+          "refs": [
+            "P19__F26__01",
+            "P19__F03__02"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La constitución y renovación de garantías reaparece en los ciclos contractuales.",
+          "refs": [
+            "P19__F06__02"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "26% informa garantías sobre 5%, pero no mide exclusión. La extensión se juzga sobre el modelo de contratación de entidades con poco respaldo, no como 26% de pequeñas excluidas.",
+          "refs": [
+            "P19__F03__01",
+            "P19__F26__01"
+          ]
+        },
+        {
+          "key": "U",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La garantía debe resolverse antes de adjudicar/iniciar el convenio; se trata como próximo hito contractual.",
+          "refs": [
+            "P19__F26__01"
+          ]
+        }
+      ],
+      "limit": "El 16% anterior usa umbral de 20% del contrato; no es comparable con el 26% sobre 5%. La regulación contempla instrumentos y tratamiento de costos.",
+      "scoredClaimIds": [
+        "P19__F03__01",
+        "P19__F03__02",
+        "P19__F06__02",
+        "P19__F26__01"
+      ],
+      "allClaimIds": [
+        "P19__F03__01",
+        "P19__F03__02",
+        "P19__F04__01",
+        "P19__F06__01",
+        "P19__F06__02",
+        "P19__F26__01"
+      ],
+      "publicationIds": [
+        "F03",
+        "F04",
+        "F06",
+        "F26"
+      ],
+      "attributedOrigins": [
+        "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025",
+        "SEA-DIRECCIONES-2026",
+        "SEA-REGULACIONES-OSC-2025"
+      ],
+      "originNote": "Orígenes atribuidos; independencia estadística no certificada. El número no aumenta el puntaje.",
+      "rank": 25,
+      "weightScoreRange": [
+        51,
+        51
+      ],
+      "weightRankRange": [
+        23,
+        25
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "I",
+          "delta": -1,
+          "score": 42,
+          "rank": 29
+        },
+        {
+          "key": "I",
+          "delta": 1,
+          "score": 59,
+          "rank": 19
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 44,
+          "rank": 28
+        },
+        {
+          "key": "F",
+          "delta": 1,
+          "score": 57,
+          "rank": 19
+        },
+        {
+          "key": "A",
+          "delta": -1,
+          "score": 44,
+          "rank": 28
+        },
+        {
+          "key": "A",
+          "delta": 1,
+          "score": 57,
+          "rank": 19
+        },
+        {
+          "key": "U",
+          "delta": -1,
+          "score": 47,
+          "rank": 27
+        },
+        {
+          "key": "U",
+          "delta": 1,
+          "score": 54,
+          "rank": 22
+        }
+      ],
+      "judgmentScoreRange": [
+        42,
+        59
+      ],
+      "judgmentRankRange": [
+        19,
+        29
+      ],
+      "originRemoval": [
+        {
+          "origin": "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025",
+          "componentsLosingAllCitedSupport": [
+            "U"
+          ]
+        },
+        {
+          "origin": "SEA-DIRECCIONES-2026",
+          "componentsLosingAllCitedSupport": []
+        },
+        {
+          "origin": "SEA-REGULACIONES-OSC-2025",
+          "componentsLosingAllCitedSupport": [
+            "F"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P26",
+      "title": "Los trámites de algunos donantes complican obtener o rendir fondos",
+      "scope": "Organizaciones receptoras de donaciones privadas",
+      "score": 51,
+      "confidence": "Media",
+      "components": [
+        {
+          "key": "I",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Los trámites de postulación y rendición ocupan recursos de gestión, pero no se acredita pérdida típica de financiamiento por este mecanismo.",
+          "refs": [
+            "P26__F03__01",
+            "P26__F04__01"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La carga se organiza por postulación/rendición a cada donante; se considera ciclo de financiamiento, no carga diaria universal.",
+          "refs": [
+            "P26__F04__01",
+            "P26__F18__02"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 3,
+          "basis": "Anclaje observado; nivel asignado",
+          "inferred": false,
+          "reason": "30% de las receptoras percibe burocracia excesiva; 84% considera condiciones compatibles y 78% rendición proporcional. El alcance se ancla en la dificultad actual, no en el mayor porcentaje de otra ola/pregunta.",
+          "refs": [
+            "P26__F03__01"
+          ]
+        },
+        {
+          "key": "U",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Los requerimientos deben atenderse en la convocatoria o entrega acordada; no hay evidencia de urgencia inmediata.",
+          "refs": [
+            "P26__F18__01",
+            "P26__F18__02"
+          ]
+        }
+      ],
+      "limit": "63% y 54% de 2025 preguntan por mayor burocracia; 30% en 2026 por exceso. No son una tendencia homogénea. Se conserva la evidencia favorable sobre proporcionalidad.",
+      "scoredClaimIds": [
+        "P26__F03__01",
+        "P26__F04__01",
+        "P26__F18__01",
+        "P26__F18__02"
+      ],
+      "allClaimIds": [
+        "P26__F03__01",
+        "P26__F03__02",
+        "P26__F04__01",
+        "P26__F18__01",
+        "P26__F18__02",
+        "P26__F19__01"
+      ],
+      "publicationIds": [
+        "F03",
+        "F04",
+        "F18",
+        "F19"
+      ],
+      "attributedOrigins": [
+        "MINNESOTA-COUNCIL-NONPROFITS-PRACTICES-2014",
+        "SEA-DIRECCIONES-2025",
+        "SEA-DIRECCIONES-2026"
+      ],
+      "originNote": "Orígenes atribuidos; independencia estadística no certificada. El número no aumenta el puntaje.",
+      "rank": 25,
+      "weightScoreRange": [
+        51,
+        51
+      ],
+      "weightRankRange": [
+        23,
+        25
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "I",
+          "delta": -1,
+          "score": 42,
+          "rank": 29
+        },
+        {
+          "key": "I",
+          "delta": 1,
+          "score": 59,
+          "rank": 19
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 44,
+          "rank": 28
+        },
+        {
+          "key": "F",
+          "delta": 1,
+          "score": 57,
+          "rank": 19
+        },
+        {
+          "key": "U",
+          "delta": -1,
+          "score": 47,
+          "rank": 27
+        },
+        {
+          "key": "U",
+          "delta": 1,
+          "score": 54,
+          "rank": 22
+        }
+      ],
+      "judgmentScoreRange": [
+        42,
+        59
+      ],
+      "judgmentRankRange": [
+        19,
+        29
+      ],
+      "originRemoval": [
+        {
+          "origin": "MINNESOTA-COUNCIL-NONPROFITS-PRACTICES-2014",
+          "componentsLosingAllCitedSupport": [
+            "U"
+          ]
+        },
+        {
+          "origin": "SEA-DIRECCIONES-2025",
+          "componentsLosingAllCitedSupport": []
+        },
+        {
+          "origin": "SEA-DIRECCIONES-2026",
+          "componentsLosingAllCitedSupport": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P32",
+      "title": "Nos falta capacidad de equipo para preparar la memoria y el balance",
+      "scope": "OSC que preparan memoria y balance; equipos de capacidad acotada",
+      "score": 51,
+      "confidence": "Baja",
+      "components": [
+        {
+          "key": "I",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Preparar el reporte compite con trabajo misional: costo material de capacidad. No se mide suspensión de atención ni sanción causada por falta de equipo.",
+          "refs": [
+            "P32__F10__01"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Memoria y balance son entregas del ciclo anual; no se asume carga continua de la misma intensidad.",
+          "refs": [
+            "P32__F18__01"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "COS identifica equipos de capacidad acotada. La brecha se ubica en ese modelo de equipo; ni el 93% que elabora ni la publicación web miden incapacidad.",
+          "refs": [
+            "P32__F10__01",
+            "P32__F16__01"
+          ]
+        },
+        {
+          "key": "U",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La preparación debe resolverse antes de la entrega anual; no hay una fecha de atraso vigente común.",
+          "refs": [
+            "P32__F18__01"
+          ]
+        }
+      ],
+      "limit": "Elaborar, publicar y tener capacidad suficiente son variables diferentes. Porcentajes de publicación y costos de cursos no se usan como tasa del problema.",
+      "scoredClaimIds": [
+        "P32__F10__01",
+        "P32__F16__01",
+        "P32__F18__01"
+      ],
+      "allClaimIds": [
+        "P32__F04__01",
+        "P32__F04__02",
+        "P32__F10__01",
+        "P32__F10__02",
+        "P32__F16__01",
+        "P32__F17__01",
+        "P32__F18__01",
+        "P32__F18__02",
+        "P32__F19__01",
+        "P32__F19__02",
+        "P32__F20__01",
+        "P32__F20__02",
+        "P32__F28__01",
+        "P32__F23__01"
+      ],
+      "publicationIds": [
+        "F04",
+        "F10",
+        "F16",
+        "F17",
+        "F18",
+        "F19",
+        "F20",
+        "F23",
+        "F28"
+      ],
+      "attributedOrigins": [
+        "CEFIS-SAN-CARLOS-GOBERNANZA-2019",
+        "COS-FECU-SOCIAL-2024",
+        "MINNESOTA-COUNCIL-NONPROFITS-PRACTICES-2014"
+      ],
+      "originNote": "Orígenes atribuidos; independencia estadística no certificada. El número no aumenta el puntaje.",
+      "rank": 25,
+      "weightScoreRange": [
+        51,
+        51
+      ],
+      "weightRankRange": [
+        23,
+        25
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "I",
+          "delta": -1,
+          "score": 42,
+          "rank": 29
+        },
+        {
+          "key": "I",
+          "delta": 1,
+          "score": 59,
+          "rank": 19
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 44,
+          "rank": 28
+        },
+        {
+          "key": "F",
+          "delta": 1,
+          "score": 57,
+          "rank": 19
+        },
+        {
+          "key": "A",
+          "delta": -1,
+          "score": 44,
+          "rank": 28
+        },
+        {
+          "key": "A",
+          "delta": 1,
+          "score": 57,
+          "rank": 19
+        },
+        {
+          "key": "U",
+          "delta": -1,
+          "score": 47,
+          "rank": 27
+        },
+        {
+          "key": "U",
+          "delta": 1,
+          "score": 54,
+          "rank": 22
+        }
+      ],
+      "judgmentScoreRange": [
+        42,
+        59
+      ],
+      "judgmentRankRange": [
+        19,
+        29
+      ],
+      "originRemoval": [
+        {
+          "origin": "CEFIS-SAN-CARLOS-GOBERNANZA-2019",
+          "componentsLosingAllCitedSupport": []
+        },
+        {
+          "origin": "COS-FECU-SOCIAL-2024",
+          "componentsLosingAllCitedSupport": [
+            "I"
+          ]
+        },
+        {
+          "origin": "MINNESOTA-COUNCIL-NONPROFITS-PRACTICES-2014",
+          "componentsLosingAllCitedSupport": [
+            "F",
+            "U"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P30",
+      "title": "Nos cuesta aportar a políticas públicas en espacios dispersos e intermitentes",
+      "scope": "OSC que buscan participar en el ciclo de políticas públicas",
+      "score": 47,
+      "confidence": "Baja",
+      "components": [
+        {
+          "key": "I",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La discontinuidad de espacios reduce capacidad de aportar a decisiones públicas; no se atribuye un daño operativo directo o cierre de programas.",
+          "refs": [
+            "P30__F09__01",
+            "P30__F09__03"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La participación depende de convocatorias y ciclos de política; no es frecuencia de invitaciones medida por organización.",
+          "refs": [
+            "P30__F09__03"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Sólo 28% percibe espacios efectivos y 31% prioriza una política de participación; son percepciones/prioridades, no 72% de exclusión probada. El diagnóstico describe un modelo de relación.",
+          "refs": [
+            "P30__F04__02",
+            "P30__F04__03",
+            "P30__F09__01"
+          ]
+        },
+        {
+          "key": "U",
+          "level": 2,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "El banco sustenta una mejora institucional planificable; no identifica una ventana actual de política que cierre de inmediato.",
+          "refs": [
+            "P30__F09__04"
+          ]
+        }
+      ],
+      "limit": "La colaboración con Gobierno o entre organizaciones no demuestra éxito de incidencia. La fuente histórica de derechos humanos aporta tipologías, no prevalencia chilena actual.",
+      "scoredClaimIds": [
+        "P30__F04__02",
+        "P30__F04__03",
+        "P30__F09__01",
+        "P30__F09__03",
+        "P30__F09__04"
+      ],
+      "allClaimIds": [
+        "P30__F04__01",
+        "P30__F04__02",
+        "P30__F04__03",
+        "P30__F09__01",
+        "P30__F09__02",
+        "P30__F09__03",
+        "P30__F09__04",
+        "P30__F17__01",
+        "P30__F17__02",
+        "P30__F18__01",
+        "P30__F18__02",
+        "P30__F19__01",
+        "P30__F19__02",
+        "P30__F26__01",
+        "P30__F21__01",
+        "P30__F21__02",
+        "P30__F23__01"
+      ],
+      "publicationIds": [
+        "F04",
+        "F09",
+        "F17",
+        "F18",
+        "F19",
+        "F21",
+        "F23",
+        "F26"
+      ],
+      "attributedOrigins": [
+        "SEA-DIRECCIONES-2025",
+        "SEA-MESA-SOCIEDAD-CIVIL-2025"
+      ],
+      "originNote": "Orígenes atribuidos; independencia estadística no certificada. El número no aumenta el puntaje.",
+      "rank": 28,
+      "weightScoreRange": [
+        44,
+        48
+      ],
+      "weightRankRange": [
+        28,
+        28
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "I",
+          "delta": -1,
+          "score": 38,
+          "rank": 30
+        },
+        {
+          "key": "I",
+          "delta": 1,
+          "score": 55,
+          "rank": 22
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 41,
+          "rank": 30
+        },
+        {
+          "key": "F",
+          "delta": 1,
+          "score": 53,
+          "rank": 23
+        },
+        {
+          "key": "A",
+          "delta": -1,
+          "score": 41,
+          "rank": 30
+        },
+        {
+          "key": "A",
+          "delta": 1,
+          "score": 53,
+          "rank": 23
+        },
+        {
+          "key": "U",
+          "delta": -1,
+          "score": 43,
+          "rank": 29
+        },
+        {
+          "key": "U",
+          "delta": 1,
+          "score": 51,
+          "rank": 25
+        }
+      ],
+      "judgmentScoreRange": [
+        38,
+        55
+      ],
+      "judgmentRankRange": [
+        22,
+        30
+      ],
+      "originRemoval": [
+        {
+          "origin": "SEA-DIRECCIONES-2025",
+          "componentsLosingAllCitedSupport": []
+        },
+        {
+          "origin": "SEA-MESA-SOCIEDAD-CIVIL-2025",
+          "componentsLosingAllCitedSupport": [
+            "I",
+            "F",
+            "U"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P50",
+      "title": "El cierre financiero deja saldos sin resolver tras terminar un convenio",
+      "scope": "Ejecutoras que cierran convenios y deben resolver saldos",
+      "score": 44,
+      "confidence": "Baja",
+      "components": [
+        {
+          "key": "I",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Saldos sin resolver limitan disposición y gestión de recursos; el testimonio de traspaso de saldo no cuantifica pérdida del servicio.",
+          "refs": [
+            "P50__F26__02"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 2,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "El cierre es un hito ocasional por proyecto; la espera puede ser larga sin que eso implique muchos episodios.",
+          "refs": [
+            "P50__F26__01"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "El mecanismo corresponde al modelo de cierre de convenio. Hay casos con cierre pendiente y otro cerrado: no se estima proporción.",
+          "refs": [
+            "P50__F26__01",
+            "P50__F27__01",
+            "P50__F27__02"
+          ]
+        },
+        {
+          "key": "U",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Corresponde gestionar el próximo hito de cierre; meses o años de espera pasada no determinan urgencia futura ni riesgo inmediato.",
+          "refs": [
+            "P50__F26__01"
+          ]
+        }
+      ],
+      "limit": "En Cierre 39 días después de fecha máxima para rendir no demuestra atraso legal del cierre. El caso cerrado con reintegro distingue procedimientos y no se omite.",
+      "scoredClaimIds": [
+        "P50__F26__01",
+        "P50__F26__02",
+        "P50__F27__01",
+        "P50__F27__02"
+      ],
+      "allClaimIds": [
+        "P50__F26__01",
+        "P50__F26__02",
+        "P50__F27__01",
+        "P50__F27__02"
+      ],
+      "publicationIds": [
+        "F26",
+        "F27"
+      ],
+      "attributedOrigins": [
+        "CGR-INFOSISREC-REGISTRO-2026",
+        "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025"
+      ],
+      "originNote": "Orígenes atribuidos; independencia estadística no certificada. El número no aumenta el puntaje.",
+      "rank": 29,
+      "weightScoreRange": [
+        43,
+        46
+      ],
+      "weightRankRange": [
+        28,
+        29
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "I",
+          "delta": -1,
+          "score": 36,
+          "rank": 31
+        },
+        {
+          "key": "I",
+          "delta": 1,
+          "score": 53,
+          "rank": 23
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 38,
+          "rank": 30
+        },
+        {
+          "key": "F",
+          "delta": 1,
+          "score": 51,
+          "rank": 25
+        },
+        {
+          "key": "A",
+          "delta": -1,
+          "score": 38,
+          "rank": 30
+        },
+        {
+          "key": "A",
+          "delta": 1,
+          "score": 51,
+          "rank": 25
+        },
+        {
+          "key": "U",
+          "delta": -1,
+          "score": 41,
+          "rank": 30
+        },
+        {
+          "key": "U",
+          "delta": 1,
+          "score": 48,
+          "rank": 28
+        }
+      ],
+      "judgmentScoreRange": [
+        36,
+        53
+      ],
+      "judgmentRankRange": [
+        23,
+        31
+      ],
+      "originRemoval": [
+        {
+          "origin": "CGR-INFOSISREC-REGISTRO-2026",
+          "componentsLosingAllCitedSupport": []
+        },
+        {
+          "origin": "CSP-SERVICIO-PROTECCION-FINANCIAMIENTO-2025",
+          "componentsLosingAllCitedSupport": [
+            "I",
+            "F",
+            "U"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P41",
+      "title": "Tenemos que completar o corregir envíos de memorias y balances",
+      "scope": "Entidades que envían memoria y balance mediante el flujo descrito",
+      "score": 42,
+      "confidence": "Baja",
+      "components": [
+        {
+          "key": "I",
+          "level": 2,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Completar firmas, legibilidad o documentos faltantes es retrabajo administrativo; no hay evidencia de un daño mayor atribuido.",
+          "refs": [
+            "P41__F08__01"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La exposición aparece en la preparación y revisión del ciclo de memoria/balance; no se presume que todas deban corregir.",
+          "refs": [
+            "P41__F08__01"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La carga separada y revisión manual caracteriza ese modelo de envío. Es alcance del mecanismo, no tasa de envíos defectuosos.",
+          "refs": [
+            "P41__F08__01",
+            "P41__F08__02"
+          ]
+        },
+        {
+          "key": "U",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La corrección se gestiona antes de completar la entrega; no se acreditan días límite comparables.",
+          "refs": [
+            "P41__F08__02"
+          ]
+        }
+      ],
+      "limit": "Un solo diagnóstico de flujo y sin tasa de errores. La falta de trazabilidad no acredita por sí misma incumplimientos de todas las solicitantes.",
+      "scoredClaimIds": [
+        "P41__F08__01",
+        "P41__F08__02"
+      ],
+      "allClaimIds": [
+        "P41__F08__01",
+        "P41__F08__02"
+      ],
+      "publicationIds": [
+        "F08"
+      ],
+      "attributedOrigins": [
+        "SEA-FISCALIZACION-PJ-2025"
+      ],
+      "originNote": "Orígenes atribuidos; independencia estadística no certificada. El número no aumenta el puntaje.",
+      "rank": 30,
+      "weightScoreRange": [
+        41,
+        44
+      ],
+      "weightRankRange": [
+        28,
+        30
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "I",
+          "delta": -1,
+          "score": 33,
+          "rank": 31
+        },
+        {
+          "key": "I",
+          "delta": 1,
+          "score": 51,
+          "rank": 25
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 36,
+          "rank": 31
+        },
+        {
+          "key": "F",
+          "delta": 1,
+          "score": 48,
+          "rank": 28
+        },
+        {
+          "key": "A",
+          "delta": -1,
+          "score": 36,
+          "rank": 31
+        },
+        {
+          "key": "A",
+          "delta": 1,
+          "score": 48,
+          "rank": 28
+        },
+        {
+          "key": "U",
+          "delta": -1,
+          "score": 38,
+          "rank": 30
+        },
+        {
+          "key": "U",
+          "delta": 1,
+          "score": 46,
+          "rank": 29
+        }
+      ],
+      "judgmentScoreRange": [
+        33,
+        51
+      ],
+      "judgmentRankRange": [
+        25,
+        31
+      ],
+      "originRemoval": [
+        {
+          "origin": "SEA-FISCALIZACION-PJ-2025",
+          "componentsLosingAllCitedSupport": [
+            "I",
+            "F",
+            "A",
+            "U"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P40",
+      "title": "Nuestro acceso para enviar la memoria y el balance puede quedar bloqueado",
+      "scope": "Entidades con atrasos que solicitan acceso al envío de memoria/balance",
+      "score": 38,
+      "confidence": "Baja",
+      "components": [
+        {
+          "key": "I",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "El rechazo de acceso impide completar el envío hasta regularizar: obstáculo material de cumplimiento, sin sanción o pérdida de servicio cuantificada.",
+          "refs": [
+            "P40__F08__02"
+          ]
+        },
+        {
+          "key": "F",
+          "level": 2,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "Se activa ante una solicitud con antecedentes atrasados; es hito ocasional, no recurrencia anual demostrada.",
+          "refs": [
+            "P40__F08__01",
+            "P40__F08__02"
+          ]
+        },
+        {
+          "key": "A",
+          "level": 2,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "El mecanismo descrito afecta el subgrupo en atraso dentro de un flujo administrativo; no se conoce cuántas entidades lo experimentan.",
+          "refs": [
+            "P40__F08__02"
+          ]
+        },
+        {
+          "key": "U",
+          "level": 3,
+          "basis": "Inferencia documental justificada",
+          "inferred": true,
+          "reason": "La regularización debe anteceder al nuevo envío. Se valora próximo hito de cumplimiento, no un bloqueo actualmente confirmado.",
+          "refs": [
+            "P40__F08__02"
+          ]
+        }
+      ],
+      "limit": "Es un flujo publicado en 2025. Su vigencia operativa y frecuencia actual no fueron comprobadas de nuevo, por instrucción de reutilizar el banco.",
+      "scoredClaimIds": [
+        "P40__F08__01",
+        "P40__F08__02"
+      ],
+      "allClaimIds": [
+        "P40__F08__01",
+        "P40__F08__02"
+      ],
+      "publicationIds": [
+        "F08"
+      ],
+      "attributedOrigins": [
+        "SEA-FISCALIZACION-PJ-2025"
+      ],
+      "originNote": "Orígenes atribuidos; independencia estadística no certificada. El número no aumenta el puntaje.",
+      "rank": 31,
+      "weightScoreRange": [
+        37,
+        39
+      ],
+      "weightRankRange": [
+        31,
+        31
+      ],
+      "judgmentScenarios": [
+        {
+          "key": "I",
+          "delta": -1,
+          "score": 29,
+          "rank": 31
+        },
+        {
+          "key": "I",
+          "delta": 1,
+          "score": 47,
+          "rank": 28
+        },
+        {
+          "key": "F",
+          "delta": -1,
+          "score": 32,
+          "rank": 31
+        },
+        {
+          "key": "F",
+          "delta": 1,
+          "score": 44,
+          "rank": 29
+        },
+        {
+          "key": "A",
+          "delta": -1,
+          "score": 32,
+          "rank": 31
+        },
+        {
+          "key": "A",
+          "delta": 1,
+          "score": 44,
+          "rank": 29
+        },
+        {
+          "key": "U",
+          "delta": -1,
+          "score": 34,
+          "rank": 31
+        },
+        {
+          "key": "U",
+          "delta": 1,
+          "score": 42,
+          "rank": 30
+        }
+      ],
+      "judgmentScoreRange": [
+        29,
+        47
+      ],
+      "judgmentRankRange": [
+        28,
+        31
+      ],
+      "originRemoval": [
+        {
+          "origin": "SEA-FISCALIZACION-PJ-2025",
+          "componentsLosingAllCitedSupport": [
+            "I",
+            "F",
+            "A",
+            "U"
+          ]
+        }
+      ]
+    }
+  ],
+  "weightScenarios": [
+    {
+      "id": "base",
+      "label": "Pesos base",
+      "weights": {
+        "I": 35,
+        "F": 25,
+        "A": 25,
+        "U": 15
+      },
+      "scores": {
+        "P02": 75,
+        "P11": 53,
+        "P13": 75,
+        "P14": 90,
+        "P15": 65,
+        "P16": 79,
+        "P17": 81,
+        "P18": 73,
+        "P19": 51,
+        "P20": 69,
+        "P21": 63,
+        "P22": 63,
+        "P23": 63,
+        "P25": 63,
+        "P26": 51,
+        "P28": 75,
+        "P30": 47,
+        "P32": 51,
+        "P38": 54,
+        "P40": 38,
+        "P41": 42,
+        "P43": 63,
+        "P46": 53,
+        "P47": 57,
+        "P48": 73,
+        "P49": 60,
+        "P50": 44,
+        "P51": 57,
+        "P52": 75,
+        "P53": 60,
+        "P54": 57
+      },
+      "ranks": {
+        "P02": 4,
+        "P11": 23,
+        "P13": 4,
+        "P14": 1,
+        "P15": 11,
+        "P16": 3,
+        "P17": 2,
+        "P18": 8,
+        "P19": 25,
+        "P20": 10,
+        "P21": 12,
+        "P22": 12,
+        "P23": 12,
+        "P25": 12,
+        "P26": 25,
+        "P28": 4,
+        "P30": 28,
+        "P32": 25,
+        "P38": 22,
+        "P40": 31,
+        "P41": 30,
+        "P43": 12,
+        "P46": 23,
+        "P47": 19,
+        "P48": 8,
+        "P49": 17,
+        "P50": 29,
+        "P51": 19,
+        "P52": 4,
+        "P53": 17,
+        "P54": 19
+      }
+    },
+    {
+      "id": "iguales",
+      "label": "Pesos iguales",
+      "weights": {
+        "I": 25,
+        "F": 25,
+        "A": 25,
+        "U": 25
+      },
+      "scores": {
+        "P02": 75,
+        "P11": 51,
+        "P13": 75,
+        "P14": 88,
+        "P15": 63,
+        "P16": 81,
+        "P17": 81,
+        "P18": 75,
+        "P19": 51,
+        "P20": 69,
+        "P21": 63,
+        "P22": 63,
+        "P23": 63,
+        "P25": 63,
+        "P26": 51,
+        "P28": 75,
+        "P30": 44,
+        "P32": 51,
+        "P38": 57,
+        "P40": 38,
+        "P41": 44,
+        "P43": 63,
+        "P46": 51,
+        "P47": 57,
+        "P48": 75,
+        "P49": 63,
+        "P50": 44,
+        "P51": 57,
+        "P52": 75,
+        "P53": 63,
+        "P54": 57
+      },
+      "ranks": {
+        "P02": 4,
+        "P11": 23,
+        "P13": 4,
+        "P14": 1,
+        "P15": 11,
+        "P16": 2,
+        "P17": 2,
+        "P18": 4,
+        "P19": 23,
+        "P20": 10,
+        "P21": 11,
+        "P22": 11,
+        "P23": 11,
+        "P25": 11,
+        "P26": 23,
+        "P28": 4,
+        "P30": 28,
+        "P32": 23,
+        "P38": 19,
+        "P40": 31,
+        "P41": 28,
+        "P43": 11,
+        "P46": 23,
+        "P47": 19,
+        "P48": 4,
+        "P49": 11,
+        "P50": 28,
+        "P51": 19,
+        "P52": 4,
+        "P53": 11,
+        "P54": 19
+      }
+    },
+    {
+      "id": "I-5",
+      "label": "I -5 pp",
+      "weights": {
+        "I": 30,
+        "F": 26.923076923076923,
+        "A": 26.923076923076923,
+        "U": 16.153846153846153
+      },
+      "scores": {
+        "P02": 73,
+        "P11": 53,
+        "P13": 75,
+        "P14": 89,
+        "P15": 65,
+        "P16": 79,
+        "P17": 82,
+        "P18": 73,
+        "P19": 51,
+        "P20": 70,
+        "P21": 64,
+        "P22": 64,
+        "P23": 60,
+        "P25": 64,
+        "P26": 51,
+        "P28": 75,
+        "P30": 47,
+        "P32": 51,
+        "P38": 56,
+        "P40": 37,
+        "P41": 43,
+        "P43": 62,
+        "P46": 53,
+        "P47": 57,
+        "P48": 73,
+        "P49": 59,
+        "P50": 44,
+        "P51": 57,
+        "P52": 73,
+        "P53": 61,
+        "P54": 57
+      },
+      "ranks": {
+        "P02": 6,
+        "P11": 23,
+        "P13": 4,
+        "P14": 1,
+        "P15": 11,
+        "P16": 3,
+        "P17": 2,
+        "P18": 6,
+        "P19": 25,
+        "P20": 10,
+        "P21": 12,
+        "P22": 12,
+        "P23": 17,
+        "P25": 12,
+        "P26": 25,
+        "P28": 4,
+        "P30": 28,
+        "P32": 25,
+        "P38": 22,
+        "P40": 31,
+        "P41": 30,
+        "P43": 15,
+        "P46": 23,
+        "P47": 19,
+        "P48": 6,
+        "P49": 18,
+        "P50": 29,
+        "P51": 19,
+        "P52": 6,
+        "P53": 16,
+        "P54": 19
+      }
+    },
+    {
+      "id": "I+5",
+      "label": "I +5 pp",
+      "weights": {
+        "I": 40,
+        "F": 23.076923076923077,
+        "A": 23.076923076923077,
+        "U": 13.846153846153847
+      },
+      "scores": {
+        "P02": 77,
+        "P11": 53,
+        "P13": 75,
+        "P14": 91,
+        "P15": 66,
+        "P16": 79,
+        "P17": 81,
+        "P18": 73,
+        "P19": 51,
+        "P20": 68,
+        "P21": 62,
+        "P22": 62,
+        "P23": 66,
+        "P25": 62,
+        "P26": 51,
+        "P28": 75,
+        "P30": 47,
+        "P32": 51,
+        "P38": 52,
+        "P40": 39,
+        "P41": 41,
+        "P43": 64,
+        "P46": 53,
+        "P47": 56,
+        "P48": 73,
+        "P49": 62,
+        "P50": 45,
+        "P51": 56,
+        "P52": 77,
+        "P53": 60,
+        "P54": 56
+      },
+      "ranks": {
+        "P02": 4,
+        "P11": 22,
+        "P13": 6,
+        "P14": 1,
+        "P15": 11,
+        "P16": 3,
+        "P17": 2,
+        "P18": 8,
+        "P19": 25,
+        "P20": 10,
+        "P21": 14,
+        "P22": 14,
+        "P23": 11,
+        "P25": 14,
+        "P26": 25,
+        "P28": 6,
+        "P30": 28,
+        "P32": 25,
+        "P38": 24,
+        "P40": 31,
+        "P41": 30,
+        "P43": 13,
+        "P46": 22,
+        "P47": 19,
+        "P48": 8,
+        "P49": 14,
+        "P50": 29,
+        "P51": 19,
+        "P52": 4,
+        "P53": 18,
+        "P54": 19
+      }
+    },
+    {
+      "id": "F-5",
+      "label": "F -5 pp",
+      "weights": {
+        "I": 37.333333333333336,
+        "F": 20,
+        "A": 26.666666666666668,
+        "U": 16.0
+      },
+      "scores": {
+        "P02": 77,
+        "P11": 51,
+        "P13": 75,
+        "P14": 91,
+        "P15": 66,
+        "P16": 79,
+        "P17": 80,
+        "P18": 74,
+        "P19": 51,
+        "P20": 69,
+        "P21": 62,
+        "P22": 62,
+        "P23": 65,
+        "P25": 62,
+        "P26": 51,
+        "P28": 75,
+        "P30": 47,
+        "P32": 51,
+        "P38": 53,
+        "P40": 39,
+        "P41": 41,
+        "P43": 64,
+        "P46": 51,
+        "P47": 55,
+        "P48": 71,
+        "P49": 63,
+        "P50": 46,
+        "P51": 54,
+        "P52": 75,
+        "P53": 58,
+        "P54": 55
+      },
+      "ranks": {
+        "P02": 4,
+        "P11": 23,
+        "P13": 5,
+        "P14": 1,
+        "P15": 11,
+        "P16": 3,
+        "P17": 2,
+        "P18": 8,
+        "P19": 23,
+        "P20": 10,
+        "P21": 15,
+        "P22": 15,
+        "P23": 12,
+        "P25": 15,
+        "P26": 23,
+        "P28": 5,
+        "P30": 28,
+        "P32": 23,
+        "P38": 22,
+        "P40": 31,
+        "P41": 30,
+        "P43": 13,
+        "P46": 23,
+        "P47": 19,
+        "P48": 9,
+        "P49": 14,
+        "P50": 29,
+        "P51": 21,
+        "P52": 5,
+        "P53": 18,
+        "P54": 19
+      }
+    },
+    {
+      "id": "F+5",
+      "label": "F +5 pp",
+      "weights": {
+        "I": 32.666666666666664,
+        "F": 30,
+        "A": 23.333333333333332,
+        "U": 14.0
+      },
+      "scores": {
+        "P02": 74,
+        "P11": 54,
+        "P13": 75,
+        "P14": 89,
+        "P15": 64,
+        "P16": 79,
+        "P17": 83,
+        "P18": 71,
+        "P19": 51,
+        "P20": 69,
+        "P21": 64,
+        "P22": 64,
+        "P23": 60,
+        "P25": 64,
+        "P26": 51,
+        "P28": 75,
+        "P30": 47,
+        "P32": 51,
+        "P38": 56,
+        "P40": 37,
+        "P41": 42,
+        "P43": 62,
+        "P46": 54,
+        "P47": 58,
+        "P48": 75,
+        "P49": 58,
+        "P50": 43,
+        "P51": 60,
+        "P52": 75,
+        "P53": 63,
+        "P54": 58
+      },
+      "ranks": {
+        "P02": 8,
+        "P11": 23,
+        "P13": 4,
+        "P14": 1,
+        "P15": 11,
+        "P16": 3,
+        "P17": 2,
+        "P18": 9,
+        "P19": 25,
+        "P20": 10,
+        "P21": 11,
+        "P22": 11,
+        "P23": 17,
+        "P25": 11,
+        "P26": 25,
+        "P28": 4,
+        "P30": 28,
+        "P32": 25,
+        "P38": 22,
+        "P40": 31,
+        "P41": 30,
+        "P43": 16,
+        "P46": 23,
+        "P47": 19,
+        "P48": 4,
+        "P49": 19,
+        "P50": 29,
+        "P51": 17,
+        "P52": 4,
+        "P53": 15,
+        "P54": 19
+      }
+    },
+    {
+      "id": "A-5",
+      "label": "A -5 pp",
+      "weights": {
+        "I": 37.333333333333336,
+        "F": 26.666666666666668,
+        "A": 20,
+        "U": 16.0
+      },
+      "scores": {
+        "P02": 77,
+        "P11": 53,
+        "P13": 75,
+        "P14": 89,
+        "P15": 65,
+        "P16": 79,
+        "P17": 82,
+        "P18": 73,
+        "P19": 51,
+        "P20": 67,
+        "P21": 62,
+        "P22": 62,
+        "P23": 65,
+        "P25": 62,
+        "P26": 51,
+        "P28": 75,
+        "P30": 47,
+        "P32": 51,
+        "P38": 53,
+        "P40": 39,
+        "P41": 41,
+        "P43": 64,
+        "P46": 53,
+        "P47": 57,
+        "P48": 76,
+        "P49": 61,
+        "P50": 44,
+        "P51": 59,
+        "P52": 79,
+        "P53": 63,
+        "P54": 57
+      },
+      "ranks": {
+        "P02": 5,
+        "P11": 22,
+        "P13": 7,
+        "P14": 1,
+        "P15": 11,
+        "P16": 3,
+        "P17": 2,
+        "P18": 9,
+        "P19": 25,
+        "P20": 10,
+        "P21": 15,
+        "P22": 15,
+        "P23": 11,
+        "P25": 15,
+        "P26": 25,
+        "P28": 7,
+        "P30": 28,
+        "P32": 25,
+        "P38": 22,
+        "P40": 31,
+        "P41": 30,
+        "P43": 13,
+        "P46": 22,
+        "P47": 20,
+        "P48": 6,
+        "P49": 18,
+        "P50": 29,
+        "P51": 19,
+        "P52": 3,
+        "P53": 14,
+        "P54": 20
+      }
+    },
+    {
+      "id": "A+5",
+      "label": "A +5 pp",
+      "weights": {
+        "I": 32.666666666666664,
+        "F": 23.333333333333332,
+        "A": 30,
+        "U": 14.0
+      },
+      "scores": {
+        "P02": 74,
+        "P11": 53,
+        "P13": 75,
+        "P14": 91,
+        "P15": 66,
+        "P16": 79,
+        "P17": 81,
+        "P18": 73,
+        "P19": 51,
+        "P20": 71,
+        "P21": 64,
+        "P22": 64,
+        "P23": 60,
+        "P25": 64,
+        "P26": 51,
+        "P28": 75,
+        "P30": 47,
+        "P32": 51,
+        "P38": 56,
+        "P40": 37,
+        "P41": 42,
+        "P43": 62,
+        "P46": 53,
+        "P47": 56,
+        "P48": 70,
+        "P49": 60,
+        "P50": 45,
+        "P51": 55,
+        "P52": 72,
+        "P53": 58,
+        "P54": 56
+      },
+      "ranks": {
+        "P02": 6,
+        "P11": 23,
+        "P13": 4,
+        "P14": 1,
+        "P15": 11,
+        "P16": 3,
+        "P17": 2,
+        "P18": 7,
+        "P19": 25,
+        "P20": 9,
+        "P21": 12,
+        "P22": 12,
+        "P23": 16,
+        "P25": 12,
+        "P26": 25,
+        "P28": 4,
+        "P30": 28,
+        "P32": 25,
+        "P38": 19,
+        "P40": 31,
+        "P41": 30,
+        "P43": 15,
+        "P46": 23,
+        "P47": 19,
+        "P48": 10,
+        "P49": 16,
+        "P50": 29,
+        "P51": 22,
+        "P52": 8,
+        "P53": 18,
+        "P54": 19
+      }
+    },
+    {
+      "id": "U-5",
+      "label": "U -5 pp",
+      "weights": {
+        "I": 37.05882352941177,
+        "F": 26.470588235294116,
+        "A": 26.470588235294116,
+        "U": 10
+      },
+      "scores": {
+        "P02": 74,
+        "P11": 55,
+        "P13": 75,
+        "P14": 91,
+        "P15": 66,
+        "P16": 78,
+        "P17": 82,
+        "P18": 71,
+        "P19": 51,
+        "P20": 70,
+        "P21": 64,
+        "P22": 64,
+        "P23": 61,
+        "P25": 64,
+        "P26": 51,
+        "P28": 75,
+        "P30": 48,
+        "P32": 51,
+        "P38": 54,
+        "P40": 37,
+        "P41": 41,
+        "P43": 62,
+        "P46": 55,
+        "P47": 57,
+        "P48": 71,
+        "P49": 58,
+        "P50": 44,
+        "P51": 57,
+        "P52": 74,
+        "P53": 60,
+        "P54": 57
+      },
+      "ranks": {
+        "P02": 6,
+        "P11": 22,
+        "P13": 4,
+        "P14": 1,
+        "P15": 11,
+        "P16": 3,
+        "P17": 2,
+        "P18": 8,
+        "P19": 25,
+        "P20": 10,
+        "P21": 12,
+        "P22": 12,
+        "P23": 16,
+        "P25": 12,
+        "P26": 25,
+        "P28": 4,
+        "P30": 28,
+        "P32": 25,
+        "P38": 24,
+        "P40": 31,
+        "P41": 30,
+        "P43": 15,
+        "P46": 22,
+        "P47": 19,
+        "P48": 8,
+        "P49": 18,
+        "P50": 29,
+        "P51": 19,
+        "P52": 6,
+        "P53": 17,
+        "P54": 19
+      }
+    },
+    {
+      "id": "U+5",
+      "label": "U +5 pp",
+      "weights": {
+        "I": 32.94117647058823,
+        "F": 23.529411764705884,
+        "A": 23.529411764705884,
+        "U": 20
+      },
+      "scores": {
+        "P02": 77,
+        "P11": 51,
+        "P13": 75,
+        "P14": 89,
+        "P15": 64,
+        "P16": 80,
+        "P17": 81,
+        "P18": 74,
+        "P19": 51,
+        "P20": 68,
+        "P21": 62,
+        "P22": 62,
+        "P23": 65,
+        "P25": 62,
+        "P26": 51,
+        "P28": 75,
+        "P30": 46,
+        "P32": 51,
+        "P38": 54,
+        "P40": 39,
+        "P41": 42,
+        "P43": 64,
+        "P46": 51,
+        "P47": 56,
+        "P48": 74,
+        "P49": 63,
+        "P50": 45,
+        "P51": 56,
+        "P52": 77,
+        "P53": 61,
+        "P54": 56
+      },
+      "ranks": {
+        "P02": 4,
+        "P11": 23,
+        "P13": 6,
+        "P14": 1,
+        "P15": 12,
+        "P16": 3,
+        "P17": 2,
+        "P18": 8,
+        "P19": 23,
+        "P20": 10,
+        "P21": 15,
+        "P22": 15,
+        "P23": 11,
+        "P25": 15,
+        "P26": 23,
+        "P28": 6,
+        "P30": 28,
+        "P32": 23,
+        "P38": 22,
+        "P40": 31,
+        "P41": 30,
+        "P43": 12,
+        "P46": 23,
+        "P47": 19,
+        "P48": 8,
+        "P49": 14,
+        "P50": 29,
+        "P51": 19,
+        "P52": 4,
+        "P53": 18,
+        "P54": 19
+      }
+    }
+  ]
+}

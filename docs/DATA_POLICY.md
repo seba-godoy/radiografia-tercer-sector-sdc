@@ -1,3 +1,5 @@
+> **Decisión del propietario · 23-11-2026 · v0.3:** autorizado aplicar una rúbrica documental provisional a los 31 problemas con la evidencia existente, sin nuevas búsquedas. Permite inferencias explícitas por criterio, confianza separada, fuentes por origen y sensibilidad. Sustituye sólo la exigencia anterior de cuatro mediciones directas para este índice de decisión. No convierte inferencias en incidencia, conserva el catálogo histórico y no autoriza modificar sus bandas B. Método y aplicación: `analisis/CRITICIDAD_31_v0.3.md`.
+
 # Política de datos, inferencias y evidencia
 
 Aplica a investigación, índices, UI, modelos de datos e incorporación futura de fuentes. El repositorio es público; no persistir PDFs internos, datos personales, credenciales, contenido de cursos restringido ni vínculos privados Notion/Drive.

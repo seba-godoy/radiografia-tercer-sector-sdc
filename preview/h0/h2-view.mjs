@@ -1,4 +1,5 @@
 import {renderP13Application} from './p13-application.mjs';
+import {renderRanking31} from './ranking31-view.mjs';
 
 const criteria = [
   ["I", "Impacto", "Qué daño produce cuando ocurre."],
@@ -181,7 +182,7 @@ function researchPlan(rows, pilotRows, deferredRows, evidence, scope, links, esc
         task(row, {scope, note: evidence.deferred[row.id], first: evidence.proposedBatch.includes(row.id)}, links, esc)).join("")}</div>`
     : `<div data-h2-research="sector"><h3>31 problemas y su estado de investigación</h3>${rows.map(row =>
       task(row, {scope, closed: closed(row), first: evidence.proposedBatch.includes(row.id)}, links, esc)).join("")}</div>`;
-  return `<section class="h2-research" aria-labelledby="h2-research"><h2 id="h2-research">Próximos pasos de investigación</h2><p>${note}</p>${groups}</section>`;
+  return `<section class="h2-research" aria-labelledby="h2-research-historico"><h2 id="h2-research-historico">Próximos pasos de investigación · antecedente histórico</h2><p>${note}</p>${groups}</section>`;
 }
 
 export function h2Render(contract, evidence, bank, scope, links, esc) {
@@ -200,15 +201,15 @@ export function h2Render(contract, evidence, bank, scope, links, esc) {
     findings: new Map(bank.findings.map(finding => [finding.id, finding])),
     sources: new Map(bank.sources.map(source => [source.id, source]))
   };
-  const intro = foundations
-    ? "Compara los ocho casos investigados en profundidad. La prioridad sigue indeterminada donde faltan mediciones comparables."
-    : "Consulta la evidencia descriptiva de los 31 problemas y qué población cubre cada hallazgo. La comparación de criticidad por tipo de organización queda pendiente.";
+  const intro = "31 problemas puntuados con una rúbrica documental común. Consulta sus fundamentos, confianza y sensibilidad; la evidencia de cada población conserva sus límites.";
   return `<div class="interior wrap h2-page">
     <div class="page-top"><div><div class="stage-label">02 / Criticidad</div><h1>Criticidad de los problemas</h1>
     <p class="page-intro"><strong>${foundations ? "Fundaciones" : "Tercer sector"}</strong> · ${intro}</p></div>
     <a href="#h2-research" class="outline-btn">Ir a próximos pasos ↓</a></div>
     <div class="h2-actions"><a href="${esc(links.map)}" data-go="problemas">Ver mapa de 31 problemas</a>
       <a href="${esc(links.methods)}" data-go="metodos" data-method-target="criticidad">Métodos y fuentes</a></div>
+    ${renderRanking31(evidence.ranking31, bank, links, esc)}
+    <details class="h2-record rank31-history"><summary>Antecedente histórico · aplicación v0.2 y piloto de ocho casos</summary><div class="h2-record-body"><p>Este antecedente conserva los datos y las brechas del intento de medición directa. Sus menciones a puntuación pendiente y próximos pasos corresponden a v0.2 y fueron sustituidas por el ranking documental v0.3 de los 31 problemas.</p>
     ${researchClosures(evidence, scope, esc)}
     ${renderP13Application(evidence.applications?.P13, scope, esc)}
     ${foundations ? pilotTable(pilot, evidence, links, esc)
@@ -216,6 +217,8 @@ export function h2Render(contract, evidence, bank, scope, links, esc) {
         <p>Abre un problema para ver las observaciones de referencia y los hallazgos agrupados por población.</p>
         ${rows.map(row => sectorItem(row, context, links, esc)).join("")}</section>`}
     ${researchPlan(rows, pilot, deferred, evidence, scope, links, esc)}
+    </div></details>
+    <section id="h2-research"><h2>Siguiente paso: abordabilidad</h2><p>Los 31 problemas ya tienen criticidad documental provisional. El siguiente análisis debe identificar qué tareas y causas podemos modificar, con qué datos y qué alternativas existen. La criticidad no demuestra que una solución de IA sea viable ni que alguien esté dispuesto a pagar.</p></section>
   </div>`;
 }
 

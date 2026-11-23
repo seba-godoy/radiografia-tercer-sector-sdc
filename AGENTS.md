@@ -1,3 +1,5 @@
+> **Decisión del propietario · 23-11-2026 · v0.3:** autorizado aplicar una rúbrica documental provisional a los 31 problemas con la evidencia existente, sin nuevas búsquedas. Permite inferencias explícitas por criterio, confianza separada, fuentes por origen y sensibilidad. Sustituye sólo la exigencia anterior de cuatro mediciones directas para este índice de decisión. No convierte inferencias en incidencia, conserva el catálogo histórico y no autoriza modificar sus bandas B. Método y aplicación: `analisis/CRITICIDAD_31_v0.3.md`.
+
 # Reglas operativas obligatorias para agentes (DIMI)
 
 Proyecto: Radiografía del tercer sector, prototipo de investigación de Fundación Simón de Cirene. Repositorio **público**. Idioma de trabajo: español. Esta guía aplica a todo el árbol salvo instrucciones más específicas válidas.

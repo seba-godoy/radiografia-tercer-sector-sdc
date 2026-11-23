@@ -133,13 +133,18 @@
         "PX-R3",
         "H-2"
       ],
-      "status": "pendiente_de_validacion",
-      "purpose": "Comparar impacto, recurrencia, alcance y urgencia. En Fundaciones, el piloto examina ocho problemas; en Tercer sector se describe la evidencia catalogada. La posición queda indeterminada donde falten mediciones comparables.",
+      "status": "aplicada_documental_provisional",
+      "purpose": "31 problemas con juicio documental trazable v0.3: puntaje, cuatro fundamentos, confianza separada y sensibilidad. No estima prevalencia nacional ni gravedad medida.",
       "unit": "problema P",
-      "scores": null,
-      "weights": null,
-      "formula": null,
-      "adversarial": "No convertir cobertura documental ni N mixtos en gravedad; sensibilidad y rúbrica dependen de R3"
+      "scores": "analisis/criticidad-31-v03.json",
+      "weights": {
+        "I": 35,
+        "F": 25,
+        "A": 25,
+        "U": 15
+      },
+      "formula": "redondear(1 + 99 × (media ponderada de niveles 1–5 − 1) / 4)",
+      "adversarial": "No sumar fuentes dependientes, porcentajes o problemas. ND no se vuelve cero; la inferencia se justifica por criterio. Ver escenarios y límites en Criticidad."
     },
     {
       "id": "abordabilidad",

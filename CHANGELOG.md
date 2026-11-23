@@ -1,3 +1,10 @@
+## 2026-11-23 · Criticidad documental v0.3
+
+- Puntúa los 31 problemas con 124 juicios trazables; I35/F25/A25/U15, escala 1–5 convertida a 1–100. Confianza separada y empates conservados.
+- Publica fuentes por criterio, los 245 hallazgos heredados, dependencias de origen, diez escenarios de pesos y cambios de un nivel inferido. No realizó nuevas búsquedas.
+- P13: 75/100, confianza media; sustituye el bloqueo de medición v0.2 en la vista activa y conserva sus antecedentes como archivo.
+- Catálogo y golden master sin cambios.
+
 # Historial de cambios · Radiografía Simón de Cirene
 
 ## Vista previa de Criticidad (2026-11-20)
