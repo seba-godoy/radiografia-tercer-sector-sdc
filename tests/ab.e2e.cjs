@@ -42,6 +42,8 @@ async function run() {
       assert.equal(await page.locator('[data-ab-title]').count(),155);
       for(const r of data.rows)assert.equal(await score(r.id),r.score+'/100');
       assert.equal(await page.locator('[data-ab-weight]').count(),4);
+      const columnWidths=await page.locator('.ab-table thead th').evaluateAll(nodes=>nodes.map(n=>n.getBoundingClientRect().width));
+      assert.ok(columnWidths[1]>=300&&columnWidths[0]<=100,JSON.stringify(columnWidths));
       const p13=page.locator('[data-ab-card=P13]');
       await p13.locator(':scope > summary').click();
       assert.match(await p13.innerText(),/35\/100/);

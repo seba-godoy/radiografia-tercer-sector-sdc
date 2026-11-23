@@ -412,3 +412,11 @@
 [data-ab-weights][data-valid="false"] [data-ab-status] { color:#8b2415; font-weight:600; }
 [data-ab-applied] { font-weight:600; }
 .ab-next { margin-top:2rem; }
+
+/* Give the problem description the space it needs; the inherited pilot reserves 23% for column 1. */
+.ab-table thead th:first-child { width:60px; }
+.ab-table thead th:nth-child(2) { width:390px; }
+.ab-table thead th:nth-child(3), .ab-table thead th:nth-child(4) { width:120px; }
+.ab-table thead th:nth-child(n+5):nth-child(-n+9) { width:62px; }
+.ab-table thead th:last-child { width:110px; }
+.ab-table tbody th { width:auto; }
