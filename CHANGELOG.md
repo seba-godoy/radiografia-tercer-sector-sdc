@@ -1,3 +1,9 @@
+## 2026-11-23 · Abordabilidad SdC v1.0
+
+- AB-1–AB-5: 31 intervenciones, 155 juicios C/K/D/E/A, calibración de cuatro casos y sensibilidad a pesos/niveles/supuestos. Catálogo y criticidad intactos.
+- AB-6: etapa Abordabilidad con pesos de preparación editables, factor de control visible, cruce con el escenario de criticidad vigente, condiciones, fuentes, fichas y exportaciones.
+- P47=64, P46=56, P41=54 y P32=47 en el escenario original. Los puntajes son documentales y condicionados; no eficacia o disponibilidad de equipo probadas.
+
 ## 2026-11-23 · Pesos editables de criticidad
 
 - Añade cuatro campos porcentuales I/F/A/U al comienzo del ranking: recalcula puntajes, puestos, empates y fichas al sumar 100%.

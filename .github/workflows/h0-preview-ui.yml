@@ -40,7 +40,7 @@ jobs:
           node --check tests/h0.e2e.cjs
           node --check tests/h0-brand.e2e.cjs
       - name: Verify documentary ranking and historical measurement contracts
-        run: node --test tests/ranking31.test.mjs tests/criticality-index.test.mjs tests/p13-application.test.mjs
+        run: node --test tests/ranking31.test.mjs tests/criticality-index.test.mjs tests/p13-application.test.mjs tests/ab.test.mjs
       - name: Verify existing contract
         run: node analisis/validate-px-r13.mjs
       - name: Verify H-1 documentary integrity
@@ -57,6 +57,8 @@ jobs:
         run: node tests/h1.e2e.cjs
       - name: Exercise H-2.2 criticidad and next research steps
         run: node tests/h2.e2e.cjs
+      - name: Exercise AB-6 addressability in Chromium
+        run: node tests/ab.e2e.cjs
       - name: Exercise H-M methods and source bank in Chromium
         run: node tests/hm.e2e.cjs
       - name: Brand SdC 2026 (PPT), escritorio y móvil

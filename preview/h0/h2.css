@@ -399,3 +399,16 @@
 [data-rank31-applied] { font-weight:600; }
 @media(max-width:700px) { .rank31-weight-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .rank31-weights { padding:1rem; } }
 @media(max-width:360px) { .rank31-weight-grid { grid-template-columns:1fr; } }
+
+.ab-table { min-width:1150px; }
+.ab-table tbody th { min-width:320px; }
+.ab-table small { display:block; margin-top:.4rem; font-weight:400; }
+.ab-bar { display:block; width:85px; height:5px; background:#e8ece6; border-radius:5px; margin-top:.5rem; }
+.ab-bar i { display:block; height:5px; background:#4d6c3b; border-radius:5px; }
+.ab-critical-bar i { background:#cc7c29; }
+.ab-page p,.ab-page li { overflow-wrap:anywhere; }
+.ab-card { scroll-margin-top:7rem; }
+.ab-card > summary { flex-wrap:wrap; gap:.7rem; }
+[data-ab-weights][data-valid="false"] [data-ab-status] { color:#8b2415; font-weight:600; }
+[data-ab-applied] { font-weight:600; }
+.ab-next { margin-top:2rem; }

@@ -218,7 +218,7 @@ export function h2Render(contract, evidence, bank, scope, links, esc) {
         ${rows.map(row => sectorItem(row, context, links, esc)).join("")}</section>`}
     ${researchPlan(rows, pilot, deferred, evidence, scope, links, esc)}
     </div></details>
-    <section id="h2-research"><h2>Siguiente paso: abordabilidad</h2><p>Los 31 problemas ya tienen criticidad documental provisional. El siguiente análisis debe identificar qué tareas y causas podemos modificar, con qué datos y qué alternativas existen. La criticidad no demuestra que una solución de IA sea viable ni que alguien esté dispuesto a pagar.</p></section>
+    <section id="h2-research"><h2>Continuar a Abordabilidad</h2><p>Los 31 problemas ya tienen criticidad documental provisional. La etapa de Abordabilidad evalúa 31 intervenciones de SdC con control, preparación, condiciones y fuentes. La criticidad no demuestra que una solución de IA sea viable ni que alguien esté dispuesto a pagar.</p><a href="/abordabilidad" data-go="abordabilidad">Ver las 31 intervenciones de SdC →</a></section>
   </div>`;
 }
 

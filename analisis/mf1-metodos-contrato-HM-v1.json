@@ -153,12 +153,17 @@
         "PX-R4",
         "H-3"
       ],
-      "status": "pendiente_de_validacion",
-      "purpose": "Relacionar problema→causa→tarea y controlabilidad, datos, alternativas sin IA",
-      "unit": "tarea",
-      "scores": null,
-      "weights": null,
-      "formula": null,
+      "status": "aplicada_documental_provisional",
+      "purpose": "31 intervenciones de SdC con control sobre la causa, preparación, condiciones, confianza y fuentes. Índice documental provisional; no eficacia probada.",
+      "unit": "problema e intervención delimitada de SdC",
+      "scores": "analisis/abordabilidad-31-v1.json",
+      "weights": {
+        "K": 30,
+        "D": 25,
+        "E": 25,
+        "A": 20
+      },
+      "formula": "B=0,30K+0,25D+0,25E+0,20A; ASdC=redondear(1+99×(C/5)×(B−1)/4)",
       "adversarial": "No prometer resultados sin línea base ni intervención real"
     },
     {

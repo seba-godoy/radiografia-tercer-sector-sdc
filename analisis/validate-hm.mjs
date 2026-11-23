@@ -16,7 +16,7 @@ T("147 relaciones originales",()=>assert.equal(data.problem_source_links.length,
 T("245 hallazgos",()=>assert.equal(data.findings.length,245));
 T("4 tarjetas del contrato",()=>assert.equal(contract.navigation_contract.primary_cards,4));
 T("métodos 5 capas",()=>assert.equal(contract.layer_methods.length,5));
-T("criticidad provisional y tres métodos futuros sin scores",()=>assert.ok(contract.layer_methods.slice(2).every(x=>x.status==="pendiente_de_validacion"&&x.scores===null)&&contract.layer_methods[1].status==="aplicada_documental_provisional"));
+T("criticidad y abordabilidad provisionales; dos métodos futuros sin scores",()=>assert.ok(contract.layer_methods.slice(3).every(x=>x.status==="pendiente_de_validacion"&&x.scores===null)&&contract.layer_methods[1].status==="aplicada_documental_provisional"));
 T("H1 se conserva",()=>assert.equal(prior.problems.length,31));
 T("filtro sin restricciones devuelve 26",()=>assert.equal(mfVisible(data,mfDefaults()).length,26));
 T("ordena fuentes por ID",()=>assert.deepEqual(mfVisible(data,mfDefaults()).map(x=>x.id).slice(0,3),["F01","F02","F03"]));

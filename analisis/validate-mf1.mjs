@@ -77,9 +77,9 @@ for(const s of d.sources){
 }
 T("contrato de métodos tiene 5 capas",()=>assert.equal(m.layer_methods.length,5));
 T("cobertura aplicada limitada",()=>assert.equal(m.layer_methods[0].status,"aplicada_con_limitaciones"));
-T("criticidad aplicada y tres futuros rankings pendientes",()=>{assert.equal(m.layer_methods[1].status,"aplicada_documental_provisional");assert.ok(m.layer_methods.slice(2).every(x=>x.status==="pendiente_de_validacion"))});
-T("sólo criticidad tiene los pesos documentados",()=>{assert.deepEqual(m.layer_methods[1].weights,{I:35,F:25,A:25,U:15});assert.ok(m.layer_methods.filter(x=>x.id!=="criticidad").every(x=>x.weights===null))});
-T("sólo criticidad enlaza los 31 scores provisionales",()=>{assert.equal(m.layer_methods[1].scores,"analisis/criticidad-31-v03.json");assert.equal(JSON.parse(readFileSync(m.layer_methods[1].scores,"utf8")).rows.length,31);assert.ok(m.layer_methods.filter(x=>x.id!=="criticidad").every(x=>x.scores===null))});
+T("criticidad y abordabilidad aplicadas; dos futuros rankings pendientes",()=>{assert.equal(m.layer_methods[1].status,"aplicada_documental_provisional");assert.ok(m.layer_methods.slice(3).every(x=>x.status==="pendiente_de_validacion"))});
+T("dos índices tienen pesos documentados",()=>{assert.deepEqual(m.layer_methods[1].weights,{I:35,F:25,A:25,U:15});assert.deepEqual(m.layer_methods[2].weights,{K:30,D:25,E:25,A:20});assert.ok(m.layer_methods.filter(x=>!["criticidad","abordabilidad"].includes(x.id)).every(x=>x.weights===null))});
+T("dos índices enlazan 31 evaluaciones",()=>{assert.equal(m.layer_methods[1].scores,"analisis/criticidad-31-v03.json");assert.equal(JSON.parse(readFileSync(m.layer_methods[1].scores,"utf8")).rows.length,31);assert.equal(m.layer_methods[2].scores,"analisis/abordabilidad-31-v1.json");assert.equal(JSON.parse(readFileSync(m.layer_methods[2].scores,"utf8")).rows.length,31);assert.ok(m.layer_methods.filter(x=>!["criticidad","abordabilidad"].includes(x.id)).every(x=>x.scores===null))});
 T("H-M mantiene cuatro tarjetas",()=>assert.equal(m.navigation_contract.primary_cards,4));
 T("H-M ruta /metodos sin cambiar HTML",()=>assert.equal(m.navigation_contract.secondary_page,"/metodos"));
 T("MF-1 no declara HTML modificado",()=>assert.ok(!m.navigation_contract.stages.includes("metodos")));

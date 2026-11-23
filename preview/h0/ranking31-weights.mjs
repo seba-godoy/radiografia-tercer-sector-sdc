@@ -1,5 +1,6 @@
 export const weightKeys = ['I','F','A','U'];
 const sessions = new WeakMap();
+export const appliedCriticalityWeights = data => ({...(sessions.get(data)?.applied || data.method.weights)});
 
 export function validateWeights(draft) {
  const weights = {};

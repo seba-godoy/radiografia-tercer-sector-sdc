@@ -1,3 +1,5 @@
+> **Autorización AB · 23-11-2026:** el propietario encargó AB-1 a AB-6 en secuencia con revisión por fase y persistencia. Se aplica el índice documental de intervenciones SdC (factor C y preparación K/D/E/A), sin alterar criticidad ni catálogo. Encaje institucional no implica recursos disponibles. Ver `analisis/ab-2-metodo.json` y actas AB.
+
 > **Decisión del propietario · 23-11-2026 · v0.3:** autorizado aplicar una rúbrica documental provisional a los 31 problemas con la evidencia existente, sin nuevas búsquedas. Permite inferencias explícitas por criterio, confianza separada, fuentes por origen y sensibilidad. Sustituye sólo la exigencia anterior de cuatro mediciones directas para este índice de decisión. No convierte inferencias en incidencia, conserva el catálogo histórico y no autoriza modificar sus bandas B. Método y aplicación: `analisis/CRITICIDAD_31_v0.3.md`.
 
 # Reglas operativas obligatorias para agentes (DIMI)
