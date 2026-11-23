@@ -87,3 +87,8 @@
 - Corte de 26 fuentes, 31 problemas y 121 segmentos
 - Evidencia y metodología de respaldo
 
+
+
+## 2026-11-23 · OP-1 a OP-6 · Preview de oportunidades gratuitas
+
+Siete tareas con IPH documental, fuentes/comparadores y gratuidad sostenible. Treinta y un problemas tienen decisión de entrada o exclusión del primer MVP. Controles de pesos/escenarios y simulador de costos conservan métricas desconocidas como tales, TCO completo ND y cruce separado con criticidad/ASdC. FECU existente reduce la propuesta a preparación de antecedentes. Acuerdos es el primer experimento propuesto, caja el segundo; no hay MVP operativo ni gasto. QA completo del primer código aprobado; corte definitivo se registra en PR #32 y Notion.

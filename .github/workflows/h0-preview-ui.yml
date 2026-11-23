@@ -1,3 +1,4 @@
+# OP-6 final audit: rerun the full browser suite after editorial and handoff corrections.
 name: PX-H0 Preview Browser QA
 on:
   pull_request:
